@@ -7,7 +7,7 @@ while :; do
     echo 'Content-Type: text/html'
     echo
     echo 'OK'
-  } | nc -l 8080
+  } | nc -l 18080
   git pull
   rsync -a --delete --exclude='.git' --delete-excluded ~/github/ ~/Dropbox/ICFPC2015/github/
 done
