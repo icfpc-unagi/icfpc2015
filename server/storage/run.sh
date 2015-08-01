@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source "$(dirname "${BASH_SOURCE}")/../../imos-variables" || exit 1
+source "$(dirname "${BASH_SOURCE}")/../../bin/imos-variables" || exit 1
 eval "${IMOSH_INIT}"
 
 exec {LOCK}>>"$(dirname "${BASH_SOURCE}")/lock"
