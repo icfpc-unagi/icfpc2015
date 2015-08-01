@@ -1,0 +1,89 @@
+#!/bin/bash
+# imos-variables is a source file initializing variables.
+#
+# imos-variables initializes variables.  Thus, imos-variables must be called
+# using the source built-in command.  This command prepends the bin directory
+# where imos-variables exists to the PATH environment vairable.
+#
+# Usage:
+#     source imos-variables
+#
+# Variables:
+#   - IMOS_STORAGE
+#       IMOS_STORAGE is a persistent directory's absolute path.  Its default
+#       value is /Volumes/Arceus in Mac OSX and /storage in other operating
+#       systems.
+#   - IMOS_RESOURCE
+#       IMOS_RESOURCE is a directory containing resource files for imos scripts.
+#       Its default value is an absolute path that is ../resource from the
+#       directory where the imos-variables command exists.
+
+# Return if imos-variables is already loaded.
+if [ "${__IMOS_VARIABLES_IS_LOADED+loaded}" = 'loaded' ]; then return; fi
+__IMOS_VARIABLES_IS_LOADED=1
+source "$(dirname "${BASH_SOURCE}")"/imosh || exit 1
+
+IMOS_BIN="$(cd "$(dirname "${BASH_SOURCE}")"; pwd)"
+export PATH="${IMOS_BIN}:${PATH}"
+export POKEMON="$(imos-pokemon)"
+
+if ! sub::isset IMOS_ROOT; then
+  IMOS_ROOT=''
+fi
+
+if ! sub::isset IMOS_STORAGE; then
+  IMOS_STORAGE="${IMOS_ROOT}/storage"
+fi
+
+if ! sub::isset IMOS_RESOURCE; then
+  if [ -d "${IMOS_BIN}/../resource" ]; then
+    IMOS_RESOURCE="$(cd "${IMOS_BIN}/../resource"; pwd)"
+  fi
+fi
+
+if ! sub::isset IMOS_USERS; then
+  case "${UNAME}" in
+    Darwin) IMOS_USERS="${IMOS_ROOT}/Users";;
+    Linux)  IMOS_USERS="${IMOS_ROOT}/home";;
+    *)      IMOS_USERS="${IMOS_ROOT}/home";;
+  esac
+fi
+
+func::imos_get_users() {
+  if [ "${#}" -eq 1 ]; then
+    local __imos_get_users_variable="${1}"
+    local __imos_get_users_users=()
+    case "${UNAME}" in
+      Darwin)
+        pushd "${IMOS_ROOT}/Users" > '/dev/null'
+        for user in *; do
+          case "${user}" in
+            Guest|Shared|provision|ninetan) :;;
+            *)
+              if [ -d "${user}" ]; then
+                __imos_get_users_users+=("${user}")
+              fi
+              ;;
+          esac
+        done
+        popd > '/dev/null'
+        ;;
+      *)
+        pushd "${IMOS_ROOT}/home" > '/dev/null'
+        for user in *; do
+          if [ -d "${user}" ]; then
+            __imos_get_users_users+=("${user}")
+          fi
+        done
+        popd > '/dev/null'
+        ;;
+    esac
+    if [ "${#__imos_get_users_users}" -eq 0 ]; then
+      eval "${__imos_get_users_variable}=()"
+    else
+      eval "${__imos_get_users_variable}=(\"\${__imos_get_users_users[@]}\")"
+    fi
+  else
+    LOG ERROR "Wrong number of arguments: ${#}"
+  fi
+}
