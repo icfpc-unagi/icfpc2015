@@ -1,3 +1,1 @@
-Run the followings:
-- bash ~/github/server/storage/sync.sh
-- ~/.dropbox-dist/dropboxd
+Add run.sh to crontab.
