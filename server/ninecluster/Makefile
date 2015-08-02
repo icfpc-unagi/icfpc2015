@@ -15,6 +15,7 @@ start: check
 		    --volume=/ninecluster/ninemaster:/ninemaster \
 		    --publish=2200:22 \
 		    --publish=2201-2219:2201-2219 \
+		    --publish=22000-22127:22000-22127 \
 		    local/$(SERVICE); \
 	fi
 .PHONY: start

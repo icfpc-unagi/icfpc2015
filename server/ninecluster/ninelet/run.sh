@@ -32,6 +32,6 @@ for port in $(seq 2201 2209); do
   start_docker "${port}" &
 done
 
-for port in $(seq 2210 2219); do
+for port in $(seq 22000 22127); do
   start_docker "${port}" -d &
 done
