@@ -11,7 +11,10 @@ start_docker() {
         --volume=/alloc:/alloc \
         --volume=/ninemaster/tmp:/var/tmp \
         --volume=/ninemaster/config:/usr/imos/config \
-        local/ninelet "$@"
+        local/ninelet /bin/bash -c \
+        "/usr/sbin/sshd -D \\
+            -o 'ClientAliveInterval 5' \\
+            -o 'ClientAliveCountMax 3' $*"
     sleep 1
   done
 }

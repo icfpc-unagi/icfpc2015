@@ -83,4 +83,4 @@ ADD ./dummy /var/tmp/dummy
 RUN cd /usr/imos/bin && git pull
 
 EXPOSE 22
-ENTRYPOINT ["/bin/bash", "-c", "/usr/sbin/sshd -D -o 'ClientAliveInterval 5' -o 'ClientAliveCountMax 3'"]
+CMD ["/bin/bash", "-c", "/usr/sbin/sshd -D -o 'ClientAliveInterval 5' -o 'ClientAliveCountMax 3'"]
