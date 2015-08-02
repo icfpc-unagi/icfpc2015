@@ -2,4 +2,4 @@
 
 cd /github
 git pull
-bash /github/server/ninecluster/init.sh
+/usr/bin/screen -dmS ninecluster /bin/bash /github/server/ninecluster/init.sh
