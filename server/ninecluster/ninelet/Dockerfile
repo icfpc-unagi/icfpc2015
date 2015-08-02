@@ -61,7 +61,7 @@ RUN echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCrHaL3kdZ2RekCdpkie3fsiv2yVyyWRB
 RUN echo 'ninelet ALL=(ALL:ALL) NOPASSWD: ALL' > /etc/sudoers.d/ninelet
 RUN echo 'ninelet:$1$yLREWjDA$pR8cjWbX984KgIzMu71Z4.' | chpasswd --encrypted
 RUN echo 'source imos-bashrc' >> /home/ninelet/.bashrc
-RUN echo 'export PATH="/alloc/dropbox/github/bin:${PATH}"' >> /home/ninelet/.bashrc
+RUN echo 'export PATH="/alloc/github/bin:${PATH}"' >> /home/ninelet/.bashrc
 RUN echo 'export PATH="/alloc/dropbox/bin:${PATH}"' >> /home/ninelet/.bashrc
 RUN echo 'export PATH="/home/ninelet/bin:${PATH}"' >> /home/ninelet/.bashrc
 
