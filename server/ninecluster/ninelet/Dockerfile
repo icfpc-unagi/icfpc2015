@@ -77,6 +77,9 @@ RUN echo 'NINECLUSTER=ninelet' >> /etc/environment
 RUN grep '/usr/imos/bin:' /etc/environment || \
     sed -i 's%PATH="%PATH="/usr/imos/bin:%' /etc/environment
 ENV PATH /usr/imos/bin:$PATH
+RUN grep '/alloc/github/bin:' /etc/environment || \
+    sed -i 's%PATH="%PATH="/alloc/github/bin:%' /etc/environment
+ENV PATH /alloc/github/bin:$PATH
 RUN echo "Defaults secure_path = \"$PATH\"" >/etc/sudoers.d/00-secure_path
 RUN mkdir -p /usr/imos/bin
 RUN git clone --depth 1 'https://github.com/imos/bin' /usr/imos/bin
