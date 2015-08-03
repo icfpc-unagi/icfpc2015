@@ -15,10 +15,11 @@ machine:
 dependencies:
   cache_directories:
     - ~/bin
+    - ~/bazel
   pre:
     - mkdir -p ~/bin
     - ls -lA ~/bin
-    - if [ ! -e ~/bin/bazel-ecd4ec4 ]; then cd && wget https://storage.googleapis.com/archive-imoz-jp/Repository/Bazel/bazel-ecd4ec4.tar.xz && tar -Jxvf bazel-*.tar.xz && cd bazel && ./compile.sh && cp output/bazel ~/bin/bazel-ecd4ec4; fi; ln -f -s ~/bin/bazel-ecd4ec4 ~/bin/bazel
+    - if [ ! -d ~/bazel ]; then cd && wget https://storage.googleapis.com/archive-imoz-jp/Repository/Bazel/bazel-ecd4ec4.tar.xz && tar -Jxvf bazel-*.tar.xz && cd bazel && ./compile.sh; fi; ln -f -s ~/bazel/output/bazel ~/bin/bazel
 
 test:
   override:
