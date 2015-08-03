@@ -18,6 +18,7 @@ dependencies:
   pre:
     - ls -lA ~/
     - if [ ! -d ~/bazel ]; then cd && wget https://storage.googleapis.com/archive-imoz-jp/Repository/Bazel/bazel-ecd4ec4.tar.xz && tar -Jxvf bazel-*.tar.xz && cd bazel && ./compile.sh; fi
+    - echo 'build --package_path %workspace%:/home/ubuntu/bazel/base_workspace' > ~/.bazelrc
 
 test:
   override:
