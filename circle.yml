@@ -1,0 +1,13 @@
+machine:
+  timezone:
+    Asia/Tokyo
+
+dependencies:
+  pre:
+    - cd && wget https://storage.googleapis.com/archive-imoz-jp/Repository/Bazel/bazel-20150804.tar.xz && tar -Jxvf bazel-*.tar.xz && cd bazel && ./compile.sh
+  override:
+    - ~/bazel/output/bazel build //...
+
+test:
+  override:
+    - ~/bazel/output/bazel test //...
