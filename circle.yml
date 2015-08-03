@@ -1,16 +1,6 @@
 machine:
-  ghc:
-    version: 7.6.3
-  php:
-    version: 5.5.9
-  ruby:
-    version: 1.9.3-p484
-  python:
-    version: 2.7.6
   java:
     version: oraclejdk8
-  timezone:
-    Asia/Tokyo
 
 dependencies:
   cache_directories:
