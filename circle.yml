@@ -7,6 +7,8 @@ machine:
     version: 1.9.3-p484
   python:
     version: 2.7.6
+  java:
+    version: oraclejdk8
   timezone:
     Asia/Tokyo
 
