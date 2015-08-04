@@ -11,15 +11,15 @@ cc_library(
     linkstatic = 1,
 )
 
-# cc_library(
-#     name = "number",
-#     srcs = ["number.cc"],
-#     hdrs = ["number.h"],
-#     deps = [
-#         "//third_party/boost",
-#     ],
-#     linkstatic = 1,
-# )
+cc_library(
+    name = "number",
+    srcs = ["number.cc"],
+    hdrs = ["number.h"],
+    deps = [
+        "//boost",
+    ],
+    linkstatic = 1,
+)
 
 cc_library(
     name = "test",
