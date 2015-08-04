@@ -40,6 +40,7 @@ cc_library(
     deps = [
         "//gflags",
     ],
+    linkopts = ["-lpthread"],
     # TODO(imos): Bazel cannot handle dynamic link correctly.
     linkstatic = 1,
 )

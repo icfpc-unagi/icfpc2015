@@ -8,6 +8,7 @@ cc_library(
         "//gflags",
         "//glog",
     ],
+    linkstatic = 1,
 )
 
 # cc_library(
