@@ -81,7 +81,7 @@
 #include <inttypes.h>           // a third place for uint16_t or u_int16_t
 #endif
 
-#if 0
+#if 1
 #include <gflags/gflags.h>
 #endif
 
