@@ -14,11 +14,11 @@ cc_binary(
     ],
 )
 
-# cc_test(
-#     name = "hello-world_test",
-#     srcs = ["hello-world_test.cc"],
-#     deps = [
-#         ":hello-world-lib",
-#         "//base:test_main",
-#     ],
-# )
+cc_test(
+    name = "hello-world_test",
+    srcs = ["hello-world_test.cc"],
+    deps = [
+        ":hello-world-lib",
+        "//base:test_main",
+    ],
+)
