@@ -12,6 +12,7 @@ start: check
 		    --name=$(SERVICE) \
 		    --hostname=$(SERVICE) \
 		    --volume=/alloc:/alloc \
+		    --volume=/mirror:/mirror \
 		    --volume=/ninecluster/ninemaster:/ninemaster \
 		    --publish=2200:22 \
 		    --publish=2201-2219:2201-2219 \

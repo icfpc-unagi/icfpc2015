@@ -9,6 +9,7 @@ start_docker() {
         --privileged \
         --publish="${port}:22" \
         --volume=/alloc:/alloc \
+        --volume=/mirror:/mirror:ro \
         --volume=/ninemaster/tmp:/var/tmp \
         --volume=/ninemaster/config:/usr/imos/config \
         local/ninelet /bin/bash -c \
