@@ -61,8 +61,9 @@ RUN echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCrHaL3kdZ2RekCdpkie3fsiv2yVyyWRB
 RUN echo 'ninelet ALL=(ALL:ALL) NOPASSWD: ALL' > /etc/sudoers.d/ninelet
 RUN echo 'ninelet:$1$yLREWjDA$pR8cjWbX984KgIzMu71Z4.' | chpasswd --encrypted
 RUN echo 'source imos-bashrc' >> /home/ninelet/.bashrc
-RUN echo 'export PATH="/alloc/github/bin:${PATH}"' >> /home/ninelet/.bashrc
-RUN echo 'export PATH="/alloc/dropbox/bin:${PATH}"' >> /home/ninelet/.bashrc
+RUN echo 'export PATH="/mirror/global/bin:${PATH}"' >> /home/ninelet/.bashrc
+RUN echo 'export PATH="/mirror/github/bin:${PATH}"' >> /home/ninelet/.bashrc
+RUN echo 'export PATH="/mirror/dropbox/bin:${PATH}"' >> /home/ninelet/.bashrc
 RUN echo 'export PATH="/home/ninelet/bin:${PATH}"' >> /home/ninelet/.bashrc
 
 # Set language settings.
@@ -72,6 +73,16 @@ RUN echo 'LC_ALL=C.UTF-8' >> /etc/environment
 
 # Set a ninecluster role.
 RUN echo 'NINECLUSTER=ninelet' >> /etc/environment
+
+# Create useful symbolic links.
+RUN ln -s /alloc/global /home/ninelet/global
+RUN ln -s /mirror/github /home/ninelet/github
+RUN ln -s /alloc/dropbox /home/ninelet/Dropbox
+
+# Set up bazel settings.
+RUN echo 'build --package_path %workspace%:/mirror/global/bazel/base_workspace' >> /home/ninelet/.bazelrc
+RUN echo 'query --package_path %workspace%:/mirror/global/bazel/base_workspace' >> /home/ninelet/.bazelrc
+RUN echo 'fetch --package_path %workspace%:/mirror/global/bazel/base_workspace' >> /home/ninelet/.bazelrc
 
 # Set up imos/bin.
 RUN grep '/usr/imos/bin:' /etc/environment || \
