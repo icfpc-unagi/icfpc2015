@@ -60,7 +60,7 @@ RUN mkdir -p /home/ninelet/.ssh
 RUN echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCrHaL3kdZ2RekCdpkie3fsiv2yVyyWRBOO6Q68Kr+tFStRqtF8q1/UoeteUIOxzwKaAmHoaM9PkItdMBki0BLQDimCZwjjbkosritGDMTJXGd21O72mWaTv+nfq+/ishCdt6gdBYXTejvpPJhq8ZMYhTYJZkWqlGO2CKrWcnHHu1HhnValeqNWS5nh8BULOTMKaixjdzXIkWgm8HyiewvqjZXC3tZlfFDErRpiS7SYfJHd4PujjFCNyiVxZ5yOvEGMXQa1UFxQlfX8H+lAr6qObK50osAdUbvjjbhIhMvZT2higSNNtv/yiaLRnLbbOHomObvqxob5TUVdCkazXX3N imos@docker' > /home/ninelet/.ssh/authorized_keys
 RUN echo 'ninelet ALL=(ALL:ALL) NOPASSWD: ALL' > /etc/sudoers.d/ninelet
 RUN echo 'ninelet:$1$yLREWjDA$pR8cjWbX984KgIzMu71Z4.' | chpasswd --encrypted
-RUN echo 'source imos-bashrc' >> /home/ninelet/.bashrc
+RUN echo 'source /mirror/github/bin/bashrc' >> /home/ninelet/.bashrc
 RUN echo 'export PATH="/mirror/global/bin:${PATH}"' >> /home/ninelet/.bashrc
 RUN echo 'export PATH="/mirror/github/bin:${PATH}"' >> /home/ninelet/.bashrc
 RUN echo 'export PATH="/mirror/dropbox/bin:${PATH}"' >> /home/ninelet/.bashrc

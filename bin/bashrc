@@ -1,0 +1,8 @@
+source imos-bashrc
+
+for user in chokudai imos iwiwi sulume tos wata; do
+  if [ ! -d "${user}" ]; then
+    mkdir "${user}"
+    sudo mount -t overlayfs -o "lowerdir=/mirror/github,upperdir=/alloc/dropbox/${user}" overlayfs "${user}"
+  fi
+done
