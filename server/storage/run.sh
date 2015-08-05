@@ -9,6 +9,19 @@ if ! flock -w 1 "${LOCK}"; then
   exit
 fi
 
-bash "$(dirname "${BASH_SOURCE}")/sync.sh" &
+while :; do
+  {
+    echo 'HTTP/1.0 200 OK'
+    echo 'Content-Type: text/html'
+    echo
+    echo 'OK'
+  } | nc -l 18080
+  pushd ~/github
+  git pull
+  popd
+  bash "$(dirname "${BASH_SOURCE}")/sync.sh"
+done &
+
 ~/.dropbox-dist/dropboxd
+
 sub::exit

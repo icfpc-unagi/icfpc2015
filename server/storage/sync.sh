@@ -1,16 +1,13 @@
 #!/bin/bash
 
-cd ~/github
-while :; do
-  {
-    echo 'HTTP/1.0 200 OK'
-    echo 'Content-Type: text/html'
-    echo
-    echo 'OK'
-  } | nc -l 18080
-  git pull
-  for directory in src data bin example; do
+cd "$(dirname "${BASH_SOURCE}")"
+for directory in src data bin example java; do
+  if [ -d ~/"github/${directory}/" ]; then
     rsync -a --delete --exclude='.git' --delete-excluded \
         ~/"github/${directory}/" ~/"Dropbox/ICFPC2015/github/${directory}/"
-  done
+  else
+    if [ -d ~/"Dropbox/ICFPC2015/github/${directory}/" ]; then
+      rm -rf ~/"Dropbox/ICFPC2015/github/${directory}/"
+    fi
+  fi
 done
