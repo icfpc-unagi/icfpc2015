@@ -9,7 +9,7 @@ while :; do
     echo 'OK'
   } | nc -l 18080
   git pull
-  for directory in src data bin; do
+  for directory in src data bin example; do
     rsync -a --delete --exclude='.git' --delete-excluded \
         ~/"github/${directory}/" ~/"Dropbox/ICFPC2015/github/${directory}/"
   done
