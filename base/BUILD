@@ -7,6 +7,7 @@ cc_library(
     deps = [
         "//gflags",
         "//glog",
+        "//googleapis:library",
     ],
     linkstatic = 1,
 )
