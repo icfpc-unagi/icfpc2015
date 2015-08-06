@@ -14,6 +14,7 @@ start: check
 		    --volume=/alloc:/alloc \
 		    --volume=/mirror:/mirror \
 		    --volume=/ninecluster/ninemaster:/ninemaster \
+		    --publish=80:80 \
 		    --publish=2200:22 \
 		    --publish=2201-2219:2201-2219 \
 		    --publish=22000-22127:22000-22127 \

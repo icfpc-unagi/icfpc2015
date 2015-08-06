@@ -36,6 +36,11 @@ mkdir -p /ninemaster/tmp
 chmod ugo=rwxrwxrwt /ninemaster/tmp
 mkdir -p /ninemaster/config
 
+start_docker "80:80" \
+    "source /etc/apache2/envvars
+     tail -F /var/log/apache2/* &
+     /usr/sbin/apache2 -D FOREGROUND" &
+
 for port in $(seq 2201 2209); do
   start_ssh_docker "${port}" &
 done
