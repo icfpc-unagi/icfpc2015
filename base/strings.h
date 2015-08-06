@@ -38,19 +38,6 @@ using googleapis::GlobalReplaceSubstring;
 //                               StringPiece prefix);
 using googleapis::HasPrefixString;
 
-namespace strings {
-// Definition:
-//   std::vector<StringPiece> Split(const StringPiece& source,
-//                                  const StringPiece& delim);
-using googleapis::strings::Split;
-
-// Definition:
-//   void Join(const CONTAINER& components,
-//             StringPiece delim,
-//             string* result);
-//   string Join(const CONTAINER& components, StringPiece delim);
-using googleapis::strings::Join;
-
 // StrCat()
 //    This merges the given strings or numbers, with no delimiter.  This
 //    is designed to be the fastest possible way to construct a string out
@@ -72,6 +59,19 @@ using googleapis::strings::Join;
 //    of StrAppend(&str, a, b, c, ...) that none of the a, b, c, ... may
 //    be a reference into str.
 using googleapis::StrCat;
+
+namespace strings {
+// Definition:
+//   std::vector<StringPiece> Split(const StringPiece& source,
+//                                  const StringPiece& delim);
+using googleapis::strings::Split;
+
+// Definition:
+//   void Join(const CONTAINER& components,
+//             StringPiece delim,
+//             string* result);
+//   string Join(const CONTAINER& components, StringPiece delim);
+using googleapis::strings::Join;
 
 }  // namespace strings
 

@@ -2,6 +2,7 @@
 #define BASE_BASE_H_
 
 #include "base/strings.h"
+#include "base/util.h"
 #include "gflags/gflags.h"
 #include "glog/logging.h"
 #include "googleapis/base/integral_types.h"
