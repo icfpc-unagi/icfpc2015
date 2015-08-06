@@ -12,7 +12,7 @@ USER="${1}"
 case "${USER}" in
   chokudai|imos|iwiwi|sulume|tos|wata)
     if mount | grep "on /home/ninelet/${USER} type overlayfs" >/dev/null; then
-      sudo fuser --kill "/home/ninelet/${USER}"
+      sudo fuser --kill "/home/ninelet/${USER}" || true
       sudo umount -f "/home/ninelet/${USER}"
     else
       LOG ERROR "/home/ninelet/${USER} is not mounted."
