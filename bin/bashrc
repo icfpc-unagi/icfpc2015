@@ -16,12 +16,18 @@ unagi-autoremount() {
 
 b() {
   unagi-autoremount
-  bazel build -c opt //...
+  if [ "$#" -eq 0 ]; then
+    set -- //...
+  fi
+  bazel build -c opt "$@"
 }
 
 t() {
   unagi-autoremount
-  bazel test -c opt //...
+  if [ "$#" -eq 0 ]; then
+    set -- //...
+  fi
+  bazel test -c opt "$@"
 }
 
 unagi-user() {
