@@ -1,0 +1,37 @@
+#!/bin/bash
+# ninestream runs a command on a ninelet.
+#
+# Usage:
+#     ninelet [options] args...
+
+source "$(dirname "${BASH_SOURCE}")"/imos-variables || exit 1
+DEFINE_string worker '' 'Command as a worker.'
+DEFINE_string controller '' 'Command as a controller.'
+DEFINE_int replicas 0 'The number of replicas.'
+DEFINE_bool worker_stderr true "Outputs workers' stderr."
+DEFINE_bool debug true 'Outputs I/O from the controller.'
+DEFINE_bool interactive false 'Enables interactive mode.'
+eval "${IMOSH_INIT}"
+
+main() {
+  {
+    echo "set controller.debug ${FLAGS_debug}"
+    echo "set worker.stderr ${FLAGS_worker_stderr}"
+    if [ "${FLAGS_worker}" != '' ]; then
+      if [ "${FLAGS_replicas}" -lt 1 ]; then
+        LOG FATAL '--replicas must be larger than 0.'
+      fi
+      echo "run ${FLAGS_replicas} ${FLAGS_worker}"
+    fi
+    if [ "${FLAGS_controller}" != '' ]; then
+      echo "exec ${FLAGS_controller}"
+    elif (( ! FLAGS_interactive )); then
+      LOG FATAL '--controller or --interactive must be specified.'
+    fi
+  } > "${TMPDIR}/ninestream_init.txt"
+  NINESTREAM_INIT="${TMPDIR}/ninestream_init.txt" \
+      php "${IMOS_BIN}/library/ninestream.php"
+  exit "${PIPESTATUS[1]}"
+}
+
+main "$@"
