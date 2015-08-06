@@ -2,6 +2,37 @@ source imos-bashrc
 
 UNAGI_USERS=(chokudai imos iwiwi sulume tos wata)
 
+unagi-autoremount() {
+  local cwd="$(pwd)"
+
+  if sub::ereg_match \
+      '/home/ninetan/(chokudai|imos|iwiwi|sulume|tos|wata)/.*' "${cwd}/"; then
+    local path=()
+    func::explode path '/' "${cwd}/"
+    local user="${path[3]}"
+    unagi-remount "${user}"
+  fi
+}
+
+b() {
+  unagi-autoremount
+  bazel build -c opt //...
+}
+
+t() {
+  unagi-autoremount
+  bazel test -c opt //...
+}
+
+unagi-user() {
+  case "${1}" in
+    chokudai|imos|iwiwi|sulume|tos|wata)
+      return 0;;
+    *)
+      return 1;;
+  esac
+}
+
 unagi-mount() {
   if [ ! -d "/alloc/dropbox/${1}" ]; then
     LOG ERROR "No such directory: /alloc/dropbox/${1}"
