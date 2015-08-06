@@ -48,6 +48,13 @@ RUN pip install awscli
 RUN apt-get update -qq && \
     apt-get install -qqy libarchive-dev pkg-config zip g++ zlib1g-dev
 
+# Install Apache-PHP.
+RUN apt-get update -qq && \
+    apt-get install -qqy apache2 libapache2-mod-php5 php5-mysql \
+                         php5-gd php5-curl php-pear php-apc
+RUN sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
+RUN a2enmod rewrite
+
 # Add ninelet user.
 RUN useradd \
         --home-dir=/home/ninelet \
@@ -100,4 +107,5 @@ ADD ./dummy /var/tmp/dummy
 RUN cd /usr/imos/bin && git pull
 
 EXPOSE 22
+EXPOSE 80
 CMD ["/bin/bash", "-c", "/usr/sbin/sshd -D -o 'ClientAliveInterval 5' -o 'ClientAliveCountMax 3'"]
