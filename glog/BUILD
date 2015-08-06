@@ -88,11 +88,11 @@ cc_test(
     deps = [":glog"],
 )
 
-cc_test(
-    name = "stl_logging_unittest",
-    srcs = ["stl_logging_unittest.cc"],
-    deps = [":glog"],
-)
+# cc_test(
+#     name = "stl_logging_unittest",
+#     srcs = ["stl_logging_unittest.cc"],
+#     deps = [":glog"],
+# )
 
 cc_test(
     name = "symbolize_unittest",
