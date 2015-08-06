@@ -1,5 +1,11 @@
 #!/bin/bash
 
+cat << EOM > ~/.ssh/config
+Host *
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+EOM
+
 sync_cloud() {
   rsync -va --delete --delete-excluded \
       ninetan@storage.icfpc.imoz.jp:Dropbox/ICFPC2015/ /mirror/dropbox/
