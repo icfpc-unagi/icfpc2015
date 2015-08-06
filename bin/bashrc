@@ -1,8 +1,60 @@
 source imos-bashrc
 
-for user in chokudai imos iwiwi sulume tos wata; do
+UNAGI_USERS=(chokudai imos iwiwi sulume tos wata)
+
+unagi-mount() {
+  if [ ! -d "/alloc/dropbox/${1}" ]; then
+    LOG ERROR "No such directory: /alloc/dropbox/${1}"
+    return
+  fi
+  if [ ! -d ~/"${1}" ]; then
+    LOG ERROR 'No such directory:' ~/"${1}"
+    return
+  fi
+  sudo mount -t overlayfs \
+      -o "lowerdir=/mirror/github,upperdir=/alloc/dropbox/${1}" \
+      overlayfs ~/"${1}"
+  cd "$(pwd)"
+}
+
+unagi-unmount() {
+  if [ ! -d ~/"${1}" ]; then
+    LOG ERROR 'No such directory:' ~/"${1}"
+    return
+  fi
+  if ! mount | grep "on /home/${USER}/${1} type overlayfs" >/dev/null; then
+    LOG ERROR "/home/${USER}/${1} is not overlayfs"
+    return
+  fi
+
+  local cwd="$(pwd)"
+  cd
+  pids="$(lsof -t ~/"${1}")"
+  if [ "${pids}" != '' ]; then
+    sudo kill -9 ${pids}
+  fi
+  sudo fuser --kill ~/"${1}"
+  sudo umount -f ~/"${1}"
+  cd "${cwd}"
+}
+
+unagi-remount() {
+  if [ ! -d "/alloc/dropbox/${1}" ]; then
+    LOG ERROR "No such directory: /alloc/dropbox/${1}"
+    return
+  fi
+  if [ ! -d ~/"${1}" ]; then
+    LOG ERROR 'No such directory:' ~/"${1}"
+    return
+  fi
+
+  unagi-unmount "${1}"
+  unagi-mount "${1}"
+}
+
+for user in "${UNAGI_USERS[@]}"; do
   if [ ! -d "${user}" ]; then
-    mkdir "${user}"
-    sudo mount -t overlayfs -o "lowerdir=/mirror/github,upperdir=/alloc/dropbox/${user}" overlayfs "${user}"
+    mkdir -p "${user}"
+    unagi-mount "${user}"
   fi
 done
