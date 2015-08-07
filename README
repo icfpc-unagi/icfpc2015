@@ -1,0 +1,10 @@
+Team Unagi's Repository for ICFPC 2015.
+
+How to install:
+  make
+
+How to run:
+  make run
+
+Requirements:
+  bazel (optional)
