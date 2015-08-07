@@ -1,0 +1,1 @@
+echo '{"problemId":0,"seed":0,"tag":"foo","solution":"bar"}'; cat >/dev/null <

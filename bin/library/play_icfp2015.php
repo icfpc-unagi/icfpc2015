@@ -7,6 +7,7 @@ $TIME_LIMIT = 24 * 3600;
 $MEMORY_LIMIT = 0;
 $FILES = [];
 $PHRASES = [];
+$PROGRAMS = [];
 
 $mode = '';
 for ($i = 0; $i < count($argv); $i++) {
@@ -15,6 +16,7 @@ for ($i = 0; $i < count($argv); $i++) {
     case '-t':
     case '-m':
     case '-p':
+    case '-x':
       $mode = $argv[$i];
       break;
     default:
@@ -31,9 +33,19 @@ for ($i = 0; $i < count($argv); $i++) {
         case '-p':
           $PHRASES[] = $argv[$i];
           break;
+        case '-x':
+          $PROGRAMS[] = $argv[$i];
+          break;
       }
       break;
   }
+}
+
+if (count($PROGRAMS) == 0) {
+  $PROGRAMS = array_map(
+      'trim',
+      explode("\n", trim(
+          file_get_contents(dirname(__FILE__) . '/programs.txt'))));
 }
 
 fwrite(STDERR, 'Start time: ' . date('r', $START_TIME) . "\n");
@@ -41,6 +53,7 @@ fwrite(STDERR, 'File: ' . json_encode($FILES) . "\n");
 fwrite(STDERR, 'Phrases of power: ' . json_encode($PHRASES) . "\n");
 fprintf(STDERR, "Time limit: %.3f\n", $TIME_LIMIT);
 fprintf(STDERR, "Memory limit: %.3f\n", $MEMORY_LIMIT);
+fwrite(STDERR, 'Programs: ' . json_encode($PROGRAMS) . "\n");
 
 require_once(dirname(__FILE__) . '/solve.php');
 
