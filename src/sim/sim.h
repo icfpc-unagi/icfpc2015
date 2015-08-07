@@ -52,7 +52,7 @@ public:
     Field field = problem_->make_field();
     LCG random(solution_->seed);
     Unit unit = problem_->units[random.next() % problem_->units.size()];
-    Point control = problem_->spawn(*unit);
+    Point control = problem_->spawn(unit);
     int source = 1;
     int ls_old = 0;
     int score = 0;
@@ -64,23 +64,23 @@ public:
       Unit next_unit;
       Point next_control = control;
       if (strchr(kMoveW, c)) {
-        next_unit = *unit;
+        next_unit = unit;
         next_control.first -= 2;
       } else if (strchr(kMoveE, c)) {
-        next_unit = *unit;
+        next_unit = unit;
         next_control.first += 2;
       } else if (strchr(kMoveSW, c)) {
-        next_unit = *unit;
+        next_unit = unit;
         next_control.first--;
         next_control.second++;
       } else if (strchr(kMoveSE, c)) {
-        next_unit = *unit;
+        next_unit = unit;
         next_control.first++;
         next_control.second++;
       } else if (strchr(kRotateCW, c)) {
-        next_unit = unit->rotate_cw();
+        next_unit = unit.rotate_cw();
       } else if (strchr(kRotateCCW, c)) {
-        next_unit = unit->rotate_ccw();
+        next_unit = unit.rotate_ccw();
       } else {
         LOG(FATAL) << "Unrecognized command [ " << s[i] << " ] in solution";
       }
@@ -91,7 +91,14 @@ public:
       } else {
         // Rejects move and locks unit
         field.fill(unit.members, control, 'x');
-        // TODO: Clear rows
+        int size = unit.members.size();
+        // Clears rows
+        int ls = field.clear_rows();
+        // Scoring
+        int points = size + 100 * (1 + ls) * ls / 2;
+        int line_bonus = max((ls_old - 1) * points / 10, 0);
+        ls_old = ls;
+        score += points + line_bonus;
       }
     }
     return score;

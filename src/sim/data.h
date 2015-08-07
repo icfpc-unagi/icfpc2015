@@ -1,6 +1,7 @@
 #ifndef SRC_SIM_DATA_H_
 #define SRC_SIM_DATA_H_
 
+#include <algorithm>
 #include <iostream>
 #include "base/base.h"
 #include "boost/property_tree/ptree.hpp"
@@ -47,7 +48,7 @@ struct Field {
   void fill(const vector<Point>& v, Point offset, char c) {
     for (const auto& i : v) set(point_offset(i, offset), c);
   }
-  void test(const vector<Point>& v, Point offset) {
+  bool test(const vector<Point>& v, Point offset) {
     bool ok = true;
     for (const auto& i : v) ok = ok && get(point_offset(i, offset)) == '_';
     return ok;
@@ -55,6 +56,15 @@ struct Field {
 
   int height() const { return data.size(); }
   int width() const { return data[0].size() * 2; }
+
+  // Clears full rows and slide remaining rows down alongside of edges.
+  int clear_rows() {
+    int n = stable_partition(data.begin(), data.end(), [](const vector<char>& row) {
+      return all_of(row.begin(), row.end(), [](char c){ return c == 'x'; });
+    }) - data.begin();
+    for (int i = 0; i < n; ++i) data[i].assign(data[i].size(), '_');
+    return n;
+  }
 
   void print(std::ostream& os) const {
     for (int i = 0; i < height(); ++i) {

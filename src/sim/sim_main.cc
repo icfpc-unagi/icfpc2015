@@ -61,7 +61,7 @@ int main(int argc, char** argv) {
 
     Sim sim(problem, s);
     int score = sim.Play();
-    // TODO: print score once implemented
+    cout << "Score = " << score << endl;
   }
 
   LOG_IF(ERROR, !found) << "Output contain no solution for problem " << problem.id;
