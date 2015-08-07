@@ -93,7 +93,7 @@ class NineStream {
 };
 
 int main(int argc, char** argv) {
-  base::Init(argc, argv);
+  base::Init(&argc, &argv);
 
   vector<int> streams;
   CHECK_OK(NineStream::Stream(&streams));

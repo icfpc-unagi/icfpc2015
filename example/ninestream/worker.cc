@@ -39,7 +39,7 @@ string ToString(int64_t value) {
 }
 
 int main(int argc, char** argv) {
-  base::Init(argc, argv);
+  base::Init(&argc, &argv);
   long long start_value = 0;
   long long step = 1;
   scanf("%lld%lld", &start_value, &step);

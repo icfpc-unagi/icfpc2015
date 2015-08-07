@@ -35,7 +35,7 @@ using googleapis::SStringPrintf;
 
 namespace base {
 
-void Init(int argc, char** argv);
+void Init(int* argc, char*** argv);
 
 }  // namesapace base
 

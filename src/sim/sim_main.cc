@@ -9,7 +9,7 @@ using namespace boost::property_tree;
 using namespace boost::property_tree::json_parser;
 
 int main(int argc, char** argv) {
-  base::Init(argc, argv);
+  base::Init(&argc, &argv);
 
   ifstream ifs;
   istream *is;
