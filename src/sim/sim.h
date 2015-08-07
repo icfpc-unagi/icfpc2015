@@ -52,8 +52,8 @@ public:
     Field field = problem_->make_field();
     LCG random(solution_->seed);
     const Unit* unit = &problem_->units[random.next() % problem_->units.size()];
-    int source = 1;
     Point control = problem_->spawn(*unit);
+    int source = 1;
     int ls_old = 0;
     int score = 0;
 
@@ -61,24 +61,26 @@ public:
     googleapis::strrmm(&s, kIgnored);
     for (int i = 0; i < s.size(); ++i) {
       char c = tolower(s[i]);
+      Unit next_unit;
+      Point next_control = control;
       if (strchr(kMoveW, c)) {
-        control.first -= 2;
-
+        next_unit = *unit;
+        next_control.first -= 2;
       } else if (strchr(kMoveE, c)) {
-        control.first += 2;
-
+        next_unit = *unit;
+        next_control.first += 2;
       } else if (strchr(kMoveSW, c)) {
-        control.first--;
-        control.second++;
-
+        next_unit = *unit;
+        next_control.first--;
+        next_control.second++;
       } else if (strchr(kMoveSE, c)) {
-        control.first++;
-        control.second++;
-
+        next_unit = *unit;
+        next_control.first++;
+        next_control.second++;
       } else if (strchr(kRotateCW, c)) {
-        // TODO: rotate!
+        next_unit = unit->rotate_cw();
       } else if (strchr(kRotateCCW, c)) {
-        // TODO: rotate!
+        next_unit = unit->rotate_ccw();
       } else {
         LOG(FATAL) << "Unrecognized command [ " << s[i] << " ] in solution";
       }

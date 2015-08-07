@@ -105,6 +105,22 @@ struct Unit {
     f.fill(members, offset, 'o');
     return f;
   }
+  Unit rotate_cw() const {
+    Unit u;
+    u.members.resize(members.size());
+    for (int i = 0; i < members.size(); ++i) {
+      u.members[i] = Point((members[i].first - 3* members[i].second) / 2, (members[i].first + 2 * members[i].second) / 2);
+    }
+    return u;
+  }
+  Unit rotate_ccw() const {
+    Unit u;
+    u.members.resize(members.size());
+    for (int i = 0; i < members.size(); ++i) {
+      u.members[i] = Point((members[i].first + 3* members[i].second) / 2, (2 * members[i].second -members[i].first) / 2);
+    }
+    return u;
+  }
 };
 
 struct Problem {
