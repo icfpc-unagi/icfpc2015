@@ -64,17 +64,16 @@ struct Field {
 };
 
 struct Unit {
+  // The local origin is shifted to the pivot.
   vector<Point> members;
-  Point pivot;
 
   void load(const ptree &p) {
+    Point pivot = load_point(p.get_child("pivot"));
     for (const auto& i : p.get_child("members")) {
-      members.push_back(load_point(i.second));
+      members.push_back(point_offset(load_point(i.second), pivot));
     }
-    pivot = load_point(p.get_child("pivot"));
     CHECK_GT(members.size(), 0);
   }
-
   int top_most() const {
     int e = members[0].second;
     for (int i = 1; i < members.size(); ++i) e = min(e, members[i].second);
