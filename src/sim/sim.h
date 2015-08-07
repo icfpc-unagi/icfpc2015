@@ -103,10 +103,13 @@ public:
         unit = problem_->units[random.next() % problem_->units.size()];
         control = problem_->spawn(unit);
         source++;
+        // Game ends if the spawn location is not valid
+        if (!field.test(unit.members, control)) break;
       }
       cerr << "\n\n================================\n\n";
       field.print(cerr);
     }
+    // TODO: Calculate power_scores
     return score;
   }
 };
