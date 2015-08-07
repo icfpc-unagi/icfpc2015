@@ -5,29 +5,38 @@
 #include "boost/property_tree/ptree.hpp"
 
 using namespace std;
-using namespace boost::property_tree;
-using namespace boost::property_tree::json_parser;
+using boost::property_tree::ptree;
+using boost::property_tree::json_parser::read_json;
 
 int main(int argc, char** argv) {
   base::Init(&argc, &argv);
 
-  ifstream ifs;
-  istream *is;
-  if (argc > 1) {
-    ifs = ifstream(argv[1]);
-    is = &ifs;
-  } else {
-    is = &cin;
+  for (int i = 0; i < argc; ++i) LOG(INFO) << i << ":::" << argv[i];
+  if (argc < 2) {
+    LOG(ERROR) << "Usage: " << argv[0] << " <problem.json>";
+    return 1;
   }
 
   ptree pt;
-  read_json(*is, pt);
+  ifstream ifs(argv[1]);
+  read_json(ifs, pt);
+
   Problem problem;
   CHECK(problem.load(pt));
 
-  Field field;
-  field.init(problem);
-  field.print();
+  cout << "Problem: " << problem.id << " (" << problem.width << "x" << problem.height << ")\nSeeds: ";
+  for (int i = 0; i < problem.seeds.size(); ++i) {
+    cout << problem.seeds[i] << " ";
+  }
+  cout << "\nField:\n";
+  Field field = problem.make_field();
+  field.print(cout);
+
+  for (int i = 0; i < problem.units.size(); ++i) {
+    cout << "Unit " << i << ":\n";
+    Field sample = problem.units[i].make_field();
+    sample.print(cout);
+  }
 
   return 0;
 }
