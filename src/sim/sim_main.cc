@@ -1,5 +1,6 @@
 #include <fstream>
 #include "base/base.h"
+#include "base/strings.h"
 #include "boost/property_tree/json_parser.hpp"
 #include "boost/property_tree/ptree.hpp"
 #include "src/sim/data.h"
@@ -58,7 +59,9 @@ int main(int argc, char** argv) {
     if (s.id != problem.id) continue;
     found = true;
 
-    // TODO: Play simulator
+    Sim sim(problem, s);
+    int score = sim.Play();
+    // TODO: print score once implemented
   }
 
   LOG_IF(ERROR, !found) << "Output contain no solution for problem " << problem.id;

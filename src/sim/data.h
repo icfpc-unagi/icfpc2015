@@ -96,6 +96,7 @@ struct Unit {
     return e;
   }
   Field make_field() const {
+    // Aligns offset even
     int top = top_most() & ~1;
     int h = bottom_most() - top + 1;
     int left = left_most() & ~1;
@@ -137,6 +138,11 @@ struct Problem {
     Field f(height, width * 2);
     f.fill(filled, 'x');
     return f;
+  }
+  // Returns the point relative to the local cordinate system on which the unit spawns.
+  Point spawn(const Unit& u) const {
+    // TODO
+    return Point(width, 0);
   }
 };
 
