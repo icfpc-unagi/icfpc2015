@@ -11,33 +11,28 @@ $PROGRAMS = [];
 
 $mode = '';
 for ($i = 0; $i < count($argv); $i++) {
-  switch ($argv[$i]) {
-    case '-f':
-    case '-t':
-    case '-m':
-    case '-p':
-    case '-x':
-      $mode = $argv[$i];
-      break;
-    default:
-      switch ($mode) {
-        case '-f':
-          $FILES[] = $argv[$i];
-          break;
-        case '-t':
-          $TIME_LIMIT = floatval($argv[$i]);
-          break;
-        case '-m':
-          $MEMORY_LIMIT = floatval($argv[$i]);
-          break;
-        case '-p':
-          $PHRASES[] = $argv[$i];
-          break;
-        case '-x':
-          $PROGRAMS[] = $argv[$i];
-          break;
-      }
-      break;
+  if (preg_match('%^--?[a-zA-Z]$%', $argv[$i])) {
+    $mode = $argv[$i];
+  } else {
+    switch ($mode) {
+      case '-f':
+        $FILES[] = $argv[$i];
+        break;
+      case '-t':
+        $TIME_LIMIT = floatval($argv[$i]);
+        break;
+      case '-m':
+        $MEMORY_LIMIT = floatval($argv[$i]);
+        break;
+      case '-p':
+        $PHRASES[] = $argv[$i];
+        break;
+      case '-@x':
+        $PROGRAMS[] = $argv[$i];
+        break;
+      default:
+        fwrite(STDERR, "Flag option $mode is not supported, so ignored.\n");
+    }
   }
 }
 
