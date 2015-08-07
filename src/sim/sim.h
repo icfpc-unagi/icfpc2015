@@ -53,13 +53,13 @@ public:
     LCG random(solution_->seed);
     Unit unit = problem_->units[random.next() % problem_->units.size()];
     Point control = problem_->spawn(unit);
-    int source = 1;
+    int source = 0;
     int ls_old = 0;
     int score = 0;
 
     string s = solution_->solution;
     googleapis::strrmm(&s, kIgnored);
-    for (int i = 0; i < s.size(); ++i) {
+    for (int i = 0; i < s.size() && source < problem_->length; ++i) {
       char c = tolower(s[i]);
       Unit next_unit;
       Point next_control = control;
@@ -99,7 +99,13 @@ public:
         int line_bonus = max((ls_old - 1) * points / 10, 0);
         ls_old = ls;
         score += points + line_bonus;
+        // Next source
+        unit = problem_->units[random.next() % problem_->units.size()];
+        control = problem_->spawn(unit);
+        source++;
       }
+      cerr << "\n\n================================\n\n";
+      field.print(cerr);
     }
     return score;
   }
