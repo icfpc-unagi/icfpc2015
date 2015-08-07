@@ -34,12 +34,16 @@ struct Field {
   }
 
   char get(const Point& p) const {
-    CHECK_EQ(p.first % 2, p.second % 2) << "Misaligned access";
+    CHECK_EQ(p.first & 1, p.second & 1) << "Misaligned access";
     if (p.first < 0 || width() <= p.first || p.second < 0 || height() <= p.second) return '#';
     return data[p.second][p.first / 2];
   }
-  void set(const Point& p, char c) {
-    CHECK_EQ(p.first % 2, p.second % 2) << "Misaligned access";
+  bool set(const Point& p, char c) {
+    CHECK_EQ(p.first & 1, p.second & 1) << "Misaligned access";
+    CHECK_GE(p.first, 0);
+    CHECK_GE(p.second, 0);
+    CHECK_LT(p.first, width());
+    CHECK_LT(p.second, height());
     data[p.second][p.first / 2] = c;
   }
   void fill(const vector<Point>& v, char c) {
