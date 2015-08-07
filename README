@@ -1,5 +1,7 @@
 Team Unagi's Repository for ICFPC 2015.
 
+This is developed on Ubuntu 14.04.
+
 How to clone:
   sudo apt-get -qqy update
   sudo apt-get -qqy git
@@ -11,7 +13,8 @@ How to install:
       build-essential devscripts ubuntu-standard software-properties-common \
       screen lxc traceroute gdb \
       vim git subversion mercurial cmake make \
-      dos2unix nkf curl xz-utils
+      dos2unix nkf curl xz-utils \
+      libarchive-dev pkg-config zip g++ zlib1g-dev
   echo oracle-java8-installer shared/accepted-oracle-license-v1-1 \
       select true | debconf-set-selections && \
       add-apt-repository -y ppa:webupd8team/java && \
