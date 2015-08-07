@@ -8,4 +8,4 @@ clean:
 run: run/problems/problem_0.json
 
 run/%: data/%
-	./play_icfp2015 --alsologtostderr -f $*
+	./play_icfp2015 --alsologtostderr -f data/$*
