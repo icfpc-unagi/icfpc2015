@@ -25,7 +25,7 @@ source "$(dirname "${BASH_SOURCE}")"/imosh || exit 1
 
 IMOS_BIN="$(cd "$(dirname "${BASH_SOURCE}")"; pwd)"
 export PATH="${IMOS_BIN}:${PATH}"
-export POKEMON="$(imos-pokemon)"
+# export POKEMON="$(imos-pokemon)"
 
 if ! sub::isset IMOS_ROOT; then
   IMOS_ROOT=''

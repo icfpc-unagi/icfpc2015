@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo "Argument: $@" >&2
+
+IMOS_PACKAGE="${1}"
+if [ "${IMOS_PACKAGE:0:1}" != '/' ]; then
+  IMOS_PACKAGE="$(pwd)/${IMOS_PACKAGE}"
+fi
+
+TARGET="${2}"
+OUTPUT="${3}"
+if [ "${OUTPUT:0:1}" != '/' ]; then
+  OUTPUT="$(pwd)/${OUTPUT}"
+fi
+
+cd "$(dirname "${TARGET}")"
+"${IMOS_PACKAGE}" archive \
+    --pass_working_directory \
+    --command="${TARGET##*/}" \
+    --output="${OUTPUT}"

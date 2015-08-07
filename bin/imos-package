@@ -1,0 +1,449 @@
+#!/bin/bash
+# imos-package manages binary packages.
+#
+# Usage:
+#     imos-package command [options...]
+#
+# Command:
+#   - help
+#       Shows help.
+#   - create
+#       Archives files under the current directory with a command, and uploads
+#       the archive as a binary package.
+#   - run
+#       Fetches a package and runs it.
+#   - archive
+#       Archives files under the current directory with a command.
+#   - upload
+#       Uploads a file to the cloud server.
+#   - download
+#       Downloads a file from the cloud server.
+#
+# `create` command:
+#   - `imos-package create ./a.out --foo --bar`
+#       Archives files under the current directory with a command:
+#       `./a.out --foo --bar`, and uploads the archive.
+#   - `imos-package create --lifetime=permanent bash foo.sh`
+#       Archives files under the current directory with a command:
+#       `bash foo.sh`, and uploads the archive as a permanent archive.
+#
+# `upload` command:
+# Uploads a file to the cloud server. If the file's size is bigger than 1MB
+# (specified by --fragment_size flag), the file will be split into fragments
+# so as to speed up download/upload processes.
+#   - `imos-package upload ./foo`
+#       Uploads `./foo` to the cloud server, and prints its file ID.
+#
+# `download` command:
+# Downloads a file from the cloud server and save it to the path specified by
+# --output flag.
+#
+# Dependencies:
+#   - create
+#       Depends on archive and upload.
+#   - run
+#       Depends on download.
+
+source "$(dirname "${BASH_SOURCE}")/imos-variables" || exit 1
+# Common flags.
+DEFINE_string bucket 'imos-package' 'Bucket name.'
+DEFINE_string host 's3-ap-northeast-1.amazonaws.com' 'Host name.'
+DEFINE_int threads 64 'The number of threads to upload with.'
+DEFINE_string output '' \
+    'Path to output a file on.  archive and download commands use this flag.'
+
+# Archive options.
+DEFINE_int --group='archive' file_size 30000000 \
+    'Maximum size of a generated archive in bytes.'
+DEFINE_bool --group='archive' pass_working_directory false \
+    "Pass a caller's working directory to the program." \
+    "Otherwise, a callee's working directory is under the package."
+DEFINE_string --group='archive' command '' 'Command to run.'
+DEFINE_bool --group='archive' extra_arguments true 'Append extra arguments.'
+
+# Upload options.
+DEFINE_string --group='upload' alias '' \
+    'Alias name of the package.'
+DEFINE_int --group='upload' fragment_size "$(( 1024 * 1024 ))" \
+    'Limit of fragment size.'
+DEFINE_string --group='upload' lifetime 'ephemeral' \
+    "Lifetime of fragments.  ephemeral's lifetime is 7 days." \
+    'Re-uploading the same fragments will prolong their lifetime.'
+
+# Download options.
+DEFINE_string --group='download' fragments_directory '/var/tmp/fragments' \
+    'Cache directory.'
+
+################################################################################
+# archive command
+################################################################################
+create_tar() {
+  if [ "$#" -eq 1 ]; then
+    local package_directory="${TMPDIR}/package"
+    mkdir -p "${package_directory}"
+    ln -s "$(pwd)" "${package_directory}/bin"
+    if [ "${FLAGS_command}" != '' ]; then
+      local command_file="${package_directory}/COMMAND"
+      {
+        sub::println '#!/bin/bash'
+        if (( ! FLAGS_pass_working_directory )); then
+          sub::println 'cd "$(dirname "${BASH_SOURCE}")/bin"'
+        fi
+        if (( FLAGS_extra_arguments )); then
+          sub::println "${FLAGS_command} \"\$@\""
+        else
+          sub::println "${FLAGS_command}"
+        fi
+      } > "${command_file}"
+      chmod +x "${command_file}"
+    fi
+    pushd "${package_directory}" >/dev/null
+    local line=''
+    local tar_out="${TMPDIR}/tar_out"
+    local tar_log="${TMPDIR}/tar_log"
+    mkfifo "${tar_out}" "${tar_log}"
+    tar zcvfh - * >"${tar_out}" 2>"${tar_log}" &
+    local tar_pid="$!"
+    while IFS= read -r line; do
+      LOG INFO "Archiving: ${line}"
+    done <"${tar_log}" &
+    local log_pid="$!"
+    if (( FLAGS_file_size <= 0 )); then
+      cat <"${tar_out}" >"${1}"
+    else
+      head -c "$(( FLAGS_file_size + 1 ))" <"${tar_out}" > "${1}"
+      kill "${log_pid}" 2>/dev/null || true
+      kill "${tar_pid}" 2>/dev/null || true
+      local file_size="$(wc -c < "${1}")"
+      if (( file_size > FLAGS_file_size )); then
+        LOG FATAL "File size is too big: --file_size=${FLAGS_file_size}"
+      fi
+    fi
+    popd >/dev/null
+  else
+    eval "${IMOSH_WRONG_NUMBER_OF_ARGUMENTS}"
+  fi
+}
+
+archive_tar() {
+  if [ "$#" -eq 2 ]; then
+    local command='#!/bin/bash
+set -e -u
+package_directory="${TMPDIR}/package.${RANDOM}.${RANDOM}.${RANDOM}.${RANDOM}.${RANDOM}/package"
+mkdir -p "${package_directory}"
+cat "${BASH_SOURCE}" | tail -n +NUM_OF_LINES | {
+  pushd "${package_directory}" >/dev/null
+  tar zxvf - >/dev/null 2>/dev/null
+  popd >/dev/null
+}
+"${package_directory}/COMMAND" "$@"
+exit 0
+'
+    local command_lines=()
+    func::explode command_lines $'\n' "${command}"
+    func::str_replace command 'NUM_OF_LINES' "${#command_lines[*]}"
+    {
+      sub::print "${command}"
+      cat "${1}"
+    } > "${2}"
+    chmod +x "${2}"
+  else
+    eval "${IMOSH_WRONG_NUMBER_OF_ARGUMENTS}"
+  fi
+}
+
+imos-package::archive() {
+  CHECK [ "${FLAGS_output}" != '' ]
+  if [ "$#" -eq 0 ]; then
+    if [ "${FLAGS_command}" = '' ]; then
+      LOG FATAL '--command flag or arguments must be specified.'
+    fi
+  else
+    if [ "${FLAGS_command}" != '' ]; then
+      LOG FATAL 'Both of --command flag and arguments are specified.'
+    fi
+    local arguments=("$@")
+    func::array_map arguments INPLACE func::escapeshellarg
+    func::implode FLAGS_command ' ' arguments
+  fi
+  local tar_file="${TMPDIR}/package.tar"
+  local sar_file="${TMPDIR}/package.sar"
+  create_tar "${tar_file}"
+  archive_tar "${tar_file}" "${sar_file}"
+  cp "${sar_file}" "${FLAGS_output}"
+}
+
+################################################################################
+# create command
+################################################################################
+imos-package::create() {
+  if [ "$#" -ge 1 ]; then
+    local archive_file="${TMPDIR}/archive"
+    FLAGS_output="${archive_file}" imos-package::archive "$@"
+    imos-package::upload "${archive_file}"
+  else
+    eval "${IMOSH_WRONG_NUMBER_OF_ARGUMENTS}"
+  fi
+}
+
+################################################################################
+# run command
+################################################################################
+imos-package::run() {
+  if [ "$#" -ge 1 ]; then
+    local package_binary="${TMPDIR}/${1}"
+    FLAGS_output="${package_binary}" imos-package::download "${1}"
+    chmod +x "${package_binary}"
+    shift
+    "${package_binary}" "$@" &
+    local pid="$!"
+    local exit_status=0
+    wait "${pid}" || exit_status="$?"
+    if [ "${exit_status}" -lt 128 ]; then
+      exit "${exit_status}"
+    else
+      kill -"$(( exit_status - 128 ))" "${IMOSH_ROOT_PID}"
+    fi
+  else
+    eval "${IMOSH_WRONG_NUMBER_OF_ARGUMENTS}"
+  fi
+}
+
+################################################################################
+# upload command
+################################################################################
+rfc2date() {
+  if [ "$#" -eq 1 ]; then
+    case "${UNAME}" in
+      'Linux')
+        LC_ALL=en_US.UTF-8 TZ=GMT date --date="${1}" +'%Y-%m-%d';;
+      *)
+        LC_ALL=en_US.UTF-8 TZ=GMT \
+            date -j -f '%a, %d %b %Y %H:%M:%S %Z' "${1}" +'%Y-%m-%d';;
+    esac
+  else
+    eval "${IMOSH_WRONG_NUMBER_OF_ARGUMENTS}"
+  fi
+}
+
+mdate() {
+  if [ "$#" -eq 1 ]; then
+    local mtime="$(
+        curl --silent --fail --head \
+            "https://${FLAGS_host}/${FLAGS_bucket}/${1}" | \
+            grep -i last-modified | cut -d: -f2-)"
+    func::trim mtime
+    if [ "${mtime}" != '' ]; then
+      rfc2date "${mtime}"
+    fi
+  else
+    eval "${IMOSH_WRONG_NUMBER_OF_ARGUMENTS}"
+  fi
+}
+
+# For testing.  This function will be overridden in tests.
+create_working_directory() {
+  if [ "$#" -eq 1 ]; then
+    func::tmpfile "${1}"
+  else
+    eval "${IMOSH_WRONG_NUMBER_OF_ARGUMENTS}"
+  fi
+}
+
+touch_object() {
+  if [ "$#" -eq 1 ]; then
+    imos-aws s3api copy-object \
+        --bucket "${FLAGS_bucket}" \
+        --key "${1}" \
+        --copy-source "${FLAGS_bucket}/${1}" \
+        --metadata-directive REPLACE \
+        >'/dev/null' 2>'/dev/null' || return "$?"
+  else
+    eval "${IMOSH_WRONG_NUMBER_OF_ARGUMENTS}"
+  fi
+}
+
+upload() {
+  if [ "$#" -eq 2 ]; then
+    CHECK [ -f "${2}" ]
+    local mdate="$(mdate "${FLAGS_lifetime}/${1}")"
+    local today="$(date +'%Y-%m-%d')"
+    if [ "${mdate}" = "${today}" ]; then
+      LOG INFO "${1} is up-to-date."
+    elif [ "${mdate}" != '' ]; then
+      LOG INFO "Touching ${1}..."
+      touch_object "${FLAGS_lifetime}/${1}"
+    else
+      LOG INFO "Uploading ${1}..."
+      imos-aws s3api put-object \
+          --bucket "${FLAGS_bucket}" \
+          --key "${FLAGS_lifetime}/${1}" \
+          --content-md5 "$(sub::print "${1}" | stream::hex2bin | base64)" \
+          --body "${2}" \
+          >'/dev/null'
+    fi
+  else
+    eval "${IMOSH_WRONG_NUMBER_OF_ARGUMENTS}"
+  fi
+}
+
+package::split() {
+  if [ "$#" -ge 1 ]; then
+    local fragments_directory=''
+    create_working_directory fragments_directory
+    mkdir "${fragments_directory}"
+    LOG INFO "Fragments directory: ${fragments_directory}"
+    if [ -s "${1}" ]; then
+      split -a 3 -b "${FLAGS_fragment_size}" "${1}" "${fragments_directory}/"
+    else
+      touch "${fragments_directory}/empty"
+    fi
+    if ! imos-aws-credentials >'/dev/null'; then
+      LOG FATAL 'Failed to get AWS credentials.'
+    fi
+    local list_file="${fragments_directory}/list"
+    local file=''
+    local files=()
+    for file in "${fragments_directory}/"*; do
+      local md5="$(cat "${file}" | stream::md5)"
+      LOG INFO "Fragment: ${md5}"
+      if [ -f "${fragments_directory}/${md5}" ]; then
+        rm "${file}"
+      else
+        mv "${file}" "${fragments_directory}/${md5}"
+        files+=("${md5}")
+      fi
+      sub::println "${md5}" >> "${list_file}"
+    done
+    for md5 in "${files[@]}"; do
+      sub::throttle "${FLAGS_threads}"
+      upload "${md5}" "${fragments_directory}/${md5}" &
+    done
+    local md5="$(cat "${list_file}" | stream::md5)"
+    mv "${list_file}" "${fragments_directory}/${md5}"
+    list_file="${fragments_directory}/${md5}"
+    LOG INFO "$(ls -lA "${fragments_directory}/")"
+    LOG INFO "List file: ${md5}"
+    if [ "${FLAGS_alias}" != '' ]; then
+      imos-aws s3api put-object \
+          --bucket "${FLAGS_bucket}" \
+          --key "${FLAGS_lifetime}/${FLAGS_alias}" \
+          --body "${list_file}" \
+          >'/dev/null' &
+    fi
+    upload "${md5}" "${list_file}"
+    wait
+    sub::println "${md5}"
+  else
+    eval "${IMOSH_WRONG_NUMBER_OF_ARGUMENTS}"
+  fi
+}
+
+imos-package::upload() {
+  if [ "${FLAGS_lifetime}" != 'ephemeral' -a \
+       "${FLAGS_lifetime}" != 'permanent' ]; then
+    LOG FATAL "Invalid lifetime: ${FLAGS_lifetime}"
+  fi
+  local file=''
+  for file in "$@"; do
+    package::split "${file}"
+  done
+}
+
+################################################################################
+# download command
+################################################################################
+# Downloads a file from the cloud server.
+#
+# Usage:
+#     download_fragment input_path output_path
+download_fragment() {
+  if [ "$#" -eq 2 ]; then
+    LOG INFO "Downloading ${1}..."
+    local destination=''
+    func::tmpfile destination
+    curl --silent --fail --output "${destination}" \
+        "https://${FLAGS_host}/${FLAGS_bucket}/ephemeral/${1}" || \
+        curl --silent --fail --output "${destination}" \
+        "https://${FLAGS_host}/${FLAGS_bucket}/permanent/${1}" || \
+        LOG FATAL "Failed to find ${1}."
+    mv -f "${destination}" "${2}"
+  else
+    eval "${IMOSH_WRONG_NUMBER_OF_ARGUMENTS}"
+  fi
+}
+
+fetch_fragment() {
+  if [ "$#" -ge 1 ]; then
+    local destination="${TMPDIR}/${1}"
+    sub::println "${destination}"
+    if [ "${#1}" -ne 32 ] ||
+       ! sub::greg_match '+([0-9a-f])' "${1}"; then
+      download_fragment "${1}" "${destination}"
+      return
+    fi
+    local cache=''
+    if [ "${FLAGS_fragments_directory}" != '' ]; then
+      mkdir -m 0777 -p "${FLAGS_fragments_directory}"
+      cache="${FLAGS_fragments_directory}/${1}"
+    fi
+    if [ "${cache}" != '' -a -f "${cache}" ]; then
+      cat "${cache}" >"${destination}"
+    fi
+    if [ -f "${destination}" ] && \
+       [ "$(cat "${destination}" | stream::md5)" = "${1}" ]; then
+      LOG INFO "${1} was loaded from cache."
+      return
+    fi
+    download_fragment "${1}" "${destination}"
+    if [ "$(cat "${destination}" | stream::md5)" != "${1}" ]; then
+      LOG FATAL "Fragment ${1} is broken."
+    fi
+    if [ "${cache}" != '' ]; then
+      cat "${destination}" >"${cache}"
+    fi
+  else
+    eval "${IMOSH_WRONG_NUMBER_OF_ARGUMENTS}"
+  fi
+}
+
+imos-package::download() {
+  if [ "$#" -eq 1 ]; then
+    local list_file="$(fetch_fragment "${1}")"
+    local output_file=''
+    local fragment=''
+    func::tmpfile output_file
+    LOG INFO "List file: ${list_file}"
+    while IFS= read -r fragment; do
+      LOG INFO "Fragment: ${fragment}"
+      if sub::greg_match '+([0-9a-f])' "${fragment}"; then
+        cat "$(fetch_fragment "${fragment}")" >>"${output_file}"
+      fi
+    done <"${list_file}"
+    if [ "${FLAGS_output}" != '' ]; then
+      cat "${output_file}" >"${FLAGS_output}"
+    fi
+  else
+    eval "${IMOSH_WRONG_NUMBER_OF_ARGUMENTS}"
+  fi
+}
+
+################################################################################
+# bootstrap
+################################################################################
+if sub::is_main; then
+  IMOSH_PREDICATE=2 eval "${IMOSH_INIT}"
+  LOG INFO "Arguments: $*"
+  if [ "$#" -eq 0 ] || [ "${1}" = 'help' ]; then
+    imosh::help
+    exit
+  fi
+  COMMAND="${1}"
+  shift
+  case "${COMMAND}" in
+    'create'|'run'|'archive'|'download'|'upload')
+      "imos-package::${COMMAND}" "$@";;
+    *)
+      LOG FATAL "Unknown command: ${COMMAND}";;
+  esac
+fi
