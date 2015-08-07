@@ -9,4 +9,4 @@ else
   echo 'Main.exe is not found.' >&2
   exit 1
 fi
-mono "${TARGET}"
+mono "${TARGET}" "$@"
