@@ -14,6 +14,9 @@ using System.Net.Http;
 
 class ICFPC2015
 {
+    string version = "chokudAIver0.1.3";
+
+
     [DataContract]
     class Data
     {
@@ -70,8 +73,8 @@ class ICFPC2015
             pivot.y -= minY;
 
             int movex = 0;
-            while ((minX + movex) / 2 < ((W - 1) - (maxX + movex)) / 2) movex -= 2;
-            while ((minX + (movex + 2)) / 2 >= (((W - 1) - (maxX + (movex + 2)))) / 2) movex += 2;
+            while ((minX + movex) / 2 > ((W - 1) - (maxX + movex)) / 2) movex -= 2;
+            while ((minX + (movex + 2)) / 2 <= (((W - 1) - (maxX + (movex + 2)))) / 2) movex += 2;
             
             foreach (var item in members)
             {
@@ -90,12 +93,14 @@ class ICFPC2015
             for (int i = 0; i < members.Length; i++)
             {
                 allmember[i, 0] = members[i];
-                for (int j = 1; j < 6; j++)
+                for (int j = 1; j < 7; j++)
                 {
-                    int px = allmember[i, j-1].x;
-                    int py = allmember[i, j-1].y;
-                    allmember[i, j] = new Cell((px + 3 * py) / 2, (px + py) / 2);
+                    int px = allmember[i, j - 1].x;
+                    int py = allmember[i, j - 1].y;
+                    if(j<6) allmember[i, j] = new Cell((px - 3 * py) / 2, (px + py) / 2);
+                    //else Console.WriteLine(((px - 3 * py) / 2) + " " + ((px + py) / 2) + " " + allmember[i, 0].x + " " + allmember[i, 0].y);
                 }
+                
             }
 
             for (int j = 0; j < 6; j++)
@@ -103,7 +108,7 @@ class ICFPC2015
                 l[j] = new List<int>();
                 for (int i = 0; i < members.Length; i++)
                 {
-                    l[j].Add(allmember[i, j].x * 1123139871 ^ allmember[j, i].y * 189628736);
+                    l[j].Add(allmember[i, j].x * 1123139871 ^ allmember[i, j].y * 189628736);
                 }
                 l[j].Sort();
             }
@@ -161,31 +166,57 @@ class ICFPC2015
         public string solution;
     }
 
-    ulong nowrand = 0;
-    uint rand()
-    {
-        nowrand = nowrand * 1103515245 + 12345;
-        nowrand &= uint.MaxValue;
-        return (uint)nowrand;
-    }
 
 
-    class State
+    class State: IComparable<State>
     {
         public int point;
         public int score;
         public int[,] board;
         public string command;
 
+        public int CompareTo(State s)
+        {
+            return -point.CompareTo(s.point);
+        }
 
+        public long gethash()
+        {
+            long hash = score;
+            for (int i = 0; i < board.GetLength(0); i++)
+            {
+                for (int j = 0; j < board.GetLength(1); j++)
+                {
+                    hash = nexthash(hash, board[i, j]);
+                }
+            }
+            return hash;
+        }
+
+
+        long nexthash(long a, long b)
+        {
+            return (a * 1629871623716381L ^ (a >> 22) * 17576531113131 ^ b * 765218735128371 ^ (b >> 17) * 165234916131);
+        }
     }
 
     Random r;
 
     public ICFPC2015() { }
 
-    public static void Main()
+    static string filename;
+
+    public static void Main(string[] args)
     {
+        foreach (var item in args)
+        {
+            Console.Error.WriteLine(item);
+        }
+        if (args.Length >= 1)
+        {
+            filename = args[0];
+        }
+        else return;
         new ICFPC2015().myon();
     }
 
@@ -197,12 +228,50 @@ class ICFPC2015
     int[] source;
     Data d;
 
-    List<State> now;
-    List<State> next;
+    List<State> nowsl;
+    List<State> nextsl;
+    Dictionary<long, int> dic;
+
+
+
+    public class LCG
+    {
+
+        long mod = 1L << 32;
+        long mul = 1103515245;
+        long inc = 12345;
+        long prev;
+
+        public LCG(long seed)
+        {
+            prev = seed;
+        }
+
+        public int next()
+        {
+            int ret = (int)(prev >> 16) & 0x7fff;
+            prev = (mul * prev + inc) % mod;
+            return ret;
+        }
+    }
+
+    string gettingtext()
+    {
+        StreamReader sr = new StreamReader(
+                filename, Encoding.GetEncoding("Shift_JIS"));
+
+        string st = sr.ReadToEnd();
+        Console.Error.WriteLine(st);
+        return st;
+    }
+
+    State beststate;
 
     void myon()
     {
-        string json = Console.ReadLine();
+        Console.Write("[");
+        bool first = true;
+        string json = gettingtext();
         var serializer = new DataContractJsonSerializer(typeof(Data));
         var stream1 = new MemoryStream(Encoding.UTF8.GetBytes(json));
         d = (Data)serializer.ReadObject(stream1);
@@ -210,6 +279,8 @@ class ICFPC2015
         W = d.width;
         H = d.height;
         WW = W + W;
+
+        //d.sourceLength = 10;
 
         foreach (var item in d.units)
         {
@@ -228,26 +299,48 @@ class ICFPC2015
 
         foreach (var seed in d.sourceSeeds)
         {
-            nowrand = (ulong)seed;
+            if (first) first = false;
+            else Console.Write(",");
             N = d.sourceLength;
             M = d.units.Length;
-            source[0] = seed;
-            for (int i = 1; i < N; i++)
+            source = new int[N];
+            LCG lcg = new LCG(seed);
+
+            for (int i = 0; i < N; i++)
             {
-                source[i] = (int)(rand() % M);
+                source[i] = lcg.next() % M;
             }
-                
+
             State firststate = new State();
-            firststate.board = new int[H, WW];
+            firststate.board = new int[WW, H];
             firststate.command = "";
             firststate.score = 0;
             foreach (var item in d.filled)
             {
                 firststate.board[item.x, item.y] = 1;
             }
-            now = new List<State>();
-            now.Add(firststate);
+            nowsl = new List<State>();
+            nowsl.Add(firststate);
+            beamSearch();
+            nowsl.Sort();
+            if (nowsl.Count != 0) beststate = nowsl[0];
+            string ret = basestring + beststate.command;
+            Output rr = new Output();
+            rr.seed = seed;
+            rr.problemId = d.id;
+            rr.tag = version;
+            rr.solution = ret;
+
+            MemoryStream ms = new MemoryStream();
+            var serializer2 = new DataContractJsonSerializer(typeof(Output));
+            serializer2.WriteObject(ms, rr);
+            string JsonString = Encoding.UTF8.GetString(ms.ToArray());
+            Console.Write(JsonString);
+
+
         }
+
+        Console.WriteLine("]");
     }
 
     int[] vy = new int[] { 0, 1, 1, 0 };
@@ -257,27 +350,99 @@ class ICFPC2015
     int[] vp = new int[] { 1, -1 };
     char[] rotatec = new char[] { 'd', 'k' };
 
+    int presamestring;
+    int samestring;
+    StringBuilder basestring;
+
     void beamSearch()
     {
+        presamestring = samestring = 0;
+        basestring = new StringBuilder();
+
         for (int t = 0; t < d.sourceLength; t++)
         {
+            dic = new Dictionary<long, int>();
             int nextunit = source[t];
             var U = d.units[nextunit];
             int firsty = U.pivot.y + U.members[0].y;
             int firstx = U.pivot.x + U.members[0].x;
+            
+            nowsl.Sort();
 
-            foreach (var nowstate in now)
+            nextsl = new List<State>();
+            int firstwidth = 20;
+            int beamwidth = firstwidth;
+            foreach (var nowstate in nowsl)
             {
+                beamwidth--;
+                if (beamwidth < 0) break;
+
+                if (beamwidth == firstwidth - 1)
+                {
+                    samestring = nowstate.command.Length;
+
+                    beststate = nowstate;
+                    bool debug = false;
+                    if (debug)
+                    {
+                        Console.Error.WriteLine(t + " " + nowstate.score + " " + nowstate.point);
+                        char[,] boardmemo = new char[H, WW];
+
+                        for (int i = 0; i < H; i++)
+                        {
+                            for (int j = 0; j < WW; j++)
+                            {
+                                boardmemo[i, j] = (char)(nowstate.board[j, i] + '0');
+                            }
+                        }
+                        for (int i = 0; i < U.members.Length; i++)
+                        {
+                            int x = U.pivot.x + U.members[i].x;
+                            int y = U.pivot.y + U.members[i].y;
+                            boardmemo[y, x] = '#';
+                        }
+                        if (ok(U.pivot.x, U.pivot.y) && boardmemo[U.pivot.y, U.pivot.x] == '0') boardmemo[U.pivot.y, U.pivot.x] = '@';
+
+                        for (int i = 0; i < H; i++)
+                        {
+                            for (int j = 0; j < WW; j++)
+                            {
+                                if (i % 2 != j % 2) Console.Error.Write(' ');
+                                else
+                                {
+                                    if (boardmemo[i, j] == '0') boardmemo[i, j] = '.';
+                                    Console.Error.Write(boardmemo[i, j]);
+                                }
+                            }
+                            Console.Error.WriteLine();
+                        }
+
+                        //Console.Error.WriteLine(firstx + " " + firsty);
+                        Console.Error.WriteLine(nowstate.command);
+                    }
+                }
+                else
+                {
+                    samestring = Math.Min(samestring, nowstate.command.Length);
+                    for (int i = 0; i < samestring; i++)
+                    {
+                        if (nowsl[0].command[i] != nowstate.command[i])
+                        {
+                            samestring = i;
+                            break;
+                        }
+                    }
+                }
 
                 int MM = U.MM;
 
-                bool[, ,] find = new bool[H, WW, MM];
-                bool[, ,] check = new bool[H, WW, MM];
-                string[, ,] addstring = new string[H, WW, MM];
+                bool[, ,] find = new bool[WW, H, MM];
+                bool[, ,] check = new bool[WW, H, MM];
+                string[, ,] addstring = new string[WW, H, MM];
 
 
-                check[firsty, firstx, 0] = true;
-                addstring[firsty, firstx, 0] = "";
+                check[firstx, firsty, 0] = true;
+                addstring[firstx, firsty, 0] = "";
                 Queue<int> q = new Queue<int>();
                 q.Enqueue((firstx << 16) + (firsty << 4) + 0);
 
@@ -293,6 +458,7 @@ class ICFPC2015
 
                     if (!isSettable(U, nowstate, cx, cy, p))
                     {
+                        //Console.Error.WriteLine("Dead!");
                         //　突然の死！！！！
                         continue;
                     }
@@ -322,8 +488,8 @@ class ICFPC2015
 
                         if (!isSettable(U, nowstate, ncx, ncy, np)) continue;
                         check[nx, ny, np] = true;
-                        
 
+                        stopmove |= (1 << k);
                         addstring[nx, ny, np] = addstring[x, y, p] + movec[k];
                         int next = (nx << 16) + (ny << 4) + np;
                         q.Enqueue(next);
@@ -345,7 +511,7 @@ class ICFPC2015
                         if (!isSettable(U, nowstate, ncx, ncy, np)) continue;
                         check[nx, ny, np] = true;
                     
-                        addstring[nx, ny, np] = addstring[x, y, p] + movec[k];
+                        addstring[nx, ny, np] = addstring[x, y, p] + rotatec[k];
                         int next = (nx << 16) + (ny << 4) + np;
                         q.Enqueue(next);
                     }
@@ -355,18 +521,87 @@ class ICFPC2015
                         //終了処理
                         int nextmove = 0;
                         while ((stopmove >> nextmove) % 2 == 1) nextmove++;
+                        State nextstate = new State();
+                        nextstate.board = (int[,])nowstate.board.Clone();
+                        nextstate.command = nowstate.command + addstring[x, y, p] + movec[nextmove];
+                        for (int i = 0; i < U.members.Length; i++)
+                        {
+                            int nx = cx + U.allmember[i, p].x;
+                            int ny = cy + U.allmember[i, p].y;
+                            nextstate.board[nx, ny] = 1;
+                            //Console.WriteLine("put " + nx + " " + ny);
+                        }
 
+                        int ls = 0;
+                        for (int i = 0; i < H; i++)
+                        {
+                            bool flag = true;
+                            for (int j = 0; j < WW; j++)
+                            {
+                                if (i % 2 != j % 2) continue;
+                                if (nextstate.board[j, i] != 1)
+                                {
+                                    flag = false;
+                                    break;
+                                }
+                            }
+                            if (flag)
+                            {
+                                ls++;
+                                for (int j = 0; j < WW; j++)
+                                {
+                                    nextstate.board[j, i] = 0;
+                                }
+                                for (int k = i - 1; k > 0; k--)
+                                {
+                                    for (int j = 0; j < WW; j++)
+                                    {
+                                        if (nextstate.board[j, k] == 1)
+                                        {
+                                            nextstate.board[j, k] = 0;
+                                            nextstate.board[j ^ 1, k + 1] = 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
 
+                        nextstate.score = nowstate.score + 50 * ls * (ls + 1) + U.members.Length;
+                        long hash = nextstate.gethash();
+                        if (dic.ContainsKey(hash)) continue;
+
+                        //pointの評価関数をかく！！！！
+                        nextstate.point = nextstate.score * 100;
+                        for (int i = 0; i < H; i++)
+                        {
+                            for (int j = 0; j < WW; j++)
+                            {
+                                if (nextstate.board[j, i] == 1)
+                                {
+                                    nextstate.point -= (H - i) * (H - i);
+                                }
+                            }
+                        }
+                        nextsl.Add(nextstate);
                     }
                 }
 
+            }
+            nowsl = nextsl;
+            if (nowsl.Count != 0)
+            {
+                basestring.Append(nowsl[0].command.Substring(0, samestring));
+                foreach (var item in nowsl)
+                {
+                    item.command = item.command.Substring(samestring);
+                }
             }
         }
     }
 
     bool isSettable(Unit U, State nowstate, int ncx, int ncy, int np)
     {
-        for (int i = 0; i < M; i++)
+        for (int i = 0; i < U.members.Length; i++)
         {
             int mx = U.allmember[i, np].x;
             int my = U.allmember[i, np].y;
@@ -398,9 +633,9 @@ class ICFPC2015
         var response = hc.PostAsync("http://localhost/", content);
     }
 
-    bool ok(int y, int x)
+    bool ok(int x, int y)
     {
-        return y >= 0 && y < H && x >= 0 && x < W;
+        return y >= 0 && y < H && x >= 0 && x < WW;
     }
 
 
