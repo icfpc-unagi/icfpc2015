@@ -11,11 +11,11 @@
 #ifndef BOOST_STRING_CASE_CONV_DETAIL_HPP
 #define BOOST_STRING_CASE_CONV_DETAIL_HPP
 
-#include <boost/algorithm/string/config.hpp>
+#include "boost/algorithm/string/config.hpp"
 #include <locale>
 #include <functional>
 
-#include <boost/type_traits/make_unsigned.hpp>
+#include "boost/type_traits/make_unsigned.hpp"
 
 namespace boost {
     namespace algorithm {

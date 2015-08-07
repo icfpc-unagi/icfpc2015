@@ -24,7 +24,7 @@
 #include <thrust/for_each.h>
 #include <thrust/iterator/zip_iterator.h>
 
-#include <boost/range.hpp>
+#include "boost/range.hpp"
 
 namespace boost {
 namespace numeric {

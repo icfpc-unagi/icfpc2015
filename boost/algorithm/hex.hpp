@@ -23,12 +23,12 @@
 #include <iterator>     // for std::iterator_traits
 #include <stdexcept>
 
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
-#include <boost/exception/all.hpp>
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
+#include "boost/exception/all.hpp"
 
-#include <boost/utility/enable_if.hpp>
-#include <boost/type_traits/is_integral.hpp>
+#include "boost/utility/enable_if.hpp"
+#include "boost/type_traits/is_integral.hpp"
 
 
 namespace boost { namespace algorithm {

@@ -9,8 +9,8 @@
 #ifndef BOOST_LOCKFREE_DETAIL_COPY_PAYLOAD_HPP_INCLUDED
 #define BOOST_LOCKFREE_DETAIL_COPY_PAYLOAD_HPP_INCLUDED
 
-#include <boost/mpl/if.hpp>
-#include <boost/type_traits/is_convertible.hpp>
+#include "boost/mpl/if.hpp"
+#include "boost/type_traits/is_convertible.hpp"
 
 namespace boost    {
 namespace lockfree {

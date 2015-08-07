@@ -15,9 +15,9 @@
 #ifndef BOOST_UUID_SHA1_H
 #define BOOST_UUID_SHA1_H
 
-#include <boost/static_assert.hpp>
+#include "boost/static_assert.hpp"
 #include <stdexcept>
-#include <boost/throw_exception.hpp>
+#include "boost/throw_exception.hpp"
 #include <cstddef>
 #include <string>
 

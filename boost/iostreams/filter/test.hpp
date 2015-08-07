@@ -11,8 +11,8 @@
 # pragma once
 #endif
 
-#include <boost/config.hpp>               // BOOST_MSVC,put size_t in std.
-#include <boost/detail/workaround.hpp>
+#include "boost/config.hpp"               // BOOST_MSVC,put size_t in std.
+#include "boost/detail/workaround.hpp"
 #include <algorithm>                      // min.
 #include <cstddef>                        // size_t.
 #if BOOST_WORKAROUND(BOOST_MSVC, <= 1300) || \
@@ -29,20 +29,20 @@
     !BOOST_WORKAROUND(__BORLANDC__, BOOST_TESTED_AT(0x564)) && \
     !BOOST_WORKAROUND(__MWERKS__, <= 0x3003) \
     /**/
-# include <boost/random/linear_congruential.hpp>
-# include <boost/random/uniform_smallint.hpp>
+# include "boost/random/linear_congruential.hpp"
+# include "boost/random/uniform_smallint.hpp"
 #endif
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/compose.hpp>
-#include <boost/iostreams/copy.hpp>
-#include <boost/iostreams/detail/bool_trait_def.hpp>
-#include <boost/iostreams/detail/ios.hpp>
-#include <boost/iostreams/device/array.hpp>
-#include <boost/iostreams/device/back_inserter.hpp>
-#include <boost/iostreams/operations.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/type_traits/is_array.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/compose.hpp"
+#include "boost/iostreams/copy.hpp"
+#include "boost/iostreams/detail/bool_trait_def.hpp"
+#include "boost/iostreams/detail/ios.hpp"
+#include "boost/iostreams/device/array.hpp"
+#include "boost/iostreams/device/back_inserter.hpp"
+#include "boost/iostreams/operations.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/type_traits/is_array.hpp"
+#include "boost/type_traits/is_same.hpp"
 
 #undef memcpy
 #undef rand

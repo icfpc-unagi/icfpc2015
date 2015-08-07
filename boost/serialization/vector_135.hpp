@@ -21,6 +21,6 @@
 #define BOOST_SERIALIZATION_VECTOR_VERSIONED(V) (V>4)
 #endif
 
-#include <boost/serialization/vector.hpp>
+#include "boost/serialization/vector.hpp"
 
 #endif // BOOST_SERIALIZATION_VECTOR_135_HPP

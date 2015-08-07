@@ -19,15 +19,15 @@
 
 #include <istream>
 #include <iosfwd>
-#include <boost/assert.hpp>
-#include <boost/config.hpp>
-#include <boost/limits.hpp>
-#include <boost/type_traits/is_integral.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/operators.hpp>
-#include <boost/random/detail/signed_unsigned_tools.hpp>
-#include <boost/random/uniform_01.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"
+#include "boost/limits.hpp"
+#include "boost/type_traits/is_integral.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/operators.hpp"
+#include "boost/random/detail/signed_unsigned_tools.hpp"
+#include "boost/random/uniform_01.hpp"
+#include "boost/detail/workaround.hpp"
 
 namespace boost {
 namespace random {

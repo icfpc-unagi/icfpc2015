@@ -11,7 +11,7 @@
 #ifndef BOOST_CORE_UNDERLYING_TYPE_HPP
 #define BOOST_CORE_UNDERLYING_TYPE_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 // GCC 4.7 and later seem to provide std::underlying_type
 #if !defined(BOOST_NO_CXX11_HDR_TYPE_TRAITS) || (defined(BOOST_GCC) && BOOST_GCC >= 40700 && defined(__GXX_EXPERIMENTAL_CXX0X__))

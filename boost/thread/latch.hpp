@@ -6,18 +6,18 @@
 #ifndef BOOST_THREAD_LATCH_HPP
 #define BOOST_THREAD_LATCH_HPP
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/delete.hpp>
-#include <boost/thread/detail/counter.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/delete.hpp"
+#include "boost/thread/detail/counter.hpp"
 
-#include <boost/thread/mutex.hpp>
-#include <boost/thread/lock_types.hpp>
-#include <boost/thread/condition_variable.hpp>
-#include <boost/chrono/duration.hpp>
-#include <boost/chrono/time_point.hpp>
-#include <boost/assert.hpp>
+#include "boost/thread/mutex.hpp"
+#include "boost/thread/lock_types.hpp"
+#include "boost/thread/condition_variable.hpp"
+#include "boost/chrono/duration.hpp"
+#include "boost/chrono/time_point.hpp"
+#include "boost/assert.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -162,6 +162,6 @@ namespace boost
 
 } // namespace boost
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

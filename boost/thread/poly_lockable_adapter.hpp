@@ -11,7 +11,7 @@
 #ifndef BOOST_THREAD_POLY_LOCKABLE_ADAPTER_HPP
 #define BOOST_THREAD_POLY_LOCKABLE_ADAPTER_HPP
 
-#include <boost/thread/poly_lockable.hpp>
+#include "boost/thread/poly_lockable.hpp"
 
 namespace boost
 {

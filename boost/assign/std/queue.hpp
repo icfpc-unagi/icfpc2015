@@ -16,8 +16,8 @@
 # pragma once
 #endif
 
-#include <boost/assign/list_inserter.hpp>
-#include <boost/config.hpp>
+#include "boost/assign/list_inserter.hpp"
+#include "boost/config.hpp"
 #include <queue>
 
 namespace boost

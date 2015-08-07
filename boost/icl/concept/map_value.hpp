@@ -8,9 +8,9 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_CONCEPT_MAP_VALUE_HPP_JOFA_100924
 #define BOOST_ICL_CONCEPT_MAP_VALUE_HPP_JOFA_100924
 
-#include <boost/icl/type_traits/predicate.hpp>
-#include <boost/icl/type_traits/identity_element.hpp>
-#include <boost/icl/type_traits/is_map.hpp>
+#include "boost/icl/type_traits/predicate.hpp"
+#include "boost/icl/type_traits/identity_element.hpp"
+#include "boost/icl/type_traits/is_map.hpp"
 
 namespace boost{ namespace icl
 {

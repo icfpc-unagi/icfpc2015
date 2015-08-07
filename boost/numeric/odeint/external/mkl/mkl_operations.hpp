@@ -23,7 +23,7 @@
 #include <iostream>
 
 #include <mkl_cblas.h>
-#include <boost/numeric/odeint/algebra/default_operations.hpp>
+#include "boost/numeric/odeint/algebra/default_operations.hpp"
 
 /* exemplary example for writing bindings to the Intel MKL library
  * see test/mkl for how to use mkl with odeint

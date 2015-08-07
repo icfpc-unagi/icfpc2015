@@ -8,7 +8,7 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_NOBIND_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_NOBIND_HPP_
 
-#include <boost/local_function/config.hpp>
+#include "boost/local_function/config.hpp"
 
 // NOTE: The current implementation needs no-bind placeholders only when
 // local types cannot be passed as template parameters.

@@ -9,9 +9,9 @@
  * $Date$
  */
 
-#include <boost/date_time/date_duration.hpp>
-#include <boost/date_time/int_adapter.hpp>
-#include <boost/date_time/special_defs.hpp>
+#include "boost/date_time/date_duration.hpp"
+#include "boost/date_time/int_adapter.hpp"
+#include "boost/date_time/special_defs.hpp"
 
 namespace boost {
 namespace gregorian {
@@ -128,7 +128,7 @@ namespace gregorian {
 } } //namespace gregorian
 
 #if defined(BOOST_DATE_TIME_OPTIONAL_GREGORIAN_TYPES)
-#include <boost/date_time/date_duration_types.hpp>
+#include "boost/date_time/date_duration_types.hpp"
 #endif
 
 #endif

@@ -9,7 +9,7 @@
 #ifndef BOOST_CSBL_MEMORY_CONFIG_HPP
 #define BOOST_CSBL_MEMORY_CONFIG_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #include <memory>
 

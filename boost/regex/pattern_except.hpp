@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         pattern_except.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares pattern-matching exception classes.
   */
 
@@ -20,12 +20,12 @@
 #define BOOST_RE_PAT_EXCEPT_HPP
 
 #ifndef BOOST_REGEX_CONFIG_HPP
-#include <boost/regex/config.hpp>
+#include "boost/regex/config.hpp"
 #endif
 
 #include <stdexcept>
 #include <cstddef>
-#include <boost/regex/v4/error_type.hpp>
+#include "boost/regex/v4/error_type.hpp"
 
 namespace boost{
 

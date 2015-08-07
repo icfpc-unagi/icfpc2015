@@ -10,10 +10,10 @@
 // http://mathworld.wolfram.com/GammaDistribution.html
 // http://en.wikipedia.org/wiki/Gamma_distribution
 
-#include <boost/math/distributions/fwd.hpp>
-#include <boost/math/special_functions/gamma.hpp>
-#include <boost/math/distributions/detail/common_error_handling.hpp>
-#include <boost/math/distributions/complement.hpp>
+#include "boost/math/distributions/fwd.hpp"
+#include "boost/math/special_functions/gamma.hpp"
+#include "boost/math/distributions/detail/common_error_handling.hpp"
+#include "boost/math/distributions/complement.hpp"
 
 #include <utility>
 
@@ -342,7 +342,7 @@ inline RealType kurtosis(const gamma_distribution<RealType, Policy>& dist)
 // This include must be at the end, *after* the accessors
 // for this distribution have been defined, in order to
 // keep compilers that support two-phase lookup happy.
-#include <boost/math/distributions/detail/derived_accessors.hpp>
+#include "boost/math/distributions/detail/derived_accessors.hpp"
 
 #endif // BOOST_STATS_GAMMA_HPP
 

@@ -17,11 +17,11 @@
 #endif
 
 
-#include <boost/ptr_container/detail/reversible_ptr_container.hpp>
-#include <boost/ptr_container/indirect_fun.hpp>
-#include <boost/ptr_container/detail/void_ptr_iterator.hpp>
-#include <boost/type_traits/remove_pointer.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/ptr_container/detail/reversible_ptr_container.hpp"
+#include "boost/ptr_container/indirect_fun.hpp"
+#include "boost/ptr_container/detail/void_ptr_iterator.hpp"
+#include "boost/type_traits/remove_pointer.hpp"
+#include "boost/type_traits/is_same.hpp"
 
 
 namespace boost

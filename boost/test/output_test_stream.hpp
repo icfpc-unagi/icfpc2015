@@ -16,14 +16,14 @@
 #define BOOST_TEST_OUTPUT_TEST_STREAM_HPP_012705GER
 
 // Boost.Test
-#include <boost/test/detail/global_typedef.hpp>
-#include <boost/test/utils/wrap_stringstream.hpp>
-#include <boost/test/predicate_result.hpp>
+#include "boost/test/detail/global_typedef.hpp"
+#include "boost/test/utils/wrap_stringstream.hpp"
+#include "boost/test/predicate_result.hpp"
 
 // STL
 #include <cstddef>          // for std::size_t
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -73,6 +73,6 @@ private:
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_OUTPUT_TEST_STREAM_HPP_012705GER

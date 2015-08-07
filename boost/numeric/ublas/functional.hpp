@@ -15,24 +15,24 @@
 
 #include <functional>
 
-#include <boost/numeric/ublas/traits.hpp>
+#include "boost/numeric/ublas/traits.hpp"
 #ifdef BOOST_UBLAS_USE_DUFF_DEVICE
-#include <boost/numeric/ublas/detail/duff.hpp>
+#include "boost/numeric/ublas/detail/duff.hpp"
 #endif
 #ifdef BOOST_UBLAS_USE_SIMD
-#include <boost/numeric/ublas/detail/raw.hpp>
+#include "boost/numeric/ublas/detail/raw.hpp"
 #else
 namespace boost { namespace numeric { namespace ublas { namespace raw {
 }}}}
 #endif
 #ifdef BOOST_UBLAS_HAVE_BINDINGS
-#include <boost/numeric/bindings/traits/std_vector.hpp>
-#include <boost/numeric/bindings/traits/ublas_vector.hpp>
-#include <boost/numeric/bindings/traits/ublas_matrix.hpp>
-#include <boost/numeric/bindings/atlas/cblas.hpp>
+#include "boost/numeric/bindings/traits/std_vector.hpp"
+#include "boost/numeric/bindings/traits/ublas_vector.hpp"
+#include "boost/numeric/bindings/traits/ublas_matrix.hpp"
+#include "boost/numeric/bindings/atlas/cblas.hpp"
 #endif
 
-#include <boost/numeric/ublas/detail/definitions.hpp>
+#include "boost/numeric/ublas/detail/definitions.hpp"
 
 
 

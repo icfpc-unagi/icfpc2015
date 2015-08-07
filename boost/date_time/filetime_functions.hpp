@@ -15,7 +15,7 @@
  * BOOST_HAS_FTIME defined.
  */
 
-#include <boost/date_time/compiler_config.hpp>
+#include "boost/date_time/compiler_config.hpp"
 
 #if defined(BOOST_HAS_FTIME) // skip this file if no FILETIME
 
@@ -23,9 +23,9 @@
 #  include <windows.h>
 #endif
 
-#include <boost/cstdint.hpp>
-#include <boost/date_time/time.hpp>
-#include <boost/date_time/date_defs.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/date_time/time.hpp"
+#include "boost/date_time/date_defs.hpp"
 
 namespace boost {
 

@@ -9,8 +9,8 @@ Copyright (c) 2008-2010: Joachim Faulhaber
 #define BOOST_ICL_TYPE_TRAITS_UNIT_ELEMENT_HPP_JOFA_080912
 
 #include <string>
-#include <boost/icl/type_traits/identity_element.hpp>
-#include <boost/icl/type_traits/succ_pred.hpp>
+#include "boost/icl/type_traits/identity_element.hpp"
+#include "boost/icl/type_traits/succ_pred.hpp"
 
 namespace boost{ namespace icl
 {

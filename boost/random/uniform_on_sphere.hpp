@@ -20,10 +20,10 @@
 #include <vector>
 #include <algorithm>     // std::transform
 #include <functional>    // std::bind2nd, std::divides
-#include <boost/assert.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/operators.hpp>
-#include <boost/random/normal_distribution.hpp>
+#include "boost/assert.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/operators.hpp"
+#include "boost/random/normal_distribution.hpp"
 
 namespace boost {
 namespace random {

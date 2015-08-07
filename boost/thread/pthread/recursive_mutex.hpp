@@ -7,25 +7,25 @@
 // http://www.boost.org/LICENSE_1_0.txt)
 
 #include <pthread.h>
-#include <boost/throw_exception.hpp>
-#include <boost/thread/exceptions.hpp>
+#include "boost/throw_exception.hpp"
+#include "boost/thread/exceptions.hpp"
 #if defined BOOST_THREAD_PROVIDES_NESTED_LOCKS
-#include <boost/thread/lock_types.hpp>
+#include "boost/thread/lock_types.hpp"
 #endif
-#include <boost/thread/thread_time.hpp>
-#include <boost/assert.hpp>
+#include "boost/thread/thread_time.hpp"
+#include "boost/assert.hpp"
 #ifndef _WIN32
 #include <unistd.h>
 #endif
-#include <boost/date_time/posix_time/conversion.hpp>
+#include "boost/date_time/posix_time/conversion.hpp"
 #include <errno.h>
-#include <boost/thread/pthread/timespec.hpp>
-#include <boost/thread/pthread/pthread_mutex_scoped_lock.hpp>
+#include "boost/thread/pthread/timespec.hpp"
+#include "boost/thread/pthread/pthread_mutex_scoped_lock.hpp"
 #ifdef BOOST_THREAD_USES_CHRONO
-#include <boost/chrono/system_clocks.hpp>
-#include <boost/chrono/ceil.hpp>
+#include "boost/chrono/system_clocks.hpp"
+#include "boost/chrono/ceil.hpp"
 #endif
-#include <boost/thread/detail/delete.hpp>
+#include "boost/thread/detail/delete.hpp"
 
 #ifdef _POSIX_TIMEOUTS
 #if _POSIX_TIMEOUTS >= 0 && _POSIX_TIMEOUTS>=200112L
@@ -40,7 +40,7 @@
 #define BOOST_USE_PTHREAD_RECURSIVE_TIMEDLOCK
 #endif
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -396,6 +396,6 @@ namespace boost
 
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

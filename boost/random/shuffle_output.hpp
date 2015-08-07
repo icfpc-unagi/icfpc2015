@@ -16,7 +16,7 @@
 #ifndef BOOST_RANDOM_SHUFFLE_OUTPUT_HPP
 #define BOOST_RANDOM_SHUFFLE_OUTPUT_HPP
 
-#include <boost/random/shuffle_order.hpp>
+#include "boost/random/shuffle_order.hpp"
 
 namespace boost {
 namespace random {

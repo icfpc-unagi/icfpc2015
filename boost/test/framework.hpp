@@ -16,11 +16,11 @@
 #define BOOST_TEST_FRAMEWORK_HPP_020805GER
 
 // Boost.Test
-#include <boost/test/detail/global_typedef.hpp>
-#include <boost/test/detail/fwd_decl.hpp>
-#include <boost/test/utils/trivial_singleton.hpp>
+#include "boost/test/detail/global_typedef.hpp"
+#include "boost/test/detail/fwd_decl.hpp"
+#include "boost/test/utils/trivial_singleton.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 // STL
 #include <stdexcept>
@@ -106,7 +106,7 @@ struct nothing_to_test {}; // not really an error
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_FRAMEWORK_HPP_020805GER
 

@@ -8,9 +8,9 @@
 
 
 
-#include <boost/statechart/result.hpp>
+#include "boost/statechart/result.hpp"
 
-#include <boost/statechart/detail/reaction_dispatcher.hpp>
+#include "boost/statechart/detail/reaction_dispatcher.hpp"
 
 
 

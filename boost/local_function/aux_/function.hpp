@@ -9,20 +9,20 @@
 #   ifndef BOOST_LOCAL_FUNCTION_AUX_FUNCTION_HPP_
 #       define BOOST_LOCAL_FUNCTION_AUX_FUNCTION_HPP_
 
-#       include <boost/local_function/config.hpp>
-#       include <boost/local_function/aux_/member.hpp>
-#       include <boost/call_traits.hpp>
-#       include <boost/typeof/typeof.hpp>
-#       include <boost/config.hpp>
-#       include <boost/preprocessor/iteration/iterate.hpp>
-#       include <boost/preprocessor/repetition/repeat.hpp>
-#       include <boost/preprocessor/repetition/enum.hpp>
-#       include <boost/preprocessor/punctuation/comma_if.hpp>
-#       include <boost/preprocessor/arithmetic/add.hpp>
-#       include <boost/preprocessor/arithmetic/sub.hpp>
-#       include <boost/preprocessor/arithmetic/inc.hpp>
-#       include <boost/preprocessor/control/iif.hpp>
-#       include <boost/preprocessor/cat.hpp>
+#       include "boost/local_function/config.hpp"
+#       include "boost/local_function/aux_/member.hpp"
+#       include "boost/call_traits.hpp"
+#       include "boost/typeof/typeof.hpp"
+#       include "boost/config.hpp"
+#       include "boost/preprocessor/iteration/iterate.hpp"
+#       include "boost/preprocessor/repetition/repeat.hpp"
+#       include "boost/preprocessor/repetition/enum.hpp"
+#       include "boost/preprocessor/punctuation/comma_if.hpp"
+#       include "boost/preprocessor/arithmetic/add.hpp"
+#       include "boost/preprocessor/arithmetic/sub.hpp"
+#       include "boost/preprocessor/arithmetic/inc.hpp"
+#       include "boost/preprocessor/control/iif.hpp"
+#       include "boost/preprocessor/cat.hpp"
 
 // PRIVATE //
 

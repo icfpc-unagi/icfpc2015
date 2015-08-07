@@ -9,8 +9,8 @@
 #ifndef BOOST_FT_FUNCTION_TYPE_HPP_INCLUDED
 #define BOOST_FT_FUNCTION_TYPE_HPP_INCLUDED
 
-#include <boost/function_types/detail/synthesize.hpp>
-#include <boost/function_types/detail/to_sequence.hpp>
+#include "boost/function_types/detail/synthesize.hpp"
+#include "boost/function_types/detail/to_sequence.hpp"
 
 namespace boost 
 { 

@@ -14,11 +14,11 @@
 #ifndef BOOST_MOVE_ALGORITHM_HPP
 #define BOOST_MOVE_ALGORITHM_HPP
 
-#include <boost/move/detail/config_begin.hpp>
+#include "boost/move/detail/config_begin.hpp"
 
-#include <boost/move/utility_core.hpp>
-#include <boost/move/iterator.hpp>
-#include <boost/detail/no_exceptions_support.hpp>
+#include "boost/move/utility_core.hpp"
+#include "boost/move/iterator.hpp"
+#include "boost/detail/no_exceptions_support.hpp"
 
 #include <algorithm> //copy, copy_backward
 #include <memory>    //uninitialized_copy
@@ -269,6 +269,6 @@ inline F copy_or_move(I f, I l, F r
 
 }  //namespace boost {
 
-#include <boost/move/detail/config_end.hpp>
+#include "boost/move/detail/config_end.hpp"
 
 #endif //#ifndef BOOST_MOVE_ALGORITHM_HPP

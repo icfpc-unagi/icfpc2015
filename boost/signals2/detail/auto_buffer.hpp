@@ -6,7 +6,7 @@
 #ifndef BOOST_SIGNALS2_DETAIL_AUTO_BUFFER_HPP_25_02_2009
 #define BOOST_SIGNALS2_DETAIL_AUTO_BUFFER_HPP_25_02_2009
 
-#include <boost/detail/workaround.hpp>
+#include "boost/detail/workaround.hpp"
 
 #if defined(_MSC_VER)
 # pragma once
@@ -17,20 +17,20 @@
 #pragma warning(disable:4996)
 #endif
 
-#include <boost/assert.hpp>
-#include <boost/iterator/reverse_iterator.hpp>
-#include <boost/iterator/iterator_traits.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/multi_index/detail/scope_guard.hpp>
-#include <boost/swap.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/type_traits/aligned_storage.hpp>
-#include <boost/type_traits/alignment_of.hpp>
-#include <boost/type_traits/has_nothrow_copy.hpp>
-#include <boost/type_traits/has_nothrow_assign.hpp>
-#include <boost/type_traits/has_trivial_assign.hpp>
-#include <boost/type_traits/has_trivial_constructor.hpp>
-#include <boost/type_traits/has_trivial_destructor.hpp>
+#include "boost/assert.hpp"
+#include "boost/iterator/reverse_iterator.hpp"
+#include "boost/iterator/iterator_traits.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/multi_index/detail/scope_guard.hpp"
+#include "boost/swap.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/type_traits/aligned_storage.hpp"
+#include "boost/type_traits/alignment_of.hpp"
+#include "boost/type_traits/has_nothrow_copy.hpp"
+#include "boost/type_traits/has_nothrow_assign.hpp"
+#include "boost/type_traits/has_trivial_assign.hpp"
+#include "boost/type_traits/has_trivial_constructor.hpp"
+#include "boost/type_traits/has_trivial_destructor.hpp"
 #include <algorithm>
 #include <cstring>
 #include <iterator>

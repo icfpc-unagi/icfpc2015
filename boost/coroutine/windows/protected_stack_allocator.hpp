@@ -15,10 +15,10 @@ extern "C" {
 #include <cstddef>
 #include <new>
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
-#include <boost/coroutine/detail/config.hpp>
-#include <boost/coroutine/stack_traits.hpp>
+#include "boost/coroutine/detail/config.hpp"
+#include "boost/coroutine/stack_traits.hpp"
 
 #ifdef BOOST_HAS_ABI_HEADERS
 #  include BOOST_ABI_PREFIX

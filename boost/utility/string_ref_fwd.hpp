@@ -15,7 +15,7 @@
 #ifndef BOOST_STRING_REF_FWD_HPP
 #define BOOST_STRING_REF_FWD_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #include <string>
 
 namespace boost {

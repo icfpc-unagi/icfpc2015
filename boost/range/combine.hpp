@@ -9,9 +9,9 @@
 #ifndef BOOST_RANGE_COMBINE_HPP
 #define BOOST_RANGE_COMBINE_HPP
 
-#include <boost/config.hpp>
-#include <boost/range/iterator_range_core.hpp>
-#include <boost/iterator/zip_iterator.hpp>
+#include "boost/config.hpp"
+#include "boost/range/iterator_range_core.hpp"
+#include "boost/iterator/zip_iterator.hpp"
 
 namespace boost
 {
@@ -37,9 +37,9 @@ public:
     defined(BOOST_NO_CXX11_DECLTYPE) || \
     defined(BOOST_NO_CXX11_VARIADIC_TEMPLATES) || \
     defined(BOOST_NO_CXX11_RVALUE_REFERENCES)
-#   include <boost/range/detail/combine_cxx03.hpp>
+#   include "boost/range/detail/combine_cxx03.hpp"
 #else
-#   include <boost/range/detail/combine_cxx11.hpp>
+#   include "boost/range/detail/combine_cxx11.hpp"
 #endif
 
 #endif

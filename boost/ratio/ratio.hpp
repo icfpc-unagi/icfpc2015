@@ -32,23 +32,23 @@ time2_demo contained this comment:
 #ifndef BOOST_RATIO_RATIO_HPP
 #define BOOST_RATIO_RATIO_HPP
 
-#include <boost/ratio/config.hpp>
-#include <boost/ratio/detail/mpl/abs.hpp>
-#include <boost/ratio/detail/mpl/sign.hpp>
-#include <boost/ratio/detail/mpl/gcd.hpp>
-#include <boost/ratio/detail/mpl/lcm.hpp>
+#include "boost/ratio/config.hpp"
+#include "boost/ratio/detail/mpl/abs.hpp"
+#include "boost/ratio/detail/mpl/sign.hpp"
+#include "boost/ratio/detail/mpl/gcd.hpp"
+#include "boost/ratio/detail/mpl/lcm.hpp"
 #include <cstdlib>
 #include <climits>
 #include <limits>
-#include <boost/cstdint.hpp>
-#include <boost/type_traits/integral_constant.hpp>
-#include <boost/core/enable_if.hpp>
-#include <boost/integer_traits.hpp>
-#include <boost/ratio/ratio_fwd.hpp>
-#include <boost/ratio/detail/overflow_helpers.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/type_traits/integral_constant.hpp"
+#include "boost/core/enable_if.hpp"
+#include "boost/integer_traits.hpp"
+#include "boost/ratio/ratio_fwd.hpp"
+#include "boost/ratio/detail/overflow_helpers.hpp"
 #ifdef BOOST_RATIO_EXTENSIONS
-#include <boost/rational.hpp>
-#include <boost/ratio/mpl/rational_c_tag.hpp>
+#include "boost/rational.hpp"
+#include "boost/ratio/mpl/rational_c_tag.hpp"
 #endif
 
 //

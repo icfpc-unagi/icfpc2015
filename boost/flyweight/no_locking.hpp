@@ -13,9 +13,9 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
-#include <boost/flyweight/no_locking_fwd.hpp>
-#include <boost/flyweight/locking_tag.hpp>
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
+#include "boost/flyweight/no_locking_fwd.hpp"
+#include "boost/flyweight/locking_tag.hpp"
 
 /* null locking policy */
 

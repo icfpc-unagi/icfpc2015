@@ -18,7 +18,7 @@ namespace io
 {
 
 
-//  From <boost/io/ios_state.hpp>  -------------------------------------------//
+//  From "boost/io/ios_state.hpp"  -------------------------------------------//
 
 class ios_flags_saver;
 class ios_precision_saver;

@@ -9,7 +9,7 @@
   #define BOOST_MP_DETAIL_DYNAMIC_ARRAY_HPP
 
   #include <vector>
-  #include <boost/multiprecision/detail/rebind.hpp>
+  #include "boost/multiprecision/detail/rebind.hpp"
 
   namespace boost { namespace multiprecision { namespace backends { namespace detail
   {

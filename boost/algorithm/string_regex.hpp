@@ -16,8 +16,8 @@
     In addition to string.hpp contains also regex-related stuff.
 */
 
-#include <boost/regex.hpp>
-#include <boost/algorithm/string.hpp>
-#include <boost/algorithm/string/regex.hpp>
+#include "boost/regex.hpp"
+#include "boost/algorithm/string.hpp"
+#include "boost/algorithm/string/regex.hpp"
 
 #endif  // BOOST_STRING_ALGO_REGEX_HPP

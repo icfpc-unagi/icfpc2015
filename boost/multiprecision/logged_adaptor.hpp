@@ -6,8 +6,8 @@
 #ifndef BOOST_MATH_LOGGED_ADAPTER_HPP
 #define BOOST_MATH_LOGGED_ADAPTER_HPP
 
-#include <boost/multiprecision/traits/extract_exponent_type.hpp>
-#include <boost/multiprecision/detail/integer_ops.hpp>
+#include "boost/multiprecision/traits/extract_exponent_type.hpp"
+#include "boost/multiprecision/detail/integer_ops.hpp"
 
 namespace boost{
 namespace multiprecision{

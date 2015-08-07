@@ -21,17 +21,17 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
-#include <boost/container/scoped_allocator_fwd.hpp>
-#include <boost/type_traits/integral_constant.hpp>
-#include <boost/container/allocator_traits.hpp>
-#include <boost/container/detail/type_traits.hpp>
-#include <boost/container/detail/utilities.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
+#include "boost/container/scoped_allocator_fwd.hpp"
+#include "boost/type_traits/integral_constant.hpp"
+#include "boost/container/allocator_traits.hpp"
+#include "boost/container/detail/type_traits.hpp"
+#include "boost/container/detail/utilities.hpp"
 #include <utility>
-#include <boost/container/detail/pair.hpp>
-#include <boost/move/utility_core.hpp>
-#include <boost/core/no_exceptions_support.hpp>
+#include "boost/container/detail/pair.hpp"
+#include "boost/move/utility_core.hpp"
+#include "boost/core/no_exceptions_support.hpp"
 
 namespace boost { namespace container {
 
@@ -1529,6 +1529,6 @@ inline bool operator!=(
 
 }} // namespace boost { namespace container {
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif //  BOOST_CONTAINER_ALLOCATOR_SCOPED_ALLOCATOR_HPP

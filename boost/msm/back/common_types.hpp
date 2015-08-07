@@ -11,8 +11,8 @@
 #ifndef BOOST_MSM_COMMON_TYPES_H
 #define BOOST_MSM_COMMON_TYPES_H
 
-#include <boost/tuple/tuple.hpp>
-#include <boost/msm/common.hpp>
+#include "boost/tuple/tuple.hpp"
+#include "boost/msm/common.hpp"
 
 namespace boost { namespace msm { namespace back
 {

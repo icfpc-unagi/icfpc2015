@@ -8,9 +8,9 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_SIGN_VALIDATE_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_SIGN_VALIDATE_HPP_
 
-#include <boost/local_function/aux_/preprocessor/traits/decl_sign_/validate_/defaults.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_sign_/validate_/this.hpp>
-#include <boost/preprocessor/tuple/eat.hpp>
+#include "boost/local_function/aux_/preprocessor/traits/decl_sign_/validate_/defaults.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_sign_/validate_/this.hpp"
+#include "boost/preprocessor/tuple/eat.hpp"
 
 // PRIVATE //
 

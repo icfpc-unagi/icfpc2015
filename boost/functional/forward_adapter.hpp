@@ -9,16 +9,16 @@
 #ifndef BOOST_FUNCTIONAL_FORWARD_ADAPTER_HPP_INCLUDED
 #   ifndef BOOST_PP_IS_ITERATING
 
-#   include <boost/config.hpp>
-#   include <boost/detail/workaround.hpp>
+#   include "boost/config.hpp"
+#   include "boost/detail/workaround.hpp"
 
-#   include <boost/preprocessor/iteration/iterate.hpp>
-#   include <boost/preprocessor/repetition/enum_params.hpp>
-#   include <boost/preprocessor/repetition/enum_binary_params.hpp>
-#   include <boost/preprocessor/facilities/intercept.hpp>
-#   include <boost/preprocessor/arithmetic/dec.hpp>
+#   include "boost/preprocessor/iteration/iterate.hpp"
+#   include "boost/preprocessor/repetition/enum_params.hpp"
+#   include "boost/preprocessor/repetition/enum_binary_params.hpp"
+#   include "boost/preprocessor/facilities/intercept.hpp"
+#   include "boost/preprocessor/arithmetic/dec.hpp"
 
-#   include <boost/utility/result_of.hpp>
+#   include "boost/utility/result_of.hpp"
 
 #   ifndef BOOST_FUNCTIONAL_FORWARD_ADAPTER_MAX_ARITY
 #     define BOOST_FUNCTIONAL_FORWARD_ADAPTER_MAX_ARITY 6
@@ -197,7 +197,7 @@ namespace boost
 
 #       define N 0
 
-#       define  BOOST_PP_FILENAME_1 <boost/functional/forward_adapter.hpp>
+#       define  BOOST_PP_FILENAME_1 "boost/functional/forward_adapter.hpp"
 #       define  BOOST_PP_ITERATION_LIMITS (0,limit1)
 #       include BOOST_PP_ITERATE()
 
@@ -237,11 +237,11 @@ namespace boost
 #       define BOOST_FUNCTIONAL_FORWARD_ADAPTER_HPP_INCLUDED
 
 #   elif BOOST_PP_ITERATION_DEPTH() == 1 && limit2
-#     define  BOOST_PP_FILENAME_2 <boost/functional/forward_adapter.hpp>
+#     define  BOOST_PP_FILENAME_2 "boost/functional/forward_adapter.hpp"
 #     define  BOOST_PP_ITERATION_LIMITS (0,limit2)
 #     include BOOST_PP_ITERATE()
 #   elif BOOST_PP_ITERATION_DEPTH() == 2 && limit3
-#     define  BOOST_PP_FILENAME_3 <boost/functional/forward_adapter.hpp>
+#     define  BOOST_PP_FILENAME_3 "boost/functional/forward_adapter.hpp"
 #     define  BOOST_PP_ITERATION_LIMITS (0,limit3)
 #     include BOOST_PP_ITERATE()
 

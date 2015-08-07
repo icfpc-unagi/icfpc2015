@@ -24,12 +24,12 @@
 #ifndef BOOST_MATH_DIST_BETA_HPP
 #define BOOST_MATH_DIST_BETA_HPP
 
-#include <boost/math/distributions/fwd.hpp>
-#include <boost/math/special_functions/beta.hpp> // for beta.
-#include <boost/math/distributions/complement.hpp> // complements.
-#include <boost/math/distributions/detail/common_error_handling.hpp> // error checks
-#include <boost/math/special_functions/fpclassify.hpp> // isnan.
-#include <boost/math/tools/roots.hpp> // for root finding.
+#include "boost/math/distributions/fwd.hpp"
+#include "boost/math/special_functions/beta.hpp" // for beta.
+#include "boost/math/distributions/complement.hpp" // complements.
+#include "boost/math/distributions/detail/common_error_handling.hpp" // error checks
+#include "boost/math/special_functions/fpclassify.hpp" // isnan.
+#include "boost/math/tools/roots.hpp" // for root finding.
 
 #if defined (BOOST_MSVC)
 #  pragma warning(push)
@@ -530,7 +530,7 @@ namespace boost
 // This include must be at the end, *after* the accessors
 // for this distribution have been defined, in order to
 // keep compilers that support two-phase lookup happy.
-#include <boost/math/distributions/detail/derived_accessors.hpp>
+#include "boost/math/distributions/detail/derived_accessors.hpp"
 
 #if defined (BOOST_MSVC)
 # pragma warning(pop)

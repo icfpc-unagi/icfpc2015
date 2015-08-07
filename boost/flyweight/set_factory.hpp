@@ -13,13 +13,13 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
-#include <boost/detail/allocator_utilities.hpp>
-#include <boost/flyweight/assoc_container_factory.hpp>
-#include <boost/flyweight/factory_tag.hpp>
-#include <boost/flyweight/set_factory_fwd.hpp>
-#include <boost/mpl/aux_/lambda_support.hpp>
-#include <boost/mpl/if.hpp>
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
+#include "boost/detail/allocator_utilities.hpp"
+#include "boost/flyweight/assoc_container_factory.hpp"
+#include "boost/flyweight/factory_tag.hpp"
+#include "boost/flyweight/set_factory_fwd.hpp"
+#include "boost/mpl/aux_/lambda_support.hpp"
+#include "boost/mpl/if.hpp"
 #include <set>
 
 /* Particularization of assoc_container_factory_class using a set.

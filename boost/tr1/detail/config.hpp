@@ -20,7 +20,7 @@
 #ifdef BOOST_TR1_UTILITY_INCLUDED
 // Oops we're in a recursive include path!!
 // Need to include utility, or some std lib header,
-// but *not* via <utility> or <boost/config/no_tr1/utility.hpp>
+// but *not* via <utility> or "boost/config/no_tr1/utility.hpp"
 #  ifndef BOOST_TR1_NO_RECURSION
 #     define BOOST_TR1_NO_RECURSION
 #     define BOOST_TR1_NO_CONFIG_RECURSION
@@ -35,7 +35,7 @@
 #     undef BOOST_TR1_NO_RECURSION
 #  endif
 #else
-#include <boost/config/no_tr1/utility.hpp>
+#include "boost/config/no_tr1/utility.hpp"
 #endif
 #endif
 
@@ -165,7 +165,7 @@
 #  endif 
 #endif
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #endif
 

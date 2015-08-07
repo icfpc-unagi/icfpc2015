@@ -14,7 +14,7 @@
 #ifndef BOOST_ATOMIC_DETAIL_INT_SIZES_HPP_INCLUDED_
 #define BOOST_ATOMIC_DETAIL_INT_SIZES_HPP_INCLUDED_
 
-#include <boost/atomic/detail/config.hpp>
+#include "boost/atomic/detail/config.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once
@@ -51,7 +51,7 @@
 
 // Try to deduce sizes from limits
 #include <limits.h>
-#include <boost/cstdint.hpp>
+#include "boost/cstdint.hpp"
 
 #if (USHRT_MAX + 0) == 0xff
 #define BOOST_ATOMIC_DETAIL_SIZEOF_SHORT 1
@@ -115,7 +115,7 @@
 #if !defined(BOOST_ATOMIC_DETAIL_SIZEOF_WCHAR_T)
 
 #include <wchar.h>
-#include <boost/cstdint.hpp>
+#include "boost/cstdint.hpp"
 
 #if defined(_MSC_VER) && _MSC_VER <= 1310
 // MSVC 7.1 defines WCHAR_MAX to a value not suitable for constant expressions

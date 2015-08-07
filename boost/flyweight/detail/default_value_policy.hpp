@@ -13,10 +13,10 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
-#include <boost/detail/workaround.hpp>
-#include <boost/flyweight/detail/perfect_fwd.hpp>
-#include <boost/flyweight/detail/value_tag.hpp>
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
+#include "boost/detail/workaround.hpp"
+#include "boost/flyweight/detail/perfect_fwd.hpp"
+#include "boost/flyweight/detail/value_tag.hpp"
 
 /* Default value policy: the key is the same as the value.
  */

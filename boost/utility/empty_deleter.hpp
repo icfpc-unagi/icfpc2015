@@ -20,8 +20,8 @@
 #ifndef BOOST_UTILITY_EMPTY_DELETER_HPP
 #define BOOST_UTILITY_EMPTY_DELETER_HPP
 
-#include <boost/config.hpp>
-#include <boost/core/null_deleter.hpp>
+#include "boost/config.hpp"
+#include "boost/core/null_deleter.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

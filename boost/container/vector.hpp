@@ -15,9 +15,9 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
-#include <boost/container/container_fwd.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
+#include "boost/container/container_fwd.hpp"
 
 //#include <cstddef> //Already included by container_fwd.hpp
 #include <memory>    //for std::allocator
@@ -27,35 +27,35 @@
 #include <initializer_list>   //for std::initializer_list
 #endif
 
-#include <boost/core/no_exceptions_support.hpp>
-#include <boost/assert.hpp>
-#include <boost/move/utility_core.hpp>
-#include <boost/move/iterator.hpp>
-#include <boost/move/algorithm.hpp>
-#include <boost/move/detail/move_helpers.hpp>
-#include <boost/move/traits.hpp>
+#include "boost/core/no_exceptions_support.hpp"
+#include "boost/assert.hpp"
+#include "boost/move/utility_core.hpp"
+#include "boost/move/iterator.hpp"
+#include "boost/move/algorithm.hpp"
+#include "boost/move/detail/move_helpers.hpp"
+#include "boost/move/traits.hpp"
 
-#include <boost/container/detail/version_type.hpp>
-#include <boost/container/detail/allocation_type.hpp>
-#include <boost/container/detail/utilities.hpp>
-#include <boost/container/detail/iterators.hpp>
-#include <boost/container/detail/algorithms.hpp>
-#include <boost/container/detail/destroyers.hpp>
-#include <boost/container/allocator_traits.hpp>
-#include <boost/container/detail/allocator_version_traits.hpp>
-#include <boost/container/throw_exception.hpp>
-#include <boost/container/detail/mpl.hpp>
-#include <boost/container/detail/type_traits.hpp>
-#include <boost/container/detail/advanced_insert_int.hpp>
+#include "boost/container/detail/version_type.hpp"
+#include "boost/container/detail/allocation_type.hpp"
+#include "boost/container/detail/utilities.hpp"
+#include "boost/container/detail/iterators.hpp"
+#include "boost/container/detail/algorithms.hpp"
+#include "boost/container/detail/destroyers.hpp"
+#include "boost/container/allocator_traits.hpp"
+#include "boost/container/detail/allocator_version_traits.hpp"
+#include "boost/container/throw_exception.hpp"
+#include "boost/container/detail/mpl.hpp"
+#include "boost/container/detail/type_traits.hpp"
+#include "boost/container/detail/advanced_insert_int.hpp"
 
-#include <boost/intrusive/pointer_traits.hpp>
+#include "boost/intrusive/pointer_traits.hpp"
 
-#include <boost/type_traits/has_trivial_destructor.hpp>
-#include <boost/type_traits/has_trivial_copy.hpp>
-#include <boost/type_traits/has_trivial_assign.hpp>
-#include <boost/type_traits/has_nothrow_copy.hpp>
-#include <boost/type_traits/has_nothrow_assign.hpp>
-#include <boost/type_traits/has_nothrow_constructor.hpp>
+#include "boost/type_traits/has_trivial_destructor.hpp"
+#include "boost/type_traits/has_trivial_copy.hpp"
+#include "boost/type_traits/has_trivial_assign.hpp"
+#include "boost/type_traits/has_nothrow_copy.hpp"
+#include "boost/type_traits/has_nothrow_assign.hpp"
+#include "boost/type_traits/has_nothrow_constructor.hpp"
 
 namespace boost {
 namespace container {
@@ -2979,6 +2979,6 @@ inline void swap(boost::container::vector<T, Allocator>& x, boost::container::ve
 
 #endif   //#ifndef BOOST_CONTAINER_DOXYGEN_INVOKED
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif //   #ifndef  BOOST_CONTAINER_CONTAINER_VECTOR_HPP

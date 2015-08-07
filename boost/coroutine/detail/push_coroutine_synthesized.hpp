@@ -7,11 +7,11 @@
 #ifndef BOOST_COROUTINES_DETAIL_PUSH_COROUTINE_SYNTHESIZED_H
 #define BOOST_COROUTINES_DETAIL_PUSH_COROUTINE_SYNTHESIZED_H
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
-#include <boost/coroutine/detail/config.hpp>
-#include <boost/coroutine/detail/coroutine_context.hpp>
-#include <boost/coroutine/detail/push_coroutine_impl.hpp>
+#include "boost/coroutine/detail/config.hpp"
+#include "boost/coroutine/detail/coroutine_context.hpp"
+#include "boost/coroutine/detail/push_coroutine_impl.hpp"
 
 #ifdef BOOST_HAS_ABI_HEADERS
 #  include BOOST_ABI_PREFIX

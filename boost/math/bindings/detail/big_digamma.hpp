@@ -6,10 +6,10 @@
 #ifndef BOOST_MATH_NTL_DIGAMMA
 #define BOOST_MATH_NTL_DIGAMMA
 
-#include <boost/math/tools/rational.hpp>
-#include <boost/math/policies/error_handling.hpp>
-#include <boost/math/constants/constants.hpp>
-#include <boost/lexical_cast.hpp>
+#include "boost/math/tools/rational.hpp"
+#include "boost/math/policies/error_handling.hpp"
+#include "boost/math/constants/constants.hpp"
+#include "boost/lexical_cast.hpp"
 
 namespace boost{ namespace math{ namespace detail{
 

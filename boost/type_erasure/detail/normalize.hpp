@@ -11,27 +11,27 @@
 #ifndef BOOST_TYPE_ERASURE_DETAIL_NORMALIZE_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_DETAIL_NORMALIZE_HPP_INCLUDED
 
-#include <boost/mpl/assert.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/is_sequence.hpp>
-#include <boost/mpl/set.hpp>
-#include <boost/mpl/map.hpp>
-#include <boost/mpl/has_key.hpp>
-#include <boost/mpl/insert.hpp>
-#include <boost/mpl/vector.hpp>
-#include <boost/mpl/back_inserter.hpp>
-#include <boost/mpl/inserter.hpp>
-#include <boost/mpl/fold.hpp>
-#include <boost/mpl/transform.hpp>
-#include <boost/mpl/copy.hpp>
-#include <boost/mpl/at.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_erasure/detail/get_placeholders.hpp>
-#include <boost/type_erasure/detail/rebind_placeholders.hpp>
-#include <boost/type_erasure/detail/normalize_deduced.hpp>
-#include <boost/type_erasure/relaxed.hpp>
-#include <boost/type_erasure/builtin.hpp>
+#include "boost/mpl/assert.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/is_sequence.hpp"
+#include "boost/mpl/set.hpp"
+#include "boost/mpl/map.hpp"
+#include "boost/mpl/has_key.hpp"
+#include "boost/mpl/insert.hpp"
+#include "boost/mpl/vector.hpp"
+#include "boost/mpl/back_inserter.hpp"
+#include "boost/mpl/inserter.hpp"
+#include "boost/mpl/fold.hpp"
+#include "boost/mpl/transform.hpp"
+#include "boost/mpl/copy.hpp"
+#include "boost/mpl/at.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_erasure/detail/get_placeholders.hpp"
+#include "boost/type_erasure/detail/rebind_placeholders.hpp"
+#include "boost/type_erasure/detail/normalize_deduced.hpp"
+#include "boost/type_erasure/relaxed.hpp"
+#include "boost/type_erasure/builtin.hpp"
 
 namespace boost {
 namespace type_erasure {

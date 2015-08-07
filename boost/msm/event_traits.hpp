@@ -11,8 +11,8 @@
 #ifndef BOOST_MSM_EVENT_TRAITS_H
 #define BOOST_MSM_EVENT_TRAITS_H
 
-#include <boost/any.hpp>
-#include <boost/mpl/bool.hpp>
+#include "boost/any.hpp"
+#include "boost/mpl/bool.hpp"
 
 namespace boost { namespace msm
 {

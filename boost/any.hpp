@@ -17,18 +17,18 @@
 #include <algorithm>
 
 #include "boost/config.hpp"
-#include <boost/type_index.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/type_traits/decay.hpp>
-#include <boost/type_traits/remove_cv.hpp>
-#include <boost/type_traits/add_reference.hpp>
-#include <boost/type_traits/is_reference.hpp>
-#include <boost/type_traits/is_const.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/is_const.hpp>
+#include "boost/type_index.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/type_traits/decay.hpp"
+#include "boost/type_traits/remove_cv.hpp"
+#include "boost/type_traits/add_reference.hpp"
+#include "boost/type_traits/is_reference.hpp"
+#include "boost/type_traits/is_const.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/is_const.hpp"
 
 namespace boost
 {

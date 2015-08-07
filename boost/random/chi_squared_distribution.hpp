@@ -14,10 +14,10 @@
 #define BOOST_RANDOM_CHI_SQUARED_DISTRIBUTION_HPP_INCLUDED
 
 #include <iosfwd>
-#include <boost/limits.hpp>
+#include "boost/limits.hpp"
 
-#include <boost/random/detail/config.hpp>
-#include <boost/random/gamma_distribution.hpp>
+#include "boost/random/detail/config.hpp"
+#include "boost/random/gamma_distribution.hpp"
 
 namespace boost {
 namespace random {

@@ -25,9 +25,9 @@
 // This header implements separate compilation features as described in
 // http://www.boost.org/more/separate_compilation.html
 
-#include <boost/config.hpp>
-#include <boost/system/api_config.hpp>  // for BOOST_POSIX_API or BOOST_WINDOWS_API
-#include <boost/detail/workaround.hpp> 
+#include "boost/config.hpp"
+#include "boost/system/api_config.hpp"  // for BOOST_POSIX_API or BOOST_WINDOWS_API
+#include "boost/detail/workaround.hpp" 
 
 //  BOOST_FILESYSTEM_DEPRECATED needed for source compiles -----------------------------//
 
@@ -103,7 +103,7 @@
 //
 // And include the header that does the work:
 //
-#include <boost/config/auto_link.hpp>
+#include "boost/config/auto_link.hpp"
 #endif  // auto-linking disabled
 
 #endif // BOOST_FILESYSTEM3_CONFIG_HPP

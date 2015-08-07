@@ -67,17 +67,17 @@ STLport (with any compiler), ver. 4.0 and earlier.
 */
 
 // std::numeric_limits
-#include <boost/limits.hpp>
+#include "boost/limits.hpp"
 // new, std::bad_alloc
 #include <new>
 
-#include <boost/throw_exception.hpp>
-#include <boost/pool/poolfwd.hpp>
+#include "boost/throw_exception.hpp"
+#include "boost/pool/poolfwd.hpp"
 
 // boost::singleton_pool
-#include <boost/pool/singleton_pool.hpp>
+#include "boost/pool/singleton_pool.hpp"
 
-#include <boost/detail/workaround.hpp>
+#include "boost/detail/workaround.hpp"
 
 #ifdef BOOST_POOL_INSTRUMENT
 #include <iostream>

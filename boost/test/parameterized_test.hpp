@@ -16,14 +16,14 @@
 #define BOOST_TEST_PARAMETERIZED_TEST_HPP_021102GER
 
 // Boost.Test
-#include <boost/test/unit_test_suite.hpp>
-#include <boost/test/utils/callback.hpp>
+#include "boost/test/unit_test_suite.hpp"
+#include "boost/test/utils/callback.hpp"
 
 // Boost
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/type_traits/remove_const.hpp>
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/type_traits/remove_const.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -175,7 +175,7 @@ make_test_case( void (UserTestCase::*test_method )( ParamType ),
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_PARAMETERIZED_TEST_HPP_021102GER
 

@@ -8,9 +8,9 @@
 #ifndef BOOST_IOSTREAMS_DETAIL_CONFIG_CODECVT_HPP_INCLUDED
 #define BOOST_IOSTREAMS_DETAIL_CONFIG_CODECVT_HPP_INCLUDED
 
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/detail/config/wide_streams.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/detail/config/wide_streams.hpp"
 #include <cstddef>
 
 #if defined(_MSC_VER) && (_MSC_VER >= 1020)

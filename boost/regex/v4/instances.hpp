@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         instances.cpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Defines those template instances that are placed in the
   *                library rather than in the users object files.
   */

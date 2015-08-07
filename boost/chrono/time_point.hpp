@@ -30,12 +30,12 @@ time2_demo contained this comment:
 #ifndef BOOST_CHRONO_TIME_POINT_HPP
 #define BOOST_CHRONO_TIME_POINT_HPP
 
-#include <boost/chrono/duration.hpp>
+#include "boost/chrono/duration.hpp"
 #include <iostream>
 
 #ifndef BOOST_CHRONO_HEADER_ONLY
 // this must occur after all of the includes and before any code appears:
-#include <boost/config/abi_prefix.hpp> // must be the last #include
+#include "boost/config/abi_prefix.hpp" // must be the last #include
 #endif
 
 //----------------------------------------------------------------------------//
@@ -374,7 +374,7 @@ namespace chrono {
 
 #ifndef BOOST_CHRONO_HEADER_ONLY
 // the suffix header occurs after all of our code:
-#include <boost/config/abi_suffix.hpp> // pops abi_prefix.hpp pragmas
+#include "boost/config/abi_suffix.hpp" // pops abi_prefix.hpp pragmas
 #endif
 
 #endif // BOOST_CHRONO_TIME_POINT_HPP

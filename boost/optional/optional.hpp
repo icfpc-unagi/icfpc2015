@@ -21,41 +21,41 @@
 #include <algorithm>
 #include <iosfwd>
 
-#include <boost/config.hpp>
-#include <boost/assert.hpp>
-#include <boost/core/explicit_operator_bool.hpp>
-#include <boost/optional/bad_optional_access.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/type.hpp>
-#include <boost/type_traits/alignment_of.hpp>
-#include <boost/type_traits/has_nothrow_constructor.hpp>
-#include <boost/type_traits/type_with_alignment.hpp>
-#include <boost/type_traits/remove_const.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/type_traits/decay.hpp>
-#include <boost/type_traits/is_base_of.hpp>
-#include <boost/type_traits/is_lvalue_reference.hpp>
-#include <boost/type_traits/is_nothrow_move_assignable.hpp>
-#include <boost/type_traits/is_nothrow_move_constructible.hpp>
-#include <boost/type_traits/is_reference.hpp>
-#include <boost/type_traits/is_rvalue_reference.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/not.hpp>
-#include <boost/detail/reference_content.hpp>
-#include <boost/move/utility.hpp>
-#include <boost/none.hpp>
-#include <boost/utility/addressof.hpp>
-#include <boost/utility/compare_pointees.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/utility/in_place_factory.hpp>
-#include <boost/utility/swap.hpp>
+#include "boost/config.hpp"
+#include "boost/assert.hpp"
+#include "boost/core/explicit_operator_bool.hpp"
+#include "boost/optional/bad_optional_access.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/type.hpp"
+#include "boost/type_traits/alignment_of.hpp"
+#include "boost/type_traits/has_nothrow_constructor.hpp"
+#include "boost/type_traits/type_with_alignment.hpp"
+#include "boost/type_traits/remove_const.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/type_traits/decay.hpp"
+#include "boost/type_traits/is_base_of.hpp"
+#include "boost/type_traits/is_lvalue_reference.hpp"
+#include "boost/type_traits/is_nothrow_move_assignable.hpp"
+#include "boost/type_traits/is_nothrow_move_constructible.hpp"
+#include "boost/type_traits/is_reference.hpp"
+#include "boost/type_traits/is_rvalue_reference.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/not.hpp"
+#include "boost/detail/reference_content.hpp"
+#include "boost/move/utility.hpp"
+#include "boost/none.hpp"
+#include "boost/utility/addressof.hpp"
+#include "boost/utility/compare_pointees.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/utility/in_place_factory.hpp"
+#include "boost/utility/swap.hpp"
 
 
 
-#include <boost/optional/optional_fwd.hpp>
+#include "boost/optional/optional_fwd.hpp"
 
 #if BOOST_WORKAROUND(BOOST_INTEL_CXX_VERSION,<=700)
 // AFAICT only Intel 7 correctly resolves the overload set

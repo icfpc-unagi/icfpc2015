@@ -6,6 +6,6 @@
 #ifndef UUID_FA5836A2CADA11DC8CD47C8555D89593
 #define UUID_FA5836A2CADA11DC8CD47C8555D89593
 
-#include <boost/exception/detail/exception_ptr.hpp>
+#include "boost/exception/detail/exception_ptr.hpp"
 
 #endif

@@ -10,9 +10,9 @@
 #pragma once
 #endif
 
-#include <boost/config/no_tr1/cmath.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/math/tools/precision.hpp>
+#include "boost/config/no_tr1/cmath.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/math/tools/precision.hpp"
 
 namespace boost{ namespace math{ namespace tools{
 

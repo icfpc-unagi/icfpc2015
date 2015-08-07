@@ -13,18 +13,18 @@
 
 #include <map>
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/intrusive_ptr.hpp> 
+#include "boost/wave/wave_config.hpp"
+#include "boost/intrusive_ptr.hpp" 
 
 #if BOOST_WAVE_SERIALIZATION != 0
-#include <boost/serialization/serialization.hpp>
-#include <boost/serialization/map.hpp>
-#include <boost/shared_ptr.hpp>
+#include "boost/serialization/serialization.hpp"
+#include "boost/serialization/map.hpp"
+#include "boost/shared_ptr.hpp"
 #else
-#include <boost/intrusive_ptr.hpp> 
+#include "boost/intrusive_ptr.hpp" 
 #endif
 
-#include <boost/iterator/transform_iterator.hpp>
+#include "boost/iterator/transform_iterator.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

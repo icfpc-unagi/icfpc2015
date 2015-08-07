@@ -11,11 +11,11 @@
 #ifndef BOOST_MOVE_DEFAULT_DELETE_HPP_INCLUDED
 #define BOOST_MOVE_DEFAULT_DELETE_HPP_INCLUDED
 
-#include <boost/move/detail/config_begin.hpp>
-#include <boost/move/detail/workaround.hpp>
-#include <boost/move/detail/unique_ptr_meta_utils.hpp>
-#include <boost/move/utility_core.hpp>
-#include <boost/static_assert.hpp>
+#include "boost/move/detail/config_begin.hpp"
+#include "boost/move/detail/workaround.hpp"
+#include "boost/move/detail/unique_ptr_meta_utils.hpp"
+#include "boost/move/utility_core.hpp"
+#include "boost/static_assert.hpp"
 
 #include <cstddef>   //For std::size_t,std::nullptr_t
 
@@ -182,6 +182,6 @@ struct default_delete
 }  //namespace movelib {
 }  //namespace boost{
 
-#include <boost/move/detail/config_end.hpp>
+#include "boost/move/detail/config_end.hpp"
 
 #endif   //#ifndef BOOST_MOVE_DEFAULT_DELETE_HPP_INCLUDED

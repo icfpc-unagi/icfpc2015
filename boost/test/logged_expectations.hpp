@@ -16,11 +16,11 @@
 #define BOOST_TEST_LOGGED_EXPECTATIONS_HPP_120905GER
 
 // Boost.Test
-#include <boost/test/detail/config.hpp>
-#include <boost/test/detail/unit_test_parameters.hpp>
-#include <boost/test/utils/callback.hpp>
+#include "boost/test/detail/config.hpp"
+#include "boost/test/detail/unit_test_parameters.hpp"
+#include "boost/test/utils/callback.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -69,6 +69,6 @@ logged_expectations( unit_test::callback0<> const&  F,
 
 } // namespace boost
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_LOGGED_EXPECTATIONS_HPP_120905GER

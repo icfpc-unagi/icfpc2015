@@ -6,9 +6,9 @@
 #ifndef BOOST_MP_FLOAT128_HPP
 #define BOOST_MP_FLOAT128_HPP
 
-#include <boost/config.hpp>
-#include <boost/scoped_array.hpp>
-#include <boost/multiprecision/number.hpp>
+#include "boost/config.hpp"
+#include "boost/scoped_array.hpp"
+#include "boost/multiprecision/number.hpp"
 
 #if defined(BOOST_INTEL) && !defined(BOOST_MP_USE_FLOAT128) && !defined(BOOST_MP_USE_QUAD)
 #  if defined(BOOST_INTEL_CXX_VERSION) && (BOOST_INTEL_CXX_VERSION >= 1310) && defined(__GNUC__)
@@ -43,7 +43,7 @@ typedef __float128 float128_type;
 
 #elif defined(BOOST_MP_USE_QUAD)
 
-#include <boost/multiprecision/detail/float_string_cvt.hpp>
+#include "boost/multiprecision/detail/float_string_cvt.hpp"
 
 typedef _Quad float128_type;
 

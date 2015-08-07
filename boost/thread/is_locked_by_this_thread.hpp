@@ -7,9 +7,9 @@
 #ifndef BOOST_THREAD_IS_LOCKED_BY_THIS_THREAD_HPP
 #define BOOST_THREAD_IS_LOCKED_BY_THIS_THREAD_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -34,6 +34,6 @@ namespace boost
   }
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif // header

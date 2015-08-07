@@ -7,9 +7,9 @@
 
 #ifndef BOOST_IOSTREAMS_DETAIL_TEMPLATE_PARAMS_HPP_INCLUDED
 
-#include <boost/preprocessor/control/expr_if.hpp>
-#include <boost/preprocessor/control/if.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
+#include "boost/preprocessor/control/expr_if.hpp"
+#include "boost/preprocessor/control/if.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
 
 #define BOOST_IOSTREAMS_TEMPLATE_PARAMS(arity, param) \
     BOOST_PP_EXPR_IF(arity, template<) \

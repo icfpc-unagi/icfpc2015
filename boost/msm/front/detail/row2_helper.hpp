@@ -11,8 +11,8 @@
 #ifndef BOOST_MSM_ROW2_HELPER_HPP
 #define BOOST_MSM_ROW2_HELPER_HPP
 
-#include <boost/mpl/bool.hpp>
-#include <boost/fusion/include/at_key.hpp>
+#include "boost/mpl/bool.hpp"
+#include "boost/fusion/include/at_key.hpp"
 
 namespace boost { namespace msm { namespace front
 {

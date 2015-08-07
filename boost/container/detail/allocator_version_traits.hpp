@@ -15,18 +15,18 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
-#include <boost/container/allocator_traits.hpp>             //allocator_traits
-#include <boost/container/throw_exception.hpp>
-#include <boost/container/detail/multiallocation_chain.hpp> //multiallocation_chain
-#include <boost/container/detail/version_type.hpp>          //version_type
-#include <boost/container/detail/allocation_type.hpp>       //allocation_type
-#include <boost/container/detail/mpl.hpp>                   //integral_constant
-#include <boost/intrusive/pointer_traits.hpp>               //pointer_traits
+#include "boost/container/allocator_traits.hpp"             //allocator_traits
+#include "boost/container/throw_exception.hpp"
+#include "boost/container/detail/multiallocation_chain.hpp" //multiallocation_chain
+#include "boost/container/detail/version_type.hpp"          //version_type
+#include "boost/container/detail/allocation_type.hpp"       //allocation_type
+#include "boost/container/detail/mpl.hpp"                   //integral_constant
+#include "boost/intrusive/pointer_traits.hpp"               //pointer_traits
 #include <utility>                                          //pair
-#include <boost/core/no_exceptions_support.hpp>             //BOOST_TRY
+#include "boost/core/no_exceptions_support.hpp"             //BOOST_TRY
 
 namespace boost {
 namespace container {
@@ -163,6 +163,6 @@ struct allocator_version_traits<Allocator, 1>
 }  //namespace container {
 }  //namespace boost {
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif // ! defined(BOOST_CONTAINER_DETAIL_ALLOCATOR_VERSION_TRAITS_HPP)

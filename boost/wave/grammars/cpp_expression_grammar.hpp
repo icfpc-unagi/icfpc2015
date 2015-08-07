@@ -11,29 +11,29 @@
 #if !defined(CPP_EXPRESSION_GRAMMAR_HPP_099CD1A4_A6C0_44BE_8F24_0B00F5BE5674_INCLUDED)
 #define CPP_EXPRESSION_GRAMMAR_HPP_099CD1A4_A6C0_44BE_8F24_0B00F5BE5674_INCLUDED
 
-#include <boost/wave/wave_config.hpp>
+#include "boost/wave/wave_config.hpp"
 
-#include <boost/assert.hpp>
-#include <boost/spirit/include/classic_core.hpp>
-#include <boost/spirit/include/classic_closure.hpp>
-#include <boost/spirit/include/classic_if.hpp>
-#include <boost/spirit/include/classic_assign_actor.hpp>
-#include <boost/spirit/include/classic_push_back_actor.hpp>
+#include "boost/assert.hpp"
+#include "boost/spirit/include/classic_core.hpp"
+#include "boost/spirit/include/classic_closure.hpp"
+#include "boost/spirit/include/classic_if.hpp"
+#include "boost/spirit/include/classic_assign_actor.hpp"
+#include "boost/spirit/include/classic_push_back_actor.hpp"
 
-#include <boost/spirit/include/phoenix1_functions.hpp>
-#include <boost/spirit/include/phoenix1_operators.hpp>
-#include <boost/spirit/include/phoenix1_primitives.hpp>
-#include <boost/spirit/include/phoenix1_statements.hpp>
-#include <boost/spirit/include/phoenix1_casts.hpp>
+#include "boost/spirit/include/phoenix1_functions.hpp"
+#include "boost/spirit/include/phoenix1_operators.hpp"
+#include "boost/spirit/include/phoenix1_primitives.hpp"
+#include "boost/spirit/include/phoenix1_statements.hpp"
+#include "boost/spirit/include/phoenix1_casts.hpp"
 
-#include <boost/wave/token_ids.hpp>
+#include "boost/wave/token_ids.hpp"
 
-#include <boost/wave/cpp_exceptions.hpp>
-#include <boost/wave/grammars/cpp_expression_grammar_gen.hpp>   
-#include <boost/wave/grammars/cpp_literal_grammar_gen.hpp>  
-#include <boost/wave/grammars/cpp_expression_value.hpp>
-#include <boost/wave/util/pattern_parser.hpp>
-#include <boost/wave/util/macro_helpers.hpp>
+#include "boost/wave/cpp_exceptions.hpp"
+#include "boost/wave/grammars/cpp_expression_grammar_gen.hpp"   
+#include "boost/wave/grammars/cpp_literal_grammar_gen.hpp"  
+#include "boost/wave/grammars/cpp_expression_value.hpp"
+#include "boost/wave/util/pattern_parser.hpp"
+#include "boost/wave/util/macro_helpers.hpp"
 
 #if !defined(spirit_append_actor)
 #define spirit_append_actor(actor) boost::spirit::classic::push_back_a(actor)

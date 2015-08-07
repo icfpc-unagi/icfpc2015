@@ -11,17 +11,17 @@
 #ifndef BOOST_TYPE_ERASURE_DETAIL_CHECK_MAP_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_DETAIL_CHECK_MAP_HPP_INCLUDED
 
-#include <boost/mpl/not.hpp>
-#include <boost/mpl/or.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/set.hpp>
-#include <boost/mpl/has_key.hpp>
-#include <boost/mpl/find_if.hpp>
-#include <boost/mpl/end.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_erasure/detail/get_placeholders.hpp>
-#include <boost/type_erasure/deduced.hpp>
-#include <boost/type_erasure/static_binding.hpp>
+#include "boost/mpl/not.hpp"
+#include "boost/mpl/or.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/set.hpp"
+#include "boost/mpl/has_key.hpp"
+#include "boost/mpl/find_if.hpp"
+#include "boost/mpl/end.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_erasure/detail/get_placeholders.hpp"
+#include "boost/type_erasure/deduced.hpp"
+#include "boost/type_erasure/static_binding.hpp"
 
 namespace boost {
 namespace type_erasure {

@@ -9,9 +9,9 @@
 #ifndef BOOST_HEAP_MERGE_HPP
 #define BOOST_HEAP_MERGE_HPP
 
-#include <boost/concept/assert.hpp>
-#include <boost/heap/heap_concepts.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/concept/assert.hpp"
+#include "boost/heap/heap_concepts.hpp"
+#include "boost/type_traits/is_same.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

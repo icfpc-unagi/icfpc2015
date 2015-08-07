@@ -9,10 +9,10 @@ Copyright (c) 2008-2009: Joachim Faulhaber
 #define BOOST_ICL_TYPE_TRAITS_CODOMAIN_TYPE_OF_HPP_JOFA_100829
 
 #include <set>
-#include <boost/mpl/has_xxx.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/icl/type_traits/no_type.hpp>
-#include <boost/icl/type_traits/is_container.hpp>
+#include "boost/mpl/has_xxx.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/icl/type_traits/no_type.hpp"
+#include "boost/icl/type_traits/is_container.hpp"
 
 namespace boost{ namespace icl
 {

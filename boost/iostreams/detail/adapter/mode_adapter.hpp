@@ -16,13 +16,13 @@
 // a filter or device to function as if it has a different i/o mode than that
 // deduced by the metafunction mode_of.
 
-#include <boost/config.hpp>                // BOOST_MSVC.
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/detail/ios.hpp>  // openmode, seekdir, int types. 
-#include <boost/iostreams/traits.hpp>
-#include <boost/iostreams/operations.hpp> 
-#include <boost/mpl/if.hpp> 
+#include "boost/config.hpp"                // BOOST_MSVC.
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/detail/ios.hpp"  // openmode, seekdir, int types. 
+#include "boost/iostreams/traits.hpp"
+#include "boost/iostreams/operations.hpp" 
+#include "boost/mpl/if.hpp" 
 
 namespace boost { namespace iostreams { namespace detail {
 

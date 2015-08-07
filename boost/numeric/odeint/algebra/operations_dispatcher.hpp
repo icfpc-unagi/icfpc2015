@@ -17,7 +17,7 @@
 #ifndef BOOST_NUMERIC_ODEINT_ALGEBRA_OPERATIONS_DISPATCHER_HPP_INCLUDED
 #define BOOST_NUMERIC_ODEINT_ALGEBRA_OPERATIONS_DISPATCHER_HPP_INCLUDED
 
-#include <boost/numeric/odeint/algebra/default_operations.hpp>
+#include "boost/numeric/odeint/algebra/default_operations.hpp"
 
 namespace boost {
 namespace numeric {

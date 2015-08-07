@@ -12,31 +12,31 @@
 #define BOOST_CHRONO_DETAIL_INLINED_PROCESS_CPU_CLOCKS_HPP
 
 
-#include <boost/chrono/config.hpp>
+#include "boost/chrono/config.hpp"
 #if defined(BOOST_CHRONO_HAS_PROCESS_CLOCKS)
 
-#include <boost/version.hpp>
-#include <boost/chrono/process_cpu_clocks.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/system/system_error.hpp>
+#include "boost/version.hpp"
+#include "boost/chrono/process_cpu_clocks.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/system/system_error.hpp"
 
 //----------------------------------------------------------------------------//
 //                                Windows                                     //
 //----------------------------------------------------------------------------//
 #if defined(BOOST_CHRONO_WINDOWS_API)
-#include <boost/chrono/detail/inlined/win/process_cpu_clocks.hpp>
+#include "boost/chrono/detail/inlined/win/process_cpu_clocks.hpp"
 
 //----------------------------------------------------------------------------//
 //                                 Mac                                        //
 //----------------------------------------------------------------------------//
 #elif defined(BOOST_CHRONO_MAC_API)
-#include <boost/chrono/detail/inlined/mac/process_cpu_clocks.hpp>
+#include "boost/chrono/detail/inlined/mac/process_cpu_clocks.hpp"
 
 //----------------------------------------------------------------------------//
 //                                POSIX                                     //
 //----------------------------------------------------------------------------//
 #elif defined(BOOST_CHRONO_POSIX_API)
-#include <boost/chrono/detail/inlined/posix/process_cpu_clocks.hpp>
+#include "boost/chrono/detail/inlined/posix/process_cpu_clocks.hpp"
 
 #endif  // POSIX
 

@@ -12,8 +12,8 @@
 #pragma warning(push,1)
 #endif
 
-#include <boost/exception/info.hpp>
-#include <boost/tuple/tuple.hpp>
+#include "boost/exception/info.hpp"
+#include "boost/tuple/tuple.hpp"
 
 namespace
 boost

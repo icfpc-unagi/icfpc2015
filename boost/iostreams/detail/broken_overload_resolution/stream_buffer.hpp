@@ -8,8 +8,8 @@
 #ifndef BOOST_IOSTREAMS_DETAIL_BROKEN_OVERLOAD_RESOLUTION_STREAM_BUFFER_HPP_INCLUDED
 #define BOOST_IOSTREAMS_DETAIL_BROKEN_OVERLOAD_RESOLUTION_STREAM_BUFFER_HPP_INCLUDED
 
-#include <boost/iostreams/detail/broken_overload_resolution/forward.hpp>
-#include <boost/throw_exception.hpp>
+#include "boost/iostreams/detail/broken_overload_resolution/forward.hpp"
+#include "boost/throw_exception.hpp"
 
 namespace boost { namespace iostreams {
 

@@ -8,7 +8,7 @@
 #ifndef BOOST_UUID_NIL_GENERATOR_HPP
 #define BOOST_UUID_NIL_GENERATOR_HPP
 
-#include <boost/uuid/uuid.hpp>
+#include "boost/uuid/uuid.hpp"
 
 namespace boost {
 namespace uuids {

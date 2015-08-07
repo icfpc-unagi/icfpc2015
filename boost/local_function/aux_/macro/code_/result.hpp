@@ -8,16 +8,16 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_CODE_RESULT_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_CODE_RESULT_HPP_
 
-#include <boost/local_function/aux_/symbol.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_returns.hpp>
-#include <boost/scope_exit.hpp>
-#include <boost/typeof/typeof.hpp>
-#include <boost/type_traits/remove_pointer.hpp>
-#include <boost/type_traits/function_traits.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/control/expr_iif.hpp>
-#include <boost/preprocessor/list/adt.hpp>
-#include <boost/preprocessor/cat.hpp>
+#include "boost/local_function/aux_/symbol.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_returns.hpp"
+#include "boost/scope_exit.hpp"
+#include "boost/typeof/typeof.hpp"
+#include "boost/type_traits/remove_pointer.hpp"
+#include "boost/type_traits/function_traits.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/control/expr_iif.hpp"
+#include "boost/preprocessor/list/adt.hpp"
+#include "boost/preprocessor/cat.hpp"
 
 // PRIVATE //
 

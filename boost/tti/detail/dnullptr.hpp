@@ -7,7 +7,7 @@
 #if !defined(BOOST_TTI_DETAIL_NULLPTR_HPP)
 #define BOOST_TTI_DETAIL_NULLPTR_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if defined(BOOST_NO_CXX11_NULLPTR)
 

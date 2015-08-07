@@ -32,12 +32,12 @@
 # pragma once
 #endif
 
-#include <boost/config.hpp>  // Put size_t in std, BOOST_MSVC, Dinkum.
-#include <boost/detail/workaround.hpp>
+#include "boost/config.hpp"  // Put size_t in std, BOOST_MSVC, Dinkum.
+#include "boost/detail/workaround.hpp"
 #include <algorithm>         // min.
 #include <cstddef>           // size_t.
 #include <locale>            // locale, codecvt_base, codecvt.
-#include <boost/iostreams/detail/config/codecvt.hpp>
+#include "boost/iostreams/detail/config/codecvt.hpp"
 
 //------------------Definition of traits--------------------------------------//
 

@@ -13,11 +13,11 @@
 //  This header is effectively empty for compiles on operating systems where
 //  it is not applicable.
 
-#include <boost/system/config.hpp>
+#include "boost/system/config.hpp"
 
 #ifdef BOOST_WINDOWS_API
 
-#include <boost/system/error_code.hpp>
+#include "boost/system/error_code.hpp"
 
 // Neither MinGW or Cygwin versions of winerror.h work if used alone, so on
 // either of those platforms include the full windows.h

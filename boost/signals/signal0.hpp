@@ -21,7 +21,7 @@
 #define BOOST_SIGNALS_INIT_ARGS
 #define BOOST_SIGNALS_ARG_TYPES
 
-#include <boost/signals/signal_template.hpp>
+#include "boost/signals/signal_template.hpp"
 
 #undef BOOST_SIGNALS_ARG_TYPES
 #undef BOOST_SIGNALS_INIT_ARGS

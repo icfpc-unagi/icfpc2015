@@ -12,9 +12,9 @@
 #ifndef BOOST_SIGNALS2_PREPROCESSED_SLOT_HPP
 #define BOOST_SIGNALS2_PREPROCESSED_SLOT_HPP
 
-#include <boost/preprocessor/repetition.hpp>
-#include <boost/signals2/detail/preprocessed_arg_type.hpp>
-#include <boost/type_traits/function_traits.hpp>
+#include "boost/preprocessor/repetition.hpp"
+#include "boost/signals2/detail/preprocessed_arg_type.hpp"
+#include "boost/type_traits/function_traits.hpp"
 
 #ifndef BOOST_SIGNALS2_SLOT_MAX_BINDING_ARGS
 #define BOOST_SIGNALS2_SLOT_MAX_BINDING_ARGS 10
@@ -34,7 +34,7 @@
 
 
 #define BOOST_PP_ITERATION_LIMITS (0, BOOST_PP_INC(BOOST_SIGNALS2_MAX_ARGS))
-#define BOOST_PP_FILENAME_1 <boost/signals2/detail/slot_template.hpp>
+#define BOOST_PP_FILENAME_1 "boost/signals2/detail/slot_template.hpp"
 #include BOOST_PP_ITERATE()
 
 #undef BOOST_SIGNALS2_SLOT_N_BINDING_CONSTRUCTOR

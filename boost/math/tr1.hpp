@@ -15,8 +15,8 @@
 
 #ifdef __cplusplus
 
-#include <boost/config.hpp>
-#include <boost/static_assert.hpp>
+#include "boost/config.hpp"
+#include "boost/static_assert.hpp"
 
 namespace boost{ namespace math{ namespace tr1{ extern "C"{
 
@@ -59,7 +59,7 @@ namespace boost{ namespace math{ namespace tr1{ extern "C"{
 #  if defined(BOOST_MATH_TR1_DYN_LINK) || defined(BOOST_ALL_DYN_LINK)
 #     define BOOST_DYN_LINK
 #  endif
-#  include <boost/config/auto_link.hpp>
+#  include "boost/config/auto_link.hpp"
 #endif
 #if !defined(BOOST_MATH_TR1_NO_LIB) && !defined(BOOST_MATH_TR1_SOURCE) \
    && !defined(BOOST_ALL_NO_LIB) && defined(__cplusplus)
@@ -67,7 +67,7 @@ namespace boost{ namespace math{ namespace tr1{ extern "C"{
 #  if defined(BOOST_MATH_TR1_DYN_LINK) || defined(BOOST_ALL_DYN_LINK)
 #     define BOOST_DYN_LINK
 #  endif
-#  include <boost/config/auto_link.hpp>
+#  include "boost/config/auto_link.hpp"
 #endif
 #if !defined(BOOST_MATH_TR1_NO_LIB) && !defined(BOOST_MATH_TR1_SOURCE) \
    && !defined(BOOST_ALL_NO_LIB) && defined(__cplusplus) \
@@ -76,7 +76,7 @@ namespace boost{ namespace math{ namespace tr1{ extern "C"{
 #  if defined(BOOST_MATH_TR1_DYN_LINK) || defined(BOOST_ALL_DYN_LINK)
 #     define BOOST_DYN_LINK
 #  endif
-#  include <boost/config/auto_link.hpp>
+#  include "boost/config/auto_link.hpp"
 #endif
 #if !defined(BOOST_MATH_TR1_NO_LIB) && !defined(BOOST_MATH_TR1_SOURCE) \
    && !defined(BOOST_ALL_NO_LIB) && defined(__cplusplus)
@@ -84,7 +84,7 @@ namespace boost{ namespace math{ namespace tr1{ extern "C"{
 #  if defined(BOOST_MATH_TR1_DYN_LINK) || defined(BOOST_ALL_DYN_LINK)
 #     define BOOST_DYN_LINK
 #  endif
-#  include <boost/config/auto_link.hpp>
+#  include "boost/config/auto_link.hpp"
 #endif
 #if !defined(BOOST_MATH_TR1_NO_LIB) && !defined(BOOST_MATH_TR1_SOURCE) \
    && !defined(BOOST_ALL_NO_LIB) && defined(__cplusplus)
@@ -92,7 +92,7 @@ namespace boost{ namespace math{ namespace tr1{ extern "C"{
 #  if defined(BOOST_MATH_TR1_DYN_LINK) || defined(BOOST_ALL_DYN_LINK)
 #     define BOOST_DYN_LINK
 #  endif
-#  include <boost/config/auto_link.hpp>
+#  include "boost/config/auto_link.hpp"
 #endif
 #if !defined(BOOST_MATH_TR1_NO_LIB) && !defined(BOOST_MATH_TR1_SOURCE) \
    && !defined(BOOST_ALL_NO_LIB) && defined(__cplusplus) \
@@ -101,7 +101,7 @@ namespace boost{ namespace math{ namespace tr1{ extern "C"{
 #  if defined(BOOST_MATH_TR1_DYN_LINK) || defined(BOOST_ALL_DYN_LINK)
 #     define BOOST_DYN_LINK
 #  endif
-#  include <boost/config/auto_link.hpp>
+#  include "boost/config/auto_link.hpp"
 #endif
 
 #if !(defined(BOOST_INTEL) && defined(__APPLE__)) && !(defined(__FLT_EVAL_METHOD__) && !defined(__cplusplus))
@@ -380,7 +380,7 @@ long double BOOST_MATH_TR1_DECL boost_sph_neumannl BOOST_PREVENT_MACRO_SUBSTITUT
 
 }}}}  // namespaces
 
-#include <boost/math/tools/promotion.hpp>
+#include "boost/math/tools/promotion.hpp"
 
 namespace boost{ namespace math{ namespace tr1{
 //
@@ -1107,7 +1107,7 @@ inline typename tools::promote_args<T>::type sph_neumann BOOST_PREVENT_MACRO_SUB
 
 #else // __cplusplus
 
-#include <boost/math/tr1_c_macros.ipp>
+#include "boost/math/tr1_c_macros.ipp"
 
 #endif // __cplusplus
 

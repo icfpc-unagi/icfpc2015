@@ -6,12 +6,12 @@
 //  http://www.boost.org/LICENSE_1_0.txt
 //
 // This code utilises the experience gained during the evolution of
-// <boost/smart_ptr/operator_bool.hpp>
+// "boost/smart_ptr/operator_bool.hpp"
 #ifndef BOOST_RANGE_SAFE_BOOL_INCLUDED_HPP
 #define BOOST_RANGE_SAFE_BOOL_INCLUDED_HPP
 
-#include <boost/config.hpp>
-#include <boost/range/config.hpp>
+#include "boost/config.hpp"
+#include "boost/range/config.hpp"
 
 namespace boost
 {

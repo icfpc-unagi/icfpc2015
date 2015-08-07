@@ -16,10 +16,10 @@
 #define BOOST_RT_CLA_MODIFIER_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
+#include "boost/test/utils/runtime/config.hpp"
 
 // Boost.Test
-#include <boost/test/utils/named_params.hpp>
+#include "boost/test/utils/named_params.hpp"
 
 namespace boost {
 

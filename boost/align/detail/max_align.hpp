@@ -9,7 +9,7 @@
 #ifndef BOOST_ALIGN_DETAIL_MAX_ALIGN_HPP
 #define BOOST_ALIGN_DETAIL_MAX_ALIGN_HPP
 
-#include <boost/align/detail/integral_constant.hpp>
+#include "boost/align/detail/integral_constant.hpp"
 #include <cstddef>
 
 namespace boost {

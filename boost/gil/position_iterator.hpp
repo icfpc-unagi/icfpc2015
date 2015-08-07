@@ -22,7 +22,7 @@
 ///
 ////////////////////////////////////////////////////////////////////////////////////////
 
-#include <boost/iterator/iterator_facade.hpp>
+#include "boost/iterator/iterator_facade.hpp"
 #include "locator.hpp"
 
 namespace boost { namespace gil {

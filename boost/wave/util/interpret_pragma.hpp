@@ -14,20 +14,20 @@
 #include <string>
 #include <list>
 
-#include <boost/spirit/include/classic_core.hpp>
-#include <boost/spirit/include/classic_assign_actor.hpp>
-#include <boost/spirit/include/classic_push_back_actor.hpp>
-#include <boost/spirit/include/classic_confix.hpp>
+#include "boost/spirit/include/classic_core.hpp"
+#include "boost/spirit/include/classic_assign_actor.hpp"
+#include "boost/spirit/include/classic_push_back_actor.hpp"
+#include "boost/spirit/include/classic_confix.hpp"
 
-#include <boost/wave/wave_config.hpp>
+#include "boost/wave/wave_config.hpp"
 
-#include <boost/wave/util/pattern_parser.hpp>
-#include <boost/wave/util/macro_helpers.hpp>
+#include "boost/wave/util/pattern_parser.hpp"
+#include "boost/wave/util/macro_helpers.hpp"
 
-#include <boost/wave/token_ids.hpp>
-#include <boost/wave/cpp_exceptions.hpp>
-#include <boost/wave/cpp_iteration_context.hpp>
-#include <boost/wave/language_support.hpp>
+#include "boost/wave/token_ids.hpp"
+#include "boost/wave/cpp_exceptions.hpp"
+#include "boost/wave/cpp_iteration_context.hpp"
+#include "boost/wave/language_support.hpp"
 
 #if !defined(spirit_append_actor)
 #define spirit_append_actor(actor) boost::spirit::classic::push_back_a(actor)

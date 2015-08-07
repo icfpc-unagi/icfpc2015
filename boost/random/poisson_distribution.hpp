@@ -15,15 +15,15 @@
 #ifndef BOOST_RANDOM_POISSON_DISTRIBUTION_HPP
 #define BOOST_RANDOM_POISSON_DISTRIBUTION_HPP
 
-#include <boost/config/no_tr1/cmath.hpp>
+#include "boost/config/no_tr1/cmath.hpp"
 #include <cstdlib>
 #include <iosfwd>
-#include <boost/assert.hpp>
-#include <boost/limits.hpp>
-#include <boost/random/uniform_01.hpp>
-#include <boost/random/detail/config.hpp>
+#include "boost/assert.hpp"
+#include "boost/limits.hpp"
+#include "boost/random/uniform_01.hpp"
+#include "boost/random/detail/config.hpp"
 
-#include <boost/random/detail/disable_warnings.hpp>
+#include "boost/random/detail/disable_warnings.hpp"
 
 namespace boost {
 namespace random {
@@ -355,6 +355,6 @@ using random::poisson_distribution;
 
 } // namespace boost
 
-#include <boost/random/detail/enable_warnings.hpp>
+#include "boost/random/detail/enable_warnings.hpp"
 
 #endif // BOOST_RANDOM_POISSON_DISTRIBUTION_HPP

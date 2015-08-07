@@ -8,26 +8,26 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_CONCEPT_INTERVAL_HPP_JOFA_100323
 #define BOOST_ICL_CONCEPT_INTERVAL_HPP_JOFA_100323
 
-#include <boost/assert.hpp> 
-#include <boost/utility/enable_if.hpp>
-#include <boost/mpl/and.hpp>
-#include <boost/mpl/or.hpp>
-#include <boost/mpl/not.hpp>
-#include <boost/icl/detail/design_config.hpp>
-#include <boost/icl/type_traits/unit_element.hpp>
-#include <boost/icl/type_traits/identity_element.hpp>
-#include <boost/icl/type_traits/infinity.hpp>
-#include <boost/icl/type_traits/succ_pred.hpp>
-#include <boost/icl/type_traits/is_numeric.hpp>
-#include <boost/icl/type_traits/is_discrete.hpp>
-#include <boost/icl/type_traits/is_continuous.hpp>
-#include <boost/icl/type_traits/is_asymmetric_interval.hpp>
-#include <boost/icl/type_traits/is_discrete_interval.hpp>
-#include <boost/icl/type_traits/is_continuous_interval.hpp>
+#include "boost/assert.hpp" 
+#include "boost/utility/enable_if.hpp"
+#include "boost/mpl/and.hpp"
+#include "boost/mpl/or.hpp"
+#include "boost/mpl/not.hpp"
+#include "boost/icl/detail/design_config.hpp"
+#include "boost/icl/type_traits/unit_element.hpp"
+#include "boost/icl/type_traits/identity_element.hpp"
+#include "boost/icl/type_traits/infinity.hpp"
+#include "boost/icl/type_traits/succ_pred.hpp"
+#include "boost/icl/type_traits/is_numeric.hpp"
+#include "boost/icl/type_traits/is_discrete.hpp"
+#include "boost/icl/type_traits/is_continuous.hpp"
+#include "boost/icl/type_traits/is_asymmetric_interval.hpp"
+#include "boost/icl/type_traits/is_discrete_interval.hpp"
+#include "boost/icl/type_traits/is_continuous_interval.hpp"
 
-#include <boost/icl/concept/interval_bounds.hpp>
-#include <boost/icl/interval_traits.hpp>
-#include <boost/icl/dynamic_interval_traits.hpp>
+#include "boost/icl/concept/interval_bounds.hpp"
+#include "boost/icl/interval_traits.hpp"
+#include "boost/icl/dynamic_interval_traits.hpp"
 
 
 namespace boost{namespace icl

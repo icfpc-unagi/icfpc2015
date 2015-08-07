@@ -13,14 +13,14 @@
 #ifndef BOOST_RANDOM_DETAIL_SEED_HPP
 #define BOOST_RANDOM_DETAIL_SEED_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 // Sun seems to have trouble with the use of SFINAE for the
 // templated constructor.  So does Borland.
 #if !defined(BOOST_NO_SFINAE) && !defined(__SUNPRO_CC) && !defined(__BORLANDC__)
 
-#include <boost/utility/enable_if.hpp>
-#include <boost/type_traits/is_arithmetic.hpp>
+#include "boost/utility/enable_if.hpp"
+#include "boost/type_traits/is_arithmetic.hpp"
 
 namespace boost {
 namespace random {
@@ -62,8 +62,8 @@ struct disable_constructor<Engine, Engine> {};
 
 #else
 
-#include <boost/type_traits/is_arithmetic.hpp>
-#include <boost/mpl/bool.hpp>
+#include "boost/type_traits/is_arithmetic.hpp"
+#include "boost/mpl/bool.hpp"
 
 #define BOOST_RANDOM_DETAIL_GENERATOR_CONSTRUCTOR(Self, Generator, gen) \
     Self(Self& other) { *this = other; }                                \

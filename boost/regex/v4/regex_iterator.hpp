@@ -12,14 +12,14 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         regex_iterator.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Provides regex_iterator implementation.
   */
 
 #ifndef BOOST_REGEX_V4_REGEX_ITERATOR_HPP
 #define BOOST_REGEX_V4_REGEX_ITERATOR_HPP
 
-#include <boost/shared_ptr.hpp>
+#include "boost/shared_ptr.hpp"
 
 namespace boost{
 

@@ -44,18 +44,18 @@
 #ifndef BOOST_MATH_SPECIAL_NEGATIVE_BINOMIAL_HPP
 #define BOOST_MATH_SPECIAL_NEGATIVE_BINOMIAL_HPP
 
-#include <boost/math/distributions/fwd.hpp>
-#include <boost/math/special_functions/beta.hpp> // for ibeta(a, b, x) == Ix(a, b).
-#include <boost/math/distributions/complement.hpp> // complement.
-#include <boost/math/distributions/detail/common_error_handling.hpp> // error checks domain_error & logic_error.
-#include <boost/math/special_functions/fpclassify.hpp> // isnan.
-#include <boost/math/tools/roots.hpp> // for root finding.
-#include <boost/math/distributions/detail/inv_discrete_quantile.hpp>
+#include "boost/math/distributions/fwd.hpp"
+#include "boost/math/special_functions/beta.hpp" // for ibeta(a, b, x) == Ix(a, b).
+#include "boost/math/distributions/complement.hpp" // complement.
+#include "boost/math/distributions/detail/common_error_handling.hpp" // error checks domain_error & logic_error.
+#include "boost/math/special_functions/fpclassify.hpp" // isnan.
+#include "boost/math/tools/roots.hpp" // for root finding.
+#include "boost/math/distributions/detail/inv_discrete_quantile.hpp"
 
-#include <boost/type_traits/is_floating_point.hpp>
-#include <boost/type_traits/is_integral.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/mpl/if.hpp>
+#include "boost/type_traits/is_floating_point.hpp"
+#include "boost/type_traits/is_integral.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/mpl/if.hpp"
 
 #include <limits> // using std::numeric_limits;
 #include <utility>
@@ -598,7 +598,7 @@ namespace boost
 // This include must be at the end, *after* the accessors
 // for this distribution have been defined, in order to
 // keep compilers that support two-phase lookup happy.
-#include <boost/math/distributions/detail/derived_accessors.hpp>
+#include "boost/math/distributions/detail/derived_accessors.hpp"
 
 #if defined (BOOST_MSVC)
 # pragma warning(pop)

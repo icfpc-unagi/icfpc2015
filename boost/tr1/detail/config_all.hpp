@@ -164,7 +164,7 @@
 #  include BOOST_TR1_STD_HEADER(utility)
 #endif
 
-#include <boost/tr1/detail/config.hpp>
+#include "boost/tr1/detail/config.hpp"
 
 #endif
 

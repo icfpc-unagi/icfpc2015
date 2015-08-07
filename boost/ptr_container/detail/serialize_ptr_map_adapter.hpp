@@ -6,10 +6,10 @@
 #ifndef BOOST_PTR_CONTAINER_DETAIL_SERIALIZE_PTR_MAP_ADAPTER_HPP
 #define BOOST_PTR_CONTAINER_DETAIL_SERIALIZE_PTR_MAP_ADAPTER_HPP
 
-#include <boost/ptr_container/ptr_map_adapter.hpp>
-#include <boost/ptr_container/detail/serialize_xml_names.hpp>
-#include <boost/serialization/split_free.hpp>
-#include <boost/serialization/nvp.hpp> 
+#include "boost/ptr_container/ptr_map_adapter.hpp"
+#include "boost/ptr_container/detail/serialize_xml_names.hpp"
+#include "boost/serialization/split_free.hpp"
+#include "boost/serialization/nvp.hpp" 
 
 namespace boost 
 {

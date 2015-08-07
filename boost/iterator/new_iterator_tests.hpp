@@ -29,17 +29,17 @@
 //              (David Abrahams)
 
 # include <iterator>
-# include <boost/type_traits.hpp>
-# include <boost/static_assert.hpp>
-# include <boost/concept_archetype.hpp> // for detail::dummy_constructor
-# include <boost/detail/iterator.hpp>
-# include <boost/pending/iterator_tests.hpp>
-# include <boost/iterator/is_readable_iterator.hpp>
-# include <boost/iterator/is_lvalue_iterator.hpp>
+# include "boost/type_traits.hpp"
+# include "boost/static_assert.hpp"
+# include "boost/concept_archetype.hpp" // for detail::dummy_constructor
+# include "boost/detail/iterator.hpp"
+# include "boost/pending/iterator_tests.hpp"
+# include "boost/iterator/is_readable_iterator.hpp"
+# include "boost/iterator/is_lvalue_iterator.hpp"
 
-# include <boost/iterator/detail/config_def.hpp>
-# include <boost/detail/is_incrementable.hpp>
-# include <boost/detail/lightweight_test.hpp>
+# include "boost/iterator/detail/config_def.hpp"
+# include "boost/detail/is_incrementable.hpp"
+# include "boost/detail/lightweight_test.hpp"
 
 namespace boost {
 
@@ -259,6 +259,6 @@ void random_access_readable_iterator_test(Iterator i, int N, TrueVals vals)
 
 } // namespace boost
 
-# include <boost/iterator/detail/config_undef.hpp>
+# include "boost/iterator/detail/config_undef.hpp"
 
 #endif // BOOST_NEW_ITERATOR_TESTS_HPP

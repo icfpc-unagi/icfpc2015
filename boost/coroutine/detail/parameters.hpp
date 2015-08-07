@@ -7,10 +7,10 @@
 #ifndef BOOST_COROUTINES_DETAIL_PARAMETERS_H
 #define BOOST_COROUTINES_DETAIL_PARAMETERS_H
 
-#include <boost/assert.hpp>
-#include <boost/config.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"
 
-#include <boost/coroutine/detail/flags.hpp>
+#include "boost/coroutine/detail/flags.hpp"
 
 #ifdef BOOST_HAS_ABI_HEADERS
 #  include BOOST_ABI_PREFIX

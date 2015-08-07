@@ -19,8 +19,8 @@
 #ifndef BOOST_NUMERIC_ODEINT_EXTERNAL_MPI_MPI_NESTED_ALGEBRA_HPP_INCLUDED
 #define BOOST_NUMERIC_ODEINT_EXTERNAL_MPI_MPI_NESTED_ALGEBRA_HPP_INCLUDED
 
-#include <boost/numeric/odeint/algebra/norm_result_type.hpp>
-#include <boost/numeric/odeint/util/n_ary_helper.hpp>
+#include "boost/numeric/odeint/algebra/norm_result_type.hpp"
+#include "boost/numeric/odeint/util/n_ary_helper.hpp"
 
 namespace boost {
 namespace numeric {

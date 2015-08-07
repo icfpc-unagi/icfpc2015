@@ -9,12 +9,12 @@
 #ifndef BOOST_MATH_DISTRIBUTIONS_HYPERGEOMETRIC_HPP
 #define BOOST_MATH_DISTRIBUTIONS_HYPERGEOMETRIC_HPP
 
-#include <boost/math/distributions/detail/common_error_handling.hpp>
-#include <boost/math/distributions/complement.hpp>
-#include <boost/math/distributions/detail/hypergeometric_pdf.hpp>
-#include <boost/math/distributions/detail/hypergeometric_cdf.hpp>
-#include <boost/math/distributions/detail/hypergeometric_quantile.hpp>
-#include <boost/math/special_functions/fpclassify.hpp>
+#include "boost/math/distributions/detail/common_error_handling.hpp"
+#include "boost/math/distributions/complement.hpp"
+#include "boost/math/distributions/detail/hypergeometric_pdf.hpp"
+#include "boost/math/distributions/detail/hypergeometric_cdf.hpp"
+#include "boost/math/distributions/detail/hypergeometric_quantile.hpp"
+#include "boost/math/special_functions/fpclassify.hpp"
 
 
 namespace boost { namespace math {
@@ -288,6 +288,6 @@ namespace boost { namespace math {
 // This include must be at the end, *after* the accessors
 // for this distribution have been defined, in order to
 // keep compilers that support two-phase lookup happy.
-#include <boost/math/distributions/detail/derived_accessors.hpp>
+#include "boost/math/distributions/detail/derived_accessors.hpp"
 
 #endif // include guard

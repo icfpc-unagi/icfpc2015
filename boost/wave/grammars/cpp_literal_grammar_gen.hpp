@@ -11,8 +11,8 @@
 #if !defined(CPP_LITERAL_GRAMMAR_GEN_HPP_67794A6C_468A_4AAB_A757_DEDDB182F5A0_INCLUDED)
 #define CPP_LITERAL_GRAMMAR_GEN_HPP_67794A6C_468A_4AAB_A757_DEDDB182F5A0_INCLUDED
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/grammars/cpp_value_error.hpp>
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/grammars/cpp_value_error.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

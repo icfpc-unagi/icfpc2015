@@ -24,12 +24,12 @@
 
 #include <functional>
 #include "gil_config.hpp"
-#include <boost/type_traits.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/concept_check.hpp>
-#include <boost/iterator/iterator_concepts.hpp>
-#include <boost/mpl/and.hpp>
-#include <boost/mpl/size.hpp>
+#include "boost/type_traits.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/concept_check.hpp"
+#include "boost/iterator/iterator_concepts.hpp"
+#include "boost/mpl/and.hpp"
+#include "boost/mpl/size.hpp"
 
 namespace boost { namespace gil {
 template <typename T> struct channel_traits;

@@ -30,8 +30,8 @@
 
 #include <string>
 #include <stdio.h>
-#include <boost/mpl/bool.hpp>
-#include <boost/shared_ptr.hpp>
+#include "boost/mpl/bool.hpp"
+#include "boost/shared_ptr.hpp"
 #include "../dynamic_image/dynamic_image_all.hpp"
 #include "io_error.hpp"
 #include "png_io.hpp"

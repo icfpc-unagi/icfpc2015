@@ -5,7 +5,7 @@
 
 #ifndef BOOST_MATH_TUPLE_HPP_INCLUDED
 #  define BOOST_MATH_TUPLE_HPP_INCLUDED
-#  include <boost/config.hpp>
+#  include "boost/config.hpp"
 
 #ifndef BOOST_NO_CXX11_HDR_TUPLE
 
@@ -29,9 +29,9 @@ using ::std::tuple_element;
 
 #elif (defined(__BORLANDC__) && (__BORLANDC__ <= 0x600)) || defined(__IBMCPP__)
 
-#include <boost/tuple/tuple.hpp>
-#include <boost/tuple/tuple_comparison.hpp>
-#include <boost/type_traits/integral_constant.hpp>
+#include "boost/tuple/tuple.hpp"
+#include "boost/tuple/tuple_comparison.hpp"
+#include "boost/type_traits/integral_constant.hpp"
 
 namespace boost{ namespace math{
 
@@ -64,8 +64,8 @@ using ::boost::get;
 
 #else
 
-#include <boost/fusion/include/tuple.hpp>
-#include <boost/fusion/include/std_pair.hpp>
+#include "boost/fusion/include/tuple.hpp"
+#include "boost/fusion/include/std_pair.hpp"
 
 namespace boost{ namespace math{
 

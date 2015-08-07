@@ -19,8 +19,8 @@
 #ifndef BOOST_IOSTREAMS_DETAIL_CONFIG_RTL_HPP_INCLUDED
 #define BOOST_IOSTREAMS_DETAIL_CONFIG_RTL_HPP_INCLUDED
 
-#include <boost/config.hpp>
-#include <boost/iostreams/detail/config/windows_posix.hpp>
+#include "boost/config.hpp"
+#include "boost/iostreams/detail/config/windows_posix.hpp"
 
 // Handle open, close, read, and write
 #ifdef __BORLANDC__

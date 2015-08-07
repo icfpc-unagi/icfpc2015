@@ -17,9 +17,9 @@
 #ifndef BOOST_STATS_LAPLACE_HPP
 #define BOOST_STATS_LAPLACE_HPP
 
-#include <boost/math/distributions/detail/common_error_handling.hpp>
-#include <boost/math/distributions/complement.hpp>
-#include <boost/math/constants/constants.hpp>
+#include "boost/math/distributions/detail/common_error_handling.hpp"
+#include "boost/math/distributions/complement.hpp"
+#include "boost/math/constants/constants.hpp"
 #include <limits>
 
 namespace boost{ namespace math{
@@ -343,7 +343,7 @@ inline RealType kurtosis_excess(const laplace_distribution<RealType, Policy>& /*
 // This include must be at the end, *after* the accessors
 // for this distribution have been defined, in order to
 // keep compilers that support two-phase lookup happy.
-#include <boost/math/distributions/detail/derived_accessors.hpp>
+#include "boost/math/distributions/detail/derived_accessors.hpp"
 
 #endif // BOOST_STATS_LAPLACE_HPP
 

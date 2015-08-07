@@ -8,16 +8,16 @@
 #ifndef BOOST_STAT_STATISTICS_TAIL_VARIATE_HPP_EAN_28_10_2005
 #define BOOST_STAT_STATISTICS_TAIL_VARIATE_HPP_EAN_28_10_2005
 
-#include <boost/range.hpp>
-#include <boost/mpl/always.hpp>
-#include <boost/mpl/placeholders.hpp>
-#include <boost/iterator/reverse_iterator.hpp>
-#include <boost/iterator/permutation_iterator.hpp>
-#include <boost/accumulators/framework/accumulator_base.hpp>
-#include <boost/accumulators/framework/extractor.hpp>
-#include <boost/accumulators/framework/depends_on.hpp>
-#include <boost/accumulators/statistics_fwd.hpp>
-#include <boost/accumulators/statistics/tail.hpp>
+#include "boost/range.hpp"
+#include "boost/mpl/always.hpp"
+#include "boost/mpl/placeholders.hpp"
+#include "boost/iterator/reverse_iterator.hpp"
+#include "boost/iterator/permutation_iterator.hpp"
+#include "boost/accumulators/framework/accumulator_base.hpp"
+#include "boost/accumulators/framework/extractor.hpp"
+#include "boost/accumulators/framework/depends_on.hpp"
+#include "boost/accumulators/statistics_fwd.hpp"
+#include "boost/accumulators/statistics/tail.hpp"
 
 namespace boost { namespace accumulators
 {

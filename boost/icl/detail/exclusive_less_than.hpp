@@ -8,7 +8,7 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_DETAIL_EXCLUSIVE_LESS_THAN_HPP_JOFA_100929
 #define BOOST_ICL_DETAIL_EXCLUSIVE_LESS_THAN_HPP_JOFA_100929
 
-#include <boost/icl/concept/interval.hpp>
+#include "boost/icl/concept/interval.hpp"
 
 namespace boost{ namespace icl
 {

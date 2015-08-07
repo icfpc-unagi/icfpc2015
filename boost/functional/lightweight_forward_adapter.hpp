@@ -9,18 +9,18 @@
 #ifndef BOOST_FUNCTIONAL_LIGHTWEIGHT_FORWARD_ADAPTER_HPP_INCLUDED
 #   ifndef BOOST_PP_IS_ITERATING
 
-#   include <boost/config.hpp>
-#   include <boost/detail/workaround.hpp>
+#   include "boost/config.hpp"
+#   include "boost/detail/workaround.hpp"
 
-#   include <boost/preprocessor/cat.hpp>
-#   include <boost/preprocessor/iteration/iterate.hpp>
-#   include <boost/preprocessor/repetition/enum.hpp>
-#   include <boost/preprocessor/repetition/enum_params.hpp>
-#   include <boost/preprocessor/repetition/enum_binary_params.hpp>
-#   include <boost/preprocessor/facilities/intercept.hpp>
+#   include "boost/preprocessor/cat.hpp"
+#   include "boost/preprocessor/iteration/iterate.hpp"
+#   include "boost/preprocessor/repetition/enum.hpp"
+#   include "boost/preprocessor/repetition/enum_params.hpp"
+#   include "boost/preprocessor/repetition/enum_binary_params.hpp"
+#   include "boost/preprocessor/facilities/intercept.hpp"
 
-#   include <boost/utility/result_of.hpp>
-#   include <boost/ref.hpp>
+#   include "boost/utility/result_of.hpp"
+#   include "boost/ref.hpp"
 
 #   ifndef BOOST_FUNCTIONAL_LIGHTWEIGHT_FORWARD_ADAPTER_MAX_ARITY
 #     define BOOST_FUNCTIONAL_LIGHTWEIGHT_FORWARD_ADAPTER_MAX_ARITY 10
@@ -167,7 +167,7 @@ namespace boost
         };
 
 #       define  BOOST_PP_FILENAME_1 \
-            <boost/functional/lightweight_forward_adapter.hpp>
+            "boost/functional/lightweight_forward_adapter.hpp"
 #       define  BOOST_PP_ITERATION_LIMITS                                     \
             (1,BOOST_FUNCTIONAL_LIGHTWEIGHT_FORWARD_ADAPTER_MAX_ARITY) 
 #       include BOOST_PP_ITERATE()

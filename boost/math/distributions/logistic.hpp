@@ -8,11 +8,11 @@
 #ifndef BOOST_MATH_DISTRIBUTIONS_LOGISTIC
 #define BOOST_MATH_DISTRIBUTIONS_LOGISTIC
 
-#include <boost/math/distributions/fwd.hpp>
-#include <boost/math/distributions/detail/common_error_handling.hpp>
-#include <boost/math/distributions/complement.hpp>
-#include <boost/math/special_functions/log1p.hpp>
-#include <boost/math/constants/constants.hpp>
+#include "boost/math/distributions/fwd.hpp"
+#include "boost/math/distributions/detail/common_error_handling.hpp"
+#include "boost/math/distributions/complement.hpp"
+#include "boost/math/special_functions/log1p.hpp"
+#include "boost/math/constants/constants.hpp"
 #include <utility>
 
 namespace boost { namespace math { 
@@ -294,6 +294,6 @@ namespace boost { namespace math {
 
 
 // Must come at the end:
-#include <boost/math/distributions/detail/derived_accessors.hpp>
+#include "boost/math/distributions/detail/derived_accessors.hpp"
 
 #endif // BOOST_MATH_DISTRIBUTIONS_LOGISTIC

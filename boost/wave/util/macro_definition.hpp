@@ -14,17 +14,17 @@
 #include <vector>
 #include <list>
 
-#include <boost/detail/atomic_count.hpp>
-#include <boost/intrusive_ptr.hpp>
+#include "boost/detail/atomic_count.hpp"
+#include "boost/intrusive_ptr.hpp"
 
-#include <boost/wave/wave_config.hpp>
+#include "boost/wave/wave_config.hpp"
 #if BOOST_WAVE_SERIALIZATION != 0
-#include <boost/serialization/serialization.hpp>
-#include <boost/serialization/list.hpp>
-#include <boost/serialization/vector.hpp>
+#include "boost/serialization/serialization.hpp"
+#include "boost/serialization/list.hpp"
+#include "boost/serialization/vector.hpp"
 #endif
 
-#include <boost/wave/token_ids.hpp>
+#include "boost/wave/token_ids.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

@@ -10,7 +10,7 @@
  * $Id$
  */
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if (defined(BOOST_NO_OPERATORS_IN_NAMESPACE) || defined(BOOST_NO_MEMBER_TEMPLATE_FRIENDS)) \
     && !defined(BOOST_MSVC)

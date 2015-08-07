@@ -6,12 +6,12 @@
 #ifndef BOOST_THREAD_LOCK_FACTORIES_HPP
 #define BOOST_THREAD_LOCK_FACTORIES_HPP
 
-#include <boost/thread/lock_types.hpp>
-#include <boost/thread/lock_algorithms.hpp>
+#include "boost/thread/lock_types.hpp"
+#include "boost/thread/lock_algorithms.hpp"
 #if ! defined(BOOST_THREAD_NO_MAKE_UNIQUE_LOCKS)
-#include <tuple> // todo change to <boost/tuple.hpp> once Boost.Tuple or Boost.Fusion provides Move semantics.
+#include <tuple> // todo change to "boost/tuple.hpp" once Boost.Tuple or Boost.Fusion provides Move semantics.
 #endif
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -74,5 +74,5 @@ namespace boost
 
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 #endif

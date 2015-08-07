@@ -8,16 +8,16 @@
 #ifndef BOOST_LOCALE_BOUNDARY_INDEX_HPP_INCLUDED
 #define BOOST_LOCALE_BOUNDARY_INDEX_HPP_INCLUDED
 
-#include <boost/locale/config.hpp>
-#include <boost/locale/boundary/types.hpp>
-#include <boost/locale/boundary/facets.hpp>
-#include <boost/locale/boundary/segment.hpp>
-#include <boost/locale/boundary/boundary_point.hpp>
-#include <boost/iterator/iterator_facade.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/assert.hpp>
+#include "boost/locale/config.hpp"
+#include "boost/locale/boundary/types.hpp"
+#include "boost/locale/boundary/facets.hpp"
+#include "boost/locale/boundary/segment.hpp"
+#include "boost/locale/boundary/boundary_point.hpp"
+#include "boost/iterator/iterator_facade.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/assert.hpp"
 #ifdef BOOST_MSVC
 #  pragma warning(push)
 #  pragma warning(disable : 4275 4251 4231 4660)

@@ -15,25 +15,25 @@
 #include <list>
 #include <utility>
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/util/filesystem_compatibility.hpp>
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/util/filesystem_compatibility.hpp"
 
 #if BOOST_WAVE_SUPPORT_PRAGMA_ONCE != 0
-#include <boost/multi_index_container.hpp>
-#include <boost/multi_index/member.hpp>
-#include <boost/multi_index/ordered_index.hpp>
+#include "boost/multi_index_container.hpp"
+#include "boost/multi_index/member.hpp"
+#include "boost/multi_index/ordered_index.hpp"
 #endif
 
 #if BOOST_WAVE_SERIALIZATION != 0
-#include <boost/serialization/serialization.hpp>
-#include <boost/serialization/utility.hpp>
-#include <boost/serialization/collections_save_imp.hpp>
-#include <boost/serialization/collections_load_imp.hpp>
-#include <boost/serialization/split_free.hpp>
+#include "boost/serialization/serialization.hpp"
+#include "boost/serialization/utility.hpp"
+#include "boost/serialization/collections_save_imp.hpp"
+#include "boost/serialization/collections_load_imp.hpp"
+#include "boost/serialization/split_free.hpp"
 #endif
 
-#include <boost/filesystem/path.hpp>
-#include <boost/filesystem/operations.hpp>
+#include "boost/filesystem/path.hpp"
+#include "boost/filesystem/operations.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

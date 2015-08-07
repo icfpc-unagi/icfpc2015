@@ -8,12 +8,12 @@
 
 
 
-#include <boost/statechart/detail/rtti_policy.hpp>
-#include <boost/statechart/detail/counted_base.hpp>
+#include "boost/statechart/detail/rtti_policy.hpp"
+#include "boost/statechart/detail/counted_base.hpp"
 
-#include <boost/assert.hpp>
-#include <boost/intrusive_ptr.hpp>
-#include <boost/config.hpp>
+#include "boost/assert.hpp"
+#include "boost/intrusive_ptr.hpp"
+#include "boost/config.hpp"
 
 
 

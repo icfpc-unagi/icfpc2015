@@ -8,14 +8,14 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_SIGN_VALIDATE_THIS_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_SIGN_VALIDATE_THIS_HPP_
 
-#include <boost/local_function/detail/preprocessor/keyword/this.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/const.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/bind.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/const_bind.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/tuple/eat.hpp>
-#include <boost/preprocessor/facilities/empty.hpp>
-#include <boost/preprocessor/list/fold_left.hpp>
+#include "boost/local_function/detail/preprocessor/keyword/this.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/const.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/bind.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/const_bind.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/tuple/eat.hpp"
+#include "boost/preprocessor/facilities/empty.hpp"
+#include "boost/preprocessor/list/fold_left.hpp"
 
 // PRIVATE //
 

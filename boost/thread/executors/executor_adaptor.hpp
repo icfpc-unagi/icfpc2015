@@ -9,11 +9,11 @@
 #ifndef BOOST_THREAD_EXECUTORS_EXECUTOR_ADAPTOR_HPP
 #define BOOST_THREAD_EXECUTORS_EXECUTOR_ADAPTOR_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 
-#include <boost/thread/executors/executor.hpp>
+#include "boost/thread/executors/executor.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -132,6 +132,6 @@ namespace executors
 using executors::executor_adaptor;
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

@@ -8,10 +8,10 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_CONCEPT_ELEMENT_SET_HPP_JOFA_100921
 #define BOOST_ICL_CONCEPT_ELEMENT_SET_HPP_JOFA_100921
 
-#include <boost/icl/type_traits/is_combinable.hpp>
-#include <boost/icl/concept/set_value.hpp>
-#include <boost/icl/detail/std_set.hpp>
-#include <boost/icl/detail/set_algo.hpp>
+#include "boost/icl/type_traits/is_combinable.hpp"
+#include "boost/icl/concept/set_value.hpp"
+#include "boost/icl/detail/std_set.hpp"
+#include "boost/icl/detail/set_algo.hpp"
 
 
 namespace boost{ namespace icl

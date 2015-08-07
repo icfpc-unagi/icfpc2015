@@ -8,36 +8,36 @@
 
 
 
-#include <boost/statechart/event.hpp>
-#include <boost/statechart/null_exception_translator.hpp>
-#include <boost/statechart/result.hpp>
+#include "boost/statechart/event.hpp"
+#include "boost/statechart/null_exception_translator.hpp"
+#include "boost/statechart/result.hpp"
 
-#include <boost/statechart/detail/rtti_policy.hpp>
-#include <boost/statechart/detail/state_base.hpp>
-#include <boost/statechart/detail/leaf_state.hpp>
-#include <boost/statechart/detail/node_state.hpp>
-#include <boost/statechart/detail/constructor.hpp>
-#include <boost/statechart/detail/avoid_unused_warning.hpp>
+#include "boost/statechart/detail/rtti_policy.hpp"
+#include "boost/statechart/detail/state_base.hpp"
+#include "boost/statechart/detail/leaf_state.hpp"
+#include "boost/statechart/detail/node_state.hpp"
+#include "boost/statechart/detail/constructor.hpp"
+#include "boost/statechart/detail/avoid_unused_warning.hpp"
 
-#include <boost/mpl/list.hpp>
-#include <boost/mpl/clear.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/at.hpp>
-#include <boost/mpl/integral_c.hpp>
-#include <boost/mpl/minus.hpp>
-#include <boost/mpl/equal_to.hpp>
+#include "boost/mpl/list.hpp"
+#include "boost/mpl/clear.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/at.hpp"
+#include "boost/mpl/integral_c.hpp"
+#include "boost/mpl/minus.hpp"
+#include "boost/mpl/equal_to.hpp"
 
-#include <boost/intrusive_ptr.hpp>
-#include <boost/type_traits/is_pointer.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/noncopyable.hpp>
-#include <boost/assert.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/polymorphic_cast.hpp> // boost::polymorphic_downcast
+#include "boost/intrusive_ptr.hpp"
+#include "boost/type_traits/is_pointer.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/noncopyable.hpp"
+#include "boost/assert.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/polymorphic_cast.hpp" // boost::polymorphic_downcast
 // BOOST_NO_EXCEPTIONS, BOOST_MSVC, BOOST_MSVC_STD_ITERATOR
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
-#include <boost/detail/allocator_utilities.hpp>
+#include "boost/detail/allocator_utilities.hpp"
 
 #ifdef BOOST_MSVC
 #  pragma warning( push )

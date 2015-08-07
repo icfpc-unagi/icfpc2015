@@ -16,9 +16,9 @@
 #define BOOST_RT_CLA_VALIDATION_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
+#include "boost/test/utils/runtime/config.hpp"
 
-#include <boost/test/utils/runtime/cla/fwd.hpp>
+#include "boost/test/utils/runtime/cla/fwd.hpp"
 
 namespace boost {
 
@@ -48,7 +48,7 @@ void report_input_error( argv_traverser const& tr, format_stream& msg );
 #ifndef BOOST_RT_PARAM_OFFLINE
 
 #  define BOOST_RT_PARAM_INLINE inline
-#  include <boost/test/utils/runtime/cla/validation.ipp>
+#  include "boost/test/utils/runtime/cla/validation.ipp"
 
 #endif
 

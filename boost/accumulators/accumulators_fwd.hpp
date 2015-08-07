@@ -8,16 +8,16 @@
 #ifndef BOOST_ACCUMULATORS_ACCUMULATORS_FWD_HPP_EAN_28_10_2005
 #define BOOST_ACCUMULATORS_ACCUMULATORS_FWD_HPP_EAN_28_10_2005
 
-#include <boost/config.hpp>
-#include <boost/mpl/apply_fwd.hpp> // for mpl::na
-#include <boost/mpl/limits/vector.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/arithmetic/inc.hpp>
-#include <boost/preprocessor/repetition/enum_params_with_a_default.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_params.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_binary_params.hpp>
-#include <boost/preprocessor/repetition/repeat_from_to.hpp>
-#include <boost/accumulators/numeric/functional_fwd.hpp>
+#include "boost/config.hpp"
+#include "boost/mpl/apply_fwd.hpp" // for mpl::na
+#include "boost/mpl/limits/vector.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/arithmetic/inc.hpp"
+#include "boost/preprocessor/repetition/enum_params_with_a_default.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_params.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_binary_params.hpp"
+#include "boost/preprocessor/repetition/repeat_from_to.hpp"
+#include "boost/accumulators/numeric/functional_fwd.hpp"
 
 #ifndef BOOST_ACCUMULATORS_MAX_FEATURES
   /// The maximum number of accumulators that may be put in an accumulator_set.
@@ -41,8 +41,8 @@
 #endif
 
 #ifdef BOOST_ACCUMULATORS_BROKEN_CONST_OVERLOADS
-# include <boost/utility/enable_if.hpp>
-# include <boost/type_traits/is_const.hpp>
+# include "boost/utility/enable_if.hpp"
+# include "boost/type_traits/is_const.hpp"
 # define BOOST_ACCUMULATORS_PROTO_DISABLE_IF_IS_CONST(T)\
     , typename boost::disable_if<boost::is_const<T> >::type * = 0
 #else

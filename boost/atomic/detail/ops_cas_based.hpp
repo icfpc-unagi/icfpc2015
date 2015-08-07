@@ -14,8 +14,8 @@
 #ifndef BOOST_ATOMIC_DETAIL_OPS_CAS_BASED_HPP_INCLUDED_
 #define BOOST_ATOMIC_DETAIL_OPS_CAS_BASED_HPP_INCLUDED_
 
-#include <boost/memory_order.hpp>
-#include <boost/atomic/detail/config.hpp>
+#include "boost/memory_order.hpp"
+#include "boost/atomic/detail/config.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

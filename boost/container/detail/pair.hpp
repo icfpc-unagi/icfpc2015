@@ -17,22 +17,22 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
-#include <boost/container/detail/mpl.hpp>
-#include <boost/container/detail/type_traits.hpp>
-#include <boost/container/detail/mpl.hpp>
-#include <boost/container/detail/type_traits.hpp>
+#include "boost/container/detail/mpl.hpp"
+#include "boost/container/detail/type_traits.hpp"
+#include "boost/container/detail/mpl.hpp"
+#include "boost/container/detail/type_traits.hpp"
 
 #include <utility>   //std::pair
 #include <algorithm> //std::swap
 
-#include <boost/move/utility_core.hpp>
+#include "boost/move/utility_core.hpp"
 
 
 #ifndef BOOST_CONTAINER_PERFECT_FORWARDING
-#include <boost/container/detail/preprocessor.hpp>
+#include "boost/container/detail/preprocessor.hpp"
 #endif
 
 namespace boost {
@@ -369,6 +369,6 @@ struct is_class_or_union< ::boost::container::container_detail::pair<T1, T2> >
 
 }  //namespace boost {
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif   //#ifndef BOOST_CONTAINER_DETAIL_PAIR_HPP

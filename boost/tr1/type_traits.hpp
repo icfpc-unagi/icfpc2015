@@ -5,21 +5,21 @@
 
 #ifndef BOOST_TR1_TYPE_TRAITS_HPP_INCLUDED
 #  define BOOST_TR1_TYPE_TRAITS_HPP_INCLUDED
-#  include <boost/tr1/detail/config.hpp>
+#  include "boost/tr1/detail/config.hpp"
 
 #ifdef BOOST_HAS_TR1_TYPE_TRAITS
 
 #  if defined(BOOST_HAS_INCLUDE_NEXT) && !defined(BOOST_TR1_DISABLE_INCLUDE_NEXT)
 #     include_next BOOST_TR1_HEADER(type_traits)
 #  else
-#     include <boost/tr1/detail/config_all.hpp>
+#     include "boost/tr1/detail/config_all.hpp"
 #     include BOOST_TR1_STD_HEADER(BOOST_TR1_PATH(type_traits))
 #  endif
 
 #else
 // Boost Type Traits:
-#include <boost/type_traits.hpp>
-#include <boost/type_traits/is_base_of_tr1.hpp>
+#include "boost/type_traits.hpp"
+#include "boost/type_traits/is_base_of_tr1.hpp"
 
 namespace std { namespace tr1{
 

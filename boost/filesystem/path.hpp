@@ -15,22 +15,22 @@
 #ifndef BOOST_FILESYSTEM_PATH_HPP
 #define BOOST_FILESYSTEM_PATH_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 # if defined( BOOST_NO_STD_WSTRING )
 #   error Configuration not supported: Boost.Filesystem V3 and later requires std::wstring support
 # endif
 
-#include <boost/filesystem/config.hpp>
-#include <boost/filesystem/path_traits.hpp>  // includes <cwchar>
-#include <boost/system/error_code.hpp>
-#include <boost/system/system_error.hpp>
-#include <boost/iterator/iterator_facade.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/io/detail/quoted_manip.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/functional/hash_fwd.hpp>
-#include <boost/type_traits/is_integral.hpp>
+#include "boost/filesystem/config.hpp"
+#include "boost/filesystem/path_traits.hpp"  // includes <cwchar>
+#include "boost/system/error_code.hpp"
+#include "boost/system/system_error.hpp"
+#include "boost/iterator/iterator_facade.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/io/detail/quoted_manip.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/functional/hash_fwd.hpp"
+#include "boost/type_traits/is_integral.hpp"
 #include <string>
 #include <iterator>
 #include <cstring>
@@ -40,7 +40,7 @@
 #include <locale>
 #include <algorithm>
 
-#include <boost/config/abi_prefix.hpp> // must be the last #include
+#include "boost/config/abi_prefix.hpp" // must be the last #include
 
 namespace boost
 {
@@ -865,6 +865,6 @@ namespace path_traits
 
 //----------------------------------------------------------------------------//
 
-#include <boost/config/abi_suffix.hpp> // pops abi_prefix.hpp pragmas
+#include "boost/config/abi_suffix.hpp" // pops abi_prefix.hpp pragmas
 
 #endif  // BOOST_FILESYSTEM_PATH_HPP

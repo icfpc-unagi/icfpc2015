@@ -17,8 +17,8 @@
 #ifndef BOOST_RANDOM_UNIFORM_INT_HPP
 #define BOOST_RANDOM_UNIFORM_INT_HPP
 
-#include <boost/assert.hpp>
-#include <boost/random/uniform_int_distribution.hpp>
+#include "boost/assert.hpp"
+#include "boost/random/uniform_int_distribution.hpp"
 
 namespace boost {
 

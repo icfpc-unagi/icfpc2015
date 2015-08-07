@@ -8,8 +8,8 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_INTERVAL_BOUNDS_HPP_JOFA_100330
 #define BOOST_ICL_INTERVAL_BOUNDS_HPP_JOFA_100330
 
-#include <boost/utility/enable_if.hpp>
-#include <boost/icl/detail/design_config.hpp>
+#include "boost/utility/enable_if.hpp"
+#include "boost/icl/detail/design_config.hpp"
 
 namespace boost{namespace icl
 {

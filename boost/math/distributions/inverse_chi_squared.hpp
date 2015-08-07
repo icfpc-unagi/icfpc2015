@@ -9,11 +9,11 @@
 #ifndef BOOST_MATH_DISTRIBUTIONS_INVERSE_CHI_SQUARED_HPP
 #define BOOST_MATH_DISTRIBUTIONS_INVERSE_CHI_SQUARED_HPP
 
-#include <boost/math/distributions/fwd.hpp>
-#include <boost/math/special_functions/gamma.hpp> // for incomplete beta.
-#include <boost/math/distributions/complement.hpp> // for complements.
-#include <boost/math/distributions/detail/common_error_handling.hpp> // for error checks.
-#include <boost/math/special_functions/fpclassify.hpp> // for isfinite
+#include "boost/math/distributions/fwd.hpp"
+#include "boost/math/special_functions/gamma.hpp" // for incomplete beta.
+#include "boost/math/distributions/complement.hpp" // for complements.
+#include "boost/math/distributions/detail/common_error_handling.hpp" // for error checks.
+#include "boost/math/special_functions/fpclassify.hpp" // for isfinite
 
 // See http://en.wikipedia.org/wiki/Scaled-inverse-chi-square_distribution
 // for definitions of this scaled version.
@@ -386,6 +386,6 @@ inline RealType kurtosis_excess(const inverse_chi_squared_distribution<RealType,
 // This include must be at the end, *after* the accessors
 // for this distribution have been defined, in order to
 // keep compilers that support two-phase lookup happy.
-#include <boost/math/distributions/detail/derived_accessors.hpp>
+#include "boost/math/distributions/detail/derived_accessors.hpp"
 
 #endif // BOOST_MATH_DISTRIBUTIONS_INVERSE_CHI_SQUARED_HPP

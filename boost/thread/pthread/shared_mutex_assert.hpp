@@ -8,21 +8,21 @@
 //  accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/assert.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/thread/mutex.hpp>
-#include <boost/thread/condition_variable.hpp>
+#include "boost/assert.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/thread/mutex.hpp"
+#include "boost/thread/condition_variable.hpp"
 #if defined BOOST_THREAD_PROVIDES_INTERRUPTIONS
-#include <boost/thread/detail/thread_interruption.hpp>
+#include "boost/thread/detail/thread_interruption.hpp"
 #endif
 #ifdef BOOST_THREAD_USES_CHRONO
-#include <boost/chrono/system_clocks.hpp>
-#include <boost/chrono/ceil.hpp>
+#include "boost/chrono/system_clocks.hpp"
+#include "boost/chrono/ceil.hpp"
 #endif
-#include <boost/thread/detail/delete.hpp>
-#include <boost/assert.hpp>
+#include "boost/thread/detail/delete.hpp"
+#include "boost/assert.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -719,6 +719,6 @@ namespace boost
     typedef shared_mutex upgrade_mutex;
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

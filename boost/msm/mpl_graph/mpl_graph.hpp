@@ -12,17 +12,17 @@
 #ifndef BOOST_MSM_MPL_GRAPH_MPL_GRAPH_HPP_INCLUDED
 #define BOOST_MSM_MPL_GRAPH_MPL_GRAPH_HPP_INCLUDED
 
-#include <boost/msm/mpl_graph/detail/graph_implementation_interface.ipp>
+#include "boost/msm/mpl_graph/detail/graph_implementation_interface.ipp"
 
-#include <boost/mpl/vector.hpp>
-#include <boost/mpl/pair.hpp>
-#include <boost/mpl/fold.hpp>
-#include <boost/mpl/push_back.hpp>
-#include <boost/mpl/at.hpp>
-#include <boost/mpl/size.hpp>
-#include <boost/mpl/plus.hpp>
-#include <boost/mpl/transform.hpp>
-#include <boost/mpl/back_inserter.hpp>
+#include "boost/mpl/vector.hpp"
+#include "boost/mpl/pair.hpp"
+#include "boost/mpl/fold.hpp"
+#include "boost/mpl/push_back.hpp"
+#include "boost/mpl/at.hpp"
+#include "boost/mpl/size.hpp"
+#include "boost/mpl/plus.hpp"
+#include "boost/mpl/transform.hpp"
+#include "boost/mpl/back_inserter.hpp"
 
 namespace boost {
 namespace msm {

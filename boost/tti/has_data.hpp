@@ -7,11 +7,11 @@
 #if !defined(BOOST_TTI_HAS_DATA_HPP)
 #define BOOST_TTI_HAS_DATA_HPP
 
-#include <boost/config.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/type_traits/remove_const.hpp>
-#include <boost/tti/gen/has_data_gen.hpp>
-#include <boost/tti/detail/ddata.hpp>
+#include "boost/config.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/type_traits/remove_const.hpp"
+#include "boost/tti/gen/has_data_gen.hpp"
+#include "boost/tti/detail/ddata.hpp"
 
 /*
 

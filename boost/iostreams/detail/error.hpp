@@ -12,7 +12,7 @@
 # pragma once
 #endif              
                  
-#include <boost/iostreams/detail/ios.hpp>  // failure.
+#include "boost/iostreams/detail/ios.hpp"  // failure.
 
 namespace boost { namespace iostreams { namespace detail {
 

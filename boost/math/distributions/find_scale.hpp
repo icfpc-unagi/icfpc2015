@@ -8,14 +8,14 @@
 #ifndef BOOST_STATS_FIND_SCALE_HPP
 #define BOOST_STATS_FIND_SCALE_HPP
 
-#include <boost/math/distributions/fwd.hpp> // for all distribution signatures.
-#include <boost/math/distributions/complement.hpp>
-#include <boost/math/policies/policy.hpp>
+#include "boost/math/distributions/fwd.hpp" // for all distribution signatures.
+#include "boost/math/distributions/complement.hpp"
+#include "boost/math/policies/policy.hpp"
 // using boost::math::policies::policy;
-#include <boost/math/tools/traits.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/math/special_functions/fpclassify.hpp>
-#include <boost/math/policies/error_handling.hpp>
+#include "boost/math/tools/traits.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/math/special_functions/fpclassify.hpp"
+#include "boost/math/policies/error_handling.hpp"
 // using boost::math::complement; // will be needed by users who want complement,
 // but NOT placed here to avoid putting it in global scope.
 

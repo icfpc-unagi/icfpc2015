@@ -19,7 +19,7 @@
 // PFTO version is used to specify the last argument of certain functions
 // Function it is used to support  compilers that fail to support correct Partial 
 // Template Ordering
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 // some compilers can use an exta argument and use function overloading
 // to choose desired function.  This extra argument is long in the default

@@ -17,6 +17,6 @@
 #ifndef BOOST_NONDET_RANDOM_HPP
 #define BOOST_NONDET_RANDOM_HPP
 
-#include <boost/random/random_device.hpp>
+#include "boost/random/random_device.hpp"
 
 #endif /* BOOST_NONDET_RANDOM_HPP */

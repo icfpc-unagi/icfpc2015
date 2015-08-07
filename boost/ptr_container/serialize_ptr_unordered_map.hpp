@@ -12,8 +12,8 @@
 #ifndef BOOST_PTR_CONTAINER_SERIALIZE_UNORDERED_PTR_MAP_HPP
 #define BOOST_PTR_CONTAINER_SERIALIZE_UNORDERED_PTR_MAP_HPP
 
-#include <boost/ptr_container/detail/serialize_ptr_map_adapter.hpp>
-#include <boost/ptr_container/ptr_unordered_map.hpp>
+#include "boost/ptr_container/detail/serialize_ptr_map_adapter.hpp"
+#include "boost/ptr_container/ptr_unordered_map.hpp"
 
 namespace boost 
 {

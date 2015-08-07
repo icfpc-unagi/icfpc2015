@@ -13,17 +13,17 @@
 #if !defined(CPP_TOKEN_HPP_53A13BD2_FBAA_444B_9B8B_FCB225C2BBA8_INCLUDED)
 #define CPP_TOKEN_HPP_53A13BD2_FBAA_444B_9B8B_FCB225C2BBA8_INCLUDED
 
-#include <boost/wave/wave_config.hpp>
+#include "boost/wave/wave_config.hpp"
 #if BOOST_WAVE_SERIALIZATION != 0
-#include <boost/serialization/serialization.hpp>
+#include "boost/serialization/serialization.hpp"
 #endif
-#include <boost/wave/util/file_position.hpp>
-#include <boost/wave/token_ids.hpp>  
-#include <boost/wave/language_support.hpp>
+#include "boost/wave/util/file_position.hpp"
+#include "boost/wave/token_ids.hpp"  
+#include "boost/wave/language_support.hpp"
 
-#include <boost/throw_exception.hpp>
-#include <boost/pool/singleton_pool.hpp>
-#include <boost/detail/atomic_count.hpp>
+#include "boost/throw_exception.hpp"
+#include "boost/pool/singleton_pool.hpp"
+#include "boost/detail/atomic_count.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

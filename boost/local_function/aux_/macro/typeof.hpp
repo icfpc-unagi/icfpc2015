@@ -8,7 +8,7 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_TYPEOF_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_TYPEOF_HPP_
 
-#include <boost/local_function/aux_/symbol.hpp>
+#include "boost/local_function/aux_/symbol.hpp"
 
 // PUBLIC //
 

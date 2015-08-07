@@ -11,7 +11,7 @@
 #ifndef BOOST_STRING_PREDICATE_FACADE_HPP
 #define BOOST_STRING_PREDICATE_FACADE_HPP
 
-#include <boost/algorithm/string/config.hpp>
+#include "boost/algorithm/string/config.hpp"
 
 /*
  \file boost/algorith/string/predicate_facade.hpp

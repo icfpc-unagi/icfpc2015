@@ -6,8 +6,8 @@
 #ifndef BOOST_MP_INTEGER_HPP
 #define BOOST_MP_INTEGER_HPP
 
-#include <boost/multiprecision/cpp_int.hpp>
-#include <boost/multiprecision/detail/bitscan.hpp>
+#include "boost/multiprecision/cpp_int.hpp"
+#include "boost/multiprecision/detail/bitscan.hpp"
 
 namespace boost{
 namespace multiprecision{

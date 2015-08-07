@@ -8,13 +8,13 @@ Copyright (c) 2008-2009: Joachim Faulhaber
 #ifndef BOOST_ICL_DETAIL_INTERVAL_MORPHISM_HPP_JOFA_080315
 #define BOOST_ICL_DETAIL_INTERVAL_MORPHISM_HPP_JOFA_080315
 
-#include <boost/icl/detail/notate.hpp>
-#include <boost/icl/concept/interval_set_value.hpp>
-#include <boost/icl/concept/element_set_value.hpp>
-#include <boost/icl/concept/set_value.hpp>
-#include <boost/icl/concept/map_value.hpp>
-#include <boost/icl/associative_interval_container.hpp>
-#include <boost/icl/associative_element_container.hpp>
+#include "boost/icl/detail/notate.hpp"
+#include "boost/icl/concept/interval_set_value.hpp"
+#include "boost/icl/concept/element_set_value.hpp"
+#include "boost/icl/concept/set_value.hpp"
+#include "boost/icl/concept/map_value.hpp"
+#include "boost/icl/associative_interval_container.hpp"
+#include "boost/icl/associative_element_container.hpp"
 
 namespace boost{namespace icl
 {

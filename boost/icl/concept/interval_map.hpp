@@ -8,16 +8,16 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_CONCEPT_INTERVAL_MAP_HPP_JOFA_100920
 #define BOOST_ICL_CONCEPT_INTERVAL_MAP_HPP_JOFA_100920
 
-#include <boost/icl/type_traits/element_type_of.hpp>
-#include <boost/icl/type_traits/segment_type_of.hpp>
-#include <boost/icl/type_traits/absorbs_identities.hpp>
-#include <boost/icl/type_traits/is_combinable.hpp>
-#include <boost/icl/type_traits/is_interval_splitter.hpp>
+#include "boost/icl/type_traits/element_type_of.hpp"
+#include "boost/icl/type_traits/segment_type_of.hpp"
+#include "boost/icl/type_traits/absorbs_identities.hpp"
+#include "boost/icl/type_traits/is_combinable.hpp"
+#include "boost/icl/type_traits/is_interval_splitter.hpp"
 
-#include <boost/icl/detail/set_algo.hpp>
-#include <boost/icl/detail/interval_map_algo.hpp>
-#include <boost/icl/concept/interval.hpp>
-#include <boost/icl/concept/joinable.hpp>
+#include "boost/icl/detail/set_algo.hpp"
+#include "boost/icl/detail/interval_map_algo.hpp"
+#include "boost/icl/concept/interval.hpp"
+#include "boost/icl/concept/joinable.hpp"
 
 namespace boost{ namespace icl
 {

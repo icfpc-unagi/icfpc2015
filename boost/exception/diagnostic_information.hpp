@@ -12,19 +12,19 @@
 #pragma warning(push,1)
 #endif
 
-#include <boost/config.hpp>
-#include <boost/exception/get_error_info.hpp>
-#include <boost/exception/info.hpp>
-#include <boost/utility/enable_if.hpp>
+#include "boost/config.hpp"
+#include "boost/exception/get_error_info.hpp"
+#include "boost/exception/info.hpp"
+#include "boost/utility/enable_if.hpp"
 #ifndef BOOST_NO_RTTI
-#include <boost/core/demangle.hpp>
+#include "boost/core/demangle.hpp"
 #endif
 #include <exception>
 #include <sstream>
 #include <string>
 
 #ifndef BOOST_NO_EXCEPTIONS
-#include <boost/exception/current_exception_cast.hpp>
+#include "boost/exception/current_exception_cast.hpp"
 namespace
 boost
     {

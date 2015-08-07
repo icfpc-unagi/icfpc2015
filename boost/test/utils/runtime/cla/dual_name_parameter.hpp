@@ -16,10 +16,10 @@
 #define BOOST_RT_CLA_DUAL_NAME_PARAMETER_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
+#include "boost/test/utils/runtime/config.hpp"
 
-#include <boost/test/utils/runtime/cla/named_parameter.hpp>
-#include <boost/test/utils/runtime/cla/char_parameter.hpp>
+#include "boost/test/utils/runtime/cla/named_parameter.hpp"
+#include "boost/test/utils/runtime/cla/char_parameter.hpp"
 
 namespace boost {
 
@@ -89,7 +89,7 @@ BOOST_RT_CLA_NAMED_PARAM_GENERATORS( dual_name_parameter )
 #ifndef BOOST_RT_PARAM_OFFLINE
 
 #  define BOOST_RT_PARAM_INLINE inline
-#  include <boost/test/utils/runtime/cla/dual_name_parameter.ipp>
+#  include "boost/test/utils/runtime/cla/dual_name_parameter.ipp"
 
 #endif
 

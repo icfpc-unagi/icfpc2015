@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         regex_traits_defaults.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares API's for access to regex_traits default properties.
   */
 
@@ -31,10 +31,10 @@
 #endif
 
 #ifndef BOOST_REGEX_SYNTAX_TYPE_HPP
-#include <boost/regex/v4/syntax_type.hpp>
+#include "boost/regex/v4/syntax_type.hpp"
 #endif
 #ifndef BOOST_REGEX_ERROR_TYPE_HPP
-#include <boost/regex/v4/error_type.hpp>
+#include "boost/regex/v4/error_type.hpp"
 #endif
 
 #ifdef BOOST_NO_STDC_NAMESPACE

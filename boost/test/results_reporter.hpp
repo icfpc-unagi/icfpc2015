@@ -17,13 +17,13 @@
 #define BOOST_TEST_RESULTS_REPORTER_HPP_021205GER
 
 // Boost.Test
-#include <boost/test/detail/global_typedef.hpp>
-#include <boost/test/detail/fwd_decl.hpp>
+#include "boost/test/detail/global_typedef.hpp"
+#include "boost/test/detail/fwd_decl.hpp"
 
 // STL
 #include <iosfwd>   // for std::ostream&
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -82,7 +82,7 @@ inline void             detailed_report( test_unit_id id = INV_TEST_UNIT_ID )
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_RESULTS_REPORTER_HPP_021205GER
 

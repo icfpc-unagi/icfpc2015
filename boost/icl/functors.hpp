@@ -9,12 +9,12 @@ Copyright (c) 2007-2009: Joachim Faulhaber
 #define BOOST_ICL_FUNCTORS_HPP_JOFA_080315
 
 #include <functional>
-#include <boost/type_traits.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/icl/type_traits/identity_element.hpp>
-#include <boost/icl/type_traits/unit_element.hpp>
-#include <boost/icl/type_traits/is_set.hpp>
-#include <boost/icl/type_traits/has_set_semantics.hpp>
+#include "boost/type_traits.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/icl/type_traits/identity_element.hpp"
+#include "boost/icl/type_traits/unit_element.hpp"
+#include "boost/icl/type_traits/is_set.hpp"
+#include "boost/icl/type_traits/has_set_semantics.hpp"
 
 namespace boost{namespace icl
 {

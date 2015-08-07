@@ -8,19 +8,19 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_APPEND_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_APPEND_HPP_
 
-#include <boost/local_function/aux_/preprocessor/traits/decl_returns.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_params.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_const_binds.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_binds.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_error.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/param.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/return.hpp>
-#include <boost/preprocessor/facilities/empty.hpp>
-#include <boost/preprocessor/arithmetic/dec.hpp>
-#include <boost/preprocessor/list/append.hpp>
-#include <boost/preprocessor/list/size.hpp>
-#include <boost/preprocessor/list/at.hpp>
-#include <boost/preprocessor/list/first_n.hpp>
+#include "boost/local_function/aux_/preprocessor/traits/decl_returns.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_params.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_const_binds.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_binds.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_error.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/param.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/return.hpp"
+#include "boost/preprocessor/facilities/empty.hpp"
+#include "boost/preprocessor/arithmetic/dec.hpp"
+#include "boost/preprocessor/list/append.hpp"
+#include "boost/preprocessor/list/size.hpp"
+#include "boost/preprocessor/list/at.hpp"
+#include "boost/preprocessor/list/first_n.hpp"
 
 // PRIVATE //
 

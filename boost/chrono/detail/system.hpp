@@ -8,8 +8,8 @@
 
 #if !defined BOOST_CHRONO_DONT_PROVIDE_HYBRID_ERROR_HANDLING
 
-#include <boost/version.hpp>
-#include <boost/system/error_code.hpp>
+#include "boost/version.hpp"
+#include "boost/system/error_code.hpp"
 
 #if ((BOOST_VERSION / 100000) < 2) && ((BOOST_VERSION / 100 % 1000) < 44)
 #define BOOST_CHRONO_SYSTEM_CATEGORY boost::system::system_category

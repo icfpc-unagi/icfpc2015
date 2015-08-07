@@ -9,16 +9,16 @@
 #ifndef BOOST_FUNCTIONAL_FACTORY_HPP_INCLUDED
 #   ifndef BOOST_PP_IS_ITERATING
 
-#     include <boost/preprocessor/iteration/iterate.hpp>
-#     include <boost/preprocessor/repetition/enum_params.hpp>
-#     include <boost/preprocessor/repetition/enum_binary_params.hpp>
+#     include "boost/preprocessor/iteration/iterate.hpp"
+#     include "boost/preprocessor/repetition/enum_params.hpp"
+#     include "boost/preprocessor/repetition/enum_binary_params.hpp"
 
 #     include <new>
-#     include <boost/pointee.hpp>
-#     include <boost/none_t.hpp>
-#     include <boost/get_pointer.hpp>
-#     include <boost/non_type.hpp>
-#     include <boost/type_traits/remove_cv.hpp>
+#     include "boost/pointee.hpp"
+#     include "boost/none_t.hpp"
+#     include "boost/get_pointer.hpp"
+#     include "boost/non_type.hpp"
+#     include "boost/type_traits/remove_cv.hpp"
 
 #     ifndef BOOST_FUNCTIONAL_FACTORY_MAX_ARITY
 #       define BOOST_FUNCTIONAL_FACTORY_MAX_ARITY 10
@@ -51,7 +51,7 @@ namespace boost
         factory()
         { }
 
-#     define BOOST_PP_FILENAME_1 <boost/functional/factory.hpp>
+#     define BOOST_PP_FILENAME_1 "boost/functional/factory.hpp"
 #     define BOOST_PP_ITERATION_LIMITS (0,BOOST_FUNCTIONAL_FACTORY_MAX_ARITY)
 #     include BOOST_PP_ITERATE()
     };
@@ -118,7 +118,7 @@ namespace boost
       public:
 
 #     define BOOST_TMP_MACRO
-#     define BOOST_PP_FILENAME_1 <boost/functional/factory.hpp>
+#     define BOOST_PP_FILENAME_1 "boost/functional/factory.hpp"
 #     define BOOST_PP_ITERATION_LIMITS (0,BOOST_FUNCTIONAL_FACTORY_MAX_ARITY)
 #     include BOOST_PP_ITERATE()
 #     undef BOOST_TMP_MACRO

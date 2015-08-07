@@ -13,7 +13,7 @@
 
 #include <algorithm>
 #include <numeric>
-#include <boost/msm/front/euml/common.hpp>
+#include "boost/msm/front/euml/common.hpp"
 
 namespace boost { namespace msm { namespace front { namespace euml
 {

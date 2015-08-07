@@ -15,7 +15,7 @@
 #ifndef BOOST_ATOMIC_DETAIL_LINK_HPP_INCLUDED_
 #define BOOST_ATOMIC_DETAIL_LINK_HPP_INCLUDED_
 
-#include <boost/atomic/detail/config.hpp>
+#include "boost/atomic/detail/config.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once
@@ -51,7 +51,7 @@
 #define BOOST_DYN_LINK
 #endif
 
-#include <boost/config/auto_link.hpp>
+#include "boost/config/auto_link.hpp"
 
 #endif  // auto-linking disabled
 

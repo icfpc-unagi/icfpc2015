@@ -9,16 +9,16 @@
 
 #include <algorithm>
 
-#include <boost/assert.hpp>
-#include <boost/config.hpp>
-#include <boost/move/move.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/utility/explicit_operator_bool.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"
+#include "boost/move/move.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/utility/explicit_operator_bool.hpp"
 
-#include <boost/coroutine/detail/config.hpp>
-#include <boost/coroutine/exceptions.hpp>
+#include "boost/coroutine/detail/config.hpp"
+#include "boost/coroutine/exceptions.hpp"
 
 #ifdef BOOST_HAS_ABI_HEADERS
 #  include BOOST_ABI_PREFIX

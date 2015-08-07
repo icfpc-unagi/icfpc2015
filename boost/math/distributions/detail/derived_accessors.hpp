@@ -27,8 +27,8 @@
 // can find the definitions refered to herein.
 //
 
-#include <boost/type_traits/is_same.hpp>
-#include <boost/static_assert.hpp>
+#include "boost/type_traits/is_same.hpp"
+#include "boost/static_assert.hpp"
 
 #ifdef BOOST_MSVC
 # pragma warning(push)

@@ -7,14 +7,14 @@
 #if !defined(BOOST_TTI_DETAIL_COMP_MEM_FUN_HPP)
 #define BOOST_TTI_DETAIL_COMP_MEM_FUN_HPP
 
-#include <boost/config.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/tti/detail/dftclass.hpp>
-#include <boost/tti/detail/dnullptr.hpp>
-#include <boost/tti/gen/namespace_gen.hpp>
-#include <boost/type_traits/remove_const.hpp>
-#include <boost/type_traits/detail/yes_no_type.hpp>
+#include "boost/config.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/tti/detail/dftclass.hpp"
+#include "boost/tti/detail/dnullptr.hpp"
+#include "boost/tti/gen/namespace_gen.hpp"
+#include "boost/type_traits/remove_const.hpp"
+#include "boost/type_traits/detail/yes_no_type.hpp"
 
 #if defined(__SUNPRO_CC)
 

@@ -11,10 +11,10 @@
 #ifndef BOOST_MOVE_PTR_DEFAULT_DELETER_HPP_INCLUDED
 #define BOOST_MOVE_PTR_DEFAULT_DELETER_HPP_INCLUDED 
 
-#include <boost/checked_delete.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/type_traits/is_array.hpp>
-#include <boost/type_traits/remove_bounds.hpp>
+#include "boost/checked_delete.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/type_traits/is_array.hpp"
+#include "boost/type_traits/remove_bounds.hpp"
 
 namespace boost { namespace ptr_container_detail { namespace move_ptrs {
 

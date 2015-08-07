@@ -16,17 +16,17 @@
     #pragma once
 #endif
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #ifdef BOOST_NO_SFINAE
 #else
-#include <boost/utility/result_of.hpp>
-#include <boost/pointee.hpp>
+#include "boost/utility/result_of.hpp"
+#include "boost/pointee.hpp"
 #endif // BOOST_NO_SFINAE
 
-#include <boost/assert.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/type_traits/is_void.hpp>
+#include "boost/assert.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/type_traits/is_void.hpp"
 #include <functional>
 
 

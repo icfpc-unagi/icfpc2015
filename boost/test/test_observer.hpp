@@ -16,11 +16,11 @@
 #define BOOST_TEST_TEST_OBSERVER_HPP_021005GER
 
 // Boost.Test
-#include <boost/test/detail/fwd_decl.hpp>
-#include <boost/test/detail/global_typedef.hpp>
-#include <boost/test/detail/config.hpp>
+#include "boost/test/detail/fwd_decl.hpp"
+#include "boost/test/detail/global_typedef.hpp"
+#include "boost/test/detail/config.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -59,7 +59,7 @@ protected:
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_TEST_OBSERVER_HPP_021005GER
 

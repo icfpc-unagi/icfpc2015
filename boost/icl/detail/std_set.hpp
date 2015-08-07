@@ -9,9 +9,9 @@ Copyright (c) 2007-2010: Joachim Faulhaber
 #define BOOST_ICL_DETAIL_STD_SET_HPP_JOFA_101007
 
 #include <set>
-#include <boost/config.hpp>
-#include <boost/icl/type_traits/type_to_string.hpp>
-#include <boost/icl/type_traits/is_set.hpp>
+#include "boost/config.hpp"
+#include "boost/icl/type_traits/type_to_string.hpp"
+#include "boost/icl/type_traits/is_set.hpp"
 
 
 namespace boost{namespace icl

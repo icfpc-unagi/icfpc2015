@@ -22,14 +22,14 @@
 # pragma once
 #endif
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if !defined(BOOST_HAS_THREADS)
-# include <boost/signals2/detail/lwm_nop.hpp>
+# include "boost/signals2/detail/lwm_nop.hpp"
 #elif defined(BOOST_HAS_PTHREADS)
-#  include <boost/signals2/detail/lwm_pthreads.hpp>
+#  include "boost/signals2/detail/lwm_pthreads.hpp"
 #elif defined(BOOST_HAS_WINTHREADS)
-#  include <boost/signals2/detail/lwm_win32_cs.hpp>
+#  include "boost/signals2/detail/lwm_win32_cs.hpp"
 #else
 // Use #define BOOST_DISABLE_THREADS to avoid the error
 #  error Unrecognized threading platform

@@ -8,8 +8,8 @@
 #ifndef BOOST_ACCUMULATORS_STATISTICS_PARAMETERS_QUANTILE_PROBABILITY_HPP_EAN_03_11_2005
 #define BOOST_ACCUMULATORS_STATISTICS_PARAMETERS_QUANTILE_PROBABILITY_HPP_EAN_03_11_2005
 
-#include <boost/parameter/keyword.hpp>
-#include <boost/accumulators/accumulators_fwd.hpp>
+#include "boost/parameter/keyword.hpp"
+#include "boost/accumulators/accumulators_fwd.hpp"
 
 namespace boost { namespace accumulators
 {

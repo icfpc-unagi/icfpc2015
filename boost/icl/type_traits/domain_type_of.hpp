@@ -8,9 +8,9 @@ Copyright (c) 2008-2009: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_DOMAIN_TYPE_OF_HPP_JOFA_100902
 #define BOOST_ICL_TYPE_TRAITS_DOMAIN_TYPE_OF_HPP_JOFA_100902
 
-#include <boost/mpl/has_xxx.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/icl/type_traits/no_type.hpp>
+#include "boost/mpl/has_xxx.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/icl/type_traits/no_type.hpp"
 
 namespace boost{ namespace icl
 {

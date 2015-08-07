@@ -11,14 +11,14 @@
 #ifndef BOOST_TYPE_ERASURE_MACRO_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_MACRO_HPP_INCLUDED
 
-#include <boost/preprocessor/dec.hpp>
-#include <boost/preprocessor/if.hpp>
-#include <boost/preprocessor/comparison/not_equal.hpp>
-#include <boost/preprocessor/repetition/repeat.hpp>
-#include <boost/preprocessor/seq/for_each.hpp>
-#include <boost/preprocessor/seq/pop_back.hpp>
-#include <boost/preprocessor/seq/size.hpp>
-#include <boost/preprocessor/tuple/eat.hpp>
+#include "boost/preprocessor/dec.hpp"
+#include "boost/preprocessor/if.hpp"
+#include "boost/preprocessor/comparison/not_equal.hpp"
+#include "boost/preprocessor/repetition/repeat.hpp"
+#include "boost/preprocessor/seq/for_each.hpp"
+#include "boost/preprocessor/seq/pop_back.hpp"
+#include "boost/preprocessor/seq/size.hpp"
+#include "boost/preprocessor/tuple/eat.hpp"
 
 /** INTERNAL ONLY */
 #define BOOST_TYPE_ERASURE_OPEN_NAMESPACE_F(z, data, x) \

@@ -13,21 +13,21 @@
 #ifndef BOOST_TYPE_ERASURE_DETAIL_CHECK_CALL_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_DETAIL_CHECK_CALL_HPP_INCLUDED
 
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/and.hpp>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/type_traits/remove_cv.hpp>
-#include <boost/type_traits/is_reference.hpp>
-#include <boost/type_traits/is_const.hpp>
-#include <boost/type_traits/function_traits.hpp>
-#include <boost/preprocessor/iteration/iterate.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_params.hpp>
-#include <boost/preprocessor/repetition/repeat.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/type_erasure/placeholder_of.hpp>
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/and.hpp"
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/type_traits/remove_cv.hpp"
+#include "boost/type_traits/is_reference.hpp"
+#include "boost/type_traits/is_const.hpp"
+#include "boost/type_traits/function_traits.hpp"
+#include "boost/preprocessor/iteration/iterate.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_params.hpp"
+#include "boost/preprocessor/repetition/repeat.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/type_erasure/placeholder_of.hpp"
 
 namespace boost {
 namespace type_erasure {
@@ -135,7 +135,7 @@ struct check_arg
     >::type type;
 };
 
-#define BOOST_PP_FILENAME_1 <boost/type_erasure/detail/check_call.hpp>
+#define BOOST_PP_FILENAME_1 "boost/type_erasure/detail/check_call.hpp"
 #define BOOST_PP_ITERATION_LIMITS (0, BOOST_TYPE_ERASURE_MAX_ARITY)
 #include BOOST_PP_ITERATE()
 

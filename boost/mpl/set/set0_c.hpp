@@ -15,8 +15,8 @@
 // $Date$
 // $Revision$
 
-#include <boost/mpl/set/set0.hpp>
-#include <boost/mpl/integral_c.hpp>
+#include "boost/mpl/set/set0.hpp"
+#include "boost/mpl/integral_c.hpp"
 
 namespace boost { namespace mpl {
 

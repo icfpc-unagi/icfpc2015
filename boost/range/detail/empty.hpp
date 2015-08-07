@@ -11,7 +11,7 @@
 #ifndef BOOST_RANGE_DETAIL_EMPTY_HPP
 #define BOOST_RANGE_DETAIL_EMPTY_HPP
 
-#include <boost/range/detail/common.hpp>
+#include "boost/range/detail/common.hpp"
 
 namespace boost 
 {

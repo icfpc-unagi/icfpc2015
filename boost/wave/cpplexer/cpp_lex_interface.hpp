@@ -13,9 +13,9 @@
 #if !defined(CPP_LEX_INTERFACE_HPP_E83F52A4_90AC_4FBE_A9A7_B65F7F94C497_INCLUDED)
 #define CPP_LEX_INTERFACE_HPP_E83F52A4_90AC_4FBE_A9A7_B65F7F94C497_INCLUDED
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/util/file_position.hpp>
-#include <boost/wave/language_support.hpp>
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/util/file_position.hpp"
+#include "boost/wave/language_support.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

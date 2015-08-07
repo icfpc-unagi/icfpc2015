@@ -26,7 +26,7 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
+#include "boost/container/detail/config_begin.hpp"
 
 namespace boost {
 namespace container {
@@ -87,6 +87,6 @@ namespace function_detector {
                                          ReturnType (*)Params \
                                        >::check
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif   //@ifndef BOOST_CONTAINER_DETAIL_FUNCTION_DETECTOR_HPP

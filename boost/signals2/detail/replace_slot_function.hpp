@@ -10,7 +10,7 @@
 #ifndef BOOST_SIGNALS2_DETAIL_REPLACE_SLOT_FUNCTION_HPP
 #define BOOST_SIGNALS2_DETAIL_REPLACE_SLOT_FUNCTION_HPP
 
-#include <boost/signals2/slot_base.hpp>
+#include "boost/signals2/slot_base.hpp"
 
 namespace boost
 {

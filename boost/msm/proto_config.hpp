@@ -11,6 +11,6 @@
 #ifndef BOOST_MSM_PROTO_CONFIG_H
 #define BOOST_MSM_PROTO_CONFIG_H
 
-#include <boost/proto/proto_fwd.hpp>
+#include "boost/proto/proto_fwd.hpp"
 
 #endif //BOOST_MSM_PROTO_CONFIG_H

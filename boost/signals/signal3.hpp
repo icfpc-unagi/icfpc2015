@@ -21,7 +21,7 @@
 #define BOOST_SIGNALS_INIT_ARGS :a1(ia1), a2(ia2), a3(ia3)
 #define BOOST_SIGNALS_ARG_TYPES typedef T1 arg1_type; typedef T2 arg2_type; typedef T3 arg3_type;
 
-#include <boost/signals/signal_template.hpp>
+#include "boost/signals/signal_template.hpp"
 
 #undef BOOST_SIGNALS_ARG_TYPES
 #undef BOOST_SIGNALS_INIT_ARGS

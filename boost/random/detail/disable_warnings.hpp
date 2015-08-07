@@ -13,7 +13,7 @@
 
 // No #include guard.  This header is intended to be included multiple times.
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #ifdef BOOST_MSVC
 #pragma warning(push)

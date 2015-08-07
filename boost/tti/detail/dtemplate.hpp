@@ -7,14 +7,14 @@
 #if !defined(BOOST_TTI_DETAIL_TEMPLATE_HPP)
 #define BOOST_TTI_DETAIL_TEMPLATE_HPP
 
-#include <boost/config.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/has_xxx.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/debug/assert.hpp>
-#include <boost/preprocessor/facilities/is_empty.hpp>
-#include <boost/type_traits/is_class.hpp>
+#include "boost/config.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/has_xxx.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/debug/assert.hpp"
+#include "boost/preprocessor/facilities/is_empty.hpp"
+#include "boost/type_traits/is_class.hpp"
 
 #define BOOST_TTI_DETAIL_IS_HELPER_BOOST_PP_NIL
 

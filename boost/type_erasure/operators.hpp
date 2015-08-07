@@ -12,18 +12,18 @@
 #define BOOST_TYPE_ERASURE_OPERATORS_HPP_INCLUDED
 
 #include <iosfwd>
-#include <boost/utility/enable_if.hpp>
-#include <boost/type_erasure/detail/const.hpp>
-#include <boost/type_erasure/call.hpp>
-#include <boost/type_erasure/concept_interface.hpp>
-#include <boost/type_erasure/placeholder.hpp>
-#include <boost/type_erasure/concept_of.hpp>
-#include <boost/type_erasure/derived.hpp>
-#include <boost/type_erasure/rebind_any.hpp>
-#include <boost/type_erasure/param.hpp>
-#include <boost/type_erasure/check_match.hpp>
-#include <boost/type_erasure/relaxed.hpp>
-#include <boost/type_erasure/typeid_of.hpp>
+#include "boost/utility/enable_if.hpp"
+#include "boost/type_erasure/detail/const.hpp"
+#include "boost/type_erasure/call.hpp"
+#include "boost/type_erasure/concept_interface.hpp"
+#include "boost/type_erasure/placeholder.hpp"
+#include "boost/type_erasure/concept_of.hpp"
+#include "boost/type_erasure/derived.hpp"
+#include "boost/type_erasure/rebind_any.hpp"
+#include "boost/type_erasure/param.hpp"
+#include "boost/type_erasure/check_match.hpp"
+#include "boost/type_erasure/relaxed.hpp"
+#include "boost/type_erasure/typeid_of.hpp"
 
 namespace boost {
 namespace type_erasure {

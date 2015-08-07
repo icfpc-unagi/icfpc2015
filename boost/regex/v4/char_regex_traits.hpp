@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         char_regex_traits.cpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares deprecated traits classes char_regex_traits<>.
   */
 

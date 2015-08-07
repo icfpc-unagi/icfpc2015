@@ -16,16 +16,16 @@
 #define BOOST_RT_CLA_PARSER_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
-#include <boost/test/utils/runtime/fwd.hpp>
-#include <boost/test/utils/runtime/argument.hpp>
+#include "boost/test/utils/runtime/config.hpp"
+#include "boost/test/utils/runtime/fwd.hpp"
+#include "boost/test/utils/runtime/argument.hpp"
 
-#include <boost/test/utils/runtime/cla/fwd.hpp>
-#include <boost/test/utils/runtime/cla/modifier.hpp>
-#include <boost/test/utils/runtime/cla/argv_traverser.hpp>
+#include "boost/test/utils/runtime/cla/fwd.hpp"
+#include "boost/test/utils/runtime/cla/modifier.hpp"
+#include "boost/test/utils/runtime/cla/argv_traverser.hpp"
 
 // Boost
-#include <boost/optional.hpp>
+#include "boost/optional.hpp"
 
 // STL
 #include <list>
@@ -146,7 +146,7 @@ private:
 #ifndef BOOST_RT_PARAM_OFFLINE
 
 #  define BOOST_RT_PARAM_INLINE inline
-#  include <boost/test/utils/runtime/cla/parser.ipp>
+#  include "boost/test/utils/runtime/cla/parser.ipp"
 
 #endif
 

@@ -12,11 +12,11 @@
 #define BOOST_SIGNALS2_FOREIGN_PTR_HPP
 
 #include <algorithm>
-#include <boost/config.hpp>
-#include <boost/assert.hpp>
-#include <boost/scoped_ptr.hpp>
-#include <boost/smart_ptr/bad_weak_ptr.hpp>
-#include <boost/utility/swap.hpp>
+#include "boost/config.hpp"
+#include "boost/assert.hpp"
+#include "boost/scoped_ptr.hpp"
+#include "boost/smart_ptr/bad_weak_ptr.hpp"
+#include "boost/utility/swap.hpp"
 
 #ifndef BOOST_NO_CXX11_SMART_PTR
 #include <memory>

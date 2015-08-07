@@ -9,7 +9,7 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #define BOOST_ICL_INTERVAL_HPP_JOFA_101014
 
 
-#include <boost/icl/type_traits/interval_type_default.hpp>
+#include "boost/icl/type_traits/interval_type_default.hpp"
 
 
 namespace boost{ namespace icl

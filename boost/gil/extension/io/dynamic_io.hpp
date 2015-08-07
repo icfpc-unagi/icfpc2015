@@ -19,8 +19,8 @@
 ///         Adobe Systems Incorporated
 /// \date   2005-2007 \n Last updated May 30, 2006
 
-#include <boost/mpl/at.hpp>
-#include <boost/mpl/size.hpp>
+#include "boost/mpl/at.hpp"
+#include "boost/mpl/size.hpp"
 #include "../../gil_config.hpp"
 #include "io_error.hpp"
 #include "../dynamic_image/any_image.hpp"

@@ -10,8 +10,8 @@
 #define BOOST_DETAIL_WINAPI_BASIC_TYPES_HPP
 
 #include <cstdarg>
-#include <boost/cstdint.hpp>
-#include <boost/detail/winapi/config.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/detail/winapi/config.hpp"
 
 #if defined( BOOST_USE_WINDOWS_H )
 # include <windows.h>

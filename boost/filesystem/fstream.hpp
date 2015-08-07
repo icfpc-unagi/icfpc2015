@@ -12,17 +12,17 @@
 #ifndef BOOST_FILESYSTEM3_FSTREAM_HPP
 #define BOOST_FILESYSTEM3_FSTREAM_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 # if defined( BOOST_NO_STD_WSTRING )
 #   error Configuration not supported: Boost.Filesystem V3 and later requires std::wstring support
 # endif
 
-#include <boost/filesystem/path.hpp>
+#include "boost/filesystem/path.hpp"
 #include <iosfwd>
 #include <fstream>
 
-#include <boost/config/abi_prefix.hpp> // must be the last #include
+#include "boost/config/abi_prefix.hpp" // must be the last #include
 
 //  on Windows, except for standard libaries known to have wchar_t overloads for
 //  file stream I/O, use path::string() to get a narrow character c_str()
@@ -178,5 +178,5 @@ namespace filesystem
 } // namespace filesystem
 } // namespace boost
 
-#include <boost/config/abi_suffix.hpp> // pops abi_prefix.hpp pragmas
+#include "boost/config/abi_suffix.hpp" // pops abi_prefix.hpp pragmas
 #endif  // BOOST_FILESYSTEM3_FSTREAM_HPP

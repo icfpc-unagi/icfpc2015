@@ -5,13 +5,13 @@
 #ifndef BOOST_PARAMETER_SET_060912_HPP
 # define BOOST_PARAMETER_SET_060912_HPP
 
-# include <boost/detail/workaround.hpp>
+# include "boost/detail/workaround.hpp"
 
 # if !BOOST_WORKAROUND(__BORLANDC__, BOOST_TESTED_AT(0x564)) \
   && !BOOST_WORKAROUND(__GNUC__, < 3)
-#  include <boost/mpl/insert.hpp>
-#  include <boost/mpl/set/set0.hpp>
-#  include <boost/mpl/has_key.hpp>
+#  include "boost/mpl/insert.hpp"
+#  include "boost/mpl/set/set0.hpp"
+#  include "boost/mpl/has_key.hpp"
 
 namespace boost { namespace parameter { namespace aux {
 
@@ -33,11 +33,11 @@ struct has_key_
 
 # else
 
-#  include <boost/mpl/list.hpp>
-#  include <boost/mpl/end.hpp>
-#  include <boost/mpl/find.hpp>
-#  include <boost/mpl/not.hpp>
-#  include <boost/mpl/push_front.hpp>
+#  include "boost/mpl/list.hpp"
+#  include "boost/mpl/end.hpp"
+#  include "boost/mpl/find.hpp"
+#  include "boost/mpl/not.hpp"
+#  include "boost/mpl/push_front.hpp"
 
 namespace boost { namespace parameter { namespace aux {
 

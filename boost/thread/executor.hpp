@@ -9,7 +9,7 @@
 #ifndef BOOST_THREAD_EXECUTOR_HPP
 #define BOOST_THREAD_EXECUTOR_HPP
 
-#include <boost/thread/executors/executor.hpp>
-#include <boost/thread/executors/executor_adaptor.hpp>
+#include "boost/thread/executors/executor.hpp"
+#include "boost/thread/executors/executor_adaptor.hpp"
 
 #endif

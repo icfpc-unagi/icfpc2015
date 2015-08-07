@@ -8,11 +8,11 @@
 #ifndef BOOST_LOCAL_FUNCTION_DETAIL_PP_KEYWORD_CONST_BIND_HPP_
 #define BOOST_LOCAL_FUNCTION_DETAIL_PP_KEYWORD_CONST_BIND_HPP_
 
-#include <boost/local_function/detail/preprocessor/keyword/bind.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/const.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/facility/add.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/tuple/eat.hpp>
+#include "boost/local_function/detail/preprocessor/keyword/bind.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/const.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/facility/add.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/tuple/eat.hpp"
 
 // PRIVATE //
 

@@ -16,7 +16,7 @@
 #define BOOST_TEST_EXEC_MONITOR_HPP_071894GER
 
 // Boost.Test
-#include <boost/test/test_tools.hpp>
+#include "boost/test/test_tools.hpp"
 
 //____________________________________________________________________________//
 
@@ -29,7 +29,7 @@
     !defined(BOOST_TEST_SOURCE) && !defined(BOOST_TEST_INCLUDED)
 
 #  define BOOST_LIB_NAME boost_test_exec_monitor
-#  include <boost/config/auto_link.hpp>
+#  include "boost/config/auto_link.hpp"
 
 #endif  // auto-linking disabled
 

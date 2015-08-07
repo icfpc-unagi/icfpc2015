@@ -9,7 +9,7 @@
 #ifndef BOOST_DETAIL_WINAPI_CONFIG_HPP_INCLUDED_
 #define BOOST_DETAIL_WINAPI_CONFIG_HPP_INCLUDED_
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

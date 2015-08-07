@@ -16,10 +16,10 @@
 #define BOOST_SK_ALT_SSTREAM_HPP
 
 #include <string>
-#include <boost/format/detail/compat_workarounds.hpp>
-#include <boost/utility/base_from_member.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/assert.hpp>
+#include "boost/format/detail/compat_workarounds.hpp"
+#include "boost/utility/base_from_member.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/assert.hpp"
 
 namespace boost {
     namespace io {
@@ -170,7 +170,7 @@ namespace boost {
     } // N.S. io
 } // N.S. boost
 
-#include <boost/format/alt_sstream_impl.hpp>
+#include "boost/format/alt_sstream_impl.hpp"
 
 #endif // include guard
 

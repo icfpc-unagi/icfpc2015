@@ -11,7 +11,7 @@
 #define BOOST_LAST_VALUE_HPP
 
 #include <cassert>
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 namespace boost {
   template<typename T>

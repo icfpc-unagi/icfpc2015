@@ -19,8 +19,8 @@
 
 #include <string>
 
-#include <boost/config.hpp>
-#include <boost/serialization/level.hpp>
+#include "boost/config.hpp"
+#include "boost/serialization/level.hpp"
 
 BOOST_CLASS_IMPLEMENTATION(std::string, boost::serialization::primitive_type)
 #ifndef BOOST_NO_STD_WSTRING
@@ -30,9 +30,9 @@ BOOST_CLASS_IMPLEMENTATION(std::wstring, boost::serialization::primitive_type)
 // left over from a previous incarnation - strings are now always primitive types
 #if 0 
 #include <string>
-#include <boost/serialization/collections_save_imp.hpp>
-#include <boost/serialization/collections_load_imp.hpp>
-#include <boost/serialization/split_free.hpp>
+#include "boost/serialization/collections_save_imp.hpp"
+#include "boost/serialization/collections_load_imp.hpp"
+#include "boost/serialization/split_free.hpp"
 
 namespace boost { 
 namespace serialization {
@@ -82,7 +82,7 @@ inline void serialize(
 } // serialization
 } // namespace boost
 
-#include <boost/serialization/collection_traits.hpp>
+#include "boost/serialization/collection_traits.hpp"
 
 BOOST_SERIALIZATION_COLLECTION_TRAITS(std::vector)
 

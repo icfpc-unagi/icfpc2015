@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         boost/regex/config/cwchar.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: regex wide character string fixes.
   */
 
@@ -21,7 +21,7 @@
 
 #include <cwchar>
 #include <cwctype>
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if defined(__STD_RWCOMPILER_H__) || defined(_RWSTD_VER)
 // apparently this is required for the RW STL on Linux:

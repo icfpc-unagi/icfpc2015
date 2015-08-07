@@ -6,11 +6,11 @@
 //  accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/date_time/time_clock.hpp>
-#include <boost/date_time/microsec_time_clock.hpp>
-#include <boost/date_time/posix_time/posix_time_types.hpp>
+#include "boost/date_time/time_clock.hpp"
+#include "boost/date_time/microsec_time_clock.hpp"
+#include "boost/date_time/posix_time/posix_time_types.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -50,6 +50,6 @@ namespace boost
     
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

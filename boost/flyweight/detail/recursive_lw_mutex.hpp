@@ -19,10 +19,10 @@
  * (lightweight_mutex uses the default mutex type instead).
  */
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if !defined(BOOST_HAS_PTHREADS)
-#include <boost/detail/lightweight_mutex.hpp>
+#include "boost/detail/lightweight_mutex.hpp"
 namespace boost{
 
 namespace flyweights{
@@ -37,10 +37,10 @@ typedef boost::detail::lightweight_mutex recursive_lightweight_mutex;
 
 } /* namespace boost */
 #else
-/* code shamelessly ripped from <boost/detail/lwm_pthreads.hpp> */
+/* code shamelessly ripped from "boost/detail/lwm_pthreads.hpp" */
 
-#include <boost/assert.hpp>
-#include <boost/noncopyable.hpp>
+#include "boost/assert.hpp"
+#include "boost/noncopyable.hpp"
 #include <pthread.h>
 
 namespace boost{

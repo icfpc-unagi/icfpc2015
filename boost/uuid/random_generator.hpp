@@ -8,13 +8,13 @@
 #ifndef BOOST_UUID_RANDOM_GENERATOR_HPP
 #define BOOST_UUID_RANDOM_GENERATOR_HPP
 
-#include <boost/uuid/uuid.hpp>
-#include <boost/uuid/seed_rng.hpp>
-#include <boost/random/uniform_int.hpp>
-#include <boost/random/variate_generator.hpp>
-#include <boost/random/mersenne_twister.hpp>
-#include <boost/assert.hpp>
-#include <boost/shared_ptr.hpp>
+#include "boost/uuid/uuid.hpp"
+#include "boost/uuid/seed_rng.hpp"
+#include "boost/random/uniform_int.hpp"
+#include "boost/random/variate_generator.hpp"
+#include "boost/random/mersenne_twister.hpp"
+#include "boost/assert.hpp"
+#include "boost/shared_ptr.hpp"
 #include <limits>
 
 namespace boost {

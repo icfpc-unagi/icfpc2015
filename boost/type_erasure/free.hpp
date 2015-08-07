@@ -11,28 +11,28 @@
 #ifndef BOOST_TYPE_ERASURE_FREE_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_FREE_HPP_INCLUDED
 
-#include <boost/preprocessor/repetition/enum.hpp>
-#include <boost/preprocessor/repetition/enum_trailing.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/enum_shifted_params.hpp>
-#include <boost/preprocessor/repetition/enum_params_with_a_default.hpp>
-#include <boost/preprocessor/repetition/enum_binary_params.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/type_traits/remove_cv.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/int.hpp>
-#include <boost/mpl/next.hpp>
-#include <boost/type_erasure/detail/macro.hpp>
-#include <boost/type_erasure/detail/const.hpp>
-#include <boost/type_erasure/config.hpp>
-#include <boost/type_erasure/derived.hpp>
-#include <boost/type_erasure/rebind_any.hpp>
-#include <boost/type_erasure/param.hpp>
-#include <boost/type_erasure/is_placeholder.hpp>
-#include <boost/type_erasure/call.hpp>
-#include <boost/type_erasure/concept_interface.hpp>
+#include "boost/preprocessor/repetition/enum.hpp"
+#include "boost/preprocessor/repetition/enum_trailing.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/enum_shifted_params.hpp"
+#include "boost/preprocessor/repetition/enum_params_with_a_default.hpp"
+#include "boost/preprocessor/repetition/enum_binary_params.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/type_traits/remove_cv.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/int.hpp"
+#include "boost/mpl/next.hpp"
+#include "boost/type_erasure/detail/macro.hpp"
+#include "boost/type_erasure/detail/const.hpp"
+#include "boost/type_erasure/config.hpp"
+#include "boost/type_erasure/derived.hpp"
+#include "boost/type_erasure/rebind_any.hpp"
+#include "boost/type_erasure/param.hpp"
+#include "boost/type_erasure/is_placeholder.hpp"
+#include "boost/type_erasure/call.hpp"
+#include "boost/type_erasure/concept_interface.hpp"
 
 #if defined(BOOST_NO_CXX11_VARIADIC_TEMPLATES) || defined(BOOST_NO_CXX11_RVALUE_REFERENCES) || defined(BOOST_TYPE_ERASURE_DOXYGEN)
 

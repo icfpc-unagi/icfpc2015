@@ -8,17 +8,17 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_CONCEPT_ELEMENT_MAP_HPP_JOFA_100921
 #define BOOST_ICL_CONCEPT_ELEMENT_MAP_HPP_JOFA_100921
 
-#include <boost/mpl/and.hpp>
-#include <boost/mpl/not.hpp>
-#include <boost/icl/detail/on_absorbtion.hpp>
-#include <boost/icl/type_traits/unit_element.hpp>
-#include <boost/icl/type_traits/is_total.hpp>
-#include <boost/icl/type_traits/absorbs_identities.hpp>
-#include <boost/icl/type_traits/is_associative_element_container.hpp>
-#include <boost/icl/type_traits/is_combinable.hpp>
+#include "boost/mpl/and.hpp"
+#include "boost/mpl/not.hpp"
+#include "boost/icl/detail/on_absorbtion.hpp"
+#include "boost/icl/type_traits/unit_element.hpp"
+#include "boost/icl/type_traits/is_total.hpp"
+#include "boost/icl/type_traits/absorbs_identities.hpp"
+#include "boost/icl/type_traits/is_associative_element_container.hpp"
+#include "boost/icl/type_traits/is_combinable.hpp"
 
-#include <boost/icl/concept/map_value.hpp>
-#include <boost/icl/detail/map_algo.hpp>
+#include "boost/icl/concept/map_value.hpp"
+#include "boost/icl/detail/map_algo.hpp"
 
 
 namespace boost{ namespace icl

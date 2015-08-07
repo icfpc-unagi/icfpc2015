@@ -10,11 +10,11 @@
 #ifndef BOOST_SIGNALS_SLOT_HEADER
 #define BOOST_SIGNALS_SLOT_HEADER
 
-#include <boost/signals/detail/signals_common.hpp>
-#include <boost/signals/connection.hpp>
-#include <boost/signals/trackable.hpp>
-#include <boost/visit_each.hpp>
-#include <boost/shared_ptr.hpp>
+#include "boost/signals/detail/signals_common.hpp"
+#include "boost/signals/connection.hpp"
+#include "boost/signals/trackable.hpp"
+#include "boost/visit_each.hpp"
+#include "boost/shared_ptr.hpp"
 #include <cassert>
 
 #ifdef BOOST_HAS_ABI_HEADERS

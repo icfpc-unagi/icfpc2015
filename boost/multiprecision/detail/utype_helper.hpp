@@ -9,7 +9,7 @@
   #define BOOST_MP_UTYPE_HELPER_HPP
 
   #include <limits>
-  #include <boost/cstdint.hpp>
+  #include "boost/cstdint.hpp"
 
   namespace boost { namespace multiprecision {
   namespace detail

@@ -6,8 +6,8 @@
 // (C) Copyright 2007-9 Anthony Williams
 // (C) Copyright 2012 Vicente J. Botet Escriba
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/delete.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/delete.hpp"
 
 #if defined BOOST_THREAD_PROVIDES_INTERRUPTIONS
 

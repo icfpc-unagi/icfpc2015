@@ -16,16 +16,16 @@
 #define BOOST_RT_FILE_CONFIG_FILE_HPP_010105GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
+#include "boost/test/utils/runtime/config.hpp"
 
-#include <boost/test/utils/runtime/file/config_file_iterator.hpp>
+#include "boost/test/utils/runtime/file/config_file_iterator.hpp"
 
 // Boost.Test
-#include <boost/test/utils/class_properties.hpp>
-#include <boost/test/utils/named_params.hpp>
+#include "boost/test/utils/class_properties.hpp"
+#include "boost/test/utils/named_params.hpp"
 
 // Boost
-#include <boost/optional.hpp>
+#include "boost/optional.hpp"
 
 // STL
 #include <list>

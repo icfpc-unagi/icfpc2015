@@ -17,10 +17,10 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
-#include <boost/container/allocator_traits.hpp>
-#include <boost/container/detail/iterators.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
+#include "boost/container/allocator_traits.hpp"
+#include "boost/container/detail/iterators.hpp"
 
 namespace boost {
 namespace container {
@@ -56,7 +56,7 @@ inline void construct_in_place(A &a, T *dest, emplace_iterator<U, EF, D> ei)
 }  //namespace container {
 }  //namespace boost {
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif   //#ifndef BOOST_CONTAINER_DETAIL_ALGORITHMS_HPP
 

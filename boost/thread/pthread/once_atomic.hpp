@@ -10,16 +10,16 @@
 //  accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 
-#include <boost/cstdint.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/detail/invoke.hpp>
-#include <boost/core/no_exceptions_support.hpp>
-#include <boost/bind.hpp>
-#include <boost/atomic.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/detail/invoke.hpp"
+#include "boost/core/no_exceptions_support.hpp"
+#include "boost/bind.hpp"
+#include "boost/atomic.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -307,7 +307,7 @@ namespace boost
 #endif
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif
 

@@ -9,7 +9,7 @@ Copyright (c) 2009-2011: Joachim Faulhaber
 #ifndef  BOOST_ICL_IMPL_CONFIG_HPP_JOFA_091225
 #define  BOOST_ICL_IMPL_CONFIG_HPP_JOFA_091225
 
-#include <boost/icl/detail/boost_config.hpp>
+#include "boost/icl/detail/boost_config.hpp"
 
 /*-----------------------------------------------------------------------------+
 | You can choose an implementation for the basic set and map classes.          |
@@ -54,7 +54,7 @@ Copyright (c) 2009-2011: Joachim Faulhaber
 //#   define BOOST_ICL_NO_CXX11_RVALUE_REFERENCES
 #endif
 
-#include <boost/move/move.hpp>
+#include "boost/move/move.hpp"
 
 #endif // BOOST_ICL_IMPL_CONFIG_HPP_JOFA_091225
 

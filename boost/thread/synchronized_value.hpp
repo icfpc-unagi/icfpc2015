@@ -8,31 +8,31 @@
 #ifndef BOOST_THREAD_SYNCHRONIZED_VALUE_HPP
 #define BOOST_THREAD_SYNCHRONIZED_VALUE_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/mutex.hpp>
-#include <boost/thread/lock_types.hpp>
-#include <boost/thread/lock_guard.hpp>
-#include <boost/thread/lock_algorithms.hpp>
-#include <boost/thread/lock_factories.hpp>
-#include <boost/thread/strict_lock.hpp>
-#include <boost/core/swap.hpp>
-#include <boost/utility/declval.hpp>
-//#include <boost/type_traits.hpp>
-//#include <boost/thread/detail/is_nothrow_default_constructible.hpp>
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/mutex.hpp"
+#include "boost/thread/lock_types.hpp"
+#include "boost/thread/lock_guard.hpp"
+#include "boost/thread/lock_algorithms.hpp"
+#include "boost/thread/lock_factories.hpp"
+#include "boost/thread/strict_lock.hpp"
+#include "boost/core/swap.hpp"
+#include "boost/utility/declval.hpp"
+//#include "boost/type_traits.hpp"
+//#include "boost/thread/detail/is_nothrow_default_constructible.hpp"
 //#if ! defined BOOST_NO_CXX11_HDR_TYPE_TRAITS
 //#include <type_traits>
 //#endif
 
 #if ! defined(BOOST_THREAD_NO_SYNCHRONIZE)
-#include <tuple> // todo change to <boost/tuple.hpp> once Boost.Tuple or Boost.Fusion provides Move semantics on C++98 compilers.
+#include <tuple> // todo change to "boost/tuple.hpp" once Boost.Tuple or Boost.Fusion provides Move semantics on C++98 compilers.
 #include <functional>
 #endif
 
-#include <boost/utility/result_of.hpp>
+#include "boost/utility/result_of.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -1063,6 +1063,6 @@ namespace boost
 #endif
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif // header

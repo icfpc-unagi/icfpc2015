@@ -16,9 +16,9 @@
 
 //  See http://www.boost.org for updates, documentation, and revision history.
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
-#include <boost/serialization/pfto.hpp>
+#include "boost/serialization/pfto.hpp"
 
 namespace boost {
 

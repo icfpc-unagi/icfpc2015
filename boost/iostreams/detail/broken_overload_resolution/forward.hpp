@@ -8,9 +8,9 @@
 #ifndef BOOST_IOSTREAMS_DETAIL_BROKEN_OVERLOAD_RESOLUTION_HPP_INCLUDED
 #define BOOST_IOSTREAMS_DETAIL_BROKEN_OVERLOAD_RESOLUTION_HPP_INCLUDED
 
-#include <boost/config.hpp>                     // BOOST_STATIC_CONSANT.
-#include <boost/mpl/bool.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/config.hpp"                     // BOOST_STATIC_CONSANT.
+#include "boost/mpl/bool.hpp"
+#include "boost/type_traits/is_same.hpp"
 
 namespace boost { namespace iostreams { namespace detail {
 

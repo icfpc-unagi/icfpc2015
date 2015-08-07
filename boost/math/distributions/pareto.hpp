@@ -16,10 +16,10 @@
 // Handbook of Statistical Distributions with Applications, K Krishnamoorthy, ISBN 1-58488-635-8, Chapter 23, pp 257 - 267.
 // Caution KK's a and b are the reverse of Mathworld!
 
-#include <boost/math/distributions/fwd.hpp>
-#include <boost/math/distributions/complement.hpp>
-#include <boost/math/distributions/detail/common_error_handling.hpp>
-#include <boost/math/special_functions/powm1.hpp>
+#include "boost/math/distributions/fwd.hpp"
+#include "boost/math/distributions/complement.hpp"
+#include "boost/math/distributions/detail/common_error_handling.hpp"
+#include "boost/math/special_functions/powm1.hpp"
 
 #include <utility> // for BOOST_CURRENT_VALUE?
 
@@ -437,7 +437,7 @@ namespace boost
   // This include must be at the end, *after* the accessors
   // for this distribution have been defined, in order to
   // keep compilers that support two-phase lookup happy.
-#include <boost/math/distributions/detail/derived_accessors.hpp>
+#include "boost/math/distributions/detail/derived_accessors.hpp"
 
 #endif // BOOST_STATS_PARETO_HPP
 

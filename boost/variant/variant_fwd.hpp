@@ -85,7 +85,7 @@
 #endif
 
 #if !defined(BOOST_VARIANT_DO_NOT_USE_VARIADIC_TEMPLATES)
-#include <boost/preprocessor/seq/size.hpp>
+#include "boost/preprocessor/seq/size.hpp"
 
 #define BOOST_VARIANT_CLASS_OR_TYPENAME_TO_SEQ_class class)(
 #define BOOST_VARIANT_CLASS_OR_TYPENAME_TO_SEQ_typename typename)(

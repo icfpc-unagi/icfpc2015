@@ -8,8 +8,8 @@
 #ifndef BOOST_LOCALE_ENCODING_UTF_HPP_INCLUDED
 #define BOOST_LOCALE_ENCODING_UTF_HPP_INCLUDED
 
-#include <boost/locale/utf.hpp>
-#include <boost/locale/encoding_errors.hpp>
+#include "boost/locale/utf.hpp"
+#include "boost/locale/encoding_errors.hpp"
 #include <iterator>
 #ifdef BOOST_MSVC
 #  pragma warning(push)

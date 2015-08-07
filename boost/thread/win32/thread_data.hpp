@@ -6,23 +6,23 @@
 // (C) Copyright 2008 Anthony Williams
 // (C) Copyright 2011-2012 Vicente J. Botet Escriba
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/thread_time.hpp>
-#include <boost/thread/win32/thread_primitives.hpp>
-#include <boost/thread/win32/thread_heap_alloc.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/thread_time.hpp"
+#include "boost/thread/win32/thread_primitives.hpp"
+#include "boost/thread/win32/thread_heap_alloc.hpp"
 
-#include <boost/predef/platform.h>
+#include "boost/predef/platform.h"
 
-#include <boost/intrusive_ptr.hpp>
+#include "boost/intrusive_ptr.hpp"
 #ifdef BOOST_THREAD_USES_CHRONO
-#include <boost/chrono/system_clocks.hpp>
+#include "boost/chrono/system_clocks.hpp"
 #endif
 
 #include <map>
 #include <vector>
 #include <utility>
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 #ifdef BOOST_MSVC
 #pragma warning(push)
@@ -321,6 +321,6 @@ namespace boost
 #pragma warning(pop)
 #endif
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

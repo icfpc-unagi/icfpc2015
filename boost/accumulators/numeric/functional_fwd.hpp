@@ -8,11 +8,11 @@
 #ifndef BOOST_NUMERIC_FUNCTIONAL_FWD_HPP_EAN_08_12_2005
 #define BOOST_NUMERIC_FUNCTIONAL_FWD_HPP_EAN_08_12_2005
 
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/placeholders.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/is_const.hpp>
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/placeholders.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/is_const.hpp"
 
 namespace boost { namespace numeric
 {

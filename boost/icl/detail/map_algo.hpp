@@ -8,11 +8,11 @@ Copyright (c) 2007-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_MAPALGO_HPP_JOFA_080225
 #define BOOST_ICL_MAPALGO_HPP_JOFA_080225
 
-#include <boost/mpl/and.hpp>
-#include <boost/mpl/or.hpp>
-#include <boost/mpl/not.hpp>
-#include <boost/icl/detail/notate.hpp>
-#include <boost/icl/detail/set_algo.hpp>
+#include "boost/mpl/and.hpp"
+#include "boost/mpl/or.hpp"
+#include "boost/mpl/not.hpp"
+#include "boost/icl/detail/notate.hpp"
+#include "boost/icl/detail/set_algo.hpp"
 
 #ifdef BOOST_MSVC 
 #pragma warning(push)

@@ -11,10 +11,10 @@
 #ifndef BOOST_STRING_FORMATTER_REGEX_DETAIL_HPP
 #define BOOST_STRING_FORMATTER_REGEX_DETAIL_HPP
 
-#include <boost/algorithm/string/config.hpp>
+#include "boost/algorithm/string/config.hpp"
 #include <string>
-#include <boost/regex.hpp>
-#include <boost/algorithm/string/detail/finder_regex.hpp>
+#include "boost/regex.hpp"
+#include "boost/algorithm/string/detail/finder_regex.hpp"
 
 namespace boost {
     namespace algorithm {

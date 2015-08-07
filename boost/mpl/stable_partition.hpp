@@ -15,12 +15,12 @@
 // $Date$
 // $Revision$
 
-#include <boost/mpl/fold.hpp>
-#include <boost/mpl/reverse_fold.hpp>
-#include <boost/mpl/protect.hpp>
-#include <boost/mpl/aux_/partition_op.hpp>
-#include <boost/mpl/aux_/inserter_algorithm.hpp>
-#include <boost/mpl/aux_/na.hpp>
+#include "boost/mpl/fold.hpp"
+#include "boost/mpl/reverse_fold.hpp"
+#include "boost/mpl/protect.hpp"
+#include "boost/mpl/aux_/partition_op.hpp"
+#include "boost/mpl/aux_/inserter_algorithm.hpp"
+#include "boost/mpl/aux_/na.hpp"
 
 namespace boost { namespace mpl {
 

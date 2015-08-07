@@ -12,19 +12,19 @@
 #include <limits>
 #include <numeric>
 #include <functional>
-#include <boost/parameter/keyword.hpp>
-#include <boost/tuple/tuple.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/mpl/placeholders.hpp>
-#include <boost/accumulators/framework/accumulator_base.hpp>
-#include <boost/accumulators/framework/extractor.hpp>
-#include <boost/accumulators/numeric/functional.hpp>
-#include <boost/accumulators/framework/parameters/sample.hpp>
-#include <boost/accumulators/statistics_fwd.hpp>
-#include <boost/accumulators/statistics/tail.hpp>
-#include <boost/accumulators/statistics/peaks_over_threshold.hpp>
-#include <boost/accumulators/statistics/weighted_peaks_over_threshold.hpp>
+#include "boost/parameter/keyword.hpp"
+#include "boost/tuple/tuple.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/mpl/placeholders.hpp"
+#include "boost/accumulators/framework/accumulator_base.hpp"
+#include "boost/accumulators/framework/extractor.hpp"
+#include "boost/accumulators/numeric/functional.hpp"
+#include "boost/accumulators/framework/parameters/sample.hpp"
+#include "boost/accumulators/statistics_fwd.hpp"
+#include "boost/accumulators/statistics/tail.hpp"
+#include "boost/accumulators/statistics/peaks_over_threshold.hpp"
+#include "boost/accumulators/statistics/weighted_peaks_over_threshold.hpp"
 
 namespace boost { namespace accumulators
 {

@@ -7,9 +7,9 @@
 #if !defined(BOOST_TTI_DETAIL_PLACEHOLDER_HPP)
 #define BOOST_TTI_DETAIL_PLACEHOLDER_HPP
 
-#include <boost/mpl/lambda.hpp>
-#include <boost/mpl/not.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/mpl/lambda.hpp"
+#include "boost/mpl/not.hpp"
+#include "boost/type_traits/is_same.hpp"
 
 namespace boost
   {

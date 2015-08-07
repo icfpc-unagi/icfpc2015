@@ -16,16 +16,16 @@
 #define BOOST_TEST_NAMED_PARAM_022505GER
 
 // Boost
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
 
 // Boost.Test
-#include <boost/test/utils/rtti.hpp>
-#include <boost/test/utils/assign_op.hpp>
+#include "boost/test/utils/rtti.hpp"
+#include "boost/test/utils/assign_op.hpp"
 
-#include <boost/type_traits/remove_reference.hpp>
+#include "boost/type_traits/remove_reference.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -323,7 +323,7 @@ optionally_assign( T& target, Params const& p, Keyword k )
 
 } // namespace boost
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_NAMED_PARAM_022505GER
 

@@ -10,10 +10,10 @@
 #ifndef BOOST_SIGNALS_CONNECTION_HPP
 #define BOOST_SIGNALS_CONNECTION_HPP
 
-#include <boost/signals/detail/signals_common.hpp>
-#include <boost/smart_ptr.hpp>
-#include <boost/operators.hpp>
-#include <boost/any.hpp>
+#include "boost/signals/detail/signals_common.hpp"
+#include "boost/smart_ptr.hpp"
+#include "boost/operators.hpp"
+#include "boost/any.hpp"
 #include <list>
 #include <cassert>
 #include <utility>

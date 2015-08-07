@@ -11,56 +11,56 @@
 #ifndef BOOST_MSM_FRONT_EUML_COMMON_H
 #define BOOST_MSM_FRONT_EUML_COMMON_H
 
-#include <boost/config.hpp>
-#include <boost/msm/proto_config.hpp>
+#include "boost/config.hpp"
+#include "boost/msm/proto_config.hpp"
 
 #include <iterator>
 #include <utility>
 
-#include <boost/proto/core.hpp>
-#include <boost/proto/transform.hpp>
+#include "boost/proto/core.hpp"
+#include "boost/proto/transform.hpp"
 
-#include <boost/utility/enable_if.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/type_traits/add_const.hpp>
+#include "boost/utility/enable_if.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/type_traits/add_const.hpp"
 
-#include <boost/mpl/vector.hpp>
-#include <boost/mpl/set.hpp>
-#include <boost/mpl/has_key.hpp>
-#include <boost/mpl/int.hpp>
-#include <boost/mpl/less_equal.hpp>
+#include "boost/mpl/vector.hpp"
+#include "boost/mpl/set.hpp"
+#include "boost/mpl/has_key.hpp"
+#include "boost/mpl/int.hpp"
+#include "boost/mpl/less_equal.hpp"
 
 #if BOOST_VERSION >= 104000
-#include <boost/mpl/string.hpp>
+#include "boost/mpl/string.hpp"
 #endif
 
-#include <boost/fusion/container/vector.hpp>
-#include <boost/fusion/include/at_c.hpp>
-#include <boost/fusion/include/make_map.hpp>
-#include <boost/fusion/include/pair.hpp>
-#include <boost/fusion/include/as_vector.hpp>
-#include <boost/fusion/include/pair.hpp>
-#include <boost/fusion/include/is_sequence.hpp>
+#include "boost/fusion/container/vector.hpp"
+#include "boost/fusion/include/at_c.hpp"
+#include "boost/fusion/include/make_map.hpp"
+#include "boost/fusion/include/pair.hpp"
+#include "boost/fusion/include/as_vector.hpp"
+#include "boost/fusion/include/pair.hpp"
+#include "boost/fusion/include/is_sequence.hpp"
 
-#include <boost/type_traits/remove_reference.hpp>
+#include "boost/type_traits/remove_reference.hpp"
 
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/arithmetic/sub.hpp>
-#include <boost/preprocessor/punctuation/comma_if.hpp>
-#include <boost/preprocessor/control/expr_if.hpp> 
-#include <boost/preprocessor/punctuation/comma.hpp>
-#include <boost/preprocessor/arithmetic/add.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/comparison/less.hpp>
-#include <boost/preprocessor/arithmetic/dec.hpp>
-#include <boost/preprocessor/repetition/repeat_from_to.hpp>
-#include <boost/preprocessor/cat.hpp> 
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/arithmetic/sub.hpp"
+#include "boost/preprocessor/punctuation/comma_if.hpp"
+#include "boost/preprocessor/control/expr_if.hpp" 
+#include "boost/preprocessor/punctuation/comma.hpp"
+#include "boost/preprocessor/arithmetic/add.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/comparison/less.hpp"
+#include "boost/preprocessor/arithmetic/dec.hpp"
+#include "boost/preprocessor/repetition/repeat_from_to.hpp"
+#include "boost/preprocessor/cat.hpp" 
 
-#include <boost/msm/msm_grammar.hpp>
-#include <boost/msm/active_state_switching_policies.hpp>
-#include <boost/msm/event_traits.hpp>
-#include <boost/msm/front/functor_row.hpp>
+#include "boost/msm/msm_grammar.hpp"
+#include "boost/msm/active_state_switching_policies.hpp"
+#include "boost/msm/event_traits.hpp"
+#include "boost/msm/front/functor_row.hpp"
 
 namespace proto = boost::proto;
 

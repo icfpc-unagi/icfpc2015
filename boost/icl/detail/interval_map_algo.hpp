@@ -8,17 +8,17 @@ Copyright (c) 2008-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_INTERVAL_MAP_ALGO_HPP_JOFA_100730
 #define BOOST_ICL_INTERVAL_MAP_ALGO_HPP_JOFA_100730
 
-#include <boost/utility/enable_if.hpp>
-#include <boost/mpl/not.hpp>
+#include "boost/utility/enable_if.hpp"
+#include "boost/mpl/not.hpp"
 
-#include <boost/icl/type_traits/is_total.hpp>
-#include <boost/icl/type_traits/is_map.hpp>
-#include <boost/icl/detail/notate.hpp>
-#include <boost/icl/detail/relation_state.hpp>
-#include <boost/icl/type_traits/identity_element.hpp>
-#include <boost/icl/interval_combining_style.hpp>
-#include <boost/icl/detail/element_comparer.hpp>
-#include <boost/icl/detail/interval_subset_comparer.hpp>
+#include "boost/icl/type_traits/is_total.hpp"
+#include "boost/icl/type_traits/is_map.hpp"
+#include "boost/icl/detail/notate.hpp"
+#include "boost/icl/detail/relation_state.hpp"
+#include "boost/icl/type_traits/identity_element.hpp"
+#include "boost/icl/interval_combining_style.hpp"
+#include "boost/icl/detail/element_comparer.hpp"
+#include "boost/icl/detail/interval_subset_comparer.hpp"
 
 namespace boost{namespace icl
 {

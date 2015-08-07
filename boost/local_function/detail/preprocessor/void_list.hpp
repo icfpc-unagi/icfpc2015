@@ -8,14 +8,14 @@
 #ifndef BOOST_LOCAL_FUNCTION_DETAIL_PP_VOID_LIST_HPP_
 #define BOOST_LOCAL_FUNCTION_DETAIL_PP_VOID_LIST_HPP_
 
-#include <boost/local_function/detail/preprocessor/keyword/void.hpp>
-#include <boost/config.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/comparison/equal.hpp>
-#include <boost/preprocessor/tuple/to_list.hpp>
-#include <boost/preprocessor/seq/size.hpp>
-#include <boost/preprocessor/seq/to_tuple.hpp>
+#include "boost/local_function/detail/preprocessor/keyword/void.hpp"
+#include "boost/config.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/comparison/equal.hpp"
+#include "boost/preprocessor/tuple/to_list.hpp"
+#include "boost/preprocessor/seq/size.hpp"
+#include "boost/preprocessor/seq/to_tuple.hpp"
 
 // PRIVATE //
 

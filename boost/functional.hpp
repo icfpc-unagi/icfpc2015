@@ -12,8 +12,8 @@
 #ifndef BOOST_FUNCTIONAL_HPP
 #define BOOST_FUNCTIONAL_HPP
 
-#include <boost/config.hpp>
-#include <boost/call_traits.hpp>
+#include "boost/config.hpp"
+#include "boost/call_traits.hpp"
 #include <functional>
 
 namespace boost

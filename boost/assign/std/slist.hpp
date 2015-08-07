@@ -11,14 +11,14 @@
 #ifndef BOOST_ASSIGN_STD_SLIST_HPP
 #define BOOST_ASSIGN_STD_SLIST_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #ifdef BOOST_HAS_SLIST
 
 #if defined(_MSC_VER)
 # pragma once
 #endif
 
-#include <boost/assign/list_inserter.hpp>
+#include "boost/assign/list_inserter.hpp"
 #ifdef BOOST_SLIST_HEADER
 # include BOOST_SLIST_HEADER
 #else

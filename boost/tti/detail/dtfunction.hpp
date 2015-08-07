@@ -7,9 +7,9 @@
 #if !defined(BOOST_TTI_DETAIL_TFUNCTION_HPP)
 #define BOOST_TTI_DETAIL_TFUNCTION_HPP
 
-#include <boost/config.hpp>
-#include <boost/mpl/push_front.hpp>
-#include <boost/function_types/function_type.hpp>
+#include "boost/config.hpp"
+#include "boost/mpl/push_front.hpp"
+#include "boost/function_types/function_type.hpp"
 
 namespace boost
   {

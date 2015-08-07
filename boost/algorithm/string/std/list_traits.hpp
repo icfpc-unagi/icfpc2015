@@ -11,9 +11,9 @@
 #ifndef BOOST_STRING_STD_LIST_TRAITS_HPP
 #define BOOST_STRING_STD_LIST_TRAITS_HPP
 
-#include <boost/algorithm/string/yes_no_type.hpp>
+#include "boost/algorithm/string/yes_no_type.hpp"
 #include <list>
-#include <boost/algorithm/string/sequence_traits.hpp>
+#include "boost/algorithm/string/sequence_traits.hpp"
 
 namespace boost {
     namespace algorithm {

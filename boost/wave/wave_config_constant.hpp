@@ -12,8 +12,8 @@
 #if !defined(BOOST_WAVE_CONFIG_CONSTANT_HPP)
 #define BOOST_WAVE_CONFIG_CONSTANT_HPP
 
-#include <boost/preprocessor/stringize.hpp>
-#include <boost/wave/wave_config.hpp>
+#include "boost/preprocessor/stringize.hpp"
+#include "boost/wave/wave_config.hpp"
 
 ///////////////////////////////////////////////////////////////////////////////
 #if BOOST_WAVE_SUPPORT_VARIADICS_PLACEMARKERS != 0

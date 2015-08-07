@@ -16,31 +16,31 @@
 #include <vector>
 #include <stack>
 
-#include <boost/concept_check.hpp>
-#include <boost/noncopyable.hpp>
-#include <boost/filesystem/path.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/pool/pool_alloc.hpp>
+#include "boost/concept_check.hpp"
+#include "boost/noncopyable.hpp"
+#include "boost/filesystem/path.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/pool/pool_alloc.hpp"
 
-#include <boost/wave/wave_config.hpp>
+#include "boost/wave/wave_config.hpp"
 #if BOOST_WAVE_SERIALIZATION != 0
-#include <boost/serialization/serialization.hpp>
-#include <boost/wave/wave_config_constant.hpp>
+#include "boost/serialization/serialization.hpp"
+#include "boost/wave/wave_config_constant.hpp"
 #endif
-#include <boost/wave/token_ids.hpp>
+#include "boost/wave/token_ids.hpp"
 
-#include <boost/wave/util/unput_queue_iterator.hpp>
-#include <boost/wave/util/cpp_ifblock.hpp>
-#include <boost/wave/util/cpp_include_paths.hpp>
-#include <boost/wave/util/iteration_context.hpp>
-#include <boost/wave/util/cpp_iterator.hpp>
-#include <boost/wave/util/cpp_macromap.hpp>
+#include "boost/wave/util/unput_queue_iterator.hpp"
+#include "boost/wave/util/cpp_ifblock.hpp"
+#include "boost/wave/util/cpp_include_paths.hpp"
+#include "boost/wave/util/iteration_context.hpp"
+#include "boost/wave/util/cpp_iterator.hpp"
+#include "boost/wave/util/cpp_macromap.hpp"
 
-#include <boost/wave/preprocessing_hooks.hpp>
-#include <boost/wave/whitespace_handling.hpp>
-#include <boost/wave/cpp_iteration_context.hpp>
-#include <boost/wave/language_support.hpp>
+#include "boost/wave/preprocessing_hooks.hpp"
+#include "boost/wave/whitespace_handling.hpp"
+#include "boost/wave/cpp_iteration_context.hpp"
+#include "boost/wave/language_support.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

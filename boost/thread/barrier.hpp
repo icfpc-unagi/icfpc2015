@@ -9,22 +9,22 @@
 #ifndef BOOST_BARRIER_JDM030602_HPP
 #define BOOST_BARRIER_JDM030602_HPP
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/delete.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/delete.hpp"
 
-#include <boost/throw_exception.hpp>
-#include <boost/thread/mutex.hpp>
-#include <boost/thread/lock_types.hpp>
-#include <boost/thread/condition_variable.hpp>
+#include "boost/throw_exception.hpp"
+#include "boost/thread/mutex.hpp"
+#include "boost/thread/lock_types.hpp"
+#include "boost/thread/condition_variable.hpp"
 #include <string>
 #include <stdexcept>
-#include <boost/thread/detail/nullary_function.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/is_void.hpp>
-#include <boost/core/enable_if.hpp>
-#include <boost/utility/result_of.hpp>
+#include "boost/thread/detail/nullary_function.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/is_void.hpp"
+#include "boost/core/enable_if.hpp"
+#include "boost/utility/result_of.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -249,6 +249,6 @@ namespace boost
 
 } // namespace boost
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

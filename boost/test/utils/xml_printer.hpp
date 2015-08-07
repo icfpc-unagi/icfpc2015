@@ -16,19 +16,19 @@
 #define BOOST_TEST_XML_PRINTER_HPP_071894GER
 
 // Boost.Test
-#include <boost/test/utils/basic_cstring/basic_cstring.hpp>
-#include <boost/test/utils/fixed_mapping.hpp>
-#include <boost/test/utils/custom_manip.hpp>
-#include <boost/test/utils/foreach.hpp>
-#include <boost/test/utils/basic_cstring/io.hpp>
+#include "boost/test/utils/basic_cstring/basic_cstring.hpp"
+#include "boost/test/utils/fixed_mapping.hpp"
+#include "boost/test/utils/custom_manip.hpp"
+#include "boost/test/utils/foreach.hpp"
+#include "boost/test/utils/basic_cstring/io.hpp"
 
 // Boost
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 // STL
 #include <iostream>
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -113,6 +113,6 @@ operator<<( custom_printer<cdata> const& p, const_string value )
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_XML_PRINTER_HPP_071894GER

@@ -36,15 +36,15 @@
 #ifndef BOOST_MATH_SPECIAL_POISSON_HPP
 #define BOOST_MATH_SPECIAL_POISSON_HPP
 
-#include <boost/math/distributions/fwd.hpp>
-#include <boost/math/special_functions/gamma.hpp> // for incomplete gamma. gamma_q
-#include <boost/math/special_functions/trunc.hpp> // for incomplete gamma. gamma_q
-#include <boost/math/distributions/complement.hpp> // complements
-#include <boost/math/distributions/detail/common_error_handling.hpp> // error checks
-#include <boost/math/special_functions/fpclassify.hpp> // isnan.
-#include <boost/math/special_functions/factorials.hpp> // factorials.
-#include <boost/math/tools/roots.hpp> // for root finding.
-#include <boost/math/distributions/detail/inv_discrete_quantile.hpp>
+#include "boost/math/distributions/fwd.hpp"
+#include "boost/math/special_functions/gamma.hpp" // for incomplete gamma. gamma_q
+#include "boost/math/special_functions/trunc.hpp" // for incomplete gamma. gamma_q
+#include "boost/math/distributions/complement.hpp" // complements
+#include "boost/math/distributions/detail/common_error_handling.hpp" // error checks
+#include "boost/math/special_functions/fpclassify.hpp" // isnan.
+#include "boost/math/special_functions/factorials.hpp" // factorials.
+#include "boost/math/tools/roots.hpp" // for root finding.
+#include "boost/math/distributions/detail/inv_discrete_quantile.hpp"
 
 #include <utility>
 
@@ -518,8 +518,8 @@ namespace boost
 // This include must be at the end, *after* the accessors
 // for this distribution have been defined, in order to
 // keep compilers that support two-phase lookup happy.
-#include <boost/math/distributions/detail/derived_accessors.hpp>
-#include <boost/math/distributions/detail/inv_discrete_quantile.hpp>
+#include "boost/math/distributions/detail/derived_accessors.hpp"
+#include "boost/math/distributions/detail/inv_discrete_quantile.hpp"
 
 #endif // BOOST_MATH_SPECIAL_POISSON_HPP
 

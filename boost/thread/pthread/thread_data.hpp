@@ -6,18 +6,18 @@
 // (C) Copyright 2007 Anthony Williams
 // (C) Copyright 2011-2012 Vicente J. Botet Escriba
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/exceptions.hpp>
-#include <boost/thread/lock_guard.hpp>
-#include <boost/thread/lock_types.hpp>
-#include <boost/thread/mutex.hpp>
-#include <boost/thread/pthread/condition_variable_fwd.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/exceptions.hpp"
+#include "boost/thread/lock_guard.hpp"
+#include "boost/thread/lock_types.hpp"
+#include "boost/thread/mutex.hpp"
+#include "boost/thread/pthread/condition_variable_fwd.hpp"
 
-#include <boost/shared_ptr.hpp>
-#include <boost/enable_shared_from_this.hpp>
-#include <boost/assert.hpp>
+#include "boost/shared_ptr.hpp"
+#include "boost/enable_shared_from_this.hpp"
+#include "boost/assert.hpp"
 #ifdef BOOST_THREAD_USES_CHRONO
-#include <boost/chrono/system_clocks.hpp>
+#include "boost/chrono/system_clocks.hpp"
 #endif
 
 #include <map>
@@ -31,7 +31,7 @@
 #include <pthread.h>
 #include <unistd.h>
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -278,6 +278,6 @@ namespace boost
     } // this_thread
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

@@ -16,15 +16,15 @@
 #define BOOST_TEST_INTERACTION_BASED_HPP_112105GER
 
 // Boost.Test
-#include <boost/test/detail/config.hpp>
-#include <boost/test/detail/global_typedef.hpp>
+#include "boost/test/detail/config.hpp"
+#include "boost/test/detail/global_typedef.hpp"
 
-#include <boost/test/utils/wrap_stringstream.hpp>
+#include "boost/test/utils/wrap_stringstream.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 // Boost
-#include <boost/lexical_cast.hpp>
+#include "boost/lexical_cast.hpp"
 
 //____________________________________________________________________________//
 
@@ -257,6 +257,6 @@ operator delete[]( void* p, ::boost::itest::location const& )
 
 #endif
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_INTERACTION_BASED_HPP_112105GER

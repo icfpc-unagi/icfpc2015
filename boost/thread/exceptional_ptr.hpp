@@ -6,10 +6,10 @@
 #ifndef BOOST_THREAD_EXCEPTIONAL_PTR_HPP
 #define BOOST_THREAD_EXCEPTIONAL_PTR_HPP
 
-#include <boost/thread/detail/move.hpp>
-#include <boost/exception_ptr.hpp>
+#include "boost/thread/detail/move.hpp"
+#include "boost/exception_ptr.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -39,6 +39,6 @@ namespace boost
 
 } // namespace boost
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

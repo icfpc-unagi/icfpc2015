@@ -7,7 +7,7 @@
 //  See http://www.boost.org/libs/timer for documentation.
 
 //  Revision History
-//  01 Apr 01  Modified to use new <boost/limits.hpp> header. (JMaddock)
+//  01 Apr 01  Modified to use new "boost/limits.hpp" header. (JMaddock)
 //  12 Jan 01  Change to inline implementation to allow use without library
 //             builds. See docs for more rationale. (Beman Dawes) 
 //  25 Sep 99  elapsed_max() and elapsed_min() added (John Maddock)
@@ -17,9 +17,9 @@
 #ifndef BOOST_TIMER_HPP
 #define BOOST_TIMER_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #include <ctime>
-#include <boost/limits.hpp>
+#include "boost/limits.hpp"
 
 # ifdef BOOST_NO_STDC_NAMESPACE
     namespace std { using ::clock_t; using ::clock; }

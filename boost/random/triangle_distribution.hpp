@@ -17,14 +17,14 @@
 #ifndef BOOST_RANDOM_TRIANGLE_DISTRIBUTION_HPP
 #define BOOST_RANDOM_TRIANGLE_DISTRIBUTION_HPP
 
-#include <boost/config/no_tr1/cmath.hpp>
+#include "boost/config/no_tr1/cmath.hpp"
 #include <iosfwd>
 #include <ios>
 #include <istream>
-#include <boost/assert.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/operators.hpp>
-#include <boost/random/uniform_01.hpp>
+#include "boost/assert.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/operators.hpp"
+#include "boost/random/uniform_01.hpp"
 
 namespace boost {
 namespace random {

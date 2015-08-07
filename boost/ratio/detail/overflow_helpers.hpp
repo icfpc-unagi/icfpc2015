@@ -32,16 +32,16 @@ time2_demo contained this comment:
 #ifndef BOOST_RATIO_DETAIL_RATIO_OPERATIONS_HPP
 #define BOOST_RATIO_DETAIL_RATIO_OPERATIONS_HPP
 
-#include <boost/ratio/config.hpp>
-#include <boost/ratio/detail/mpl/abs.hpp>
-#include <boost/ratio/detail/mpl/sign.hpp>
+#include "boost/ratio/config.hpp"
+#include "boost/ratio/detail/mpl/abs.hpp"
+#include "boost/ratio/detail/mpl/sign.hpp"
 #include <cstdlib>
 #include <climits>
 #include <limits>
-#include <boost/cstdint.hpp>
-#include <boost/type_traits/integral_constant.hpp>
-#include <boost/core/enable_if.hpp>
-#include <boost/integer_traits.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/type_traits/integral_constant.hpp"
+#include "boost/core/enable_if.hpp"
+#include "boost/integer_traits.hpp"
 
 //
 // We simply cannot include this header on gcc without getting copious warnings of the kind:

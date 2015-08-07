@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         mfc.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Overloads and helpers for using MFC/ATL string types with Boost.Regex.
   */
 
@@ -20,7 +20,7 @@
 #define BOOST_REGEX_MFC_HPP
 
 #include <atlsimpstr.h>
-#include <boost/regex.hpp>
+#include "boost/regex.hpp"
 
 namespace boost{
 

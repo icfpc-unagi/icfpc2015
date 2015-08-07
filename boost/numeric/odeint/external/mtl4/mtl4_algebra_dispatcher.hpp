@@ -17,10 +17,10 @@
 #ifndef BOOST_NUMERIC_ODEINT_MTL4_MTL4_ALGEBRA_DISPATCHER_HPP_INCLUDED
 #define BOOST_NUMERIC_ODEINT_MTL4_MTL4_ALGEBRA_DISPATCHER_HPP_INCLUDED
 
-#include <boost/numeric/mtl/mtl.hpp>
+#include "boost/numeric/mtl/mtl.hpp"
 
-#include <boost/numeric/odeint/algebra/vector_space_algebra.hpp>
-#include <boost/numeric/odeint/algebra/algebra_dispatcher.hpp>
+#include "boost/numeric/odeint/algebra/vector_space_algebra.hpp"
+#include "boost/numeric/odeint/algebra/algebra_dispatcher.hpp"
 
 namespace boost {
 namespace numeric {

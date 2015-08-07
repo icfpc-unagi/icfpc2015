@@ -5,7 +5,7 @@
 
 #ifndef BOOST_TR1_FUNCTIONAL_HPP_INCLUDED
 #  define BOOST_TR1_FUNCTIONAL_HPP_INCLUDED
-#  include <boost/tr1/detail/config.hpp>
+#  include "boost/tr1/detail/config.hpp"
 #  include <functional>
 
 #if defined(BOOST_HAS_TR1_REFERENCE_WRAPPER) \
@@ -17,14 +17,14 @@
 #  if defined(BOOST_HAS_INCLUDE_NEXT) && !defined(BOOST_TR1_DISABLE_INCLUDE_NEXT)
 #     include_next BOOST_TR1_HEADER(functional)
 #  else
-#     include <boost/tr1/detail/config_all.hpp>
+#     include "boost/tr1/detail/config_all.hpp"
 #     include BOOST_TR1_STD_HEADER(BOOST_TR1_PATH(functional))
 #  endif
 #endif
 
 #ifndef BOOST_HAS_TR1_REFERENCE_WRAPPER
 
-#include <boost/ref.hpp>
+#include "boost/ref.hpp"
 
 namespace std{ namespace tr1{
 
@@ -43,7 +43,7 @@ namespace std{ namespace tr1{
 // we can only actually include result_of.hpp if the compiler
 // really does support it, otherwise we just get endless errors...
 //
-#include <boost/utility/result_of.hpp>
+#include "boost/utility/result_of.hpp"
 
 namespace std{ namespace tr1{
 
@@ -58,7 +58,7 @@ namespace std{ namespace tr1{
 
 #ifndef BOOST_HAS_TR1_MEM_FN
 // mem_fn:
-#include <boost/mem_fn.hpp>
+#include "boost/mem_fn.hpp"
 
 namespace std{ namespace tr1{
 
@@ -71,7 +71,7 @@ using boost::mem_fn;
 
 #ifndef BOOST_HAS_TR1_BIND
 // Bind:
-#include <boost/bind.hpp>
+#include "boost/bind.hpp"
 
 namespace std{ namespace tr1{
 
@@ -98,8 +98,8 @@ namespace std{ namespace tr1{
 
 #ifndef BOOST_HAS_TR1_FUNCTION
 // polymorphic function object wrappers:
-#include <boost/function.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/function.hpp"
+#include "boost/detail/workaround.hpp"
 
 #if !BOOST_WORKAROUND(__BORLANDC__, < 0x582) \
     && !defined(BOOST_FUNCTION_NO_FUNCTION_TYPE_SYNTAX)
@@ -135,7 +135,7 @@ namespace std{ namespace tr1{
 
 }}
 
-#include <boost/functional/hash.hpp>
+#include "boost/functional/hash.hpp"
 
 #endif
 

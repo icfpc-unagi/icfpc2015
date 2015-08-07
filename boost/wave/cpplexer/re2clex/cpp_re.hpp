@@ -13,8 +13,8 @@
 #if !defined(CPP_RE_HPP_B76C4F5E_63E9_4B8A_9975_EC32FA6BF027_INCLUDED)
 #define CPP_RE_HPP_B76C4F5E_63E9_4B8A_9975_EC32FA6BF027_INCLUDED
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/token_ids.hpp>
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/token_ids.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

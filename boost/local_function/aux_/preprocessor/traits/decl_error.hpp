@@ -8,8 +8,8 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_ERROR_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_ERROR_HPP_
 
-#include <boost/local_function/aux_/preprocessor/traits/decl_/index.hpp>
-#include <boost/preprocessor/tuple/elem.hpp>
+#include "boost/local_function/aux_/preprocessor/traits/decl_/index.hpp"
+#include "boost/preprocessor/tuple/elem.hpp"
 
 // PUBLIC //
 

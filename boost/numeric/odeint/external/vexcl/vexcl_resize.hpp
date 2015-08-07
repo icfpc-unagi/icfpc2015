@@ -22,9 +22,9 @@
 #include <vexcl/vector.hpp>
 #include <vexcl/multivector.hpp>
 
-#include <boost/numeric/odeint/util/is_resizeable.hpp>
-#include <boost/numeric/odeint/util/resize.hpp>
-#include <boost/numeric/odeint/util/same_size.hpp>
+#include "boost/numeric/odeint/util/is_resizeable.hpp"
+#include "boost/numeric/odeint/util/resize.hpp"
+#include "boost/numeric/odeint/util/same_size.hpp"
 
 namespace boost {
 namespace numeric {

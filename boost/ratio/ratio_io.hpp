@@ -32,15 +32,15 @@ struct ratio_string
 }  // boost
 
 */
-#include <boost/ratio/config.hpp>
+#include "boost/ratio/config.hpp"
 
 #ifdef BOOST_RATIO_PROVIDES_DEPRECATED_FEATURES_SINCE_V2_0_0
-#include <boost/ratio/detail/ratio_io.hpp>
+#include "boost/ratio/detail/ratio_io.hpp"
 #else
 
-#include <boost/config.hpp>
-#include <boost/ratio/ratio.hpp>
-#include <boost/type_traits/integral_constant.hpp>
+#include "boost/config.hpp"
+#include "boost/ratio/ratio.hpp"
+#include "boost/type_traits/integral_constant.hpp"
 #include <string>
 #include <sstream>
 

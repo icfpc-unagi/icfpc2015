@@ -6,7 +6,7 @@
 #ifndef BOOST_MP_GENERIC_INTERCONVERT_HPP
 #define BOOST_MP_GENERIC_INTERCONVERT_HPP
 
-#include <boost/multiprecision/detail/default_ops.hpp>
+#include "boost/multiprecision/detail/default_ops.hpp"
 
 #ifdef BOOST_MSVC
 #pragma warning(push)

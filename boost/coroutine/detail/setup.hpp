@@ -7,16 +7,16 @@
 #ifndef BOOST_COROUTINES_DETAIL_SETUP_H
 #define BOOST_COROUTINES_DETAIL_SETUP_H
 
-#include <boost/assert.hpp>
-#include <boost/config.hpp>
-#include <boost/move/move.hpp>
-#include <boost/type_traits/decay.hpp>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"
+#include "boost/move/move.hpp"
+#include "boost/type_traits/decay.hpp"
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/type_traits/is_same.hpp"
 
-#include <boost/coroutine/attributes.hpp>
-#include <boost/coroutine/detail/coroutine_context.hpp>
-#include <boost/coroutine/detail/flags.hpp>
+#include "boost/coroutine/attributes.hpp"
+#include "boost/coroutine/detail/coroutine_context.hpp"
+#include "boost/coroutine/detail/flags.hpp"
 
 #ifdef BOOST_HAS_ABI_HEADERS
 #  include BOOST_ABI_PREFIX

@@ -23,9 +23,9 @@
 #include <algorithm>                // for std::stable_partition
 #include <functional>
 
-#include <boost/bind.hpp>           // for boost::bind
-#include <boost/range/begin.hpp>    // for boost::begin(range)
-#include <boost/range/end.hpp>      // for boost::end(range)
+#include "boost/bind.hpp"           // for boost::bind
+#include "boost/range/begin.hpp"    // for boost::begin(range)
+#include "boost/range/end.hpp"      // for boost::end(range)
 
 
 /**************************************************************************************************/

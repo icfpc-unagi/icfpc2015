@@ -9,11 +9,11 @@
 //  accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/thread/detail/platform.hpp>
+#include "boost/thread/detail/platform.hpp"
 #if defined(BOOST_THREAD_PLATFORM_WIN32)
-#include <boost/thread/win32/condition_variable.hpp>
+#include "boost/thread/win32/condition_variable.hpp"
 #elif defined(BOOST_THREAD_PLATFORM_PTHREAD)
-#include <boost/thread/pthread/condition_variable.hpp>
+#include "boost/thread/pthread/condition_variable.hpp"
 #else
 #error "Boost threads unavailable on this platform"
 #endif

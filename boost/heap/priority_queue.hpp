@@ -14,10 +14,10 @@
 #include <utility>
 #include <vector>
 
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 
-#include <boost/heap/detail/heap_comparison.hpp>
-#include <boost/heap/detail/stable_heap.hpp>
+#include "boost/heap/detail/heap_comparison.hpp"
+#include "boost/heap/detail/stable_heap.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

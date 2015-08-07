@@ -14,8 +14,8 @@
 #ifndef BOOST_MOVE_ITERATOR_HPP
 #define BOOST_MOVE_ITERATOR_HPP
 
-#include <boost/move/detail/config_begin.hpp>
-#include <boost/move/utility_core.hpp>
+#include "boost/move/detail/config_begin.hpp"
+#include "boost/move/utility_core.hpp"
 #include <iterator>  //std::iterator
 
 namespace boost {
@@ -299,6 +299,6 @@ inline move_insert_iterator<C> move_inserter(C& x, typename C::iterator it)
 
 }  //namespace boost {
 
-#include <boost/move/detail/config_end.hpp>
+#include "boost/move/detail/config_end.hpp"
 
 #endif //#ifndef BOOST_MOVE_ITERATOR_HPP

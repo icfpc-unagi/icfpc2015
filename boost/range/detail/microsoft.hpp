@@ -15,7 +15,7 @@
 //
 
 
-#include <boost/range/iterator.hpp>
+#include "boost/range/iterator.hpp"
 
 
 #define BOOST_RANGE_DETAIL_MICROSOFT_RANGE_VERSION_1 1
@@ -38,34 +38,34 @@
 //
 
 
-#include <boost/iterator/iterator_traits.hpp> // iterator_difference
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/comma_if.hpp>
-#include <boost/preprocessor/detail/is_unary.hpp>
-#include <boost/preprocessor/list/for_each.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/repeat.hpp>
-#include <boost/preprocessor/seq/for_each_i.hpp>
-#include <boost/preprocessor/seq/size.hpp>
-#include <boost/preprocessor/tuple/eat.hpp>
-#include <boost/range/const_iterator.hpp>
-#include <boost/range/size_type.hpp>
-#include <boost/type_traits/is_const.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/remove_cv.hpp>
-#include <boost/utility/addressof.hpp>
-#include <boost/utility/enable_if.hpp> // disable_if
+#include "boost/iterator/iterator_traits.hpp" // iterator_difference
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/comma_if.hpp"
+#include "boost/preprocessor/detail/is_unary.hpp"
+#include "boost/preprocessor/list/for_each.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/repeat.hpp"
+#include "boost/preprocessor/seq/for_each_i.hpp"
+#include "boost/preprocessor/seq/size.hpp"
+#include "boost/preprocessor/tuple/eat.hpp"
+#include "boost/range/const_iterator.hpp"
+#include "boost/range/size_type.hpp"
+#include "boost/type_traits/is_const.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/remove_cv.hpp"
+#include "boost/utility/addressof.hpp"
+#include "boost/utility/enable_if.hpp" // disable_if
 
 #if !defined(BOOST_RANGE_DETAIL_MICROSOFT_RANGE_VERSION_1)
-    #include <boost/range/mutable_iterator.hpp>
+    #include "boost/range/mutable_iterator.hpp"
 #else
     #include <iterator> // distance
-    #include <boost/range/begin.hpp>
-    #include <boost/range/end.hpp>
-    #include <boost/range/iterator.hpp>
+    #include "boost/range/begin.hpp"
+    #include "boost/range/end.hpp"
+    #include "boost/range/iterator.hpp"
 #endif
 
 
@@ -534,11 +534,11 @@ namespace boost { namespace range_detail_microsoft {
 //
 
 
-#include <boost/assert.hpp>
-#include <boost/iterator/iterator_categories.hpp>
-#include <boost/iterator/iterator_facade.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/assert.hpp"
+#include "boost/iterator/iterator_categories.hpp"
+#include "boost/iterator/iterator_facade.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/type_traits/is_same.hpp"
 
 
 // POSITION's header is undocumented, so is NULL.
@@ -702,20 +702,20 @@ namespace boost { namespace range_detail_microsoft {
 #include <algorithm>
 #include <iterator>
 #include <vector>
-#include <boost/concept_check.hpp>
-#include <boost/next_prior.hpp>
-#include <boost/range/begin.hpp>
-#include <boost/range/concepts.hpp>
-#include <boost/range/const_iterator.hpp>
-#include <boost/range/difference_type.hpp>
-#include <boost/range/distance.hpp>
-#include <boost/range/empty.hpp>
-#include <boost/range/iterator_range.hpp>
-#include <boost/range/mutable_iterator.hpp>
-#include <boost/range/rbegin.hpp>
-#include <boost/range/rend.hpp>
-#include <boost/range/value_type.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/concept_check.hpp"
+#include "boost/next_prior.hpp"
+#include "boost/range/begin.hpp"
+#include "boost/range/concepts.hpp"
+#include "boost/range/const_iterator.hpp"
+#include "boost/range/difference_type.hpp"
+#include "boost/range/distance.hpp"
+#include "boost/range/empty.hpp"
+#include "boost/range/iterator_range.hpp"
+#include "boost/range/mutable_iterator.hpp"
+#include "boost/range/rbegin.hpp"
+#include "boost/range/rend.hpp"
+#include "boost/range/value_type.hpp"
+#include "boost/type_traits/is_same.hpp"
 
 
 namespace boost { namespace range_detail_microsoft {

@@ -13,15 +13,15 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
-#include <boost/detail/workaround.hpp>
-#include <boost/flyweight/detail/perfect_fwd.hpp>
-#include <boost/flyweight/detail/value_tag.hpp>
-#include <boost/flyweight/key_value_fwd.hpp>
-#include <boost/mpl/assert.hpp>
-#include <boost/type_traits/aligned_storage.hpp>
-#include <boost/type_traits/alignment_of.hpp> 
-#include <boost/type_traits/is_same.hpp>
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
+#include "boost/detail/workaround.hpp"
+#include "boost/flyweight/detail/perfect_fwd.hpp"
+#include "boost/flyweight/detail/value_tag.hpp"
+#include "boost/flyweight/key_value_fwd.hpp"
+#include "boost/mpl/assert.hpp"
+#include "boost/type_traits/aligned_storage.hpp"
+#include "boost/type_traits/alignment_of.hpp" 
+#include "boost/type_traits/is_same.hpp"
 #include <new>
 
 /* key-value policy: flywewight lookup is based on Key, which also serves

@@ -6,7 +6,7 @@
 
 //  Authors: Matthias Troyer
 
-#include <boost/serialization/array.hpp>
+#include "boost/serialization/array.hpp"
 
 #ifndef BOOST_MPI_DETAIL_FORWARD_IPRIMITIVE_HPP
 #define BOOST_MPI_DETAIL_FORWARD_IPRIMITIVE_HPP

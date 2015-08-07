@@ -7,8 +7,8 @@
 //
 // For more information, see http://www.boost.org/libs/range/
 //
-#include <boost/range/iterator_range_core.hpp>
-#include <boost/functional/hash.hpp>
+#include "boost/range/iterator_range_core.hpp"
+#include "boost/functional/hash.hpp"
 
 namespace boost
 {

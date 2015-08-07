@@ -9,6 +9,6 @@
 #ifndef BOOST_ALIGN_IS_ALIGNED_HPP
 #define BOOST_ALIGN_IS_ALIGNED_HPP
 
-#include <boost/align/detail/is_aligned.hpp>
+#include "boost/align/detail/is_aligned.hpp"
 
 #endif

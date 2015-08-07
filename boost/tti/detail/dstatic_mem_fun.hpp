@@ -7,20 +7,20 @@
 #if !defined(BOOST_TTI_DETAIL_STATIC_MEM_FUN_HPP)
 #define BOOST_TTI_DETAIL_STATIC_MEM_FUN_HPP
 
-#include <boost/function_types/is_function.hpp>
-#include <boost/function_types/property_tags.hpp>
-#include <boost/mpl/and.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/vector.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/tti/detail/dnullptr.hpp>
-#include <boost/tti/detail/dtfunction.hpp>
-#include <boost/tti/gen/namespace_gen.hpp>
-#include <boost/type_traits/is_class.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/detail/yes_no_type.hpp>
+#include "boost/function_types/is_function.hpp"
+#include "boost/function_types/property_tags.hpp"
+#include "boost/mpl/and.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/vector.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/tti/detail/dnullptr.hpp"
+#include "boost/tti/detail/dtfunction.hpp"
+#include "boost/tti/gen/namespace_gen.hpp"
+#include "boost/type_traits/is_class.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/detail/yes_no_type.hpp"
 
 #if defined(__SUNPRO_CC)
 

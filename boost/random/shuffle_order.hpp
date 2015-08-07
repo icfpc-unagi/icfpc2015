@@ -18,16 +18,16 @@
 #include <iostream>
 #include <algorithm>     // std::copy
 #include <cassert>
-#include <boost/config.hpp>
-#include <boost/limits.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/random/detail/operators.hpp>
-#include <boost/random/detail/seed.hpp>
-#include <boost/random/detail/signed_unsigned_tools.hpp>
-#include <boost/random/linear_congruential.hpp>
+#include "boost/config.hpp"
+#include "boost/limits.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/random/detail/operators.hpp"
+#include "boost/random/detail/seed.hpp"
+#include "boost/random/detail/signed_unsigned_tools.hpp"
+#include "boost/random/linear_congruential.hpp"
 
-#include <boost/random/detail/disable_warnings.hpp>
+#include "boost/random/detail/disable_warnings.hpp"
 
 namespace boost {
 namespace random {
@@ -264,6 +264,6 @@ using random::kreutzer1986;
 
 } // namespace boost
 
-#include <boost/random/detail/enable_warnings.hpp>
+#include "boost/random/detail/enable_warnings.hpp"
 
 #endif // BOOST_RANDOM_SHUFFLE_OUTPUT_HPP

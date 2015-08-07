@@ -23,16 +23,16 @@
 #ifndef BOOST_THREAD_DETAIL_INVOKER_HPP
 #define BOOST_THREAD_DETAIL_INVOKER_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
-#include <boost/utility/result_of.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/detail/invoke.hpp>
-#include <boost/thread/detail/make_tuple_indices.hpp>
-#include <boost/thread/csbl/tuple.hpp>
-#include <boost/tuple/tuple.hpp>
+#include "boost/utility/result_of.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/detail/invoke.hpp"
+#include "boost/thread/detail/make_tuple_indices.hpp"
+#include "boost/thread/csbl/tuple.hpp"
+#include "boost/tuple/tuple.hpp"
 
-#include <boost/thread/detail/variadic_header.hpp>
+#include "boost/thread/detail/variadic_header.hpp"
 
 namespace boost
 {
@@ -749,6 +749,6 @@ namespace boost
   }
 }
 
-#include <boost/thread/detail/variadic_footer.hpp>
+#include "boost/thread/detail/variadic_footer.hpp"
 
 #endif // header

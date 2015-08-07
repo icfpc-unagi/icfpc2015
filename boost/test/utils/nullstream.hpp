@@ -20,9 +20,9 @@
 #include <streambuf>  // for std::basic_streambuf
 #include <string>     // for std::char_traits
 
-#include <boost/utility/base_from_member.hpp>
+#include "boost/utility/base_from_member.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -95,6 +95,6 @@ typedef basic_onullstream<wchar_t>  wonullstream;
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif  // BOOST_NULLSTREAM_HPP_071894GER

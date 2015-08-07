@@ -18,21 +18,21 @@
 
 #include <iostream>
 #include <stdexcept>
-#include <boost/assert.hpp>
-#include <boost/config.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/limits.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/integer/static_log2.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/type_traits/is_arithmetic.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/const_mod.hpp>
-#include <boost/random/detail/seed.hpp>
-#include <boost/random/detail/seed_impl.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/limits.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/integer/static_log2.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/type_traits/is_arithmetic.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/const_mod.hpp"
+#include "boost/random/detail/seed.hpp"
+#include "boost/random/detail/seed_impl.hpp"
+#include "boost/detail/workaround.hpp"
 
-#include <boost/random/detail/disable_warnings.hpp>
+#include "boost/random/detail/disable_warnings.hpp"
 
 namespace boost {
 namespace random {
@@ -461,6 +461,6 @@ using random::rand48;
 
 } // namespace boost
 
-#include <boost/random/detail/enable_warnings.hpp>
+#include "boost/random/detail/enable_warnings.hpp"
 
 #endif // BOOST_RANDOM_LINEAR_CONGRUENTIAL_HPP

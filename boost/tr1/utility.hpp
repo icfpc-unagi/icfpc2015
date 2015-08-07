@@ -5,14 +5,14 @@
 
 #ifndef BOOST_TR1_UTILITY_HPP_INCLUDED
 #  define BOOST_TR1_UTILITY_HPP_INCLUDED
-#  include <boost/tr1/detail/config.hpp>
+#  include "boost/tr1/detail/config.hpp"
 
 #ifdef BOOST_HAS_TR1_UTILITY
 
 #  if defined(BOOST_HAS_INCLUDE_NEXT) && !defined(BOOST_TR1_DISABLE_INCLUDE_NEXT)
 #     include_next BOOST_TR1_HEADER(utility)
 #  else
-#     include <boost/tr1/detail/config_all.hpp>
+#     include "boost/tr1/detail/config_all.hpp"
 #     include BOOST_TR1_STD_HEADER(BOOST_TR1_PATH(utility))
 #  endif
 
@@ -20,10 +20,10 @@
 
 #if defined(BOOST_TR1_USE_OLD_TUPLE)
 
-#include <boost/type_traits/integral_constant.hpp>
-#include <boost/type_traits/add_const.hpp>
-#include <boost/type_traits/add_reference.hpp>
-#include <boost/mpl/if.hpp>
+#include "boost/type_traits/integral_constant.hpp"
+#include "boost/type_traits/add_const.hpp"
+#include "boost/type_traits/add_reference.hpp"
+#include "boost/mpl/if.hpp"
 
 
 namespace std{ namespace tr1{
@@ -112,7 +112,7 @@ inline typename tuple_detail::const_tuple_get_result<I,T1,T2>::type get(const st
 
 #else
 
-#include <boost/tr1/tuple.hpp>
+#include "boost/tr1/tuple.hpp"
 
 #endif
 

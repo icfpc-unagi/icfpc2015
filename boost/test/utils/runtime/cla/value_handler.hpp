@@ -16,9 +16,9 @@
 #define BOOST_RT_CLA_VALUE_HANDLER_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
+#include "boost/test/utils/runtime/config.hpp"
 
-#include <boost/test/utils/runtime/cla/fwd.hpp>
+#include "boost/test/utils/runtime/cla/fwd.hpp"
 
 namespace boost {
 

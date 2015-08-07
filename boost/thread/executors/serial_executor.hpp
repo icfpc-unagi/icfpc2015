@@ -9,16 +9,16 @@
 #ifndef BOOST_THREAD_SERIAL_EXECUTOR_HPP
 #define BOOST_THREAD_SERIAL_EXECUTOR_HPP
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/delete.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/sync_queue.hpp>
-#include <boost/thread/executors/work.hpp>
-#include <boost/thread/executors/generic_executor_ref.hpp>
-#include <boost/thread/future.hpp>
-#include <boost/thread/scoped_thread.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/delete.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/sync_queue.hpp"
+#include "boost/thread/executors/work.hpp"
+#include "boost/thread/executors/generic_executor_ref.hpp"
+#include "boost/thread/future.hpp"
+#include "boost/thread/scoped_thread.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -209,6 +209,6 @@ namespace executors
 using executors::serial_executor;
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

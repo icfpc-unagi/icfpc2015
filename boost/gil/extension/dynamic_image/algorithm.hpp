@@ -14,7 +14,7 @@
 
 #include "../../algorithm.hpp"
 #include "any_image.hpp"
-#include <boost/bind.hpp>
+#include "boost/bind.hpp"
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /// \file               

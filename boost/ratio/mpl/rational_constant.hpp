@@ -7,9 +7,9 @@
 #ifndef BOOST_RATIO_MPL_RATIONAL_CONSTANT_HPP
 #define BOOST_RATIO_MPL_RATIONAL_CONSTANT_HPP
 
-#include <boost/ratio/mpl/rational_c_tag.hpp>
-#include <boost/ratio/mpl/numeric_cast.hpp>
-#include <boost/ratio/mpl/arithmetic.hpp>
-#include <boost/ratio/mpl/comparison.hpp>
+#include "boost/ratio/mpl/rational_c_tag.hpp"
+#include "boost/ratio/mpl/numeric_cast.hpp"
+#include "boost/ratio/mpl/arithmetic.hpp"
+#include "boost/ratio/mpl/comparison.hpp"
 
 #endif  // BOOST_RATIO_HPP

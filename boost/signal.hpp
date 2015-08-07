@@ -22,20 +22,20 @@
 #  define BOOST_SIGNALS_MAX_ARGS 10
 #endif
 
-#include <boost/config.hpp>
-#include <boost/type_traits/function_traits.hpp>
-#include <boost/signals/signal0.hpp>
-#include <boost/signals/signal1.hpp>
-#include <boost/signals/signal2.hpp>
-#include <boost/signals/signal3.hpp>
-#include <boost/signals/signal4.hpp>
-#include <boost/signals/signal5.hpp>
-#include <boost/signals/signal6.hpp>
-#include <boost/signals/signal7.hpp>
-#include <boost/signals/signal8.hpp>
-#include <boost/signals/signal9.hpp>
-#include <boost/signals/signal10.hpp>
-#include <boost/function.hpp>
+#include "boost/config.hpp"
+#include "boost/type_traits/function_traits.hpp"
+#include "boost/signals/signal0.hpp"
+#include "boost/signals/signal1.hpp"
+#include "boost/signals/signal2.hpp"
+#include "boost/signals/signal3.hpp"
+#include "boost/signals/signal4.hpp"
+#include "boost/signals/signal5.hpp"
+#include "boost/signals/signal6.hpp"
+#include "boost/signals/signal7.hpp"
+#include "boost/signals/signal8.hpp"
+#include "boost/signals/signal9.hpp"
+#include "boost/signals/signal10.hpp"
+#include "boost/function.hpp"
 
 #ifdef BOOST_HAS_ABI_HEADERS
 #  include BOOST_ABI_PREFIX

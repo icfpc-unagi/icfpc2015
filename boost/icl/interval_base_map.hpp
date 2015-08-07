@@ -10,20 +10,20 @@ Copyright (c) 1999-2006: Cortex Software GmbH, Kantstrasse 57, Berlin
 #define BOOST_ICL_INTERVAL_BASE_MAP_HPP_JOFA_990223
 
 #include <limits>
-#include <boost/type_traits/ice.hpp>
-#include <boost/mpl/and.hpp>
-#include <boost/mpl/or.hpp>
-#include <boost/mpl/not.hpp>
+#include "boost/type_traits/ice.hpp"
+#include "boost/mpl/and.hpp"
+#include "boost/mpl/or.hpp"
+#include "boost/mpl/not.hpp"
 
-#include <boost/icl/detail/notate.hpp>
-#include <boost/icl/detail/design_config.hpp>
-#include <boost/icl/detail/on_absorbtion.hpp>
-#include <boost/icl/detail/interval_map_algo.hpp>
+#include "boost/icl/detail/notate.hpp"
+#include "boost/icl/detail/design_config.hpp"
+#include "boost/icl/detail/on_absorbtion.hpp"
+#include "boost/icl/detail/interval_map_algo.hpp"
 
-#include <boost/icl/associative_interval_container.hpp>
+#include "boost/icl/associative_interval_container.hpp"
 
-#include <boost/icl/type_traits/is_interval_splitter.hpp>
-#include <boost/icl/map.hpp>
+#include "boost/icl/type_traits/is_interval_splitter.hpp"
+#include "boost/icl/map.hpp"
 
 namespace boost{namespace icl
 {

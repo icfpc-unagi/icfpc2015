@@ -9,8 +9,8 @@
  */
 
 #include <cstdlib>
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
 
 // With boost release 1.33, date_time will be using a different,
 // more flexible, IO system. This new system is not compatible with
@@ -28,7 +28,7 @@
 
 // This file performs some local compiler configurations
 
-#include <boost/date_time/locale_config.hpp> //set up locale configurations
+#include "boost/date_time/locale_config.hpp" //set up locale configurations
 
 //Set up a configuration parameter for platforms that have 
 //GetTimeOfDay
@@ -51,7 +51,7 @@
 #endif
 
 // include these types before we try to re-define them
-#include <boost/cstdint.hpp>
+#include "boost/cstdint.hpp"
 
 //Define INT64_C for compilers that don't have it
 #if (!defined(INT64_C))
@@ -154,7 +154,7 @@ namespace std {
 //
 // And include the header that does the work:
 //
-#include <boost/config/auto_link.hpp>
+#include "boost/config/auto_link.hpp"
 #endif  // auto-linking disabled
 
 #if defined(BOOST_HAS_THREADS) 

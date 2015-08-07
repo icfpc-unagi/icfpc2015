@@ -24,7 +24,7 @@
 // Example usage:
 //
 //    #define BOOST_SELECT_BY_SIZE_MAX_CASE 7   // (Needed when default was 2)
-//    #include <boost/utility/select_by_size.hpp>
+//    #include "boost/utility/select_by_size.hpp"
 //
 //    using namespace boost::utility;
 //
@@ -65,14 +65,14 @@
 // specialized.
 #define SELECT_BY_SIZE_MAX_SPECIALIZED 20
 
-#include <boost/config.hpp>    // BOOST_STATIC_CONSTANT.
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/iteration/local.hpp>
+#include "boost/config.hpp"    // BOOST_STATIC_CONSTANT.
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/iteration/local.hpp"
 
 /* Alternative implementation using max_align. 
 
-#include <boost/type_traits/alignment_of.hpp>
-#include <boost/type_traits/type_with_alignment.hpp>
+#include "boost/type_traits/alignment_of.hpp"
+#include "boost/type_traits/type_with_alignment.hpp"
 
 namespace boost { namespace utility {
 

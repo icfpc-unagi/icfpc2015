@@ -13,8 +13,8 @@
 
 #if !defined(BOOST_RANGE_MFC_NO_CPAIR)
 
-#include <boost/range/mfc.hpp>
-#include <boost/range/adaptor/map.hpp>
+#include "boost/range/mfc.hpp"
+#include "boost/range/adaptor/map.hpp"
 
 namespace boost
 {

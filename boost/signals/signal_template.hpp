@@ -14,15 +14,15 @@
 
 #ifndef BOOST_SIGNALS_SIGNAL_TEMPLATE_HEADER_INCLUDED
 #define BOOST_SIGNALS_SIGNAL_TEMPLATE_HEADER_INCLUDED
-#  include <boost/config.hpp>
-#  include <boost/signals/connection.hpp>
-#  include <boost/ref.hpp>
-#  include <boost/signals/slot.hpp>
-#  include <boost/last_value.hpp>
-#  include <boost/signals/detail/signal_base.hpp>
-#  include <boost/signals/detail/slot_call_iterator.hpp>
-#  include <boost/mpl/bool.hpp>
-#  include <boost/type_traits/is_convertible.hpp>
+#  include "boost/config.hpp"
+#  include "boost/signals/connection.hpp"
+#  include "boost/ref.hpp"
+#  include "boost/signals/slot.hpp"
+#  include "boost/last_value.hpp"
+#  include "boost/signals/detail/signal_base.hpp"
+#  include "boost/signals/detail/slot_call_iterator.hpp"
+#  include "boost/mpl/bool.hpp"
+#  include "boost/type_traits/is_convertible.hpp"
 #  include <cassert>
 #  include <functional>
 #  include <memory>
@@ -33,7 +33,7 @@
 #endif
 
 // Include the appropriate functionN header
-#define BOOST_SIGNAL_FUNCTION_N_HEADER BOOST_JOIN(<boost/function/function,BOOST_SIGNALS_NUM_ARGS.hpp>)
+#define BOOST_SIGNAL_FUNCTION_N_HEADER BOOST_JOIN("boost/function/function,BOOST_SIGNALS_NUM_ARGS.hpp")
 #include BOOST_SIGNAL_FUNCTION_N_HEADER
 
 // Determine if a comma should follow a listing of the arguments/parameters

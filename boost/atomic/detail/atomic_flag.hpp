@@ -14,10 +14,10 @@
 #ifndef BOOST_ATOMIC_DETAIL_ATOMIC_FLAG_HPP_INCLUDED_
 #define BOOST_ATOMIC_DETAIL_ATOMIC_FLAG_HPP_INCLUDED_
 
-#include <boost/assert.hpp>
-#include <boost/memory_order.hpp>
-#include <boost/atomic/detail/config.hpp>
-#include <boost/atomic/detail/operations_lockfree.hpp>
+#include "boost/assert.hpp"
+#include "boost/memory_order.hpp"
+#include "boost/atomic/detail/config.hpp"
+#include "boost/atomic/detail/operations_lockfree.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

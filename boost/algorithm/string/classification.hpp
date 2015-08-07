@@ -13,10 +13,10 @@
 
 #include <algorithm>
 #include <locale>
-#include <boost/range/value_type.hpp>
-#include <boost/range/as_literal.hpp>
-#include <boost/algorithm/string/detail/classification.hpp>
-#include <boost/algorithm/string/predicate_facade.hpp>
+#include "boost/range/value_type.hpp"
+#include "boost/range/as_literal.hpp"
+#include "boost/algorithm/string/detail/classification.hpp"
+#include "boost/algorithm/string/predicate_facade.hpp"
 
 
 /*! \file

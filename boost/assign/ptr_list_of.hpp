@@ -16,20 +16,20 @@
 # pragma once
 #endif
 
-#include <boost/assign/list_of.hpp>
-#include <boost/type_traits/remove_const.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/type_traits/is_reference.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/type_traits/detail/yes_no_type.hpp>
-#include <boost/type_traits/decay.hpp>
-#include <boost/type_traits/is_array.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/ptr_container/ptr_vector.hpp>
+#include "boost/assign/list_of.hpp"
+#include "boost/type_traits/remove_const.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/type_traits/is_reference.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/type_traits/detail/yes_no_type.hpp"
+#include "boost/type_traits/decay.hpp"
+#include "boost/type_traits/is_array.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/ptr_container/ptr_vector.hpp"
 
-#include <boost/preprocessor/repetition/enum_binary_params.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/iteration/local.hpp>
+#include "boost/preprocessor/repetition/enum_binary_params.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/iteration/local.hpp"
 
 namespace boost
 {

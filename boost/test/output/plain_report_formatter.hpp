@@ -16,10 +16,10 @@
 #define BOOST_TEST_PLAIN_REPORT_FORMATTER_HPP_020105GER
 
 // Boost.Test
-#include <boost/test/detail/global_typedef.hpp>
-#include <boost/test/results_reporter.hpp>
+#include "boost/test/detail/global_typedef.hpp"
+#include "boost/test/results_reporter.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -57,6 +57,6 @@ private:
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_PLAIN_REPORT_FORMATTER_HPP_020105GER

@@ -12,8 +12,8 @@
 #ifndef BOOST_PTR_CONTAINER_DETAIL_META_FUNCTIONS
 #define BOOST_PTR_CONTAINER_DETAIL_META_FUNCTIONS
 
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/eval_if.hpp>
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/eval_if.hpp"
 
 namespace boost
 {

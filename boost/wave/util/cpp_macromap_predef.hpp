@@ -14,12 +14,12 @@
 #define CPP_MACROMAP_PREDEF_HPP_HK041119
 
 #include <cstdio>
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/wave_config_constant.hpp>
-#include <boost/wave/token_ids.hpp>
-#include <boost/wave/util/time_conversion_helper.hpp> // time_conversion_helper 
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/wave_config_constant.hpp"
+#include "boost/wave/token_ids.hpp"
+#include "boost/wave/util/time_conversion_helper.hpp" // time_conversion_helper 
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

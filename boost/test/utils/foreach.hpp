@@ -21,16 +21,16 @@
 #define BOOST_TEST_FOREACH_HPP_021005GER
 
 // Boost.Test
-#include <boost/test/detail/config.hpp>
+#include "boost/test/detail/config.hpp"
 
 // Boost
-#include <boost/type.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/test/detail/workaround.hpp>
+#include "boost/type.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/test/detail/workaround.hpp"
 
-#include <boost/type_traits/is_const.hpp>
+#include "boost/type_traits/is_const.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -276,6 +276,6 @@ for( bool BOOST_TEST_FE_CON_VAR = true;                                         
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_FOREACH_HPP_021005GER

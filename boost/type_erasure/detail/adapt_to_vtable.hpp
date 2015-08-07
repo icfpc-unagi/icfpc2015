@@ -13,22 +13,22 @@
 #ifndef BOOST_TYPE_ERASURE_DETAIL_ADAPT_TO_VTABLE_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_DETAIL_ADAPT_TO_VTABLE_HPP_INCLUDED
 
-#include <boost/utility/addressof.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/has_xxx.hpp>
-#include <boost/type_traits/function_traits.hpp>
-#include <boost/type_traits/remove_cv.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/iteration/iterate.hpp>
-#include <boost/preprocessor/repetition/enum.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_params.hpp>
-#include <boost/preprocessor/repetition/enum_binary_params.hpp>
-#include <boost/type_erasure/detail/get_signature.hpp>
-#include <boost/type_erasure/detail/storage.hpp>
-#include <boost/type_erasure/is_placeholder.hpp>
-#include <boost/type_erasure/config.hpp>
+#include "boost/utility/addressof.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/has_xxx.hpp"
+#include "boost/type_traits/function_traits.hpp"
+#include "boost/type_traits/remove_cv.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/iteration/iterate.hpp"
+#include "boost/preprocessor/repetition/enum.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_params.hpp"
+#include "boost/preprocessor/repetition/enum_binary_params.hpp"
+#include "boost/type_erasure/detail/get_signature.hpp"
+#include "boost/type_erasure/detail/storage.hpp"
+#include "boost/type_erasure/is_placeholder.hpp"
+#include "boost/type_erasure/config.hpp"
 
 namespace boost {
 namespace type_erasure {
@@ -240,7 +240,7 @@ struct get_vtable_signature<R(T...)>
 
 #else
 
-#define BOOST_PP_FILENAME_1 <boost/type_erasure/detail/adapt_to_vtable.hpp>
+#define BOOST_PP_FILENAME_1 "boost/type_erasure/detail/adapt_to_vtable.hpp"
 #define BOOST_PP_ITERATION_LIMITS (0, BOOST_TYPE_ERASURE_MAX_ARITY)
 #include BOOST_PP_ITERATE()
 

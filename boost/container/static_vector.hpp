@@ -15,10 +15,10 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
+#include "boost/container/detail/config_begin.hpp"
 
-#include <boost/container/vector.hpp>
-#include <boost/aligned_storage.hpp>
+#include "boost/container/vector.hpp"
+#include "boost/aligned_storage.hpp"
 
 namespace boost { namespace container {
 
@@ -1151,6 +1151,6 @@ inline void swap(static_vector<V, C1> & x, static_vector<V, C2> & y
 
 }} // namespace boost::container
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif // BOOST_CONTAINER_STATIC_VECTOR_HPP

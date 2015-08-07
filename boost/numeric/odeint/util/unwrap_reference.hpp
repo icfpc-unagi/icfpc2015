@@ -19,13 +19,13 @@
 #define BOOST_NUMERIC_ODEINT_UTIL_UNWRAP_REFERENCE_HPP_INCLUDED
 
 
-#include <boost/numeric/odeint/config.hpp>
+#include "boost/numeric/odeint/config.hpp"
 
 
 #if BOOST_NUMERIC_ODEINT_CXX11
 #include <functional>
 #else
-#include <boost/ref.hpp>
+#include "boost/ref.hpp"
 #endif
 
 namespace boost {
@@ -96,11 +96,11 @@ using ::boost::ref;
 
 /*
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 
 #ifdef BOOST_NO_CXX11_HDR_FUNCTIONAL
-#include <boost/ref.hpp>
+#include "boost/ref.hpp"
 #else
 #include <functional>
 #endif

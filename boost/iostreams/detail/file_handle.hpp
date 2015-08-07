@@ -17,7 +17,7 @@
 #ifndef BOOST_IOSTREAMS_DETAIL_FILE_HANDLE_HPP_INCLUDED
 #define BOOST_IOSTREAMS_DETAIL_FILE_HANDLE_HPP_INCLUDED
 
-#include <boost/iostreams/detail/config/windows_posix.hpp>
+#include "boost/iostreams/detail/config/windows_posix.hpp"
 
 namespace boost { namespace iostreams { namespace detail {
 

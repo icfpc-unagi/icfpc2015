@@ -13,21 +13,21 @@
 #endif              
 
 #include <algorithm>                          // copy, min.
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 #include <iterator>                           // back_inserter
 #include <vector>
-#include <boost/iostreams/constants.hpp>      // default_device_buffer_size 
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/detail/char_traits.hpp>
-#include <boost/iostreams/detail/ios.hpp>     // openmode, streamsize.
-#include <boost/iostreams/pipeline.hpp>
-#include <boost/iostreams/read.hpp>           // check_eof 
-#include <boost/iostreams/write.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/type_traits/is_convertible.hpp>
+#include "boost/iostreams/constants.hpp"      // default_device_buffer_size 
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/detail/char_traits.hpp"
+#include "boost/iostreams/detail/ios.hpp"     // openmode, streamsize.
+#include "boost/iostreams/pipeline.hpp"
+#include "boost/iostreams/read.hpp"           // check_eof 
+#include "boost/iostreams/write.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/type_traits/is_convertible.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/disable_warnings.hpp"  // MSVC.
 
 namespace boost { namespace iostreams {
 
@@ -163,6 +163,6 @@ BOOST_IOSTREAMS_PIPABLE(aggregate_filter, 1)
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/enable_warnings.hpp"  // MSVC.
 
 #endif // #ifndef BOOST_IOSTREAMS_AGGREGATE_FILTER_HPP_INCLUDED

@@ -17,7 +17,7 @@
 //  See http://www.boost.org for updates, documentation, and revision history.
 
 #include <stack>
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 // function specializations must be defined in the appropriate
 // namespace - boost::serialization
@@ -65,7 +65,7 @@ inline void serialize(
 } // namespace serialization
 } // namespace boost
 
-#include <boost/serialization/collection_traits.hpp>
+#include "boost/serialization/collection_traits.hpp"
 
 BOOST_SERIALIZATION_COLLECTION_TRAITS(STD::stack)
 

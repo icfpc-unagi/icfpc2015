@@ -16,7 +16,7 @@
 #define BOOST_RT_TRACE_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
+#include "boost/test/utils/runtime/config.hpp"
 
 #ifdef BOOST_RT_PARAM_DEBUG
 

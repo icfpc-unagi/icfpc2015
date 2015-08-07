@@ -27,11 +27,11 @@
 #ifndef BOOST_MATH_SPECIAL_BERNOULLI_HPP
 #define BOOST_MATH_SPECIAL_BERNOULLI_HPP
 
-#include <boost/math/distributions/fwd.hpp>
-#include <boost/math/tools/config.hpp>
-#include <boost/math/distributions/complement.hpp> // complements
-#include <boost/math/distributions/detail/common_error_handling.hpp> // error checks
-#include <boost/math/special_functions/fpclassify.hpp> // isnan.
+#include "boost/math/distributions/fwd.hpp"
+#include "boost/math/tools/config.hpp"
+#include "boost/math/distributions/complement.hpp" // complements
+#include "boost/math/distributions/detail/common_error_handling.hpp" // error checks
+#include "boost/math/special_functions/fpclassify.hpp" // isnan.
 
 #include <utility>
 
@@ -328,7 +328,7 @@ namespace boost
 // This include must be at the end, *after* the accessors
 // for this distribution have been defined, in order to
 // keep compilers that support two-phase lookup happy.
-#include <boost/math/distributions/detail/derived_accessors.hpp>
+#include "boost/math/distributions/detail/derived_accessors.hpp"
 
 #endif // BOOST_MATH_SPECIAL_BERNOULLI_HPP
 

@@ -8,10 +8,10 @@
 #ifndef BOOST_CHRONO_DETAIL_IS_EVENLY_DIVISIBLE_BY_HPP
 #define BOOST_CHRONO_DETAIL_IS_EVENLY_DIVISIBLE_BY_HPP
 
-#include <boost/chrono/config.hpp>
+#include "boost/chrono/config.hpp"
 
-#include <boost/mpl/logical.hpp>
-#include <boost/ratio/detail/overflow_helpers.hpp>
+#include "boost/mpl/logical.hpp"
+#include "boost/ratio/detail/overflow_helpers.hpp"
 
 namespace boost {
 namespace chrono {

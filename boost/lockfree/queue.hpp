@@ -11,16 +11,16 @@
 #ifndef BOOST_LOCKFREE_FIFO_HPP_INCLUDED
 #define BOOST_LOCKFREE_FIFO_HPP_INCLUDED
 
-#include <boost/assert.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/type_traits/has_trivial_assign.hpp>
-#include <boost/type_traits/has_trivial_destructor.hpp>
+#include "boost/assert.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/type_traits/has_trivial_assign.hpp"
+#include "boost/type_traits/has_trivial_destructor.hpp"
 
-#include <boost/lockfree/detail/atomic.hpp>
-#include <boost/lockfree/detail/copy_payload.hpp>
-#include <boost/lockfree/detail/freelist.hpp>
-#include <boost/lockfree/detail/parameter.hpp>
-#include <boost/lockfree/detail/tagged_ptr.hpp>
+#include "boost/lockfree/detail/atomic.hpp"
+#include "boost/lockfree/detail/copy_payload.hpp"
+#include "boost/lockfree/detail/freelist.hpp"
+#include "boost/lockfree/detail/parameter.hpp"
+#include "boost/lockfree/detail/tagged_ptr.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

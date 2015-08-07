@@ -14,23 +14,23 @@
 #define BOOST_RANDOM_DETAIL_SEED_IMPL_HPP
 
 #include <stdexcept>
-#include <boost/cstdint.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/config/no_tr1/cmath.hpp>
-#include <boost/integer/integer_mask.hpp>
-#include <boost/integer/static_log2.hpp>
-#include <boost/type_traits/is_signed.hpp>
-#include <boost/type_traits/is_integral.hpp>
-#include <boost/type_traits/make_unsigned.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/int.hpp>
-#include <boost/random/detail/const_mod.hpp>
-#include <boost/random/detail/integer_log2.hpp>
-#include <boost/random/detail/signed_unsigned_tools.hpp>
-#include <boost/random/detail/generator_bits.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/config/no_tr1/cmath.hpp"
+#include "boost/integer/integer_mask.hpp"
+#include "boost/integer/static_log2.hpp"
+#include "boost/type_traits/is_signed.hpp"
+#include "boost/type_traits/is_integral.hpp"
+#include "boost/type_traits/make_unsigned.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/int.hpp"
+#include "boost/random/detail/const_mod.hpp"
+#include "boost/random/detail/integer_log2.hpp"
+#include "boost/random/detail/signed_unsigned_tools.hpp"
+#include "boost/random/detail/generator_bits.hpp"
 
-#include <boost/random/detail/disable_warnings.hpp>
+#include "boost/random/detail/disable_warnings.hpp"
 
 namespace boost {
 namespace random {
@@ -393,6 +393,6 @@ void fill_array_real(Iter& first, Iter last, RealType (&x)[n])
 }
 }
 
-#include <boost/random/detail/enable_warnings.hpp>
+#include "boost/random/detail/enable_warnings.hpp"
 
 #endif

@@ -7,8 +7,8 @@
 #if !defined(BOOST_TTI_DETAIL_METAFUNC_HPP)
 #define BOOST_TTI_DETAIL_METAFUNC_HPP
 
-#include <boost/mpl/has_xxx.hpp>
-#include <boost/tti/gen/namespace_gen.hpp>
+#include "boost/mpl/has_xxx.hpp"
+#include "boost/tti/gen/namespace_gen.hpp"
 
 namespace boost
   {

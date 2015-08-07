@@ -23,7 +23,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 #include "gil_config.hpp"
-#include <boost/cstdint.hpp>
+#include "boost/cstdint.hpp"
 #include "gray.hpp"
 #include "rgb.hpp"
 #include "rgba.hpp"

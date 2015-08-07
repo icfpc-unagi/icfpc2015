@@ -15,27 +15,27 @@
 #ifndef BOOST_FILESYSTEM3_OPERATIONS_HPP
 #define BOOST_FILESYSTEM3_OPERATIONS_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 # if defined( BOOST_NO_STD_WSTRING )
 #   error Configuration not supported: Boost.Filesystem V3 and later requires std::wstring support
 # endif
 
-#include <boost/filesystem/config.hpp>
-#include <boost/filesystem/path.hpp>
+#include "boost/filesystem/config.hpp"
+#include "boost/filesystem/path.hpp"
 
-#include <boost/detail/scoped_enum_emulation.hpp>
-#include <boost/detail/bitmask.hpp>
-#include <boost/system/error_code.hpp>
-#include <boost/system/system_error.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/iterator.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/range/mutable_iterator.hpp>
-#include <boost/range/const_iterator.hpp>
-#include <boost/assert.hpp>
+#include "boost/detail/scoped_enum_emulation.hpp"
+#include "boost/detail/bitmask.hpp"
+#include "boost/system/error_code.hpp"
+#include "boost/system/system_error.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/iterator.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/range/mutable_iterator.hpp"
+#include "boost/range/const_iterator.hpp"
+#include "boost/assert.hpp"
 #include <string>
 #include <utility> // for pair
 #include <ctime>
@@ -46,7 +46,7 @@
 #  include <fstream>
 #endif
 
-#include <boost/config/abi_prefix.hpp> // must be the last #include
+#include "boost/config/abi_prefix.hpp" // must be the last #include
 
 //--------------------------------------------------------------------------------------//
 
@@ -1221,5 +1221,5 @@ namespace filesystem
   } // namespace filesystem
 } // namespace boost
 
-#include <boost/config/abi_suffix.hpp> // pops abi_prefix.hpp pragmas
+#include "boost/config/abi_suffix.hpp" // pops abi_prefix.hpp pragmas
 #endif // BOOST_FILESYSTEM3_OPERATIONS_HPP

@@ -15,10 +15,10 @@
 
 #include <iosfwd>
 
-#include <boost/limits.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/gamma_distribution.hpp>
-#include <boost/random/poisson_distribution.hpp>
+#include "boost/limits.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/gamma_distribution.hpp"
+#include "boost/random/poisson_distribution.hpp"
 
 namespace boost {
 namespace random {

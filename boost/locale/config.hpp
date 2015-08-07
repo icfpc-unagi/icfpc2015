@@ -8,7 +8,7 @@
 #ifndef BOOST_LOCALE_CONFIG_HPP_INCLUDED
 #define BOOST_LOCALE_CONFIG_HPP_INCLUDED
 
-#include <boost/locale/definitions.hpp>
+#include "boost/locale/definitions.hpp"
 
 //
 // Automatically link to the correct build variant where possible. 
@@ -28,7 +28,7 @@
 //
 // And include the header that does the work:
 //
-#include <boost/config/auto_link.hpp>
+#include "boost/config/auto_link.hpp"
 #endif  // auto-linking disabled
 
 

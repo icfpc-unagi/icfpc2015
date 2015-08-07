@@ -16,22 +16,22 @@
 
 #include <algorithm>          // min.
 #include <utility>            // pair.
-#include <boost/config.hpp>   // DEDUCED_TYPENAME.
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/detail/adapter/direct_adapter.hpp>
-#include <boost/iostreams/detail/call_traits.hpp>
-#include <boost/iostreams/detail/enable_if_stream.hpp>
-#include <boost/iostreams/detail/execute.hpp>
-#include <boost/iostreams/detail/functional.hpp>
-#include <boost/iostreams/operations.hpp>
-#include <boost/iostreams/traits.hpp>      // mode_of, is_direct.
-#include <boost/mpl/if.hpp>
-#include <boost/ref.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/type_traits/is_convertible.hpp>
+#include "boost/config.hpp"   // DEDUCED_TYPENAME.
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/detail/adapter/direct_adapter.hpp"
+#include "boost/iostreams/detail/call_traits.hpp"
+#include "boost/iostreams/detail/enable_if_stream.hpp"
+#include "boost/iostreams/detail/execute.hpp"
+#include "boost/iostreams/detail/functional.hpp"
+#include "boost/iostreams/operations.hpp"
+#include "boost/iostreams/traits.hpp"      // mode_of, is_direct.
+#include "boost/mpl/if.hpp"
+#include "boost/ref.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/type_traits/is_convertible.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/disable_warnings.hpp"  // MSVC.
 
 namespace boost { namespace iostreams {
 
@@ -489,6 +489,6 @@ composite_device<Filter, Device, Mode>::optimal_buffer_size() const
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>
+#include "boost/iostreams/detail/config/enable_warnings.hpp"
 
 #endif // #ifndef BOOST_IOSTREAMS_COMPOSE_HPP_INCLUDED

@@ -9,7 +9,7 @@
 #ifndef BOOST_POOL_HPP
 #define BOOST_POOL_HPP
 
-#include <boost/config.hpp>  // for workarounds
+#include "boost/config.hpp"  // for workarounds
 
 // std::less, std::less_equal, std::greater
 #include <functional>
@@ -24,16 +24,16 @@
 // std::max
 #include <algorithm>
 
-#include <boost/pool/poolfwd.hpp>
+#include "boost/pool/poolfwd.hpp"
 
 // boost::math::static_lcm
-#include <boost/math/common_factor_ct.hpp>
+#include "boost/math/common_factor_ct.hpp"
 // boost::simple_segregated_storage
-#include <boost/pool/simple_segregated_storage.hpp>
+#include "boost/pool/simple_segregated_storage.hpp"
 // boost::alignment_of
-#include <boost/type_traits/alignment_of.hpp>
+#include "boost/type_traits/alignment_of.hpp"
 // BOOST_ASSERT
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 
 #ifdef BOOST_POOL_INSTRUMENT
 #include <iostream>

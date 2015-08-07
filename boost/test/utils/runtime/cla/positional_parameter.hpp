@@ -16,9 +16,9 @@
 #define BOOST_RT_CLA_POSITIONAL_PARAMETER_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
+#include "boost/test/utils/runtime/config.hpp"
 
-#include <boost/test/utils/runtime/cla/basic_parameter.hpp>
+#include "boost/test/utils/runtime/cla/basic_parameter.hpp"
 
 namespace boost {
 

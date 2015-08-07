@@ -16,13 +16,13 @@
 #define BOOST_RT_ARGUMENT_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
-#include <boost/test/utils/runtime/fwd.hpp>
-#include <boost/test/utils/runtime/validation.hpp>
+#include "boost/test/utils/runtime/config.hpp"
+#include "boost/test/utils/runtime/fwd.hpp"
+#include "boost/test/utils/runtime/validation.hpp"
 
 // Boost.Test
-#include <boost/test/utils/class_properties.hpp>
-#include <boost/test/utils/rtti.hpp>
+#include "boost/test/utils/class_properties.hpp"
+#include "boost/test/utils/rtti.hpp"
 
 // STL
 #include <cassert>

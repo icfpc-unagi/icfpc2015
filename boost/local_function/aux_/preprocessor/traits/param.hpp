@@ -8,7 +8,7 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_PP_PARAM_TRAITS_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_PP_PARAM_TRAITS_HPP_
 
-#include <boost/preprocessor/tuple/elem.hpp>
+#include "boost/preprocessor/tuple/elem.hpp"
 
 // PRIVATE //
 

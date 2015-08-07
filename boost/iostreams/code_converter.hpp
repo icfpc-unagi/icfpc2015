@@ -14,7 +14,7 @@
 # pragma once
 #endif
 
-#include <boost/iostreams/detail/config/wide_streams.hpp>
+#include "boost/iostreams/detail/config/wide_streams.hpp"
 #if defined(BOOST_IOSTREAMS_NO_WIDE_STREAMS) || \
     defined(BOOST_IOSTREAMS_NO_LOCALE) \
     /**/
@@ -24,32 +24,32 @@
 #include <algorithm>                       // max.
 #include <cstring>                         // memcpy.
 #include <exception>
-#include <boost/config.hpp>                // DEDUCED_TYPENAME, 
-#include <boost/iostreams/char_traits.hpp>
-#include <boost/iostreams/constants.hpp>   // default_filter_buffer_size.
-#include <boost/iostreams/detail/adapter/concept_adapter.hpp>
-#include <boost/iostreams/detail/adapter/direct_adapter.hpp>
-#include <boost/iostreams/detail/buffer.hpp>
-#include <boost/iostreams/detail/call_traits.hpp>
-#include <boost/iostreams/detail/codecvt_holder.hpp>
-#include <boost/iostreams/detail/codecvt_helper.hpp>
-#include <boost/iostreams/detail/double_object.hpp>
-#include <boost/iostreams/detail/execute.hpp>
-#include <boost/iostreams/detail/forward.hpp>
-#include <boost/iostreams/detail/functional.hpp>
-#include <boost/iostreams/detail/ios.hpp> // failure, openmode, int types.
-#include <boost/iostreams/detail/optional.hpp>
-#include <boost/iostreams/detail/select.hpp>
-#include <boost/iostreams/traits.hpp>
-#include <boost/iostreams/operations.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/config.hpp"                // DEDUCED_TYPENAME, 
+#include "boost/iostreams/char_traits.hpp"
+#include "boost/iostreams/constants.hpp"   // default_filter_buffer_size.
+#include "boost/iostreams/detail/adapter/concept_adapter.hpp"
+#include "boost/iostreams/detail/adapter/direct_adapter.hpp"
+#include "boost/iostreams/detail/buffer.hpp"
+#include "boost/iostreams/detail/call_traits.hpp"
+#include "boost/iostreams/detail/codecvt_holder.hpp"
+#include "boost/iostreams/detail/codecvt_helper.hpp"
+#include "boost/iostreams/detail/double_object.hpp"
+#include "boost/iostreams/detail/execute.hpp"
+#include "boost/iostreams/detail/forward.hpp"
+#include "boost/iostreams/detail/functional.hpp"
+#include "boost/iostreams/detail/ios.hpp" // failure, openmode, int types.
+#include "boost/iostreams/detail/optional.hpp"
+#include "boost/iostreams/detail/select.hpp"
+#include "boost/iostreams/traits.hpp"
+#include "boost/iostreams/operations.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/type_traits/is_same.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp> // Borland 5.x
+#include "boost/iostreams/detail/config/disable_warnings.hpp" // Borland 5.x
 
 namespace boost { namespace iostreams {
 
@@ -420,6 +420,6 @@ std::streamsize code_converter<Device, Codevt, Alloc>::write
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp> // Borland 5.x
+#include "boost/iostreams/detail/config/enable_warnings.hpp" // Borland 5.x
 
 #endif // #ifndef BOOST_IOSTREAMS_CODE_CONVERTER_HPP_INCLUDED

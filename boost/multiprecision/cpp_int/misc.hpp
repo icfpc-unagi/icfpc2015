@@ -8,7 +8,7 @@
 #ifndef BOOST_MP_CPP_INT_MISC_HPP
 #define BOOST_MP_CPP_INT_MISC_HPP
 
-#include <boost/multiprecision/detail/bitscan.hpp> // lsb etc
+#include "boost/multiprecision/detail/bitscan.hpp" // lsb etc
 
 #ifdef BOOST_MSVC
 #pragma warning(push)

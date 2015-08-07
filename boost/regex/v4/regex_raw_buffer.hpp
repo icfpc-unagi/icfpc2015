@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         regex_raw_buffer.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Raw character buffer for regex code.
   *                Note this is an internal header file included
   *                by regex.hpp, do not include on its own.
@@ -22,7 +22,7 @@
 #define BOOST_REGEX_RAW_BUFFER_HPP
 
 #ifndef BOOST_REGEX_CONFIG_HPP
-#include <boost/regex/config.hpp>
+#include "boost/regex/config.hpp"
 #endif
 
 #include <algorithm>

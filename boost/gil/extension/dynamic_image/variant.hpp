@@ -28,14 +28,14 @@
 #include <cassert>
 #include <algorithm>
 #include <typeinfo>
-#include <boost/bind.hpp>
+#include "boost/bind.hpp"
 
-#include <boost/mpl/transform.hpp>
-#include <boost/mpl/size.hpp>
-#include <boost/mpl/sizeof.hpp>
-#include <boost/mpl/max.hpp>
-#include <boost/mpl/at.hpp>
-#include <boost/mpl/fold.hpp>
+#include "boost/mpl/transform.hpp"
+#include "boost/mpl/size.hpp"
+#include "boost/mpl/sizeof.hpp"
+#include "boost/mpl/max.hpp"
+#include "boost/mpl/at.hpp"
+#include "boost/mpl/fold.hpp"
 
 namespace boost { namespace gil {
 

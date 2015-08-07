@@ -14,6 +14,6 @@
 #ifndef BOOST_GEOMETRY_HPP
 #define BOOST_GEOMETRY_HPP
 
-#include <boost/geometry/geometry.hpp>
+#include "boost/geometry/geometry.hpp"
 
 #endif // BOOST_GEOMETRY_HPP

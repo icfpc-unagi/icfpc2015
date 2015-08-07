@@ -17,12 +17,12 @@
 #include <functional>
 #include <iterator>
 
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
 
-#include <boost/utility/enable_if.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/mpl/identity.hpp>
+#include "boost/utility/enable_if.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/mpl/identity.hpp"
 
 namespace boost { namespace algorithm {
 

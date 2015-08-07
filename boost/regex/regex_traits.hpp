@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         regex_traits.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares regular expression traits classes.
   */
 
@@ -20,11 +20,11 @@
 #define BOOST_REGEX_TRAITS_HPP
 
 #ifndef BOOST_REGEX_CONFIG_HPP
-#  include <boost/regex/config.hpp>
+#  include "boost/regex/config.hpp"
 #endif
 
 #  ifndef BOOST_REGEX_TRAITS_HPP_INCLUDED
-#     include <boost/regex/v4/regex_traits.hpp>
+#     include "boost/regex/v4/regex_traits.hpp"
 #  endif
 
 #endif // include

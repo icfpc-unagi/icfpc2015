@@ -18,7 +18,7 @@
 #define MPICH_IGNORE_CXX_SEEK 1
 
 #include <mpi.h>
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 /** @brief Define this macro to avoid expensice MPI_Pack/Unpack calls on 
  *  homogeneous machines.
@@ -106,7 +106,7 @@
 #  ifdef BOOST_MPI_DIAG
 #     define BOOST_LIB_DIAGNOSTIC
 #  endif
-#  include <boost/config/auto_link.hpp>
+#  include "boost/config/auto_link.hpp"
 #endif
 
 #endif // BOOST_MPI_CONFIG_HPP

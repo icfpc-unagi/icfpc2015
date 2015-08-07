@@ -7,24 +7,24 @@
 #ifndef BOOST_MATH_CONSTANTS_CONSTANTS_INCLUDED
 #define BOOST_MATH_CONSTANTS_CONSTANTS_INCLUDED
 
-#include <boost/math/tools/config.hpp>
-#include <boost/math/policies/policy.hpp>
-#include <boost/math/tools/precision.hpp>
+#include "boost/math/tools/config.hpp"
+#include "boost/math/policies/policy.hpp"
+#include "boost/math/tools/precision.hpp"
 #ifdef BOOST_MSVC
 #pragma warning(push)
 #pragma warning(disable: 4127 4701)
 #endif
 #ifndef BOOST_MATH_NO_LEXICAL_CAST
-#include <boost/lexical_cast.hpp>
+#include "boost/lexical_cast.hpp"
 #endif
 #ifdef BOOST_MSVC
 #pragma warning(pop)
 #endif
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/and.hpp>
-#include <boost/mpl/int.hpp>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/utility/declval.hpp>
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/and.hpp"
+#include "boost/mpl/int.hpp"
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/utility/declval.hpp"
 
 
 namespace boost{ namespace math
@@ -352,7 +352,7 @@ namespace boost{ namespace math
 // We deliberately include this *after* all the declarations above,
 // that way the calculation routines can call on other constants above:
 //
-#include <boost/math/constants/calculate_constants.hpp>
+#include "boost/math/constants/calculate_constants.hpp"
 
 #endif // BOOST_MATH_CONSTANTS_CONSTANTS_INCLUDED
 

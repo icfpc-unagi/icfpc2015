@@ -15,9 +15,9 @@
 # pragma once
 #endif
 
-#include <boost/assign/list_inserter.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/type_traits/remove_pointer.hpp>
+#include "boost/assign/list_inserter.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/type_traits/remove_pointer.hpp"
 
 namespace boost
 {

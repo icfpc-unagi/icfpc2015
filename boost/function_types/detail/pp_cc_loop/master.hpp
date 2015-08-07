@@ -18,22 +18,22 @@
 
 #   ifndef BOOST_FT_DETAIL_CC_LOOP_MASTER_HPP_INCLUDED
 #   define BOOST_FT_DETAIL_CC_LOOP_MASTER_HPP_INCLUDED
-#     include <boost/function_types/config/cc_names.hpp>
+#     include "boost/function_types/config/cc_names.hpp"
 
-#     include <boost/preprocessor/cat.hpp>
-#     include <boost/preprocessor/seq/size.hpp>
-#     include <boost/preprocessor/seq/elem.hpp>
-#     include <boost/preprocessor/tuple/elem.hpp>
-#     include <boost/preprocessor/iteration/iterate.hpp>
-#     include <boost/preprocessor/facilities/expand.hpp>
-#     include <boost/preprocessor/arithmetic/inc.hpp>
+#     include "boost/preprocessor/cat.hpp"
+#     include "boost/preprocessor/seq/size.hpp"
+#     include "boost/preprocessor/seq/elem.hpp"
+#     include "boost/preprocessor/tuple/elem.hpp"
+#     include "boost/preprocessor/iteration/iterate.hpp"
+#     include "boost/preprocessor/facilities/expand.hpp"
+#     include "boost/preprocessor/arithmetic/inc.hpp"
 #   endif
 
-#   include <boost/function_types/detail/encoding/def.hpp>
-#   include <boost/function_types/detail/encoding/aliases_def.hpp>
+#   include "boost/function_types/detail/encoding/def.hpp"
+#   include "boost/function_types/detail/encoding/aliases_def.hpp"
 
 #   define  BOOST_PP_FILENAME_1 \
-        <boost/function_types/detail/pp_cc_loop/master.hpp>
+        "boost/function_types/detail/pp_cc_loop/master.hpp"
 #   define  BOOST_PP_ITERATION_LIMITS \
         (0,BOOST_PP_SEQ_SIZE(BOOST_FT_CC_NAMES_SEQ)-1)
 #   include BOOST_PP_ITERATE()
@@ -68,8 +68,8 @@ BOOST_PP_EXPAND(#) endif
 #     undef BOOST_FT_config_valid
 #   endif
 
-#   include <boost/function_types/detail/encoding/aliases_undef.hpp>
-#   include <boost/function_types/detail/encoding/undef.hpp>
+#   include "boost/function_types/detail/encoding/aliases_undef.hpp"
+#   include "boost/function_types/detail/encoding/undef.hpp"
 
 #elif BOOST_FT_CC_PREPROCESSING
 

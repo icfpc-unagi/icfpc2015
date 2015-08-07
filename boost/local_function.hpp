@@ -10,13 +10,13 @@
 
 #ifndef DOXYGEN
 
-#include <boost/local_function/aux_/macro/decl.hpp>
-#include <boost/local_function/aux_/macro/name.hpp>
-#include <boost/local_function/aux_/macro/typeof.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl.hpp>
-#include <boost/local_function/detail/preprocessor/line_counter.hpp>
-#include <boost/local_function/detail/preprocessor/void_list.hpp>
-#include <boost/config.hpp>
+#include "boost/local_function/aux_/macro/decl.hpp"
+#include "boost/local_function/aux_/macro/name.hpp"
+#include "boost/local_function/aux_/macro/typeof.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl.hpp"
+#include "boost/local_function/detail/preprocessor/line_counter.hpp"
+#include "boost/local_function/detail/preprocessor/void_list.hpp"
+#include "boost/config.hpp"
 
 // PUBLIC //
 

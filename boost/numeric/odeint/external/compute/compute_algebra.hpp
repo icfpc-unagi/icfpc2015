@@ -18,8 +18,8 @@
 #ifndef BOOST_NUMERIC_ODEINT_EXTERNAL_COMPUTE_COMPUTE_ALGEBRA_HPP_DEFINED
 #define BOOST_NUMERIC_ODEINT_EXTERNAL_COMPUTE_COMPUTE_ALGEBRA_HPP_DEFINED
 
-#include <boost/preprocessor/repetition.hpp>
-#include <boost/compute.hpp>
+#include "boost/preprocessor/repetition.hpp"
+#include "boost/compute.hpp"
 
 namespace boost {
 namespace numeric {

@@ -5,12 +5,12 @@
 
 #ifndef BOOST_TR1_COMPLEX_HPP_INCLUDED
 #  define BOOST_TR1_COMPLEX_HPP_INCLUDED
-#  include <boost/tr1/detail/config.hpp>
+#  include "boost/tr1/detail/config.hpp"
 #  include <complex>
 
 #ifndef BOOST_HAS_TR1_COMPLEX_INVERSE_TRIG
 
-#include <boost/math/complex.hpp>
+#include "boost/math/complex.hpp"
 
 namespace std {
 namespace tr1 {
@@ -30,7 +30,7 @@ using boost::math::fabs;
 #  if defined(BOOST_HAS_INCLUDE_NEXT) && !defined(BOOST_TR1_DISABLE_INCLUDE_NEXT)
 #     include_next BOOST_TR1_HEADER(complex)
 #  else
-#     include <boost/tr1/detail/config_all.hpp>
+#     include "boost/tr1/detail/config_all.hpp"
 #     include BOOST_TR1_STD_HEADER(BOOST_TR1_PATH(complex))
 #  endif
 
@@ -38,10 +38,10 @@ using boost::math::fabs;
 
 #ifndef BOOST_HAS_TR1_COMPLEX_OVERLOADS
 
-#include <boost/tr1/detail/math_overloads.hpp>
-#include <boost/assert.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/config/no_tr1/cmath.hpp>
+#include "boost/tr1/detail/math_overloads.hpp"
+#include "boost/assert.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/config/no_tr1/cmath.hpp"
 
 namespace std{ 
 

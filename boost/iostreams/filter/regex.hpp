@@ -13,10 +13,10 @@
 #endif              
 
 #include <memory>                         // allocator.
-#include <boost/function.hpp>        
-#include <boost/iostreams/filter/aggregate.hpp>              
-#include <boost/iostreams/pipeline.hpp>                
-#include <boost/regex.hpp>
+#include "boost/function.hpp"        
+#include "boost/iostreams/filter/aggregate.hpp"              
+#include "boost/iostreams/pipeline.hpp"                
+#include "boost/regex.hpp"
 
 namespace boost { namespace iostreams {
 

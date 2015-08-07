@@ -7,10 +7,10 @@
 #if !defined(BOOST_TTI_DETAIL_LAMBDA_HPP)
 #define BOOST_TTI_DETAIL_LAMBDA_HPP
 
-#include <boost/mpl/or.hpp>
-#include <boost/tti/detail/dmetafunc.hpp>
-#include <boost/tti/detail/dplaceholder.hpp>
-#include <boost/tti/gen/namespace_gen.hpp>
+#include "boost/mpl/or.hpp"
+#include "boost/tti/detail/dmetafunc.hpp"
+#include "boost/tti/detail/dplaceholder.hpp"
+#include "boost/tti/gen/namespace_gen.hpp"
 
 namespace boost
   {

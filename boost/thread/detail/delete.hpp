@@ -6,7 +6,7 @@
 #ifndef BOOST_THREAD_DETAIL_DELETE_HPP
 #define BOOST_THREAD_DETAIL_DELETE_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 /**
  * BOOST_THREAD_DELETE_COPY_CTOR deletes the copy constructor when the compiler supports it or

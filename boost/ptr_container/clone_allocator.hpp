@@ -12,8 +12,8 @@
 #ifndef BOOST_PTR_CONTAINER_CLONE_ALLOCATOR_HPP
 #define BOOST_PTR_CONTAINER_CLONE_ALLOCATOR_HPP
 
-#include <boost/assert.hpp>
-#include <boost/checked_delete.hpp>
+#include "boost/assert.hpp"
+#include "boost/checked_delete.hpp"
 #include <typeinfo>
 
 namespace boost

@@ -11,9 +11,9 @@
 #ifndef BOOST_MSM_FRONT_EUML_GUARD_GRAMMAR_H
 #define BOOST_MSM_FRONT_EUML_GUARD_GRAMMAR_H
 
-#include <boost/msm/front/euml/common.hpp>
-#include <boost/msm/front/euml/operator.hpp>
-#include <boost/msm/front/euml/state_grammar.hpp>
+#include "boost/msm/front/euml/common.hpp"
+#include "boost/msm/front/euml/operator.hpp"
+#include "boost/msm/front/euml/state_grammar.hpp"
 
 namespace boost { namespace msm { namespace front { namespace euml
 {

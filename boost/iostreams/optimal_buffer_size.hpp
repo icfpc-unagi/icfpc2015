@@ -12,16 +12,16 @@
 # pragma once
 #endif
 
-#include <boost/config.hpp>  // DEDUCED_TYPENAME, MSVC.
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/constants.hpp>  // constants.
-#include <boost/iostreams/detail/dispatch.hpp>
-#include <boost/iostreams/detail/wrap_unwrap.hpp>
-#include <boost/iostreams/operations_fwd.hpp>
-#include <boost/mpl/if.hpp>
+#include "boost/config.hpp"  // DEDUCED_TYPENAME, MSVC.
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/constants.hpp"  // constants.
+#include "boost/iostreams/detail/dispatch.hpp"
+#include "boost/iostreams/detail/wrap_unwrap.hpp"
+#include "boost/iostreams/operations_fwd.hpp"
+#include "boost/mpl/if.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>
+#include "boost/iostreams/detail/config/disable_warnings.hpp"
 
 namespace boost { namespace iostreams {
 
@@ -82,6 +82,6 @@ struct optimal_buffer_size_impl<filter_tag> {
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>
+#include "boost/iostreams/detail/config/enable_warnings.hpp"
 
 #endif // #ifndef BOOST_IOSTREAMS_OPTIMAL_BUFFER_SIZE_HPP_INCLUDED

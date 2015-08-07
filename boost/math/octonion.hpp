@@ -11,7 +11,7 @@
 #ifndef BOOST_OCTONION_HPP
 #define BOOST_OCTONION_HPP
 
-#include <boost/math/quaternion.hpp>
+#include "boost/math/quaternion.hpp"
 
 
 namespace boost

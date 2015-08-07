@@ -17,10 +17,10 @@
 #ifndef BOOST_MOVE_MOVE_UTILITY_CORE_HPP
 #define BOOST_MOVE_MOVE_UTILITY_CORE_HPP
 
-#include <boost/move/detail/config_begin.hpp>
-#include <boost/move/core.hpp>
-#include <boost/move/detail/meta_utils.hpp>
-#include <boost/static_assert.hpp>
+#include "boost/move/detail/config_begin.hpp"
+#include "boost/move/core.hpp"
+#include "boost/move/detail/meta_utils.hpp"
+#include "boost/static_assert.hpp"
 
 #if defined(BOOST_NO_CXX11_RVALUE_REFERENCES) && !defined(BOOST_MOVE_DOXYGEN_INVOKED)
 
@@ -290,6 +290,6 @@ typename boost::move_detail::add_rvalue_reference<T>::type declval();
 #endif   //#if !defined(BOOST_MOVE_DOXYGEN_INVOKED)
 
 
-#include <boost/move/detail/config_end.hpp>
+#include "boost/move/detail/config_end.hpp"
 
 #endif //#ifndef BOOST_MOVE_MOVE_UTILITY_CORE_HPP

@@ -17,18 +17,18 @@
 // http://www.boost.org/LICENSE_1_0.txt)
 //
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if defined(BOOST_SP_USE_STD_ALLOCATOR) && defined(BOOST_SP_USE_QUICK_ALLOCATOR)
 # error BOOST_SP_USE_STD_ALLOCATOR and BOOST_SP_USE_QUICK_ALLOCATOR are incompatible.
 #endif
 
-#include <boost/checked_delete.hpp>
-#include <boost/serialization/throw_exception.hpp>
-#include <boost/detail/lightweight_mutex.hpp>
+#include "boost/checked_delete.hpp"
+#include "boost/serialization/throw_exception.hpp"
+#include "boost/detail/lightweight_mutex.hpp"
 
 #if defined(BOOST_SP_USE_QUICK_ALLOCATOR)
-#include <boost/detail/quick_allocator.hpp>
+#include "boost/detail/quick_allocator.hpp"
 #endif
 
 #include <memory>           // std::auto_ptr, std::allocator
@@ -38,7 +38,7 @@
 #include <typeinfo>         // std::type_info in get_deleter
 #include <cstddef>          // std::size_t
 
-#include <boost/config.hpp> // msvc 6.0 needs this for warning suppression
+#include "boost/config.hpp" // msvc 6.0 needs this for warning suppression
 #if defined(BOOST_NO_STDC_NAMESPACE)
 namespace std{ 
     using ::size_t; 

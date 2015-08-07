@@ -45,7 +45,7 @@
 
 //Std forward declarations
 #ifndef BOOST_CONTAINER_DETAIL_STD_FWD_HPP
-   #include <boost/container/detail/std_fwd.hpp>
+   #include "boost/container/detail/std_fwd.hpp"
 #endif
 
 namespace boost{

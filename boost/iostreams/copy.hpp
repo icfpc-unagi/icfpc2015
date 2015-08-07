@@ -19,26 +19,26 @@
 # pragma once
 #endif              
 
-#include <boost/config.hpp>                 // Make sure ptrdiff_t is in std.
+#include "boost/config.hpp"                 // Make sure ptrdiff_t is in std.
 #include <algorithm>                        // copy, min.
 #include <cstddef>                          // ptrdiff_t.
 #include <utility>                          // pair.
-#include <boost/bind.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/chain.hpp>
-#include <boost/iostreams/constants.hpp>
-#include <boost/iostreams/detail/adapter/non_blocking_adapter.hpp>        
-#include <boost/iostreams/detail/buffer.hpp>
-#include <boost/iostreams/detail/enable_if_stream.hpp>  
-#include <boost/iostreams/detail/execute.hpp>
-#include <boost/iostreams/detail/functional.hpp>
-#include <boost/iostreams/detail/ios.hpp>   // failure, streamsize.                   
-#include <boost/iostreams/detail/resolve.hpp>                   
-#include <boost/iostreams/detail/wrap_unwrap.hpp>
-#include <boost/iostreams/operations.hpp>  // read, write, close.
-#include <boost/iostreams/pipeline.hpp>
-#include <boost/static_assert.hpp>  
-#include <boost/type_traits/is_same.hpp> 
+#include "boost/bind.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/chain.hpp"
+#include "boost/iostreams/constants.hpp"
+#include "boost/iostreams/detail/adapter/non_blocking_adapter.hpp"        
+#include "boost/iostreams/detail/buffer.hpp"
+#include "boost/iostreams/detail/enable_if_stream.hpp"  
+#include "boost/iostreams/detail/execute.hpp"
+#include "boost/iostreams/detail/functional.hpp"
+#include "boost/iostreams/detail/ios.hpp"   // failure, streamsize.                   
+#include "boost/iostreams/detail/resolve.hpp"                   
+#include "boost/iostreams/detail/wrap_unwrap.hpp"
+#include "boost/iostreams/operations.hpp"  // read, write, close.
+#include "boost/iostreams/pipeline.hpp"
+#include "boost/static_assert.hpp"  
+#include "boost/type_traits/is_same.hpp" 
 
 namespace boost { namespace iostreams {
 

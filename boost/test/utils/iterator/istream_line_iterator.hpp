@@ -16,13 +16,13 @@
 #define BOOST_ISTREAM_LINE_ITERATOR_HPP_071894GER
 
 // Boost
-#include <boost/test/utils/basic_cstring/basic_cstring.hpp>
-#include <boost/test/utils/iterator/input_iterator_facade.hpp>
+#include "boost/test/utils/basic_cstring/basic_cstring.hpp"
+#include "boost/test/utils/iterator/input_iterator_facade.hpp"
 
 // STL
 #include <iosfwd>
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -87,7 +87,7 @@ typedef basic_istream_line_iterator<wchar_t>    wistream_line_iterator;
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_ISTREAM_LINE_ITERATOR_HPP_071894GER
 

@@ -14,7 +14,7 @@
 /// By inclusion of this file most optimal type index classes will be included and used 
 /// as a boost::typeindex::type_index and boost::typeindex::type_info.
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 # pragma once
@@ -26,9 +26,9 @@
 #       pragma detect_mismatch( "boost__type_index__abi", "user defined type_index class is used: " BOOST_STRINGIZE(BOOST_TYPE_INDEX_USER_TYPEINDEX))
 #   endif
 #elif (!defined(BOOST_NO_RTTI) && !defined(BOOST_TYPE_INDEX_FORCE_NO_RTTI_COMPATIBILITY)) || defined(BOOST_MSVC)
-#   include <boost/type_index/stl_type_index.hpp>
+#   include "boost/type_index/stl_type_index.hpp"
 #   ifdef BOOST_NO_RTTI
-#       include <boost/type_index/detail/stl_register_class.hpp>
+#       include "boost/type_index/detail/stl_register_class.hpp"
 #       ifdef BOOST_HAS_PRAGMA_DETECT_MISMATCH
 #           pragma detect_mismatch( "boost__type_index__abi", "RTTI is off - typeid() is used only for templates")
 #       endif
@@ -38,8 +38,8 @@
 #       endif
 #   endif
 #else
-#   include <boost/type_index/ctti_type_index.hpp>
-#   include <boost/type_index/detail/ctti_register_class.hpp>
+#   include "boost/type_index/ctti_type_index.hpp"
+#   include "boost/type_index/detail/ctti_register_class.hpp"
 #   ifdef BOOST_HAS_PRAGMA_DETECT_MISMATCH
 #       pragma detect_mismatch( "boost__type_index__abi", "RTTI is off - using CTTI")
 #   endif

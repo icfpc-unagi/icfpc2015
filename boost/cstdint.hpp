@@ -13,7 +13,7 @@
 //   31 Oct 01  use BOOST_HAS_LONG_LONG to check for "long long" (Jens M.)
 //   16 Apr 01  check LONGLONG_MAX when looking for "long long" (Jens Maurer)
 //   23 Jan 01  prefer "long" over "int" for int32_t and intmax_t (Jens Maurer)
-//   12 Nov 00  Merged <boost/stdint.h> (Jens Maurer)
+//   12 Nov 00  Merged "boost/stdint.h" (Jens Maurer)
 //   23 Sep 00  Added INTXX_C macro support (John Maddock).
 //   22 Sep 00  Better 64-bit support (John Maddock)
 //   29 Jun 00  Reimplement to avoid including stdint.h within namespace boost
@@ -33,7 +33,7 @@
 #  define __STDC_CONSTANT_MACROS
 #endif
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 //
 // Note that GLIBC is a bit inconsistent about whether int64_t is defined or not
@@ -190,7 +190,7 @@ namespace boost {
 
 #else  // BOOST_HAS_STDINT_H
 
-# include <boost/limits.hpp> // implementation artifact; not part of interface
+# include "boost/limits.hpp" // implementation artifact; not part of interface
 # include <limits.h>         // needed for limits macros
 
 

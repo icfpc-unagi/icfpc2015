@@ -10,14 +10,14 @@
 //  accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/thread/win32/thread_primitives.hpp>
-#include <boost/thread/win32/basic_timed_mutex.hpp>
+#include "boost/thread/win32/thread_primitives.hpp"
+#include "boost/thread/win32/basic_timed_mutex.hpp"
 #ifdef BOOST_THREAD_USES_CHRONO
-#include <boost/chrono/system_clocks.hpp>
-#include <boost/chrono/ceil.hpp>
+#include "boost/chrono/system_clocks.hpp"
+#include "boost/chrono/ceil.hpp"
 #endif
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -159,6 +159,6 @@ namespace boost
 
 #define BOOST_BASIC_RECURSIVE_MUTEX_INITIALIZER {0}
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

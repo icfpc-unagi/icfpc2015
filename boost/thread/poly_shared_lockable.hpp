@@ -11,8 +11,8 @@
 #ifndef BOOST_THREAD_POLY_SHARED_LOCKABLE_HPP
 #define BOOST_THREAD_POLY_SHARED_LOCKABLE_HPP
 
-#include <boost/thread/poly_lockable.hpp>
-#include <boost/chrono/chrono.hpp>
+#include "boost/thread/poly_lockable.hpp"
+#include "boost/chrono/chrono.hpp"
 
 namespace boost
 {

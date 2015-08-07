@@ -13,11 +13,11 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
-#include <boost/detail/no_exceptions_support.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/flyweight/detail/perfect_fwd.hpp>
-#include <boost/mpl/apply.hpp>
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
+#include "boost/detail/no_exceptions_support.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/flyweight/detail/perfect_fwd.hpp"
+#include "boost/mpl/apply.hpp"
 
 #if BOOST_WORKAROUND(BOOST_MSVC,BOOST_TESTED_AT(1400))
 #pragma warning(push)

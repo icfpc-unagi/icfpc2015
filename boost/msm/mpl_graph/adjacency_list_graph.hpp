@@ -13,10 +13,10 @@
 // to produce the metadata structures needed by mpl_graph.hpp 
 
 // the public interface
-#include <boost/msm/mpl_graph/mpl_graph.hpp>
+#include "boost/msm/mpl_graph/mpl_graph.hpp"
 
 // the implementation
-#include <boost/msm/mpl_graph/detail/adjacency_list_graph.ipp>
+#include "boost/msm/mpl_graph/detail/adjacency_list_graph.ipp"
 
 namespace boost {
 namespace msm {

@@ -13,19 +13,19 @@
 #endif
 
 #include <algorithm>                               // min.
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 #include <memory>                                  // allocator.
 #include <string>
-#include <boost/config.hpp>                        // BOOST_STATIC_CONSTANT.
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/checked_operations.hpp>
-#include <boost/iostreams/detail/ios.hpp>          // openmode, streamsize.
-#include <boost/iostreams/read.hpp>                // check_eof 
-#include <boost/iostreams/pipeline.hpp>
-#include <boost/iostreams/write.hpp>
+#include "boost/config.hpp"                        // BOOST_STATIC_CONSTANT.
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/checked_operations.hpp"
+#include "boost/iostreams/detail/ios.hpp"          // openmode, streamsize.
+#include "boost/iostreams/read.hpp"                // check_eof 
+#include "boost/iostreams/pipeline.hpp"
+#include "boost/iostreams/write.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp> // VC7.1 C4244.
+#include "boost/iostreams/detail/config/disable_warnings.hpp" // VC7.1 C4244.
 
 namespace boost { namespace iostreams {
 
@@ -222,6 +222,6 @@ typedef basic_line_filter<wchar_t>  wline_filter;
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>
+#include "boost/iostreams/detail/config/enable_warnings.hpp"
 
 #endif // #ifndef BOOST_IOSTREAMS_LINE_FILTER_HPP_INCLUDED

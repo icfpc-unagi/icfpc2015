@@ -12,19 +12,19 @@
 # pragma once
 #endif
 
-#include <boost/iostreams/detail/config/wide_streams.hpp>
+#include "boost/iostreams/detail/config/wide_streams.hpp"
 #ifndef BOOST_IOSTREAMS_NO_LOCALE
 # include <locale>
 #endif
 #include <string>                               // pathnames, char_traits.
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/detail/ios.hpp>       // openmode, seekdir, int types.
-#include <boost/iostreams/detail/fstream.hpp>
-#include <boost/iostreams/operations.hpp>       // seek.
-#include <boost/shared_ptr.hpp>      
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/detail/ios.hpp"       // openmode, seekdir, int types.
+#include "boost/iostreams/detail/fstream.hpp"
+#include "boost/iostreams/operations.hpp"       // seek.
+#include "boost/shared_ptr.hpp"      
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/disable_warnings.hpp"  // MSVC.
 
 namespace boost { namespace iostreams {
 
@@ -186,6 +186,6 @@ bool basic_file<Ch>::flush()
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp> // MSVC
+#include "boost/iostreams/detail/config/enable_warnings.hpp" // MSVC
 
 #endif // #ifndef BOOST_IOSTREAMS_FILE_HPP_INCLUDED

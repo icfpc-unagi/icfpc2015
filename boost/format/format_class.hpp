@@ -17,12 +17,12 @@
 #include <vector>
 #include <string>
 
-#include <boost/optional.hpp> // to store locale when needed
+#include "boost/optional.hpp" // to store locale when needed
 
-#include <boost/format/format_fwd.hpp>
-#include <boost/format/internals_fwd.hpp>
-#include <boost/format/internals.hpp>
-#include <boost/format/alt_sstream.hpp>
+#include "boost/format/format_fwd.hpp"
+#include "boost/format/internals_fwd.hpp"
+#include "boost/format/internals.hpp"
+#include "boost/format/alt_sstream.hpp"
 
 namespace boost {
 

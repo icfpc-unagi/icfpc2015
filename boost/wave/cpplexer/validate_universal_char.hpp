@@ -12,11 +12,11 @@
 #if !defined(VALIDATE_UNIVERSAL_CHAR_HPP_55F1B811_CD76_4C72_8344_CBC69CF3B339_INCLUDED)
 #define VALIDATE_UNIVERSAL_CHAR_HPP_55F1B811_CD76_4C72_8344_CBC69CF3B339_INCLUDED
 
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/util/file_position.hpp>
-#include <boost/wave/cpplexer/cpplexer_exceptions.hpp>
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/util/file_position.hpp"
+#include "boost/wave/cpplexer/cpplexer_exceptions.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

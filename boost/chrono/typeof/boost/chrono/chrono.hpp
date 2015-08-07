@@ -14,8 +14,8 @@
 #ifndef BOOST_CHRONO_TYPEOF_CHRONO_HPP
 #define BOOST_CHRONO_TYPEOF_CHRONO_HPP
 
-#include <boost/chrono/chrono.hpp>
-#include <boost/typeof/typeof.hpp>
+#include "boost/chrono/chrono.hpp"
+#include "boost/typeof/typeof.hpp"
 
 #include BOOST_TYPEOF_INCREMENT_REGISTRATION_GROUP()
 

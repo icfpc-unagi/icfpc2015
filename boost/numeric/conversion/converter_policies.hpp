@@ -12,8 +12,8 @@
 
 #include <typeinfo> // for std::bad_cast
 
-#include <boost/config/no_tr1/cmath.hpp> // for std::floor and std::ceil
-#include <boost/throw_exception.hpp>
+#include "boost/config/no_tr1/cmath.hpp" // for std::floor and std::ceil
+#include "boost/throw_exception.hpp"
 
 #include <functional>
 

@@ -5,19 +5,19 @@
 
 #ifndef BOOST_TR1_MATH_OVERLOADS_HPP_INCLUDED
 #  define BOOST_TR1_MATH_OVERLOADS_HPP_INCLUDED
-#  include <boost/config.hpp>
+#  include "boost/config.hpp"
 
 #  ifndef BOOST_NO_SFINAE
-#     include <boost/utility/enable_if.hpp>
-#     include <boost/type_traits/is_convertible.hpp>
+#     include "boost/utility/enable_if.hpp"
+#     include "boost/type_traits/is_convertible.hpp"
 #     define BOOST_TR1_MATH_RETURN(RET) typename ::boost::enable_if< ::boost::is_convertible<T,double>, RET >::type
 #  else
 #     define BOOST_TR1_MATH_RETURN(RET) RET
 #  endif
 
-#  include <boost/type_traits/is_floating_point.hpp>
-#  include <boost/type_traits/is_same.hpp>
-#  include <boost/mpl/if.hpp>
+#  include "boost/type_traits/is_floating_point.hpp"
+#  include "boost/type_traits/is_same.hpp"
+#  include "boost/mpl/if.hpp"
 
 namespace boost{ namespace tr1_detail{
 

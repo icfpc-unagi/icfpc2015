@@ -16,12 +16,12 @@
 #ifndef BOOST_ATOMIC_DETAIL_OPS_GCC_SYNC_HPP_INCLUDED_
 #define BOOST_ATOMIC_DETAIL_OPS_GCC_SYNC_HPP_INCLUDED_
 
-#include <boost/memory_order.hpp>
-#include <boost/atomic/detail/config.hpp>
-#include <boost/atomic/detail/storage_type.hpp>
-#include <boost/atomic/detail/operations_fwd.hpp>
-#include <boost/atomic/detail/ops_extending_cas_based.hpp>
-#include <boost/atomic/capabilities.hpp>
+#include "boost/memory_order.hpp"
+#include "boost/atomic/detail/config.hpp"
+#include "boost/atomic/detail/storage_type.hpp"
+#include "boost/atomic/detail/operations_fwd.hpp"
+#include "boost/atomic/detail/ops_extending_cas_based.hpp"
+#include "boost/atomic/capabilities.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

@@ -8,9 +8,9 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_SYMBOL_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_SYMBOL_HPP_
 
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/seq/cat.hpp>
-#include <boost/preprocessor/seq/transform.hpp>
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/seq/cat.hpp"
+#include "boost/preprocessor/seq/transform.hpp"
 
 // PRIVATE //
 

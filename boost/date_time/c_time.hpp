@@ -17,8 +17,8 @@
 #include <ctime>
 #include <string> // to be able to convert from string literals to exceptions
 #include <stdexcept>
-#include <boost/throw_exception.hpp>
-#include <boost/date_time/compiler_config.hpp>
+#include "boost/throw_exception.hpp"
+#include "boost/date_time/compiler_config.hpp"
 
 //Work around libraries that don't put time_t and time in namespace std
 #ifdef BOOST_NO_STDC_NAMESPACE

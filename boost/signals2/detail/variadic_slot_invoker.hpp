@@ -15,13 +15,13 @@
 #ifndef BOOST_SIGNALS2_DETAIL_VARIADIC_SLOT_INVOKER_HPP
 #define BOOST_SIGNALS2_DETAIL_VARIADIC_SLOT_INVOKER_HPP
 
-#include <boost/mpl/size_t.hpp>
-#include <boost/signals2/detail/variadic_arg_type.hpp>
+#include "boost/mpl/size_t.hpp"
+#include "boost/signals2/detail/variadic_arg_type.hpp"
 
 // if compiler has std::tuple use it instead of boost::tuple
 // because boost::tuple does not have variadic template support at present.
 #ifdef BOOST_NO_CXX11_HDR_TUPLE
-#include <boost/tuple/tuple.hpp>
+#include "boost/tuple/tuple.hpp"
 #define BOOST_SIGNALS2_TUPLE boost::tuple
 #define BOOST_SIGNALS2_GET boost::get
 #else

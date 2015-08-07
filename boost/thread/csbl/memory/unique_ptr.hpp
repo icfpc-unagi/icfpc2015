@@ -11,10 +11,10 @@
 #ifndef BOOST_CSBL_MEMORY_UNIQUE_PTR_HPP
 #define BOOST_CSBL_MEMORY_UNIQUE_PTR_HPP
 
-#include <boost/thread/csbl/memory/config.hpp>
+#include "boost/thread/csbl/memory/config.hpp"
 
-#include <boost/move/unique_ptr.hpp>
-#include <boost/move/make_unique.hpp>
+#include "boost/move/unique_ptr.hpp"
+#include "boost/move/make_unique.hpp"
 
 namespace boost
 {

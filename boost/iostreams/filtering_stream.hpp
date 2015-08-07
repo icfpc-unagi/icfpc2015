@@ -13,20 +13,20 @@
 #endif              
 
 #include <memory>                                     // allocator.
-#include <boost/iostreams/detail/access_control.hpp>
-#include <boost/iostreams/detail/char_traits.hpp>
-#include <boost/iostreams/detail/iostream.hpp>        // standard streams.
-#include <boost/iostreams/detail/push.hpp>
-#include <boost/iostreams/detail/select.hpp>
-#include <boost/iostreams/detail/streambuf.hpp>       // pubsync.
-#include <boost/iostreams/filtering_streambuf.hpp>
-#include <boost/mpl/and.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/type_traits/is_convertible.hpp>
+#include "boost/iostreams/detail/access_control.hpp"
+#include "boost/iostreams/detail/char_traits.hpp"
+#include "boost/iostreams/detail/iostream.hpp"        // standard streams.
+#include "boost/iostreams/detail/push.hpp"
+#include "boost/iostreams/detail/select.hpp"
+#include "boost/iostreams/detail/streambuf.hpp"       // pubsync.
+#include "boost/iostreams/filtering_streambuf.hpp"
+#include "boost/mpl/and.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/type_traits/is_convertible.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/disable_warnings.hpp"  // MSVC.
 
 namespace boost { namespace iostreams {
 
@@ -161,6 +161,6 @@ typedef wfiltering_stream<output>  filtering_wostream;
 
 } } // End namespace iostreams, boost
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp> // MSVC
+#include "boost/iostreams/detail/config/enable_warnings.hpp" // MSVC
 
 #endif // #ifndef BOOST_IOSTREAMS_FILTER_STREAM_HPP_INCLUDED

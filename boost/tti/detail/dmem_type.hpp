@@ -7,12 +7,12 @@
 #if !defined(BOOST_TTI_DETAIL_MEM_TYPE_HPP)
 #define BOOST_TTI_DETAIL_MEM_TYPE_HPP
 
-#include <boost/config.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/has_xxx.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/type_traits/is_class.hpp>
+#include "boost/config.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/has_xxx.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/type_traits/is_class.hpp"
 
 #define BOOST_TTI_DETAIL_TRAIT_HAS_TYPE_MEMBER_TYPE_OP(trait,name) \
   BOOST_MPL_HAS_XXX_TRAIT_NAMED_DEF(BOOST_PP_CAT(trait,_detail_mpl), name, false) \

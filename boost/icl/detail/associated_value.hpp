@@ -8,10 +8,10 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_DETAIL_ASSOCIATED_VALUE_HPP_JOFA_100829
 #define BOOST_ICL_DETAIL_ASSOCIATED_VALUE_HPP_JOFA_100829
 
-#include <boost/icl/detail/design_config.hpp>
-#include <boost/icl/type_traits/is_combinable.hpp>
-#include <boost/mpl/not.hpp>
-#include <boost/mpl/and.hpp>
+#include "boost/icl/detail/design_config.hpp"
+#include "boost/icl/type_traits/is_combinable.hpp"
+#include "boost/mpl/not.hpp"
+#include "boost/mpl/and.hpp"
 
 namespace boost{namespace icl
 {

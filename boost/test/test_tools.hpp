@@ -16,33 +16,33 @@
 #define BOOST_TEST_TEST_TOOLS_HPP_012705GER
 
 // Boost.Test
-#include <boost/test/predicate_result.hpp>
-#include <boost/test/unit_test_log.hpp>
-#include <boost/test/floating_point_comparison.hpp>
+#include "boost/test/predicate_result.hpp"
+#include "boost/test/unit_test_log.hpp"
+#include "boost/test/floating_point_comparison.hpp"
 
-#include <boost/test/detail/config.hpp>
-#include <boost/test/detail/global_typedef.hpp>
-#include <boost/test/detail/workaround.hpp>
+#include "boost/test/detail/config.hpp"
+#include "boost/test/detail/global_typedef.hpp"
+#include "boost/test/detail/workaround.hpp"
 
-#include <boost/test/utils/wrap_stringstream.hpp>
-#include <boost/test/utils/basic_cstring/io.hpp>
-#include <boost/test/utils/lazy_ostream.hpp>
+#include "boost/test/utils/wrap_stringstream.hpp"
+#include "boost/test/utils/basic_cstring/io.hpp"
+#include "boost/test/utils/lazy_ostream.hpp"
 
 // Boost
-#include <boost/preprocessor/seq/for_each.hpp>
-#include <boost/preprocessor/seq/size.hpp>
-#include <boost/preprocessor/seq/enum.hpp> 
-#include <boost/preprocessor/repetition/repeat.hpp>
-#include <boost/preprocessor/punctuation/comma_if.hpp>
-#include <boost/preprocessor/arithmetic/add.hpp>
+#include "boost/preprocessor/seq/for_each.hpp"
+#include "boost/preprocessor/seq/size.hpp"
+#include "boost/preprocessor/seq/enum.hpp" 
+#include "boost/preprocessor/repetition/repeat.hpp"
+#include "boost/preprocessor/punctuation/comma_if.hpp"
+#include "boost/preprocessor/arithmetic/add.hpp"
 
-#include <boost/limits.hpp>
+#include "boost/limits.hpp"
 
-#include <boost/type_traits/is_array.hpp>
-#include <boost/type_traits/is_function.hpp>
-#include <boost/type_traits/is_abstract.hpp>
+#include "boost/type_traits/is_array.hpp"
+#include "boost/type_traits/is_function.hpp"
+#include "boost/type_traits/is_abstract.hpp"
 
-#include <boost/mpl/or.hpp>
+#include "boost/mpl/or.hpp"
 
 // STL
 #include <cstddef>          // for std::size_t
@@ -54,7 +54,7 @@
 # pragma warning(disable: 4127) // conditional expression is constant
 #endif
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -714,6 +714,6 @@ namespace test_toolbox = test_tools;
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_TEST_TOOLS_HPP_012705GER

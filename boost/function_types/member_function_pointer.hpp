@@ -9,11 +9,11 @@
 #ifndef BOOST_FT_MEMBER_FUNCTION_POINTER_HPP_INCLUDED
 #define BOOST_FT_MEMBER_FUNCTION_POINTER_HPP_INCLUDED
 
-#include <boost/mpl/aux_/lambda_support.hpp>
-#include <boost/type_traits/detail/template_arity_spec.hpp>
+#include "boost/mpl/aux_/lambda_support.hpp"
+#include "boost/type_traits/detail/template_arity_spec.hpp"
 
-#include <boost/function_types/detail/synthesize.hpp>
-#include <boost/function_types/detail/to_sequence.hpp>
+#include "boost/function_types/detail/synthesize.hpp"
+#include "boost/function_types/detail/to_sequence.hpp"
 
 namespace boost 
 { 

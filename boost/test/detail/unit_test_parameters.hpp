@@ -15,10 +15,10 @@
 #ifndef BOOST_TEST_UNIT_TEST_PARAMETERS_HPP_071894GER
 #define BOOST_TEST_UNIT_TEST_PARAMETERS_HPP_071894GER
 
-#include <boost/test/detail/global_typedef.hpp>
-#include <boost/test/detail/log_level.hpp>
+#include "boost/test/detail/global_typedef.hpp"
+#include "boost/test/detail/log_level.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 // STL
 #include <iosfwd>
@@ -64,6 +64,6 @@ BOOST_TEST_DECL int                      random_seed();
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_UNIT_TEST_PARAMETERS_HPP_071894GER

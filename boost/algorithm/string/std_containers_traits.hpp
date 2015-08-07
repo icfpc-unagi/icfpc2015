@@ -15,12 +15,12 @@
     This file includes sequence traits for stl containers.
 */
 
-#include <boost/config.hpp>
-#include <boost/algorithm/string/std/string_traits.hpp>
-#include <boost/algorithm/string/std/list_traits.hpp>
+#include "boost/config.hpp"
+#include "boost/algorithm/string/std/string_traits.hpp"
+#include "boost/algorithm/string/std/list_traits.hpp"
 
 #ifdef BOOST_HAS_SLIST
-#   include <boost/algorithm/string/std/slist_traits.hpp>
+#   include "boost/algorithm/string/std/slist_traits.hpp"
 #endif
 
 #endif  // BOOST_STRING_STD_CONTAINERS_TRAITS_HPP

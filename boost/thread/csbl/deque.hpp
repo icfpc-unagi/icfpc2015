@@ -9,7 +9,7 @@
 #ifndef BOOST_CSBL_DEQUE_HPP
 #define BOOST_CSBL_DEQUE_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 // MSVC has some trouble instantiating a non_copyable type
 //C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\INCLUDE\xmemory0(606) : error C2248: 'non_copyable::non_copyable' : cannot access private member declared in class 'non_copyable'
 //        ..\libs\thread\test\sync\mutual_exclusion\queue_views\single_thread_pass.cpp(24) : see declaration of 'non_copyable::non_copyable'
@@ -23,7 +23,7 @@
 #ifndef BOOST_THREAD_USES_BOOST_DEQUE
 #define BOOST_THREAD_USES_BOOST_DEQUE
 #endif
-#include <boost/container/deque.hpp>
+#include "boost/container/deque.hpp"
 #else
 #include <deque>
 #endif

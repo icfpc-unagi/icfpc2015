@@ -9,12 +9,12 @@
 //  See http://www.boost.org/libs/conversion for Documentation.
 
 // This is a DEPRECATED header file!
-// Use <boost/polymorphic_cast.hpp> or <boost/numeric/conversion/cast.hpp> instead
+// Use "boost/polymorphic_cast.hpp" or "boost/numeric/conversion/cast.hpp" instead
 
 #ifndef BOOST_CAST_HPP
 #define BOOST_CAST_HPP
 
-# include <boost/polymorphic_cast.hpp>
-# include <boost/numeric/conversion/cast.hpp>
+# include "boost/polymorphic_cast.hpp"
+# include "boost/numeric/conversion/cast.hpp"
 
 #endif  // BOOST_CAST_HPP

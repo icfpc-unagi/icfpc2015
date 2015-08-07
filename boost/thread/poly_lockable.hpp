@@ -11,8 +11,8 @@
 #ifndef BOOST_THREAD_POLY_LOCKABLE_HPP
 #define BOOST_THREAD_POLY_LOCKABLE_HPP
 
-#include <boost/thread/detail/delete.hpp>
-#include <boost/chrono/chrono.hpp>
+#include "boost/thread/detail/delete.hpp"
+#include "boost/chrono/chrono.hpp"
 
 namespace boost
 {

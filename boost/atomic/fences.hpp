@@ -16,9 +16,9 @@
 #ifndef BOOST_ATOMIC_FENCES_HPP_INCLUDED_
 #define BOOST_ATOMIC_FENCES_HPP_INCLUDED_
 
-#include <boost/memory_order.hpp>
-#include <boost/atomic/capabilities.hpp>
-#include <boost/atomic/detail/operations.hpp>
+#include "boost/memory_order.hpp"
+#include "boost/atomic/capabilities.hpp"
+#include "boost/atomic/detail/operations.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

@@ -15,8 +15,8 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
 namespace boost {
 namespace container {
@@ -49,6 +49,6 @@ static const allocation_type zero_memory        = (allocation_type)zero_memory_v
 }  //namespace container {
 }  //namespace boost {
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif   //BOOST_CONTAINER_ALLOCATION_TYPE_HPP

@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         u32regex_token_iterator.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Provides u32regex_token_iterator implementation.
   */
 
@@ -27,8 +27,8 @@
 // so we have a template member that will accept any type as 
 // argument, and then assert that is really is an array:
 //
-#include <boost/static_assert.hpp>
-#include <boost/type_traits/is_array.hpp>
+#include "boost/static_assert.hpp"
+#include "boost/type_traits/is_array.hpp"
 #endif
 
 namespace boost{

@@ -15,11 +15,11 @@
 #ifndef BOOST_INCLUDED_PRG_EXEC_MONITOR_HPP_071894GER
 #define BOOST_INCLUDED_PRG_EXEC_MONITOR_HPP_071894GER
 
-#include <boost/test/impl/execution_monitor.ipp>
-#include <boost/test/impl/debug.ipp>
-#include <boost/test/impl/cpp_main.ipp>
+#include "boost/test/impl/execution_monitor.ipp"
+#include "boost/test/impl/debug.ipp"
+#include "boost/test/impl/cpp_main.ipp"
 
 #define BOOST_TEST_INCLUDED
-#include <boost/test/prg_exec_monitor.hpp>
+#include "boost/test/prg_exec_monitor.hpp"
 
 #endif // BOOST_INCLUDED_PRG_EXEC_MONITOR_HPP_071894GER

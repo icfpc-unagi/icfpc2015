@@ -15,20 +15,20 @@
 
 #include "gil_config.hpp"
 #include <functional>
-#include <boost/config/no_tr1/cmath.hpp>
+#include "boost/config/no_tr1/cmath.hpp"
 #include <cstddef>
 #include <algorithm>
 #include <utility>
 #include <iterator>
-#include <boost/static_assert.hpp>
-#include <boost/type_traits.hpp>
-#include <boost/mpl/size.hpp>
-#include <boost/mpl/distance.hpp>
-#include <boost/mpl/begin.hpp>
-#include <boost/mpl/find.hpp>
-#include <boost/mpl/range_c.hpp>
-#include <boost/iterator/iterator_adaptor.hpp>
-#include <boost/iterator/iterator_facade.hpp>
+#include "boost/static_assert.hpp"
+#include "boost/type_traits.hpp"
+#include "boost/mpl/size.hpp"
+#include "boost/mpl/distance.hpp"
+#include "boost/mpl/begin.hpp"
+#include "boost/mpl/find.hpp"
+#include "boost/mpl/range_c.hpp"
+#include "boost/iterator/iterator_adaptor.hpp"
+#include "boost/iterator/iterator_facade.hpp"
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /// \file               

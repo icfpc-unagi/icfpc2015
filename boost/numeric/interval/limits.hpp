@@ -13,9 +13,9 @@
 
 #ifndef BOOST_NO_TEMPLATE_PARTIAL_SPECIALIZATION
 
-#include <boost/config.hpp>
-#include <boost/limits.hpp>
-#include <boost/numeric/interval/detail/interval_prototype.hpp>
+#include "boost/config.hpp"
+#include "boost/limits.hpp"
+#include "boost/numeric/interval/detail/interval_prototype.hpp"
 
 namespace std {
 

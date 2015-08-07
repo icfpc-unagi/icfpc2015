@@ -13,15 +13,15 @@
 #ifndef BOOST_TYPE_ERASURE_CONSTRUCTIBLE_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_CONSTRUCTIBLE_HPP_INCLUDED
 
-#include <boost/preprocessor/iteration/iterate.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/enum_binary_params.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_params.hpp>
-#include <boost/type_erasure/detail/storage.hpp>
-#include <boost/type_erasure/call.hpp>
-#include <boost/type_erasure/concept_interface.hpp>
-#include <boost/type_erasure/config.hpp>
-#include <boost/type_erasure/param.hpp>
+#include "boost/preprocessor/iteration/iterate.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/enum_binary_params.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_params.hpp"
+#include "boost/type_erasure/detail/storage.hpp"
+#include "boost/type_erasure/call.hpp"
+#include "boost/type_erasure/concept_interface.hpp"
+#include "boost/type_erasure/config.hpp"
+#include "boost/type_erasure/param.hpp"
 
 namespace boost {
 namespace type_erasure {
@@ -115,7 +115,7 @@ struct get_null_vtable_entry<vtable_adapter<constructible<T(const T&)>, R(U...)>
 
 #else
 
-#define BOOST_PP_FILENAME_1 <boost/type_erasure/constructible.hpp>
+#define BOOST_PP_FILENAME_1 "boost/type_erasure/constructible.hpp"
 #define BOOST_PP_ITERATION_LIMITS (0, BOOST_TYPE_ERASURE_MAX_ARITY)
 #include BOOST_PP_ITERATE()
 

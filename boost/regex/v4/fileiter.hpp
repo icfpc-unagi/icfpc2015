@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         fileiter.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares various platform independent file and
   *                directory iterators, plus binary file input in
   *                the form of class map_file.
@@ -22,9 +22,9 @@
 #define BOOST_RE_FILEITER_HPP_INCLUDED
 
 #ifndef BOOST_REGEX_CONFIG_HPP
-#include <boost/regex/config.hpp>
+#include "boost/regex/config.hpp"
 #endif
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 
 #ifndef BOOST_REGEX_NO_FILEITER
 

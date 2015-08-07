@@ -20,17 +20,17 @@
 #include <ostream>
 #include <cstddef>
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #if defined(BOOST_NO_STDC_NAMESPACE)
 namespace std{
     using ::size_t;
 } // namespace std
 #endif
 
-#include <boost/cstdint.hpp>
-#include <boost/integer_traits.hpp>
-#include <boost/archive/polymorphic_iarchive.hpp>
-#include <boost/archive/detail/abi_prefix.hpp> // must be the last header
+#include "boost/cstdint.hpp"
+#include "boost/integer_traits.hpp"
+#include "boost/archive/polymorphic_iarchive.hpp"
+#include "boost/archive/detail/abi_prefix.hpp" // must be the last header
 
 namespace boost {
 namespace serialization {
@@ -210,6 +210,6 @@ public:
 #pragma warning(pop)
 #endif
 
-#include <boost/archive/detail/abi_suffix.hpp> // pops abi_suffix.hpp pragmas
+#include "boost/archive/detail/abi_suffix.hpp" // pops abi_suffix.hpp pragmas
 
 #endif // BOOST_ARCHIVE_DETAIL_POLYMORPHIC_IARCHIVE_DISPATCH_HPP

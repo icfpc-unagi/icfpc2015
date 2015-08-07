@@ -13,7 +13,7 @@
 //             wich can't compile the new version in /boost/numeric/conversion/cast.hpp
 //             (Fernando Cacciola)
 //  02 Apr 01  Removed BOOST_NO_LIMITS workarounds and included
-//             <boost/limits.hpp> instead (the workaround did not
+//             "boost/limits.hpp" instead (the workaround did not
 //             actually compile when BOOST_NO_LIMITS was defined in
 //             any case, so we loose nothing). (John Maddock)
 //  21 Jan 01  Undid a bug I introduced yesterday. numeric_cast<> never
@@ -46,12 +46,12 @@
 #ifndef BOOST_OLD_NUMERIC_CAST_HPP
 #define BOOST_OLD_NUMERIC_CAST_HPP
 
-# include <boost/config.hpp>
+# include "boost/config.hpp"
 # include <cassert>
 # include <typeinfo>
-# include <boost/type.hpp>
-# include <boost/limits.hpp>
-# include <boost/numeric/conversion/converter_policies.hpp>
+# include "boost/type.hpp"
+# include "boost/limits.hpp"
+# include "boost/numeric/conversion/converter_policies.hpp"
 
 //  It has been demonstrated numerous times that MSVC 6.0 fails silently at link
 //  time if you use a template function which has template parameters that don't

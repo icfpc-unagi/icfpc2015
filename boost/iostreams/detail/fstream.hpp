@@ -12,7 +12,7 @@
 # pragma once
 #endif              
                  
-#include <boost/iostreams/detail/config/wide_streams.hpp>
+#include "boost/iostreams/detail/config/wide_streams.hpp"
 #ifndef BOOST_IOSTREAMS_NO_STREAM_TEMPLATES
 # include <fstream>
 #else

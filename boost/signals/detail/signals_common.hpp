@@ -14,9 +14,9 @@
 #  define BOOST_SIGNALS_NAMESPACE signals
 #endif
 
-#include <boost/type_traits/conversion_traits.hpp>
-#include <boost/ref.hpp>
-#include <boost/signals/detail/config.hpp>
+#include "boost/type_traits/conversion_traits.hpp"
+#include "boost/ref.hpp"
+#include "boost/signals/detail/config.hpp"
 
 #ifdef BOOST_HAS_ABI_HEADERS
 #  include BOOST_ABI_PREFIX

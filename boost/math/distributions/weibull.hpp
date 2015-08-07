@@ -9,12 +9,12 @@
 // http://www.itl.nist.gov/div898/handbook/eda/section3/eda3668.htm
 // http://mathworld.wolfram.com/WeibullDistribution.html
 
-#include <boost/math/distributions/fwd.hpp>
-#include <boost/math/special_functions/gamma.hpp>
-#include <boost/math/special_functions/log1p.hpp>
-#include <boost/math/special_functions/expm1.hpp>
-#include <boost/math/distributions/detail/common_error_handling.hpp>
-#include <boost/math/distributions/complement.hpp>
+#include "boost/math/distributions/fwd.hpp"
+#include "boost/math/special_functions/gamma.hpp"
+#include "boost/math/special_functions/log1p.hpp"
+#include "boost/math/special_functions/expm1.hpp"
+#include "boost/math/distributions/detail/common_error_handling.hpp"
+#include "boost/math/distributions/complement.hpp"
 
 #include <utility>
 
@@ -388,7 +388,7 @@ inline RealType kurtosis(const weibull_distribution<RealType, Policy>& dist)
 // This include must be at the end, *after* the accessors
 // for this distribution have been defined, in order to
 // keep compilers that support two-phase lookup happy.
-#include <boost/math/distributions/detail/derived_accessors.hpp>
+#include "boost/math/distributions/detail/derived_accessors.hpp"
 
 #endif // BOOST_STATS_WEIBULL_HPP
 

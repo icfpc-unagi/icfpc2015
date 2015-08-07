@@ -23,8 +23,8 @@
 #include <cstdio>
 #include <algorithm>
 #include <string>
-#include <boost/static_assert.hpp>
-#include <boost/shared_ptr.hpp>
+#include "boost/static_assert.hpp"
+#include "boost/shared_ptr.hpp"
 extern "C" {
 #include <jpeglib.h>
 }

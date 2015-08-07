@@ -9,10 +9,10 @@
 #ifndef BOOST_FT_FUNCTION_POINTER_HPP_INCLUDED
 #define BOOST_FT_FUNCTION_POINTER_HPP_INCLUDED
 
-#include <boost/mpl/aux_/lambda_support.hpp>
-#include <boost/type_traits/detail/template_arity_spec.hpp>
+#include "boost/mpl/aux_/lambda_support.hpp"
+#include "boost/type_traits/detail/template_arity_spec.hpp"
 
-#include <boost/function_types/function_type.hpp>
+#include "boost/function_types/function_type.hpp"
 
 namespace boost 
 { 

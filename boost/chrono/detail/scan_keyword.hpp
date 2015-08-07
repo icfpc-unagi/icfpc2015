@@ -17,13 +17,13 @@
 #ifndef BOOST_CHRONO_DETAIL_SCAN_KEYWORD_HPP
 #define BOOST_CHRONO_DETAIL_SCAN_KEYWORD_HPP
 
-#include <boost/chrono/config.hpp>
+#include "boost/chrono/config.hpp"
 
-#include <boost/move/unique_ptr.hpp>
+#include "boost/move/unique_ptr.hpp"
 #include <ios>
 #include <exception>
 #include <stdlib.h>
-#include <boost/throw_exception.hpp>
+#include "boost/throw_exception.hpp"
 
 namespace boost {
     using movelib::unique_ptr;

@@ -20,11 +20,11 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
-#include <boost/container/detail/mpl.hpp>
-#include <boost/container/detail/type_traits.hpp>
+#include "boost/container/detail/mpl.hpp"
+#include "boost/container/detail/type_traits.hpp"
 
 namespace boost{
 namespace container {
@@ -98,6 +98,6 @@ struct is_version
 }  //namespace container {
 }  //namespace boost{
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif   //#define BOOST_CONTAINER_DETAIL_VERSION_TYPE_HPP

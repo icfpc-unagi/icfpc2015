@@ -12,6 +12,6 @@
 // The header file at this path is deprecated;
 // use boost/core/explicit_operator_bool.hpp instead.
 
-#include <boost/core/explicit_operator_bool.hpp>
+#include "boost/core/explicit_operator_bool.hpp"
 
 #endif

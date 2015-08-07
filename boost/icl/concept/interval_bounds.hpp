@@ -8,9 +8,9 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_CONCEPT_INTERVAL_BOUNDS_HPP_JOFA_100927
 #define BOOST_ICL_CONCEPT_INTERVAL_BOUNDS_HPP_JOFA_100927
 
-#include <boost/icl/interval_bounds.hpp>
-#include <boost/icl/type_traits/is_discrete.hpp>
-#include <boost/icl/type_traits/is_numeric.hpp>
+#include "boost/icl/interval_bounds.hpp"
+#include "boost/icl/type_traits/is_discrete.hpp"
+#include "boost/icl/type_traits/is_numeric.hpp"
 
 namespace boost{namespace icl
 {

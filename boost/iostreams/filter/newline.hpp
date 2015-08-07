@@ -15,23 +15,23 @@
 # pragma once
 #endif
 
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 #include <cstdio>
 #include <stdexcept>                       // logic_error.
-#include <boost/config.hpp>                // BOOST_STATIC_CONSTANT.
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/detail/char_traits.hpp>
-#include <boost/iostreams/detail/ios.hpp>  // BOOST_IOSTREAMS_FAILURE 
-#include <boost/iostreams/read.hpp>        // get 
-#include <boost/iostreams/write.hpp>       // put 
-#include <boost/iostreams/pipeline.hpp>
-#include <boost/iostreams/putback.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/type_traits/is_convertible.hpp>
+#include "boost/config.hpp"                // BOOST_STATIC_CONSTANT.
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/detail/char_traits.hpp"
+#include "boost/iostreams/detail/ios.hpp"  // BOOST_IOSTREAMS_FAILURE 
+#include "boost/iostreams/read.hpp"        // get 
+#include "boost/iostreams/write.hpp"       // put 
+#include "boost/iostreams/pipeline.hpp"
+#include "boost/iostreams/putback.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/type_traits/is_convertible.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>
+#include "boost/iostreams/detail/config/disable_warnings.hpp"
 
 #define BOOST_IOSTREAMS_ASSERT_UNREACHABLE(val) \
     (BOOST_ASSERT("unreachable code" == 0), val) \
@@ -437,6 +437,6 @@ BOOST_IOSTREAMS_PIPABLE(newline_checker, 0)
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>
+#include "boost/iostreams/detail/config/enable_warnings.hpp"
 
 #endif // #ifndef BOOST_IOSTREAMS_NEWLINE_FILTER_HPP_INCLUDED

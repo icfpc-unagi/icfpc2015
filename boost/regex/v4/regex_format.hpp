@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         regex_format.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Provides formatting output routines for search and replace
   *                operations.  Note this is an internal header file included
   *                by regex.hpp, do not include on its own.
@@ -21,20 +21,20 @@
 #ifndef BOOST_REGEX_FORMAT_HPP
 #define BOOST_REGEX_FORMAT_HPP
 
-#include <boost/type_traits/is_pointer.hpp>
-#include <boost/type_traits/is_function.hpp>
-#include <boost/type_traits/is_class.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type_traits/remove_pointer.hpp>
-#include <boost/type_traits/remove_cv.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/and.hpp>
-#include <boost/mpl/not.hpp>
+#include "boost/type_traits/is_pointer.hpp"
+#include "boost/type_traits/is_function.hpp"
+#include "boost/type_traits/is_class.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/type_traits/remove_pointer.hpp"
+#include "boost/type_traits/remove_cv.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/and.hpp"
+#include "boost/mpl/not.hpp"
 #ifndef BOOST_NO_SFINAE
-#include <boost/mpl/has_xxx.hpp>
+#include "boost/mpl/has_xxx.hpp"
 #endif
-#include <boost/ref.hpp>
+#include "boost/ref.hpp"
 
 namespace boost{
 

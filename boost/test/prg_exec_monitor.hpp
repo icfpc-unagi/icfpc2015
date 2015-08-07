@@ -15,7 +15,7 @@
 #ifndef BOOST_PRG_EXEC_MONITOR_HPP_071894GER
 #define BOOST_PRG_EXEC_MONITOR_HPP_071894GER
 
-#include <boost/test/detail/config.hpp>
+#include "boost/test/detail/config.hpp"
 
 //____________________________________________________________________________//
 
@@ -33,7 +33,7 @@
 #    define BOOST_DYN_LINK
 #  endif
 
-#  include <boost/config/auto_link.hpp>
+#  include "boost/config/auto_link.hpp"
 
 #endif  // auto-linking disabled
 

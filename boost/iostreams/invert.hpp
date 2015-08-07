@@ -13,24 +13,24 @@
 #endif              
 
 #include <algorithm>                             // copy, min.  
-#include <boost/assert.hpp>
-#include <boost/config.hpp>                      // BOOST_DEDUCED_TYPENAME.       
-#include <boost/detail/workaround.hpp>           // default_filter_buffer_size.
-#include <boost/iostreams/char_traits.hpp>
-#include <boost/iostreams/compose.hpp>
-#include <boost/iostreams/constants.hpp>
-#include <boost/iostreams/device/array.hpp>
-#include <boost/iostreams/detail/buffer.hpp>
-#include <boost/iostreams/detail/counted_array.hpp>
-#include <boost/iostreams/detail/execute.hpp>
-#include <boost/iostreams/detail/functional.hpp> // clear_flags, call_reset
-#include <boost/mpl/if.hpp>
-#include <boost/ref.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/type_traits/is_convertible.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"                      // BOOST_DEDUCED_TYPENAME.       
+#include "boost/detail/workaround.hpp"           // default_filter_buffer_size.
+#include "boost/iostreams/char_traits.hpp"
+#include "boost/iostreams/compose.hpp"
+#include "boost/iostreams/constants.hpp"
+#include "boost/iostreams/device/array.hpp"
+#include "boost/iostreams/detail/buffer.hpp"
+#include "boost/iostreams/detail/counted_array.hpp"
+#include "boost/iostreams/detail/execute.hpp"
+#include "boost/iostreams/detail/functional.hpp" // clear_flags, call_reset
+#include "boost/mpl/if.hpp"
+#include "boost/ref.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/type_traits/is_convertible.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/disable_warnings.hpp"  // MSVC.
 
 namespace boost { namespace iostreams {
 
@@ -162,6 +162,6 @@ inverse<Filter> invert(const Filter& f) { return inverse<Filter>(f); }
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/enable_warnings.hpp"  // MSVC.
 
 #endif // #ifndef BOOST_IOSTREAMS_INVERT_HPP_INCLUDED

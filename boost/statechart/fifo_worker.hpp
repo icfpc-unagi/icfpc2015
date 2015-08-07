@@ -8,14 +8,14 @@
 
 
 
-#include <boost/assert.hpp>
-#include <boost/noncopyable.hpp>
-#include <boost/function/function0.hpp>
-#include <boost/bind.hpp>
+#include "boost/assert.hpp"
+#include "boost/noncopyable.hpp"
+#include "boost/function/function0.hpp"
+#include "boost/bind.hpp"
 // BOOST_HAS_THREADS, BOOST_MSVC
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
-#include <boost/detail/allocator_utilities.hpp>
+#include "boost/detail/allocator_utilities.hpp"
 
 #ifdef BOOST_HAS_THREADS
 #  ifdef BOOST_MSVC
@@ -33,8 +33,8 @@
 #    pragma warning( disable: 4996 )
 #  endif
 
-#  include <boost/thread/mutex.hpp>
-#  include <boost/thread/condition.hpp>
+#  include "boost/thread/mutex.hpp"
+#  include "boost/thread/condition.hpp"
 
 #  ifdef BOOST_MSVC
 #    pragma warning( pop )

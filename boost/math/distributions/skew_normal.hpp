@@ -13,16 +13,16 @@
 // Azzalini, A. (1985). "A class of distributions which includes the normal ones".
 // Scand. J. Statist. 12: 171-178.
 
-#include <boost/math/distributions/fwd.hpp> // TODO add skew_normal distribution to fwd.hpp!
-#include <boost/math/special_functions/owens_t.hpp> // Owen's T function
-#include <boost/math/distributions/complement.hpp>
-#include <boost/math/distributions/normal.hpp>
-#include <boost/math/distributions/detail/common_error_handling.hpp>
-#include <boost/math/constants/constants.hpp>
-#include <boost/math/tools/tuple.hpp>
-#include <boost/math/tools/roots.hpp> // Newton-Raphson
-#include <boost/assert.hpp>
-#include <boost/math/distributions/detail/generic_mode.hpp> // pdf max finder.
+#include "boost/math/distributions/fwd.hpp" // TODO add skew_normal distribution to fwd.hpp!
+#include "boost/math/special_functions/owens_t.hpp" // Owen's T function
+#include "boost/math/distributions/complement.hpp"
+#include "boost/math/distributions/normal.hpp"
+#include "boost/math/distributions/detail/common_error_handling.hpp"
+#include "boost/math/constants/constants.hpp"
+#include "boost/math/tools/tuple.hpp"
+#include "boost/math/tools/roots.hpp" // Newton-Raphson
+#include "boost/assert.hpp"
+#include "boost/math/distributions/detail/generic_mode.hpp" // pdf max finder.
 
 #include <utility>
 #include <algorithm> // std::lower_bound, std::distance
@@ -712,7 +712,7 @@ namespace boost{ namespace math{
 // This include must be at the end, *after* the accessors
 // for this distribution have been defined, in order to
 // keep compilers that support two-phase lookup happy.
-#include <boost/math/distributions/detail/derived_accessors.hpp>
+#include "boost/math/distributions/detail/derived_accessors.hpp"
 
 #endif // BOOST_STATS_SKEW_NORMAL_HPP
 

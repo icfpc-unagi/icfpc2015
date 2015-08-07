@@ -10,11 +10,11 @@ Copyright (c) 1999-2006: Cortex Software GmbH, Kantstrasse 57, Berlin
 #ifndef BOOST_ICL_SET_ALGO_HPP_JOFA_990225
 #define BOOST_ICL_SET_ALGO_HPP_JOFA_990225
 
-#include <boost/type_traits/remove_const.hpp>
-#include <boost/icl/detail/notate.hpp>
-#include <boost/icl/concept/container.hpp>
-#include <boost/icl/concept/set_value.hpp>
-#include <boost/icl/concept/map_value.hpp>
+#include "boost/type_traits/remove_const.hpp"
+#include "boost/icl/detail/notate.hpp"
+#include "boost/icl/concept/container.hpp"
+#include "boost/icl/concept/set_value.hpp"
+#include "boost/icl/concept/map_value.hpp"
 
 
 namespace boost{namespace icl

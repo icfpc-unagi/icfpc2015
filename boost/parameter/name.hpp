@@ -5,22 +5,22 @@
 #ifndef BOOST_PARAMETER_NAME_060806_HPP
 # define BOOST_PARAMETER_NAME_060806_HPP
 
-# include <boost/parameter/keyword.hpp>
-# include <boost/parameter/value_type.hpp>
-# include <boost/detail/workaround.hpp>
-# include <boost/preprocessor/cat.hpp>
-# include <boost/preprocessor/stringize.hpp>
-# include <boost/preprocessor/control/iif.hpp>
-# include <boost/preprocessor/tuple/eat.hpp>
-# include <boost/preprocessor/tuple/elem.hpp>
-# include <boost/mpl/placeholders.hpp>
+# include "boost/parameter/keyword.hpp"
+# include "boost/parameter/value_type.hpp"
+# include "boost/detail/workaround.hpp"
+# include "boost/preprocessor/cat.hpp"
+# include "boost/preprocessor/stringize.hpp"
+# include "boost/preprocessor/control/iif.hpp"
+# include "boost/preprocessor/tuple/eat.hpp"
+# include "boost/preprocessor/tuple/elem.hpp"
+# include "boost/mpl/placeholders.hpp"
 
 # if !defined(BOOST_NO_SFINAE) \
   && !defined(BOOST_NO_TEMPLATE_PARTIAL_SPECIALIZATION) \
   && !BOOST_WORKAROUND(__BORLANDC__, BOOST_TESTED_AT(0x592))
 
-#  include <boost/utility/enable_if.hpp>
-#  include <boost/mpl/lambda.hpp>
+#  include "boost/utility/enable_if.hpp"
+#  include "boost/mpl/lambda.hpp"
 
 namespace boost { namespace parameter { namespace aux {
 
@@ -61,7 +61,7 @@ struct lambda<
 # endif
 
 # if BOOST_WORKAROUND(__BORLANDC__, BOOST_TESTED_AT(0x564))
-# include <boost/preprocessor/detail/split.hpp>
+# include "boost/preprocessor/detail/split.hpp"
 // From Paul Mensonides
 #  define BOOST_PARAMETER_IS_BINARY(x) \
     BOOST_PP_SPLIT(1, BOOST_PARAMETER_IS_BINARY_C x BOOST_PP_COMMA() 0) \
@@ -71,7 +71,7 @@ struct lambda<
     BOOST_PP_TUPLE_EAT(2) BOOST_PP_LPAREN() ~ \
     /**/
 # else
-#  include <boost/preprocessor/detail/is_binary.hpp>
+#  include "boost/preprocessor/detail/is_binary.hpp"
 #  define BOOST_PARAMETER_IS_BINARY(x) BOOST_PP_IS_BINARY(x)
 # endif
 

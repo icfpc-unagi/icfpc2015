@@ -5,11 +5,11 @@
 // http://www.boost.org/LICENSE_1_0.txt)
 // (C) Copyright 2007-8 Anthony Williams
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/thread/detail/thread_heap_alloc.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/thread/detail/thread_heap_alloc.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -108,6 +108,6 @@ namespace boost
     };
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

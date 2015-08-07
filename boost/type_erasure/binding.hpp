@@ -11,27 +11,27 @@
 #ifndef BOOST_TYPE_ERASURE_BINDING_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_BINDING_HPP_INCLUDED
 
-#include <boost/config.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/make_shared.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/mpl/transform.hpp>
-#include <boost/mpl/find_if.hpp>
-#include <boost/mpl/and.hpp>
-#include <boost/mpl/not.hpp>
-#include <boost/mpl/end.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/pair.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_erasure/static_binding.hpp>
-#include <boost/type_erasure/is_subconcept.hpp>
-#include <boost/type_erasure/detail/adapt_to_vtable.hpp>
-#include <boost/type_erasure/detail/null.hpp>
-#include <boost/type_erasure/detail/rebind_placeholders.hpp>
-#include <boost/type_erasure/detail/vtable.hpp>
-#include <boost/type_erasure/detail/normalize.hpp>
-#include <boost/type_erasure/detail/instantiate.hpp>
-#include <boost/type_erasure/detail/check_map.hpp>
+#include "boost/config.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/make_shared.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/mpl/transform.hpp"
+#include "boost/mpl/find_if.hpp"
+#include "boost/mpl/and.hpp"
+#include "boost/mpl/not.hpp"
+#include "boost/mpl/end.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/pair.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_erasure/static_binding.hpp"
+#include "boost/type_erasure/is_subconcept.hpp"
+#include "boost/type_erasure/detail/adapt_to_vtable.hpp"
+#include "boost/type_erasure/detail/null.hpp"
+#include "boost/type_erasure/detail/rebind_placeholders.hpp"
+#include "boost/type_erasure/detail/vtable.hpp"
+#include "boost/type_erasure/detail/normalize.hpp"
+#include "boost/type_erasure/detail/instantiate.hpp"
+#include "boost/type_erasure/detail/check_map.hpp"
 
 namespace boost {
 namespace type_erasure {

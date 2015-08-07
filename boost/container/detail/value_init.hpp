@@ -17,8 +17,8 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
 namespace boost {
 namespace container {
@@ -40,6 +40,6 @@ struct value_init
 }  //namespace container {
 }  //namespace boost {
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif   //#ifndef BOOST_CONTAINER_DETAIL_VALUE_INIT_HPP

@@ -8,7 +8,7 @@
 #ifndef BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATOR_CONCEPT_HPP_EAN_28_10_2005
 #define BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATOR_CONCEPT_HPP_EAN_28_10_2005
 
-#include <boost/concept_check.hpp>
+#include "boost/concept_check.hpp"
 
 namespace boost { namespace accumulators
 {

@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         regex_workarounds.cpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares Misc workarounds.
   */
 
@@ -34,14 +34,14 @@
 #include <iosfwd>
 #include <vector>
 #include <map>
-#include <boost/limits.hpp>
-#include <boost/assert.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/scoped_ptr.hpp>
-#include <boost/scoped_array.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/mpl/bool_fwd.hpp>
+#include "boost/limits.hpp"
+#include "boost/assert.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/scoped_ptr.hpp"
+#include "boost/scoped_array.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/mpl/bool_fwd.hpp"
 #ifndef BOOST_NO_STD_LOCALE
 #   include <locale>
 #endif

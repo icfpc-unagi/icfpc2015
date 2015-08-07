@@ -14,13 +14,13 @@
   This file contains a high resolution time clock implementation.
 */
 
-#include <boost/cstdint.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/date_time/compiler_config.hpp>
-#include <boost/date_time/c_time.hpp>
-#include <boost/date_time/time_clock.hpp>
-#include <boost/date_time/filetime_functions.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/date_time/compiler_config.hpp"
+#include "boost/date_time/c_time.hpp"
+#include "boost/date_time/time_clock.hpp"
+#include "boost/date_time/filetime_functions.hpp"
 
 #ifdef BOOST_DATE_TIME_HAS_HIGH_PRECISION_CLOCK
 

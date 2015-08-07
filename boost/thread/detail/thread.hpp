@@ -6,45 +6,45 @@
 // (C) Copyright 2007-2010 Anthony Williams
 // (C) Copyright 2011-2012 Vicente J. Botet Escriba
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/predef/platform.h>
+#include "boost/thread/detail/config.hpp"
+#include "boost/predef/platform.h"
 
-#include <boost/thread/exceptions.hpp>
+#include "boost/thread/exceptions.hpp"
 #ifndef BOOST_NO_IOSTREAM
 #include <ostream>
 #endif
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/mutex.hpp>
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/mutex.hpp"
 #if defined BOOST_THREAD_USES_DATETIME
-#include <boost/thread/xtime.hpp>
+#include "boost/thread/xtime.hpp"
 #endif
-#include <boost/thread/detail/thread_heap_alloc.hpp>
-#include <boost/thread/detail/make_tuple_indices.hpp>
-#include <boost/thread/detail/invoke.hpp>
-#include <boost/thread/detail/is_convertible.hpp>
-#include <boost/assert.hpp>
+#include "boost/thread/detail/thread_heap_alloc.hpp"
+#include "boost/thread/detail/make_tuple_indices.hpp"
+#include "boost/thread/detail/invoke.hpp"
+#include "boost/thread/detail/is_convertible.hpp"
+#include "boost/assert.hpp"
 #include <list>
 #include <algorithm>
-#include <boost/core/ref.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/bind.hpp>
+#include "boost/core/ref.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/bind.hpp"
 #include <stdlib.h>
 #include <memory>
-#include <boost/core/enable_if.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/io/ios_state.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/decay.hpp>
-#include <boost/functional/hash.hpp>
+#include "boost/core/enable_if.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/io/ios_state.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/decay.hpp"
+#include "boost/functional/hash.hpp"
 #ifdef BOOST_THREAD_USES_CHRONO
-#include <boost/chrono/system_clocks.hpp>
-#include <boost/chrono/ceil.hpp>
+#include "boost/chrono/system_clocks.hpp"
+#include "boost/chrono/ceil.hpp"
 #endif
 
 #if defined(BOOST_THREAD_PROVIDES_VARIADIC_THREAD)
 #include <tuple>
 #endif
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 #ifdef BOOST_MSVC
 #pragma warning(push)
@@ -867,6 +867,6 @@ namespace boost
 #pragma warning(pop)
 #endif
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

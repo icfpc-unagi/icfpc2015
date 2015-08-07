@@ -9,14 +9,14 @@
 #ifndef BOOST_ALIGN_ALIGNED_ALLOCATOR_ADAPTOR_HPP
 #define BOOST_ALIGN_ALIGNED_ALLOCATOR_ADAPTOR_HPP
 
-#include <boost/config.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/align/align.hpp>
-#include <boost/align/aligned_allocator_adaptor_forward.hpp>
-#include <boost/align/alignment_of.hpp>
-#include <boost/align/detail/addressof.hpp>
-#include <boost/align/detail/is_alignment_constant.hpp>
-#include <boost/align/detail/max_align.hpp>
+#include "boost/config.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/align/align.hpp"
+#include "boost/align/aligned_allocator_adaptor_forward.hpp"
+#include "boost/align/alignment_of.hpp"
+#include "boost/align/detail/addressof.hpp"
+#include "boost/align/detail/is_alignment_constant.hpp"
+#include "boost/align/detail/max_align.hpp"
 #include <new>
 
 #if !defined(BOOST_NO_CXX11_ALLOCATOR)

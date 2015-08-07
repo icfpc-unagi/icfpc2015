@@ -33,9 +33,9 @@ struct ratio_string
 
 */
 
-#include <boost/config.hpp>
-#include <boost/ratio/ratio.hpp>
-#include <boost/type_traits/integral_constant.hpp>
+#include "boost/config.hpp"
+#include "boost/ratio/ratio.hpp"
+#include "boost/type_traits/integral_constant.hpp"
 #include <string>
 #include <sstream>
 

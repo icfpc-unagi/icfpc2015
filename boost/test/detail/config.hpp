@@ -16,8 +16,8 @@
 #define BOOST_TEST_CONFIG_HPP_071894GER
 
 // Boost
-#include <boost/config.hpp> // compilers workarounds
-#include <boost/detail/workaround.hpp>
+#include "boost/config.hpp" // compilers workarounds
+#include "boost/detail/workaround.hpp"
 
 //____________________________________________________________________________//
 

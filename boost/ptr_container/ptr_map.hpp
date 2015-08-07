@@ -17,7 +17,7 @@
 #endif
 
 #include <map>
-#include <boost/ptr_container/ptr_map_adapter.hpp>
+#include "boost/ptr_container/ptr_map_adapter.hpp"
 
 namespace boost
 {

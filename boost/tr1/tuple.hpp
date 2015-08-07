@@ -5,14 +5,14 @@
 
 #ifndef BOOST_TR1_TUPLE_HPP_INCLUDED
 #  define BOOST_TR1_TUPLE_HPP_INCLUDED
-#  include <boost/tr1/detail/config.hpp>
+#  include "boost/tr1/detail/config.hpp"
 
 #ifdef BOOST_HAS_TR1_TUPLE
 
 #  if defined(BOOST_HAS_INCLUDE_NEXT) && !defined(BOOST_TR1_DISABLE_INCLUDE_NEXT)
 #     include_next BOOST_TR1_HEADER(tuple)
 #  else
-#     include <boost/tr1/detail/config_all.hpp>
+#     include "boost/tr1/detail/config_all.hpp"
 #     include BOOST_TR1_STD_HEADER(BOOST_TR1_PATH(tuple))
 #  endif
 
@@ -20,9 +20,9 @@
 
 #if defined(BOOST_TR1_USE_OLD_TUPLE)
 
-#include <boost/tuple/tuple.hpp>
-#include <boost/tuple/tuple_comparison.hpp>
-#include <boost/type_traits/integral_constant.hpp>
+#include "boost/tuple/tuple.hpp"
+#include "boost/tuple/tuple_comparison.hpp"
+#include "boost/type_traits/integral_constant.hpp"
 
 namespace std{ namespace tr1{
 
@@ -55,8 +55,8 @@ using ::boost::get;
 
 #else
 
-#include <boost/fusion/include/tuple.hpp>
-#include <boost/fusion/include/std_pair.hpp>
+#include "boost/fusion/include/tuple.hpp"
+#include "boost/fusion/include/std_pair.hpp"
 
 namespace std{ namespace tr1{
 

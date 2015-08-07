@@ -11,11 +11,11 @@
 #ifndef BOOST_MSM_FRONT_STATES_H
 #define BOOST_MSM_FRONT_STATES_H
 
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/vector.hpp>
-#include <boost/msm/front/common_states.hpp>
-#include <boost/msm/row_tags.hpp>
-#include <boost/msm/back/metafunctions.hpp>
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/vector.hpp"
+#include "boost/msm/front/common_states.hpp"
+#include "boost/msm/row_tags.hpp"
+#include "boost/msm/back/metafunctions.hpp"
 
 namespace boost { namespace msm { namespace front
 {

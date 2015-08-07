@@ -8,7 +8,7 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_NIL_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_NIL_HPP_
 
-#include <boost/preprocessor/facilities/empty.hpp>
+#include "boost/preprocessor/facilities/empty.hpp"
 
 #define BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_NIL \
     ( \

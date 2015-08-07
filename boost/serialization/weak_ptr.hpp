@@ -16,8 +16,8 @@
 
 //  See http://www.boost.org for updates, documentation, and revision history.
 
-#include <boost/weak_ptr.hpp>
-#include <boost/serialization/shared_ptr.hpp>
+#include "boost/weak_ptr.hpp"
+#include "boost/serialization/shared_ptr.hpp"
 
 namespace boost {
 namespace serialization{

@@ -17,8 +17,8 @@
 #ifndef BOOST_FORMAT_CONFIG_MACROS_HPP
 #define BOOST_FORMAT_CONFIG_MACROS_HPP
 
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
 
 // make sure our local macros wont override something :
 #if defined(BOOST_NO_LOCALE_ISDIGIT) || defined(BOOST_OVERLOAD_FOR_NON_CONST) \
@@ -30,8 +30,8 @@
 
 // specific workarounds. each header can define BOOS_IO_STD if it 
 // needs. (e.g. because of IO_NEEDS_USING_DECLARATION)
-#include <boost/format/detail/workarounds_gcc-2_95.hpp>
-#include <boost/format/detail/workarounds_stlport.hpp>
+#include "boost/format/detail/workarounds_gcc-2_95.hpp"
+#include "boost/format/detail/workarounds_stlport.hpp"
 
 #ifndef BOOST_IO_STD
 #  define BOOST_IO_STD ::std::

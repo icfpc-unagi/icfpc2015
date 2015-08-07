@@ -6,18 +6,18 @@
 #ifndef BOOST_THREAD_LOCK_TRAITS_HPP
 #define BOOST_THREAD_LOCK_TRAITS_HPP
 
-#include <boost/thread/detail/config.hpp>
-//#include <boost/thread/detail/move.hpp>
-//#include <boost/thread/exceptions.hpp>
+#include "boost/thread/detail/config.hpp"
+//#include "boost/thread/detail/move.hpp"
+//#include "boost/thread/exceptions.hpp"
 //
 //#ifdef BOOST_THREAD_USES_CHRONO
-//#include <boost/chrono/time_point.hpp>
-//#include <boost/chrono/duration.hpp>
+//#include "boost/chrono/time_point.hpp"
+//#include "boost/chrono/duration.hpp"
 //#endif
 
-#include <boost/type_traits/integral_constant.hpp>
+#include "boost/type_traits/integral_constant.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -40,6 +40,6 @@ template <typename Lock>
 struct is_strict_lock : is_strict_lock_sur_parole<Lock> {};
 
 }
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

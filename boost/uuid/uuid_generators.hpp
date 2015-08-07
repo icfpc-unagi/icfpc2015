@@ -11,9 +11,9 @@
 #ifndef BOOST_UUID_GENERATORS_HPP
 #define BOOST_UUID_GENERATORS_HPP
 
-#include <boost/uuid/nil_generator.hpp>
-#include <boost/uuid/string_generator.hpp>
-#include <boost/uuid/name_generator.hpp>
-#include <boost/uuid/random_generator.hpp>
+#include "boost/uuid/nil_generator.hpp"
+#include "boost/uuid/string_generator.hpp"
+#include "boost/uuid/name_generator.hpp"
+#include "boost/uuid/random_generator.hpp"
 
 #endif //BOOST_UUID_GENERATORS_HPP

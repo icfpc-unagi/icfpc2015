@@ -12,16 +12,16 @@
 #ifndef GIL_REDUCE_HPP
 #define GIL_REDUCE_HPP
 
-#include <boost/mpl/insert_range.hpp>
-#include <boost/mpl/range_c.hpp>
-#include <boost/mpl/vector_c.hpp>
-#include <boost/mpl/back.hpp>
-#include <boost/mpl/vector.hpp>
-#include <boost/mpl/long.hpp>
-#include <boost/mpl/logical.hpp>
-#include <boost/mpl/transform.hpp>
-#include <boost/mpl/insert.hpp>
-#include <boost/mpl/transform.hpp>
+#include "boost/mpl/insert_range.hpp"
+#include "boost/mpl/range_c.hpp"
+#include "boost/mpl/vector_c.hpp"
+#include "boost/mpl/back.hpp"
+#include "boost/mpl/vector.hpp"
+#include "boost/mpl/long.hpp"
+#include "boost/mpl/logical.hpp"
+#include "boost/mpl/transform.hpp"
+#include "boost/mpl/insert.hpp"
+#include "boost/mpl/transform.hpp"
 
 #include "../../metafunctions.hpp"
 #include "../../typedefs.hpp"

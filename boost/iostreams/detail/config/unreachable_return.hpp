@@ -11,7 +11,7 @@
 # pragma once
 #endif              
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 // If Boost.Exception has BOOST_ATTRIBUTE_NORETURN
 #if defined(_MSC_VER) || defined(__GNUC__)

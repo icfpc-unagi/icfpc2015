@@ -15,33 +15,33 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
 #include <cstdio>
 #include <cstring> //for ::memmove / ::memcpy
-#include <boost/type_traits/is_pointer.hpp>
-#include <boost/type_traits/is_enum.hpp>
-#include <boost/type_traits/is_class.hpp>
-#include <boost/type_traits/is_integral.hpp>
-#include <boost/type_traits/is_floating_point.hpp>
-#include <boost/type_traits/is_copy_constructible.hpp>
-#include <boost/type_traits/has_trivial_destructor.hpp>
-#include <boost/type_traits/has_trivial_copy.hpp>
-#include <boost/type_traits/has_trivial_assign.hpp>
-#include <boost/type_traits/is_pod.hpp>
-#include <boost/move/core.hpp>
-#include <boost/move/utility_core.hpp>
-#include <boost/move/iterator.hpp>
-#include <boost/assert.hpp>
-#include <boost/container/throw_exception.hpp>
-#include <boost/container/detail/mpl.hpp>
-#include <boost/container/detail/type_traits.hpp>
-#include <boost/container/allocator_traits.hpp>
-#include <boost/core/no_exceptions_support.hpp>
-#include <boost/container/detail/memory_util.hpp>
-#include <boost/intrusive/pointer_traits.hpp>
-#include <boost/aligned_storage.hpp>
+#include "boost/type_traits/is_pointer.hpp"
+#include "boost/type_traits/is_enum.hpp"
+#include "boost/type_traits/is_class.hpp"
+#include "boost/type_traits/is_integral.hpp"
+#include "boost/type_traits/is_floating_point.hpp"
+#include "boost/type_traits/is_copy_constructible.hpp"
+#include "boost/type_traits/has_trivial_destructor.hpp"
+#include "boost/type_traits/has_trivial_copy.hpp"
+#include "boost/type_traits/has_trivial_assign.hpp"
+#include "boost/type_traits/is_pod.hpp"
+#include "boost/move/core.hpp"
+#include "boost/move/utility_core.hpp"
+#include "boost/move/iterator.hpp"
+#include "boost/assert.hpp"
+#include "boost/container/throw_exception.hpp"
+#include "boost/container/detail/mpl.hpp"
+#include "boost/container/detail/type_traits.hpp"
+#include "boost/container/allocator_traits.hpp"
+#include "boost/core/no_exceptions_support.hpp"
+#include "boost/container/detail/memory_util.hpp"
+#include "boost/intrusive/pointer_traits.hpp"
+#include "boost/aligned_storage.hpp"
 #include <iterator>
 #include <utility>   //std::distance
 
@@ -1262,6 +1262,6 @@ void move_assign_range_alloc_n( A &a, I inp_start, typename allocator_traits<A>:
 }  //namespace container {
 }  //namespace boost {
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif   //#ifndef BOOST_CONTAINER_DETAIL_UTILITIES_HPP

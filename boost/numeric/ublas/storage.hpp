@@ -15,16 +15,16 @@
 
 #include <algorithm>
 #ifdef BOOST_UBLAS_SHALLOW_ARRAY_ADAPTOR
-#include <boost/shared_array.hpp>
+#include "boost/shared_array.hpp"
 #endif
 
-#include <boost/serialization/array.hpp>
-#include <boost/serialization/collection_size_type.hpp>
-#include <boost/serialization/nvp.hpp>
+#include "boost/serialization/array.hpp"
+#include "boost/serialization/collection_size_type.hpp"
+#include "boost/serialization/nvp.hpp"
 
-#include <boost/numeric/ublas/exception.hpp>
-#include <boost/numeric/ublas/traits.hpp>
-#include <boost/numeric/ublas/detail/iterator.hpp>
+#include "boost/numeric/ublas/exception.hpp"
+#include "boost/numeric/ublas/traits.hpp"
+#include "boost/numeric/ublas/detail/iterator.hpp"
 
 
 namespace boost { namespace numeric { namespace ublas {

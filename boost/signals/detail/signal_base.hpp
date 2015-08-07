@@ -10,15 +10,15 @@
 #ifndef BOOST_SIGNALS_SIGNAL_BASE_HEADER
 #define BOOST_SIGNALS_SIGNAL_BASE_HEADER
 
-#include <boost/signals/detail/config.hpp>
-#include <boost/signals/detail/signals_common.hpp>
-#include <boost/signals/detail/named_slot_map.hpp>
-#include <boost/signals/connection.hpp>
-#include <boost/signals/trackable.hpp>
-#include <boost/signals/slot.hpp>
-#include <boost/smart_ptr.hpp>
-#include <boost/noncopyable.hpp>
-#include <boost/function/function2.hpp>
+#include "boost/signals/detail/config.hpp"
+#include "boost/signals/detail/signals_common.hpp"
+#include "boost/signals/detail/named_slot_map.hpp"
+#include "boost/signals/connection.hpp"
+#include "boost/signals/trackable.hpp"
+#include "boost/signals/slot.hpp"
+#include "boost/smart_ptr.hpp"
+#include "boost/noncopyable.hpp"
+#include "boost/function/function2.hpp"
 #include <utility>
 #include <vector>
 

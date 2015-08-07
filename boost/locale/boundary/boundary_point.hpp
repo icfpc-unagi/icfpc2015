@@ -8,7 +8,7 @@
 #ifndef BOOST_LOCALE_BOUNDARY_BOUNDARY_POINT_HPP_INCLUDED
 #define BOOST_LOCALE_BOUNDARY_BOUNDARY_POINT_HPP_INCLUDED
 
-#include <boost/locale/boundary/types.hpp>
+#include "boost/locale/boundary/types.hpp"
 
 namespace boost {
 namespace locale {

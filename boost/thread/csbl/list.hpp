@@ -9,13 +9,13 @@
 #ifndef BOOST_CSBL_LIST_HPP
 #define BOOST_CSBL_LIST_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if defined BOOST_THREAD_USES_BOOST_LIST || defined BOOST_NO_CXX11_HDR_LIST || defined BOOST_NO_CXX11_RVALUE_REFERENCES
 #ifndef BOOST_THREAD_USES_BOOST_LIST
 #define BOOST_THREAD_USES_BOOST_LIST
 #endif
-#include <boost/container/list.hpp>
+#include "boost/container/list.hpp"
 #else
 #include <list>
 #endif

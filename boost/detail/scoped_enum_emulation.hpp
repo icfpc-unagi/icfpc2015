@@ -12,6 +12,6 @@
 // The header file at this path is deprecated;
 // use boost/core/scoped_enum.hpp instead.
 
-#include <boost/core/scoped_enum.hpp>
+#include "boost/core/scoped_enum.hpp"
 
 #endif

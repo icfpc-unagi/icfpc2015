@@ -18,10 +18,10 @@
 #ifndef BOOST_NUMERIC_ODEINT_EXTERNAL_COMPUTE_COMPUTE_ALGEBRA_DISPATCHER_HPP_DEFINED
 #define BOOST_NUMERIC_ODEINT_EXTERNAL_COMPUTE_COMPUTE_ALGEBRA_DISPATCHER_HPP_DEFINED
 
-#include <boost/compute/container/vector.hpp>
+#include "boost/compute/container/vector.hpp"
 
-#include <boost/numeric/odeint/external/compute/compute_algebra.hpp>
-#include <boost/numeric/odeint/algebra/algebra_dispatcher.hpp>
+#include "boost/numeric/odeint/external/compute/compute_algebra.hpp"
+#include "boost/numeric/odeint/algebra/algebra_dispatcher.hpp"
 
 namespace boost {
 namespace numeric {

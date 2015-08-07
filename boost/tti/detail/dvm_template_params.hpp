@@ -7,28 +7,28 @@
 #if !defined(BOOST_TTI_DETAIL_VM_TEMPLATE_PARAMS_HPP)
 #define BOOST_TTI_DETAIL_VM_TEMPLATE_PARAMS_HPP
 
-#include <boost/config.hpp>
-#include <boost/preprocessor/config/config.hpp>
+#include "boost/config.hpp"
+#include "boost/preprocessor/config/config.hpp"
 
 #if BOOST_PP_VARIADICS
 
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/has_xxx.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/preprocessor/arithmetic/add.hpp>
-#include <boost/preprocessor/variadic/size.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/comparison/equal.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/detail/is_binary.hpp>
-#include <boost/preprocessor/facilities/is_empty.hpp>
-#include <boost/preprocessor/seq/enum.hpp>
-#include <boost/preprocessor/seq/seq.hpp>
-#include <boost/preprocessor/variadic/elem.hpp>
-#include <boost/preprocessor/variadic/to_seq.hpp>
-#include <boost/tti/detail/dtemplate.hpp>
-#include <boost/tti/detail/dtemplate_params.hpp>
-#include <boost/type_traits/is_class.hpp>
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/has_xxx.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/preprocessor/arithmetic/add.hpp"
+#include "boost/preprocessor/variadic/size.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/comparison/equal.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/detail/is_binary.hpp"
+#include "boost/preprocessor/facilities/is_empty.hpp"
+#include "boost/preprocessor/seq/enum.hpp"
+#include "boost/preprocessor/seq/seq.hpp"
+#include "boost/preprocessor/variadic/elem.hpp"
+#include "boost/preprocessor/variadic/to_seq.hpp"
+#include "boost/tti/detail/dtemplate.hpp"
+#include "boost/tti/detail/dtemplate_params.hpp"
+#include "boost/type_traits/is_class.hpp"
 
 #if !defined(BOOST_MPL_CFG_NO_HAS_XXX_TEMPLATE)
 #if !BOOST_WORKAROUND(BOOST_MSVC, <= 1400)

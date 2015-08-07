@@ -6,12 +6,12 @@
 #ifndef BOOST_THREAD_DETAIL_LOG_HPP
 #define BOOST_THREAD_DETAIL_LOG_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 #if defined BOOST_THREAD_USES_LOG
-#include <boost/thread/recursive_mutex.hpp>
-#include <boost/thread/lock_guard.hpp>
+#include "boost/thread/recursive_mutex.hpp"
+#include "boost/thread/lock_guard.hpp"
 #if defined BOOST_THREAD_USES_LOG_THREAD_ID
-#include <boost/thread/thread.hpp>
+#include "boost/thread/thread.hpp"
 #endif
 #include <iostream>
 

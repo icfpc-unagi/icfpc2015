@@ -8,28 +8,28 @@
 #ifndef BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATOR_SET_HPP_EAN_28_10_2005
 #define BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATOR_SET_HPP_EAN_28_10_2005
 
-#include <boost/version.hpp>
-#include <boost/mpl/apply.hpp>
-#include <boost/mpl/assert.hpp>
-#include <boost/mpl/protect.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/is_sequence.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/is_base_and_derived.hpp>
-#include <boost/parameter/parameters.hpp>
-#include <boost/preprocessor/repetition/repeat_from_to.hpp>
-#include <boost/preprocessor/repetition/enum_binary_params.hpp>
-#include <boost/accumulators/accumulators_fwd.hpp>
-#include <boost/accumulators/framework/depends_on.hpp>
-#include <boost/accumulators/framework/accumulator_concept.hpp>
-#include <boost/accumulators/framework/parameters/accumulator.hpp>
-#include <boost/accumulators/framework/parameters/sample.hpp>
-#include <boost/accumulators/framework/accumulators/external_accumulator.hpp>
-#include <boost/accumulators/framework/accumulators/droppable_accumulator.hpp>
-#include <boost/fusion/include/any.hpp>
-#include <boost/fusion/include/find_if.hpp>
-#include <boost/fusion/include/for_each.hpp>
-#include <boost/fusion/include/filter_view.hpp>
+#include "boost/version.hpp"
+#include "boost/mpl/apply.hpp"
+#include "boost/mpl/assert.hpp"
+#include "boost/mpl/protect.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/is_sequence.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/is_base_and_derived.hpp"
+#include "boost/parameter/parameters.hpp"
+#include "boost/preprocessor/repetition/repeat_from_to.hpp"
+#include "boost/preprocessor/repetition/enum_binary_params.hpp"
+#include "boost/accumulators/accumulators_fwd.hpp"
+#include "boost/accumulators/framework/depends_on.hpp"
+#include "boost/accumulators/framework/accumulator_concept.hpp"
+#include "boost/accumulators/framework/parameters/accumulator.hpp"
+#include "boost/accumulators/framework/parameters/sample.hpp"
+#include "boost/accumulators/framework/accumulators/external_accumulator.hpp"
+#include "boost/accumulators/framework/accumulators/droppable_accumulator.hpp"
+#include "boost/fusion/include/any.hpp"
+#include "boost/fusion/include/find_if.hpp"
+#include "boost/fusion/include/for_each.hpp"
+#include "boost/fusion/include/filter_view.hpp"
 
 namespace boost { namespace accumulators
 {

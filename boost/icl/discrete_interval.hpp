@@ -9,16 +9,16 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #define BOOST_ICL_DISCRETE_INTERVAL_HPP_JOFA_100403
 
 #include <functional> 
-#include <boost/static_assert.hpp> 
-#include <boost/concept/assert.hpp>
-#include <boost/icl/detail/concept_check.hpp>
-#include <boost/icl/type_traits/succ_pred.hpp>
-#include <boost/icl/concept/interval.hpp>
-#include <boost/icl/type_traits/value_size.hpp>
-#include <boost/icl/type_traits/type_to_string.hpp>
-#include <boost/icl/type_traits/is_continuous.hpp>
-#include <boost/icl/type_traits/is_discrete_interval.hpp>
-#include <boost/icl/interval_bounds.hpp>
+#include "boost/static_assert.hpp" 
+#include "boost/concept/assert.hpp"
+#include "boost/icl/detail/concept_check.hpp"
+#include "boost/icl/type_traits/succ_pred.hpp"
+#include "boost/icl/concept/interval.hpp"
+#include "boost/icl/type_traits/value_size.hpp"
+#include "boost/icl/type_traits/type_to_string.hpp"
+#include "boost/icl/type_traits/is_continuous.hpp"
+#include "boost/icl/type_traits/is_discrete_interval.hpp"
+#include "boost/icl/interval_bounds.hpp"
 
 namespace boost{namespace icl
 {

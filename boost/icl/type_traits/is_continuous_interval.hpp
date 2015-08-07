@@ -8,7 +8,7 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_IS_CONTINUOUS_INTERVAL_HPP_JOFA_100331
 #define BOOST_ICL_TYPE_TRAITS_IS_CONTINUOUS_INTERVAL_HPP_JOFA_100331
 
-#include <boost/icl/type_traits/is_interval.hpp>
+#include "boost/icl/type_traits/is_interval.hpp"
 
 namespace boost{ namespace icl
 {

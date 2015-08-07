@@ -7,23 +7,23 @@
 #if !defined(BOOST_TTI_DETAIL_MEM_DATA_HPP)
 #define BOOST_TTI_DETAIL_MEM_DATA_HPP
 
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/function_types/components.hpp>
-#include <boost/function_types/is_member_object_pointer.hpp>
-#include <boost/mpl/assert.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/or.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/tti/detail/ddeftype.hpp>
-#include <boost/tti/detail/dftclass.hpp>
-#include <boost/tti/gen/namespace_gen.hpp>
-#include <boost/type_traits/detail/yes_no_type.hpp>
-#include <boost/type_traits/is_class.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/remove_const.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/function_types/components.hpp"
+#include "boost/function_types/is_member_object_pointer.hpp"
+#include "boost/mpl/assert.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/or.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/tti/detail/ddeftype.hpp"
+#include "boost/tti/detail/dftclass.hpp"
+#include "boost/tti/gen/namespace_gen.hpp"
+#include "boost/type_traits/detail/yes_no_type.hpp"
+#include "boost/type_traits/is_class.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/remove_const.hpp"
 
 #if defined(BOOST_MSVC) || (BOOST_WORKAROUND(BOOST_GCC, >= 40400) && BOOST_WORKAROUND(BOOST_GCC, < 40600))
 
@@ -81,7 +81,7 @@
 
 #else // !defined(BOOST_MSVC)
 
-#include <boost/tti/detail/dmem_fun.hpp>
+#include "boost/tti/detail/dmem_fun.hpp"
 
 #define BOOST_TTI_DETAIL_TRAIT_HAS_MEMBER_DATA_OP(trait,name) \
   BOOST_TTI_DETAIL_TRAIT_HAS_TYPES_MEMBER_FUNCTION(trait,name) \

@@ -30,26 +30,26 @@ time2_demo contained this comment:
 #ifndef BOOST_CHRONO_DURATION_HPP
 #define BOOST_CHRONO_DURATION_HPP
 
-#include <boost/chrono/config.hpp>
-#include <boost/chrono/detail/static_assert.hpp>
+#include "boost/chrono/config.hpp"
+#include "boost/chrono/detail/static_assert.hpp"
 
 #include <climits>
 #include <limits>
 
 
-#include <boost/mpl/logical.hpp>
-#include <boost/ratio/ratio.hpp>
-#include <boost/type_traits/common_type.hpp>
-#include <boost/type_traits/is_arithmetic.hpp>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type_traits/is_floating_point.hpp>
-#include <boost/type_traits/is_unsigned.hpp>
-#include <boost/chrono/detail/is_evenly_divisible_by.hpp>
+#include "boost/mpl/logical.hpp"
+#include "boost/ratio/ratio.hpp"
+#include "boost/type_traits/common_type.hpp"
+#include "boost/type_traits/is_arithmetic.hpp"
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/type_traits/is_floating_point.hpp"
+#include "boost/type_traits/is_unsigned.hpp"
+#include "boost/chrono/detail/is_evenly_divisible_by.hpp"
 
-#include <boost/cstdint.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/integer_traits.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/integer_traits.hpp"
 
 #if !defined(BOOST_NO_CXX11_STATIC_ASSERT) || !defined(BOOST_CHRONO_USES_MPL_ASSERT)
 #define BOOST_CHRONO_A_DURATION_REPRESENTATION_CAN_NOT_BE_A_DURATION        "A duration representation can not be a duration"
@@ -60,7 +60,7 @@ time2_demo contained this comment:
 
 #ifndef BOOST_CHRONO_HEADER_ONLY
 // this must occur after all of the includes and before any code appears:
-#include <boost/config/abi_prefix.hpp> // must be the last #include
+#include "boost/config/abi_prefix.hpp" // must be the last #include
 #endif
 
 //----------------------------------------------------------------------------//
@@ -788,7 +788,7 @@ namespace detail
 
 #ifndef BOOST_CHRONO_HEADER_ONLY
 // the suffix header occurs after all of our code:
-#include <boost/config/abi_suffix.hpp> // pops abi_prefix.hpp pragmas
+#include "boost/config/abi_suffix.hpp" // pops abi_prefix.hpp pragmas
 #endif
 
 #endif // BOOST_CHRONO_DURATION_HPP

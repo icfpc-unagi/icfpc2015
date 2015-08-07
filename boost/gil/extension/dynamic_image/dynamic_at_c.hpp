@@ -16,8 +16,8 @@
 #include "../../gil_config.hpp"
 #include <cassert>
 #include <stdexcept>
-#include <boost/mpl/at.hpp>
-#include <boost/mpl/size.hpp>
+#include "boost/mpl/at.hpp"
+#include "boost/mpl/size.hpp"
 
 
 ////////////////////////////////////////////////////////////////////////////////////////

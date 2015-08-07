@@ -24,7 +24,7 @@
 // std::greater
 #include <functional>
 
-#include <boost/pool/poolfwd.hpp>
+#include "boost/pool/poolfwd.hpp"
 
 #ifdef BOOST_MSVC
 #pragma warning(push)

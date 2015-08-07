@@ -11,7 +11,7 @@
 #ifndef BOOST_RANDOM_DETAIL_AUTO_LINK_HPP
 #define BOOST_RANDOM_DETAIL_AUTO_LINK_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #ifdef BOOST_HAS_DECLSPEC
     #if defined(BOOST_ALL_DYN_LINK) || defined(BOOST_RANDOM_DYN_LINK)
@@ -35,7 +35,7 @@
     #define BOOST_DYN_LINK
 #endif
 
-#include <boost/config/auto_link.hpp>
+#include "boost/config/auto_link.hpp"
 
 #endif
 

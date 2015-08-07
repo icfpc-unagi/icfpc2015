@@ -12,37 +12,37 @@
 #define BOOST_TYPE_ERASURE_ANY_HPP_INCLUDED
 
 #include <algorithm>
-#include <boost/config.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/utility/addressof.hpp>
-#include <boost/utility/declval.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/or.hpp>
-#include <boost/mpl/pair.hpp>
-#include <boost/mpl/map.hpp>
-#include <boost/mpl/fold.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/type_traits/remove_const.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/is_const.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/iteration/iterate.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/enum_binary_params.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_params.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_binary_params.hpp>
-#include <boost/type_erasure/detail/access.hpp>
-#include <boost/type_erasure/detail/any_base.hpp>
-#include <boost/type_erasure/detail/normalize.hpp>
-#include <boost/type_erasure/detail/storage.hpp>
-#include <boost/type_erasure/detail/instantiate.hpp>
-#include <boost/type_erasure/config.hpp>
-#include <boost/type_erasure/binding.hpp>
-#include <boost/type_erasure/static_binding.hpp>
-#include <boost/type_erasure/concept_interface.hpp>
-#include <boost/type_erasure/call.hpp>
-#include <boost/type_erasure/relaxed.hpp>
-#include <boost/type_erasure/param.hpp>
+#include "boost/config.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/utility/addressof.hpp"
+#include "boost/utility/declval.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/or.hpp"
+#include "boost/mpl/pair.hpp"
+#include "boost/mpl/map.hpp"
+#include "boost/mpl/fold.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/type_traits/remove_const.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/is_const.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/iteration/iterate.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/enum_binary_params.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_params.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_binary_params.hpp"
+#include "boost/type_erasure/detail/access.hpp"
+#include "boost/type_erasure/detail/any_base.hpp"
+#include "boost/type_erasure/detail/normalize.hpp"
+#include "boost/type_erasure/detail/storage.hpp"
+#include "boost/type_erasure/detail/instantiate.hpp"
+#include "boost/type_erasure/config.hpp"
+#include "boost/type_erasure/binding.hpp"
+#include "boost/type_erasure/static_binding.hpp"
+#include "boost/type_erasure/concept_interface.hpp"
+#include "boost/type_erasure/call.hpp"
+#include "boost/type_erasure/relaxed.hpp"
+#include "boost/type_erasure/param.hpp"
 
 namespace boost {
 namespace type_erasure {
@@ -956,7 +956,7 @@ public:
 
 #else
 
-#include <boost/type_erasure/detail/construct.hpp>
+#include "boost/type_erasure/detail/construct.hpp"
 
 #endif
 

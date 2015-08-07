@@ -17,10 +17,10 @@
 
 #include <cstring>
 #include <string>
-#include <boost/config.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/iostreams/detail/config/windows_posix.hpp>
-#include <boost/iostreams/detail/ios.hpp>  // failure.
+#include "boost/config.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/iostreams/detail/config/windows_posix.hpp"
+#include "boost/iostreams/detail/ios.hpp"  // failure.
 
 #if defined(BOOST_NO_STDC_NAMESPACE) && !defined(__LIBCOMO__)
 namespace std { using ::strlen; }

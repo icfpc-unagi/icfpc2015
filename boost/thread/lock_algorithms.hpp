@@ -7,14 +7,14 @@
 #ifndef BOOST_THREAD_LOCK_ALGORITHMS_HPP
 #define BOOST_THREAD_LOCK_ALGORITHMS_HPP
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/lock_types.hpp>
-#include <boost/thread/lockable_traits.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/lock_types.hpp"
+#include "boost/thread/lockable_traits.hpp"
 
 #include <algorithm>
 #include <iterator>
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -463,6 +463,6 @@ namespace boost
   }
 
 }
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

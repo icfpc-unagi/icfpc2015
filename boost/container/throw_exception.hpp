@@ -15,14 +15,14 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
 #ifndef BOOST_NO_EXCEPTIONS
    #include <stdexcept> //for std exception types
    #include <new>       //for std::bad_alloc
 #else
-   #include <boost/assert.hpp>
+   #include "boost/assert.hpp"
    #include <cstdlib>   //for std::abort
 #endif
 
@@ -161,6 +161,6 @@ namespace container {
 
 }}  //namespace boost { namespace container {
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif //#ifndef BOOST_CONTAINER_THROW_EXCEPTION_HPP

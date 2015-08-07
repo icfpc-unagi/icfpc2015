@@ -26,8 +26,8 @@
 //#define BOOST_CONTAINER_NO_MT
 //#define BOOST_CONTAINER_NO_SPINLOCKS
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
 // Extremely Light-Weight wrapper classes for OS thread synchronization
 
@@ -279,6 +279,6 @@ class scoped_lock
 #undef BOOST_MUTEX_HELPER
 #undef BOOST_MUTEX_HELPER_SPINLOCKS
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif

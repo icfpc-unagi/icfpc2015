@@ -15,10 +15,10 @@
 // $Date$
 // $Revision$
 
-#include <boost/mpl/index_if.hpp>
-#include <boost/mpl/same_as.hpp>
-#include <boost/mpl/aux_/na_spec.hpp>
-#include <boost/mpl/aux_/lambda_support.hpp>
+#include "boost/mpl/index_if.hpp"
+#include "boost/mpl/same_as.hpp"
+#include "boost/mpl/aux_/na_spec.hpp"
+#include "boost/mpl/aux_/lambda_support.hpp"
 
 namespace boost { namespace mpl {
 

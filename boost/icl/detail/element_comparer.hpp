@@ -8,10 +8,10 @@ Copyright (c) 2008-2009: Joachim Faulhaber
 #ifndef BOOST_ICL_ELEMENT_COMPARER_HPP_JOFA_090202
 #define BOOST_ICL_ELEMENT_COMPARER_HPP_JOFA_090202
 
-#include <boost/mpl/and.hpp>
-#include <boost/icl/type_traits/is_map.hpp>
-#include <boost/icl/detail/notate.hpp>
-#include <boost/icl/type_traits/identity_element.hpp>
+#include "boost/mpl/and.hpp"
+#include "boost/icl/type_traits/is_map.hpp"
+#include "boost/icl/detail/notate.hpp"
+#include "boost/icl/type_traits/identity_element.hpp"
 
 namespace boost{namespace icl
 {

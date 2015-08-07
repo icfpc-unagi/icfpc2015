@@ -11,12 +11,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/concurrent_queues/queue_op_status.hpp>
-#include <boost/thread/concurrent_queues/queue_base.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/concurrent_queues/queue_op_status.hpp"
+#include "boost/thread/concurrent_queues/queue_base.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -160,6 +160,6 @@ using concurrent::queue_front;
 
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

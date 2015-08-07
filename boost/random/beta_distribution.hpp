@@ -16,8 +16,8 @@
 #include <cassert>
 #include <istream>
 #include <iosfwd>
-#include <boost/random/detail/operators.hpp>
-#include <boost/random/gamma_distribution.hpp>
+#include "boost/random/detail/operators.hpp"
+#include "boost/random/gamma_distribution.hpp"
 
 namespace boost {
 namespace random {

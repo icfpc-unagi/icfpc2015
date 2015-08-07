@@ -14,14 +14,14 @@
 // $Date$
 // $Revision$
 
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/aux_/config/msvc.hpp>
-#include <boost/mpl/aux_/config/workaround.hpp>
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/aux_/config/msvc.hpp"
+#include "boost/mpl/aux_/config/workaround.hpp"
 
-#include <boost/type_traits/is_empty.hpp>
+#include "boost/type_traits/is_empty.hpp"
 
 // should be always the last #include directive
-#include <boost/type_traits/detail/bool_trait_def.hpp>
+#include "boost/type_traits/detail/bool_trait_def.hpp"
 
 namespace boost { namespace mpl {
 
@@ -54,6 +54,6 @@ namespace boost {
 BOOST_TT_AUX_BOOL_TRAIT_SPEC1(is_empty, mpl::empty_base, true)
 }
 
-#include <boost/type_traits/detail/bool_trait_undef.hpp>
+#include "boost/type_traits/detail/bool_trait_undef.hpp"
 
 #endif // BOOST_MPL_EMPTY_BASE_HPP_INCLUDED

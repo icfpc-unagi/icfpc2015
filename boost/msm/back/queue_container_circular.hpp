@@ -11,7 +11,7 @@
 #ifndef BOOST_MSM_BACK_QUEUE_CONTAINER_CIRCULAR_H
 #define BOOST_MSM_BACK_QUEUE_CONTAINER_CIRCULAR_H
 
-#include <boost/circular_buffer.hpp>
+#include "boost/circular_buffer.hpp"
 
 namespace boost { namespace msm { namespace back
 {

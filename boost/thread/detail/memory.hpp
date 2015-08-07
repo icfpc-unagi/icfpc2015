@@ -12,12 +12,12 @@
 #ifndef BOOST_THREAD_DETAIL_MEMORY_HPP
 #define BOOST_THREAD_DETAIL_MEMORY_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
-#include <boost/thread/csbl/memory/pointer_traits.hpp>
-#include <boost/thread/csbl/memory/allocator_arg.hpp>
-#include <boost/thread/csbl/memory/allocator_traits.hpp>
-#include <boost/thread/csbl/memory/scoped_allocator.hpp>
+#include "boost/thread/csbl/memory/pointer_traits.hpp"
+#include "boost/thread/csbl/memory/allocator_arg.hpp"
+#include "boost/thread/csbl/memory/allocator_traits.hpp"
+#include "boost/thread/csbl/memory/scoped_allocator.hpp"
 
 namespace boost
 {

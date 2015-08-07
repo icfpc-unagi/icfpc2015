@@ -9,9 +9,9 @@
 #ifndef BOOST_PARALLEL_GLOBAL_INDEX_MAP_HPP
 #define BOOST_PARALLEL_GLOBAL_INDEX_MAP_HPP
 
-#include <boost/property_map/property_map.hpp>
+#include "boost/property_map/property_map.hpp"
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include "boost/shared_ptr.hpp"
 
 namespace boost { namespace parallel {
 

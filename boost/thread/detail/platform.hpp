@@ -11,10 +11,10 @@
 #define BOOST_THREAD_RS06040501_HPP
 
 // fetch compiler and platform configuration
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 // insist on threading support being available:
-#include <boost/config/requires_threads.hpp>
+#include "boost/config/requires_threads.hpp"
 
 // choose platform
 #if defined(linux) || defined(__linux) || defined(__linux__)

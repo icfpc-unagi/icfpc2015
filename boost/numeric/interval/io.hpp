@@ -17,8 +17,8 @@
 #ifndef BOOST_NUMERIC_INTERVAL_IO_HPP
 #define BOOST_NUMERIC_INTERVAL_IO_HPP
 
-#include <boost/numeric/interval/interval.hpp>
-#include <boost/numeric/interval/utility.hpp>
+#include "boost/numeric/interval/interval.hpp"
+#include "boost/numeric/interval/utility.hpp"
 #include <ostream>
 
 namespace boost {

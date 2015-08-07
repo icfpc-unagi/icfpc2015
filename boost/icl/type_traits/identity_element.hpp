@@ -8,7 +8,7 @@ Copyright (c) 2008-2009: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_IDENTITY_ELEMENT_HPP_JOFA_080912
 #define BOOST_ICL_TYPE_TRAITS_IDENTITY_ELEMENT_HPP_JOFA_080912
 
-#include <boost/icl/type_traits/type_to_string.hpp>
+#include "boost/icl/type_traits/type_to_string.hpp"
 
 namespace boost{ namespace icl
 {

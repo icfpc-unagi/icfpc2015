@@ -16,14 +16,14 @@
 #define BOOST_RT_CLA_ARGV_TRAVERSER_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
+#include "boost/test/utils/runtime/config.hpp"
 
 // Boost.Test
-#include <boost/test/utils/class_properties.hpp>
+#include "boost/test/utils/class_properties.hpp"
 
 // Boost
-#include <boost/noncopyable.hpp>
-#include <boost/shared_array.hpp>
+#include "boost/noncopyable.hpp"
+#include "boost/shared_array.hpp"
 
 namespace boost {
 
@@ -91,7 +91,7 @@ private:
 #ifndef BOOST_RT_PARAM_OFFLINE
 
 #  define BOOST_RT_PARAM_INLINE inline
-#  include <boost/test/utils/runtime/cla/argv_traverser.ipp>
+#  include "boost/test/utils/runtime/cla/argv_traverser.ipp"
 
 #endif
 

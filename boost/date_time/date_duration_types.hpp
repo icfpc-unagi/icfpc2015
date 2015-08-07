@@ -9,9 +9,9 @@
  * $Date$
  */
                                                                                 
-#include <boost/date_time/int_adapter.hpp>
-#include <boost/date_time/special_defs.hpp>
-#include <boost/date_time/date_duration.hpp>
+#include "boost/date_time/int_adapter.hpp"
+#include "boost/date_time/special_defs.hpp"
+#include "boost/date_time/date_duration.hpp"
 
 namespace boost {
 namespace date_time {

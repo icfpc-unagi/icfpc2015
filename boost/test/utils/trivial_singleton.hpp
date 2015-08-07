@@ -15,12 +15,12 @@
 #ifndef BOOST_TEST_TRIVIAL_SIGNLETON_HPP_020505GER
 #define BOOST_TEST_TRIVIAL_SIGNLETON_HPP_020505GER
 
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
 
-#include <boost/noncopyable.hpp>
+#include "boost/noncopyable.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -69,6 +69,6 @@ namespace { BOOST_JOIN( inst, _t)& inst = BOOST_JOIN( inst, _t)::instance(); }
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_TRIVIAL_SIGNLETON_HPP_020505GER

@@ -19,7 +19,7 @@
 #ifndef BOOST_CORE_NULL_DELETER_HPP
 #define BOOST_CORE_NULL_DELETER_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

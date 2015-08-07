@@ -20,9 +20,9 @@
 #ifndef BOOST_IOSTREAMS_RESTRICT_HPP_INCLUDED
 #define BOOST_IOSTREAMS_RESTRICT_HPP_INCLUDED
 
-#include <boost/iostreams/detail/restrict_impl.hpp>
+#include "boost/iostreams/detail/restrict_impl.hpp"
 #define BOOST_IOSTREAMS_RESTRICT slice
-#include <boost/iostreams/detail/restrict_impl.hpp>
+#include "boost/iostreams/detail/restrict_impl.hpp"
 #undef BOOST_IOSTREAMS_RESTRICT
 
 #endif // #ifndef BOOST_IOSTREAMS_RESTRICT_HPP_INCLUDED

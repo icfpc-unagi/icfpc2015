@@ -6,9 +6,9 @@
 #ifndef BOOST_INT_ITERATOR_H
 #define BOOST_INT_ITERATOR_H
 
-#include <boost/iterator.hpp>
+#include "boost/iterator.hpp"
 #if !defined BOOST_MSVC
-#include <boost/operators.hpp>
+#include "boost/operators.hpp"
 #endif
 #include <iostream>
 //using namespace std;

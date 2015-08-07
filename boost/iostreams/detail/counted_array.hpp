@@ -9,9 +9,9 @@
 #define BOOST_IOSTREAMS_DETAIL_COUNTED_ARRAY_HPP_INCLUDED
 
 #include <algorithm>                               // min.
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/detail/char_traits.hpp>
-#include <boost/iostreams/detail/ios.hpp>          // streamsize.
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/detail/char_traits.hpp"
+#include "boost/iostreams/detail/ios.hpp"          // streamsize.
 
 namespace boost { namespace iostreams { namespace detail {
 

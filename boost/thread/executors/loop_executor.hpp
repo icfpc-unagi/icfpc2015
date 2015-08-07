@@ -11,13 +11,13 @@
 #ifndef BOOST_THREAD_EXECUTORS_LOOP_EXECUTOR_HPP
 #define BOOST_THREAD_EXECUTORS_LOOP_EXECUTOR_HPP
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/delete.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/sync_queue.hpp>
-#include <boost/thread/executors/work.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/delete.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/sync_queue.hpp"
+#include "boost/thread/executors/work.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -199,6 +199,6 @@ using executors::loop_executor;
 
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

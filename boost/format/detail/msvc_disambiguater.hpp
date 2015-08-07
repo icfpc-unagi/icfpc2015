@@ -16,7 +16,7 @@
 
 #if BOOST_WORKAROUND(__DECCXX_VER, BOOST_TESTED_AT(60590042))
 
-#include <boost/format/group.hpp>
+#include "boost/format/group.hpp"
 #include <ostream>
 
 namespace boost {

@@ -16,20 +16,20 @@
 #ifndef BOOST_ATOMIC_DETAIL_OPS_MSVC_X86_HPP_INCLUDED_
 #define BOOST_ATOMIC_DETAIL_OPS_MSVC_X86_HPP_INCLUDED_
 
-#include <boost/memory_order.hpp>
-#include <boost/type_traits/make_signed.hpp>
-#include <boost/atomic/detail/config.hpp>
-#include <boost/atomic/detail/interlocked.hpp>
-#include <boost/atomic/detail/storage_type.hpp>
-#include <boost/atomic/detail/operations_fwd.hpp>
-#include <boost/atomic/capabilities.hpp>
+#include "boost/memory_order.hpp"
+#include "boost/type_traits/make_signed.hpp"
+#include "boost/atomic/detail/config.hpp"
+#include "boost/atomic/detail/interlocked.hpp"
+#include "boost/atomic/detail/storage_type.hpp"
+#include "boost/atomic/detail/operations_fwd.hpp"
+#include "boost/atomic/capabilities.hpp"
 #if defined(BOOST_ATOMIC_DETAIL_X86_HAS_CMPXCHG8B) || defined(BOOST_ATOMIC_DETAIL_X86_HAS_CMPXCHG16B)
-#include <boost/cstdint.hpp>
-#include <boost/atomic/detail/ops_cas_based.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/atomic/detail/ops_cas_based.hpp"
 #endif
-#include <boost/atomic/detail/ops_msvc_common.hpp>
+#include "boost/atomic/detail/ops_msvc_common.hpp"
 #if !defined(_M_IX86) && !(defined(BOOST_ATOMIC_INTERLOCKED_COMPARE_EXCHANGE8) && defined(BOOST_ATOMIC_INTERLOCKED_COMPARE_EXCHANGE16))
-#include <boost/atomic/detail/ops_extending_cas_based.hpp>
+#include "boost/atomic/detail/ops_extending_cas_based.hpp"
 #endif
 
 #ifdef BOOST_HAS_PRAGMA_ONCE

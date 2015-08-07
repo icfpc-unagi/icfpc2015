@@ -18,15 +18,15 @@
 #ifndef BOOST_LEXICAL_CAST_DETAIL_LCAST_FLOAT_CONVERTERS_HPP
 #define BOOST_LEXICAL_CAST_DETAIL_LCAST_FLOAT_CONVERTERS_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #   pragma once
 #endif
 
 #include <cstddef>
 #include <cmath>
-#include <boost/limits.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/limits.hpp"
+#include "boost/detail/workaround.hpp"
 
 #ifndef BOOST_NO_STD_LOCALE
 #   include <locale>
@@ -41,10 +41,10 @@
 #   endif
 #endif
 
-#include <boost/lexical_cast/detail/lcast_char_constants.hpp>
+#include "boost/lexical_cast/detail/lcast_char_constants.hpp"
 
-#include <boost/math/special_functions/sign.hpp>
-#include <boost/math/special_functions/fpclassify.hpp>
+#include "boost/math/special_functions/sign.hpp"
+#include "boost/math/special_functions/fpclassify.hpp"
 
 namespace boost {
 

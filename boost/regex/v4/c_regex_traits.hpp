@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         c_regex_traits.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares regular expression traits class that wraps the global C locale.
   */
 
@@ -20,10 +20,10 @@
 #define BOOST_C_REGEX_TRAITS_HPP_INCLUDED
 
 #ifndef BOOST_REGEX_CONFIG_HPP
-#include <boost/regex/config.hpp>
+#include "boost/regex/config.hpp"
 #endif
 #ifndef BOOST_REGEX_WORKAROUND_HPP
-#include <boost/regex/v4/regex_workaround.hpp>
+#include "boost/regex/v4/regex_workaround.hpp"
 #endif
 
 #include <cctype>

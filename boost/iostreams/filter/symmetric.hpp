@@ -41,26 +41,26 @@
 # pragma once
 #endif
 
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 #include <memory>                               // allocator, auto_ptr.
-#include <boost/config.hpp>                     // BOOST_DEDUCED_TYPENAME.
-#include <boost/iostreams/char_traits.hpp>
-#include <boost/iostreams/constants.hpp>        // buffer size.
-#include <boost/iostreams/detail/buffer.hpp>
-#include <boost/iostreams/detail/char_traits.hpp>
-#include <boost/iostreams/detail/config/limits.hpp>
-#include <boost/iostreams/detail/template_params.hpp>
-#include <boost/iostreams/traits.hpp>
-#include <boost/iostreams/operations.hpp>       // read, write.
-#include <boost/iostreams/pipeline.hpp>
-#include <boost/preprocessor/iteration/local.hpp>
-#include <boost/preprocessor/punctuation/comma_if.hpp>
-#include <boost/preprocessor/repetition/enum_binary_params.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/shared_ptr.hpp>
+#include "boost/config.hpp"                     // BOOST_DEDUCED_TYPENAME.
+#include "boost/iostreams/char_traits.hpp"
+#include "boost/iostreams/constants.hpp"        // buffer size.
+#include "boost/iostreams/detail/buffer.hpp"
+#include "boost/iostreams/detail/char_traits.hpp"
+#include "boost/iostreams/detail/config/limits.hpp"
+#include "boost/iostreams/detail/template_params.hpp"
+#include "boost/iostreams/traits.hpp"
+#include "boost/iostreams/operations.hpp"       // read, write.
+#include "boost/iostreams/pipeline.hpp"
+#include "boost/preprocessor/iteration/local.hpp"
+#include "boost/preprocessor/punctuation/comma_if.hpp"
+#include "boost/preprocessor/repetition/enum_binary_params.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/shared_ptr.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/disable_warnings.hpp"  // MSVC.
 
 namespace boost { namespace iostreams {
 
@@ -305,6 +305,6 @@ symmetric_filter<SymmetricFilter, Alloc>::unconsumed_input() const
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/enable_warnings.hpp"  // MSVC.
 
 #endif // #ifndef BOOST_IOSTREAMS_SYMMETRIC_FILTER_HPP_INCLUDED

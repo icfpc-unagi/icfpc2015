@@ -11,13 +11,13 @@
 #ifndef BOOST_MSM_FRONT_EUML_EUML_H
 #define BOOST_MSM_FRONT_EUML_EUML_H
 
-#include <boost/msm/front/euml/common.hpp>
-#include <boost/msm/front/euml/operator.hpp>
-#include <boost/msm/front/euml/guard_grammar.hpp>
-#include <boost/msm/front/euml/state_grammar.hpp>
-#include <boost/msm/front/euml/stt_grammar.hpp>
+#include "boost/msm/front/euml/common.hpp"
+#include "boost/msm/front/euml/operator.hpp"
+#include "boost/msm/front/euml/guard_grammar.hpp"
+#include "boost/msm/front/euml/state_grammar.hpp"
+#include "boost/msm/front/euml/stt_grammar.hpp"
 #ifdef BOOST_MSM_EUML_PHOENIX_SUPPORT
-#include <boost/msm/front/euml/phoenix_placeholders.hpp>
+#include "boost/msm/front/euml/phoenix_placeholders.hpp"
 #endif
 
 #endif //BOOST_MSM_FRONT_EUML_EUML_H

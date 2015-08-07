@@ -19,9 +19,9 @@
 #ifndef BOOST_NUMERIC_ODEINT_UTIL_SPLIT_ADAPTOR_INCLUDED
 #define BOOST_NUMERIC_ODEINT_UTIL_SPLIT_ADAPTOR_INCLUDED
 
-#include <boost/range/adaptor/argument_fwd.hpp>
-#include <boost/range/size_type.hpp>
-#include <boost/range/iterator_range.hpp>
+#include "boost/range/adaptor/argument_fwd.hpp"
+#include "boost/range/size_type.hpp"
+#include "boost/range/iterator_range.hpp"
 #include <algorithm>
 
 namespace boost {

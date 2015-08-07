@@ -8,7 +8,7 @@
 #ifndef BOOST_LOCALE_UTF_HPP_INCLUDED
 #define BOOST_LOCALE_UTF_HPP_INCLUDED
 
-#include <boost/cstdint.hpp>
+#include "boost/cstdint.hpp"
 
 namespace boost {
 namespace locale {

@@ -40,7 +40,7 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
 #include <utility>
 
 namespace boost{

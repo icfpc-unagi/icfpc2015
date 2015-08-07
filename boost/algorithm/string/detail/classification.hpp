@@ -11,16 +11,16 @@
 #ifndef BOOST_STRING_CLASSIFICATION_DETAIL_HPP
 #define BOOST_STRING_CLASSIFICATION_DETAIL_HPP
 
-#include <boost/algorithm/string/config.hpp>
+#include "boost/algorithm/string/config.hpp"
 #include <algorithm>
 #include <functional>
 #include <locale>
 
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
 
-#include <boost/algorithm/string/predicate_facade.hpp>
-#include <boost/type_traits/remove_const.hpp>
+#include "boost/algorithm/string/predicate_facade.hpp"
+#include "boost/type_traits/remove_const.hpp"
 
 namespace boost {
     namespace algorithm {

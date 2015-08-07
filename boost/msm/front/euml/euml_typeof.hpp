@@ -11,7 +11,7 @@
 #ifndef BOOST_MSM_FRONT_EUML_TYPEOF_H
 #define BOOST_MSM_FRONT_EUML_TYPEOF_H
 
-#include <boost/typeof/typeof.hpp>
+#include "boost/typeof/typeof.hpp"
 
 
 #include BOOST_TYPEOF_INCREMENT_REGISTRATION_GROUP()

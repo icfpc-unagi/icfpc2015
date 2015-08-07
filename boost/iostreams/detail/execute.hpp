@@ -32,16 +32,16 @@
 # pragma once
 #endif
 
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/detail/config/limits.hpp>   // MAX_EXECUTE_ARITY
-#include <boost/preprocessor/arithmetic/dec.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/iteration/local.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/enum_binary_params.hpp>
-#include <boost/preprocessor/punctuation/comma_if.hpp>
-#include <boost/utility/result_of.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/detail/config/limits.hpp"   // MAX_EXECUTE_ARITY
+#include "boost/preprocessor/arithmetic/dec.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/iteration/local.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/enum_binary_params.hpp"
+#include "boost/preprocessor/punctuation/comma_if.hpp"
+#include "boost/utility/result_of.hpp"
 
 namespace boost { namespace iostreams { namespace detail {
 

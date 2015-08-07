@@ -8,16 +8,16 @@
 #ifndef BOOST_TIMER_TIMER_HPP                  
 #define BOOST_TIMER_TIMER_HPP
 
-#include <boost/config/warning_disable.hpp>
+#include "boost/config/warning_disable.hpp"
 
-#include <boost/timer/config.hpp>
-#include <boost/chrono/chrono.hpp>
-#include <boost/cstdint.hpp>
+#include "boost/timer/config.hpp"
+#include "boost/chrono/chrono.hpp"
+#include "boost/cstdint.hpp"
 #include <string>
 #include <cstring>
 #include <ostream>
 
-#include <boost/config/abi_prefix.hpp> // must be the last #include
+#include "boost/config/abi_prefix.hpp" // must be the last #include
 
 #   if defined(_MSC_VER)
 #     pragma warning(push)           // Save warning settings
@@ -127,6 +127,6 @@ namespace timer
 #     pragma warning(pop) // restore warning settings.
 #   endif 
 
-#include <boost/config/abi_suffix.hpp> // pops abi_prefix.hpp pragmas
+#include "boost/config/abi_suffix.hpp" // pops abi_prefix.hpp pragmas
 
 #endif  // BOOST_TIMER_TIMER_HPP

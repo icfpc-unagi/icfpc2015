@@ -9,10 +9,10 @@
 #ifndef BOOST_RATIO_MPL_NUMERIC_CAST_HPP
 #define BOOST_RATIO_MPL_NUMERIC_CAST_HPP
 
-#include <boost/ratio/ratio.hpp>
-#include <boost/mpl/integral_c.hpp>
-#include <boost/ratio/mpl/rational_c_tag.hpp>
-#include <boost/mpl/numeric_cast.hpp>
+#include "boost/ratio/ratio.hpp"
+#include "boost/mpl/integral_c.hpp"
+#include "boost/ratio/mpl/rational_c_tag.hpp"
+#include "boost/mpl/numeric_cast.hpp"
 
 namespace boost { 
 namespace mpl {

@@ -9,11 +9,11 @@
 #ifndef BOOST_CSBL_MEMORY_SCOPED_ALLOCATOR_HPP
 #define BOOST_CSBL_MEMORY_SCOPED_ALLOCATOR_HPP
 
-#include <boost/thread/csbl/memory/config.hpp>
+#include "boost/thread/csbl/memory/config.hpp"
 
 // 20.7.7, uses_allocator
 #if defined BOOST_NO_CXX11_ALLOCATOR
-#include <boost/container/scoped_allocator.hpp>
+#include "boost/container/scoped_allocator.hpp"
 
 namespace boost
 {

@@ -8,7 +8,7 @@ Copyright (c) 2008-2009: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_IS_CONCEPT_EQUIVALENT_HPP_JOFA_090830
 #define BOOST_ICL_TYPE_TRAITS_IS_CONCEPT_EQUIVALENT_HPP_JOFA_090830
 
-#include <boost/mpl/and.hpp> 
+#include "boost/mpl/and.hpp" 
 
 namespace boost{ namespace icl
 {

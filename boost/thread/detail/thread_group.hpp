@@ -6,11 +6,11 @@
 // (C) Copyright 2007-9 Anthony Williams
 
 #include <list>
-#include <boost/thread/shared_mutex.hpp>
-#include <boost/thread/mutex.hpp>
-#include <boost/thread/lock_guard.hpp>
+#include "boost/thread/shared_mutex.hpp"
+#include "boost/thread/mutex.hpp"
+#include "boost/thread/lock_guard.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 #ifdef BOOST_MSVC
 #pragma warning(push)
@@ -149,6 +149,6 @@ namespace boost
 #pragma warning(pop)
 #endif
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

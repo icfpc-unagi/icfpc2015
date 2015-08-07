@@ -8,17 +8,17 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_DECL_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_DECL_HPP_
 
-#include <boost/local_function/aux_/macro/code_/result.hpp>
-#include <boost/local_function/aux_/macro/code_/bind.hpp>
-#include <boost/local_function/aux_/macro/code_/functor.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_error.hpp>
-#include <boost/scope_exit.hpp>
-#include <boost/mpl/assert.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/facilities/is_empty.hpp>
-#include <boost/preprocessor/list/adt.hpp>
-#include <boost/preprocessor/tuple/eat.hpp>
+#include "boost/local_function/aux_/macro/code_/result.hpp"
+#include "boost/local_function/aux_/macro/code_/bind.hpp"
+#include "boost/local_function/aux_/macro/code_/functor.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_error.hpp"
+#include "boost/scope_exit.hpp"
+#include "boost/mpl/assert.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/facilities/is_empty.hpp"
+#include "boost/preprocessor/list/adt.hpp"
+#include "boost/preprocessor/tuple/eat.hpp"
 
 // PRIVATE //
 

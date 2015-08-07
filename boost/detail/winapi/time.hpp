@@ -10,8 +10,8 @@
 #ifndef BOOST_DETAIL_WINAPI_TIME_HPP
 #define BOOST_DETAIL_WINAPI_TIME_HPP
 
-#include <boost/detail/winapi/basic_types.hpp>
-#include <boost/predef.h>
+#include "boost/detail/winapi/basic_types.hpp"
+#include "boost/predef.h"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

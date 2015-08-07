@@ -8,8 +8,8 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_ADDS_INVERSELY_HPP_JOFA_100829
 #define BOOST_ICL_TYPE_TRAITS_ADDS_INVERSELY_HPP_JOFA_100829
 
-#include <boost/icl/type_traits/has_inverse.hpp>
-#include <boost/icl/functors.hpp>
+#include "boost/icl/type_traits/has_inverse.hpp"
+#include "boost/icl/functors.hpp"
 
 namespace boost{ namespace icl
 {

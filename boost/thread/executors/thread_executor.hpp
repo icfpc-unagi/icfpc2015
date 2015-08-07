@@ -9,14 +9,14 @@
 #ifndef BOOST_THREAD_THREAD_EXECUTOR_HPP
 #define BOOST_THREAD_THREAD_EXECUTOR_HPP
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/delete.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/executors/work.hpp>
-#include <boost/thread/executors/executor.hpp>
-#include <boost/thread/thread_only.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/delete.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/executors/work.hpp"
+#include "boost/thread/executors/executor.hpp"
+#include "boost/thread/thread_only.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -131,6 +131,6 @@ namespace executors
 using executors::thread_executor;
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

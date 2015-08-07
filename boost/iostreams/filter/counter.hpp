@@ -13,13 +13,13 @@
 #endif
 
 #include <algorithm>  // count.
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/char_traits.hpp>
-#include <boost/iostreams/operations.hpp>
-#include <boost/iostreams/pipeline.hpp>
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/char_traits.hpp"
+#include "boost/iostreams/operations.hpp"
+#include "boost/iostreams/pipeline.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp> // VC7.1 C4244.
+#include "boost/iostreams/detail/config/disable_warnings.hpp" // VC7.1 C4244.
 
 namespace boost { namespace iostreams {
 
@@ -77,6 +77,6 @@ typedef basic_counter<wchar_t>  wcounter;
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>
+#include "boost/iostreams/detail/config/enable_warnings.hpp"
 
 #endif // #ifndef BOOST_IOSTREAMS_COUNTER_HPP_INCLUDED

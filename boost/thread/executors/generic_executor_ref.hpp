@@ -7,15 +7,15 @@
 #ifndef BOOST_THREAD_EXECUTORS_GENERIC_EXECUTOR_REF_HPP
 #define BOOST_THREAD_EXECUTORS_GENERIC_EXECUTOR_REF_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 
-#include <boost/thread/detail/delete.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/executors/executor.hpp>
+#include "boost/thread/detail/delete.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/executors/executor.hpp"
 
-#include <boost/shared_ptr.hpp>
+#include "boost/shared_ptr.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -206,6 +206,6 @@ namespace boost
   using executors::generic_executor_ref;
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

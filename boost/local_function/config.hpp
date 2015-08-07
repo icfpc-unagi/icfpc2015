@@ -10,7 +10,7 @@
 
 #ifndef DOXYGEN
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #ifndef BOOST_LOCAL_FUNCTION_CONFIG_FUNCTION_ARITY_MAX
 #   define BOOST_LOCAL_FUNCTION_CONFIG_FUNCTION_ARITY_MAX 5

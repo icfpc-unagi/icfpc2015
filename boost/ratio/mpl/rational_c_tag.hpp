@@ -11,7 +11,7 @@
 
 #ifdef BOOST_RATIO_EXTENSIONS
 
-#include <boost/mpl/int.hpp>
+#include "boost/mpl/int.hpp"
 
 namespace boost {
 namespace mpl {

@@ -7,14 +7,14 @@
 #if !defined(BOOST_TTI_DETAIL_STATIC_MEM_DATA_HPP)
 #define BOOST_TTI_DETAIL_STATIC_MEM_DATA_HPP
 
-#include <boost/config.hpp>
-#include <boost/function_types/is_function.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/type_traits/is_class.hpp>
-#include <boost/type_traits/detail/yes_no_type.hpp>
-#include <boost/tti/detail/dnullptr.hpp>
+#include "boost/config.hpp"
+#include "boost/function_types/is_function.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/type_traits/is_class.hpp"
+#include "boost/type_traits/detail/yes_no_type.hpp"
+#include "boost/tti/detail/dnullptr.hpp"
 
 #if defined(BOOST_MSVC)
 

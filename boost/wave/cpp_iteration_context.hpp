@@ -18,11 +18,11 @@
 #include <sstream>
 #endif
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/cpp_exceptions.hpp>
-#include <boost/wave/language_support.hpp>
-#include <boost/wave/util/file_position.hpp>
-// #include <boost/spirit/include/iterator/classic_multi_pass.hpp> // make_multi_pass
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/cpp_exceptions.hpp"
+#include "boost/wave/language_support.hpp"
+#include "boost/wave/util/file_position.hpp"
+// #include "boost/spirit/include/iterator/classic_multi_pass.hpp" // make_multi_pass
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

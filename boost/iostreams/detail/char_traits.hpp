@@ -4,7 +4,7 @@
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt.)
 
 // Provides std::char_traits for libraries without templated streams. Should not
-// be confused with <boost/iostreams/char_traits.hpp>, which defines the
+// be confused with "boost/iostreams/char_traits.hpp", which defines the
 // template boost::iostreams::char_traits.
 
 // See http://www.boost.org/libs/iostreams for documentation.
@@ -17,9 +17,9 @@
 #endif
 
 #include <iosfwd>
-#include <boost/iostreams/detail/config/wide_streams.hpp>
+#include "boost/iostreams/detail/config/wide_streams.hpp"
 #ifdef BOOST_IOSTREAMS_NO_STREAM_TEMPLATES
-# include <boost/config.hpp> // Make sure size_t is in std.
+# include "boost/config.hpp" // Make sure size_t is in std.
 # include <cstddef>
 # include <cstring>
 # include <cstdio>

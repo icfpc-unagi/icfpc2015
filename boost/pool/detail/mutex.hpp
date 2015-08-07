@@ -9,9 +9,9 @@
 #ifndef BOOST_POOL_MUTEX_HPP
 #define BOOST_POOL_MUTEX_HPP
 
-#include <boost/config.hpp>  // for workarounds
+#include "boost/config.hpp"  // for workarounds
 #ifdef BOOST_HAS_THREADS
-#include <boost/thread/mutex.hpp>
+#include "boost/thread/mutex.hpp"
 #endif
 
 namespace boost{ namespace details{ namespace pool{

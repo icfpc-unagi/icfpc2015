@@ -15,14 +15,14 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
-#include <boost/container/container_fwd.hpp>
-#include <boost/container/detail/version_type.hpp>
-#include <boost/container/throw_exception.hpp>
-#include <boost/container/detail/alloc_lib_auto_link.hpp>
-#include <boost/container/detail/multiallocation_chain.hpp>
-#include <boost/static_assert.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
+#include "boost/container/container_fwd.hpp"
+#include "boost/container/detail/version_type.hpp"
+#include "boost/container/throw_exception.hpp"
+#include "boost/container/detail/alloc_lib_auto_link.hpp"
+#include "boost/container/detail/multiallocation_chain.hpp"
+#include "boost/static_assert.hpp"
 #include <cstddef>
 #include <cassert>
 #include <new>
@@ -361,7 +361,7 @@ class allocator
 }  //namespace container {
 }  //namespace boost {
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif   //BOOST_CONTAINER_ALLOCATOR_HPP
 

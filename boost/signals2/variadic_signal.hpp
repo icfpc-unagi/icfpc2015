@@ -16,10 +16,10 @@
 #ifndef BOOST_SIGNALS2_VARIADIC_SIGNAL_HPP
 #define BOOST_SIGNALS2_VARIADIC_SIGNAL_HPP
 
-#include <boost/preprocessor/control/expr_if.hpp>
-#include <boost/signals2/detail/variadic_arg_type.hpp>
-#include <boost/signals2/detail/variadic_slot_invoker.hpp>
-#include <boost/type_traits/function_traits.hpp>
+#include "boost/preprocessor/control/expr_if.hpp"
+#include "boost/signals2/detail/variadic_arg_type.hpp"
+#include "boost/signals2/detail/variadic_slot_invoker.hpp"
+#include "boost/type_traits/function_traits.hpp"
 
 namespace boost
 {
@@ -39,6 +39,6 @@ namespace boost
   } // namespace signals2
 } // namespace boost
 
-#include <boost/signals2/detail/signal_template.hpp>
+#include "boost/signals2/detail/signal_template.hpp"
 
 #endif // BOOST_SIGNALS2_VARIADIC_SIGNAL_HPP

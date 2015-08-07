@@ -11,12 +11,12 @@
 #if !defined(CPP_EXPRESSION_GRAMMAR_GEN_HPP_42399258_6CDC_4101_863D_5C7D95B5A6CA_INCLUDED)
 #define CPP_EXPRESSION_GRAMMAR_GEN_HPP_42399258_6CDC_4101_863D_5C7D95B5A6CA_INCLUDED
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/cpp_iteration_context.hpp>
-#include <boost/wave/grammars/cpp_value_error.hpp>
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/cpp_iteration_context.hpp"
+#include "boost/wave/grammars/cpp_value_error.hpp"
 
 #include <list>
-#include <boost/pool/pool_alloc.hpp>
+#include "boost/pool/pool_alloc.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

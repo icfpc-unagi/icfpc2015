@@ -18,21 +18,21 @@
 #include <numeric>
 #include <utility>
 #include <iterator>
-#include <boost/assert.hpp>
-#include <boost/random/uniform_01.hpp>
-#include <boost/random/uniform_int_distribution.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/operators.hpp>
-#include <boost/random/detail/vector_io.hpp>
+#include "boost/assert.hpp"
+#include "boost/random/uniform_01.hpp"
+#include "boost/random/uniform_int_distribution.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/operators.hpp"
+#include "boost/random/detail/vector_io.hpp"
 
 #ifndef BOOST_NO_CXX11_HDR_INITIALIZER_LIST
 #include <initializer_list>
 #endif
 
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
 
-#include <boost/random/detail/disable_warnings.hpp>
+#include "boost/random/detail/disable_warnings.hpp"
 
 namespace boost {
 namespace random {
@@ -631,6 +631,6 @@ private:
 }
 }
 
-#include <boost/random/detail/enable_warnings.hpp>
+#include "boost/random/detail/enable_warnings.hpp"
 
 #endif

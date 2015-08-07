@@ -11,7 +11,7 @@
 #ifndef BOOST_MSM_FRONT_EUML_PHOENIX_PLACEHOLDERS_H
 #define BOOST_MSM_FRONT_EUML_PHOENIX_PLACEHOLDERS_H
 
-#include <boost/phoenix/core/argument.hpp>
+#include "boost/phoenix/core/argument.hpp"
 // provide some meaningful placeholders (instead of arg1...arg4)
 namespace boost { namespace msm { namespace front { namespace euml
 {

@@ -11,9 +11,9 @@
 #if !defined(DEFAULT_PREPROCESSING_HOOKS_HPP_INCLUDED)
 #define DEFAULT_PREPROCESSING_HOOKS_HPP_INCLUDED
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/util/cpp_include_paths.hpp>
-#include <boost/wave/cpp_exceptions.hpp>
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/util/cpp_include_paths.hpp"
+#include "boost/wave/cpp_exceptions.hpp"
 
 #include <vector>
 

@@ -15,24 +15,24 @@
 */
 
 
-#include <boost/config.hpp> // for workarounds
+#include "boost/config.hpp" // for workarounds
 
 // std::size_t
 #include <cstddef>
 
 // boost::details::pool::default_mutex
-#include <boost/pool/detail/mutex.hpp>
+#include "boost/pool/detail/mutex.hpp"
 
 namespace boost {
 
 //
-// Location: <boost/pool/simple_segregated_storage.hpp>
+// Location: "boost/pool/simple_segregated_storage.hpp"
 //
 template <typename SizeType = std::size_t>
 class simple_segregated_storage;
 
 //
-// Location: <boost/pool/pool.hpp>
+// Location: "boost/pool/pool.hpp"
 //
 struct default_user_allocator_new_delete;
 struct default_user_allocator_malloc_free;
@@ -41,13 +41,13 @@ template <typename UserAllocator = default_user_allocator_new_delete>
 class pool;
 
 //
-// Location: <boost/pool/object_pool.hpp>
+// Location: "boost/pool/object_pool.hpp"
 //
 template <typename T, typename UserAllocator = default_user_allocator_new_delete>
 class object_pool;
 
 //
-// Location: <boost/pool/singleton_pool.hpp>
+// Location: "boost/pool/singleton_pool.hpp"
 //
 template <typename Tag, unsigned RequestedSize,
     typename UserAllocator = default_user_allocator_new_delete,
@@ -57,7 +57,7 @@ template <typename Tag, unsigned RequestedSize,
 class singleton_pool;
 
 //
-// Location: <boost/pool/pool_alloc.hpp>
+// Location: "boost/pool/pool_alloc.hpp"
 //
 struct pool_allocator_tag;
 

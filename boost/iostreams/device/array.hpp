@@ -12,15 +12,15 @@
 # pragma once
 #endif
 
-#include <boost/config.hpp>         // BOOST_MSVC, make sure size_t is in std.
-#include <boost/detail/workaround.hpp>
+#include "boost/config.hpp"         // BOOST_MSVC, make sure size_t is in std.
+#include "boost/detail/workaround.hpp"
 #include <cstddef>                  // std::size_t.
 #include <utility>                  // pair.
-#include <boost/iostreams/categories.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/iostreams/categories.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/type_traits/is_same.hpp"
 
 namespace boost { namespace iostreams {
 

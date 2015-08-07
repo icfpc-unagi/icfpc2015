@@ -16,7 +16,7 @@
 #ifndef BOOST_MOVE_CORE_HPP
 #define BOOST_MOVE_CORE_HPP
 
-#include <boost/move/detail/config_begin.hpp>
+#include "boost/move/detail/config_begin.hpp"
 
 //boost_move_no_copy_constructor_or_assign typedef
 //used to detect noncopyable types for other Boost libraries.
@@ -42,7 +42,7 @@
 
 #if defined(BOOST_NO_CXX11_RVALUE_REFERENCES) && !defined(BOOST_MOVE_DOXYGEN_INVOKED)
 
-   #include <boost/move/detail/meta_utils.hpp>
+   #include "boost/move/detail/meta_utils.hpp"
 
    //Move emulation rv breaks standard aliasing rules so add workarounds for some compilers
    #if defined(__GNUC__) && (__GNUC__ >= 4) && \
@@ -400,7 +400,7 @@
 
    #else //!defined(BOOST_MOVE_MSVC_AUTO_MOVE_RETURN_BUG) || defined(BOOST_MOVE_DOXYGEN_INVOKED)
 
-      #include <boost/move/detail/meta_utils.hpp>
+      #include "boost/move/detail/meta_utils.hpp"
 
       namespace boost {
       namespace move_detail {
@@ -441,6 +441,6 @@
 
 #endif   //BOOST_NO_CXX11_RVALUE_REFERENCES
 
-#include <boost/move/detail/config_end.hpp>
+#include "boost/move/detail/config_end.hpp"
 
 #endif //#ifndef BOOST_MOVE_CORE_HPP

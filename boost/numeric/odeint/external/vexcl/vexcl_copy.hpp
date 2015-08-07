@@ -21,7 +21,7 @@
 #include <vexcl/vector.hpp>
 #include <vexcl/multivector.hpp>
 
-#include <boost/numeric/odeint/util/copy.hpp>
+#include "boost/numeric/odeint/util/copy.hpp"
 
 namespace boost {
 namespace numeric {

@@ -9,9 +9,9 @@
 #ifndef BOOST_DETAIL_WINAPI_MEMORY_HPP
 #define BOOST_DETAIL_WINAPI_MEMORY_HPP
 
-#include <boost/detail/winapi/basic_types.hpp>
-#include <boost/detail/winapi/security.hpp>
-#include <boost/detail/winapi/LocalFree.hpp>
+#include "boost/detail/winapi/basic_types.hpp"
+#include "boost/detail/winapi/security.hpp"
+#include "boost/detail/winapi/LocalFree.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

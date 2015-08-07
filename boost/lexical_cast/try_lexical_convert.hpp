@@ -18,23 +18,23 @@
 #ifndef BOOST_LEXICAL_CAST_TRY_LEXICAL_CONVERT_HPP
 #define BOOST_LEXICAL_CAST_TRY_LEXICAL_CONVERT_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #   pragma once
 #endif
 
 #include <string>
-#include <boost/mpl/if.hpp>
-#include <boost/type_traits/ice.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/is_arithmetic.hpp>
+#include "boost/mpl/if.hpp"
+#include "boost/type_traits/ice.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/is_arithmetic.hpp"
 
-#include <boost/lexical_cast/detail/is_character.hpp>
-#include <boost/lexical_cast/detail/converter_numeric.hpp>
-#include <boost/lexical_cast/detail/converter_lexical.hpp>
+#include "boost/lexical_cast/detail/is_character.hpp"
+#include "boost/lexical_cast/detail/converter_numeric.hpp"
+#include "boost/lexical_cast/detail/converter_lexical.hpp"
 
-#include <boost/range/iterator_range_core.hpp>
-#include <boost/container/container_fwd.hpp>
+#include "boost/range/iterator_range_core.hpp"
+#include "boost/container/container_fwd.hpp"
 
 namespace boost {
     namespace detail

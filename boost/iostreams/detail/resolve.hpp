@@ -12,33 +12,33 @@
 # pragma once
 #endif              
 
-#include <boost/config.hpp> // partial spec, put size_t in std.
+#include "boost/config.hpp" // partial spec, put size_t in std.
 #include <cstddef>          // std::size_t.
-#include <boost/detail/is_incrementable.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/detail/adapter/mode_adapter.hpp>
-#include <boost/iostreams/detail/adapter/output_iterator_adapter.hpp>
-#include <boost/iostreams/detail/adapter/range_adapter.hpp>
-#include <boost/iostreams/detail/config/gcc.hpp>
-#include <boost/iostreams/detail/config/overload_resolution.hpp>
-#include <boost/iostreams/detail/config/wide_streams.hpp>
-#include <boost/iostreams/detail/enable_if_stream.hpp>
-#include <boost/iostreams/detail/is_dereferenceable.hpp>
-#include <boost/iostreams/detail/is_iterator_range.hpp>
-#include <boost/iostreams/detail/select.hpp>
-#include <boost/iostreams/detail/wrap_unwrap.hpp>
-#include <boost/iostreams/device/array.hpp>
-#include <boost/iostreams/traits.hpp>
-#include <boost/mpl/and.hpp>
-#include <boost/mpl/bool.hpp> // true_.
-#include <boost/mpl/if.hpp>
+#include "boost/detail/is_incrementable.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/detail/adapter/mode_adapter.hpp"
+#include "boost/iostreams/detail/adapter/output_iterator_adapter.hpp"
+#include "boost/iostreams/detail/adapter/range_adapter.hpp"
+#include "boost/iostreams/detail/config/gcc.hpp"
+#include "boost/iostreams/detail/config/overload_resolution.hpp"
+#include "boost/iostreams/detail/config/wide_streams.hpp"
+#include "boost/iostreams/detail/enable_if_stream.hpp"
+#include "boost/iostreams/detail/is_dereferenceable.hpp"
+#include "boost/iostreams/detail/is_iterator_range.hpp"
+#include "boost/iostreams/detail/select.hpp"
+#include "boost/iostreams/detail/wrap_unwrap.hpp"
+#include "boost/iostreams/device/array.hpp"
+#include "boost/iostreams/traits.hpp"
+#include "boost/mpl/and.hpp"
+#include "boost/mpl/bool.hpp" // true_.
+#include "boost/mpl/if.hpp"
 #if !BOOST_WORKAROUND(BOOST_MSVC, <= 1300)
-# include <boost/range/iterator_range.hpp>
+# include "boost/range/iterator_range.hpp"
 #endif // #if BOOST_WORKAROUND(BOOST_MSVC, <= 1300)
-#include <boost/type_traits/is_array.hpp>
+#include "boost/type_traits/is_array.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp> // VC7.1 C4224.
+#include "boost/iostreams/detail/config/disable_warnings.hpp" // VC7.1 C4224.
 
 namespace boost { namespace iostreams { namespace detail {
 
@@ -230,6 +230,6 @@ resolve(T& t BOOST_IOSTREAMS_ENABLE_IF_STREAM(T))
 
 } } } // End namespaces detail, iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp> // VC7.1 4224.
+#include "boost/iostreams/detail/config/enable_warnings.hpp" // VC7.1 4224.
 
 #endif // BOOST_IOSTREAMS_DETAIL_RESOLVE_HPP_INCLUDED

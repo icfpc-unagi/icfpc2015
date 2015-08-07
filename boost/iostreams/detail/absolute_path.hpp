@@ -18,11 +18,11 @@
 #define BOOST_IOSTREAMS_DETAIL_ABSOLUTE_PATH_HPP_INCLUDED
 
 #include <string>
-#include <boost/iostreams/detail/config/windows_posix.hpp>
+#include "boost/iostreams/detail/config/windows_posix.hpp"
 #ifdef BOOST_IOSTREAMS_WINDOWS
 # include <cctype>
 #endif
-#include <boost/iostreams/detail/current_directory.hpp>
+#include "boost/iostreams/detail/current_directory.hpp"
 
 namespace boost { namespace iostreams { namespace detail {
 

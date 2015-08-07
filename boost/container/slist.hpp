@@ -15,29 +15,29 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
-#include <boost/container/container_fwd.hpp>
-#include <boost/container/throw_exception.hpp>
-#include <boost/move/utility_core.hpp>
-#include <boost/move/detail/move_helpers.hpp>
-#include <boost/move/traits.hpp>
-#include <boost/intrusive/pointer_traits.hpp>
-#include <boost/container/detail/utilities.hpp>
-#include <boost/container/detail/iterators.hpp>
-#include <boost/container/detail/mpl.hpp>
-#include <boost/container/detail/type_traits.hpp>
-#include <boost/core/no_exceptions_support.hpp>
-#include <boost/container/detail/node_alloc_holder.hpp>
-#include <boost/intrusive/slist.hpp>
+#include "boost/container/container_fwd.hpp"
+#include "boost/container/throw_exception.hpp"
+#include "boost/move/utility_core.hpp"
+#include "boost/move/detail/move_helpers.hpp"
+#include "boost/move/traits.hpp"
+#include "boost/intrusive/pointer_traits.hpp"
+#include "boost/container/detail/utilities.hpp"
+#include "boost/container/detail/iterators.hpp"
+#include "boost/container/detail/mpl.hpp"
+#include "boost/container/detail/type_traits.hpp"
+#include "boost/core/no_exceptions_support.hpp"
+#include "boost/container/detail/node_alloc_holder.hpp"
+#include "boost/intrusive/slist.hpp"
 #include <iterator>
 
 
 #if defined(BOOST_CONTAINER_PERFECT_FORWARDING) || defined(BOOST_CONTAINER_DOXYGEN_INVOKED)
 //Preprocessor library to emulate perfect forwarding
 #else
-#include <boost/container/detail/preprocessor.hpp>
+#include "boost/container/detail/preprocessor.hpp"
 #endif
 
 #include <iterator>
@@ -1725,6 +1725,6 @@ class insert_iterator<boost::container::slist<T, Allocator> >
 
 #endif   //#ifndef BOOST_CONTAINER_DOXYGEN_INVOKED
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif // BOOST_CONTAINER_SLIST_HPP

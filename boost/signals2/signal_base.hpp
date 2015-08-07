@@ -11,8 +11,8 @@
 #ifndef BOOST_SIGNALS2_SIGNAL_BASE_HPP
 #define BOOST_SIGNALS2_SIGNAL_BASE_HPP
 
-#include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include "boost/noncopyable.hpp"
+#include "boost/shared_ptr.hpp"
 
 namespace boost {
   namespace signals2 {

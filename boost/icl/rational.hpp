@@ -13,7 +13,7 @@ itl_rational provides adapter code for boost::rational.
 #ifndef BOOST_ICL_RATIONAL_HPP_JOFA_080913
 #define BOOST_ICL_RATIONAL_HPP_JOFA_080913
 
-#include <boost/config.hpp> // For BOOST_MSVC and more
+#include "boost/config.hpp" // For BOOST_MSVC and more
 
 #ifdef BOOST_MSVC 
 #pragma warning(push)
@@ -22,15 +22,15 @@ itl_rational provides adapter code for boost::rational.
 #pragma warning(disable:4800) // 'unsigned int' : forcing value to bool 'true' or 'false' (performance warning)
 #endif                        
 
-#include <boost/rational.hpp>
+#include "boost/rational.hpp"
 
 #ifdef BOOST_MSVC
 #pragma warning(pop)
 #endif
 
-#include <boost/icl/type_traits/is_continuous.hpp>
-#include <boost/icl/type_traits/has_inverse.hpp>
-#include <boost/icl/type_traits/is_numeric.hpp>
+#include "boost/icl/type_traits/is_continuous.hpp"
+#include "boost/icl/type_traits/has_inverse.hpp"
+#include "boost/icl/type_traits/is_numeric.hpp"
 
 namespace boost{namespace icl
 {

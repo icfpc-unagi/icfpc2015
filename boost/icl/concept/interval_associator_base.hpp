@@ -8,12 +8,12 @@ Copyright (c) 2011-2011: Joachim Faulhaber
 #ifndef BOOST_ICL_CONCEPT_INTERVAL_ASSOCIATOR_BASE_HPP_JOFA_110301
 #define BOOST_ICL_CONCEPT_INTERVAL_ASSOCIATOR_BASE_HPP_JOFA_110301
 
-#include <boost/icl/type_traits/domain_type_of.hpp>
-#include <boost/icl/type_traits/interval_type_of.hpp>
-#include <boost/icl/type_traits/is_combinable.hpp>
-#include <boost/icl/concept/set_value.hpp>
-#include <boost/icl/concept/map_value.hpp>
-#include <boost/icl/concept/interval.hpp>
+#include "boost/icl/type_traits/domain_type_of.hpp"
+#include "boost/icl/type_traits/interval_type_of.hpp"
+#include "boost/icl/type_traits/is_combinable.hpp"
+#include "boost/icl/concept/set_value.hpp"
+#include "boost/icl/concept/map_value.hpp"
+#include "boost/icl/concept/interval.hpp"
 
 namespace boost{ namespace icl
 {

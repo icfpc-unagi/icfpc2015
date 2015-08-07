@@ -8,8 +8,8 @@
 #ifndef BOOST_LOCLAE_GNU_GETTEXT_HPP
 #define BOOST_LOCLAE_GNU_GETTEXT_HPP
 
-#include <boost/locale/message.hpp>
-#include <boost/function.hpp>
+#include "boost/locale/message.hpp"
+#include "boost/function.hpp"
 #include <stdexcept>
 
 namespace boost {

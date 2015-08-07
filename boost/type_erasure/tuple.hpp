@@ -13,7 +13,7 @@
 #ifndef BOOST_TYPE_ERASURE_TUPLE_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_TUPLE_HPP_INCLUDED
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 
 #ifdef BOOST_TYPE_ERASURE_DOXYGEN
@@ -57,18 +57,18 @@ const any<Concept, TN>& get(const tuple<Concept, T...>& arg);
 
 #elif !defined(BOOST_NO_CXX11_VARIADIC_TEMPLATES) && !defined(BOOST_NO_CXX11_RVALUE_REFERENCES)
 
-#include <boost/mpl/int.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/map.hpp>
-#include <boost/mpl/insert.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/type_traits/remove_const.hpp>
-#include <boost/fusion/include/category_of.hpp>
-#include <boost/fusion/include/iterator_facade.hpp>
-#include <boost/fusion/include/sequence_facade.hpp>
-#include <boost/type_erasure/any.hpp>
-#include <boost/type_erasure/static_binding.hpp>
-#include <boost/type_erasure/config.hpp>
+#include "boost/mpl/int.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/map.hpp"
+#include "boost/mpl/insert.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/type_traits/remove_const.hpp"
+#include "boost/fusion/include/category_of.hpp"
+#include "boost/fusion/include/iterator_facade.hpp"
+#include "boost/fusion/include/sequence_facade.hpp"
+#include "boost/type_erasure/any.hpp"
+#include "boost/type_erasure/static_binding.hpp"
+#include "boost/type_erasure/config.hpp"
 
 namespace boost {
 namespace type_erasure {
@@ -310,25 +310,25 @@ const typename ::boost::type_erasure::detail::cons_advance<
 
 #else
 
-#include <boost/mpl/int.hpp>
-#include <boost/mpl/minus.hpp>
-#include <boost/mpl/equal_to.hpp>
-#include <boost/mpl/map.hpp>
-#include <boost/fusion/include/category_of.hpp>
-#include <boost/fusion/include/iterator_facade.hpp>
-#include <boost/fusion/include/sequence_facade.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/iteration/iterate.hpp>
-#include <boost/preprocessor/repetition/repeat.hpp>
-#include <boost/preprocessor/repetition/enum.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_params.hpp>
-#include <boost/preprocessor/repetition/enum_binary_params.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_binary_params.hpp>
-#include <boost/preprocessor/repetition/enum_params_with_a_default.hpp>
-#include <boost/type_erasure/any.hpp>
-#include <boost/type_erasure/static_binding.hpp>
-#include <boost/type_erasure/config.hpp>
+#include "boost/mpl/int.hpp"
+#include "boost/mpl/minus.hpp"
+#include "boost/mpl/equal_to.hpp"
+#include "boost/mpl/map.hpp"
+#include "boost/fusion/include/category_of.hpp"
+#include "boost/fusion/include/iterator_facade.hpp"
+#include "boost/fusion/include/sequence_facade.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/iteration/iterate.hpp"
+#include "boost/preprocessor/repetition/repeat.hpp"
+#include "boost/preprocessor/repetition/enum.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_params.hpp"
+#include "boost/preprocessor/repetition/enum_binary_params.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_binary_params.hpp"
+#include "boost/preprocessor/repetition/enum_params_with_a_default.hpp"
+#include "boost/type_erasure/any.hpp"
+#include "boost/type_erasure/static_binding.hpp"
+#include "boost/type_erasure/config.hpp"
 
 namespace boost {
 namespace type_erasure {
@@ -514,7 +514,7 @@ typename detail::get_impl<
 }
     
 /** INTERNAL ONLY */
-#define BOOST_PP_FILENAME_1 <boost/type_erasure/tuple.hpp>
+#define BOOST_PP_FILENAME_1 "boost/type_erasure/tuple.hpp"
 /** INTERNAL ONLY */
 #define BOOST_PP_ITERATION_LIMITS (0, BOOST_TYPE_ERASURE_MAX_TUPLE_SIZE)
 #include BOOST_PP_ITERATE()

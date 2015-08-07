@@ -14,21 +14,21 @@
 # pragma once
 #endif              
 
-#include <boost/config.hpp> // NO_STD_LOCALE, DEDUCED_TYPENAME.
+#include "boost/config.hpp" // NO_STD_LOCALE, DEDUCED_TYPENAME.
 #ifndef BOOST_NO_STD_LOCALE
 # include <locale>
 #endif
-#include <boost/iostreams/detail/ios.hpp>   
-#include <boost/iostreams/detail/wrap_unwrap.hpp>       
-#include <boost/iostreams/traits.hpp>         
-#include <boost/iostreams/operations.hpp>        
-#include <boost/mpl/if.hpp>    
-#include <boost/static_assert.hpp>  
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type_traits/is_same.hpp> 
+#include "boost/iostreams/detail/ios.hpp"   
+#include "boost/iostreams/detail/wrap_unwrap.hpp"       
+#include "boost/iostreams/traits.hpp"         
+#include "boost/iostreams/operations.hpp"        
+#include "boost/mpl/if.hpp"    
+#include "boost/static_assert.hpp"  
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/type_traits/is_same.hpp" 
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>
+#include "boost/iostreams/detail/config/disable_warnings.hpp"
 
 namespace boost { namespace iostreams {
 
@@ -255,6 +255,6 @@ inline combined_filter<InputFilter, OutputFilter>::combined_filter
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>
+#include "boost/iostreams/detail/config/enable_warnings.hpp"
 
 #endif // #ifndef BOOST_IOSTREAMS_COMBINE_HPP_INCLUDED

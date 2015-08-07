@@ -58,11 +58,11 @@ TODO:
 #ifndef BOOST_CHRONO_SYSTEM_CLOCKS_HPP
 #define BOOST_CHRONO_SYSTEM_CLOCKS_HPP
 
-#include <boost/chrono/config.hpp>
-#include <boost/chrono/duration.hpp>
-#include <boost/chrono/time_point.hpp>
-#include <boost/chrono/detail/system.hpp>
-#include <boost/chrono/clock_string.hpp>
+#include "boost/chrono/config.hpp"
+#include "boost/chrono/duration.hpp"
+#include "boost/chrono/time_point.hpp"
+#include "boost/chrono/detail/system.hpp"
+#include "boost/chrono/clock_string.hpp"
 
 #include <ctime>
 
@@ -81,7 +81,7 @@ TODO:
 
 // this must occur after all of the includes and before any code appears:
 #ifndef BOOST_CHRONO_HEADER_ONLY
-#include <boost/config/abi_prefix.hpp> // must be the last #include
+#include "boost/config/abi_prefix.hpp" // must be the last #include
 #endif
 
 
@@ -225,9 +225,9 @@ namespace chrono {
 
 #ifndef BOOST_CHRONO_HEADER_ONLY
 // the suffix header occurs after all of our code:
-#include <boost/config/abi_suffix.hpp> // pops abi_prefix.hpp pragmas
+#include "boost/config/abi_suffix.hpp" // pops abi_prefix.hpp pragmas
 #else
-#include <boost/chrono/detail/inlined/chrono.hpp>
+#include "boost/chrono/detail/inlined/chrono.hpp"
 #endif
 
 #endif // BOOST_CHRONO_SYSTEM_CLOCKS_HPP

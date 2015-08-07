@@ -16,9 +16,9 @@
 #define BOOST_INPUT_ITERATOR_FACADE_HPP_071894GER
 
 // Boost
-#include <boost/iterator/iterator_facade.hpp>
+#include "boost/iterator/iterator_facade.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -103,7 +103,7 @@ private:
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_INPUT_ITERATOR_FACADE_HPP_071894GER
 

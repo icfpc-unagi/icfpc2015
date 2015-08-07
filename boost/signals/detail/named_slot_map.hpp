@@ -10,12 +10,12 @@
 #ifndef BOOST_SIGNALS_NAMED_SLOT_MAP_HPP
 #define BOOST_SIGNALS_NAMED_SLOT_MAP_HPP
 
-#include <boost/signals/detail/config.hpp>
-#include <boost/signals/detail/signals_common.hpp>
-#include <boost/signals/connection.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/function/function2.hpp>
-#include <boost/iterator/iterator_facade.hpp>
+#include "boost/signals/detail/config.hpp"
+#include "boost/signals/detail/signals_common.hpp"
+#include "boost/signals/connection.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/function/function2.hpp"
+#include "boost/iterator/iterator_facade.hpp"
 #include <map>
 #include <memory>
 #include <utility>

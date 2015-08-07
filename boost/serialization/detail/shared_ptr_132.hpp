@@ -14,19 +14,19 @@
 //  See http://www.boost.org/libs/smart_ptr/shared_ptr.htm for documentation.
 //
 
-#include <boost/config.hpp>   // for broken compiler workarounds
+#include "boost/config.hpp"   // for broken compiler workarounds
 
 #if defined(BOOST_NO_MEMBER_TEMPLATES) && !defined(BOOST_MSVC6_MEMBER_TEMPLATES)
-#include <boost/serialization/detail/shared_ptr_nmt_132.hpp>
+#include "boost/serialization/detail/shared_ptr_nmt_132.hpp"
 #else
 
-#include <boost/assert.hpp>
-#include <boost/checked_delete.hpp>
-#include <boost/serialization/throw_exception.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/assert.hpp"
+#include "boost/checked_delete.hpp"
+#include "boost/serialization/throw_exception.hpp"
+#include "boost/detail/workaround.hpp"
 
-#include <boost/serialization/access.hpp>
-#include <boost/serialization/detail/shared_count_132.hpp>
+#include "boost/serialization/access.hpp"
+#include "boost/serialization/detail/shared_count_132.hpp"
 
 #include <memory>               // for std::auto_ptr
 #include <algorithm>            // for std::swap

@@ -7,8 +7,8 @@
 #ifndef BOOST_CONTEXT_DETAIL_CONFIG_H
 #define BOOST_CONTEXT_DETAIL_CONFIG_H
 
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
 
 #ifdef BOOST_CONTEXT_DECL
 # undef BOOST_CONTEXT_DECL
@@ -32,7 +32,7 @@
 # if defined(BOOST_ALL_DYN_LINK) || defined(BOOST_CONTEXT_DYN_LINK)
 #  define BOOST_DYN_LINK
 # endif
-# include <boost/config/auto_link.hpp>
+# include "boost/config/auto_link.hpp"
 #endif
 
 #undef BOOST_CONTEXT_CALLDECL

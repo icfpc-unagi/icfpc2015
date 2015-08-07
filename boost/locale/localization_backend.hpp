@@ -7,8 +7,8 @@
 //
 #ifndef BOOST_LOCALE_LOCALIZATION_BACKEND_HPP
 #define BOOST_LOCALE_LOCALIZATION_BACKEND_HPP
-#include <boost/locale/config.hpp>
-#include <boost/locale/generator.hpp>
+#include "boost/locale/config.hpp"
+#include "boost/locale/generator.hpp"
 #ifdef BOOST_MSVC
 #  pragma warning(push)
 #  pragma warning(disable : 4275 4251 4231 4660)

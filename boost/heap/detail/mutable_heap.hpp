@@ -16,8 +16,8 @@
 #include <list>
 #include <utility>
 
-#include <boost/iterator/iterator_adaptor.hpp>
-#include <boost/heap/detail/ordered_adaptor_iterator.hpp>
+#include "boost/iterator/iterator_adaptor.hpp"
+#include "boost/heap/detail/ordered_adaptor_iterator.hpp"
 
 namespace boost  {
 namespace heap   {

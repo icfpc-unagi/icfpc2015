@@ -19,12 +19,12 @@
 #endif              
 
 #include <algorithm>              // swap.
-#include <boost/detail/workaround.hpp>
-#include <boost/mpl/if.hpp>
+#include "boost/detail/workaround.hpp"
+#include "boost/mpl/if.hpp"
 #if BOOST_WORKAROUND(__MWERKS__, > 0x3003)
 # include <msl_utility>
 #else
-# include <boost/call_traits.hpp>
+# include "boost/call_traits.hpp"
 #endif
 
 namespace boost { namespace iostreams { namespace detail {

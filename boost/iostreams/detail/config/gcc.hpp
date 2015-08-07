@@ -5,7 +5,7 @@
 
 // See http://www.boost.org/libs/iostreams for documentation.
 
-// Adapted from <boost/config/auto_link.hpp> and from
+// Adapted from "boost/config/auto_link.hpp" and from
 // http://www.boost.org/more/separate_compilation.html, by John Maddock.
 
 #ifndef BOOST_IOSTREAMS_DETAIL_CONFIG_GCC_HPP_INCLUDED
@@ -15,7 +15,7 @@
 # pragma once
 #endif              
 
-#include <boost/config.hpp> // BOOST_INTEL.
+#include "boost/config.hpp" // BOOST_INTEL.
 
 #if defined(__GNUC__) && !defined(BOOST_INTEL)
 # define BOOST_IOSTREAMS_GCC (__GNUC__ * 100 + __GNUC_MINOR__)

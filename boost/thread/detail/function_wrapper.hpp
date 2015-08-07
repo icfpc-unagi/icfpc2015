@@ -10,11 +10,11 @@
 #ifndef BOOST_THREAD_DETAIL_FUNCTION_WRAPPER_HPP
 #define BOOST_THREAD_DETAIL_FUNCTION_WRAPPER_HPP
 
-#include <boost/config.hpp>
-#include <boost/thread/detail/memory.hpp>
-#include <boost/thread/detail/move.hpp>
+#include "boost/config.hpp"
+#include "boost/thread/detail/memory.hpp"
+#include "boost/thread/detail/move.hpp"
 
-#include <boost/thread/csbl/memory/unique_ptr.hpp>
+#include "boost/thread/csbl/memory/unique_ptr.hpp"
 
 #include <memory>
 #include <functional>

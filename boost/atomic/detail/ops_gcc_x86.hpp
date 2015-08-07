@@ -16,14 +16,14 @@
 #ifndef BOOST_ATOMIC_DETAIL_OPS_GCC_X86_HPP_INCLUDED_
 #define BOOST_ATOMIC_DETAIL_OPS_GCC_X86_HPP_INCLUDED_
 
-#include <boost/memory_order.hpp>
-#include <boost/atomic/detail/config.hpp>
-#include <boost/atomic/detail/storage_type.hpp>
-#include <boost/atomic/detail/operations_fwd.hpp>
-#include <boost/atomic/capabilities.hpp>
+#include "boost/memory_order.hpp"
+#include "boost/atomic/detail/config.hpp"
+#include "boost/atomic/detail/storage_type.hpp"
+#include "boost/atomic/detail/operations_fwd.hpp"
+#include "boost/atomic/capabilities.hpp"
 #if defined(BOOST_ATOMIC_DETAIL_X86_HAS_CMPXCHG8B) || defined(BOOST_ATOMIC_DETAIL_X86_HAS_CMPXCHG16B)
-#include <boost/atomic/detail/ops_gcc_x86_dcas.hpp>
-#include <boost/atomic/detail/ops_cas_based.hpp>
+#include "boost/atomic/detail/ops_gcc_x86_dcas.hpp"
+#include "boost/atomic/detail/ops_cas_based.hpp"
 #endif
 
 #ifdef BOOST_HAS_PRAGMA_ONCE

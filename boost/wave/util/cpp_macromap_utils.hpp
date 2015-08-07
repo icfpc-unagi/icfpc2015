@@ -13,11 +13,11 @@
 #if !defined(CPP_MACROMAP_UTIL_HPP_HK041119)
 #define CPP_MACROMAP_UTIL_HPP_HK041119
 
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/token_ids.hpp>
-#include <boost/wave/util/unput_queue_iterator.hpp> 
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/token_ids.hpp"
+#include "boost/wave/util/unput_queue_iterator.hpp" 
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

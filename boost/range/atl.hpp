@@ -164,8 +164,8 @@ namespace ATL {
 //
 
 
-#include <boost/mpl/identity.hpp>
-#include <boost/pointee.hpp>
+#include "boost/mpl/identity.hpp"
+#include "boost/pointee.hpp"
 
 
 namespace boost {
@@ -206,10 +206,10 @@ namespace boost {
 //
 
 
-#include <boost/iterator/indirect_iterator.hpp>
-#include <boost/iterator/zip_iterator.hpp>
-#include <boost/range/detail/microsoft.hpp>
-#include <boost/tuple/tuple.hpp>
+#include "boost/iterator/indirect_iterator.hpp"
+#include "boost/iterator/zip_iterator.hpp"
+#include "boost/range/detail/microsoft.hpp"
+#include "boost/tuple/tuple.hpp"
 #include <atlbase.h> // CComBSTR
 
 

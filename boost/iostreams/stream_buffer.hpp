@@ -13,20 +13,20 @@
 #endif
 
 #include <memory>            // allocator.
-#include <boost/config.hpp>  // BOOST_DEDUCED_TYPENAME.
-#include <boost/iostreams/detail/char_traits.hpp>
-#include <boost/iostreams/detail/config/overload_resolution.hpp>
-#include <boost/iostreams/detail/forward.hpp>
-#include <boost/iostreams/detail/ios.hpp>  // failure, streamsize.
-#include <boost/iostreams/detail/streambuf/direct_streambuf.hpp>
-#include <boost/iostreams/detail/streambuf/indirect_streambuf.hpp>
-#include <boost/iostreams/traits.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/type_traits/is_convertible.hpp>
+#include "boost/config.hpp"  // BOOST_DEDUCED_TYPENAME.
+#include "boost/iostreams/detail/char_traits.hpp"
+#include "boost/iostreams/detail/config/overload_resolution.hpp"
+#include "boost/iostreams/detail/forward.hpp"
+#include "boost/iostreams/detail/ios.hpp"  // failure, streamsize.
+#include "boost/iostreams/detail/streambuf/direct_streambuf.hpp"
+#include "boost/iostreams/detail/streambuf/indirect_streambuf.hpp"
+#include "boost/iostreams/traits.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/type_traits/is_convertible.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/disable_warnings.hpp"  // MSVC.
 
 namespace boost { namespace iostreams { namespace detail {
 
@@ -46,7 +46,7 @@ struct stream_buffer_traits {
 } } } // End namespaces detail, iostreams, boost
 
 #ifdef BOOST_IOSTREAMS_BROKEN_OVERLOAD_RESOLUTION
-# include <boost/iostreams/detail/broken_overload_resolution/stream_buffer.hpp>
+# include "boost/iostreams/detail/broken_overload_resolution/stream_buffer.hpp"
 #else
 
 namespace boost { namespace iostreams {
@@ -111,6 +111,6 @@ private:
 
 #endif // #ifdef BOOST_IOSTREAMS_BROKEN_OVERLOAD_RESOLUTION
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/enable_warnings.hpp"  // MSVC.
 
 #endif // #ifndef BOOST_IOSTREAMS_STREAM_BUFFER_HPP_INCLUDED

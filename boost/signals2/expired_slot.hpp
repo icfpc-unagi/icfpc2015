@@ -11,7 +11,7 @@
 #ifndef BOOST_SIGNALS2_EXPIRED_SLOT_HPP
 #define BOOST_SIGNALS2_EXPIRED_SLOT_HPP
 
-#include <boost/smart_ptr/bad_weak_ptr.hpp>
+#include "boost/smart_ptr/bad_weak_ptr.hpp"
 
 namespace boost
 {

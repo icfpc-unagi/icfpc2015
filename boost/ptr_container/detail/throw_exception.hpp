@@ -12,8 +12,8 @@
 #ifndef BOOST_PTR_CONTAINER_DETAIL_THROW_EXCEPTION
 #define BOOST_PTR_CONTAINER_DETAIL_THROW_EXCEPTION
 
-#include <boost/assert.hpp>
-#include <boost/config.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"
 
 #ifdef BOOST_NO_EXCEPTIONS
 #define BOOST_PTR_CONTAINER_NO_EXCEPTIONS

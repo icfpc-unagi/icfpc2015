@@ -10,15 +10,15 @@
 #ifndef BOOST_INTEGER_INTEGER_MASK_HPP
 #define BOOST_INTEGER_INTEGER_MASK_HPP
 
-#include <boost/integer_fwd.hpp>  // self include
+#include "boost/integer_fwd.hpp"  // self include
 
-#include <boost/config.hpp>   // for BOOST_STATIC_CONSTANT
-#include <boost/integer.hpp>  // for boost::uint_t
+#include "boost/config.hpp"   // for BOOST_STATIC_CONSTANT
+#include "boost/integer.hpp"  // for boost::uint_t
 
 #include <climits>  // for UCHAR_MAX, etc.
 #include <cstddef>  // for std::size_t
 
-#include <boost/limits.hpp>  // for std::numeric_limits
+#include "boost/limits.hpp"  // for std::numeric_limits
 
 //
 // We simply cannot include this header on gcc without getting copious warnings of the kind:

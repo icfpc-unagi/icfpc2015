@@ -7,14 +7,14 @@
 #if !defined(BOOST_TTI_HAS_MEMBER_FUNCTION_HPP)
 #define BOOST_TTI_HAS_MEMBER_FUNCTION_HPP
 
-#include <boost/config.hpp>
-#include <boost/function_types/property_tags.hpp>
-#include <boost/mpl/vector.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/tti/detail/ddeftype.hpp>
-#include <boost/tti/detail/dmem_fun.hpp>
-#include <boost/tti/gen/has_member_function_gen.hpp>
-#include <boost/tti/gen/namespace_gen.hpp>
+#include "boost/config.hpp"
+#include "boost/function_types/property_tags.hpp"
+#include "boost/mpl/vector.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/tti/detail/ddeftype.hpp"
+#include "boost/tti/detail/dmem_fun.hpp"
+#include "boost/tti/gen/has_member_function_gen.hpp"
+#include "boost/tti/gen/namespace_gen.hpp"
 
 /*
 

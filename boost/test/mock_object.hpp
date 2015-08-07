@@ -16,13 +16,13 @@
 #define BOOST_TEST_MOCK_OBJECT_HPP_112205GER
 
 // Boost.Test
-#include <boost/test/detail/config.hpp>
-#include <boost/test/interaction_based.hpp>
+#include "boost/test/detail/config.hpp"
+#include "boost/test/interaction_based.hpp"
 
 // Boost
-#include <boost/preprocessor/punctuation/comma.hpp>
+#include "boost/preprocessor/punctuation/comma.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -323,6 +323,6 @@ MO_BINARY_OP( >>, "Right shift" )
 
 } // namespace boost
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_MOCK_OBJECT_HPP_112205GER

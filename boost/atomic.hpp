@@ -9,7 +9,7 @@
 
 // This header includes all Boost.Atomic public headers
 
-#include <boost/atomic/atomic.hpp>
+#include "boost/atomic/atomic.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

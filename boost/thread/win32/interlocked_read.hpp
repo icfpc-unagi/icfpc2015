@@ -10,10 +10,10 @@
 //  accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/detail/interlocked.hpp>
-#include <boost/thread/detail/config.hpp>
+#include "boost/detail/interlocked.hpp"
+#include "boost/thread/detail/config.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 #ifdef BOOST_MSVC
 
@@ -72,6 +72,6 @@ namespace boost
 
 #endif
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

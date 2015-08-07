@@ -12,11 +12,11 @@
 #ifndef BOOST_UUID_IO_HPP
 #define BOOST_UUID_IO_HPP
 
-#include <boost/uuid/uuid.hpp>
+#include "boost/uuid/uuid.hpp"
 #include <ios>
 #include <ostream>
 #include <istream>
-#include <boost/io/ios_state.hpp>
+#include "boost/io/ios_state.hpp"
 #include <locale>
 #include <algorithm>
 

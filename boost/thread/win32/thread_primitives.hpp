@@ -10,13 +10,13 @@
 //  accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/predef/platform.h>
-#include <boost/throw_exception.hpp>
-#include <boost/assert.hpp>
-#include <boost/thread/exceptions.hpp>
-#include <boost/detail/interlocked.hpp>
-//#include <boost/detail/winapi/synchronization.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/predef/platform.h"
+#include "boost/throw_exception.hpp"
+#include "boost/assert.hpp"
+#include "boost/thread/exceptions.hpp"
+#include "boost/detail/interlocked.hpp"
+//#include "boost/detail/winapi/synchronization.hpp"
 #include <algorithm>
 
 #if BOOST_PLAT_WINDOWS_RUNTIME
@@ -208,7 +208,7 @@ namespace boost
 # error "Win32 functions not available"
 #endif
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -661,6 +661,6 @@ namespace boost
 }
 #endif
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

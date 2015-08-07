@@ -9,7 +9,7 @@
 #ifndef BOOST_ALIGN_DETAIL_IS_ALIGNMENT_HPP
 #define BOOST_ALIGN_DETAIL_IS_ALIGNMENT_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #include <cstddef>
 
 namespace boost {

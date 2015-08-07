@@ -12,21 +12,21 @@
 #include <limits>
 #include <numeric>
 #include <functional>
-#include <boost/range.hpp>
-#include <boost/parameter/keyword.hpp>
-#include <boost/tuple/tuple.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/placeholders.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/accumulators/framework/accumulator_base.hpp>
-#include <boost/accumulators/framework/extractor.hpp>
-#include <boost/accumulators/numeric/functional.hpp>
-#include <boost/accumulators/framework/parameters/sample.hpp>
-#include <boost/accumulators/statistics_fwd.hpp>
-#include <boost/accumulators/statistics/peaks_over_threshold.hpp>
-#include <boost/accumulators/statistics/weighted_peaks_over_threshold.hpp>
-#include <boost/accumulators/statistics/pot_quantile.hpp>
-#include <boost/accumulators/statistics/tail_mean.hpp>
+#include "boost/range.hpp"
+#include "boost/parameter/keyword.hpp"
+#include "boost/tuple/tuple.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/placeholders.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/accumulators/framework/accumulator_base.hpp"
+#include "boost/accumulators/framework/extractor.hpp"
+#include "boost/accumulators/numeric/functional.hpp"
+#include "boost/accumulators/framework/parameters/sample.hpp"
+#include "boost/accumulators/statistics_fwd.hpp"
+#include "boost/accumulators/statistics/peaks_over_threshold.hpp"
+#include "boost/accumulators/statistics/weighted_peaks_over_threshold.hpp"
+#include "boost/accumulators/statistics/pot_quantile.hpp"
+#include "boost/accumulators/statistics/tail_mean.hpp"
 
 namespace boost { namespace accumulators
 {

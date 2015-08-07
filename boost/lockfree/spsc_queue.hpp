@@ -13,20 +13,20 @@
 #include <algorithm>
 #include <memory>
 
-#include <boost/aligned_storage.hpp>
-#include <boost/assert.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/utility.hpp>
-#include <boost/utility/enable_if.hpp>
+#include "boost/aligned_storage.hpp"
+#include "boost/assert.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/utility.hpp"
+#include "boost/utility/enable_if.hpp"
 
-#include <boost/type_traits/has_trivial_destructor.hpp>
-#include <boost/type_traits/is_convertible.hpp>
+#include "boost/type_traits/has_trivial_destructor.hpp"
+#include "boost/type_traits/is_convertible.hpp"
 
-#include <boost/lockfree/detail/atomic.hpp>
-#include <boost/lockfree/detail/branch_hints.hpp>
-#include <boost/lockfree/detail/copy_payload.hpp>
-#include <boost/lockfree/detail/parameter.hpp>
-#include <boost/lockfree/detail/prefix.hpp>
+#include "boost/lockfree/detail/atomic.hpp"
+#include "boost/lockfree/detail/branch_hints.hpp"
+#include "boost/lockfree/detail/copy_payload.hpp"
+#include "boost/lockfree/detail/parameter.hpp"
+#include "boost/lockfree/detail/prefix.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

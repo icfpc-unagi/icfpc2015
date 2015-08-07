@@ -9,11 +9,11 @@
 
 #include <cstddef>
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
-#include <boost/context/detail/config.hpp>
-#include <boost/coroutine/segmented_stack_allocator.hpp>
-#include <boost/coroutine/standard_stack_allocator.hpp>
+#include "boost/context/detail/config.hpp"
+#include "boost/coroutine/segmented_stack_allocator.hpp"
+#include "boost/coroutine/standard_stack_allocator.hpp"
 
 #ifdef BOOST_HAS_ABI_HEADERS
 #  include BOOST_ABI_PREFIX

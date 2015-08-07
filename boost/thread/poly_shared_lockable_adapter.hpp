@@ -11,8 +11,8 @@
 #ifndef BOOST_THREAD_POLY_SHARED_LOCKABLE_ADAPTER_HPP
 #define BOOST_THREAD_POLY_SHARED_LOCKABLE_ADAPTER_HPP
 
-#include <boost/thread/poly_lockable_adapter.hpp>
-#include <boost/thread/poly_shared_lockable.hpp>
+#include "boost/thread/poly_lockable_adapter.hpp"
+#include "boost/thread/poly_shared_lockable.hpp"
 
 namespace boost
 {

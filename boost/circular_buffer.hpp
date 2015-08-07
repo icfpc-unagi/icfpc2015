@@ -15,9 +15,9 @@
     #pragma once
 #endif
 
-#include <boost/circular_buffer_fwd.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/static_assert.hpp>
+#include "boost/circular_buffer_fwd.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/static_assert.hpp"
 
 // BOOST_CB_ENABLE_DEBUG: Debug support control.
 #if defined(NDEBUG) || defined(BOOST_CB_DISABLE_DEBUG)
@@ -28,7 +28,7 @@
 
 // BOOST_CB_ASSERT: Runtime assertion.
 #if BOOST_CB_ENABLE_DEBUG
-    #include <boost/assert.hpp>
+    #include "boost/assert.hpp"
     #define BOOST_CB_ASSERT(Expr) BOOST_ASSERT(Expr)
 #else
     #define BOOST_CB_ASSERT(Expr) ((void)0)
@@ -38,8 +38,8 @@
 #if BOOST_WORKAROUND(__BORLANDC__, <= 0x0550) || BOOST_WORKAROUND(__MWERKS__, <= 0x2407)
     #define BOOST_CB_IS_CONVERTIBLE(Iterator, Type) ((void)0)
 #else
-    #include <boost/detail/iterator.hpp>
-    #include <boost/type_traits/is_convertible.hpp>
+    #include "boost/detail/iterator.hpp"
+    #include "boost/type_traits/is_convertible.hpp"
     #define BOOST_CB_IS_CONVERTIBLE(Iterator, Type) \
         BOOST_STATIC_ASSERT((is_convertible<typename detail::iterator_traits<Iterator>::value_type, Type>::value))
 #endif
@@ -52,10 +52,10 @@
     #define BOOST_CB_ASSERT_TEMPLATED_ITERATOR_CONSTRUCTORS ((void)0);
 #endif
 
-#include <boost/circular_buffer/debug.hpp>
-#include <boost/circular_buffer/details.hpp>
-#include <boost/circular_buffer/base.hpp>
-#include <boost/circular_buffer/space_optimized.hpp>
+#include "boost/circular_buffer/debug.hpp"
+#include "boost/circular_buffer/details.hpp"
+#include "boost/circular_buffer/base.hpp"
+#include "boost/circular_buffer/space_optimized.hpp"
 
 #undef BOOST_CB_ASSERT_TEMPLATED_ITERATOR_CONSTRUCTORS
 #undef BOOST_CB_IS_CONVERTIBLE

@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE:        primary_transform.hpp
-  *   VERSION:     see <boost/version.hpp>
+  *   VERSION:     see "boost/version.hpp"
   *   DESCRIPTION: Heuristically determines the sort string format in use
   *                by the current locale.
   */

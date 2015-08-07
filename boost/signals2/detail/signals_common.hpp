@@ -11,11 +11,11 @@
 #ifndef BOOST_SIGNALS2_SIGNALS_COMMON_HPP
 #define BOOST_SIGNALS2_SIGNALS_COMMON_HPP
 
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/ref.hpp>
-#include <boost/signals2/signal_base.hpp>
-#include <boost/type_traits/is_base_of.hpp>
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/ref.hpp"
+#include "boost/signals2/signal_base.hpp"
+#include "boost/type_traits/is_base_of.hpp"
 
 namespace boost {
   namespace signals2 {

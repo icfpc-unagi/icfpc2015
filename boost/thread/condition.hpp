@@ -6,11 +6,11 @@
 //  accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 
 #if defined BOOST_THREAD_PROVIDES_CONDITION
 
-#include <boost/thread/condition_variable.hpp>
+#include "boost/thread/condition_variable.hpp"
 
 namespace boost
 {

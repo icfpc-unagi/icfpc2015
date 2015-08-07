@@ -11,7 +11,7 @@
 #ifndef BOOST_CHRONO_FLOOR_HPP
 #define BOOST_CHRONO_FLOOR_HPP
 
-#include <boost/chrono/duration.hpp>
+#include "boost/chrono/duration.hpp"
 
 namespace boost
 {

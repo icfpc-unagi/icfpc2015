@@ -14,8 +14,8 @@
 #ifndef BOOST_ATOMIC_DETAIL_OPERATIONS_HPP_INCLUDED_
 #define BOOST_ATOMIC_DETAIL_OPERATIONS_HPP_INCLUDED_
 
-#include <boost/atomic/detail/operations_lockfree.hpp>
-#include <boost/atomic/detail/ops_emulated.hpp>
+#include "boost/atomic/detail/operations_lockfree.hpp"
+#include "boost/atomic/detail/ops_emulated.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

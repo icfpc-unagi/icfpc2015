@@ -8,8 +8,8 @@
 #ifndef BOOST_LOCAL_FUNCTION_DETAIL_PP_KEYWORD_FACILITY_ADD_HPP_
 #define BOOST_LOCAL_FUNCTION_DETAIL_PP_KEYWORD_FACILITY_ADD_HPP_
 
-#include <boost/preprocessor/control/expr_iif.hpp>
-#include <boost/preprocessor/logical/compl.hpp>
+#include "boost/preprocessor/control/expr_iif.hpp"
+#include "boost/preprocessor/logical/compl.hpp"
 
 // `is_front_macro(tokens)` is 1 if `tokens` start w/ `keyword` to add, else 0.
 #define BOOST_LOCAL_FUNCTION_DETAIL_PP_KEYWORD_FACILITY_ADD_FRONT( \

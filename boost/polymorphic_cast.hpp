@@ -12,7 +12,7 @@
 //             inclusion of numeric_cast was removed (Antony Polukhin)
 //  23 Jun 05  numeric_cast removed and redirected to the new verion (Fernando Cacciola)
 //  02 Apr 01  Removed BOOST_NO_LIMITS workarounds and included
-//             <boost/limits.hpp> instead (the workaround did not
+//             "boost/limits.hpp" instead (the workaround did not
 //             actually compile when BOOST_NO_LIMITS was defined in
 //             any case, so we loose nothing). (John Maddock)
 //  21 Jan 01  Undid a bug I introduced yesterday. numeric_cast<> never
@@ -45,8 +45,8 @@
 #ifndef BOOST_POLYMORPHIC_CAST_HPP
 #define BOOST_POLYMORPHIC_CAST_HPP
 
-# include <boost/config.hpp>
-# include <boost/assert.hpp>
+# include "boost/config.hpp"
+# include "boost/assert.hpp"
 # include <typeinfo>
 
 namespace boost

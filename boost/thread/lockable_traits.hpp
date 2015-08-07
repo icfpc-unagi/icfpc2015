@@ -7,13 +7,13 @@
 #ifndef BOOST_THREAD_LOCKABLE_TRAITS_HPP
 #define BOOST_THREAD_LOCKABLE_TRAITS_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 
-#include <boost/assert.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/type_traits/is_class.hpp>
+#include "boost/assert.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/type_traits/is_class.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 // todo make use of integral_constant, true_type and false_type
 
@@ -202,6 +202,6 @@ namespace boost
   };
 
 }
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

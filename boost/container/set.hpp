@@ -15,22 +15,22 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
-#include <boost/container/container_fwd.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
+#include "boost/container/container_fwd.hpp"
 
 #include <utility>
 #include <functional>
 #include <memory>
 
-#include <boost/move/utility_core.hpp>
-#include <boost/move/detail/move_helpers.hpp>
-#include <boost/move/traits.hpp>
-#include <boost/container/detail/mpl.hpp>
-#include <boost/container/detail/tree.hpp>
-#include <boost/move/utility_core.hpp>
+#include "boost/move/utility_core.hpp"
+#include "boost/move/detail/move_helpers.hpp"
+#include "boost/move/traits.hpp"
+#include "boost/container/detail/mpl.hpp"
+#include "boost/container/detail/tree.hpp"
+#include "boost/move/utility_core.hpp"
 #ifndef BOOST_CONTAINER_PERFECT_FORWARDING
-#include <boost/container/detail/preprocessor.hpp>
+#include "boost/container/detail/preprocessor.hpp"
 #endif
 #if !defined(BOOST_NO_CXX11_HDR_INITIALIZER_LIST)
 #include <initializer_list>
@@ -1120,7 +1120,7 @@ namespace container {
 
 }}
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif /* BOOST_CONTAINER_SET_HPP */
 

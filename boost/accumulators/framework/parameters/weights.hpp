@@ -8,8 +8,8 @@
 #ifndef BOOST_ACCUMULATORS_FRAMEWORK_PARAMETERS_WEIGHTS_HPP_EAN_28_10_2005
 #define BOOST_ACCUMULATORS_FRAMEWORK_PARAMETERS_WEIGHTS_HPP_EAN_28_10_2005
 
-#include <boost/parameter/keyword.hpp>
-#include <boost/accumulators/accumulators_fwd.hpp>
+#include "boost/parameter/keyword.hpp"
+#include "boost/accumulators/accumulators_fwd.hpp"
 
 namespace boost { namespace accumulators
 {

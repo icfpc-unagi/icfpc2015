@@ -11,7 +11,7 @@
 #if !defined(BOOST_WAVE_CPP_VALUE_ERROR_INCLUDED)
 #define BOOST_WAVE_CPP_VALUE_ERROR_INCLUDED
 
-#include <boost/wave/wave_config.hpp>
+#include "boost/wave/wave_config.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

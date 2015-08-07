@@ -16,8 +16,8 @@
  * function template boost::iostreams::BOOST_IOSTREAMS_RESTRICT, and object 
  * generator for boost::iostreams::restriction.
  *
- * This design allows <boost/iostreams/restrict.hpp> and 
- * <boost/iostreams/slice.hpp> to share an implementation.
+ * This design allows "boost/iostreams/restrict.hpp" and 
+ * "boost/iostreams/slice.hpp" to share an implementation.
  */
 
 #if !defined(BOOST_IOSTREAMS_RESTRICT_IMPL_HPP_INCLUDED) && \
@@ -28,26 +28,26 @@
 
 # include <algorithm>          // min.
 # include <utility>            // pair.
-# include <boost/cstdint.hpp>  // intmax_t.
-# include <boost/config.hpp>   // DEDUCED_TYPENAME.
-# include <boost/iostreams/categories.hpp>
-# include <boost/iostreams/char_traits.hpp>
-# include <boost/iostreams/detail/adapter/device_adapter.hpp>
-# include <boost/iostreams/detail/adapter/filter_adapter.hpp>
-# include <boost/iostreams/detail/call_traits.hpp>
-# include <boost/iostreams/detail/enable_if_stream.hpp>
-# include <boost/iostreams/detail/error.hpp>
-# include <boost/iostreams/detail/ios.hpp>     // failure.
-# include <boost/iostreams/detail/select.hpp>
-# include <boost/iostreams/operations.hpp>
-# include <boost/iostreams/skip.hpp>
-# include <boost/iostreams/traits.hpp>         // mode_of, is_direct.
-# include <boost/mpl/bool.hpp>
-# include <boost/static_assert.hpp>
-# include <boost/throw_exception.hpp>
-# include <boost/type_traits/is_convertible.hpp>
+# include "boost/cstdint.hpp"  // intmax_t.
+# include "boost/config.hpp"   // DEDUCED_TYPENAME.
+# include "boost/iostreams/categories.hpp"
+# include "boost/iostreams/char_traits.hpp"
+# include "boost/iostreams/detail/adapter/device_adapter.hpp"
+# include "boost/iostreams/detail/adapter/filter_adapter.hpp"
+# include "boost/iostreams/detail/call_traits.hpp"
+# include "boost/iostreams/detail/enable_if_stream.hpp"
+# include "boost/iostreams/detail/error.hpp"
+# include "boost/iostreams/detail/ios.hpp"     // failure.
+# include "boost/iostreams/detail/select.hpp"
+# include "boost/iostreams/operations.hpp"
+# include "boost/iostreams/skip.hpp"
+# include "boost/iostreams/traits.hpp"         // mode_of, is_direct.
+# include "boost/mpl/bool.hpp"
+# include "boost/static_assert.hpp"
+# include "boost/throw_exception.hpp"
+# include "boost/type_traits/is_convertible.hpp"
 
-# include <boost/iostreams/detail/config/disable_warnings.hpp>
+# include "boost/iostreams/detail/config/disable_warnings.hpp"
 
 namespace boost { namespace iostreams {
 

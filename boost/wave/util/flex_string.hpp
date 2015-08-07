@@ -83,18 +83,18 @@ class StoragePolicy
 ////////////////////////////////////////////////////////////////////////////////
 */
 
-#include <boost/config.hpp>
-#include <boost/assert.hpp>
-#include <boost/throw_exception.hpp>
+#include "boost/config.hpp"
+#include "boost/assert.hpp"
+#include "boost/throw_exception.hpp"
 
-#include <boost/iterator/reverse_iterator.hpp>
+#include "boost/iterator/reverse_iterator.hpp"
 
-#include <boost/wave/wave_config.hpp>
+#include "boost/wave/wave_config.hpp"
 #if BOOST_WAVE_SERIALIZATION != 0
-#include <boost/serialization/serialization.hpp>
-#include <boost/serialization/split_free.hpp>
-#include <boost/serialization/collections_save_imp.hpp>
-#include <boost/serialization/collections_load_imp.hpp>
+#include "boost/serialization/serialization.hpp"
+#include "boost/serialization/split_free.hpp"
+#include "boost/serialization/collections_save_imp.hpp"
+#include "boost/serialization/collections_load_imp.hpp"
 #define BOOST_WAVE_FLEX_STRING_SERIALIZATION_HACK 1
 #endif
 

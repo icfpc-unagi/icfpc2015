@@ -15,8 +15,8 @@
 #ifndef BOOST_ATOMIC_DETAIL_LOCKPOOL_HPP_INCLUDED_
 #define BOOST_ATOMIC_DETAIL_LOCKPOOL_HPP_INCLUDED_
 
-#include <boost/atomic/detail/config.hpp>
-#include <boost/atomic/detail/link.hpp>
+#include "boost/atomic/detail/config.hpp"
+#include "boost/atomic/detail/link.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

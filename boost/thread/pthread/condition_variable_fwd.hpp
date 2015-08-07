@@ -6,25 +6,25 @@
 // (C) Copyright 2007-8 Anthony Williams
 // (C) Copyright 2011-2012 Vicente J. Botet Escriba
 
-#include <boost/assert.hpp>
-#include <boost/throw_exception.hpp>
+#include "boost/assert.hpp"
+#include "boost/throw_exception.hpp"
 #include <pthread.h>
-#include <boost/thread/cv_status.hpp>
-#include <boost/thread/mutex.hpp>
-#include <boost/thread/lock_types.hpp>
-#include <boost/thread/thread_time.hpp>
-#include <boost/thread/pthread/timespec.hpp>
+#include "boost/thread/cv_status.hpp"
+#include "boost/thread/mutex.hpp"
+#include "boost/thread/lock_types.hpp"
+#include "boost/thread/thread_time.hpp"
+#include "boost/thread/pthread/timespec.hpp"
 #if defined BOOST_THREAD_USES_DATETIME
-#include <boost/thread/xtime.hpp>
+#include "boost/thread/xtime.hpp"
 #endif
 #ifdef BOOST_THREAD_USES_CHRONO
-#include <boost/chrono/system_clocks.hpp>
-#include <boost/chrono/ceil.hpp>
+#include "boost/chrono/system_clocks.hpp"
+#include "boost/chrono/ceil.hpp"
 #endif
-#include <boost/thread/detail/delete.hpp>
-#include <boost/date_time/posix_time/posix_time_duration.hpp>
+#include "boost/thread/detail/delete.hpp"
+#include "boost/date_time/posix_time/posix_time_duration.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -261,6 +261,6 @@ namespace boost
 }
 
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

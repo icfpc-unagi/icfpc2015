@@ -9,10 +9,10 @@
 #ifndef BOOST_ALIGN_DETAIL_IS_ALIGNED_HPP
 #define BOOST_ALIGN_DETAIL_IS_ALIGNED_HPP
 
-#include <boost/assert.hpp>
-#include <boost/config.hpp>
-#include <boost/align/detail/address.hpp>
-#include <boost/align/detail/is_alignment.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"
+#include "boost/align/detail/address.hpp"
+#include "boost/align/detail/is_alignment.hpp"
 #include <cstddef>
 
 namespace boost {

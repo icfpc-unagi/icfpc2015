@@ -17,13 +17,13 @@
 #define BOOST_TEST_BASIC_CSTRING_HPP_071894GER
 
 // Boost.Test
-#include <boost/test/utils/basic_cstring/basic_cstring_fwd.hpp>
-#include <boost/test/utils/basic_cstring/bcs_char_traits.hpp>
+#include "boost/test/utils/basic_cstring/basic_cstring_fwd.hpp"
+#include "boost/test/utils/basic_cstring/bcs_char_traits.hpp"
 
 // STL
 #include <string>
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -726,6 +726,6 @@ assign_op( std::basic_string<CharT1>& target, basic_cstring<CharT2> src, int )
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_BASIC_CSTRING_HPP_071894GER

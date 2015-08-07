@@ -32,7 +32,7 @@
 #include "boost/type_traits/has_nothrow_constructor.hpp"
 #include "boost/type_traits/has_nothrow_copy.hpp"
 #include "boost/type_traits/has_nothrow_destructor.hpp"
-#include <boost/type_traits/has_operator.hpp>
+#include "boost/type_traits/has_operator.hpp"
 #include "boost/type_traits/has_trivial_assign.hpp"
 #include "boost/type_traits/has_trivial_constructor.hpp"
 #include "boost/type_traits/has_trivial_copy.hpp"
@@ -46,7 +46,7 @@
 #include "boost/type_traits/is_base_and_derived.hpp"
 #include "boost/type_traits/is_base_of.hpp"
 #include "boost/type_traits/is_class.hpp"
-#include <boost/type_traits/is_complex.hpp>
+#include "boost/type_traits/is_complex.hpp"
 #include "boost/type_traits/is_compound.hpp"
 #include "boost/type_traits/is_const.hpp"
 #include "boost/type_traits/is_convertible.hpp"
@@ -80,8 +80,8 @@
 #include "boost/type_traits/is_void.hpp"
 #include "boost/type_traits/is_virtual_base_of.hpp"
 #include "boost/type_traits/is_volatile.hpp"
-#include <boost/type_traits/make_unsigned.hpp>
-#include <boost/type_traits/make_signed.hpp>
+#include "boost/type_traits/make_unsigned.hpp"
+#include "boost/type_traits/make_signed.hpp"
 #include "boost/type_traits/rank.hpp"
 #include "boost/type_traits/remove_bounds.hpp"
 #include "boost/type_traits/remove_extent.hpp"

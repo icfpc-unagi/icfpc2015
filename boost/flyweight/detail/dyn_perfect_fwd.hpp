@@ -13,16 +13,16 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if !defined(BOOST_NO_CXX11_RVALUE_REFERENCES)
 
-#include <boost/preprocessor/arithmetic/add.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/repetition/enum.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/repeat_from_to.hpp>
-#include <boost/preprocessor/seq/seq.hpp>
+#include "boost/preprocessor/arithmetic/add.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/repetition/enum.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/repeat_from_to.hpp"
+#include "boost/preprocessor/seq/seq.hpp"
 
 #define BOOST_FLYWEIGHT_PERFECT_FWD_ARG(z,n,_)                     \
 BOOST_PP_CAT(T,n)&& BOOST_PP_CAT(t,n)
@@ -50,16 +50,16 @@ BOOST_FLYWEIGHT_PERFECT_FWD_WITH_ARGS(name,body)
 
 /* no rvalue refs -> [const] Tn& overloads */
 
-#include <boost/preprocessor/arithmetic/add.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/repetition/enum.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/repeat.hpp>
-#include <boost/preprocessor/repetition/repeat_from_to.hpp>
-#include <boost/preprocessor/seq/elem.hpp>
-#include <boost/preprocessor/seq/for_each_product.hpp> 
-#include <boost/preprocessor/seq/seq.hpp>
-#include <boost/preprocessor/seq/size.hpp>
+#include "boost/preprocessor/arithmetic/add.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/repetition/enum.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/repeat.hpp"
+#include "boost/preprocessor/repetition/repeat_from_to.hpp"
+#include "boost/preprocessor/seq/elem.hpp"
+#include "boost/preprocessor/seq/for_each_product.hpp" 
+#include "boost/preprocessor/seq/seq.hpp"
+#include "boost/preprocessor/seq/size.hpp"
 
 #define BOOST_FLYWEIGHT_CONST(b) BOOST_PP_CAT(BOOST_FLYWEIGHT_CONST,b)
 #define BOOST_FLYWEIGHT_CONST0

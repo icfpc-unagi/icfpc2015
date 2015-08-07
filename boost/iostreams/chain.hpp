@@ -12,7 +12,7 @@
 # pragma once
 #endif
 
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 #include <exception>
 #include <functional>                           // unary_function.
 #include <iterator>                             // advance.
@@ -20,28 +20,28 @@
 #include <memory>                               // allocator, auto_ptr.
 #include <typeinfo>
 #include <stdexcept>                            // logic_error, out_of_range.
-#include <boost/checked_delete.hpp>
-#include <boost/config.hpp>                     // BOOST_MSVC, template friends,
-#include <boost/detail/workaround.hpp>          // BOOST_NESTED_TEMPLATE 
-#include <boost/iostreams/constants.hpp>
-#include <boost/iostreams/detail/access_control.hpp>
-#include <boost/iostreams/detail/char_traits.hpp>
-#include <boost/iostreams/detail/push.hpp>
-#include <boost/iostreams/detail/streambuf.hpp> // pubsync.
-#include <boost/iostreams/detail/wrap_unwrap.hpp>
-#include <boost/iostreams/device/null.hpp>
-#include <boost/iostreams/positioning.hpp>
-#include <boost/iostreams/traits.hpp>           // is_filter.
-#include <boost/iostreams/stream_buffer.hpp>
-#include <boost/next_prior.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type.hpp>
-#include <boost/iostreams/detail/execute.hpp>   // VC6.5 requires this
+#include "boost/checked_delete.hpp"
+#include "boost/config.hpp"                     // BOOST_MSVC, template friends,
+#include "boost/detail/workaround.hpp"          // BOOST_NESTED_TEMPLATE 
+#include "boost/iostreams/constants.hpp"
+#include "boost/iostreams/detail/access_control.hpp"
+#include "boost/iostreams/detail/char_traits.hpp"
+#include "boost/iostreams/detail/push.hpp"
+#include "boost/iostreams/detail/streambuf.hpp" // pubsync.
+#include "boost/iostreams/detail/wrap_unwrap.hpp"
+#include "boost/iostreams/device/null.hpp"
+#include "boost/iostreams/positioning.hpp"
+#include "boost/iostreams/traits.hpp"           // is_filter.
+#include "boost/iostreams/stream_buffer.hpp"
+#include "boost/next_prior.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/type.hpp"
+#include "boost/iostreams/detail/execute.hpp"   // VC6.5 requires this
 #if BOOST_WORKAROUND(BOOST_MSVC, < 1310)        // #include order
-# include <boost/mpl/int.hpp>
+# include "boost/mpl/int.hpp"
 #endif
 
 // Sometimes type_info objects must be compared by name. Borrowed from

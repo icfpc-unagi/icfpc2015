@@ -17,15 +17,15 @@
 #define BOOST_TEST_RESULTS_COLLECTOR_HPP_071894GER
 
 // Boost.Test
-#include <boost/test/test_observer.hpp>
+#include "boost/test/test_observer.hpp"
 
-#include <boost/test/detail/global_typedef.hpp>
-#include <boost/test/detail/fwd_decl.hpp>
+#include "boost/test/detail/global_typedef.hpp"
+#include "boost/test/detail/fwd_decl.hpp"
 
-#include <boost/test/utils/trivial_singleton.hpp>
-#include <boost/test/utils/class_properties.hpp>
+#include "boost/test/utils/trivial_singleton.hpp"
+#include "boost/test/utils/class_properties.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -106,7 +106,7 @@ BOOST_TEST_SINGLETON_INST( results_collector )
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_RESULTS_COLLECTOR_HPP_071894GER
 

@@ -12,20 +12,20 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         concepts.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares regular expression concepts.
   */
 
 #ifndef BOOST_REGEX_CONCEPTS_HPP_INCLUDED
 #define BOOST_REGEX_CONCEPTS_HPP_INCLUDED
 
-#include <boost/concept_archetype.hpp>
-#include <boost/concept_check.hpp>
-#include <boost/type_traits/is_enum.hpp>
-#include <boost/type_traits/is_base_and_derived.hpp>
-#include <boost/static_assert.hpp>
+#include "boost/concept_archetype.hpp"
+#include "boost/concept_check.hpp"
+#include "boost/type_traits/is_enum.hpp"
+#include "boost/type_traits/is_base_and_derived.hpp"
+#include "boost/static_assert.hpp"
 #ifndef BOOST_TEST_TR1_REGEX
-#include <boost/regex.hpp>
+#include "boost/regex.hpp"
 #endif
 #include <bitset>
 #include <vector>

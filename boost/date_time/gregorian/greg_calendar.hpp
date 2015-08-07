@@ -9,12 +9,12 @@
  * $Date$
  */
 
-#include <boost/cstdint.hpp>
-#include <boost/date_time/gregorian/greg_weekday.hpp>
-#include <boost/date_time/gregorian/greg_day_of_year.hpp>
-#include <boost/date_time/gregorian_calendar.hpp>
-#include <boost/date_time/gregorian/greg_ymd.hpp>
-#include <boost/date_time/int_adapter.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/date_time/gregorian/greg_weekday.hpp"
+#include "boost/date_time/gregorian/greg_day_of_year.hpp"
+#include "boost/date_time/gregorian_calendar.hpp"
+#include "boost/date_time/gregorian/greg_ymd.hpp"
+#include "boost/date_time/int_adapter.hpp"
 
 namespace boost {
 namespace gregorian {

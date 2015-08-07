@@ -12,8 +12,8 @@
 #ifndef BOOST_UUID_SERIALIZE_HPP
 #define BOOST_UUID_SERIALIZE_HPP
 
-#include <boost/uuid/uuid.hpp>
-#include <boost/serialization/level.hpp>
+#include "boost/uuid/uuid.hpp"
+#include "boost/serialization/level.hpp"
 
 BOOST_CLASS_IMPLEMENTATION(boost::uuids::uuid, boost::serialization::primitive_type)
 

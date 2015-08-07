@@ -15,34 +15,34 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
-#include <boost/container/detail/utilities.hpp>
-#include <boost/container/detail/iterators.hpp>
-#include <boost/container/detail/algorithms.hpp>
-#include <boost/container/detail/mpl.hpp>
-#include <boost/container/allocator_traits.hpp>
-#include <boost/container/container_fwd.hpp>
-#include <boost/container/throw_exception.hpp>
+#include "boost/container/detail/utilities.hpp"
+#include "boost/container/detail/iterators.hpp"
+#include "boost/container/detail/algorithms.hpp"
+#include "boost/container/detail/mpl.hpp"
+#include "boost/container/allocator_traits.hpp"
+#include "boost/container/container_fwd.hpp"
+#include "boost/container/throw_exception.hpp"
 #include <cstddef>
 #include <iterator>
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 #include <memory>
 #include <algorithm>
-#include <boost/core/no_exceptions_support.hpp>
-#include <boost/type_traits/has_trivial_destructor.hpp>
-#include <boost/type_traits/has_trivial_copy.hpp>
-#include <boost/type_traits/has_trivial_assign.hpp>
-#include <boost/type_traits/has_nothrow_copy.hpp>
-#include <boost/type_traits/has_nothrow_assign.hpp>
-#include <boost/move/utility_core.hpp>
-#include <boost/move/iterator.hpp>
-#include <boost/move/algorithm.hpp>
-#include <boost/move/detail/move_helpers.hpp>
-#include <boost/move/traits.hpp>
-#include <boost/container/detail/advanced_insert_int.hpp>
-#include <boost/core/no_exceptions_support.hpp>
+#include "boost/core/no_exceptions_support.hpp"
+#include "boost/type_traits/has_trivial_destructor.hpp"
+#include "boost/type_traits/has_trivial_copy.hpp"
+#include "boost/type_traits/has_trivial_assign.hpp"
+#include "boost/type_traits/has_nothrow_copy.hpp"
+#include "boost/type_traits/has_nothrow_assign.hpp"
+#include "boost/move/utility_core.hpp"
+#include "boost/move/iterator.hpp"
+#include "boost/move/algorithm.hpp"
+#include "boost/move/detail/move_helpers.hpp"
+#include "boost/move/traits.hpp"
+#include "boost/container/detail/advanced_insert_int.hpp"
+#include "boost/core/no_exceptions_support.hpp"
 
 #if !defined(BOOST_NO_CXX11_HDR_INITIALIZER_LIST)
 #include <initializer_list>
@@ -2064,6 +2064,6 @@ struct has_trivial_destructor_after_move<boost::container::deque<T, Allocator> >
 
 #endif   //#ifndef BOOST_CONTAINER_DOXYGEN_INVOKED
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif //   #ifndef  BOOST_CONTAINER_DEQUE_HPP

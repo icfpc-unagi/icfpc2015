@@ -16,7 +16,7 @@
 #ifndef BOOST_TEST_BASIC_CSTRING_FWD_HPP_071894GER
 #define BOOST_TEST_BASIC_CSTRING_FWD_HPP_071894GER
 
-#include <boost/detail/workaround.hpp>
+#include "boost/detail/workaround.hpp"
 
 namespace boost {
 

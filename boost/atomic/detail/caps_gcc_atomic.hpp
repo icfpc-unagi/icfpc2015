@@ -14,8 +14,8 @@
 #ifndef BOOST_ATOMIC_DETAIL_CAPS_GCC_ATOMIC_HPP_INCLUDED_
 #define BOOST_ATOMIC_DETAIL_CAPS_GCC_ATOMIC_HPP_INCLUDED_
 
-#include <boost/atomic/detail/config.hpp>
-#include <boost/atomic/detail/int_sizes.hpp>
+#include "boost/atomic/detail/config.hpp"
+#include "boost/atomic/detail/int_sizes.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

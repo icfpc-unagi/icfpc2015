@@ -9,12 +9,12 @@
 //  accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/thread/detail/platform.hpp>
+#include "boost/thread/detail/platform.hpp"
 
 #if defined(BOOST_THREAD_PLATFORM_WIN32)
-#include <boost/thread/win32/thread_heap_alloc.hpp>
+#include "boost/thread/win32/thread_heap_alloc.hpp"
 #elif defined(BOOST_THREAD_PLATFORM_PTHREAD)
-#include <boost/thread/pthread/thread_heap_alloc.hpp>
+#include "boost/thread/pthread/thread_heap_alloc.hpp"
 #else
 #error "Boost threads unavailable on this platform"
 #endif

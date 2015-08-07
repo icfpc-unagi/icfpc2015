@@ -7,8 +7,8 @@
 #ifndef BOOST_COROUTINES_DETAIL_CONFIG_H
 #define BOOST_COROUTINES_DETAIL_CONFIG_H
 
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
 
 #ifdef BOOST_COROUTINES_DECL
 # undef BOOST_COROUTINES_DECL
@@ -32,7 +32,7 @@
 # if defined(BOOST_ALL_DYN_LINK) || defined(BOOST_COROUTINES_DYN_LINK)
 #  define BOOST_DYN_LINK
 # endif
-# include <boost/config/auto_link.hpp>
+# include "boost/config/auto_link.hpp"
 #endif
 
 #if defined(BOOST_USE_SEGMENTED_STACKS)

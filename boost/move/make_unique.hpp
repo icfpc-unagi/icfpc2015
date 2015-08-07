@@ -11,12 +11,12 @@
 #ifndef BOOST_MOVE_MAKE_UNIQUE_HPP_INCLUDED
 #define BOOST_MOVE_MAKE_UNIQUE_HPP_INCLUDED
 
-#include <boost/move/detail/config_begin.hpp>
-#include <boost/move/detail/workaround.hpp>
-#include <boost/move/utility_core.hpp>
-#include <boost/move/unique_ptr.hpp>
+#include "boost/move/detail/config_begin.hpp"
+#include "boost/move/detail/workaround.hpp"
+#include "boost/move/utility_core.hpp"
+#include "boost/move/unique_ptr.hpp"
 #include <cstddef>   //for std::size_t
-#include <boost/move/detail/unique_ptr_meta_utils.hpp>
+#include "boost/move/detail/unique_ptr_meta_utils.hpp"
 
 //!\file
 //! Defines "make_unique" functions, which are factories to create instances
@@ -614,6 +614,6 @@ inline BOOST_MOVE_DOC1ST(unspecified,
 
 }  //namespace boost{
 
-#include <boost/move/detail/config_end.hpp>
+#include "boost/move/detail/config_end.hpp"
 
 #endif   //#ifndef BOOST_MOVE_MAKE_UNIQUE_HPP_INCLUDED

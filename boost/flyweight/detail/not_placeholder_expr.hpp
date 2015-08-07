@@ -26,8 +26,8 @@
  * MPL invocation.
  */
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
-#include <boost/detail/workaround.hpp>
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
+#include "boost/detail/workaround.hpp"
 
 #if BOOST_WORKAROUND(__GNUC__, <4)||\
     BOOST_WORKAROUND(__GNUC__,==4)&&(__GNUC_MINOR__<2)
@@ -39,9 +39,9 @@
  * so as to exceed BOOST_MPL_LIMIT_METAFUNCTION_ARITY.
  */
 
-#include <boost/mpl/limits/arity.hpp>
-#include <boost/preprocessor/facilities/intercept.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_params.hpp>
+#include "boost/mpl/limits/arity.hpp"
+#include "boost/preprocessor/facilities/intercept.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_params.hpp"
 
 #define BOOST_FLYWEIGHT_NOT_A_PLACEHOLDER_EXPRESSION                  \
 BOOST_PP_ENUM_TRAILING_PARAMS(                                        \

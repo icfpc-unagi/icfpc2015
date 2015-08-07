@@ -8,11 +8,11 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_HPP_
 
-#include <boost/local_function/aux_/preprocessor/traits/decl_sign_/sign.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_/nil.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/tuple/eat.hpp>
-#include <boost/preprocessor/list/adt.hpp>
+#include "boost/local_function/aux_/preprocessor/traits/decl_sign_/sign.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_/nil.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/tuple/eat.hpp"
+#include "boost/preprocessor/list/adt.hpp"
 
 // PUBLIC //
 

@@ -10,13 +10,13 @@
 #ifndef BOOST_PROPERTY_TREE_PTREE_SERIALIZATION_HPP_INCLUDED
 #define BOOST_PROPERTY_TREE_PTREE_SERIALIZATION_HPP_INCLUDED
 
-#include <boost/property_tree/ptree.hpp>
+#include "boost/property_tree/ptree.hpp"
 
-#include <boost/serialization/nvp.hpp>
-#include <boost/serialization/collections_save_imp.hpp>
-#include <boost/serialization/collections_load_imp.hpp>
-#include <boost/serialization/split_free.hpp>
-#include <boost/serialization/utility.hpp>
+#include "boost/serialization/nvp.hpp"
+#include "boost/serialization/collections_save_imp.hpp"
+#include "boost/serialization/collections_load_imp.hpp"
+#include "boost/serialization/split_free.hpp"
+#include "boost/serialization/utility.hpp"
 
 namespace boost { namespace property_tree
 {

@@ -6,25 +6,25 @@
 
 #ifndef BOOST_TR1_RANDOM_HPP_INCLUDED
 #  define BOOST_TR1_RANDOM_HPP_INCLUDED
-#  include <boost/tr1/detail/config.hpp>
+#  include "boost/tr1/detail/config.hpp"
 
 #ifdef BOOST_HAS_TR1_RANDOM
 #  if defined(BOOST_HAS_INCLUDE_NEXT) && !defined(BOOST_TR1_DISABLE_INCLUDE_NEXT)
 #     include_next BOOST_TR1_HEADER(random)
 #  else
-#     include <boost/tr1/detail/config_all.hpp>
+#     include "boost/tr1/detail/config_all.hpp"
 #     include BOOST_TR1_STD_HEADER(BOOST_TR1_PATH(random))
 #  endif
 #else
 // Boost.Random:
-#include <boost/random.hpp>
+#include "boost/random.hpp"
 #ifndef __SUNPRO_CC
     // Sunpros linker complains if we so much as include this...
-#   include <boost/nondet_random.hpp>
+#   include "boost/nondet_random.hpp"
 #endif
-#include <boost/tr1/detail/functor2iterator.hpp>
-#include <boost/type_traits/is_fundamental.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/tr1/detail/functor2iterator.hpp"
+#include "boost/type_traits/is_fundamental.hpp"
+#include "boost/type_traits/is_same.hpp"
 
 namespace std { namespace tr1{
 

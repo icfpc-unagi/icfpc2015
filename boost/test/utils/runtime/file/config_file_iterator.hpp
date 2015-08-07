@@ -16,17 +16,17 @@
 #define BOOST_RT_FILE_CONFIG_FILE_ITERATOR_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
+#include "boost/test/utils/runtime/config.hpp"
 
-#include <boost/test/utils/runtime/fwd.hpp>
+#include "boost/test/utils/runtime/fwd.hpp"
 
 // Boost.Test
-#include <boost/test/utils/iterator/input_iterator_facade.hpp>
-#include <boost/test/utils/callback.hpp>
-#include <boost/test/utils/named_params.hpp>
+#include "boost/test/utils/iterator/input_iterator_facade.hpp"
+#include "boost/test/utils/callback.hpp"
+#include "boost/test/utils/named_params.hpp"
 
 // Boost
-#include <boost/shared_ptr.hpp>
+#include "boost/shared_ptr.hpp"
 
 namespace boost {
 

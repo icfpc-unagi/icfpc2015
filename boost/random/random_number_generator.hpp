@@ -16,10 +16,10 @@
 #ifndef BOOST_RANDOM_RANDOM_NUMBER_GENERATOR_HPP
 #define BOOST_RANDOM_RANDOM_NUMBER_GENERATOR_HPP
 
-#include <boost/assert.hpp>
-#include <boost/random/uniform_int_distribution.hpp>
+#include "boost/assert.hpp"
+#include "boost/random/uniform_int_distribution.hpp"
 
-#include <boost/random/detail/disable_warnings.hpp>
+#include "boost/random/detail/disable_warnings.hpp"
 
 namespace boost {
 namespace random {
@@ -68,6 +68,6 @@ using random::random_number_generator;
 
 } // namespace boost
 
-#include <boost/random/detail/enable_warnings.hpp>
+#include "boost/random/detail/enable_warnings.hpp"
 
 #endif // BOOST_RANDOM_RANDOM_NUMBER_GENERATOR_HPP

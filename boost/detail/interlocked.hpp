@@ -11,7 +11,7 @@
 //  http://www.boost.org/LICENSE_1_0.txt)
 //
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 // MS compatible compilers support #pragma once
 #ifdef BOOST_HAS_PRAGMA_ONCE

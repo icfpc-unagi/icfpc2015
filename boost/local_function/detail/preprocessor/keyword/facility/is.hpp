@@ -13,10 +13,10 @@
 // that it is OK to used `PP_IS_UNARY()` to check if tokens match predefined
 // "keyword" as it is done by the macros below (even if `PP_IS_UNARY()` is
 // technically only part of Boost.Preprocessor private API).
-#include <boost/preprocessor/detail/is_unary.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/tuple/eat.hpp>
+#include "boost/preprocessor/detail/is_unary.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/tuple/eat.hpp"
 
 // PRIVATE //
 

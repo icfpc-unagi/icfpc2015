@@ -15,20 +15,20 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
-#include <boost/container/allocator_traits.hpp>
-#include <boost/container/detail/destroyers.hpp>
-#include <boost/aligned_storage.hpp>
-#include <boost/move/utility_core.hpp>
-#include <boost/container/detail/mpl.hpp>
-#include <boost/container/detail/utilities.hpp>
-#include <boost/container/detail/type_traits.hpp>
-#include <boost/container/detail/iterators.hpp>
+#include "boost/container/allocator_traits.hpp"
+#include "boost/container/detail/destroyers.hpp"
+#include "boost/aligned_storage.hpp"
+#include "boost/move/utility_core.hpp"
+#include "boost/container/detail/mpl.hpp"
+#include "boost/container/detail/utilities.hpp"
+#include "boost/container/detail/type_traits.hpp"
+#include "boost/container/detail/iterators.hpp"
 #include <iterator>  //std::iterator_traits
-#include <boost/assert.hpp>
-#include <boost/core/no_exceptions_support.hpp>
+#include "boost/assert.hpp"
+#include "boost/core/no_exceptions_support.hpp"
 
 namespace boost { namespace container { namespace container_detail {
 
@@ -201,8 +201,8 @@ insert_copy_proxy<A, It> get_insert_value_proxy(const typename std::iterator_tra
 
 #ifdef BOOST_CONTAINER_PERFECT_FORWARDING
 
-#include <boost/container/detail/variadic_templates_tools.hpp>
-#include <boost/move/utility_core.hpp>
+#include "boost/container/detail/variadic_templates_tools.hpp"
+#include "boost/move/utility_core.hpp"
 #include <typeinfo>
 //#include <iostream> //For debugging purposes
 
@@ -325,8 +325,8 @@ struct insert_emplace_proxy<A, Iterator
 
 #else //#ifdef BOOST_CONTAINER_PERFECT_FORWARDING
 
-#include <boost/container/detail/preprocessor.hpp>
-#include <boost/container/detail/value_init.hpp>
+#include "boost/container/detail/preprocessor.hpp"
+#include "boost/container/detail/value_init.hpp"
 
 namespace boost {
 namespace container {
@@ -472,6 +472,6 @@ struct insert_emplace_proxy_arg1<A, Iterator
 
 #endif   //#ifdef BOOST_CONTAINER_PERFECT_FORWARDING
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif //#ifndef BOOST_CONTAINER_ADVANCED_INSERT_INT_HPP

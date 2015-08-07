@@ -11,20 +11,20 @@
 #ifndef BOOST_IOSTREAMS_DETAIL_CHECKED_OPERATIONS_HPP_INCLUDED
 #define BOOST_IOSTREAMS_DETAIL_CHECKED_OPERATIONS_HPP_INCLUDED
 
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/detail/dispatch.hpp>
-#include <boost/iostreams/detail/error.hpp>
-#include <boost/iostreams/detail/config/unreachable_return.hpp>
-#include <boost/iostreams/get.hpp>
-#include <boost/iostreams/put.hpp>
-#include <boost/iostreams/read.hpp>
-#include <boost/iostreams/seek.hpp>
-#include <boost/iostreams/traits.hpp>
-#include <boost/iostreams/write.hpp>
-#include <boost/throw_exception.hpp>
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/detail/dispatch.hpp"
+#include "boost/iostreams/detail/error.hpp"
+#include "boost/iostreams/detail/config/unreachable_return.hpp"
+#include "boost/iostreams/get.hpp"
+#include "boost/iostreams/put.hpp"
+#include "boost/iostreams/read.hpp"
+#include "boost/iostreams/seek.hpp"
+#include "boost/iostreams/traits.hpp"
+#include "boost/iostreams/write.hpp"
+#include "boost/throw_exception.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/disable_warnings.hpp"  // MSVC.
 
 namespace boost { namespace iostreams {
 
@@ -153,6 +153,6 @@ struct seek_if_impl<any_tag> {
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/enable_warnings.hpp"  // MSVC.
 
 #endif // #ifndef BOOST_IOSTREAMS_DETAIL_CHECKED_OPERATIONS_HPP_INCLUDED

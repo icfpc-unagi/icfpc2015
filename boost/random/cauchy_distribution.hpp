@@ -16,13 +16,13 @@
 #ifndef BOOST_RANDOM_CAUCHY_DISTRIBUTION_HPP
 #define BOOST_RANDOM_CAUCHY_DISTRIBUTION_HPP
 
-#include <boost/config/no_tr1/cmath.hpp>
+#include "boost/config/no_tr1/cmath.hpp"
 #include <iosfwd>
 #include <istream>
-#include <boost/limits.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/operators.hpp>
-#include <boost/random/uniform_01.hpp>
+#include "boost/limits.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/operators.hpp"
+#include "boost/random/uniform_01.hpp"
 
 namespace boost {
 namespace random {

@@ -6,10 +6,10 @@
 #ifndef BOOST_PTR_CONTAINER_DETAIL_SERIALIZE_REVERSIBLE_PTR_CONTAINER_HPP
 #define BOOST_PTR_CONTAINER_DETAIL_SERIALIZE_REVERSIBLE_PTR_CONTAINER_HPP
 
-#include <boost/ptr_container/detail/reversible_ptr_container.hpp>
-#include <boost/ptr_container/detail/serialize_xml_names.hpp>
-#include <boost/serialization/split_free.hpp>
-#include <boost/serialization/nvp.hpp>
+#include "boost/ptr_container/detail/reversible_ptr_container.hpp"
+#include "boost/ptr_container/detail/serialize_xml_names.hpp"
+#include "boost/serialization/split_free.hpp"
+#include "boost/serialization/nvp.hpp"
 
 namespace boost 
 {

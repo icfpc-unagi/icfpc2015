@@ -9,7 +9,7 @@
 #include <vector>
 #include <queue>
 #include <functional>
-#include <boost/pending/queue.hpp>
+#include "boost/pending/queue.hpp"
 
 // Fenced priority queue
 // Jeremiah Willcock

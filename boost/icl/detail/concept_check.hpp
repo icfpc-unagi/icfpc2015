@@ -8,8 +8,8 @@ Copyright (c) 2009-2009: Joachim Faulhaber
 #ifndef BOOST_ICL_CONCEPT_CHECK_HPP_JOFA_090913
 #define BOOST_ICL_CONCEPT_CHECK_HPP_JOFA_090913
 
-#include <boost/concept_check.hpp>
-#include <boost/concept/detail/concept_def.hpp>
+#include "boost/concept_check.hpp"
+#include "boost/concept/detail/concept_def.hpp"
 
 namespace boost{ namespace icl
 {

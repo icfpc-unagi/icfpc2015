@@ -5,23 +5,23 @@
 
 #ifndef BOOST_TR1_ARRAY_HPP_INCLUDED
 #  define BOOST_TR1_ARRAY_HPP_INCLUDED
-#  include <boost/tr1/detail/config.hpp>
+#  include "boost/tr1/detail/config.hpp"
 
 #ifdef BOOST_HAS_TR1_ARRAY
 
 #  if defined(BOOST_HAS_INCLUDE_NEXT) && !defined(BOOST_TR1_DISABLE_INCLUDE_NEXT)
 #     include_next BOOST_TR1_HEADER(array)
 #  else
-#     include <boost/tr1/detail/config_all.hpp>
+#     include "boost/tr1/detail/config_all.hpp"
 #     include BOOST_TR1_STD_HEADER(BOOST_TR1_PATH(array))
 #  endif
 
 #else
 
-#include <boost/array.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/type_traits/integral_constant.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/array.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/type_traits/integral_constant.hpp"
+#include "boost/detail/workaround.hpp"
 
 namespace std{ namespace tr1{
 

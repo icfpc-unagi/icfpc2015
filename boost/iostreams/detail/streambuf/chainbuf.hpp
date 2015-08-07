@@ -12,16 +12,16 @@
 # pragma once
 #endif      
 
-#include <boost/config.hpp>                    // BOOST_MSVC, template friends.
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/chain.hpp>
-#include <boost/iostreams/detail/access_control.hpp>
-#include <boost/iostreams/detail/config/wide_streams.hpp>
-#include <boost/iostreams/detail/streambuf.hpp>
-#include <boost/iostreams/detail/streambuf/linked_streambuf.hpp>
-#include <boost/iostreams/detail/translate_int_type.hpp>
-#include <boost/iostreams/traits.hpp>
-#include <boost/noncopyable.hpp>
+#include "boost/config.hpp"                    // BOOST_MSVC, template friends.
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/chain.hpp"
+#include "boost/iostreams/detail/access_control.hpp"
+#include "boost/iostreams/detail/config/wide_streams.hpp"
+#include "boost/iostreams/detail/streambuf.hpp"
+#include "boost/iostreams/detail/streambuf/linked_streambuf.hpp"
+#include "boost/iostreams/detail/translate_int_type.hpp"
+#include "boost/iostreams/traits.hpp"
+#include "boost/noncopyable.hpp"
 
 namespace boost { namespace iostreams { namespace detail {
 

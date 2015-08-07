@@ -12,22 +12,22 @@
 #include <limits>
 #include <numeric>
 #include <functional>
-#include <boost/throw_exception.hpp>
-#include <boost/range.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/placeholders.hpp>
-#include <boost/parameter/keyword.hpp>
-#include <boost/tuple/tuple.hpp>
-#include <boost/accumulators/numeric/functional.hpp>
-#include <boost/accumulators/framework/accumulator_base.hpp>
-#include <boost/accumulators/framework/extractor.hpp>
-#include <boost/accumulators/framework/parameters/sample.hpp>
-#include <boost/accumulators/framework/depends_on.hpp>
-#include <boost/accumulators/statistics_fwd.hpp>
-#include <boost/accumulators/statistics/parameters/quantile_probability.hpp>
-#include <boost/accumulators/statistics/peaks_over_threshold.hpp> // for named parameters pot_threshold_value and pot_threshold_probability
-#include <boost/accumulators/statistics/sum.hpp>
-#include <boost/accumulators/statistics/tail_variate.hpp>
+#include "boost/throw_exception.hpp"
+#include "boost/range.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/placeholders.hpp"
+#include "boost/parameter/keyword.hpp"
+#include "boost/tuple/tuple.hpp"
+#include "boost/accumulators/numeric/functional.hpp"
+#include "boost/accumulators/framework/accumulator_base.hpp"
+#include "boost/accumulators/framework/extractor.hpp"
+#include "boost/accumulators/framework/parameters/sample.hpp"
+#include "boost/accumulators/framework/depends_on.hpp"
+#include "boost/accumulators/statistics_fwd.hpp"
+#include "boost/accumulators/statistics/parameters/quantile_probability.hpp"
+#include "boost/accumulators/statistics/peaks_over_threshold.hpp" // for named parameters pot_threshold_value and pot_threshold_probability
+#include "boost/accumulators/statistics/sum.hpp"
+#include "boost/accumulators/statistics/tail_variate.hpp"
 
 #ifdef _MSC_VER
 # pragma warning(push)

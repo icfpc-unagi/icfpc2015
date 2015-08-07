@@ -19,25 +19,25 @@
 #include <iosfwd>            // streamsize.                 
 #include <memory>            // allocator, bad_alloc.
 #include <new>          
-#include <boost/config.hpp>  // MSVC, STATIC_CONSTANT, DEDUCED_TYPENAME, DINKUM.
-#include <boost/cstdint.hpp> // uint*_t
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/constants.hpp>   // buffer size.
-#include <boost/iostreams/detail/config/auto_link.hpp>
-#include <boost/iostreams/detail/config/dyn_link.hpp>
-#include <boost/iostreams/detail/config/wide_streams.hpp>
-#include <boost/iostreams/detail/config/zlib.hpp>
-#include <boost/iostreams/detail/ios.hpp>  // failure, streamsize.
-#include <boost/iostreams/filter/symmetric.hpp>                
-#include <boost/iostreams/pipeline.hpp>                
-#include <boost/type_traits/is_same.hpp>
+#include "boost/config.hpp"  // MSVC, STATIC_CONSTANT, DEDUCED_TYPENAME, DINKUM.
+#include "boost/cstdint.hpp" // uint*_t
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/constants.hpp"   // buffer size.
+#include "boost/iostreams/detail/config/auto_link.hpp"
+#include "boost/iostreams/detail/config/dyn_link.hpp"
+#include "boost/iostreams/detail/config/wide_streams.hpp"
+#include "boost/iostreams/detail/config/zlib.hpp"
+#include "boost/iostreams/detail/ios.hpp"  // failure, streamsize.
+#include "boost/iostreams/filter/symmetric.hpp"                
+#include "boost/iostreams/pipeline.hpp"                
+#include "boost/type_traits/is_same.hpp"
 
 // Must come last.
 #ifdef BOOST_MSVC
 # pragma warning(push)
 # pragma warning(disable:4251 4231 4660)         // Dependencies not exported.
 #endif
-#include <boost/config/abi_prefix.hpp>           
+#include "boost/config/abi_prefix.hpp"           
 
 namespace boost { namespace iostreams {
 
@@ -419,7 +419,7 @@ basic_zlib_decompressor<Alloc>::basic_zlib_decompressor
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/config/abi_suffix.hpp> // Pops abi_suffix.hpp pragmas.
+#include "boost/config/abi_suffix.hpp" // Pops abi_suffix.hpp pragmas.
 #ifdef BOOST_MSVC
 # pragma warning(pop)
 #endif

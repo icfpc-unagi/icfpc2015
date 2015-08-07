@@ -8,9 +8,9 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_IS_INTERVAL_HPP_JOFA_100327
 #define BOOST_ICL_TYPE_TRAITS_IS_INTERVAL_HPP_JOFA_100327
 
-#include <boost/mpl/or.hpp>
-#include <boost/icl/interval_bounds.hpp>
-#include <boost/icl/interval_traits.hpp>
+#include "boost/mpl/or.hpp"
+#include "boost/icl/interval_bounds.hpp"
+#include "boost/icl/interval_traits.hpp"
 
 namespace boost{ namespace icl
 {

@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         static_mutex.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares static_mutex lock type, there are three different
   *                implementations: POSIX pthreads, WIN32 threads, and portable,
   *                these are described in more detail below.
@@ -21,8 +21,8 @@
 #ifndef BOOST_REGEX_STATIC_MUTEX_HPP
 #define BOOST_REGEX_STATIC_MUTEX_HPP
 
-#include <boost/config.hpp>
-#include <boost/regex/config.hpp> // dll import/export options.
+#include "boost/config.hpp"
+#include "boost/regex/config.hpp" // dll import/export options.
 
 #ifdef BOOST_HAS_PTHREADS
 #include <pthread.h>
@@ -75,7 +75,7 @@ public:
 // implementation using InterlockedCompareExchange.
 //
 
-#include <boost/cstdint.hpp>
+#include "boost/cstdint.hpp"
 
 namespace boost{
 
@@ -125,9 +125,9 @@ private:
 // Since this preprocessor path is almost never taken, we hide these header
 // dependencies so that build tools don't find them.
 //
-#define BOOST_REGEX_H1 <boost/thread/once.hpp>
-#define BOOST_REGEX_H2 <boost/thread/recursive_mutex.hpp>
-#define BOOST_REGEX_H3 <boost/thread/lock_types.hpp>
+#define BOOST_REGEX_H1 "boost/thread/once.hpp"
+#define BOOST_REGEX_H2 "boost/thread/recursive_mutex.hpp"
+#define BOOST_REGEX_H3 "boost/thread/lock_types.hpp"
 #include BOOST_REGEX_H1
 #include BOOST_REGEX_H2
 #include BOOST_REGEX_H3

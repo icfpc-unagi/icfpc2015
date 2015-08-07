@@ -8,8 +8,8 @@ Copyright (c) 2008-2009: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_HAS_INVERSE_HPP_JOFA_090205
 #define BOOST_ICL_TYPE_TRAITS_HAS_INVERSE_HPP_JOFA_090205
 
-#include <boost/type_traits/is_signed.hpp>
-#include <boost/type_traits/is_floating_point.hpp>
+#include "boost/type_traits/is_signed.hpp"
+#include "boost/type_traits/is_floating_point.hpp"
 
 namespace boost{ namespace icl
 {

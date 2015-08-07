@@ -11,13 +11,13 @@
 #ifndef BOOST_CHRONO_DETAIL_INLINED_WIN_THREAD_CLOCK_HPP
 #define BOOST_CHRONO_DETAIL_INLINED_WIN_THREAD_CLOCK_HPP
 
-#include <boost/chrono/config.hpp>
-#include <boost/chrono/thread_clock.hpp>
+#include "boost/chrono/config.hpp"
+#include "boost/chrono/thread_clock.hpp"
 #include <cassert>
 
-#include <boost/detail/winapi/GetLastError.hpp>
-#include <boost/detail/winapi/GetCurrentThread.hpp>
-#include <boost/detail/winapi/GetThreadTimes.hpp>
+#include "boost/detail/winapi/GetLastError.hpp"
+#include "boost/detail/winapi/GetCurrentThread.hpp"
+#include "boost/detail/winapi/GetThreadTimes.hpp"
 
 namespace boost
 {

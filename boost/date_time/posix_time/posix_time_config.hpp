@@ -10,14 +10,14 @@
  */
 
 #include <cstdlib> //for MCW 7.2 std::abs(long long)
-#include <boost/limits.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/config/no_tr1/cmath.hpp>
-#include <boost/date_time/time_duration.hpp>
-#include <boost/date_time/time_resolution_traits.hpp>
-#include <boost/date_time/gregorian/gregorian_types.hpp>
-#include <boost/date_time/wrapping_int.hpp>
-#include <boost/date_time/compiler_config.hpp>
+#include "boost/limits.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/config/no_tr1/cmath.hpp"
+#include "boost/date_time/time_duration.hpp"
+#include "boost/date_time/time_resolution_traits.hpp"
+#include "boost/date_time/gregorian/gregorian_types.hpp"
+#include "boost/date_time/wrapping_int.hpp"
+#include "boost/date_time/compiler_config.hpp"
 
 namespace boost {
 namespace posix_time {

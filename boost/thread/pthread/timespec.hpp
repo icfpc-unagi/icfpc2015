@@ -7,17 +7,17 @@
 //  accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/thread_time.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/thread_time.hpp"
 #if defined BOOST_THREAD_USES_DATETIME
-#include <boost/date_time/posix_time/conversion.hpp>
+#include "boost/date_time/posix_time/conversion.hpp"
 #endif
 #include <pthread.h>
 #ifndef _WIN32
 #include <unistd.h>
 #endif
 #ifdef BOOST_THREAD_USES_CHRONO
-#include <boost/chrono/duration.hpp>
+#include "boost/chrono/duration.hpp"
 #endif
 
 #if defined(macintosh) || defined(__APPLE__) || defined(__APPLE_CC__)
@@ -27,7 +27,7 @@
 #include <time.h>  // for clock_gettime
 #endif
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -115,6 +115,6 @@ namespace boost
   }
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

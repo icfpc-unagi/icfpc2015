@@ -14,6 +14,6 @@
 #  warning "This header is deprecated. Please use: boost/accumulators/statistics/p_square_cumul_dist.hpp"
 #endif
 
-#include <boost/accumulators/statistics/p_square_cumul_dist.hpp>
+#include "boost/accumulators/statistics/p_square_cumul_dist.hpp"
 
 #endif

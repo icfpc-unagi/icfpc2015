@@ -10,11 +10,11 @@
 #define BOOST_RELAXED_HEAP_HEADER
 
 #include <functional>
-#include <boost/property_map/property_map.hpp>
-#include <boost/optional.hpp>
+#include "boost/property_map/property_map.hpp"
+#include "boost/optional.hpp"
 #include <vector>
 #include <climits> // for CHAR_BIT
-#include <boost/none.hpp>
+#include "boost/none.hpp"
 
 #ifdef BOOST_RELAXED_HEAP_DEBUG
 #  include <iostream>

@@ -10,11 +10,11 @@
 #ifndef BOOST_MSM_BACK_FOLD_TO_LIST_H
 #define BOOST_MSM_BACK_FOLD_TO_LIST_H
 
-#include <boost/msm/proto_config.hpp>
-#include <boost/proto/core.hpp>
-#include <boost/proto/transform.hpp>
-#include <boost/msm/msm_grammar.hpp>
-#include <boost/fusion/container/list/cons.hpp>
+#include "boost/msm/proto_config.hpp"
+#include "boost/proto/core.hpp"
+#include "boost/proto/transform.hpp"
+#include "boost/msm/msm_grammar.hpp"
+#include "boost/fusion/container/list/cons.hpp"
 
 namespace boost { namespace msm { namespace back
 {

@@ -11,17 +11,17 @@
 #ifndef BOOST_STRING_CASE_CONV_HPP
 #define BOOST_STRING_CASE_CONV_HPP
 
-#include <boost/algorithm/string/config.hpp>
+#include "boost/algorithm/string/config.hpp"
 #include <algorithm>
 #include <locale>
-#include <boost/iterator/transform_iterator.hpp>
+#include "boost/iterator/transform_iterator.hpp"
 
-#include <boost/range/as_literal.hpp>
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
-#include <boost/range/value_type.hpp>
+#include "boost/range/as_literal.hpp"
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
+#include "boost/range/value_type.hpp"
 
-#include <boost/algorithm/string/detail/case_conv.hpp>
+#include "boost/algorithm/string/detail/case_conv.hpp"
 
 /*! \file
     Defines sequence case-conversion algorithms.

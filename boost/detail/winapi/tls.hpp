@@ -9,7 +9,7 @@
 #ifndef BOOST_DETAIL_WINAPI_TLS_HPP
 #define BOOST_DETAIL_WINAPI_TLS_HPP
 
-#include <boost/detail/winapi/basic_types.hpp>
+#include "boost/detail/winapi/basic_types.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

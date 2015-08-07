@@ -21,8 +21,8 @@
 
 //type traits aren't working with nvcc
 #ifndef __CUDACC__
-#include <boost/type_traits.hpp>
-#include <boost/static_assert.hpp>
+#include "boost/type_traits.hpp"
+#include "boost/static_assert.hpp"
 
 #define BOOST_ODEINT_CHECK_CONTAINER_TYPE( Type1 , Type2 ) \
         BOOST_STATIC_ASSERT(( boost::is_same< typename boost::remove_const< Type1 >::type , Type2 >::value ))

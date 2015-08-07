@@ -22,13 +22,13 @@
 #ifndef BOOST_RANGE_STRING_COLLECTION_TRAITS_HPP
 #define BOOST_RANGE_STRING_COLLECTION_TRAITS_HPP
 
-#include <boost/algorithm/string/config.hpp>
-#include <boost/type_traits/is_array.hpp>
-#include <boost/type_traits/is_pointer.hpp>
-#include <boost/mpl/eval_if.hpp>
+#include "boost/algorithm/string/config.hpp"
+#include "boost/type_traits/is_array.hpp"
+#include "boost/type_traits/is_pointer.hpp"
+#include "boost/mpl/eval_if.hpp"
 
 // Implementation
-#include <boost/range/detail/collection_traits_detail.hpp>
+#include "boost/range/detail/collection_traits_detail.hpp"
 
 /*! \file
     Defines collection_traits class and related free-standing functions.

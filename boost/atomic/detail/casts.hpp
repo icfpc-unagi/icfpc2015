@@ -17,7 +17,7 @@
 #define BOOST_ATOMIC_DETAIL_CASTS_HPP_INCLUDED_
 
 #include <cstring>
-#include <boost/atomic/detail/config.hpp>
+#include "boost/atomic/detail/config.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

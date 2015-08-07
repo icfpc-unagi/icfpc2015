@@ -12,20 +12,20 @@
 #ifndef BOOST_PROPERTY_TREE_PTREE_HPP_INCLUDED
 #define BOOST_PROPERTY_TREE_PTREE_HPP_INCLUDED
 
-#include <boost/property_tree/ptree_fwd.hpp>
-#include <boost/property_tree/string_path.hpp>
-#include <boost/property_tree/stream_translator.hpp>
-#include <boost/property_tree/exceptions.hpp>
-#include <boost/property_tree/detail/ptree_utils.hpp>
+#include "boost/property_tree/ptree_fwd.hpp"
+#include "boost/property_tree/string_path.hpp"
+#include "boost/property_tree/stream_translator.hpp"
+#include "boost/property_tree/exceptions.hpp"
+#include "boost/property_tree/detail/ptree_utils.hpp"
 
-#include <boost/multi_index_container.hpp>
-#include <boost/multi_index/indexed_by.hpp>
-#include <boost/multi_index/sequenced_index.hpp>
-#include <boost/multi_index/ordered_index.hpp>
-#include <boost/multi_index/member.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/optional.hpp>
+#include "boost/multi_index_container.hpp"
+#include "boost/multi_index/indexed_by.hpp"
+#include "boost/multi_index/sequenced_index.hpp"
+#include "boost/multi_index/ordered_index.hpp"
+#include "boost/multi_index/member.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/optional.hpp"
 #include <utility>                  // for std::pair
 
 namespace boost { namespace property_tree
@@ -513,6 +513,6 @@ namespace boost { namespace property_tree
 
 }}
 
-#include <boost/property_tree/detail/ptree_implementation.hpp>
+#include "boost/property_tree/detail/ptree_implementation.hpp"
 
 #endif

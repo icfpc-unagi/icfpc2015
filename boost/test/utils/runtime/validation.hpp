@@ -16,13 +16,13 @@
 #define BOOST_RT_VALIDATION_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
+#include "boost/test/utils/runtime/config.hpp"
 
 // Boost.Test
-#include <boost/test/utils/class_properties.hpp>
+#include "boost/test/utils/class_properties.hpp"
 
 // Boost
-#include <boost/shared_ptr.hpp>
+#include "boost/shared_ptr.hpp"
 
 // STL
 #ifdef BOOST_RT_PARAM_EXCEPTION_INHERIT_STD

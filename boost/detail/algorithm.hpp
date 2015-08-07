@@ -30,7 +30,7 @@
 
 #ifndef BOOST_ALGORITHM_HPP
 # define BOOST_ALGORITHM_HPP
-# include <boost/detail/iterator.hpp>
+# include "boost/detail/iterator.hpp"
 // Algorithms on sequences
 //
 // The functions in this file have not yet gone through formal
@@ -40,17 +40,17 @@
 
 #include <algorithm>
 #include <vector>
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
-#include <boost/range/algorithm/copy.hpp>
-#include <boost/range/algorithm/equal.hpp>
-#include <boost/range/algorithm/sort.hpp>
-#include <boost/range/algorithm/stable_sort.hpp>
-#include <boost/range/algorithm/find_if.hpp>
-#include <boost/range/algorithm/count.hpp>
-#include <boost/range/algorithm/count_if.hpp>
-#include <boost/range/algorithm_ext/is_sorted.hpp>
-#include <boost/range/algorithm_ext/iota.hpp>
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
+#include "boost/range/algorithm/copy.hpp"
+#include "boost/range/algorithm/equal.hpp"
+#include "boost/range/algorithm/sort.hpp"
+#include "boost/range/algorithm/stable_sort.hpp"
+#include "boost/range/algorithm/find_if.hpp"
+#include "boost/range/algorithm/count.hpp"
+#include "boost/range/algorithm/count_if.hpp"
+#include "boost/range/algorithm_ext/is_sorted.hpp"
+#include "boost/range/algorithm_ext/iota.hpp"
 
 namespace boost {
 

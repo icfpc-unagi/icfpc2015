@@ -9,9 +9,9 @@
 #ifndef BOOST_ACCUMULATORS_STATISTICS_STATS_HPP_EAN_28_10_2005
 #define BOOST_ACCUMULATORS_STATISTICS_STATS_HPP_EAN_28_10_2005
 
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/mpl/vector.hpp>
-#include <boost/accumulators/statistics_fwd.hpp>
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/mpl/vector.hpp"
+#include "boost/accumulators/statistics_fwd.hpp"
 
 namespace boost { namespace accumulators
 {

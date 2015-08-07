@@ -12,19 +12,19 @@
 // 20.7.2 Header <memory> synopsis
 
 // 20.7.3, pointer traits
-#include <boost/thread/csbl/memory/pointer_traits.hpp>
+#include "boost/thread/csbl/memory/pointer_traits.hpp"
 
 // 20.7.4, pointer safety
 // 20.7.5, pointer alignment function
 
 // 20.7.6, allocator argument tag
-#include <boost/thread/csbl/memory/allocator_arg.hpp>
+#include "boost/thread/csbl/memory/allocator_arg.hpp"
 
 // 20.7.8, allocator traits
-#include <boost/thread/csbl/memory/allocator_traits.hpp>
+#include "boost/thread/csbl/memory/allocator_traits.hpp"
 
 // 20.7.7, uses_allocator
-#include <boost/thread/csbl/memory/scoped_allocator.hpp>
+#include "boost/thread/csbl/memory/scoped_allocator.hpp"
 
 // 20.7.9, the default allocator:
 namespace boost
@@ -40,8 +40,8 @@ namespace boost
 
 // 20.8.1 class template unique_ptr:
 // default_delete
-#include <boost/thread/csbl/memory/default_delete.hpp>
-#include <boost/thread/csbl/memory/unique_ptr.hpp>
+#include "boost/thread/csbl/memory/default_delete.hpp"
+#include "boost/thread/csbl/memory/unique_ptr.hpp"
 
 // 20.8.2.1, class bad_weak_ptr:
 // 20.8.2.2, class template shared_ptr:

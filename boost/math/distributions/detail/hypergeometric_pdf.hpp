@@ -9,12 +9,12 @@
 #ifndef BOOST_MATH_DISTRIBUTIONS_DETAIL_HG_PDF_HPP
 #define BOOST_MATH_DISTRIBUTIONS_DETAIL_HG_PDF_HPP
 
-#include <boost/math/constants/constants.hpp>
-#include <boost/math/special_functions/lanczos.hpp>
-#include <boost/math/special_functions/gamma.hpp>
-#include <boost/math/special_functions/pow.hpp>
-#include <boost/math/special_functions/prime.hpp>
-#include <boost/math/policies/error_handling.hpp>
+#include "boost/math/constants/constants.hpp"
+#include "boost/math/special_functions/lanczos.hpp"
+#include "boost/math/special_functions/gamma.hpp"
+#include "boost/math/special_functions/pow.hpp"
+#include "boost/math/special_functions/prime.hpp"
+#include "boost/math/policies/error_handling.hpp"
 
 #ifdef BOOST_MATH_INSTRUMENT
 #include <typeinfo>

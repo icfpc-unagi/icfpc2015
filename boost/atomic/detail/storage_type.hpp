@@ -17,8 +17,8 @@
 #define BOOST_ATOMIC_DETAIL_STORAGE_TYPE_HPP_INCLUDED_
 
 #include <cstring>
-#include <boost/cstdint.hpp>
-#include <boost/atomic/detail/config.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/atomic/detail/config.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

@@ -34,11 +34,11 @@
 #define BOOST_UUID_HPP
 
 #include <cstddef>
-#include <boost/cstdint.hpp>
-#include <boost/uuid/detail/config.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/uuid/detail/config.hpp"
 #ifndef BOOST_UUID_NO_TYPE_TRAITS
-#include <boost/type_traits/is_pod.hpp>
-#include <boost/type_traits/integral_constant.hpp>
+#include "boost/type_traits/is_pod.hpp"
+#include "boost/type_traits/integral_constant.hpp"
 #endif
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
@@ -200,9 +200,9 @@ struct is_pod<uuids::uuid> : true_type {};
 #endif
 
 #if defined(BOOST_UUID_USE_SSE2)
-#include <boost/uuid/detail/uuid_x86.hpp>
+#include "boost/uuid/detail/uuid_x86.hpp"
 #else
-#include <boost/uuid/detail/uuid_generic.hpp>
+#include "boost/uuid/detail/uuid_generic.hpp"
 #endif
 
 #if defined(_MSC_VER)

@@ -7,10 +7,10 @@
 #if !defined(BOOST_TTI_HAS_STATIC_MEMBER_DATA_HPP)
 #define BOOST_TTI_HAS_STATIC_MEMBER_DATA_HPP
 
-#include <boost/config.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/tti/gen/has_static_member_data_gen.hpp>
-#include <boost/tti/detail/dstatic_mem_data.hpp>
+#include "boost/config.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/tti/gen/has_static_member_data_gen.hpp"
+#include "boost/tti/detail/dstatic_mem_data.hpp"
 
 /*
 

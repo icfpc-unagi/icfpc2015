@@ -16,8 +16,8 @@
 #ifndef BOOST_SIGNALS2_TRACKABLE_HPP
 #define BOOST_SIGNALS2_TRACKABLE_HPP
 
-#include <boost/assert.hpp>
-#include <boost/shared_ptr.hpp>
+#include "boost/assert.hpp"
+#include "boost/shared_ptr.hpp"
 
 namespace boost {
   namespace signals2 {

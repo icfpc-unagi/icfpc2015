@@ -9,13 +9,13 @@
 #ifndef BOOST_THREAD_SCOPED_THREAD_HPP
 #define BOOST_THREAD_SCOPED_THREAD_HPP
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/delete.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/thread_functors.hpp>
-#include <boost/thread/thread_only.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/delete.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/thread_functors.hpp"
+#include "boost/thread/thread_only.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -284,6 +284,6 @@ BOOST_NOEXCEPT {
 }
 
 }
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

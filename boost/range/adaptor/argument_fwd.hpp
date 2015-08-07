@@ -11,7 +11,7 @@
 #ifndef BOOST_RANGE_ADAPTOR_ARGUMENT_FWD_HPP
 #define BOOST_RANGE_ADAPTOR_ARGUMENT_FWD_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #ifdef BOOST_MSVC
 #pragma warning(push)

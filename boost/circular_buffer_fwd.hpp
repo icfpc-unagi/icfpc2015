@@ -15,7 +15,7 @@
     #pragma once
 #endif
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #if !defined(BOOST_NO_STD_ALLOCATOR)
     #include <memory>
 #else

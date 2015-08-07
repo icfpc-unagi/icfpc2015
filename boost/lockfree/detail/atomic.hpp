@@ -7,7 +7,7 @@
 #ifndef BOOST_LOCKFREE_DETAIL_ATOMIC_HPP
 #define BOOST_LOCKFREE_DETAIL_ATOMIC_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #ifndef BOOST_LOCKFREE_FORCE_STD_ATOMIC
 
@@ -27,7 +27,7 @@
 
 
 #if defined(BOOST_LOCKFREE_NO_HDR_ATOMIC)
-#include <boost/atomic.hpp>
+#include "boost/atomic.hpp"
 #else
 #include <atomic>
 #endif

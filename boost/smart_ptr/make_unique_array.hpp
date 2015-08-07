@@ -9,8 +9,8 @@
 #ifndef BOOST_SMART_PTR_MAKE_UNIQUE_ARRAY_HPP
 #define BOOST_SMART_PTR_MAKE_UNIQUE_ARRAY_HPP
 
-#include <boost/smart_ptr/detail/up_if_array.hpp>
-#include <boost/smart_ptr/detail/array_traits.hpp>
+#include "boost/smart_ptr/detail/up_if_array.hpp"
+#include "boost/smart_ptr/detail/array_traits.hpp"
 
 namespace boost {
     template<class T>

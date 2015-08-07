@@ -16,20 +16,20 @@
 #define BOOST_TEST_UNIT_TEST_SUITE_IMPL_HPP_071894GER
 
 // Boost.Test
-#include <boost/test/detail/config.hpp>
-#include <boost/test/detail/global_typedef.hpp>
-#include <boost/test/utils/class_properties.hpp>
-#include <boost/test/utils/callback.hpp>
-#include <boost/test/detail/fwd_decl.hpp>
-#include <boost/test/detail/workaround.hpp>
-#include <boost/test/test_observer.hpp>
+#include "boost/test/detail/config.hpp"
+#include "boost/test/detail/global_typedef.hpp"
+#include "boost/test/utils/class_properties.hpp"
+#include "boost/test/utils/callback.hpp"
+#include "boost/test/detail/fwd_decl.hpp"
+#include "boost/test/detail/workaround.hpp"
+#include "boost/test/test_observer.hpp"
 
 // Boost
-#include <boost/shared_ptr.hpp>
-#include <boost/mpl/for_each.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/type.hpp>
-#include <boost/type_traits/is_const.hpp>
+#include "boost/shared_ptr.hpp"
+#include "boost/mpl/for_each.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/type.hpp"
+#include "boost/type_traits/is_const.hpp"
 
 // STL
 #include <typeinfo> // for typeid
@@ -37,7 +37,7 @@
 #include <list>     // for std::list
 #include <vector>   // for std::vector
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -428,7 +428,7 @@ public:
 
 } // namespace boost
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_UNIT_TEST_SUITE_IMPL_HPP_071894GER
 

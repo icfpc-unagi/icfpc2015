@@ -7,11 +7,11 @@
 #ifndef BOOST_THREAD_OSTREAM_BUFFER_HPP
 #define BOOST_THREAD_OSTREAM_BUFFER_HPP
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/delete.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/delete.hpp"
 #include <sstream>
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -40,6 +40,6 @@ namespace boost
 
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif // header

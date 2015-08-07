@@ -24,28 +24,28 @@
 #include <iterator>
 #include <algorithm>
 
-#include <boost/assert.hpp>
-#include <boost/wave/wave_config.hpp>
+#include "boost/assert.hpp"
+#include "boost/wave/wave_config.hpp"
 #if BOOST_WAVE_SERIALIZATION != 0
-#include <boost/serialization/serialization.hpp>
-#include <boost/serialization/shared_ptr.hpp>
+#include "boost/serialization/serialization.hpp"
+#include "boost/serialization/shared_ptr.hpp"
 #endif
 
-#include <boost/filesystem/path.hpp>
+#include "boost/filesystem/path.hpp"
 
-#include <boost/wave/util/time_conversion_helper.hpp>
-#include <boost/wave/util/unput_queue_iterator.hpp>
-#include <boost/wave/util/macro_helpers.hpp>
-#include <boost/wave/util/macro_definition.hpp>
-#include <boost/wave/util/symbol_table.hpp>
-#include <boost/wave/util/cpp_macromap_utils.hpp>
-#include <boost/wave/util/cpp_macromap_predef.hpp>
-#include <boost/wave/util/filesystem_compatibility.hpp>
-#include <boost/wave/grammars/cpp_defined_grammar_gen.hpp>
+#include "boost/wave/util/time_conversion_helper.hpp"
+#include "boost/wave/util/unput_queue_iterator.hpp"
+#include "boost/wave/util/macro_helpers.hpp"
+#include "boost/wave/util/macro_definition.hpp"
+#include "boost/wave/util/symbol_table.hpp"
+#include "boost/wave/util/cpp_macromap_utils.hpp"
+#include "boost/wave/util/cpp_macromap_predef.hpp"
+#include "boost/wave/util/filesystem_compatibility.hpp"
+#include "boost/wave/grammars/cpp_defined_grammar_gen.hpp"
 
-#include <boost/wave/wave_version.hpp>
-#include <boost/wave/cpp_exceptions.hpp>
-#include <boost/wave/language_support.hpp>
+#include "boost/wave/wave_version.hpp"
+#include "boost/wave/cpp_exceptions.hpp"
+#include "boost/wave/language_support.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

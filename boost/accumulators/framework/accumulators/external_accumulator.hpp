@@ -8,12 +8,12 @@
 #ifndef BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATORS_EXTERNAL_ACCUMULATOR_HPP_EAN_01_12_2005
 #define BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATORS_EXTERNAL_ACCUMULATOR_HPP_EAN_01_12_2005
 
-#include <boost/mpl/placeholders.hpp>
-#include <boost/parameter/keyword.hpp>
-#include <boost/accumulators/framework/extractor.hpp>
-#include <boost/accumulators/framework/depends_on.hpp> // for feature_tag
-#include <boost/accumulators/framework/accumulator_base.hpp>
-#include <boost/accumulators/framework/accumulators/reference_accumulator.hpp>
+#include "boost/mpl/placeholders.hpp"
+#include "boost/parameter/keyword.hpp"
+#include "boost/accumulators/framework/extractor.hpp"
+#include "boost/accumulators/framework/depends_on.hpp" // for feature_tag
+#include "boost/accumulators/framework/accumulator_base.hpp"
+#include "boost/accumulators/framework/accumulators/reference_accumulator.hpp"
 
 namespace boost { namespace accumulators { namespace impl
 {

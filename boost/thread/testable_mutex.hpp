@@ -7,14 +7,14 @@
 #ifndef BOOST_THREAD_TESTABLE_LOCKABLE_HPP
 #define BOOST_THREAD_TESTABLE_LOCKABLE_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 
-#include <boost/thread/thread_only.hpp>
+#include "boost/thread/thread_only.hpp"
 
-#include <boost/atomic.hpp>
-#include <boost/assert.hpp>
+#include "boost/atomic.hpp"
+#include "boost/assert.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -147,6 +147,6 @@ namespace boost
 //  }
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif // header

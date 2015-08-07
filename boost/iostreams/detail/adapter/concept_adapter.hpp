@@ -8,25 +8,25 @@
 #ifndef BOOST_IOSTREAMS_DETAIL_CONCEPT_ADAPTER_HPP_INCLUDED
 #define BOOST_IOSTREAMS_DETAIL_CONCEPT_ADAPTER_HPP_INCLUDED
 
-#include <boost/config.hpp>                             // SFINAE.
-#include <boost/iostreams/concepts.hpp>
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/detail/adapter/non_blocking_adapter.hpp>
-#include <boost/iostreams/detail/call_traits.hpp>
-#include <boost/iostreams/detail/char_traits.hpp>
-#include <boost/iostreams/detail/dispatch.hpp>
-#include <boost/iostreams/detail/error.hpp>
-#include <boost/iostreams/detail/streambuf.hpp>        // pubsync.
-#include <boost/iostreams/detail/config/unreachable_return.hpp>
-#include <boost/iostreams/device/null.hpp>
-#include <boost/iostreams/traits.hpp>
-#include <boost/iostreams/operations.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/throw_exception.hpp>
+#include "boost/config.hpp"                             // SFINAE.
+#include "boost/iostreams/concepts.hpp"
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/detail/adapter/non_blocking_adapter.hpp"
+#include "boost/iostreams/detail/call_traits.hpp"
+#include "boost/iostreams/detail/char_traits.hpp"
+#include "boost/iostreams/detail/dispatch.hpp"
+#include "boost/iostreams/detail/error.hpp"
+#include "boost/iostreams/detail/streambuf.hpp"        // pubsync.
+#include "boost/iostreams/detail/config/unreachable_return.hpp"
+#include "boost/iostreams/device/null.hpp"
+#include "boost/iostreams/traits.hpp"
+#include "boost/iostreams/operations.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/throw_exception.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/disable_warnings.hpp"  // MSVC.
 
 
 namespace boost { namespace iostreams { namespace detail {
@@ -282,6 +282,6 @@ struct flt_wrapper_impl<output> {
 
 } } } // End namespaces detail, iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>  // MSVC.
+#include "boost/iostreams/detail/config/enable_warnings.hpp"  // MSVC.
 
 #endif // #ifndef BOOST_IOSTREAMS_DETAIL_CONCEPT_ADAPTER_HPP_INCLUDED

@@ -13,8 +13,8 @@
 #if !defined(BOOST_SPIRIT_PATTERN_PARSER_HPP)
 #define BOOST_SPIRIT_PATTERN_PARSER_HPP
 
-#include <boost/spirit/include/classic_primitives.hpp>
-#include <boost/wave/wave_config.hpp>
+#include "boost/spirit/include/classic_primitives.hpp"
+#include "boost/wave/wave_config.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

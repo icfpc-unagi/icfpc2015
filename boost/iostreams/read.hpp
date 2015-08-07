@@ -12,22 +12,22 @@
 # pragma once
 #endif
 
-#include <boost/config.hpp>  // DEDUCED_TYPENAME, MSVC.
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/char_traits.hpp>
-#include <boost/iostreams/detail/char_traits.hpp>
-#include <boost/iostreams/detail/dispatch.hpp>
-#include <boost/iostreams/detail/ios.hpp>  // streamsize.
-#include <boost/iostreams/detail/streambuf.hpp>
-#include <boost/iostreams/detail/wrap_unwrap.hpp>
-#include <boost/iostreams/operations_fwd.hpp>
-#include <boost/mpl/if.hpp>
+#include "boost/config.hpp"  // DEDUCED_TYPENAME, MSVC.
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/char_traits.hpp"
+#include "boost/iostreams/detail/char_traits.hpp"
+#include "boost/iostreams/detail/dispatch.hpp"
+#include "boost/iostreams/detail/ios.hpp"  // streamsize.
+#include "boost/iostreams/detail/streambuf.hpp"
+#include "boost/iostreams/detail/wrap_unwrap.hpp"
+#include "boost/iostreams/operations_fwd.hpp"
+#include "boost/mpl/if.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>
+#include "boost/iostreams/detail/config/disable_warnings.hpp"
 
 #if BOOST_WORKAROUND(BOOST_MSVC, < 1300) //-----------------------------------//
-# include <boost/iostreams/detail/vc6/read.hpp>
+# include "boost/iostreams/detail/vc6/read.hpp"
 #else // #if BOOST_WORKAROUND(BOOST_MSVC, < 1300) //--------------------------//
 
 namespace boost { namespace iostreams {
@@ -242,6 +242,6 @@ struct read_filter_impl<any_tag> {
 
 #endif // #if BOOST_WORKAROUND(BOOST_MSVC, < 1300) //-------------------------//
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>
+#include "boost/iostreams/detail/config/enable_warnings.hpp"
 
 #endif // #ifndef BOOST_IOSTREAMS_READ_HPP_INCLUDED

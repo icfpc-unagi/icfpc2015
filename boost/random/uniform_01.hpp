@@ -17,13 +17,13 @@
 #define BOOST_RANDOM_UNIFORM_01_HPP
 
 #include <iostream>
-#include <boost/config.hpp>
-#include <boost/limits.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/ptr_helper.hpp>
+#include "boost/config.hpp"
+#include "boost/limits.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/ptr_helper.hpp"
 
-#include <boost/random/detail/disable_warnings.hpp>
+#include "boost/random/detail/disable_warnings.hpp"
 
 namespace boost {
 namespace random {
@@ -272,6 +272,6 @@ using random::uniform_01;
 
 } // namespace boost
 
-#include <boost/random/detail/enable_warnings.hpp>
+#include "boost/random/detail/enable_warnings.hpp"
 
 #endif // BOOST_RANDOM_UNIFORM_01_HPP

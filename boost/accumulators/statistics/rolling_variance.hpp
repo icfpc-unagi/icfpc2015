@@ -9,21 +9,21 @@
 #ifndef BOOST_ACCUMULATORS_STATISTICS_ROLLING_VARIANCE_HPP_EAN_15_11_2011
 #define BOOST_ACCUMULATORS_STATISTICS_ROLLING_VARIANCE_HPP_EAN_15_11_2011
 
-#include <boost/accumulators/accumulators.hpp>
-#include <boost/accumulators/statistics/stats.hpp>
+#include "boost/accumulators/accumulators.hpp"
+#include "boost/accumulators/statistics/stats.hpp"
 
-#include <boost/mpl/placeholders.hpp>
-#include <boost/accumulators/framework/accumulator_base.hpp>
-#include <boost/accumulators/framework/extractor.hpp>
-#include <boost/accumulators/numeric/functional.hpp>
-#include <boost/accumulators/framework/parameters/sample.hpp>
-#include <boost/accumulators/framework/depends_on.hpp>
-#include <boost/accumulators/statistics_fwd.hpp>
-#include <boost/accumulators/statistics/rolling_mean.hpp>
-#include <boost/accumulators/statistics/rolling_moment.hpp>
+#include "boost/mpl/placeholders.hpp"
+#include "boost/accumulators/framework/accumulator_base.hpp"
+#include "boost/accumulators/framework/extractor.hpp"
+#include "boost/accumulators/numeric/functional.hpp"
+#include "boost/accumulators/framework/parameters/sample.hpp"
+#include "boost/accumulators/framework/depends_on.hpp"
+#include "boost/accumulators/statistics_fwd.hpp"
+#include "boost/accumulators/statistics/rolling_mean.hpp"
+#include "boost/accumulators/statistics/rolling_moment.hpp"
 
-#include <boost/type_traits/is_arithmetic.hpp>
-#include <boost/utility/enable_if.hpp>
+#include "boost/type_traits/is_arithmetic.hpp"
+#include "boost/utility/enable_if.hpp"
 
 namespace boost { namespace accumulators
 {

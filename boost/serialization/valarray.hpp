@@ -17,11 +17,11 @@
 //  See http://www.boost.org for updates, documentation, and revision history.
 
 #include <valarray>
-#include <boost/config.hpp>
-#include <boost/serialization/split_free.hpp>
-#include <boost/serialization/array.hpp>
-#include <boost/serialization/collection_size_type.hpp>
-#include <boost/serialization/detail/get_data.hpp>
+#include "boost/config.hpp"
+#include "boost/serialization/split_free.hpp"
+#include "boost/serialization/array.hpp"
+#include "boost/serialization/collection_size_type.hpp"
+#include "boost/serialization/detail/get_data.hpp"
 
 // function specializations must be defined in the appropriate
 // namespace - boost::serialization
@@ -66,7 +66,7 @@ inline void serialize( Archive & ar, STD::valarray<U> & t, const unsigned int fi
 
 } } // end namespace boost::serialization
 
-#include <boost/serialization/collection_traits.hpp>
+#include "boost/serialization/collection_traits.hpp"
 
 BOOST_SERIALIZATION_COLLECTION_TRAITS(STD::valarray)
 #undef STD

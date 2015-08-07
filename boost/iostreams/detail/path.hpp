@@ -22,13 +22,13 @@
 
 #include <cstring>
 #include <string>
-#include <boost/iostreams/detail/config/wide_streams.hpp>
+#include "boost/iostreams/detail/config/wide_streams.hpp"
 #ifndef BOOST_IOSTREAMS_NO_WIDE_STREAMS
 # include <cwchar>
 #endif
-#include <boost/static_assert.hpp>
-#include <boost/type.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/static_assert.hpp"
+#include "boost/type.hpp"
+#include "boost/type_traits/is_same.hpp"
 
 namespace boost { namespace iostreams { namespace detail {
 

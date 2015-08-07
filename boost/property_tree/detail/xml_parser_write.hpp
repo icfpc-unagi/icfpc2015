@@ -11,8 +11,8 @@
 #ifndef BOOST_PROPERTY_TREE_DETAIL_XML_PARSER_WRITE_HPP_INCLUDED
 #define BOOST_PROPERTY_TREE_DETAIL_XML_PARSER_WRITE_HPP_INCLUDED
 
-#include <boost/property_tree/ptree.hpp>
-#include <boost/property_tree/detail/xml_parser_utils.hpp>
+#include "boost/property_tree/ptree.hpp"
+#include "boost/property_tree/detail/xml_parser_utils.hpp"
 #include <string>
 #include <ostream>
 #include <iomanip>

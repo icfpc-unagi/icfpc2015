@@ -9,12 +9,12 @@
 #   ifndef BOOST_FUNCTIONAL_OVERLOADED_FUNCTION_DETAIL_BASE_HPP_
 #       define BOOST_FUNCTIONAL_OVERLOADED_FUNCTION_DETAIL_BASE_HPP_
 
-#       include <boost/functional/overloaded_function/config.hpp>
-#       include <boost/function.hpp>
-#       include <boost/preprocessor/iteration/iterate.hpp>
-#       include <boost/preprocessor/repetition/enum.hpp>
-#       include <boost/preprocessor/cat.hpp>
-#       include <boost/preprocessor/comma_if.hpp>
+#       include "boost/functional/overloaded_function/config.hpp"
+#       include "boost/function.hpp"
+#       include "boost/preprocessor/iteration/iterate.hpp"
+#       include "boost/preprocessor/repetition/enum.hpp"
+#       include "boost/preprocessor/cat.hpp"
+#       include "boost/preprocessor/comma_if.hpp"
 
 #define BOOST_FUNCTIONAL_DETAIL_arg_type(z, n, unused) \
     BOOST_PP_CAT(A, n)

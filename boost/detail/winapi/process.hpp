@@ -9,8 +9,8 @@
 #ifndef BOOST_DETAIL_WINAPI_PROCESS_HPP
 #define BOOST_DETAIL_WINAPI_PROCESS_HPP
 
-#include <boost/detail/winapi/basic_types.hpp>
-#include <boost/detail/winapi/GetCurrentProcess.hpp>
+#include "boost/detail/winapi/basic_types.hpp"
+#include "boost/detail/winapi/GetCurrentProcess.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

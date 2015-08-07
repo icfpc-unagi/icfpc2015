@@ -10,7 +10,7 @@
 #pragma once
 #endif
 
-#include <boost/math/tools/config.hpp>
+#include "boost/math/tools/config.hpp"
 
 namespace boost{ namespace math{ namespace tools{
 //

@@ -7,7 +7,7 @@
 #ifndef BOOST_THREAD_LOCK_OPTIONS_HPP
 #define BOOST_THREAD_LOCK_OPTIONS_HPP
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -26,6 +26,6 @@ namespace boost
   BOOST_CONSTEXPR_OR_CONST adopt_lock_t adopt_lock = {};
 
 }
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

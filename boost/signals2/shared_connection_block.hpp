@@ -11,9 +11,9 @@
 #ifndef BOOST_SIGNALS2_SHARED_CONNECTION_BLOCK_HPP
 #define BOOST_SIGNALS2_SHARED_CONNECTION_BLOCK_HPP
 
-#include <boost/shared_ptr.hpp>
-#include <boost/signals2/connection.hpp>
-#include <boost/weak_ptr.hpp>
+#include "boost/shared_ptr.hpp"
+#include "boost/signals2/connection.hpp"
+#include "boost/weak_ptr.hpp"
 
 namespace boost
 {

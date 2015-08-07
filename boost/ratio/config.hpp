@@ -9,8 +9,8 @@
 #ifndef BOOST_RATIO_CONFIG_HPP
 #define BOOST_RATIO_CONFIG_HPP
 
-#include <boost/config.hpp>
-#include <boost/cstdint.hpp>
+#include "boost/config.hpp"
+#include "boost/cstdint.hpp"
 
 
 #if __GNUC__ < 4 || (__GNUC__ == 4 && __GNUC_MINOR__ < 5) || !defined(__GXX_EXPERIMENTAL_CXX0X__)
@@ -61,11 +61,11 @@
 #ifndef BOOST_NO_CXX11_STATIC_ASSERT
 #define BOOST_RATIO_STATIC_ASSERT(CND, MSG, TYPES) static_assert(CND,MSG)
 #elif defined(BOOST_RATIO_USES_STATIC_ASSERT)
-#include <boost/static_assert.hpp>
+#include "boost/static_assert.hpp"
 #define BOOST_RATIO_STATIC_ASSERT(CND, MSG, TYPES) BOOST_STATIC_ASSERT(CND)
 #elif defined(BOOST_RATIO_USES_MPL_ASSERT)
-#include <boost/mpl/assert.hpp>
-#include <boost/mpl/bool.hpp>
+#include "boost/mpl/assert.hpp"
+#include "boost/mpl/bool.hpp"
 #define BOOST_RATIO_STATIC_ASSERT(CND, MSG, TYPES)                                 \
     BOOST_MPL_ASSERT_MSG(boost::mpl::bool_< (CND) >::type::value, MSG, TYPES)
 #else

@@ -17,8 +17,8 @@
 #include <functional>   // for std::equal_to
 #include <iterator>
 
-#include <boost/algorithm/cxx11/is_permutation.hpp>
-#include <boost/algorithm/cxx14/mismatch.hpp>
+#include "boost/algorithm/cxx11/is_permutation.hpp"
+#include "boost/algorithm/cxx14/mismatch.hpp"
 
 namespace boost { namespace algorithm {
 

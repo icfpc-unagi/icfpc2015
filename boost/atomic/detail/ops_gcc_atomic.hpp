@@ -14,14 +14,14 @@
 #ifndef BOOST_ATOMIC_DETAIL_OPS_GCC_ATOMIC_HPP_INCLUDED_
 #define BOOST_ATOMIC_DETAIL_OPS_GCC_ATOMIC_HPP_INCLUDED_
 
-#include <boost/memory_order.hpp>
-#include <boost/atomic/detail/config.hpp>
-#include <boost/atomic/detail/storage_type.hpp>
-#include <boost/atomic/detail/operations_fwd.hpp>
-#include <boost/atomic/capabilities.hpp>
+#include "boost/memory_order.hpp"
+#include "boost/atomic/detail/config.hpp"
+#include "boost/atomic/detail/storage_type.hpp"
+#include "boost/atomic/detail/operations_fwd.hpp"
+#include "boost/atomic/capabilities.hpp"
 #if defined(__clang__) && (defined(BOOST_ATOMIC_DETAIL_X86_HAS_CMPXCHG8B) || defined(BOOST_ATOMIC_DETAIL_X86_HAS_CMPXCHG16B))
-#include <boost/atomic/detail/ops_gcc_x86_dcas.hpp>
-#include <boost/atomic/detail/ops_cas_based.hpp>
+#include "boost/atomic/detail/ops_gcc_x86_dcas.hpp"
+#include "boost/atomic/detail/ops_cas_based.hpp"
 #endif
 
 #if __GCC_ATOMIC_LLONG_LOCK_FREE != BOOST_ATOMIC_LLONG_LOCK_FREE || __GCC_ATOMIC_LONG_LOCK_FREE != BOOST_ATOMIC_LONG_LOCK_FREE ||\
@@ -29,8 +29,8 @@
     __GCC_ATOMIC_CHAR_LOCK_FREE != BOOST_ATOMIC_CHAR_LOCK_FREE || __GCC_ATOMIC_BOOL_LOCK_FREE != BOOST_ATOMIC_BOOL_LOCK_FREE ||\
     __GCC_ATOMIC_WCHAR_T_LOCK_FREE != BOOST_ATOMIC_WCHAR_T_LOCK_FREE
 // There are platforms where we need to use larger storage types
-#include <boost/atomic/detail/int_sizes.hpp>
-#include <boost/atomic/detail/ops_extending_cas_based.hpp>
+#include "boost/atomic/detail/int_sizes.hpp"
+#include "boost/atomic/detail/ops_extending_cas_based.hpp"
 #endif
 
 #ifdef BOOST_HAS_PRAGMA_ONCE

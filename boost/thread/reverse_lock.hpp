@@ -5,11 +5,11 @@
 
 #ifndef BOOST_THREAD_REVERSE_LOCK_HPP
 #define BOOST_THREAD_REVERSE_LOCK_HPP
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/lockable_traits.hpp>
-#include <boost/thread/lock_options.hpp>
-#include <boost/thread/detail/delete.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/lockable_traits.hpp"
+#include "boost/thread/lock_options.hpp"
+#include "boost/thread/detail/delete.hpp"
 
 namespace boost
 {

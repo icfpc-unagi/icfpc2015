@@ -7,12 +7,12 @@
 #ifndef BOOST_MATH_TOOLS_BIG_CONSTANT_HPP
 #define BOOST_MATH_TOOLS_BIG_CONSTANT_HPP
 
-#include <boost/math/tools/config.hpp>
+#include "boost/math/tools/config.hpp"
 #ifndef BOOST_MATH_NO_LEXICAL_CAST
-#include <boost/lexical_cast.hpp>
+#include "boost/lexical_cast.hpp"
 #endif
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/math/cstdfloat/cstdfloat_types.hpp>
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/math/cstdfloat/cstdfloat_types.hpp"
 
 namespace boost{ namespace math{ 
 

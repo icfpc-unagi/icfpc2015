@@ -13,18 +13,18 @@
 
 #include <cstring>
 #include <cstddef>
-#include <boost/assert.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/detail/interlocked.hpp>
-#include <boost/thread/win32/thread_primitives.hpp>
-#include <boost/thread/win32/interlocked_read.hpp>
-#include <boost/core/no_exceptions_support.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/detail/invoke.hpp>
+#include "boost/assert.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/detail/interlocked.hpp"
+#include "boost/thread/win32/thread_primitives.hpp"
+#include "boost/thread/win32/interlocked_read.hpp"
+#include "boost/core/no_exceptions_support.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/detail/invoke.hpp"
 
-#include <boost/bind.hpp>
+#include "boost/bind.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 #ifdef BOOST_NO_STDC_NAMESPACE
 namespace std
@@ -1082,6 +1082,6 @@ namespace boost
 #endif
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

@@ -9,10 +9,10 @@ Copyright (c) 1999-2006: Cortex Software GmbH, Kantstrasse 57, Berlin
 #ifndef BOOST_ICL_SPLIT_INTERVAL_MAP_HPP_JOFA_000706
 #define BOOST_ICL_SPLIT_INTERVAL_MAP_HPP_JOFA_000706
 
-#include <boost/icl/interval_set.hpp>
-#include <boost/icl/interval_map.hpp>
-#include <boost/icl/interval_base_map.hpp>
-#include <boost/icl/split_interval_set.hpp>
+#include "boost/icl/interval_set.hpp"
+#include "boost/icl/interval_map.hpp"
+#include "boost/icl/interval_base_map.hpp"
+#include "boost/icl/split_interval_set.hpp"
 
 namespace boost{namespace icl
 {

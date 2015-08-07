@@ -14,15 +14,15 @@
 #ifndef BOOST_MOVE_MOVE_TRAITS_HPP
 #define BOOST_MOVE_MOVE_TRAITS_HPP
 
-#include <boost/move/detail/config_begin.hpp>
-#include <boost/type_traits/has_trivial_destructor.hpp>
-#include <boost/type_traits/is_nothrow_move_constructible.hpp>
-#include <boost/type_traits/is_nothrow_move_assignable.hpp>
-#include <boost/type_traits/is_copy_constructible.hpp>
-#include <boost/move/detail/meta_utils.hpp>
+#include "boost/move/detail/config_begin.hpp"
+#include "boost/type_traits/has_trivial_destructor.hpp"
+#include "boost/type_traits/is_nothrow_move_constructible.hpp"
+#include "boost/type_traits/is_nothrow_move_assignable.hpp"
+#include "boost/type_traits/is_copy_constructible.hpp"
+#include "boost/move/detail/meta_utils.hpp"
 
 #ifndef BOOST_NO_CXX11_RVALUE_REFERENCES
-#include <boost/move/core.hpp>
+#include "boost/move/core.hpp"
 #endif
 
 namespace boost {
@@ -67,6 +67,6 @@ struct is_nothrow_move_constructible_or_uncopyable
 }  //move_detail {
 }  //namespace boost {
 
-#include <boost/move/detail/config_end.hpp>
+#include "boost/move/detail/config_end.hpp"
 
 #endif //#ifndef BOOST_MOVE_MOVE_TRAITS_HPP

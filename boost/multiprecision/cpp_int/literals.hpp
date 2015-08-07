@@ -6,7 +6,7 @@
 #ifndef BOOST_MP_CPP_INT_LITERALS_HPP
 #define BOOST_MP_CPP_INT_LITERALS_HPP
 
-#include <boost/multiprecision/cpp_int/cpp_int_config.hpp>
+#include "boost/multiprecision/cpp_int/cpp_int_config.hpp"
 
 namespace boost{ namespace multiprecision{
 

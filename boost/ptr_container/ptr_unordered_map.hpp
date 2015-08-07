@@ -16,8 +16,8 @@
 # pragma once
 #endif
 
-#include <boost/unordered_map.hpp>
-#include <boost/ptr_container/ptr_map_adapter.hpp>
+#include "boost/unordered_map.hpp"
+#include "boost/ptr_container/ptr_map_adapter.hpp"
 
 namespace boost
 {

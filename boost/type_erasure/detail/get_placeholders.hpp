@@ -13,16 +13,16 @@
 #ifndef BOOST_TYPE_ERASURE_DETAIL_GET_PLACEHOLDERS_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_DETAIL_GET_PLACEHOLDERS_HPP_INCLUDED
 
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/insert.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/iteration/iterate.hpp>
-#include <boost/preprocessor/repetition/enum.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_params.hpp>
-#include <boost/type_erasure/config.hpp>
-#include <boost/type_erasure/is_placeholder.hpp>
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/insert.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/iteration/iterate.hpp"
+#include "boost/preprocessor/repetition/enum.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_params.hpp"
+#include "boost/type_erasure/config.hpp"
+#include "boost/type_erasure/is_placeholder.hpp"
 
 namespace boost {
 namespace type_erasure {
@@ -97,7 +97,7 @@ struct get_placeholders_in_argument<R(T...), Out>
 
 #else
 
-#define BOOST_PP_FILENAME_1 <boost/type_erasure/detail/get_placeholders.hpp>
+#define BOOST_PP_FILENAME_1 "boost/type_erasure/detail/get_placeholders.hpp"
 #define BOOST_PP_ITERATION_LIMITS (0, BOOST_TYPE_ERASURE_MAX_ARITY)
 #include BOOST_PP_ITERATE()
 

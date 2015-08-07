@@ -8,9 +8,9 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_INTERVAL_TRAITS_HPP_JOFA_100926
 #define BOOST_ICL_INTERVAL_TRAITS_HPP_JOFA_100926
 
-#include <boost/icl/type_traits/domain_type_of.hpp>
-#include <boost/icl/type_traits/difference_type_of.hpp>
-#include <boost/icl/type_traits/size_type_of.hpp>
+#include "boost/icl/type_traits/domain_type_of.hpp"
+#include "boost/icl/type_traits/difference_type_of.hpp"
+#include "boost/icl/type_traits/size_type_of.hpp"
 
 namespace boost{ namespace icl
 {

@@ -11,13 +11,13 @@
 #ifndef BOOST_MSM_FRONT_EUML_STT_GRAMMAR_H
 #define BOOST_MSM_FRONT_EUML_STT_GRAMMAR_H
 
-#include <boost/msm/front/euml/common.hpp>
-#include <boost/mpl/vector.hpp>
-#include <boost/mpl/eval_if.hpp>
+#include "boost/msm/front/euml/common.hpp"
+#include "boost/mpl/vector.hpp"
+#include "boost/mpl/eval_if.hpp"
 
-#include <boost/msm/front/euml/operator.hpp>
-#include <boost/msm/front/euml/guard_grammar.hpp>
-#include <boost/msm/front/euml/state_grammar.hpp>
+#include "boost/msm/front/euml/operator.hpp"
+#include "boost/msm/front/euml/guard_grammar.hpp"
+#include "boost/msm/front/euml/state_grammar.hpp"
 
 namespace proto = boost::proto;
 

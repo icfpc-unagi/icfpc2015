@@ -19,34 +19,34 @@
 #include <cstdlib>
 #include <cctype>
 
-#include <boost/assert.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/filesystem/path.hpp>
-#include <boost/filesystem/operations.hpp>
-#include <boost/spirit/include/classic_multi_pass.hpp>
-#include <boost/spirit/include/classic_parse_tree_utils.hpp>
+#include "boost/assert.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/filesystem/path.hpp"
+#include "boost/filesystem/operations.hpp"
+#include "boost/spirit/include/classic_multi_pass.hpp"
+#include "boost/spirit/include/classic_parse_tree_utils.hpp"
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/pool/pool_alloc.hpp>
+#include "boost/wave/wave_config.hpp"
+#include "boost/pool/pool_alloc.hpp"
 
-#include <boost/wave/util/insert_whitespace_detection.hpp>
-#include <boost/wave/util/macro_helpers.hpp>
-#include <boost/wave/util/cpp_macromap_utils.hpp>
-#include <boost/wave/util/interpret_pragma.hpp>
-#include <boost/wave/util/transform_iterator.hpp>
-#include <boost/wave/util/functor_input.hpp>
-#include <boost/wave/util/filesystem_compatibility.hpp>
+#include "boost/wave/util/insert_whitespace_detection.hpp"
+#include "boost/wave/util/macro_helpers.hpp"
+#include "boost/wave/util/cpp_macromap_utils.hpp"
+#include "boost/wave/util/interpret_pragma.hpp"
+#include "boost/wave/util/transform_iterator.hpp"
+#include "boost/wave/util/functor_input.hpp"
+#include "boost/wave/util/filesystem_compatibility.hpp"
 
-#include <boost/wave/grammars/cpp_grammar_gen.hpp>
-#include <boost/wave/grammars/cpp_expression_grammar_gen.hpp>
+#include "boost/wave/grammars/cpp_grammar_gen.hpp"
+#include "boost/wave/grammars/cpp_expression_grammar_gen.hpp"
 #if BOOST_WAVE_ENABLE_COMMANDLINE_MACROS != 0
-#include <boost/wave/grammars/cpp_predef_macros_gen.hpp>
+#include "boost/wave/grammars/cpp_predef_macros_gen.hpp"
 #endif
 
-#include <boost/wave/whitespace_handling.hpp>
-#include <boost/wave/cpp_iteration_context.hpp>
-#include <boost/wave/cpp_exceptions.hpp>
-#include <boost/wave/language_support.hpp>
+#include "boost/wave/whitespace_handling.hpp"
+#include "boost/wave/cpp_iteration_context.hpp"
+#include "boost/wave/cpp_exceptions.hpp"
+#include "boost/wave/language_support.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

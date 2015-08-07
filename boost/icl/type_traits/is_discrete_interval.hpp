@@ -8,7 +8,7 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_IS_DISCRETE_INTERVAL_HPP_JOFA_100327
 #define BOOST_ICL_TYPE_TRAITS_IS_DISCRETE_INTERVAL_HPP_JOFA_100327
 
-#include <boost/icl/type_traits/is_interval.hpp>
+#include "boost/icl/type_traits/is_interval.hpp"
 
 namespace boost{ namespace icl
 {

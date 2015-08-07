@@ -12,7 +12,7 @@
 #define BOOST_MSM_FRONT_EUML_TRANSFORMATION_H
 
 #include <algorithm>
-#include <boost/msm/front/euml/common.hpp>
+#include "boost/msm/front/euml/common.hpp"
 
 namespace boost { namespace msm { namespace front { namespace euml
 {

@@ -7,18 +7,18 @@
 #ifndef BOOST_COROUTINES_DETAIL_SYMMETRIC_COROUTINE_IMPL_H
 #define BOOST_COROUTINES_DETAIL_SYMMETRIC_COROUTINE_IMPL_H
 
-#include <boost/assert.hpp>
-#include <boost/config.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/utility.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/utility.hpp"
 
-#include <boost/coroutine/detail/config.hpp>
-#include <boost/coroutine/detail/coroutine_context.hpp>
-#include <boost/coroutine/detail/flags.hpp>
-#include <boost/coroutine/detail/parameters.hpp>
-#include <boost/coroutine/detail/trampoline.hpp>
-#include <boost/coroutine/exceptions.hpp>
-#include <boost/coroutine/stack_context.hpp>
+#include "boost/coroutine/detail/config.hpp"
+#include "boost/coroutine/detail/coroutine_context.hpp"
+#include "boost/coroutine/detail/flags.hpp"
+#include "boost/coroutine/detail/parameters.hpp"
+#include "boost/coroutine/detail/trampoline.hpp"
+#include "boost/coroutine/exceptions.hpp"
+#include "boost/coroutine/stack_context.hpp"
 
 #ifdef BOOST_HAS_ABI_HEADERS
 #  include BOOST_ABI_PREFIX

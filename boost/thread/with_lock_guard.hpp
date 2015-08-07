@@ -9,9 +9,9 @@
 #ifndef BOOST_THREAD_WITH_LOCK_GUARD_HPP
 #define BOOST_THREAD_WITH_LOCK_GUARD_HPP
 
-#include <boost/thread/lock_guard.hpp>
-#include <boost/utility/result_of.hpp>
-//#include <boost/thread/detail/invoke.hpp>
+#include "boost/thread/lock_guard.hpp"
+#include "boost/utility/result_of.hpp"
+//#include "boost/thread/detail/invoke.hpp"
 
 namespace boost {
 

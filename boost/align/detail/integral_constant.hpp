@@ -9,7 +9,7 @@
 #ifndef BOOST_ALIGN_DETAIL_INTEGRAL_CONSTANT_HPP
 #define BOOST_ALIGN_DETAIL_INTEGRAL_CONSTANT_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if !defined(BOOST_NO_CXX11_HDR_TYPE_TRAITS)
 #include <type_traits>

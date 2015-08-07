@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         regex_traits.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares regular expression traits classes.
   */
 
@@ -20,41 +20,41 @@
 #define BOOST_REGEX_TRAITS_HPP_INCLUDED
 
 #ifndef BOOST_REGEX_CONFIG_HPP
-#include <boost/regex/config.hpp>
+#include "boost/regex/config.hpp"
 #endif
 #ifndef BOOST_REGEX_WORKAROUND_HPP
-#include <boost/regex/v4/regex_workaround.hpp>
+#include "boost/regex/v4/regex_workaround.hpp"
 #endif
 #ifndef BOOST_REGEX_SYNTAX_TYPE_HPP
-#include <boost/regex/v4/syntax_type.hpp>
+#include "boost/regex/v4/syntax_type.hpp"
 #endif
 #ifndef BOOST_REGEX_ERROR_TYPE_HPP
-#include <boost/regex/v4/error_type.hpp>
+#include "boost/regex/v4/error_type.hpp"
 #endif
 #ifndef BOOST_REGEX_TRAITS_DEFAULTS_HPP_INCLUDED
-#include <boost/regex/v4/regex_traits_defaults.hpp>
+#include "boost/regex/v4/regex_traits_defaults.hpp"
 #endif
 #ifndef BOOST_NO_STD_LOCALE
 #  ifndef BOOST_CPP_REGEX_TRAITS_HPP_INCLUDED
-#     include <boost/regex/v4/cpp_regex_traits.hpp>
+#     include "boost/regex/v4/cpp_regex_traits.hpp"
 #  endif
 #endif
 #if !BOOST_WORKAROUND(__BORLANDC__, < 0x560)
 #  ifndef BOOST_C_REGEX_TRAITS_HPP_INCLUDED
-#     include <boost/regex/v4/c_regex_traits.hpp>
+#     include "boost/regex/v4/c_regex_traits.hpp"
 #  endif
 #endif
 #if defined(_WIN32) && !defined(BOOST_REGEX_NO_W32)
 #  ifndef BOOST_W32_REGEX_TRAITS_HPP_INCLUDED
-#     include <boost/regex/v4/w32_regex_traits.hpp>
+#     include "boost/regex/v4/w32_regex_traits.hpp"
 #  endif
 #endif
 #ifndef BOOST_REGEX_FWD_HPP_INCLUDED
-#include <boost/regex_fwd.hpp>
+#include "boost/regex_fwd.hpp"
 #endif
 
 #include "boost/mpl/has_xxx.hpp"
-#include <boost/static_assert.hpp>
+#include "boost/static_assert.hpp"
 
 #ifdef BOOST_MSVC
 #pragma warning(push)

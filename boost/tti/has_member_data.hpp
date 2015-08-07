@@ -7,11 +7,11 @@
 #if !defined(BOOST_TTI_HAS_MEMBER_DATA_HPP)
 #define BOOST_TTI_HAS_MEMBER_DATA_HPP
 
-#include <boost/config.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/tti/detail/ddeftype.hpp>
-#include <boost/tti/detail/dmem_data.hpp>
-#include <boost/tti/gen/has_member_data_gen.hpp>
+#include "boost/config.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/tti/detail/ddeftype.hpp"
+#include "boost/tti/detail/dmem_data.hpp"
+#include "boost/tti/gen/has_member_data_gen.hpp"
 
 /*
 

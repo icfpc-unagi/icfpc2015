@@ -15,7 +15,7 @@
 #ifndef BOOST_BITMASK_HPP
 #define BOOST_BITMASK_HPP
 
-#include <boost/cstdint.hpp>
+#include "boost/cstdint.hpp"
 
 #define BOOST_BITMASK(Bitmask)                                            \
                                                                           \

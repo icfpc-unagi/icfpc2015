@@ -6,7 +6,7 @@
 #ifndef BOOST_BIG_LANCZOS_HPP
 #define BOOST_BIG_LANCZOS_HPP
 
-#include <boost/math/special_functions/lanczos.hpp>
+#include "boost/math/special_functions/lanczos.hpp"
 
 namespace boost{ namespace math{ namespace lanczos{
 

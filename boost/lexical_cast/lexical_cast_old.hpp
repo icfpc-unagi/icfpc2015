@@ -18,7 +18,7 @@
 #ifndef BOOST_LEXICAL_CAST_LEXICAL_CAST_OLD_HPP
 #define BOOST_LEXICAL_CAST_LEXICAL_CAST_OLD_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #   pragma once
 #endif
@@ -32,13 +32,13 @@
 #include <string>
 #include <cstring>
 #include <cstdio>
-#include <boost/limits.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/type_traits/ice.hpp>
-#include <boost/type_traits/is_pointer.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/detail/lcast_precision.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/limits.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/type_traits/ice.hpp"
+#include "boost/type_traits/is_pointer.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/detail/lcast_precision.hpp"
+#include "boost/detail/workaround.hpp"
 
 #ifdef BOOST_NO_STRINGSTREAM
 #include <strstream>
@@ -46,8 +46,8 @@
 #include <sstream>
 #endif
 
-#include <boost/lexical_cast/bad_lexical_cast.hpp>
-#include <boost/lexical_cast/detail/widest_char.hpp>
+#include "boost/lexical_cast/bad_lexical_cast.hpp"
+#include "boost/lexical_cast/detail/widest_char.hpp"
 
 namespace boost {
     namespace detail

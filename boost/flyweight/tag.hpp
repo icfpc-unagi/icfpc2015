@@ -13,9 +13,9 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
-#include <boost/parameter/parameters.hpp>
-#include <boost/type_traits/is_base_and_derived.hpp>
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
+#include "boost/parameter/parameters.hpp"
+#include "boost/type_traits/is_base_and_derived.hpp"
 
 /* A type T can be used as a tag in the specification of a flyweight
  * by passing it wrapped in the form tag<T>.

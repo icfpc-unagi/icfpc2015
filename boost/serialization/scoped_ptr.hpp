@@ -13,11 +13,11 @@
 // Provides non-intrusive serialization for boost::scoped_ptr
 // Does not allow to serialize scoped_ptr's to builtin types.
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
-#include <boost/scoped_ptr.hpp>
-#include <boost/serialization/nvp.hpp>
-#include <boost/serialization/split_free.hpp>
+#include "boost/scoped_ptr.hpp"
+#include "boost/serialization/nvp.hpp"
+#include "boost/serialization/split_free.hpp"
 
 namespace boost { 
 namespace serialization {

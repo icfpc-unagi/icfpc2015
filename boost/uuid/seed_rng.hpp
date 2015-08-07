@@ -21,19 +21,19 @@
 #ifndef BOOST_UUID_SEED_RNG_HPP
 #define BOOST_UUID_SEED_RNG_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #include <cstring> // for memcpy
 #include <limits>
 #include <ctime> // for time_t, time, clock_t, clock
 #include <cstdlib> // for rand
 #include <cstdio> // for FILE, fopen, fread, fclose
-#include <boost/uuid/sha1.hpp>
-//#include <boost/nondet_random.hpp> //forward declare boost::random::random_device
+#include "boost/uuid/sha1.hpp"
+//#include "boost/nondet_random.hpp" //forward declare boost::random::random_device
 
 // can't use boost::generator_iterator since boost::random number seed(Iter&, Iter)
 // functions need a last iterator
-//#include <boost/generator_iterator.hpp>
-# include <boost/iterator/iterator_facade.hpp>
+//#include "boost/generator_iterator.hpp"
+# include "boost/iterator/iterator_facade.hpp"
 
 #if defined(_MSC_VER)
 #pragma warning(push) // Save warning settings.

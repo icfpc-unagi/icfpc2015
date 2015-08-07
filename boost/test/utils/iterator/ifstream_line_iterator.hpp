@@ -16,12 +16,12 @@
 #define BOOST_IFSTREAM_LINE_ITERATOR_HPP_071894GER
 
 // Boost
-#include <boost/test/utils/iterator/istream_line_iterator.hpp>
+#include "boost/test/utils/iterator/istream_line_iterator.hpp"
 
 // STL
 #include <fstream>
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -98,7 +98,7 @@ typedef basic_ifstream_line_iterator<wchar_t>   wifstream_line_iterator;
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_IFSTREAM_LINE_ITERATOR_HPP_071894GER
 

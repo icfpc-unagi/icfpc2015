@@ -20,7 +20,7 @@
 // This header implements separate compilation features as described in
 // http://www.boost.org/more/separate_compilation.html
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #ifdef BOOST_HAS_DECLSPEC // defined in config system
 // we need to import/export our code only if the user has specifically

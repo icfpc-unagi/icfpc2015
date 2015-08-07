@@ -12,15 +12,15 @@
 #define BOOST_MSM_FRONT_STATEMACHINE_DEF_H
 
 #include <exception>
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 
-#include <boost/mpl/vector.hpp>
+#include "boost/mpl/vector.hpp"
 
-#include <boost/msm/row_tags.hpp>
-#include <boost/msm/back/common_types.hpp>
-#include <boost/msm/front/states.hpp>
-#include <boost/msm/front/completion_event.hpp>
-#include <boost/msm/front/common_states.hpp>
+#include "boost/msm/row_tags.hpp"
+#include "boost/msm/back/common_types.hpp"
+#include "boost/msm/front/states.hpp"
+#include "boost/msm/front/completion_event.hpp"
+#include "boost/msm/front/common_states.hpp"
 
 namespace boost { namespace msm { namespace front
 {

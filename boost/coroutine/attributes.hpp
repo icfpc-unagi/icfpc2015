@@ -9,10 +9,10 @@
 
 #include <cstddef>
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
-#include <boost/coroutine/flags.hpp>
-#include <boost/coroutine/stack_allocator.hpp>
+#include "boost/coroutine/flags.hpp"
+#include "boost/coroutine/stack_allocator.hpp"
 
 #ifdef BOOST_HAS_ABI_HEADERS
 #  include BOOST_ABI_PREFIX

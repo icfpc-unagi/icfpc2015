@@ -17,15 +17,15 @@
 #ifndef BOOST_STATIC_MOVE_PTR_HPP_INCLUDED
 #define BOOST_STATIC_MOVE_PTR_HPP_INCLUDED
 
-#include <boost/config.hpp> // Member template friends, put size_t in std.
+#include "boost/config.hpp" // Member template friends, put size_t in std.
 #include <cstddef>          // size_t
-#include <boost/compressed_pair.hpp> 
-#include <boost/ptr_container/detail/default_deleter.hpp>       
-#include <boost/ptr_container/detail/is_convertible.hpp>       
-#include <boost/ptr_container/detail/move.hpp>       
-#include <boost/static_assert.hpp>
-#include <boost/type_traits/add_reference.hpp>
-#include <boost/type_traits/is_array.hpp>
+#include "boost/compressed_pair.hpp" 
+#include "boost/ptr_container/detail/default_deleter.hpp"       
+#include "boost/ptr_container/detail/is_convertible.hpp"       
+#include "boost/ptr_container/detail/move.hpp"       
+#include "boost/static_assert.hpp"
+#include "boost/type_traits/add_reference.hpp"
+#include "boost/type_traits/is_array.hpp"
 
 #if defined(BOOST_MSVC)
 #pragma warning(push)

@@ -7,16 +7,16 @@
 #if !defined(BOOST_TTI_DETAIL_TYPE_HPP)
 #define BOOST_TTI_DETAIL_TYPE_HPP
 
-#include <boost/config.hpp>
-#include <boost/mpl/apply.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/has_xxx.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/tti/detail/ddeftype.hpp>
-#include <boost/tti/detail/dlambda.hpp>
-#include <boost/tti/gen/namespace_gen.hpp>
-#include <boost/type_traits/is_class.hpp>
+#include "boost/config.hpp"
+#include "boost/mpl/apply.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/has_xxx.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/tti/detail/ddeftype.hpp"
+#include "boost/tti/detail/dlambda.hpp"
+#include "boost/tti/gen/namespace_gen.hpp"
+#include "boost/type_traits/is_class.hpp"
 
 #define BOOST_TTI_DETAIL_TRAIT_INVOKE_HAS_TYPE(trait,name) \
 template<class BOOST_TTI_DETAIL_TP_T,class BOOST_TTI_DETAIL_TP_MFC> \

@@ -12,15 +12,15 @@
  /*
   *   LOCATION:    see http://www.boost.org/ for most recent version.
   *   FILE         basic_regex.cpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares template class basic_regex.
   */
 
 #ifndef BOOST_REGEX_V4_BASIC_REGEX_HPP
 #define BOOST_REGEX_V4_BASIC_REGEX_HPP
 
-#include <boost/type_traits/is_same.hpp>
-#include <boost/functional/hash.hpp>
+#include "boost/type_traits/is_same.hpp"
+#include "boost/functional/hash.hpp"
 
 #ifdef BOOST_MSVC
 #pragma warning(push)

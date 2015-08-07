@@ -14,19 +14,19 @@
 #include <vector>
 #include <iterator>     // for std::iterator_traits
 
-#include <boost/type_traits/make_unsigned.hpp>
-#include <boost/type_traits/is_integral.hpp>
-#include <boost/type_traits/remove_pointer.hpp>
-#include <boost/type_traits/remove_const.hpp>
+#include "boost/type_traits/make_unsigned.hpp"
+#include "boost/type_traits/is_integral.hpp"
+#include "boost/type_traits/remove_pointer.hpp"
+#include "boost/type_traits/remove_const.hpp"
 
-#include <boost/array.hpp>
+#include "boost/array.hpp"
 #ifdef BOOST_NO_CXX11_HDR_UNORDERED_MAP
-#include <boost/tr1/tr1/unordered_map>
+#include "boost/tr1/tr1/unordered_map"
 #else
 #include <unordered_map>
 #endif
 
-#include <boost/algorithm/searching/detail/debugging.hpp>
+#include "boost/algorithm/searching/detail/debugging.hpp"
 
 namespace boost { namespace algorithm { namespace detail {
 

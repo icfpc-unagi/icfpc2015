@@ -14,8 +14,8 @@
 // $Date$
 // $Revision$
 
-#include <boost/mpl/max_element.hpp>
-#include <boost/mpl/not.hpp>
+#include "boost/mpl/max_element.hpp"
+#include "boost/mpl/not.hpp"
 
 namespace boost { namespace mpl {
 

@@ -5,13 +5,13 @@
 #ifndef BOOST_MSM_MPL_GRAPH_DEPTH_FIRST_SEARCH_HPP_INCLUDED
 #define BOOST_MSM_MPL_GRAPH_DEPTH_FIRST_SEARCH_HPP_INCLUDED
 
-#include <boost/msm/mpl_graph/mpl_graph.hpp>
+#include "boost/msm/mpl_graph/mpl_graph.hpp"
 
-#include <boost/mpl/has_key.hpp>
-#include <boost/mpl/insert.hpp>
-#include <boost/mpl/pair.hpp>
-#include <boost/mpl/map.hpp>
-#include <boost/mpl/has_key.hpp>
+#include "boost/mpl/has_key.hpp"
+#include "boost/mpl/insert.hpp"
+#include "boost/mpl/pair.hpp"
+#include "boost/mpl/map.hpp"
+#include "boost/mpl/has_key.hpp"
 
 #include "search_colors.hpp"
 

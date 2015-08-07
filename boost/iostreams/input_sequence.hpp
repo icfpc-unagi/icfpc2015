@@ -13,15 +13,15 @@
 #endif
 
 #include <utility>           // pair.
-#include <boost/config.hpp>  // DEDUCED_TYPENAME, MSVC.
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/detail/wrap_unwrap.hpp>
-#include <boost/iostreams/operations_fwd.hpp>  // is_custom 
-#include <boost/iostreams/traits.hpp>
-#include <boost/mpl/if.hpp>
+#include "boost/config.hpp"  // DEDUCED_TYPENAME, MSVC.
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/detail/wrap_unwrap.hpp"
+#include "boost/iostreams/operations_fwd.hpp"  // is_custom 
+#include "boost/iostreams/traits.hpp"
+#include "boost/mpl/if.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>
+#include "boost/iostreams/detail/config/disable_warnings.hpp"
 
 namespace boost { namespace iostreams {
 
@@ -67,6 +67,6 @@ struct input_sequence_impl<direct_tag> {
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>
+#include "boost/iostreams/detail/config/enable_warnings.hpp"
 
 #endif // #ifndef BOOST_IOSTREAMS_INPUT_SEQUENCE_HPP_INCLUDED

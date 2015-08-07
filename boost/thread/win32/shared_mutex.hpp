@@ -8,19 +8,19 @@
 //  accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/assert.hpp>
-#include <boost/detail/interlocked.hpp>
-#include <boost/thread/win32/thread_primitives.hpp>
-#include <boost/static_assert.hpp>
+#include "boost/assert.hpp"
+#include "boost/detail/interlocked.hpp"
+#include "boost/thread/win32/thread_primitives.hpp"
+#include "boost/static_assert.hpp"
 #include <limits.h>
-#include <boost/thread/thread_time.hpp>
+#include "boost/thread/thread_time.hpp"
 #ifdef BOOST_THREAD_USES_CHRONO
-#include <boost/chrono/system_clocks.hpp>
-#include <boost/chrono/ceil.hpp>
+#include "boost/chrono/system_clocks.hpp"
+#include "boost/chrono/ceil.hpp"
 #endif
-#include <boost/thread/detail/delete.hpp>
+#include "boost/thread/detail/delete.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -896,6 +896,6 @@ namespace boost
 
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

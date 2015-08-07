@@ -11,10 +11,10 @@
 #ifndef BOOST_CHRONO_IO_DURATION_PUT_HPP
 #define BOOST_CHRONO_IO_DURATION_PUT_HPP
 
-#include <boost/chrono/config.hpp>
-#include <boost/chrono/io/duration_units.hpp>
-#include <boost/chrono/process_cpu_clocks.hpp>
-#include <boost/assert.hpp>
+#include "boost/chrono/config.hpp"
+#include "boost/chrono/io/duration_units.hpp"
+#include "boost/chrono/process_cpu_clocks.hpp"
+#include "boost/assert.hpp"
 #include <locale>
 
 namespace boost

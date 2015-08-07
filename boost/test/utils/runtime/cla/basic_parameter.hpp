@@ -16,15 +16,15 @@
 #define BOOST_RT_CLA_BASIC_PARAMETER_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
+#include "boost/test/utils/runtime/config.hpp"
 
-#include <boost/test/utils/runtime/cla/typed_parameter.hpp>
+#include "boost/test/utils/runtime/cla/typed_parameter.hpp"
 
 // Boost.Test
-#include <boost/test/utils/rtti.hpp>
+#include "boost/test/utils/rtti.hpp"
 
 // Boost
-#include <boost/utility/base_from_member.hpp>
+#include "boost/utility/base_from_member.hpp"
 
 namespace boost {
 

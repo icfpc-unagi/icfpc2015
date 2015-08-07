@@ -8,13 +8,13 @@
 #ifndef BOOST_UUID_STRING_GENERATOR_HPP
 #define BOOST_UUID_STRING_GENERATOR_HPP
 
-#include <boost/uuid/uuid.hpp>
+#include "boost/uuid/uuid.hpp"
 #include <string>
 #include <cstring> // for strlen, wcslen
 #include <iterator>
 #include <algorithm> // for find
 #include <stdexcept>
-#include <boost/throw_exception.hpp>
+#include "boost/throw_exception.hpp"
 
 #ifdef BOOST_NO_STDC_NAMESPACE
 namespace std {

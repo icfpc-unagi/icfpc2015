@@ -16,7 +16,7 @@
 # pragma once
 #endif
 
-#include <boost/ptr_container/ptr_sequence_adapter.hpp>
+#include "boost/ptr_container/ptr_sequence_adapter.hpp"
 #include <list>
 
 namespace boost

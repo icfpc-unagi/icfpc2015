@@ -77,20 +77,20 @@ class CTypedPtrMap;
 
 #include <cstddef> // ptrdiff_t
 #include <utility> // pair
-#include <boost/assert.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/range/atl.hpp>
-#include <boost/range/begin.hpp>
-#include <boost/range/const_iterator.hpp>
-#include <boost/range/detail/microsoft.hpp>
-#include <boost/range/end.hpp>
-#include <boost/iterator/iterator_adaptor.hpp>
-#include <boost/iterator/iterator_categories.hpp>
-#include <boost/iterator/iterator_facade.hpp>
-#include <boost/iterator/transform_iterator.hpp>
-#include <boost/type_traits/is_const.hpp>
-#include <boost/type_traits/remove_pointer.hpp>
-#include <boost/utility/addressof.hpp>
+#include "boost/assert.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/range/atl.hpp"
+#include "boost/range/begin.hpp"
+#include "boost/range/const_iterator.hpp"
+#include "boost/range/detail/microsoft.hpp"
+#include "boost/range/end.hpp"
+#include "boost/iterator/iterator_adaptor.hpp"
+#include "boost/iterator/iterator_categories.hpp"
+#include "boost/iterator/iterator_facade.hpp"
+#include "boost/iterator/transform_iterator.hpp"
+#include "boost/type_traits/is_const.hpp"
+#include "boost/type_traits/remove_pointer.hpp"
+#include "boost/utility/addressof.hpp"
 #include <afx.h> // legacy CString
 #include <afxcoll.h> // CXXXArray, CXXXList, CMapXXXToXXX
 #include <tchar.h>

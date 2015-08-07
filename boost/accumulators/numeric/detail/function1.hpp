@@ -4,10 +4,10 @@
 #ifndef BOOST_DETAIL_FUNCTION1_DWA200655_HPP
 # define BOOST_DETAIL_FUNCTION1_DWA200655_HPP
 
-# include <boost/concept_check.hpp>
-# include <boost/type_traits/remove_reference.hpp>
-# include <boost/type_traits/add_const.hpp>
-# include <boost/mpl/apply.hpp>
+# include "boost/concept_check.hpp"
+# include "boost/type_traits/remove_reference.hpp"
+# include "boost/type_traits/add_const.hpp"
+# include "boost/mpl/apply.hpp"
 
 namespace boost { namespace detail {
 

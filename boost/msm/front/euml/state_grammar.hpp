@@ -12,23 +12,23 @@
 #define BOOST_MSM_FRONT_EUML_STATE_GRAMMAR_H
 
 #ifdef BOOST_MSM_EUML_PHOENIX_SUPPORT
-#include <boost/phoenix/core/meta_grammar.hpp>
+#include "boost/phoenix/core/meta_grammar.hpp"
 #endif
 
-#include <boost/msm/front/euml/common.hpp>
-#include <boost/fusion/container/vector.hpp>
-#include <boost/fusion/include/pair.hpp>
-#include <boost/fusion/include/as_map.hpp>
+#include "boost/msm/front/euml/common.hpp"
+#include "boost/fusion/container/vector.hpp"
+#include "boost/fusion/include/pair.hpp"
+#include "boost/fusion/include/as_map.hpp"
 
-#include <boost/mpl/remove_if.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/assert.hpp>
+#include "boost/mpl/remove_if.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/assert.hpp"
 
-#include <boost/msm/row_tags.hpp>
-#include <boost/msm/front/common_states.hpp>
-#include <boost/msm/front/state_machine_def.hpp>
-#include <boost/msm/front/euml/operator.hpp>
-#include <boost/msm/front/euml/guard_grammar.hpp>
+#include "boost/msm/row_tags.hpp"
+#include "boost/msm/front/common_states.hpp"
+#include "boost/msm/front/state_machine_def.hpp"
+#include "boost/msm/front/euml/operator.hpp"
+#include "boost/msm/front/euml/guard_grammar.hpp"
 
 BOOST_MPL_HAS_XXX_TRAIT_DEF(attribute_tag)
 BOOST_MPL_HAS_XXX_TRAIT_DEF(flag_create_tag)

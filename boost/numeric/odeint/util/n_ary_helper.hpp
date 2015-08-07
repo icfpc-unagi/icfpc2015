@@ -16,7 +16,7 @@
 #ifndef BOOST_NUMERIC_ODEINT_UTIL_N_ARY_HELPER_HPP_INCLUDED
 #define BOOST_NUMERIC_ODEINT_UTIL_N_ARY_HELPER_HPP_INCLUDED
 
-#include <boost/preprocessor/repetition.hpp>
+#include "boost/preprocessor/repetition.hpp"
 
 // like BOOST_PP_ENUM_SHIFTED but with a comma in front like _TRAILING
 #define BOOST_ODEINT_ENUM_TRAILING_SHIFTED_PARAMS(count, param) \

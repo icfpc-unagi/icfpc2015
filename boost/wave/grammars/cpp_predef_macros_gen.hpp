@@ -11,9 +11,9 @@
 #if !defined(CPP_PREDEF_MACROS_GEN_HPP_CADB6D2C_76A4_4988_83E1_EFFC6902B9A2_INCLUDED)
 #define CPP_PREDEF_MACROS_GEN_HPP_CADB6D2C_76A4_4988_83E1_EFFC6902B9A2_INCLUDED
 
-#include <boost/spirit/include/classic_parse_tree.hpp>
+#include "boost/spirit/include/classic_parse_tree.hpp"
 
-#include <boost/wave/wave_config.hpp>
+#include "boost/wave/wave_config.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

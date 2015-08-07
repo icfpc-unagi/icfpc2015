@@ -8,12 +8,12 @@
 #ifndef BOOST_ACCUMULATORS_STATISTICS_SUM_KAHAN_HPP_EAN_26_07_2010
 #define BOOST_ACCUMULATORS_STATISTICS_SUM_KAHAN_HPP_EAN_26_07_2010
 
-#include <boost/accumulators/framework/accumulator_base.hpp>
-#include <boost/accumulators/framework/parameters/sample.hpp>
-#include <boost/accumulators/statistics_fwd.hpp>
-#include <boost/accumulators/statistics/sum.hpp>
-#include <boost/accumulators/statistics/weighted_sum_kahan.hpp>
-#include <boost/numeric/conversion/cast.hpp>
+#include "boost/accumulators/framework/accumulator_base.hpp"
+#include "boost/accumulators/framework/parameters/sample.hpp"
+#include "boost/accumulators/statistics_fwd.hpp"
+#include "boost/accumulators/statistics/sum.hpp"
+#include "boost/accumulators/statistics/weighted_sum_kahan.hpp"
+#include "boost/numeric/conversion/cast.hpp"
 
 namespace boost { namespace accumulators
 {

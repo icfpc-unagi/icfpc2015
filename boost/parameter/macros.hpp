@@ -6,16 +6,16 @@
 #ifndef BOOST_PARAMETER_MACROS_050412_HPP
 #define BOOST_PARAMETER_MACROS_050412_HPP
 
-#include <boost/preprocessor/tuple/elem.hpp>
-#include <boost/preprocessor/repetition/repeat_from_to.hpp>
-#include <boost/preprocessor/arithmetic/inc.hpp>
-#include <boost/preprocessor/logical/bool.hpp>
-#include <boost/preprocessor/punctuation/comma_if.hpp>
-#include <boost/preprocessor/control/expr_if.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/enum_binary_params.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/preprocessor/tuple/elem.hpp"
+#include "boost/preprocessor/repetition/repeat_from_to.hpp"
+#include "boost/preprocessor/arithmetic/inc.hpp"
+#include "boost/preprocessor/logical/bool.hpp"
+#include "boost/preprocessor/punctuation/comma_if.hpp"
+#include "boost/preprocessor/control/expr_if.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/enum_binary_params.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/detail/workaround.hpp"
 
 #define BOOST_PARAMETER_FUN_TEMPLATE_HEAD1(n) \
     template<BOOST_PP_ENUM_PARAMS(n, class T)>

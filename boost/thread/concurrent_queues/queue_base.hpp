@@ -11,14 +11,14 @@
 //
 //////////////////////////////////////////////////////////////////////////////
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/concurrent_queues/queue_op_status.hpp>
-#include <boost/type_traits/conditional.hpp>
-#include <boost/type_traits/is_copy_constructible.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/concurrent_queues/queue_op_status.hpp"
+#include "boost/type_traits/conditional.hpp"
+#include "boost/type_traits/is_copy_constructible.hpp"
 
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -197,6 +197,6 @@ using concurrent::queue_base;
 
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

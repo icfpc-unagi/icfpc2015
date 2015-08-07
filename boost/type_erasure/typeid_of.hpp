@@ -11,11 +11,11 @@
 #ifndef BOOST_TYPE_ERASURE_TYPEID_OF_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_TYPEID_OF_HPP_INCLUDED
 
-#include <boost/type_traits/remove_cv.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/type_erasure/detail/access.hpp>
-#include <boost/type_erasure/any.hpp>
-#include <boost/type_erasure/binding.hpp>
+#include "boost/type_traits/remove_cv.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/type_erasure/detail/access.hpp"
+#include "boost/type_erasure/any.hpp"
+#include "boost/type_erasure/binding.hpp"
 
 namespace boost {
 namespace type_erasure {

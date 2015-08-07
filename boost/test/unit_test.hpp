@@ -16,8 +16,8 @@
 #define BOOST_TEST_UNIT_TEST_HPP_071894GER
 
 // Boost.Test
-#include <boost/test/test_tools.hpp>
-#include <boost/test/unit_test_suite.hpp>
+#include "boost/test/test_tools.hpp"
+#include "boost/test/unit_test_suite.hpp"
 
 //____________________________________________________________________________//
 
@@ -33,7 +33,7 @@
 #    define BOOST_DYN_LINK
 #  endif
 
-#  include <boost/config/auto_link.hpp>
+#  include "boost/config/auto_link.hpp"
 
 #endif  // auto-linking disabled
 

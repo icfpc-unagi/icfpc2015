@@ -9,7 +9,7 @@
 #ifndef BOOST_LOCKFREE_DETAIL_PARAMETER_HPP
 #define BOOST_LOCKFREE_DETAIL_PARAMETER_HPP
 
-#include <boost/lockfree/policies.hpp>
+#include "boost/lockfree/policies.hpp"
 
 namespace boost {
 namespace lockfree {

@@ -15,8 +15,8 @@
     #pragma once
 #endif
 
-#include <boost/type_traits/is_same.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/type_traits/is_same.hpp"
+#include "boost/detail/workaround.hpp"
 
 namespace boost {
 

@@ -12,9 +12,9 @@
 #include <cstddef>              /* for std::size_t */
 #include <limits>
 
-#include <boost/cstdint.hpp>
+#include "boost/cstdint.hpp"
 
-#include <boost/lockfree/detail/branch_hints.hpp>
+#include "boost/lockfree/detail/branch_hints.hpp"
 
 namespace boost {
 namespace lockfree {

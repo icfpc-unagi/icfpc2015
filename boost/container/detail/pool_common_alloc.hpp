@@ -15,13 +15,13 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
-#include <boost/container/throw_exception.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
+#include "boost/container/throw_exception.hpp"
 
-#include <boost/intrusive/slist.hpp>
-#include <boost/container/detail/pool_common.hpp>
-#include <boost/container/detail/alloc_lib.h>
+#include "boost/intrusive/slist.hpp"
+#include "boost/container/detail/pool_common.hpp"
+#include "boost/container/detail/alloc_lib.h"
 #include <cstddef>
 
 namespace boost{
@@ -93,6 +93,6 @@ struct is_stateless_segment_manager
 }  //namespace container {
 }  //namespace boost {
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif   //BOOST_CONTAINER_DETAIL_POOL_COMMON_ALLOC_HPP

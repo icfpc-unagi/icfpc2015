@@ -17,29 +17,29 @@
 #include <cassert>
 #include <exception>
 #include <typeinfo>
-#include <boost/config.hpp>                      // Member template friends.
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/constants.hpp>
-#include <boost/iostreams/detail/adapter/concept_adapter.hpp>
-#include <boost/iostreams/detail/buffer.hpp>
-#include <boost/iostreams/detail/config/wide_streams.hpp>
-#include <boost/iostreams/detail/double_object.hpp> 
-#include <boost/iostreams/detail/execute.hpp>
-#include <boost/iostreams/detail/functional.hpp>
-#include <boost/iostreams/detail/ios.hpp>
-#include <boost/iostreams/detail/optional.hpp>
-#include <boost/iostreams/detail/push.hpp>
-#include <boost/iostreams/detail/streambuf/linked_streambuf.hpp>
-#include <boost/iostreams/operations.hpp>
-#include <boost/iostreams/positioning.hpp>
-#include <boost/iostreams/traits.hpp>
-#include <boost/iostreams/operations.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/type_traits/is_convertible.hpp>
+#include "boost/config.hpp"                      // Member template friends.
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/constants.hpp"
+#include "boost/iostreams/detail/adapter/concept_adapter.hpp"
+#include "boost/iostreams/detail/buffer.hpp"
+#include "boost/iostreams/detail/config/wide_streams.hpp"
+#include "boost/iostreams/detail/double_object.hpp" 
+#include "boost/iostreams/detail/execute.hpp"
+#include "boost/iostreams/detail/functional.hpp"
+#include "boost/iostreams/detail/ios.hpp"
+#include "boost/iostreams/detail/optional.hpp"
+#include "boost/iostreams/detail/push.hpp"
+#include "boost/iostreams/detail/streambuf/linked_streambuf.hpp"
+#include "boost/iostreams/operations.hpp"
+#include "boost/iostreams/positioning.hpp"
+#include "boost/iostreams/traits.hpp"
+#include "boost/iostreams/operations.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/type_traits/is_convertible.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>  // MSVC, BCC 5.x
+#include "boost/iostreams/detail/config/disable_warnings.hpp"  // MSVC, BCC 5.x
 
 namespace boost { namespace iostreams { namespace detail {
 
@@ -427,6 +427,6 @@ void indirect_streambuf<T, Tr, Alloc, Mode>::init_put_area()
 
 } } } // End namespaces detail, iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp> // MSVC, BCC 5.x
+#include "boost/iostreams/detail/config/enable_warnings.hpp" // MSVC, BCC 5.x
 
 #endif // #ifndef BOOST_IOSTREAMS_DETAIL_INDIRECT_STREAMBUF_HPP_INCLUDED

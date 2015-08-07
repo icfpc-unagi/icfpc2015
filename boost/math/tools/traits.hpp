@@ -25,9 +25,9 @@ as defined above, and has member functions "scale" and "location".
 #pragma once
 #endif
 
-#include <boost/mpl/has_xxx.hpp>
+#include "boost/mpl/has_xxx.hpp"
 // should be the last #include
-#include <boost/type_traits/detail/bool_trait_def.hpp>
+#include "boost/type_traits/detail/bool_trait_def.hpp"
 
 namespace boost{ namespace math{ namespace tools{
 

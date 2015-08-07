@@ -15,15 +15,15 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
-#include <boost/container/detail/mutex.hpp>
-#include <boost/container/detail/pool_common_alloc.hpp>
-#include <boost/container/detail/node_pool_impl.hpp>
-#include <boost/container/detail/mutex.hpp>
-#include <boost/intrusive/slist.hpp>
-#include <boost/move/utility_core.hpp>
+#include "boost/container/detail/mutex.hpp"
+#include "boost/container/detail/pool_common_alloc.hpp"
+#include "boost/container/detail/node_pool_impl.hpp"
+#include "boost/container/detail/mutex.hpp"
+#include "boost/intrusive/slist.hpp"
+#include "boost/move/utility_core.hpp"
 #include <cstddef>
 #include <functional>   //std::unary_function
 #include <algorithm>    //std::swap
@@ -151,6 +151,6 @@ class shared_node_pool
 }  //namespace container {
 }  //namespace boost {
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif   //#ifndef BOOST_CONTAINER_DETAIL_NODE_POOL_HPP

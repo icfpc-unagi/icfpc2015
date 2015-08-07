@@ -14,8 +14,8 @@
 
   #include <float.h>
   #include <limits>
-  #include <boost/static_assert.hpp>
-  #include <boost/math/tools/config.hpp>
+  #include "boost/static_assert.hpp"
+  #include "boost/math/tools/config.hpp"
 
   // This is the beginning of the preamble.
 
@@ -44,7 +44,7 @@
 
   // Ensure that the compiler has a radix-2 floating-point representation.
   #if (!defined(FLT_RADIX) || ((defined(FLT_RADIX) && (FLT_RADIX != 2))))
-    #error The compiler does not support any radix-2 floating-point types required for <boost/cstdfloat.hpp>.
+    #error The compiler does not support any radix-2 floating-point types required for "boost/cstdfloat.hpp".
   #endif
 
   // Check if built-in float is equivalent to float16_t, float32_t, float64_t, float80_t, or float128_t.
@@ -205,7 +205,7 @@
   // for the presence of __float128 from GCC's quadmath.h or _Quad
   // from ICC's /Qlong-double flag). To query these, we use the
   // BOOST_MATH_USE_FLOAT128 pre-processor definition from
-  // <boost/math/tools/config.hpp>.
+  // "boost/math/tools/config.hpp".
 
   #if (BOOST_CSTDFLOAT_HAS_FLOAT128_NATIVE_TYPE == 0) && defined(BOOST_MATH_USE_FLOAT128) && !defined(BOOST_CSTDFLOAT_NO_LIBQUADMATH_SUPPORT)
 
@@ -216,7 +216,7 @@
     #elif defined(__GNUC__)
       typedef __float128 float_internal128_t;
     #else
-      #error "Sorry, the compiler is neither GCC, nor Intel, I don't know how to configure <boost/cstdfloat.hpp>."
+      #error "Sorry, the compiler is neither GCC, nor Intel, I don't know how to configure "boost/cstdfloat.hpp"."
     #endif
     } } } } // boost::math::cstdfloat::detail
 
@@ -246,7 +246,7 @@
        && (BOOST_CSTDFLOAT_HAS_FLOAT64_NATIVE_TYPE  == 0)  \
        && (BOOST_CSTDFLOAT_HAS_FLOAT80_NATIVE_TYPE  == 0)  \
        && (BOOST_CSTDFLOAT_HAS_FLOAT128_NATIVE_TYPE == 0))
-    #error The compiler does not support any of the floating-point types required for <boost/cstdfloat.hpp>.
+    #error The compiler does not support any of the floating-point types required for "boost/cstdfloat.hpp".
   #endif
 
   // The following section contains the various min/max macros
@@ -313,7 +313,7 @@
     #define BOOST_FLOATMAX_MIN  BOOST_CSTDFLOAT_FLOAT_128_MIN
     #define BOOST_FLOATMAX_MAX  BOOST_CSTDFLOAT_FLOAT_128_MAX
   #else
-    #error The maximum available floating-point width for <boost/cstdfloat.hpp> is undefined.
+    #error The maximum available floating-point width for "boost/cstdfloat.hpp" is undefined.
   #endif
 
   // And finally..., we define the floating-point typedefs having
@@ -333,10 +333,10 @@
       typedef boost::float16_t float_fast16_t;
       typedef boost::float16_t float_least16_t;
 
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float16_t>::is_iec559    == true, "boost::float16_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float16_t>::radix        ==    2, "boost::float16_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float16_t>::digits       ==   11, "boost::float16_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float16_t>::max_exponent ==   16, "boost::float16_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float16_t>::is_iec559    == true, "boost::float16_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float16_t>::radix        ==    2, "boost::float16_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float16_t>::digits       ==   11, "boost::float16_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float16_t>::max_exponent ==   16, "boost::float16_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
 
       #undef BOOST_CSTDFLOAT_FLOAT_16_MIN
       #undef BOOST_CSTDFLOAT_FLOAT_16_MAX
@@ -347,10 +347,10 @@
       typedef boost::float32_t float_fast32_t;
       typedef boost::float32_t float_least32_t;
 
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float32_t>::is_iec559    == true, "boost::float32_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float32_t>::radix        ==    2, "boost::float32_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float32_t>::digits       ==   24, "boost::float32_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float32_t>::max_exponent ==  128, "boost::float32_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float32_t>::is_iec559    == true, "boost::float32_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float32_t>::radix        ==    2, "boost::float32_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float32_t>::digits       ==   24, "boost::float32_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float32_t>::max_exponent ==  128, "boost::float32_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
 
       #undef BOOST_CSTDFLOAT_FLOAT_32_MIN
       #undef BOOST_CSTDFLOAT_FLOAT_32_MAX
@@ -361,10 +361,10 @@
       typedef boost::float64_t float_fast64_t;
       typedef boost::float64_t float_least64_t;
 
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float64_t>::is_iec559    == true, "boost::float64_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float64_t>::radix        ==    2, "boost::float64_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float64_t>::digits       ==   53, "boost::float64_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float64_t>::max_exponent == 1024, "boost::float64_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float64_t>::is_iec559    == true, "boost::float64_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float64_t>::radix        ==    2, "boost::float64_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float64_t>::digits       ==   53, "boost::float64_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float64_t>::max_exponent == 1024, "boost::float64_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
 
       #undef BOOST_CSTDFLOAT_FLOAT_64_MIN
       #undef BOOST_CSTDFLOAT_FLOAT_64_MAX
@@ -375,10 +375,10 @@
       typedef boost::float80_t float_fast80_t;
       typedef boost::float80_t float_least80_t;
 
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float80_t>::is_iec559    ==  true, "boost::float80_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float80_t>::radix        ==     2, "boost::float80_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float80_t>::digits       ==    64, "boost::float80_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float80_t>::max_exponent == 16384, "boost::float80_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float80_t>::is_iec559    ==  true, "boost::float80_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float80_t>::radix        ==     2, "boost::float80_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float80_t>::digits       ==    64, "boost::float80_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float80_t>::max_exponent == 16384, "boost::float80_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
 
       #undef BOOST_CSTDFLOAT_FLOAT_80_MIN
       #undef BOOST_CSTDFLOAT_FLOAT_80_MAX
@@ -392,12 +392,12 @@
       #if defined(BOOST_CSTDFLOAT_HAS_INTERNAL_FLOAT128_T) && defined(BOOST_MATH_USE_FLOAT128) && !defined(BOOST_CSTDFLOAT_NO_LIBQUADMATH_SUPPORT)
       // This configuration does not *yet* support std::numeric_limits<boost::float128_t>.
       // Support for std::numeric_limits<boost::float128_t> is added in the detail
-      // file <boost/math/cstdfloat/cstdfloat_limits.hpp>.
+      // file "boost/math/cstdfloat/cstdfloat_limits.hpp".
       #else
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float128_t>::is_iec559    ==  true, "boost::float128_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float128_t>::radix        ==     2, "boost::float128_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float128_t>::digits       ==   113, "boost::float128_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
-      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float128_t>::max_exponent == 16384, "boost::float128_t has been detected in <boost/cstdfloat>, but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float128_t>::is_iec559    ==  true, "boost::float128_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float128_t>::radix        ==     2, "boost::float128_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float128_t>::digits       ==   113, "boost::float128_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
+      BOOST_STATIC_ASSERT_MSG(std::numeric_limits<boost::float128_t>::max_exponent == 16384, "boost::float128_t has been detected in "boost/cstdfloat", but verification with std::numeric_limits fails");
       #endif
 
       #undef BOOST_CSTDFLOAT_FLOAT_128_MIN
@@ -415,7 +415,7 @@
     #elif(BOOST_CSTDFLOAT_MAXIMUM_AVAILABLE_WIDTH == 128)
       typedef boost::float128_t floatmax_t;
     #else
-      #error The maximum available floating-point width for <boost/cstdfloat.hpp> is undefined.
+      #error The maximum available floating-point width for "boost/cstdfloat.hpp" is undefined.
     #endif
 
     #undef BOOST_CSTDFLOAT_HAS_FLOAT16_NATIVE_TYPE

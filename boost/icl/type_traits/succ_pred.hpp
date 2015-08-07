@@ -8,7 +8,7 @@ Copyright (c) 2008-2011: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_SUCC_PRED_HPP_JOFA_080913
 #define BOOST_ICL_TYPE_TRAITS_SUCC_PRED_HPP_JOFA_080913
 
-#include <boost/icl/type_traits/is_increasing.hpp>
+#include "boost/icl/type_traits/is_increasing.hpp"
 
 namespace boost{ namespace icl
 {

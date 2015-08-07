@@ -23,7 +23,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-#include <boost/static_assert.hpp>
+#include "boost/static_assert.hpp"
 #include <tiffio.h>
 #include "../../gil_all.hpp"
 #include "io_error.hpp"

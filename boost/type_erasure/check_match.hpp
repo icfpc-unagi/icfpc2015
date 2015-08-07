@@ -13,22 +13,22 @@
 #ifndef BOOST_TYPE_ERASURE_CHECK_MATCH_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_CHECK_MATCH_HPP_INCLUDED
 
-#include <boost/mpl/vector.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/is_sequence.hpp>
-#include <boost/mpl/find_if.hpp>
-#include <boost/mpl/not.hpp>
-#include <boost/mpl/end.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/iteration/iterate.hpp>
-#include <boost/preprocessor/repetition/repeat.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_params.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_binary_params.hpp>
-#include <boost/type_erasure/detail/extract_concept.hpp>
-#include <boost/type_erasure/relaxed.hpp>
-#include <boost/type_erasure/detail/access.hpp>
+#include "boost/mpl/vector.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/is_sequence.hpp"
+#include "boost/mpl/find_if.hpp"
+#include "boost/mpl/not.hpp"
+#include "boost/mpl/end.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/iteration/iterate.hpp"
+#include "boost/preprocessor/repetition/repeat.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_params.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_binary_params.hpp"
+#include "boost/type_erasure/detail/extract_concept.hpp"
+#include "boost/type_erasure/relaxed.hpp"
+#include "boost/type_erasure/detail/access.hpp"
 
 namespace boost {
 namespace type_erasure {
@@ -152,7 +152,7 @@ bool check_match(
 
 #else
 
-#define BOOST_PP_FILENAME_1 <boost/type_erasure/check_match.hpp>
+#define BOOST_PP_FILENAME_1 "boost/type_erasure/check_match.hpp"
 #define BOOST_PP_ITERATION_LIMITS (0, BOOST_TYPE_ERASURE_MAX_ARITY)
 #include BOOST_PP_ITERATE()
 

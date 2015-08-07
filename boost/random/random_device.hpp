@@ -19,10 +19,10 @@
 #define BOOST_RANDOM_RANDOM_DEVICE_HPP
 
 #include <string>
-#include <boost/config.hpp>
-#include <boost/noncopyable.hpp>
-#include <boost/random/detail/auto_link.hpp>
-#include <boost/system/config.hpp> // force autolink to find Boost.System
+#include "boost/config.hpp"
+#include "boost/noncopyable.hpp"
+#include "boost/random/detail/auto_link.hpp"
+#include "boost/system/config.hpp" // force autolink to find Boost.System
 
 namespace boost {
 namespace random {

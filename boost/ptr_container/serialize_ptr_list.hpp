@@ -6,8 +6,8 @@
 #ifndef BOOST_PTR_CONTAINER_SERIALIZE_PTR_LIST_HPP
 #define BOOST_PTR_CONTAINER_SERIALIZE_PTR_LIST_HPP
 
-#include <boost/ptr_container/detail/serialize_reversible_cont.hpp>
-#include <boost/ptr_container/ptr_list.hpp>
+#include "boost/ptr_container/detail/serialize_reversible_cont.hpp"
+#include "boost/ptr_container/ptr_list.hpp"
 
 namespace boost 
 {

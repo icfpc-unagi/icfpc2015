@@ -9,9 +9,9 @@
 #ifndef BOOST_RATIO_MPL_ABS_HPP
 #define BOOST_RATIO_MPL_ABS_HPP
 
-#include <boost/ratio/ratio.hpp>
-#include <boost/ratio/mpl/numeric_cast.hpp>
-#include <boost/ratio/detail/mpl/abs.hpp>
+#include "boost/ratio/ratio.hpp"
+#include "boost/ratio/mpl/numeric_cast.hpp"
+#include "boost/ratio/detail/mpl/abs.hpp"
 
 namespace boost { 
 namespace mpl {

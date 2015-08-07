@@ -11,12 +11,12 @@
 #ifndef BOOST_STRING_FINDER_REGEX_DETAIL_HPP
 #define BOOST_STRING_FINDER_REGEX_DETAIL_HPP
 
-#include <boost/algorithm/string/config.hpp>
-#include <boost/regex.hpp>
+#include "boost/algorithm/string/config.hpp"
+#include "boost/regex.hpp"
 
-#include <boost/range/iterator_range_core.hpp>
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
+#include "boost/range/iterator_range_core.hpp"
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
 
 namespace boost {
     namespace algorithm {

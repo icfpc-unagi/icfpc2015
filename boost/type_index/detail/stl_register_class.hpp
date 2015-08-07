@@ -13,7 +13,7 @@
 /// \brief Contains BOOST_TYPE_INDEX_REGISTER_CLASS macro implementation that uses boost::typeindex::stl_type_index.
 /// Not intended for inclusion from user's code.
 
-#include <boost/type_index/stl_type_index.hpp>
+#include "boost/type_index/stl_type_index.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 # pragma once

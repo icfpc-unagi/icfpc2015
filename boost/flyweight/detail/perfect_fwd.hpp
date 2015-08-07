@@ -34,11 +34,11 @@
  * macro is exactly the same as the original. 
  */
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/repetition/enum.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/seq/seq.hpp>
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/repetition/enum.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/seq/seq.hpp"
 
 #if !defined(BOOST_NO_CXX11_RVALUE_REFERENCES)
 #include <utility>
@@ -70,9 +70,9 @@ BOOST_PP_SEQ_HEAD(BOOST_PP_SEQ_TAIL(args)))
 #endif
 
 #if BOOST_FLYWEIGHT_LIMIT_PERFECT_FWD_ARGS<=5
-#include <boost/flyweight/detail/pp_perfect_fwd.hpp>
+#include "boost/flyweight/detail/pp_perfect_fwd.hpp"
 #else
-#include <boost/flyweight/detail/dyn_perfect_fwd.hpp>
+#include "boost/flyweight/detail/dyn_perfect_fwd.hpp"
 #endif
 
 #else

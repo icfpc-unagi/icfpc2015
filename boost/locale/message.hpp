@@ -8,7 +8,7 @@
 #ifndef BOOST_LOCALE_MESSAGE_HPP_INCLUDED
 #define BOOST_LOCALE_MESSAGE_HPP_INCLUDED
 
-#include <boost/locale/config.hpp>
+#include "boost/locale/config.hpp"
 #ifdef BOOST_MSVC
 #  pragma warning(push)
 #  pragma warning(disable : 4275 4251 4231 4660)
@@ -18,7 +18,7 @@
 #include <vector>
 #include <set>
 #include <memory>
-#include <boost/locale/formatting.hpp>
+#include "boost/locale/formatting.hpp"
 
 
 namespace boost {

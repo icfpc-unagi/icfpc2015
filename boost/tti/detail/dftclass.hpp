@@ -7,11 +7,11 @@
 #if !defined(BOOST_TTI_DETAIL_FTCLASS_HPP)
 #define BOOST_TTI_DETAIL_FTCLASS_HPP
 
-#include <boost/function_types/parameter_types.hpp>
-#include <boost/mpl/at.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/int.hpp>
-#include <boost/mpl/quote.hpp>
+#include "boost/function_types/parameter_types.hpp"
+#include "boost/mpl/at.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/int.hpp"
+#include "boost/mpl/quote.hpp"
 
 namespace boost
   {

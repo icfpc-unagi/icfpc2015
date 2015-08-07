@@ -13,10 +13,10 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
-#include <boost/flyweight/static_holder_fwd.hpp>
-#include <boost/flyweight/holder_tag.hpp>
-#include <boost/mpl/aux_/lambda_support.hpp>
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
+#include "boost/flyweight/static_holder_fwd.hpp"
+#include "boost/flyweight/holder_tag.hpp"
+#include "boost/mpl/aux_/lambda_support.hpp"
 
 /* Simplest holder storing the T object as a local static variable.
  */

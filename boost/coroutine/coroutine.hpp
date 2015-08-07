@@ -7,7 +7,7 @@
 #ifndef BOOST_COROUTINES_COROUTINE_H
 #define BOOST_COROUTINES_COROUTINE_H
 
-#include <boost/coroutine/asymmetric_coroutine.hpp>
-#include <boost/coroutine/symmetric_coroutine.hpp>
+#include "boost/coroutine/asymmetric_coroutine.hpp"
+#include "boost/coroutine/symmetric_coroutine.hpp"
 
 #endif // BOOST_COROUTINES_COROUTINE_H

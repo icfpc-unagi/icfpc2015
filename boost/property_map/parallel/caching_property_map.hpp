@@ -9,7 +9,7 @@
 #ifndef BOOST_PARALLEL_CACHING_PROPERTY_MAP_HPP
 #define BOOST_PARALLEL_CACHING_PROPERTY_MAP_HPP
 
-#include <boost/property_map/property_map.hpp>
+#include "boost/property_map/property_map.hpp"
 
 namespace boost { 
 

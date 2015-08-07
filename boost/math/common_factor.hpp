@@ -10,7 +10,7 @@
 #ifndef BOOST_MATH_COMMON_FACTOR_HPP
 #define BOOST_MATH_COMMON_FACTOR_HPP
 
-#include <boost/math/common_factor_ct.hpp>
-#include <boost/math/common_factor_rt.hpp>
+#include "boost/math/common_factor_ct.hpp"
+#include "boost/math/common_factor_rt.hpp"
 
 #endif  // BOOST_MATH_COMMON_FACTOR_HPP

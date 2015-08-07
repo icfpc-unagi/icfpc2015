@@ -8,15 +8,15 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_SIGN_ANY_BIND_TYPE_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_SIGN_ANY_BIND_TYPE_HPP_
 
-#include <boost/local_function/detail/preprocessor/keyword/const_bind.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/this.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/facilities/empty.hpp>
-#include <boost/preprocessor/facilities/expand.hpp>
-#include <boost/preprocessor/tuple/eat.hpp>
-#include <boost/preprocessor/tuple/rem.hpp>
-#include <boost/preprocessor/detail/is_unary.hpp>
+#include "boost/local_function/detail/preprocessor/keyword/const_bind.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/this.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/facilities/empty.hpp"
+#include "boost/preprocessor/facilities/expand.hpp"
+#include "boost/preprocessor/tuple/eat.hpp"
+#include "boost/preprocessor/tuple/rem.hpp"
+#include "boost/preprocessor/detail/is_unary.hpp"
 
 // PRIVATE //
 

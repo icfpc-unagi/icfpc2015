@@ -17,10 +17,10 @@
 # pragma once
 #endif
 
-#include <boost/type_traits/detail/yes_no_type.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/config.hpp>
+#include "boost/type_traits/detail/yes_no_type.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/config.hpp"
 
 namespace boost
 {

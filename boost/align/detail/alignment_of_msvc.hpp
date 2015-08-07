@@ -9,8 +9,8 @@
 #ifndef BOOST_ALIGN_DETAIL_ALIGNMENT_OF_MSVC_HPP
 #define BOOST_ALIGN_DETAIL_ALIGNMENT_OF_MSVC_HPP
 
-#include <boost/align/detail/min_size.hpp>
-#include <boost/align/detail/offset_object.hpp>
+#include "boost/align/detail/min_size.hpp"
+#include "boost/align/detail/offset_object.hpp"
 
 namespace boost {
     namespace alignment {

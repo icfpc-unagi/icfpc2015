@@ -9,7 +9,7 @@
 #define BOOST_TT_INTRINSICS_HPP_INCLUDED
 
 #ifndef BOOST_TT_CONFIG_HPP_INCLUDED
-#include <boost/type_traits/config.hpp>
+#include "boost/type_traits/config.hpp"
 #endif
 
 //
@@ -46,7 +46,7 @@
 #ifdef BOOST_HAS_SGI_TYPE_TRAITS
     // Hook into SGI's __type_traits class, this will pick up user supplied
     // specializations as well as SGI - compiler supplied specializations.
-#   include <boost/type_traits/is_same.hpp>
+#   include "boost/type_traits/is_same.hpp"
 #   ifdef __NetBSD__
       // There are two different versions of type_traits.h on NetBSD on Spark
       // use an implicit include via algorithm instead, to make sure we get
@@ -83,8 +83,8 @@
 
 #if (defined(BOOST_MSVC) && defined(BOOST_MSVC_FULL_VER) && (BOOST_MSVC_FULL_VER >=140050215))\
          || (defined(BOOST_INTEL) && defined(_MSC_VER) && (_MSC_VER >= 1500))
-#   include <boost/type_traits/is_same.hpp>
-#   include <boost/type_traits/is_function.hpp>
+#   include "boost/type_traits/is_same.hpp"
+#   include "boost/type_traits/is_function.hpp"
 
 #   define BOOST_IS_UNION(T) __is_union(T)
 #   define BOOST_IS_POD(T) (__is_pod(T) && __has_trivial_constructor(T))
@@ -134,9 +134,9 @@
 
 #if defined(BOOST_CLANG) && defined(__has_feature)
 #   include <cstddef>
-#   include <boost/type_traits/is_same.hpp>
-#   include <boost/type_traits/is_reference.hpp>
-#   include <boost/type_traits/is_volatile.hpp>
+#   include "boost/type_traits/is_same.hpp"
+#   include "boost/type_traits/is_reference.hpp"
+#   include "boost/type_traits/is_volatile.hpp"
 
 #   if __has_feature(is_union)
 #     define BOOST_IS_UNION(T) __is_union(T)
@@ -204,9 +204,9 @@
 #endif
 
 #if defined(__GNUC__) && ((__GNUC__ > 4) || ((__GNUC__ == 4) && (__GNUC_MINOR__ >= 3) && !defined(__GCCXML__))) && !defined(BOOST_CLANG)
-#   include <boost/type_traits/is_same.hpp>
-#   include <boost/type_traits/is_reference.hpp>
-#   include <boost/type_traits/is_volatile.hpp>
+#   include "boost/type_traits/is_same.hpp"
+#   include "boost/type_traits/is_reference.hpp"
+#   include "boost/type_traits/is_volatile.hpp"
 
 #ifdef BOOST_INTEL
 #  define BOOST_INTEL_TT_OPTS || is_pod<T>::value
@@ -245,9 +245,9 @@
 #endif
 
 #if defined(__ghs__) && (__GHS_VERSION_NUMBER >= 600)
-#   include <boost/type_traits/is_same.hpp>
-#   include <boost/type_traits/is_reference.hpp>
-#   include <boost/type_traits/is_volatile.hpp>
+#   include "boost/type_traits/is_same.hpp"
+#   include "boost/type_traits/is_reference.hpp"
+#   include "boost/type_traits/is_volatile.hpp"
 
 #   define BOOST_IS_UNION(T) __is_union(T)
 #   define BOOST_IS_POD(T) __is_pod(T)
@@ -271,10 +271,10 @@
 #endif
 
 # if defined(__CODEGEARC__)
-#   include <boost/type_traits/is_same.hpp>
-#   include <boost/type_traits/is_reference.hpp>
-#   include <boost/type_traits/is_volatile.hpp>
-#   include <boost/type_traits/is_void.hpp>
+#   include "boost/type_traits/is_same.hpp"
+#   include "boost/type_traits/is_reference.hpp"
+#   include "boost/type_traits/is_volatile.hpp"
+#   include "boost/type_traits/is_void.hpp"
 
 #   define BOOST_IS_UNION(T) __is_union(T)
 #   define BOOST_IS_POD(T) __is_pod(T)

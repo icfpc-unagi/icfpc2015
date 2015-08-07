@@ -15,10 +15,10 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
-#include <boost/container/detail/type_traits.hpp>
+#include "boost/container/detail/type_traits.hpp"
 #include <cstddef>   //std::size_t
 
 namespace boost {
@@ -149,6 +149,6 @@ struct build_number_seq<0, index_tuple<Indexes...> >
 
 }}}   //namespace boost { namespace container { namespace container_detail {
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif   //#ifndef BOOST_CONTAINER_DETAIL_VARIADIC_TEMPLATES_TOOLS_HPP

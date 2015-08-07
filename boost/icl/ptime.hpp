@@ -15,8 +15,8 @@ w.r.t. addition (identity_element()).
 #ifndef BOOST_ICL_PTIME_HPP_JOFA_080416
 #define BOOST_ICL_PTIME_HPP_JOFA_080416
 
-#include <boost/icl/detail/boost_config.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/icl/detail/boost_config.hpp"
+#include "boost/detail/workaround.hpp"
 
 #ifdef BOOST_MSVC 
 #pragma warning(push)
@@ -31,16 +31,16 @@ w.r.t. addition (identity_element()).
 #include <string>
 #include <sstream>
 #include <iostream>
-#include <boost/date_time/posix_time/posix_time.hpp>
+#include "boost/date_time/posix_time/posix_time.hpp"
 
 #ifdef BOOST_MSVC
 #pragma warning(pop)
 #endif
 
-#include <boost/icl/type_traits/identity_element.hpp>
-#include <boost/icl/type_traits/difference_type_of.hpp>
-#include <boost/icl/type_traits/size_type_of.hpp>
-#include <boost/icl/type_traits/is_discrete.hpp>
+#include "boost/icl/type_traits/identity_element.hpp"
+#include "boost/icl/type_traits/difference_type_of.hpp"
+#include "boost/icl/type_traits/size_type_of.hpp"
+#include "boost/icl/type_traits/is_discrete.hpp"
 
 namespace boost{namespace icl
 {

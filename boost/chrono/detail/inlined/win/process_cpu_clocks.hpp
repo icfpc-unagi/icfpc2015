@@ -13,16 +13,16 @@
 #ifndef BOOST_CHRONO_DETAIL_INLINED_WIN_PROCESS_CLOCK_HPP
 #define BOOST_CHRONO_DETAIL_INLINED_WIN_PROCESS_CLOCK_HPP
 
-#include <boost/chrono/config.hpp>
-//#include <boost/chrono/system_clocks.hpp>
-#include <boost/chrono/process_cpu_clocks.hpp>
+#include "boost/chrono/config.hpp"
+//#include "boost/chrono/system_clocks.hpp"
+#include "boost/chrono/process_cpu_clocks.hpp"
 #include <cassert>
 #include <time.h>
 
-#include <boost/detail/winapi/GetLastError.hpp>
-#include <boost/detail/winapi/GetCurrentProcess.hpp>
+#include "boost/detail/winapi/GetLastError.hpp"
+#include "boost/detail/winapi/GetCurrentProcess.hpp"
 #if BOOST_PLAT_WINDOWS_DESKTOP
-#include <boost/detail/winapi/GetProcessTimes.hpp>
+#include "boost/detail/winapi/GetProcessTimes.hpp"
 #endif
 
 namespace boost

@@ -16,18 +16,18 @@
 #define BOOST_TEST_PREDICATE_RESULT_HPP_012705GER
 
 // Boost.Test
-#include <boost/test/utils/class_properties.hpp>
-#include <boost/test/utils/wrap_stringstream.hpp>
-#include <boost/test/utils/basic_cstring/basic_cstring.hpp>
+#include "boost/test/utils/class_properties.hpp"
+#include "boost/test/utils/wrap_stringstream.hpp"
+#include "boost/test/utils/basic_cstring/basic_cstring.hpp"
 
 // Boost
-#include <boost/shared_ptr.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/shared_ptr.hpp"
+#include "boost/detail/workaround.hpp"
 
 // STL
 #include <cstddef>          // for std::size_t
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -83,6 +83,6 @@ private:
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_PREDICATE_RESULT_HPP_012705GER

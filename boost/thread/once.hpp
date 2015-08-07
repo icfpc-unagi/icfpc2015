@@ -9,15 +9,15 @@
 //  accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/platform.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/platform.hpp"
 #if defined(BOOST_THREAD_PLATFORM_WIN32)
-#include <boost/thread/win32/once.hpp>
+#include "boost/thread/win32/once.hpp"
 #elif defined(BOOST_THREAD_PLATFORM_PTHREAD)
 #if defined BOOST_THREAD_ONCE_FAST_EPOCH
-#include <boost/thread/pthread/once.hpp>
+#include "boost/thread/pthread/once.hpp"
 #elif defined BOOST_THREAD_ONCE_ATOMIC
-#include <boost/thread/pthread/once_atomic.hpp>
+#include "boost/thread/pthread/once_atomic.hpp"
 #else
 #error "Once Not Implemented"
 #endif
@@ -25,7 +25,7 @@
 #error "Boost threads unavailable on this platform"
 #endif
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -39,6 +39,6 @@ inline void call_once(Function func,once_flag& flag)
     }
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

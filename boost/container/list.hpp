@@ -14,28 +14,28 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
-#include <boost/container/container_fwd.hpp>
-#include <boost/container/detail/version_type.hpp>
-#include <boost/container/detail/iterators.hpp>
-#include <boost/container/detail/mpl.hpp>
-#include <boost/container/throw_exception.hpp>
-#include <boost/move/utility_core.hpp>
-#include <boost/move/iterator.hpp>
-#include <boost/move/detail/move_helpers.hpp>
-#include <boost/move/traits.hpp>
-#include <boost/intrusive/pointer_traits.hpp>
-#include <boost/container/detail/utilities.hpp>
-#include <boost/container/detail/algorithms.hpp>
-#include <boost/intrusive/list.hpp>
-#include <boost/assert.hpp>
-#include <boost/container/detail/node_alloc_holder.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
+#include "boost/container/container_fwd.hpp"
+#include "boost/container/detail/version_type.hpp"
+#include "boost/container/detail/iterators.hpp"
+#include "boost/container/detail/mpl.hpp"
+#include "boost/container/throw_exception.hpp"
+#include "boost/move/utility_core.hpp"
+#include "boost/move/iterator.hpp"
+#include "boost/move/detail/move_helpers.hpp"
+#include "boost/move/traits.hpp"
+#include "boost/intrusive/pointer_traits.hpp"
+#include "boost/container/detail/utilities.hpp"
+#include "boost/container/detail/algorithms.hpp"
+#include "boost/intrusive/list.hpp"
+#include "boost/assert.hpp"
+#include "boost/container/detail/node_alloc_holder.hpp"
 
 #if defined(BOOST_CONTAINER_PERFECT_FORWARDING) || defined(BOOST_CONTAINER_DOXYGEN_INVOKED)
 #else
 //Preprocessor library to emulate perfect forwarding
-#include <boost/container/detail/preprocessor.hpp>
+#include "boost/container/detail/preprocessor.hpp"
 #endif
 
 #if !defined(BOOST_NO_CXX11_HDR_INITIALIZER_LIST)
@@ -1457,6 +1457,6 @@ namespace container {
 
 }}
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif // BOOST_CONTAINER_LIST_HPP

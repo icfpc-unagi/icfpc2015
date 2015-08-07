@@ -8,9 +8,9 @@ Copyright (c) 2008-2009: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_IS_INTERVAL_CONTAINER_HPP_JOFA_081004
 #define BOOST_ICL_TYPE_TRAITS_IS_INTERVAL_CONTAINER_HPP_JOFA_081004
 
-#include <boost/mpl/and.hpp> 
-#include <boost/mpl/not.hpp> 
-#include <boost/icl/type_traits/is_map.hpp> 
+#include "boost/mpl/and.hpp" 
+#include "boost/mpl/not.hpp" 
+#include "boost/icl/type_traits/is_map.hpp" 
 
 namespace boost{ namespace icl
 {

@@ -20,7 +20,7 @@
 
 #include <ios>
 #include "../../gil_config.hpp"
-#include <boost/shared_ptr.hpp>
+#include "boost/shared_ptr.hpp"
 
 namespace boost { namespace gil {
 

@@ -149,13 +149,13 @@ public:
 
  */
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/mutex.hpp>
-#include <boost/thread/condition_variable.hpp>
-#include <boost/thread/mutex.hpp>
-#include <boost/chrono.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/mutex.hpp"
+#include "boost/thread/condition_variable.hpp"
+#include "boost/thread/mutex.hpp"
+#include "boost/chrono.hpp"
 #include <climits>
-#include <boost/system/system_error.hpp>
+#include "boost/system/system_error.hpp"
 #define BOOST_THREAD_INLINE inline
 
 namespace boost {

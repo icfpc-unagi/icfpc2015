@@ -5,12 +5,12 @@
 #ifndef BOOST_PARAMETER_INVOKER_051210_HPP
 # define BOOST_PARAMETER_INVOKER_051210_HPP
 
-# include <boost/mpl/begin.hpp>
-# include <boost/mpl/next.hpp>
-# include <boost/mpl/deref.hpp>
-# include <boost/mpl/size.hpp>
-# include <boost/parameter/keyword.hpp>
-# include <boost/preprocessor/iteration/iterate.hpp>
+# include "boost/mpl/begin.hpp"
+# include "boost/mpl/next.hpp"
+# include "boost/mpl/deref.hpp"
+# include "boost/mpl/size.hpp"
+# include "boost/parameter/keyword.hpp"
+# include "boost/preprocessor/iteration/iterate.hpp"
 
 namespace boost { namespace parameter { namespace python { namespace aux {
 
@@ -111,19 +111,19 @@ struct init_invoker<0, T, Args>
 };
 
 # define BOOST_PP_ITERATION_PARAMS_1 (4, \
-    (1, BOOST_PARAMETER_MAX_ARITY, <boost/parameter/aux_/python/invoker_iterate.hpp>, 1))
+    (1, BOOST_PARAMETER_MAX_ARITY, "boost/parameter/aux_/python/invoker_iterate.hpp", 1))
 # include BOOST_PP_ITERATE()
 
 # define BOOST_PP_ITERATION_PARAMS_1 (4, \
-    (1, BOOST_PARAMETER_MAX_ARITY, <boost/parameter/aux_/python/invoker_iterate.hpp>, 2))
+    (1, BOOST_PARAMETER_MAX_ARITY, "boost/parameter/aux_/python/invoker_iterate.hpp", 2))
 # include BOOST_PP_ITERATE()
 
 # define BOOST_PP_ITERATION_PARAMS_1 (4, \
-    (1, BOOST_PARAMETER_MAX_ARITY, <boost/parameter/aux_/python/invoker_iterate.hpp>, 3))
+    (1, BOOST_PARAMETER_MAX_ARITY, "boost/parameter/aux_/python/invoker_iterate.hpp", 3))
 # include BOOST_PP_ITERATE()
 
 # define BOOST_PP_ITERATION_PARAMS_1 (4, \
-    (1, BOOST_PARAMETER_MAX_ARITY, <boost/parameter/aux_/python/invoker_iterate.hpp>, 4))
+    (1, BOOST_PARAMETER_MAX_ARITY, "boost/parameter/aux_/python/invoker_iterate.hpp", 4))
 # include BOOST_PP_ITERATE()
 
 }}}} // namespace boost::parameter::python::aux

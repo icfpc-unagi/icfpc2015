@@ -7,7 +7,7 @@
 #if !defined(BOOST_TTI_STATIC_MEMBER_FUNCTION_GEN_HPP)
 #define BOOST_TTI_STATIC_MEMBER_FUNCTION_GEN_HPP
 
-#include <boost/preprocessor/cat.hpp>
+#include "boost/preprocessor/cat.hpp"
 
 /*
 

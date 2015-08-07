@@ -19,7 +19,7 @@
 #endif
 
 
-#include <boost/signals2/dummy_mutex.hpp>
+#include "boost/signals2/dummy_mutex.hpp"
 
 namespace boost
 {

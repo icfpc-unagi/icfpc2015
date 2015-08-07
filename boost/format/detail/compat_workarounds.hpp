@@ -47,7 +47,7 @@ namespace boost {
 }// N.S. boost
 
 
-#include <boost/format/detail/config_macros.hpp>
+#include "boost/format/detail/config_macros.hpp"
    // sets-up macros and load compiler-specific workarounds headers.
 
 #if !defined(BOOST_FORMAT_STREAMBUF_DEFINED)

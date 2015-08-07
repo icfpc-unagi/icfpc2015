@@ -11,7 +11,7 @@
 #ifndef BOOST_MSM_FRONT_EUML_STL_H
 #define BOOST_MSM_FRONT_EUML_STL_H
 
-#include <boost/msm/front/euml/container.hpp>
-#include <boost/msm/front/euml/algorithm.hpp>
+#include "boost/msm/front/euml/container.hpp"
+#include "boost/msm/front/euml/algorithm.hpp"
 
 #endif //BOOST_MSM_FRONT_EUML_STL_H

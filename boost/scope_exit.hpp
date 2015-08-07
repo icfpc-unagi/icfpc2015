@@ -11,36 +11,36 @@
 
 #ifndef DOXYGEN
 
-#include <boost/detail/workaround.hpp>
-#include <boost/mpl/assert.hpp>
-#include <boost/mpl/int.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/function.hpp>
-#include <boost/typeof/typeof.hpp>
-#include <boost/config.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/control/expr_iif.hpp>
-#include <boost/preprocessor/comparison/equal.hpp>
-#include <boost/preprocessor/logical/bitor.hpp>
-#include <boost/preprocessor/logical/bitand.hpp>
-#include <boost/preprocessor/facilities/empty.hpp>
-#include <boost/preprocessor/facilities/is_empty.hpp>
-#include <boost/preprocessor/facilities/identity.hpp>
-#include <boost/preprocessor/punctuation/comma_if.hpp>
-#include <boost/preprocessor/punctuation/paren_if.hpp>
-#include <boost/preprocessor/seq/cat.hpp>
-#include <boost/preprocessor/seq/size.hpp>
-#include <boost/preprocessor/seq/to_tuple.hpp>
-#include <boost/preprocessor/tuple/elem.hpp>
-#include <boost/preprocessor/tuple/eat.hpp>
-#include <boost/preprocessor/tuple/to_list.hpp>
-#include <boost/preprocessor/list/append.hpp>
-#include <boost/preprocessor/list/fold_left.hpp>
-#include <boost/preprocessor/list/enum.hpp>
-#include <boost/preprocessor/list/adt.hpp>
-#include <boost/preprocessor/list/for_each_i.hpp>
-#include <boost/preprocessor/detail/is_unary.hpp>
+#include "boost/detail/workaround.hpp"
+#include "boost/mpl/assert.hpp"
+#include "boost/mpl/int.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/function.hpp"
+#include "boost/typeof/typeof.hpp"
+#include "boost/config.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/control/expr_iif.hpp"
+#include "boost/preprocessor/comparison/equal.hpp"
+#include "boost/preprocessor/logical/bitor.hpp"
+#include "boost/preprocessor/logical/bitand.hpp"
+#include "boost/preprocessor/facilities/empty.hpp"
+#include "boost/preprocessor/facilities/is_empty.hpp"
+#include "boost/preprocessor/facilities/identity.hpp"
+#include "boost/preprocessor/punctuation/comma_if.hpp"
+#include "boost/preprocessor/punctuation/paren_if.hpp"
+#include "boost/preprocessor/seq/cat.hpp"
+#include "boost/preprocessor/seq/size.hpp"
+#include "boost/preprocessor/seq/to_tuple.hpp"
+#include "boost/preprocessor/tuple/elem.hpp"
+#include "boost/preprocessor/tuple/eat.hpp"
+#include "boost/preprocessor/tuple/to_list.hpp"
+#include "boost/preprocessor/list/append.hpp"
+#include "boost/preprocessor/list/fold_left.hpp"
+#include "boost/preprocessor/list/enum.hpp"
+#include "boost/preprocessor/list/adt.hpp"
+#include "boost/preprocessor/list/for_each_i.hpp"
+#include "boost/preprocessor/detail/is_unary.hpp"
 
 // PRIVATE/PROTECTED //
 
@@ -335,11 +335,11 @@ extern boost::scope_exit::detail::undeclared BOOST_SCOPE_EXIT_AUX_ARGS;
 // cannot be a `typeof(...)`.
 #if BOOST_SCOPE_EXIT_AUX_TYPEOF_THIS_MSVC_WORKAROUND_01
 
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/mpl/int.hpp>
-#include <boost/type_traits/is_function.hpp>
-#include <boost/utility/enable_if.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/mpl/int.hpp"
+#include "boost/type_traits/is_function.hpp"
+#include "boost/utility/enable_if.hpp"
 
 #if defined(BOOST_MSVC)
 #   include <typeinfo>

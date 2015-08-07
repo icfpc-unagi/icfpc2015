@@ -8,71 +8,71 @@
 #ifndef BOOST_THREAD_FUTURE_HPP
 #define BOOST_THREAD_FUTURE_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 
 // boost::thread::future requires exception handling
 // due to boost::exception::exception_ptr dependency
 
 #ifndef BOOST_NO_EXCEPTIONS
 
-#include <boost/core/scoped_enum.hpp>
+#include "boost/core/scoped_enum.hpp"
 #include <stdexcept>
 #include <iostream>
-#include <boost/thread/exceptional_ptr.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/detail/invoker.hpp>
-#include <boost/thread/detail/invoke.hpp>
-#include <boost/thread/thread_time.hpp>
-#include <boost/thread/mutex.hpp>
-#include <boost/thread/condition_variable.hpp>
-#include <boost/thread/lock_algorithms.hpp>
-#include <boost/thread/lock_types.hpp>
-#include <boost/exception_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include "boost/thread/exceptional_ptr.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/detail/invoker.hpp"
+#include "boost/thread/detail/invoke.hpp"
+#include "boost/thread/thread_time.hpp"
+#include "boost/thread/mutex.hpp"
+#include "boost/thread/condition_variable.hpp"
+#include "boost/thread/lock_algorithms.hpp"
+#include "boost/thread/lock_types.hpp"
+#include "boost/exception_ptr.hpp"
+#include "boost/shared_ptr.hpp"
 #if defined BOOST_THREAD_FUTURE_USES_OPTIONAL
-#include <boost/optional.hpp>
+#include "boost/optional.hpp"
 #else
-#include <boost/thread/csbl/memory/unique_ptr.hpp>
-//#include <boost/move/make_unique.hpp>
+#include "boost/thread/csbl/memory/unique_ptr.hpp"
+//#include "boost/move/make_unique.hpp"
 #endif
-#include <boost/type_traits/is_fundamental.hpp>
-#include <boost/thread/detail/is_convertible.hpp>
-#include <boost/type_traits/decay.hpp>
-#include <boost/type_traits/is_void.hpp>
-#include <boost/type_traits/conditional.hpp>
-#include <boost/config.hpp>
-#include <boost/throw_exception.hpp>
+#include "boost/type_traits/is_fundamental.hpp"
+#include "boost/thread/detail/is_convertible.hpp"
+#include "boost/type_traits/decay.hpp"
+#include "boost/type_traits/is_void.hpp"
+#include "boost/type_traits/conditional.hpp"
+#include "boost/config.hpp"
+#include "boost/throw_exception.hpp"
 #include <algorithm>
-#include <boost/function.hpp>
-#include <boost/bind.hpp>
-#include <boost/core/ref.hpp>
-#include <boost/scoped_array.hpp>
-#include <boost/enable_shared_from_this.hpp>
-#include <boost/core/enable_if.hpp>
+#include "boost/function.hpp"
+#include "boost/bind.hpp"
+#include "boost/core/ref.hpp"
+#include "boost/scoped_array.hpp"
+#include "boost/enable_shared_from_this.hpp"
+#include "boost/core/enable_if.hpp"
 
 #include <list>
-#include <boost/next_prior.hpp>
+#include "boost/next_prior.hpp"
 #include <vector>
 
-#include <boost/thread/future_error_code.hpp>
+#include "boost/thread/future_error_code.hpp"
 #ifdef BOOST_THREAD_USES_CHRONO
-#include <boost/chrono/system_clocks.hpp>
+#include "boost/chrono/system_clocks.hpp"
 #endif
 
 #if defined BOOST_THREAD_PROVIDES_FUTURE_CTOR_ALLOCATORS
-#include <boost/thread/detail/memory.hpp>
-#include <boost/container/scoped_allocator.hpp>
+#include "boost/thread/detail/memory.hpp"
+#include "boost/container/scoped_allocator.hpp"
 #if ! defined  BOOST_NO_CXX11_ALLOCATOR
 #include <memory>
 #endif
 #endif
 
-#include <boost/utility/result_of.hpp>
-#include <boost/thread/thread_only.hpp>
+#include "boost/utility/result_of.hpp"
+#include "boost/thread/thread_only.hpp"
 
 #if defined BOOST_THREAD_PROVIDES_FUTURE_WHEN_ALL_WHEN_ANY
-#include <boost/thread/csbl/tuple.hpp>
-#include <boost/thread/csbl/vector.hpp>
+#include "boost/thread/csbl/tuple.hpp"
+#include "boost/thread/csbl/vector.hpp"
 #endif
 
 #if defined BOOST_THREAD_PROVIDES_FUTURE
@@ -1954,13 +1954,13 @@ namespace boost
         void lazy_init()
         {
 #if defined BOOST_THREAD_PROVIDES_PROMISE_LAZY
-#include <boost/detail/atomic_undef_macros.hpp>
+#include "boost/detail/atomic_undef_macros.hpp"
           if(!atomic_load(&future_))
             {
                 future_ptr blank;
                 atomic_compare_exchange(&future_,&blank,future_ptr(new detail::shared_state<R>));
             }
-#include <boost/detail/atomic_redef_macros.hpp>
+#include "boost/detail/atomic_redef_macros.hpp"
 #endif
         }
 
@@ -2155,13 +2155,13 @@ namespace boost
         void lazy_init()
         {
 #if defined BOOST_THREAD_PROVIDES_PROMISE_LAZY
-#include <boost/detail/atomic_undef_macros.hpp>
+#include "boost/detail/atomic_undef_macros.hpp"
             if(!atomic_load(&future_))
             {
                 future_ptr blank;
                 atomic_compare_exchange(&future_,&blank,future_ptr(new detail::shared_state<R&>));
             }
-#include <boost/detail/atomic_redef_macros.hpp>
+#include "boost/detail/atomic_redef_macros.hpp"
 #endif
         }
 

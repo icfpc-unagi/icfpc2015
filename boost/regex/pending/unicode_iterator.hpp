@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         unicode_iterator.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Iterator adapters for converting between different Unicode encodings.
   */
 
@@ -60,11 +60,11 @@ Accepts UTF-32 code points and forwards them on as UTF-16 code points.
 
 #ifndef BOOST_REGEX_UNICODE_ITERATOR_HPP
 #define BOOST_REGEX_UNICODE_ITERATOR_HPP
-#include <boost/cstdint.hpp>
-#include <boost/assert.hpp>
-#include <boost/iterator/iterator_facade.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/throw_exception.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/assert.hpp"
+#include "boost/iterator/iterator_facade.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/throw_exception.hpp"
 #include <stdexcept>
 #ifndef BOOST_NO_STD_LOCALE
 #include <sstream>

@@ -18,10 +18,10 @@
 #ifndef BOOST_NUMERIC_ODEINT_EXTERNAL_THRUST_HPP_DEFINED
 #define BOOST_NUMERIC_ODEINT_EXTERNAL_THRUST_HPP_DEFINED
 
-#include <boost/numeric/odeint/external/thrust/thrust_algebra.hpp>
-#include <boost/numeric/odeint/external/thrust/thrust_operations.hpp>
-#include <boost/numeric/odeint/external/thrust/thrust_algebra_dispatcher.hpp>
-#include <boost/numeric/odeint/external/thrust/thrust_operations_dispatcher.hpp>
-#include <boost/numeric/odeint/external/thrust/thrust_resize.hpp>
+#include "boost/numeric/odeint/external/thrust/thrust_algebra.hpp"
+#include "boost/numeric/odeint/external/thrust/thrust_operations.hpp"
+#include "boost/numeric/odeint/external/thrust/thrust_algebra_dispatcher.hpp"
+#include "boost/numeric/odeint/external/thrust/thrust_operations_dispatcher.hpp"
+#include "boost/numeric/odeint/external/thrust/thrust_resize.hpp"
 
 #endif // BOOST_NUMERIC_ODEINT_EXTERNAL_THRUST_HPP_DEFINED

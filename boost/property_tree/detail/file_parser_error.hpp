@@ -10,7 +10,7 @@
 #ifndef BOOST_PROPERTY_TREE_DETAIL_FILE_PARSER_ERROR_HPP_INCLUDED
 #define BOOST_PROPERTY_TREE_DETAIL_FILE_PARSER_ERROR_HPP_INCLUDED
 
-#include <boost/property_tree/ptree.hpp>
+#include "boost/property_tree/ptree.hpp"
 #include <string>
 
 namespace boost { namespace property_tree

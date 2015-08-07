@@ -7,7 +7,7 @@
 #ifndef BOOST_THREAD_EXECUTORS_WORK_HPP
 #define BOOST_THREAD_EXECUTORS_WORK_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 
 #if ! defined BOOST_THREAD_EXECUTORS_WORK_ACCEPTS_MOVABLE \
  && ! defined BOOST_THREAD_EXECUTORS_WORK_DONT_ACCEPT_MOVABLE
@@ -17,7 +17,7 @@
 
 #if defined BOOST_THREAD_EXECUTORS_WORK_ACCEPTS_MOVABLE
 
-#include <boost/thread/detail/nullary_function.hpp>
+#include "boost/thread/detail/nullary_function.hpp"
 
 namespace boost
 {
@@ -28,7 +28,7 @@ namespace boost
 } // namespace boost
 
 #else
-#include <boost/thread/csbl/functional.hpp>
+#include "boost/thread/csbl/functional.hpp"
 
 namespace boost
 {

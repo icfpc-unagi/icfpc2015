@@ -12,9 +12,9 @@
 #ifndef BOOST_PROPERTY_TREE_EXCEPTIONS_HPP_INCLUDED
 #define BOOST_PROPERTY_TREE_EXCEPTIONS_HPP_INCLUDED
 
-#include <boost/property_tree/ptree_fwd.hpp>
+#include "boost/property_tree/ptree_fwd.hpp"
 
-#include <boost/any.hpp>
+#include "boost/any.hpp"
 #include <string>
 #include <stdexcept>
 
@@ -81,6 +81,6 @@ namespace boost { namespace property_tree
 
 }}
 
-#include <boost/property_tree/detail/exception_implementation.hpp>
+#include "boost/property_tree/detail/exception_implementation.hpp"
 
 #endif

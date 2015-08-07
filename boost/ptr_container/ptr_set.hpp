@@ -16,8 +16,8 @@
 # pragma once
 #endif
 
-#include <boost/ptr_container/indirect_fun.hpp>
-#include <boost/ptr_container/ptr_set_adapter.hpp>
+#include "boost/ptr_container/indirect_fun.hpp"
+#include "boost/ptr_container/ptr_set_adapter.hpp"
 #include <set>
 
 namespace boost

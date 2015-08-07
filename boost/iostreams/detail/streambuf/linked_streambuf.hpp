@@ -13,13 +13,13 @@
 #endif
 
 #include <typeinfo>
-#include <boost/config.hpp>                        // member template friends.
-#include <boost/iostreams/detail/char_traits.hpp>
-#include <boost/iostreams/detail/ios.hpp>          // openmode.
-#include <boost/iostreams/detail/streambuf.hpp>
+#include "boost/config.hpp"                        // member template friends.
+#include "boost/iostreams/detail/char_traits.hpp"
+#include "boost/iostreams/detail/ios.hpp"          // openmode.
+#include "boost/iostreams/detail/streambuf.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp> // MSVC.
+#include "boost/iostreams/detail/config/disable_warnings.hpp" // MSVC.
 
 namespace boost { namespace iostreams { namespace detail {
 
@@ -109,6 +109,6 @@ private:
 
 } } } // End namespaces detail, iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp> // MSVC.
+#include "boost/iostreams/detail/config/enable_warnings.hpp" // MSVC.
 
 #endif // #ifndef BOOST_IOSTREAMS_DETAIL_LINKED_STREAMBUF_HPP_INCLUDED

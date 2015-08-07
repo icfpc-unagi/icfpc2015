@@ -11,9 +11,9 @@
 #ifndef BOOST_TYPE_ERASURE_DETAIL_STORAGE_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_DETAIL_STORAGE_HPP_INCLUDED
 
-#include <boost/config.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/type_traits/remove_cv.hpp>
+#include "boost/config.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/type_traits/remove_cv.hpp"
 
 #ifdef BOOST_MSVC
 #pragma warning(push)

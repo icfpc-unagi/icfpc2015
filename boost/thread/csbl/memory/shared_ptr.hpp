@@ -9,12 +9,12 @@
 #ifndef BOOST_CSBL_MEMORY_SHARED_PTR_HPP
 #define BOOST_CSBL_MEMORY_SHARED_PTR_HPP
 
-#include <boost/thread/csbl/memory/config.hpp>
+#include "boost/thread/csbl/memory/config.hpp"
 
 #if defined BOOST_NO_CXX11_SMART_PTR
 
-#include <boost/smart_ptr/shared_ptr.hpp>
-#include <boost/smart_ptr/make_shared.hpp>
+#include "boost/smart_ptr/shared_ptr.hpp"
+#include "boost/smart_ptr/make_shared.hpp"
 
 namespace boost
 {
@@ -27,7 +27,7 @@ namespace boost
 
 #else
 
-#include <boost/shared_ptr.hpp>
+#include "boost/shared_ptr.hpp"
 
 namespace boost
 {

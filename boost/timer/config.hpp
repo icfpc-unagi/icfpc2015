@@ -10,9 +10,9 @@
 #ifndef BOOST_TIMER_CONFIG_HPP
 #define BOOST_TIMER_CONFIG_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
-#include <boost/system/api_config.hpp> 
+#include "boost/system/api_config.hpp" 
 
 // This header implements separate compilation features as described in
 // http://www.boost.org/more/separate_compilation.html
@@ -46,7 +46,7 @@
 //
 // And include the header that does the work:
 //
-#include <boost/config/auto_link.hpp>
+#include "boost/config/auto_link.hpp"
 #endif  // auto-linking disabled
 
 #endif // BOOST_TIMER_CONFIG_HPP

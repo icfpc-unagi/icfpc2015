@@ -9,10 +9,10 @@
 #ifndef BOOST_HEAP_DETAIL_HEAP_NODE_HPP
 #define BOOST_HEAP_DETAIL_HEAP_NODE_HPP
 
-#include <boost/assert.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/intrusive/list.hpp>
-#include <boost/mpl/if.hpp>
+#include "boost/assert.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/intrusive/list.hpp"
+#include "boost/mpl/if.hpp"
 
 #ifdef BOOST_HEAP_SANITYCHECKS
 #define BOOST_HEAP_ASSERT BOOST_ASSERT

@@ -18,7 +18,7 @@
 # pragma once
 #endif
 
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 #include <pthread.h>
 
 namespace boost

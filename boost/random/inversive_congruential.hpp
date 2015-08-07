@@ -18,17 +18,17 @@
 
 #include <iosfwd>
 #include <stdexcept>
-#include <boost/assert.hpp>
-#include <boost/config.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/integer/static_log2.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/const_mod.hpp>
-#include <boost/random/detail/seed.hpp>
-#include <boost/random/detail/operators.hpp>
-#include <boost/random/detail/seed_impl.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/integer/static_log2.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/const_mod.hpp"
+#include "boost/random/detail/seed.hpp"
+#include "boost/random/detail/operators.hpp"
+#include "boost/random/detail/seed_impl.hpp"
 
-#include <boost/random/detail/disable_warnings.hpp>
+#include "boost/random/detail/disable_warnings.hpp"
 
 namespace boost {
 namespace random {
@@ -262,6 +262,6 @@ using random::hellekalek1995;
 
 } // namespace boost
 
-#include <boost/random/detail/enable_warnings.hpp>
+#include "boost/random/detail/enable_warnings.hpp"
 
 #endif // BOOST_RANDOM_INVERSIVE_CONGRUENTIAL_HPP

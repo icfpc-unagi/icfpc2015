@@ -16,8 +16,8 @@
 #define BOOST_TEST_UNIT_TEST_SUITE_HPP_071894GER
 
 // Boost.Test
-#include <boost/test/unit_test_suite_impl.hpp>
-#include <boost/test/framework.hpp>
+#include "boost/test/unit_test_suite_impl.hpp"
+#include "boost/test/framework.hpp"
 
 //____________________________________________________________________________//
 

@@ -16,18 +16,18 @@
 
 #include <istream>
 #include <iosfwd>
-#include <boost/assert.hpp>
-#include <boost/limits.hpp>
-#include <boost/config.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/integer/integer_mask.hpp>
-#include <boost/type_traits/make_unsigned.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/integer_log2.hpp>
-#include <boost/random/detail/operators.hpp>
-#include <boost/random/detail/seed.hpp>
-#include <boost/random/detail/seed_impl.hpp>
-#include <boost/random/detail/signed_unsigned_tools.hpp>
+#include "boost/assert.hpp"
+#include "boost/limits.hpp"
+#include "boost/config.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/integer/integer_mask.hpp"
+#include "boost/type_traits/make_unsigned.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/integer_log2.hpp"
+#include "boost/random/detail/operators.hpp"
+#include "boost/random/detail/seed.hpp"
+#include "boost/random/detail/seed_impl.hpp"
+#include "boost/random/detail/signed_unsigned_tools.hpp"
 
 namespace boost {
 namespace random {

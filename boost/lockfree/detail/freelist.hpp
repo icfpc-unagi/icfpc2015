@@ -12,15 +12,15 @@
 #include <limits>
 #include <memory>
 
-#include <boost/array.hpp>
-#include <boost/config.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/noncopyable.hpp>
-#include <boost/static_assert.hpp>
+#include "boost/array.hpp"
+#include "boost/config.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/noncopyable.hpp"
+#include "boost/static_assert.hpp"
 
-#include <boost/lockfree/detail/atomic.hpp>
-#include <boost/lockfree/detail/parameter.hpp>
-#include <boost/lockfree/detail/tagged_ptr.hpp>
+#include "boost/lockfree/detail/atomic.hpp"
+#include "boost/lockfree/detail/parameter.hpp"
+#include "boost/lockfree/detail/tagged_ptr.hpp"
 
 #if defined(_MSC_VER)
 #pragma warning(push)

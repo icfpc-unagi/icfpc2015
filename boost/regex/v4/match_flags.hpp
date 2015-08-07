@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         match_flags.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares match_flags type.
   */
 
@@ -20,7 +20,7 @@
 #define BOOST_REGEX_V4_MATCH_FLAGS
 
 #ifdef __cplusplus
-#  include <boost/cstdint.hpp>
+#  include "boost/cstdint.hpp"
 #endif
 
 #ifdef __cplusplus

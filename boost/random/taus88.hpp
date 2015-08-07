@@ -15,8 +15,8 @@
 #ifndef BOOST_RANDOM_TAUS88_HPP
 #define BOOST_RANDOM_TAUS88_HPP
 
-#include <boost/random/linear_feedback_shift.hpp>
-#include <boost/random/xor_combine.hpp>
+#include "boost/random/linear_feedback_shift.hpp"
+#include "boost/random/xor_combine.hpp"
 
 namespace boost {
 namespace random {

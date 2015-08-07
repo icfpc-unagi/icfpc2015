@@ -5,12 +5,12 @@
 #ifndef THREAD_HEAP_ALLOC_HPP
 #define THREAD_HEAP_ALLOC_HPP
 #include <new>
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/win32/thread_primitives.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/win32/thread_primitives.hpp"
 #include <stdexcept>
-#include <boost/assert.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/core/no_exceptions_support.hpp>
+#include "boost/assert.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/core/no_exceptions_support.hpp"
 
 #if defined( BOOST_USE_WINDOWS_H )
 # include <windows.h>
@@ -52,7 +52,7 @@ namespace boost
 
 #endif
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -403,7 +403,7 @@ namespace boost
     }
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 
 #endif

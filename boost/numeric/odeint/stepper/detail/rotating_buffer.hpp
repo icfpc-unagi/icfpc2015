@@ -18,7 +18,7 @@
 #ifndef BOOST_NUMERIC_ODEINT_STEPPER_DETAIL_ROTATING_BUFFER_HPP_INCLUDED
 #define BOOST_NUMERIC_ODEINT_STEPPER_DETAIL_ROTATING_BUFFER_HPP_INCLUDED
 
-#include <boost/array.hpp>
+#include "boost/array.hpp"
 
 namespace boost {
 namespace numeric {

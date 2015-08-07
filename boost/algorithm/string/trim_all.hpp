@@ -11,13 +11,13 @@
 #ifndef BOOST_STRING_TRIM_ALL_HPP
 #define BOOST_STRING_TRIM_ALL_HPP
 
-#include <boost/algorithm/string/config.hpp>
+#include "boost/algorithm/string/config.hpp"
 
-#include <boost/algorithm/string/trim.hpp>
-#include <boost/algorithm/string/classification.hpp>
-#include <boost/algorithm/string/find_format.hpp>
-#include <boost/algorithm/string/formatter.hpp>
-#include <boost/algorithm/string/finder.hpp>
+#include "boost/algorithm/string/trim.hpp"
+#include "boost/algorithm/string/classification.hpp"
+#include "boost/algorithm/string/find_format.hpp"
+#include "boost/algorithm/string/formatter.hpp"
+#include "boost/algorithm/string/finder.hpp"
 #include <locale>
 
 /*! \file

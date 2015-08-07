@@ -11,14 +11,14 @@
 //
 // Revision History:
 //   13 June 2001: Changed some names for clarity. (Jeremy Siek)
-//   01 April 2001: Modified to use new <boost/limits.hpp> header. (JMaddock)
+//   01 April 2001: Modified to use new "boost/limits.hpp" header. (JMaddock)
 //
 #ifndef BOOST_GRAPH_DETAIL_BUCKET_SORTER_HPP
 #define BOOST_GRAPH_DETAIL_BUCKET_SORTER_HPP
 
 #include <vector>
 #include <cassert>
-#include <boost/limits.hpp>
+#include "boost/limits.hpp"
 
 namespace boost {
 

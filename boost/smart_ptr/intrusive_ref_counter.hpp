@@ -15,8 +15,8 @@
 #ifndef BOOST_SMART_PTR_INTRUSIVE_REF_COUNTER_HPP_INCLUDED_
 #define BOOST_SMART_PTR_INTRUSIVE_REF_COUNTER_HPP_INCLUDED_
 
-#include <boost/config.hpp>
-#include <boost/smart_ptr/detail/atomic_count.hpp>
+#include "boost/config.hpp"
+#include "boost/smart_ptr/detail/atomic_count.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

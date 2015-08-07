@@ -9,10 +9,10 @@ Copyright (c) 1999-2006: Cortex Software GmbH, Kantstrasse 57, Berlin
 #ifndef BOOST_ICL_INTERVAL_BASE_SET_H_JOFA_990223
 #define BOOST_ICL_INTERVAL_BASE_SET_H_JOFA_990223
 
-#include <boost/icl/impl_config.hpp>
+#include "boost/icl/impl_config.hpp"
 
 #if defined(ICL_USE_BOOST_MOVE_IMPLEMENTATION)
-#   include <boost/container/set.hpp>
+#   include "boost/container/set.hpp"
 #elif defined(ICL_USE_STD_IMPLEMENTATION)
 #   include <set>
 #else // Default for implementing containers
@@ -20,21 +20,21 @@ Copyright (c) 1999-2006: Cortex Software GmbH, Kantstrasse 57, Berlin
 #endif
 
 #include <limits>
-#include <boost/next_prior.hpp> 
-#include <boost/icl/associative_interval_container.hpp>
-#include <boost/icl/type_traits/interval_type_default.hpp>
-#include <boost/icl/interval.hpp>
-#include <boost/icl/type_traits/infinity.hpp>
-#include <boost/icl/type_traits/is_interval_joiner.hpp>
-#include <boost/icl/type_traits/is_interval_separator.hpp>
-#include <boost/icl/type_traits/is_interval_splitter.hpp>
-#include <boost/icl/detail/interval_set_algo.hpp>
-#include <boost/icl/detail/exclusive_less_than.hpp>
+#include "boost/next_prior.hpp" 
+#include "boost/icl/associative_interval_container.hpp"
+#include "boost/icl/type_traits/interval_type_default.hpp"
+#include "boost/icl/interval.hpp"
+#include "boost/icl/type_traits/infinity.hpp"
+#include "boost/icl/type_traits/is_interval_joiner.hpp"
+#include "boost/icl/type_traits/is_interval_separator.hpp"
+#include "boost/icl/type_traits/is_interval_splitter.hpp"
+#include "boost/icl/detail/interval_set_algo.hpp"
+#include "boost/icl/detail/exclusive_less_than.hpp"
 
-#include <boost/icl/right_open_interval.hpp>
-#include <boost/icl/continuous_interval.hpp>
-#include <boost/icl/detail/notate.hpp>
-#include <boost/icl/detail/element_iterator.hpp>
+#include "boost/icl/right_open_interval.hpp"
+#include "boost/icl/continuous_interval.hpp"
+#include "boost/icl/detail/notate.hpp"
+#include "boost/icl/detail/element_iterator.hpp"
 
 namespace boost{namespace icl
 {

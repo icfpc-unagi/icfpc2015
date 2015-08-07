@@ -6,19 +6,19 @@
 #ifndef BOOST_MATH_REAL_TYPE_CONCEPT_HPP
 #define BOOST_MATH_REAL_TYPE_CONCEPT_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #ifdef BOOST_MSVC
 #pragma warning(push)
 #pragma warning(disable: 4100)
 #pragma warning(disable: 4510)
 #pragma warning(disable: 4610)
 #endif
-#include <boost/concept_check.hpp>
+#include "boost/concept_check.hpp"
 #ifdef BOOST_MSVC
 #pragma warning(pop)
 #endif
-#include <boost/math/tools/config.hpp>
-#include <boost/math/tools/precision.hpp>
+#include "boost/math/tools/config.hpp"
+#include "boost/math/tools/precision.hpp"
 
 
 namespace boost{ namespace math{ namespace concepts{

@@ -7,14 +7,14 @@
 #ifndef BOOST_THREAD_CALL_CONTEXT_HPP
 #define BOOST_THREAD_CALL_CONTEXT_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 #if defined BOOST_THREAD_USES_LOG_THREAD_ID
-#include <boost/thread/thread.hpp>
+#include "boost/thread/thread.hpp"
 #endif
-#include <boost/current_function.hpp>
+#include "boost/current_function.hpp"
 #include <iomanip>
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -51,6 +51,6 @@ namespace boost
   }
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif // header

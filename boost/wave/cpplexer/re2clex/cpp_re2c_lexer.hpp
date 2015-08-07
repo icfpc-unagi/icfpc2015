@@ -20,27 +20,27 @@
 #include <iostream>
 #endif // defined(BOOST_SPIRIT_DEBUG)
 
-#include <boost/concept_check.hpp>
-#include <boost/assert.hpp>
-#include <boost/spirit/include/classic_core.hpp>
+#include "boost/concept_check.hpp"
+#include "boost/assert.hpp"
+#include "boost/spirit/include/classic_core.hpp"
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/language_support.hpp>
-#include <boost/wave/token_ids.hpp>
-#include <boost/wave/util/file_position.hpp>
-#include <boost/wave/cpplexer/validate_universal_char.hpp>
-#include <boost/wave/cpplexer/cpplexer_exceptions.hpp>
-#include <boost/wave/cpplexer/token_cache.hpp>
-#include <boost/wave/cpplexer/convert_trigraphs.hpp>
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/language_support.hpp"
+#include "boost/wave/token_ids.hpp"
+#include "boost/wave/util/file_position.hpp"
+#include "boost/wave/cpplexer/validate_universal_char.hpp"
+#include "boost/wave/cpplexer/cpplexer_exceptions.hpp"
+#include "boost/wave/cpplexer/token_cache.hpp"
+#include "boost/wave/cpplexer/convert_trigraphs.hpp"
 
-#include <boost/wave/cpplexer/cpp_lex_interface.hpp>
-#include <boost/wave/cpplexer/re2clex/scanner.hpp>
-#include <boost/wave/cpplexer/re2clex/cpp_re.hpp>
+#include "boost/wave/cpplexer/cpp_lex_interface.hpp"
+#include "boost/wave/cpplexer/re2clex/scanner.hpp"
+#include "boost/wave/cpplexer/re2clex/cpp_re.hpp"
 #if BOOST_WAVE_SUPPORT_PRAGMA_ONCE != 0
-#include <boost/wave/cpplexer/detect_include_guards.hpp>
+#include "boost/wave/cpplexer/detect_include_guards.hpp"
 #endif
 
-#include <boost/wave/cpplexer/cpp_lex_interface_generator.hpp>
+#include "boost/wave/cpplexer/cpp_lex_interface_generator.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

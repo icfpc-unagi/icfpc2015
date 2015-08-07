@@ -12,20 +12,20 @@
 # pragma once
 #endif
 
-#include <boost/assert.hpp>
-#include <boost/config.hpp>  // BOOST_DEDUCE_TYPENAME.
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/detail/adapter/device_adapter.hpp>
-#include <boost/iostreams/detail/adapter/filter_adapter.hpp>
-#include <boost/iostreams/detail/call_traits.hpp>
-#include <boost/iostreams/detail/execute.hpp>
-#include <boost/iostreams/detail/functional.hpp>  // call_close_all 
-#include <boost/iostreams/operations.hpp>
-#include <boost/iostreams/pipeline.hpp>
-#include <boost/iostreams/traits.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"  // BOOST_DEDUCE_TYPENAME.
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/detail/adapter/device_adapter.hpp"
+#include "boost/iostreams/detail/adapter/filter_adapter.hpp"
+#include "boost/iostreams/detail/call_traits.hpp"
+#include "boost/iostreams/detail/execute.hpp"
+#include "boost/iostreams/detail/functional.hpp"  // call_close_all 
+#include "boost/iostreams/operations.hpp"
+#include "boost/iostreams/pipeline.hpp"
+#include "boost/iostreams/traits.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/type_traits/is_same.hpp"
 
 namespace boost { namespace iostreams {
 

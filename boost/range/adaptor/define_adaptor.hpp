@@ -11,7 +11,7 @@
 #ifndef BOOST_RANGE_DEFINE_ADAPTOR_HPP_INCLUDED
 #define BOOST_RANGE_DEFINE_ADAPTOR_HPP_INCLUDED
 
-#include <boost/tuple/tuple.hpp>
+#include "boost/tuple/tuple.hpp"
 
 #define BOOST_DEFINE_RANGE_ADAPTOR( adaptor_name, range_adaptor ) \
     struct adaptor_name##_forwarder {}; \

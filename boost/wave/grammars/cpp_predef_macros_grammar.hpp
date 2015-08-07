@@ -11,15 +11,15 @@
 #if !defined(CPP_PREDEF_MACROS_GRAMMAR_HPP_53858C9A_C202_4D60_AD92_DC9CAE4DBB43_INCLUDED)
 #define CPP_PREDEF_MACROS_GRAMMAR_HPP_53858C9A_C202_4D60_AD92_DC9CAE4DBB43_INCLUDED
 
-#include <boost/spirit/include/classic_core.hpp>
-#include <boost/spirit/include/classic_parse_tree.hpp>
-#include <boost/spirit/include/classic_confix.hpp>
-#include <boost/spirit/include/classic_lists.hpp>
+#include "boost/spirit/include/classic_core.hpp"
+#include "boost/spirit/include/classic_parse_tree.hpp"
+#include "boost/spirit/include/classic_confix.hpp"
+#include "boost/spirit/include/classic_lists.hpp"
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/token_ids.hpp>
-#include <boost/wave/grammars/cpp_predef_macros_gen.hpp>
-#include <boost/wave/util/pattern_parser.hpp>
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/token_ids.hpp"
+#include "boost/wave/grammars/cpp_predef_macros_gen.hpp"
+#include "boost/wave/util/pattern_parser.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

@@ -9,18 +9,18 @@
 #define BOOST_ACCUMULATORS_STATISTICS_ROLLING_WINDOW_HPP_EAN_26_12_2008
 
 #include <cstddef>
-#include <boost/version.hpp>
-#include <boost/assert.hpp>
-#include <boost/circular_buffer.hpp>
-#include <boost/range/iterator_range.hpp>
-#include <boost/accumulators/accumulators_fwd.hpp>
-#include <boost/accumulators/framework/extractor.hpp>
-#include <boost/accumulators/framework/depends_on.hpp>
-#include <boost/accumulators/framework/accumulator_base.hpp>
-#include <boost/accumulators/framework/parameters/sample.hpp>
-#include <boost/accumulators/framework/parameters/accumulator.hpp>
-#include <boost/accumulators/numeric/functional.hpp>
-#include <boost/accumulators/statistics_fwd.hpp>
+#include "boost/version.hpp"
+#include "boost/assert.hpp"
+#include "boost/circular_buffer.hpp"
+#include "boost/range/iterator_range.hpp"
+#include "boost/accumulators/accumulators_fwd.hpp"
+#include "boost/accumulators/framework/extractor.hpp"
+#include "boost/accumulators/framework/depends_on.hpp"
+#include "boost/accumulators/framework/accumulator_base.hpp"
+#include "boost/accumulators/framework/parameters/sample.hpp"
+#include "boost/accumulators/framework/parameters/accumulator.hpp"
+#include "boost/accumulators/numeric/functional.hpp"
+#include "boost/accumulators/statistics_fwd.hpp"
 
 namespace boost { namespace accumulators
 {

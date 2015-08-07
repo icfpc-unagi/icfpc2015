@@ -15,11 +15,11 @@
 #include <string>
 #include <limits>
 
-#include <boost/assert.hpp>
-#include <boost/config.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/cpp_throw.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/cpp_throw.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

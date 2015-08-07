@@ -9,7 +9,7 @@
 
 #ifndef BOOST_CHRONO_IO_TIMEZONE_HPP
 #define BOOST_CHRONO_IO_TIMEZONE_HPP
-#include <boost/detail/scoped_enum_emulation.hpp>
+#include "boost/detail/scoped_enum_emulation.hpp"
 
 namespace boost
 {

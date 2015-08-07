@@ -8,10 +8,10 @@
 
 
 
-#include <boost/statechart/detail/avoid_unused_warning.hpp>
+#include "boost/statechart/detail/avoid_unused_warning.hpp"
 
-#include <boost/assert.hpp>
-#include <boost/detail/allocator_utilities.hpp>
+#include "boost/assert.hpp"
+#include "boost/detail/allocator_utilities.hpp"
 
 #include <cstddef> // std::size_t
 

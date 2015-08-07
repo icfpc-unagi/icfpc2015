@@ -13,13 +13,13 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
 #include <algorithm>
-#include <boost/detail/atomic_count.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/flyweight/refcounted_fwd.hpp>
-#include <boost/flyweight/tracking_tag.hpp>
-#include <boost/utility/swap.hpp>
+#include "boost/detail/atomic_count.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/flyweight/refcounted_fwd.hpp"
+#include "boost/flyweight/tracking_tag.hpp"
+#include "boost/utility/swap.hpp"
 
 #if !defined(BOOST_NO_CXX11_RVALUE_REFERENCES)
 #include <utility>

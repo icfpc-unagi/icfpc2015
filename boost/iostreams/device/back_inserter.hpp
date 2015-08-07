@@ -12,8 +12,8 @@
 # pragma once
 #endif
 
-#include <boost/iostreams/detail/ios.hpp> // streamsize.
-#include <boost/iostreams/categories.hpp>
+#include "boost/iostreams/detail/ios.hpp" // streamsize.
+#include "boost/iostreams/categories.hpp"
 
 namespace boost { namespace iostreams {
 

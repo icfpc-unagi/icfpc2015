@@ -26,8 +26,8 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
 //
 // The following helper classes are placeholders for a generic "singleton"
@@ -112,6 +112,6 @@ singleton_default<T>::create_object;
 } // namespace container
 } // namespace boost
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif   //BOOST_CONTAINER_DETAIL_SINGLETON_DETAIL_HPP

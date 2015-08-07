@@ -16,11 +16,11 @@
 #define BOOST_TEST_CALLBACK_020505GER
 
 // Boost
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/shared_ptr.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/shared_ptr.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 #if BOOST_WORKAROUND(BOOST_MSVC, < 1300) || BOOST_WORKAROUND(BOOST_INTEL, <= 700)
 #  define BOOST_CALLBACK_EXPLICIT_COPY_CONSTRUCTOR
@@ -305,6 +305,6 @@ private:
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_CALLBACK_020505GER

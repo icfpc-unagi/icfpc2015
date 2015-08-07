@@ -26,7 +26,7 @@
 
 #include <limits>
 #include <cassert>
-#include <boost/cstdint.hpp>
+#include "boost/cstdint.hpp"
 #include "gil_config.hpp"
 #include "utilities.hpp"
 

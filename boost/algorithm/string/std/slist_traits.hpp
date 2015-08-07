@@ -11,10 +11,10 @@
 #ifndef BOOST_STRING_STD_SLIST_TRAITS_HPP
 #define BOOST_STRING_STD_SLIST_TRAITS_HPP
 
-#include <boost/algorithm/string/config.hpp>
-#include <boost/algorithm/string/yes_no_type.hpp>
+#include "boost/algorithm/string/config.hpp"
+#include "boost/algorithm/string/yes_no_type.hpp"
 #include BOOST_SLIST_HEADER 
-#include <boost/algorithm/string/sequence_traits.hpp>
+#include "boost/algorithm/string/sequence_traits.hpp"
 
 namespace boost {
     namespace algorithm {

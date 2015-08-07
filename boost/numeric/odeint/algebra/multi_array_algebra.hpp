@@ -19,10 +19,10 @@
 #define BOOST_NUMERIC_ODEINT_ALGEBRA_MULTI_ARRAY_ALGEBRA_HPP_DEFINED
 
 
-#include <boost/numeric/odeint/algebra/detail/for_each.hpp>
-#include <boost/numeric/odeint/algebra/detail/norm_inf.hpp>
-#include <boost/numeric/odeint/algebra/norm_result_type.hpp>
-#include <boost/numeric/odeint/algebra/algebra_dispatcher.hpp>
+#include "boost/numeric/odeint/algebra/detail/for_each.hpp"
+#include "boost/numeric/odeint/algebra/detail/norm_inf.hpp"
+#include "boost/numeric/odeint/algebra/norm_result_type.hpp"
+#include "boost/numeric/odeint/algebra/algebra_dispatcher.hpp"
 
 
 namespace boost {

@@ -12,7 +12,7 @@
 #if !defined(AQ_HPP_A21D9145_B643_44C0_81E7_DB346DD67EE1_INCLUDED)
 #define AQ_HPP_A21D9145_B643_44C0_81E7_DB346DD67EE1_INCLUDED
 
-#include <boost/wave/wave_config.hpp>
+#include "boost/wave/wave_config.hpp"
 #include <cstdlib>
 
 // this must occur after all of the includes and before any code appears

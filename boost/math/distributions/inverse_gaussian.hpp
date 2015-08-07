@@ -49,18 +49,18 @@
 
 // http://www.statsci.org/s/inverse_gaussian.s  and http://www.statsci.org/s/inverse_gaussian.html
 
-//#include <boost/math/distributions/fwd.hpp>
-#include <boost/math/special_functions/erf.hpp> // for erf/erfc.
-#include <boost/math/distributions/complement.hpp>
-#include <boost/math/distributions/detail/common_error_handling.hpp>
-#include <boost/math/distributions/normal.hpp>
-#include <boost/math/distributions/gamma.hpp> // for gamma function
+//#include "boost/math/distributions/fwd.hpp"
+#include "boost/math/special_functions/erf.hpp" // for erf/erfc.
+#include "boost/math/distributions/complement.hpp"
+#include "boost/math/distributions/detail/common_error_handling.hpp"
+#include "boost/math/distributions/normal.hpp"
+#include "boost/math/distributions/gamma.hpp" // for gamma function
 // using boost::math::gamma_p;
 
-#include <boost/math/tools/tuple.hpp>
+#include "boost/math/tools/tuple.hpp"
 //using std::tr1::tuple;
 //using std::tr1::make_tuple;
-#include <boost/math/tools/roots.hpp>
+#include "boost/math/tools/roots.hpp"
 //using boost::math::tools::newton_raphson_iterate;
 
 #include <utility>
@@ -505,7 +505,7 @@ inline RealType kurtosis_excess(const inverse_gaussian_distribution<RealType, Po
 // This include must be at the end, *after* the accessors
 // for this distribution have been defined, in order to
 // keep compilers that support two-phase lookup happy.
-#include <boost/math/distributions/detail/derived_accessors.hpp>
+#include "boost/math/distributions/detail/derived_accessors.hpp"
 
 #endif // BOOST_STATS_INVERSE_GAUSSIAN_HPP
 

@@ -5,7 +5,7 @@
 
 // See http://www.boost.org/libs/iostreams for documentation.
 
-// Adapted from <boost/config/auto_link.hpp> and from
+// Adapted from "boost/config/auto_link.hpp" and from
 // http://www.boost.org/more/separate_compilation.html, by John Maddock.
 
 #ifndef BOOST_IOSTREAMS_DETAIL_CONFIG_ZLIB_HPP_INCLUDED
@@ -15,7 +15,7 @@
 # pragma once
 #endif
 
-#include <boost/config.hpp> // BOOST_STRINGIZE.
+#include "boost/config.hpp" // BOOST_STRINGIZE.
 
 #if defined(BOOST_ZLIB_BINARY)
 # if defined(BOOST_MSVC) || \
@@ -43,7 +43,7 @@
 #  endif
 
 // And include the header that does the work.
-#  include <boost/config/auto_link.hpp>
+#  include "boost/config/auto_link.hpp"
 # endif
 #endif
 

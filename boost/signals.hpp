@@ -6,5 +6,5 @@
 // http://www.boost.org/LICENSE_1_0.txt)
 
 // For more information, see http://www.boost.org/libs/signals
-#include <boost/signal.hpp>
+#include "boost/signal.hpp"
 

@@ -17,8 +17,8 @@
 #pragma once
 #endif
 
-#include <boost/math/tools/toms748_solve.hpp>
-#include <boost/cstdint.hpp>
+#include "boost/math/tools/toms748_solve.hpp"
+#include "boost/cstdint.hpp"
 
 namespace boost{ namespace math{ namespace detail{
 

@@ -20,19 +20,19 @@
 // in shared_ptr and shared_count. Unfortunately its the only way to
 // do this without changing shared_ptr and shared_count
 // the best we can do is to detect a conflict here
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #include <list>
 #include <cstddef> // NULL
 
-#include <boost/serialization/assume_abstract.hpp>
-#include <boost/serialization/split_free.hpp>
-#include <boost/serialization/nvp.hpp>
-#include <boost/serialization/tracking.hpp>
-#include <boost/serialization/void_cast.hpp>
+#include "boost/serialization/assume_abstract.hpp"
+#include "boost/serialization/split_free.hpp"
+#include "boost/serialization/nvp.hpp"
+#include "boost/serialization/tracking.hpp"
+#include "boost/serialization/void_cast.hpp"
 
 // mark base class as an (uncreatable) base class
-#include <boost/serialization/detail/shared_ptr_132.hpp>
+#include "boost/serialization/detail/shared_ptr_132.hpp"
 
 /////////////////////////////////////////////////////////////
 // Maintain a couple of lists of loaded shared pointers of the old previous

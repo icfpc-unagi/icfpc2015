@@ -7,26 +7,26 @@
 #ifndef BOOST_THREAD_MOVE_HPP
 #define BOOST_THREAD_MOVE_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 #ifndef BOOST_NO_SFINAE
-#include <boost/core/enable_if.hpp>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/type_traits/remove_cv.hpp>
-#include <boost/type_traits/decay.hpp>
-#include <boost/type_traits/conditional.hpp>
-#include <boost/type_traits/remove_extent.hpp>
-#include <boost/type_traits/is_array.hpp>
-#include <boost/type_traits/is_function.hpp>
-#include <boost/type_traits/remove_cv.hpp>
-#include <boost/type_traits/add_pointer.hpp>
-#include <boost/type_traits/decay.hpp>
+#include "boost/core/enable_if.hpp"
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/type_traits/remove_cv.hpp"
+#include "boost/type_traits/decay.hpp"
+#include "boost/type_traits/conditional.hpp"
+#include "boost/type_traits/remove_extent.hpp"
+#include "boost/type_traits/is_array.hpp"
+#include "boost/type_traits/is_function.hpp"
+#include "boost/type_traits/remove_cv.hpp"
+#include "boost/type_traits/add_pointer.hpp"
+#include "boost/type_traits/decay.hpp"
 #endif
 
-#include <boost/thread/detail/delete.hpp>
-#include <boost/move/utility.hpp>
-#include <boost/move/traits.hpp>
-#include <boost/config/abi_prefix.hpp>
+#include "boost/thread/detail/delete.hpp"
+#include "boost/move/utility.hpp"
+#include "boost/move/traits.hpp"
+#include "boost/config/abi_prefix.hpp"
 #ifndef BOOST_NO_CXX11_RVALUE_REFERENCES
 #include <type_traits>
 #endif
@@ -350,6 +350,6 @@ namespace boost
   }
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

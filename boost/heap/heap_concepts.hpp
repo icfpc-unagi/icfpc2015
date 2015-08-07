@@ -9,7 +9,7 @@
 #ifndef BOOST_HEAP_CONCEPTS_HPP
 #define BOOST_HEAP_CONCEPTS_HPP
 
-#include <boost/concept_check.hpp>
+#include "boost/concept_check.hpp"
 
 namespace boost {
 namespace heap  {

@@ -9,6 +9,6 @@
 #ifndef BOOST_TT_BROKEN_COMPILER_SPEC_HPP_INCLUDED
 #define BOOST_TT_BROKEN_COMPILER_SPEC_HPP_INCLUDED
 
-#include <boost/type_traits/config.hpp>
+#include "boost/type_traits/config.hpp"
 
 #endif

@@ -15,15 +15,15 @@
 # pragma once
 #endif
 
-#include <boost/config.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/integer_traits.hpp>
-#include <boost/iostreams/detail/config/codecvt.hpp> // mbstate_t.
-#include <boost/iostreams/detail/config/fpos.hpp>
-#include <boost/iostreams/detail/ios.hpp> // streamoff, streampos.
+#include "boost/config.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/integer_traits.hpp"
+#include "boost/iostreams/detail/config/codecvt.hpp" // mbstate_t.
+#include "boost/iostreams/detail/config/fpos.hpp"
+#include "boost/iostreams/detail/ios.hpp" // streamoff, streampos.
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp> 
+#include "boost/iostreams/detail/config/disable_warnings.hpp" 
 
 #ifdef BOOST_NO_STDC_NAMESPACE
 namespace std { using ::fpos_t; }
@@ -112,6 +112,6 @@ inline stream_offset position_to_offset(std::streampos pos)
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp> 
+#include "boost/iostreams/detail/config/enable_warnings.hpp" 
 
 #endif // #ifndef BOOST_IOSTREAMS_POSITIONING_HPP_INCLUDED

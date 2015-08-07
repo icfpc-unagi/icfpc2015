@@ -24,15 +24,15 @@
 // in such cases.   So we can't use basic_ostream<OStream::char_type> but rather
 // use two template parameters
 
-#include <boost/assert.hpp>
-#include <boost/config.hpp>
-#include <boost/serialization/pfto.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"
+#include "boost/serialization/pfto.hpp"
+#include "boost/detail/workaround.hpp"
 
-#include <boost/archive/detail/common_oarchive.hpp>
-#include <boost/serialization/string.hpp>
+#include "boost/archive/detail/common_oarchive.hpp"
+#include "boost/serialization/string.hpp"
 
-#include <boost/archive/detail/abi_prefix.hpp> // must be the last header
+#include "boost/archive/detail/abi_prefix.hpp" // must be the last header
 
 #ifdef BOOST_MSVC
 #  pragma warning(push)
@@ -117,6 +117,6 @@ protected:
 #pragma warning(pop)
 #endif
 
-#include <boost/archive/detail/abi_suffix.hpp> // pops abi_suffix.hpp pragmas
+#include "boost/archive/detail/abi_suffix.hpp" // pops abi_suffix.hpp pragmas
 
 #endif // BOOST_ARCHIVE_BASIC_TEXT_OARCHIVE_HPP

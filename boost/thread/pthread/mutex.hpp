@@ -6,25 +6,25 @@
 // accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 #include <pthread.h>
-#include <boost/throw_exception.hpp>
-#include <boost/core/ignore_unused.hpp>
-#include <boost/thread/exceptions.hpp>
+#include "boost/throw_exception.hpp"
+#include "boost/core/ignore_unused.hpp"
+#include "boost/thread/exceptions.hpp"
 #if defined BOOST_THREAD_PROVIDES_NESTED_LOCKS
-#include <boost/thread/lock_types.hpp>
+#include "boost/thread/lock_types.hpp"
 #endif
-#include <boost/thread/thread_time.hpp>
-#include <boost/thread/xtime.hpp>
-#include <boost/assert.hpp>
+#include "boost/thread/thread_time.hpp"
+#include "boost/thread/xtime.hpp"
+#include "boost/assert.hpp"
 #include <errno.h>
-#include <boost/thread/pthread/timespec.hpp>
-#include <boost/thread/pthread/pthread_mutex_scoped_lock.hpp>
+#include "boost/thread/pthread/timespec.hpp"
+#include "boost/thread/pthread/pthread_mutex_scoped_lock.hpp"
 #ifdef BOOST_THREAD_USES_CHRONO
-#include <boost/chrono/system_clocks.hpp>
-#include <boost/chrono/ceil.hpp>
+#include "boost/chrono/system_clocks.hpp"
+#include "boost/chrono/ceil.hpp"
 #endif
-#include <boost/thread/detail/delete.hpp>
+#include "boost/thread/detail/delete.hpp"
 
 #ifdef _POSIX_TIMEOUTS
 #if _POSIX_TIMEOUTS >= 0 && _POSIX_TIMEOUTS>=200112L
@@ -35,7 +35,7 @@
 #endif
 
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 #ifndef BOOST_THREAD_HAS_NO_EINTR_BUG
 #define BOOST_THREAD_HAS_EINTR_BUG
@@ -351,7 +351,7 @@ namespace boost
 
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 
 #endif

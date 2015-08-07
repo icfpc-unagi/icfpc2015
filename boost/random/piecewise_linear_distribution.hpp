@@ -17,19 +17,19 @@
 #include <algorithm>
 #include <cmath>
 #include <cstdlib>
-#include <boost/assert.hpp>
-#include <boost/random/uniform_real.hpp>
-#include <boost/random/discrete_distribution.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/operators.hpp>
-#include <boost/random/detail/vector_io.hpp>
+#include "boost/assert.hpp"
+#include "boost/random/uniform_real.hpp"
+#include "boost/random/discrete_distribution.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/operators.hpp"
+#include "boost/random/detail/vector_io.hpp"
 
 #ifndef BOOST_NO_CXX11_HDR_INITIALIZER_LIST
 #include <initializer_list>
 #endif
 
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
 
 namespace boost {
 namespace random {

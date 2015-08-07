@@ -18,9 +18,9 @@
 #define BOOST_RANDOM_BERNOULLI_DISTRIBUTION_HPP
 
 #include <iosfwd>
-#include <boost/assert.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/operators.hpp>
+#include "boost/assert.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/operators.hpp"
 
 namespace boost {
 namespace random {

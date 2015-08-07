@@ -8,8 +8,8 @@
 #ifndef BOOST_MATH_DISTRIBUTIONS_DETAIL_HG_QUANTILE_HPP
 #define BOOST_MATH_DISTRIBUTIONS_DETAIL_HG_QUANTILE_HPP
 
-#include <boost/math/policies/error_handling.hpp>
-#include <boost/math/distributions/detail/hypergeometric_pdf.hpp>
+#include "boost/math/policies/error_handling.hpp"
+#include "boost/math/distributions/detail/hypergeometric_pdf.hpp"
 
 namespace boost{ namespace math{ namespace detail{
 

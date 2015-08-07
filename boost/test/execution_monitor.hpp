@@ -33,18 +33,18 @@
 #define BOOST_TEST_EXECUTION_MONITOR_HPP_071894GER
 
 // Boost.Test
-#include <boost/test/detail/global_typedef.hpp>
-#include <boost/test/detail/fwd_decl.hpp>
-#include <boost/test/utils/callback.hpp>
-#include <boost/test/utils/class_properties.hpp>
+#include "boost/test/detail/global_typedef.hpp"
+#include "boost/test/detail/fwd_decl.hpp"
+#include "boost/test/utils/callback.hpp"
+#include "boost/test/utils/class_properties.hpp"
 
 // Boost
-#include <boost/scoped_ptr.hpp>
-#include <boost/scoped_array.hpp>
-#include <boost/type.hpp>
-#include <boost/cstdlib.hpp>
+#include "boost/scoped_ptr.hpp"
+#include "boost/scoped_array.hpp"
+#include "boost/type.hpp"
+#include "boost/cstdlib.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -258,6 +258,6 @@ public:
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif

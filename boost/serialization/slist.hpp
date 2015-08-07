@@ -17,7 +17,7 @@
 //  See http://www.boost.org for updates, documentation, and revision history.
 
 #include <cstddef> // size_t
-#include <boost/config.hpp> // msvc 6.0 needs this for warning suppression
+#include "boost/config.hpp" // msvc 6.0 needs this for warning suppression
 #if defined(BOOST_NO_STDC_NAMESPACE)
 namespace std{ 
     using ::size_t; 
@@ -27,10 +27,10 @@ namespace std{
 #ifdef BOOST_HAS_SLIST
 #include BOOST_SLIST_HEADER
 
-#include <boost/serialization/collections_save_imp.hpp>
-#include <boost/serialization/collections_load_imp.hpp>
-#include <boost/serialization/split_free.hpp>
-#include <boost/serialization/nvp.hpp>
+#include "boost/serialization/collections_save_imp.hpp"
+#include "boost/serialization/collections_load_imp.hpp"
+#include "boost/serialization/split_free.hpp"
+#include "boost/serialization/nvp.hpp"
 
 namespace boost { 
 namespace serialization {
@@ -95,7 +95,7 @@ inline void serialize(
 } // serialization
 } // namespace boost
 
-#include <boost/serialization/collection_traits.hpp>
+#include "boost/serialization/collection_traits.hpp"
 
 BOOST_SERIALIZATION_COLLECTION_TRAITS(BOOST_STD_EXTENSION_NAMESPACE::slist)
 

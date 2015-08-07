@@ -20,7 +20,7 @@
 /// \date   2005-2007 \n Last updated September 24, 2006
 
 #include <stdio.h>
-#include <boost/static_assert.hpp>
+#include "boost/static_assert.hpp"
 #include <vector>
 #include "../../gil_all.hpp"
 #include "io_error.hpp"

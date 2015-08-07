@@ -19,9 +19,9 @@
 #define BOOST_NUMERIC_ODEINT_ALGEBRA_ARRAY_ALGEBRA_HPP_INCLUDED
 
 #include <algorithm>
-#include <boost/array.hpp>
+#include "boost/array.hpp"
 
-#include <boost/numeric/odeint/algebra/norm_result_type.hpp>
+#include "boost/numeric/odeint/algebra/norm_result_type.hpp"
 
 namespace boost {
 namespace numeric {

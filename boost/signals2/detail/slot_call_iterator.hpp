@@ -12,16 +12,16 @@
 #ifndef BOOST_SIGNALS2_SLOT_CALL_ITERATOR_HPP
 #define BOOST_SIGNALS2_SLOT_CALL_ITERATOR_HPP
 
-#include <boost/assert.hpp>
-#include <boost/aligned_storage.hpp>
-#include <boost/iterator/iterator_facade.hpp>
-#include <boost/optional.hpp>
-#include <boost/scoped_ptr.hpp>
-#include <boost/signals2/connection.hpp>
-#include <boost/signals2/slot_base.hpp>
-#include <boost/signals2/detail/auto_buffer.hpp>
-#include <boost/signals2/detail/unique_lock.hpp>
-#include <boost/weak_ptr.hpp>
+#include "boost/assert.hpp"
+#include "boost/aligned_storage.hpp"
+#include "boost/iterator/iterator_facade.hpp"
+#include "boost/optional.hpp"
+#include "boost/scoped_ptr.hpp"
+#include "boost/signals2/connection.hpp"
+#include "boost/signals2/slot_base.hpp"
+#include "boost/signals2/detail/auto_buffer.hpp"
+#include "boost/signals2/detail/unique_lock.hpp"
+#include "boost/weak_ptr.hpp"
 
 namespace boost {
   namespace signals2 {

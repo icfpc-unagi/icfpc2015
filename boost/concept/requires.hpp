@@ -4,9 +4,9 @@
 #ifndef BOOST_CONCEPT_REQUIRES_DWA2006430_HPP
 # define BOOST_CONCEPT_REQUIRES_DWA2006430_HPP
 
-# include <boost/config.hpp>
-# include <boost/concept/assert.hpp>
-# include <boost/preprocessor/seq/for_each.hpp>
+# include "boost/config.hpp"
+# include "boost/concept/assert.hpp"
+# include "boost/preprocessor/seq/for_each.hpp"
 
 namespace boost { 
 

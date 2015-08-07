@@ -25,10 +25,10 @@
 
 #include "gil_config.hpp"
 #include "channel.hpp"
-#include <boost/mpl/less.hpp>
-#include <boost/mpl/integral_c.hpp>
-#include <boost/mpl/greater.hpp>
-#include <boost/type_traits.hpp>
+#include "boost/mpl/less.hpp"
+#include "boost/mpl/integral_c.hpp"
+#include "boost/mpl/greater.hpp"
+#include "boost/type_traits.hpp"
 
 namespace boost { namespace gil {
 

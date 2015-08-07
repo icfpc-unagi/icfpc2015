@@ -8,20 +8,20 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_SIGN_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_SIGN_HPP_
 
-#include <boost/local_function/aux_/preprocessor/traits/decl_sign_/validate.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_sign_/any_bind_type.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_/nil.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_/set_error.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_/validate.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_/append.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/const_bind.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/bind.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/return.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/default.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/thisunderscore.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/facilities/is_empty.hpp>
-#include <boost/preprocessor/list/fold_left.hpp>
+#include "boost/local_function/aux_/preprocessor/traits/decl_sign_/validate.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_sign_/any_bind_type.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_/nil.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_/set_error.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_/validate.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_/append.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/const_bind.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/bind.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/return.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/default.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/thisunderscore.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/facilities/is_empty.hpp"
+#include "boost/preprocessor/list/fold_left.hpp"
 
 // PRIVATE //
 

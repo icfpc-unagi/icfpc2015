@@ -11,11 +11,11 @@
 #define BOOST_SIGNALS_SLOT_CALL_ITERATOR
 
 #include <memory>
-#include <boost/iterator/iterator_facade.hpp>
-#include <boost/smart_ptr.hpp>
-#include <boost/signals/detail/config.hpp>
-#include <boost/signals/connection.hpp>
-#include <boost/optional.hpp>
+#include "boost/iterator/iterator_facade.hpp"
+#include "boost/smart_ptr.hpp"
+#include "boost/signals/detail/config.hpp"
+#include "boost/signals/connection.hpp"
+#include "boost/optional.hpp"
 
 #ifdef BOOST_HAS_ABI_HEADERS
 #  include BOOST_ABI_PREFIX

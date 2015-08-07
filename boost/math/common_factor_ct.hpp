@@ -10,9 +10,9 @@
 #ifndef BOOST_MATH_COMMON_FACTOR_CT_HPP
 #define BOOST_MATH_COMMON_FACTOR_CT_HPP
 
-#include <boost/math_fwd.hpp>  // self include
-#include <boost/config.hpp>  // for BOOST_STATIC_CONSTANT, etc.
-#include <boost/mpl/integral_c.hpp>
+#include "boost/math_fwd.hpp"  // self include
+#include "boost/config.hpp"  // for BOOST_STATIC_CONSTANT, etc.
+#include "boost/mpl/integral_c.hpp"
 
 namespace boost
 {

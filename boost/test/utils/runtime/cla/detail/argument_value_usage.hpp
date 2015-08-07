@@ -17,14 +17,14 @@
 #define BOOST_RT_CLA_ARGUMENT_VALUE_USAGE_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
-#include <boost/test/utils/runtime/cla/argv_traverser.hpp>
+#include "boost/test/utils/runtime/config.hpp"
+#include "boost/test/utils/runtime/cla/argv_traverser.hpp"
 
 // Boost.Test
-#include <boost/test/utils/basic_cstring/io.hpp>
-#include <boost/test/utils/basic_cstring/compare.hpp>
+#include "boost/test/utils/basic_cstring/io.hpp"
+#include "boost/test/utils/basic_cstring/compare.hpp"
 
-#include <boost/lexical_cast.hpp>
+#include "boost/lexical_cast.hpp"
 
 // STL
 // !! can we eliminate these includes?

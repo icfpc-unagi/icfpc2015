@@ -19,13 +19,13 @@
 # pragma once
 #endif
 
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 
 #ifdef BOOST_USE_WINDOWS_H
 #  include <windows.h>
 #endif
 
-#include <boost/predef/platform.h>
+#include "boost/predef/platform.h"
 
 namespace boost
 {

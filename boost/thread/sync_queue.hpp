@@ -11,19 +11,19 @@
 //
 //////////////////////////////////////////////////////////////////////////////
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/condition_variable.hpp>
-#include <boost/thread/mutex.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/concurrent_queues/queue_op_status.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/condition_variable.hpp"
+#include "boost/thread/mutex.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/concurrent_queues/queue_op_status.hpp"
 
-#include <boost/throw_exception.hpp>
-#include <boost/smart_ptr/shared_ptr.hpp>
-#include <boost/smart_ptr/make_shared.hpp>
+#include "boost/throw_exception.hpp"
+#include "boost/smart_ptr/shared_ptr.hpp"
+#include "boost/smart_ptr/make_shared.hpp"
 
-#include <boost/thread/csbl/deque.hpp>
+#include "boost/thread/csbl/deque.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -658,6 +658,6 @@ namespace boost
 
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

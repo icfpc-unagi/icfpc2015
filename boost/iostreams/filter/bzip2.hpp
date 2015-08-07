@@ -18,24 +18,24 @@
 #include <cassert>                            
 #include <memory>            // allocator.
 #include <new>               // bad_alloc.
-#include <boost/config.hpp>  // MSVC, STATIC_CONSTANT, DEDUCED_TYPENAME, DINKUM.
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/constants.hpp>   // buffer size.
-#include <boost/iostreams/detail/config/auto_link.hpp>
-#include <boost/iostreams/detail/config/bzip2.hpp>
-#include <boost/iostreams/detail/config/dyn_link.hpp>
-#include <boost/iostreams/detail/config/wide_streams.hpp>
-#include <boost/iostreams/detail/ios.hpp>  // failure, streamsize.
-#include <boost/iostreams/filter/symmetric.hpp>               
-#include <boost/iostreams/pipeline.hpp>       
-#include <boost/type_traits/is_same.hpp>     
+#include "boost/config.hpp"  // MSVC, STATIC_CONSTANT, DEDUCED_TYPENAME, DINKUM.
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/constants.hpp"   // buffer size.
+#include "boost/iostreams/detail/config/auto_link.hpp"
+#include "boost/iostreams/detail/config/bzip2.hpp"
+#include "boost/iostreams/detail/config/dyn_link.hpp"
+#include "boost/iostreams/detail/config/wide_streams.hpp"
+#include "boost/iostreams/detail/ios.hpp"  // failure, streamsize.
+#include "boost/iostreams/filter/symmetric.hpp"               
+#include "boost/iostreams/pipeline.hpp"       
+#include "boost/type_traits/is_same.hpp"     
 
 // Must come last.
 #ifdef BOOST_MSVC
 # pragma warning(push)
 # pragma warning(disable:4251 4231 4660)
 #endif
-#include <boost/config/abi_prefix.hpp>           
+#include "boost/config/abi_prefix.hpp"           
 
 // Temporary fix.
 #undef small
@@ -406,7 +406,7 @@ basic_bzip2_decompressor<Alloc>::basic_bzip2_decompressor
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/config/abi_suffix.hpp> // Pops abi_suffix.hpp pragmas.
+#include "boost/config/abi_suffix.hpp" // Pops abi_suffix.hpp pragmas.
 #ifdef BOOST_MSVC
 # pragma warning(pop)
 #endif

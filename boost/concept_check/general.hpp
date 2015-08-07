@@ -5,8 +5,8 @@
 # define BOOST_CONCEPT_CHECK_MSVC_DWA2006429_HPP
 
 # ifdef BOOST_OLD_CONCEPT_SUPPORT
-#  include <boost/concept_check/has_constraints.hpp>
-#  include <boost/mpl/if.hpp>
+#  include "boost/concept_check/has_constraints.hpp"
+#  include "boost/mpl/if.hpp"
 # endif
 
 

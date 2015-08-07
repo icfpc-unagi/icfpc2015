@@ -20,9 +20,9 @@
 
 
 #ifndef __CUDACC__
-#include <boost/units/quantity.hpp>
-#include <boost/units/get_dimension.hpp>
-#include <boost/units/get_system.hpp>
+#include "boost/units/quantity.hpp"
+#include "boost/units/get_dimension.hpp"
+#include "boost/units/get_system.hpp"
 #endif
 
 

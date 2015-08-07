@@ -13,8 +13,8 @@
 #ifndef BOOST_RANDOM_DETAIL_OPERATORS_HPP
 #define BOOST_RANDOM_DETAIL_OPERATORS_HPP
 
-#include <boost/random/detail/config.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/random/detail/config.hpp"
+#include "boost/detail/workaround.hpp"
 
 #if BOOST_WORKAROUND(BOOST_MSVC, <= 1310)   \
     || BOOST_WORKAROUND(__SUNPRO_CC, BOOST_TESTED_AT(0x5100))

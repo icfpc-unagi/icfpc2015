@@ -11,7 +11,7 @@
 #ifndef BOOST_TYPE_ERASURE_IS_EMPTY_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_IS_EMPTY_HPP_INCLUDED
 
-#include <boost/type_erasure/detail/access.hpp>
+#include "boost/type_erasure/detail/access.hpp"
 
 namespace boost {
 namespace type_erasure {

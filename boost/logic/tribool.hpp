@@ -10,9 +10,9 @@
 #ifndef BOOST_LOGIC_TRIBOOL_HPP
 #define BOOST_LOGIC_TRIBOOL_HPP
 
-#include <boost/logic/tribool_fwd.hpp>
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/logic/tribool_fwd.hpp"
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
 
 #if defined(_MSC_VER)
 #  pragma once

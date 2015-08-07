@@ -9,9 +9,9 @@ Copyright (c) 1999-2006: Cortex Software GmbH, Kantstrasse 57, Berlin
 #ifndef BOOST_ICL_SPLIT_INTERVAL_SET_HPP_JOFA_990223
 #define BOOST_ICL_SPLIT_INTERVAL_SET_HPP_JOFA_990223
 
-#include <boost/icl/type_traits/is_interval_splitter.hpp>
-#include <boost/icl/interval_base_set.hpp>
-#include <boost/icl/interval_set.hpp>
+#include "boost/icl/type_traits/is_interval_splitter.hpp"
+#include "boost/icl/interval_base_set.hpp"
+#include "boost/icl/interval_set.hpp"
 
 namespace boost{namespace icl
 {

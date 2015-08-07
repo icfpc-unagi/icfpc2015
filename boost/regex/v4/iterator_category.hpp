@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         regex_match.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Iterator traits for selecting an iterator type as
   *                an integral constant expression.
   */
@@ -22,8 +22,8 @@
 #define BOOST_REGEX_ITERATOR_CATEGORY_HPP
 
 #include <iterator>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type_traits/is_pointer.hpp>
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/type_traits/is_pointer.hpp"
 
 namespace boost{
 namespace detail{

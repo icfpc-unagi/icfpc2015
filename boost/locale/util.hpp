@@ -9,10 +9,10 @@
 #define BOOST_LOCALE_UTIL_HPP
 #include <locale>
 #include <typeinfo>
-#include <boost/cstdint.hpp>
-#include <boost/locale/utf.hpp>
-#include <boost/locale/generator.hpp>
-#include <boost/assert.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/locale/utf.hpp"
+#include "boost/locale/generator.hpp"
+#include "boost/assert.hpp"
 
 #include <vector>
 namespace boost {

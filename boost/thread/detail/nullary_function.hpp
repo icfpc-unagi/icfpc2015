@@ -10,11 +10,11 @@
 #ifndef BOOST_THREAD_DETAIL_NULLARY_FUNCTION_HPP
 #define BOOST_THREAD_DETAIL_NULLARY_FUNCTION_HPP
 
-#include <boost/config.hpp>
-#include <boost/thread/detail/memory.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/csbl/memory/shared_ptr.hpp>
-#include <boost/type_traits/decay.hpp>
+#include "boost/config.hpp"
+#include "boost/thread/detail/memory.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/csbl/memory/shared_ptr.hpp"
+#include "boost/type_traits/decay.hpp"
 
 namespace boost
 {

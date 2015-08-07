@@ -6,8 +6,8 @@
 #ifndef BOOST_THREAD_LOCKABLE_CONCEPTS_HPP
 #define BOOST_THREAD_LOCKABLE_CONCEPTS_HPP
 
-#include <boost/chrono/chrono.hpp>
-#include <boost/concept_check.hpp>
+#include "boost/chrono/chrono.hpp"
+#include "boost/concept_check.hpp"
 
 namespace boost
 {

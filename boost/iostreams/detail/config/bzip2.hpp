@@ -5,7 +5,7 @@
 
 // See http://www.boost.org/libs/iostreams for documentation.
 
-// Adapted from <boost/config/auto_link.hpp> and from
+// Adapted from "boost/config/auto_link.hpp" and from
 // http://www.boost.org/more/separate_compilation.html, by John Maddock.
 
 #ifndef BOOST_IOSTREAMS_DETAIL_CONFIG_BZIP2_HPP_INCLUDED
@@ -41,7 +41,7 @@
 #  endif
 
 // And include the header that does the work.
-#  include <boost/config/auto_link.hpp>
+#  include "boost/config/auto_link.hpp"
 # endif
 #endif
 

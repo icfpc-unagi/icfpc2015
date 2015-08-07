@@ -11,13 +11,13 @@
 #ifndef BOOST_MOVE_UNIQUE_PTR_HPP_INCLUDED
 #define BOOST_MOVE_UNIQUE_PTR_HPP_INCLUDED
 
-#include <boost/move/detail/config_begin.hpp>
-#include <boost/move/detail/workaround.hpp>
-#include <boost/move/detail/unique_ptr_meta_utils.hpp>
-#include <boost/move/default_delete.hpp>
-#include <boost/move/utility_core.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/assert.hpp>
+#include "boost/move/detail/config_begin.hpp"
+#include "boost/move/detail/workaround.hpp"
+#include "boost/move/detail/unique_ptr_meta_utils.hpp"
+#include "boost/move/default_delete.hpp"
+#include "boost/move/utility_core.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/assert.hpp"
 
 #include <cstddef>   //For std::nullptr_t and std::size_t
 
@@ -850,6 +850,6 @@ inline bool operator>=(BOOST_MOVE_DOC0PTR(bmupd::nullptr_type), const unique_ptr
 }  //namespace movelib {
 }  //namespace boost{
 
-#include <boost/move/detail/config_end.hpp>
+#include "boost/move/detail/config_end.hpp"
 
 #endif   //#ifndef BOOST_MOVE_UNIQUE_PTR_HPP_INCLUDED

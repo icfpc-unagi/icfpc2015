@@ -8,17 +8,17 @@
 #ifndef BOOST_ACCUMULATORS_STATISTICS_MOMENT_HPP_EAN_15_11_2005
 #define BOOST_ACCUMULATORS_STATISTICS_MOMENT_HPP_EAN_15_11_2005
 
-#include <boost/config/no_tr1/cmath.hpp>
-#include <boost/mpl/int.hpp>
-#include <boost/mpl/assert.hpp>
-#include <boost/mpl/placeholders.hpp>
-#include <boost/accumulators/framework/accumulator_base.hpp>
-#include <boost/accumulators/framework/extractor.hpp>
-#include <boost/accumulators/numeric/functional.hpp>
-#include <boost/accumulators/framework/parameters/sample.hpp>
-#include <boost/accumulators/framework/depends_on.hpp>
-#include <boost/accumulators/statistics_fwd.hpp>
-#include <boost/accumulators/statistics/count.hpp>
+#include "boost/config/no_tr1/cmath.hpp"
+#include "boost/mpl/int.hpp"
+#include "boost/mpl/assert.hpp"
+#include "boost/mpl/placeholders.hpp"
+#include "boost/accumulators/framework/accumulator_base.hpp"
+#include "boost/accumulators/framework/extractor.hpp"
+#include "boost/accumulators/numeric/functional.hpp"
+#include "boost/accumulators/framework/parameters/sample.hpp"
+#include "boost/accumulators/framework/depends_on.hpp"
+#include "boost/accumulators/statistics_fwd.hpp"
+#include "boost/accumulators/statistics/count.hpp"
 
 namespace boost { namespace numeric
 {

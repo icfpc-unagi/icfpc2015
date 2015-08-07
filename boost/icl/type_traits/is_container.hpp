@@ -8,15 +8,15 @@ Copyright (c) 2010-2010: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_IS_CONTAINER_HPP_JOFA_100828
 #define BOOST_ICL_TYPE_TRAITS_IS_CONTAINER_HPP_JOFA_100828
 
-#include <boost/mpl/has_xxx.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/and.hpp> 
-#include <boost/mpl/not.hpp> 
-#include <boost/type_traits/is_same.hpp>
-#include <boost/icl/type_traits/element_type_of.hpp> 
-#include <boost/icl/type_traits/segment_type_of.hpp> 
-#include <boost/icl/type_traits/size_type_of.hpp> 
-#include <boost/icl/type_traits/is_map.hpp> 
+#include "boost/mpl/has_xxx.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/and.hpp" 
+#include "boost/mpl/not.hpp" 
+#include "boost/type_traits/is_same.hpp"
+#include "boost/icl/type_traits/element_type_of.hpp" 
+#include "boost/icl/type_traits/segment_type_of.hpp" 
+#include "boost/icl/type_traits/size_type_of.hpp" 
+#include "boost/icl/type_traits/is_map.hpp" 
 
 namespace boost{ namespace icl
 {

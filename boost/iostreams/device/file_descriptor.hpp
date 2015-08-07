@@ -16,19 +16,19 @@
 #endif
 
 #include <string>
-#include <boost/cstdint.hpp>               // intmax_t.
-#include <boost/iostreams/categories.hpp>  // tags.
-#include <boost/iostreams/detail/config/auto_link.hpp>
-#include <boost/iostreams/detail/config/dyn_link.hpp>
-#include <boost/iostreams/detail/config/windows_posix.hpp>
-#include <boost/iostreams/detail/file_handle.hpp>
-#include <boost/iostreams/detail/ios.hpp>  // openmode, seekdir, int types.
-#include <boost/iostreams/detail/path.hpp>
-#include <boost/iostreams/positioning.hpp>
-#include <boost/shared_ptr.hpp>
+#include "boost/cstdint.hpp"               // intmax_t.
+#include "boost/iostreams/categories.hpp"  // tags.
+#include "boost/iostreams/detail/config/auto_link.hpp"
+#include "boost/iostreams/detail/config/dyn_link.hpp"
+#include "boost/iostreams/detail/config/windows_posix.hpp"
+#include "boost/iostreams/detail/file_handle.hpp"
+#include "boost/iostreams/detail/ios.hpp"  // openmode, seekdir, int types.
+#include "boost/iostreams/detail/path.hpp"
+#include "boost/iostreams/positioning.hpp"
+#include "boost/shared_ptr.hpp"
 
 // Must come last.
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost { namespace iostreams {
 
@@ -313,6 +313,6 @@ private:
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/config/abi_suffix.hpp> // pops abi_suffix.hpp pragmas
+#include "boost/config/abi_suffix.hpp" // pops abi_suffix.hpp pragmas
 
 #endif // #ifndef BOOST_IOSTREAMS_FILE_DESCRIPTOR_HPP_INCLUDED

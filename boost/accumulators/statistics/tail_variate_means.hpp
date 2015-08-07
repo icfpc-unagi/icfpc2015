@@ -14,19 +14,19 @@
 #include <functional>
 #include <sstream>
 #include <stdexcept>
-#include <boost/throw_exception.hpp>
-#include <boost/parameter/keyword.hpp>
-#include <boost/mpl/placeholders.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/accumulators/framework/accumulator_base.hpp>
-#include <boost/accumulators/framework/extractor.hpp>
-#include <boost/accumulators/numeric/functional.hpp>
-#include <boost/accumulators/framework/parameters/sample.hpp>
-#include <boost/accumulators/statistics_fwd.hpp>
-#include <boost/accumulators/statistics/tail.hpp>
-#include <boost/accumulators/statistics/tail_variate.hpp>
-#include <boost/accumulators/statistics/tail_mean.hpp>
-#include <boost/accumulators/statistics/parameters/quantile_probability.hpp>
+#include "boost/throw_exception.hpp"
+#include "boost/parameter/keyword.hpp"
+#include "boost/mpl/placeholders.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/accumulators/framework/accumulator_base.hpp"
+#include "boost/accumulators/framework/extractor.hpp"
+#include "boost/accumulators/numeric/functional.hpp"
+#include "boost/accumulators/framework/parameters/sample.hpp"
+#include "boost/accumulators/statistics_fwd.hpp"
+#include "boost/accumulators/statistics/tail.hpp"
+#include "boost/accumulators/statistics/tail_variate.hpp"
+#include "boost/accumulators/statistics/tail_mean.hpp"
+#include "boost/accumulators/statistics/parameters/quantile_probability.hpp"
 
 #ifdef _MSC_VER
 # pragma warning(push)

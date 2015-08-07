@@ -18,7 +18,7 @@
 // STL
 #include <iosfwd>
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -58,6 +58,6 @@ operator<<( std::ostream& ostr, custom_manip<Uniq> const& ) { return custom_prin
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_CUSTOM_MANIP_HPP_071894GER

@@ -13,9 +13,9 @@
 
 #include <string>
 
-#include <boost/version.hpp>
-#include <boost/filesystem/path.hpp>
-#include <boost/filesystem/operations.hpp>
+#include "boost/version.hpp"
+#include "boost/filesystem/path.hpp"
+#include "boost/filesystem/operations.hpp"
 
 namespace boost { namespace wave { namespace util
 {

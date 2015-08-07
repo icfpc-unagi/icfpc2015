@@ -13,11 +13,11 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
-#include <boost/flyweight/holder_tag.hpp>
-#include <boost/flyweight/intermodule_holder_fwd.hpp>
-#include <boost/interprocess/detail/intermodule_singleton.hpp>
-#include <boost/mpl/aux_/lambda_support.hpp>
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
+#include "boost/flyweight/holder_tag.hpp"
+#include "boost/flyweight/intermodule_holder_fwd.hpp"
+#include "boost/interprocess/detail/intermodule_singleton.hpp"
+#include "boost/mpl/aux_/lambda_support.hpp"
 
 /* intermodule_holder_class guarantees a unique instance across all dynamic
  * modules of a program.

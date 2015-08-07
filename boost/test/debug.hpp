@@ -16,14 +16,14 @@
 #define BOOST_TEST_DEBUG_API_HPP_112006GER
 
 // Boost.Test
-#include <boost/test/detail/config.hpp>
-#include <boost/test/utils/callback.hpp>
-#include <boost/test/utils/basic_cstring/basic_cstring.hpp>
+#include "boost/test/detail/config.hpp"
+#include "boost/test/utils/callback.hpp"
+#include "boost/test/utils/basic_cstring/basic_cstring.hpp"
 
 // STL
 #include <string>
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -96,6 +96,6 @@ void BOOST_TEST_DECL break_memory_alloc( long mem_alloc_order_num );
 
 } // namespace boost
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif

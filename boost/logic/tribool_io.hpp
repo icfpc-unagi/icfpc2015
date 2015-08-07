@@ -7,9 +7,9 @@
 #ifndef BOOST_LOGIC_TRIBOOL_IO_HPP
 #define BOOST_LOGIC_TRIBOOL_IO_HPP
 
-#include <boost/logic/tribool.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/noncopyable.hpp>
+#include "boost/logic/tribool.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/noncopyable.hpp"
 
 #if defined(_MSC_VER)
 #  pragma once

@@ -17,14 +17,14 @@
 #define BOOST_ATOMIC_DETAIL_OPS_MSVC_ARM_HPP_INCLUDED_
 
 #include <intrin.h>
-#include <boost/memory_order.hpp>
-#include <boost/type_traits/make_signed.hpp>
-#include <boost/atomic/detail/config.hpp>
-#include <boost/atomic/detail/interlocked.hpp>
-#include <boost/atomic/detail/storage_type.hpp>
-#include <boost/atomic/detail/operations_fwd.hpp>
-#include <boost/atomic/capabilities.hpp>
-#include <boost/atomic/detail/ops_msvc_common.hpp>
+#include "boost/memory_order.hpp"
+#include "boost/type_traits/make_signed.hpp"
+#include "boost/atomic/detail/config.hpp"
+#include "boost/atomic/detail/interlocked.hpp"
+#include "boost/atomic/detail/storage_type.hpp"
+#include "boost/atomic/detail/operations_fwd.hpp"
+#include "boost/atomic/capabilities.hpp"
+#include "boost/atomic/detail/ops_msvc_common.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

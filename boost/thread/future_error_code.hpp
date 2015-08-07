@@ -8,10 +8,10 @@
 #ifndef BOOST_THREAD_FUTURE_ERROR_CODE_HPP
 #define BOOST_THREAD_FUTURE_ERROR_CODE_HPP
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/core/scoped_enum.hpp>
-#include <boost/system/error_code.hpp>
-#include <boost/type_traits/integral_constant.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/core/scoped_enum.hpp"
+#include "boost/system/error_code.hpp"
+#include "boost/type_traits/integral_constant.hpp"
 
 namespace boost
 {

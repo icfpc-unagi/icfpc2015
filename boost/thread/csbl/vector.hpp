@@ -9,13 +9,13 @@
 #ifndef BOOST_CSBL_VECTOR_HPP
 #define BOOST_CSBL_VECTOR_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if defined BOOST_THREAD_USES_BOOST_VECTOR || defined BOOST_NO_CXX11_HDR_VECTOR || defined BOOST_NO_CXX11_RVALUE_REFERENCES
 #ifndef BOOST_THREAD_USES_BOOST_VECTOR
 #define BOOST_THREAD_USES_BOOST_VECTOR
 #endif
-#include <boost/container/vector.hpp>
+#include "boost/container/vector.hpp"
 #else
 #include <vector>
 #endif

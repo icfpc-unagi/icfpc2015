@@ -21,17 +21,17 @@
 #include <iosfwd>
 #include <algorithm>     // std::max
 #include <iterator>
-#include <boost/config/no_tr1/cmath.hpp>         // std::pow
-#include <boost/config.hpp>
-#include <boost/limits.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/integer/integer_mask.hpp>
-#include <boost/random/linear_congruential.hpp>
-#include <boost/random/uniform_01.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/seed.hpp>
-#include <boost/random/detail/operators.hpp>
-#include <boost/random/detail/generator_seed_seq.hpp>
+#include "boost/config/no_tr1/cmath.hpp"         // std::pow
+#include "boost/config.hpp"
+#include "boost/limits.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/integer/integer_mask.hpp"
+#include "boost/random/linear_congruential.hpp"
+#include "boost/random/uniform_01.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/seed.hpp"
+#include "boost/random/detail/operators.hpp"
+#include "boost/random/detail/generator_seed_seq.hpp"
 
 namespace boost {
 namespace random {

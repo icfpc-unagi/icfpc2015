@@ -8,9 +8,9 @@
 #ifndef BOOST_UUID_NAME_GENERATOR_HPP
 #define BOOST_UUID_NAME_GENERATOR_HPP
 
-#include <boost/uuid/uuid.hpp>
-#include <boost/uuid/sha1.hpp>
-#include <boost/assert.hpp>
+#include "boost/uuid/uuid.hpp"
+#include "boost/uuid/sha1.hpp"
+#include "boost/assert.hpp"
 #include <string>
 #include <cstring> // for strlen, wcslen
 

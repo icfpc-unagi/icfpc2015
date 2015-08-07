@@ -11,7 +11,7 @@
 #ifndef BOOST_MSM_BACK_DEFAULT_COMPILE_POLICY_HPP
 #define BOOST_MSM_BACK_DEFAULT_COMPILE_POLICY_HPP
 
-#include <boost/mpl/bool.hpp>
+#include "boost/mpl/bool.hpp"
 
 namespace boost { namespace msm { namespace back
 {

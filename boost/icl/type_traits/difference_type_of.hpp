@@ -8,15 +8,15 @@ Copyright (c) 2008-2009: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_DIFFERENCE_TYPE_OF_HPP_JOFA_080911
 #define BOOST_ICL_TYPE_TRAITS_DIFFERENCE_TYPE_OF_HPP_JOFA_080911
 
-#include <boost/config.hpp> // For macro BOOST_STATIC_CONSTANT
-#include <boost/type_traits/is_pointer.hpp>
-#include <boost/mpl/has_xxx.hpp>
-#include <boost/mpl/or.hpp>
-#include <boost/mpl/and.hpp>
-#include <boost/mpl/not.hpp>
-#include <boost/icl/type_traits/no_type.hpp>
-#include <boost/icl/type_traits/is_numeric.hpp>
-#include <boost/icl/type_traits/rep_type_of.hpp>
+#include "boost/config.hpp" // For macro BOOST_STATIC_CONSTANT
+#include "boost/type_traits/is_pointer.hpp"
+#include "boost/mpl/has_xxx.hpp"
+#include "boost/mpl/or.hpp"
+#include "boost/mpl/and.hpp"
+#include "boost/mpl/not.hpp"
+#include "boost/icl/type_traits/no_type.hpp"
+#include "boost/icl/type_traits/is_numeric.hpp"
+#include "boost/icl/type_traits/rep_type_of.hpp"
 
 namespace boost{ namespace icl
 {

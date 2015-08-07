@@ -11,9 +11,9 @@
 #if !defined(FUNCTOR_INPUT_HPP_ED3A4C21_8F8A_453F_B438_08214FAC106A_INCLUDED)
 #define FUNCTOR_INPUT_HPP_ED3A4C21_8F8A_453F_B438_08214FAC106A_INCLUDED
 
-#include <boost/assert.hpp>
-#include <boost/spirit/include/classic_multi_pass.hpp>
-#include <boost/wave/wave_config.hpp>
+#include "boost/assert.hpp"
+#include "boost/spirit/include/classic_multi_pass.hpp"
+#include "boost/wave/wave_config.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

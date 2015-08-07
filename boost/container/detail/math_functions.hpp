@@ -20,11 +20,11 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
 #include <climits>
-#include <boost/static_assert.hpp>
+#include "boost/static_assert.hpp"
 
 namespace boost {
 namespace container {
@@ -114,6 +114,6 @@ inline std::size_t floor_log2 (std::size_t x)
 } // namespace container
 } // namespace boost
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif

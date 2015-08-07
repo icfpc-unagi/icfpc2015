@@ -11,9 +11,9 @@
 #ifndef BOOST_MSM_FRONT_EUML_ALGORITHM_H
 #define BOOST_MSM_FRONT_EUML_ALGORITHM_H
 
-#include <boost/msm/front/euml/iteration.hpp>
-#include <boost/msm/front/euml/querying.hpp>
-#include <boost/msm/front/euml/transformation.hpp>
+#include "boost/msm/front/euml/iteration.hpp"
+#include "boost/msm/front/euml/querying.hpp"
+#include "boost/msm/front/euml/transformation.hpp"
 
 
 #endif //BOOST_MSM_FRONT_EUML_ALGORITHM_H

@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org/libs/regex for most recent version.
   *   FILE         cregex.cpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares POSIX API functions
   *                + boost::RegEx high level wrapper.
   */
@@ -21,10 +21,10 @@
 #define BOOST_RE_CREGEX_HPP
 
 #ifndef BOOST_REGEX_CONFIG_HPP
-#include <boost/regex/config.hpp>
+#include "boost/regex/config.hpp"
 #endif
 
-#include <boost/regex/v4/cregex.hpp>
+#include "boost/regex/v4/cregex.hpp"
 
 #endif /* include guard */
 

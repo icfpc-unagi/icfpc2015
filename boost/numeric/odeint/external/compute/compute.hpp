@@ -18,10 +18,10 @@
 #ifndef BOOST_NUMERIC_ODEINT_EXTERNAL_COMPUTE_COMPUTE_HPP_DEFINED
 #define BOOST_NUMERIC_ODEINT_EXTERNAL_COMPUTE_COMPUTE_HPP_DEFINED
 
-#include <boost/numeric/odeint/external/compute/compute_algebra.hpp>
-#include <boost/numeric/odeint/external/compute/compute_operations.hpp>
-#include <boost/numeric/odeint/external/compute/compute_algebra_dispatcher.hpp>
-#include <boost/numeric/odeint/external/compute/compute_operations_dispatcher.hpp>
-#include <boost/numeric/odeint/external/compute/compute_resize.hpp>
+#include "boost/numeric/odeint/external/compute/compute_algebra.hpp"
+#include "boost/numeric/odeint/external/compute/compute_operations.hpp"
+#include "boost/numeric/odeint/external/compute/compute_algebra_dispatcher.hpp"
+#include "boost/numeric/odeint/external/compute/compute_operations_dispatcher.hpp"
+#include "boost/numeric/odeint/external/compute/compute_resize.hpp"
 
 #endif // BOOST_NUMERIC_ODEINT_EXTERNAL_COMPUTE_COMPUTE_HPP_DEFINED

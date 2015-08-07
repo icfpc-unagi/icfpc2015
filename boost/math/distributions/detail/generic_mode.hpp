@@ -8,9 +8,9 @@
 #ifndef BOOST_MATH_DISTRIBUTIONS_DETAIL_MODE_HPP
 #define BOOST_MATH_DISTRIBUTIONS_DETAIL_MODE_HPP
 
-#include <boost/math/tools/minima.hpp> // function minimization for mode
-#include <boost/math/policies/error_handling.hpp>
-#include <boost/math/distributions/fwd.hpp>
+#include "boost/math/tools/minima.hpp" // function minimization for mode
+#include "boost/math/policies/error_handling.hpp"
+#include "boost/math/distributions/fwd.hpp"
 
 namespace boost{ namespace math{ namespace detail{
 

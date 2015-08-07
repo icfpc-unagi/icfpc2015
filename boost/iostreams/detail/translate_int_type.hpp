@@ -12,7 +12,7 @@
 # pragma once
 #endif              
 
-#include <boost/type_traits/is_same.hpp>
+#include "boost/type_traits/is_same.hpp"
 
 namespace boost { namespace iostreams { namespace detail {
 

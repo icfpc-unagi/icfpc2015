@@ -12,7 +12,7 @@
 
 //! \file rapidxml.hpp This file contains rapidxml parser and DOM implementation
 
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 #include <cstdlib>      // For std::size_t
 #include <new>          // For placement new
 

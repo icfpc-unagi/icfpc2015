@@ -17,33 +17,33 @@
 // Thanks to:
 //   Dmitry Goncharov for porting this to the Sun compiler
 
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/predef/other/endian.h>
-#include <boost/mpl/limits/string.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/char.hpp>
-#include <boost/mpl/copy.hpp>
-#include <boost/mpl/size.hpp>
-#include <boost/mpl/empty.hpp>
-#include <boost/mpl/assert.hpp>
-#include <boost/mpl/size_t.hpp>
-#include <boost/mpl/begin_end.hpp>
-#include <boost/mpl/joint_view.hpp>
-#include <boost/mpl/insert_range.hpp>
-#include <boost/mpl/back_inserter.hpp>
-#include <boost/mpl/front_inserter.hpp>
-#include <boost/mpl/iterator_range.hpp>
-#include <boost/preprocessor/arithmetic/dec.hpp>
-#include <boost/preprocessor/arithmetic/add.hpp>
-#include <boost/preprocessor/arithmetic/div.hpp>
-#include <boost/preprocessor/punctuation/comma_if.hpp>
-#include <boost/preprocessor/repetition/repeat.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/repeat_from_to.hpp>
-#include <boost/preprocessor/repetition/enum_shifted_params.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_params.hpp>
-#include <boost/preprocessor/repetition/enum_params_with_a_default.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/predef/other/endian.h"
+#include "boost/mpl/limits/string.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/char.hpp"
+#include "boost/mpl/copy.hpp"
+#include "boost/mpl/size.hpp"
+#include "boost/mpl/empty.hpp"
+#include "boost/mpl/assert.hpp"
+#include "boost/mpl/size_t.hpp"
+#include "boost/mpl/begin_end.hpp"
+#include "boost/mpl/joint_view.hpp"
+#include "boost/mpl/insert_range.hpp"
+#include "boost/mpl/back_inserter.hpp"
+#include "boost/mpl/front_inserter.hpp"
+#include "boost/mpl/iterator_range.hpp"
+#include "boost/preprocessor/arithmetic/dec.hpp"
+#include "boost/preprocessor/arithmetic/add.hpp"
+#include "boost/preprocessor/arithmetic/div.hpp"
+#include "boost/preprocessor/punctuation/comma_if.hpp"
+#include "boost/preprocessor/repetition/repeat.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/repeat_from_to.hpp"
+#include "boost/preprocessor/repetition/enum_shifted_params.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_params.hpp"
+#include "boost/preprocessor/repetition/enum_params_with_a_default.hpp"
 
 #include <iterator> // for bidirectional_iterator_tag
 #include <climits>

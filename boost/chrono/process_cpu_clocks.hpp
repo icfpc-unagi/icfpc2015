@@ -11,21 +11,21 @@
 #ifndef BOOST_CHRONO_PROCESS_CPU_CLOCKS_HPP
 #define BOOST_CHRONO_PROCESS_CPU_CLOCKS_HPP
 
-#include <boost/chrono/config.hpp>
+#include "boost/chrono/config.hpp"
 
 
 #if defined(BOOST_CHRONO_HAS_PROCESS_CLOCKS)
 
-#include <boost/chrono/duration.hpp>
-#include <boost/chrono/time_point.hpp>
-#include <boost/operators.hpp>
-#include <boost/chrono/detail/system.hpp>
+#include "boost/chrono/duration.hpp"
+#include "boost/chrono/time_point.hpp"
+#include "boost/operators.hpp"
+#include "boost/chrono/detail/system.hpp"
 #include <iostream>
-#include <boost/type_traits/common_type.hpp>
-#include <boost/chrono/clock_string.hpp>
+#include "boost/type_traits/common_type.hpp"
+#include "boost/chrono/clock_string.hpp"
 
 #ifndef BOOST_CHRONO_HEADER_ONLY
-#include <boost/config/abi_prefix.hpp> // must be the last #include
+#include "boost/config/abi_prefix.hpp" // must be the last #include
 #endif
 
 namespace boost { namespace chrono {
@@ -513,9 +513,9 @@ namespace std {
 }
 
 #ifndef BOOST_CHRONO_HEADER_ONLY
-#include <boost/config/abi_suffix.hpp> // pops abi_prefix.hpp pragmas
+#include "boost/config/abi_suffix.hpp" // pops abi_prefix.hpp pragmas
 #else
-#include <boost/chrono/detail/inlined/process_cpu_clocks.hpp>
+#include "boost/chrono/detail/inlined/process_cpu_clocks.hpp"
 #endif
 #endif
 

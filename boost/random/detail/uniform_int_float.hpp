@@ -15,13 +15,13 @@
 #ifndef BOOST_RANDOM_DETAIL_UNIFORM_INT_FLOAT_HPP
 #define BOOST_RANDOM_DETAIL_UNIFORM_INT_FLOAT_HPP
 
-#include <boost/limits.hpp>
-#include <boost/config.hpp>
-#include <boost/integer.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/generator_bits.hpp>
+#include "boost/limits.hpp"
+#include "boost/config.hpp"
+#include "boost/integer.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/generator_bits.hpp"
 
-#include <boost/random/detail/disable_warnings.hpp>
+#include "boost/random/detail/disable_warnings.hpp"
 
 namespace boost {
 namespace random {
@@ -71,6 +71,6 @@ private:
 } // namespace random
 } // namespace boost
 
-#include <boost/random/detail/enable_warnings.hpp>
+#include "boost/random/detail/enable_warnings.hpp"
 
 #endif // BOOST_RANDOM_DETAIL_UNIFORM_INT_FLOAT_HPP

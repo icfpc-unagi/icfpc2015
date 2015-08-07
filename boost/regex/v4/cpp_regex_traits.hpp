@@ -12,33 +12,33 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         cpp_regex_traits.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares regular expression traits class cpp_regex_traits.
   */
 
 #ifndef BOOST_CPP_REGEX_TRAITS_HPP_INCLUDED
 #define BOOST_CPP_REGEX_TRAITS_HPP_INCLUDED
 
-#include <boost/config.hpp>
-#include <boost/integer.hpp>
-#include <boost/type_traits/make_unsigned.hpp>
+#include "boost/config.hpp"
+#include "boost/integer.hpp"
+#include "boost/type_traits/make_unsigned.hpp"
 
 #ifndef BOOST_NO_STD_LOCALE
 
 #ifndef BOOST_RE_PAT_EXCEPT_HPP
-#include <boost/regex/pattern_except.hpp>
+#include "boost/regex/pattern_except.hpp"
 #endif
 #ifndef BOOST_REGEX_TRAITS_DEFAULTS_HPP_INCLUDED
-#include <boost/regex/v4/regex_traits_defaults.hpp>
+#include "boost/regex/v4/regex_traits_defaults.hpp"
 #endif
 #ifdef BOOST_HAS_THREADS
-#include <boost/regex/pending/static_mutex.hpp>
+#include "boost/regex/pending/static_mutex.hpp"
 #endif
 #ifndef BOOST_REGEX_PRIMARY_TRANSFORM
-#include <boost/regex/v4/primary_transform.hpp>
+#include "boost/regex/v4/primary_transform.hpp"
 #endif
 #ifndef BOOST_REGEX_OBJECT_CACHE_HPP
-#include <boost/regex/pending/object_cache.hpp>
+#include "boost/regex/pending/object_cache.hpp"
 #endif
 
 #include <istream>

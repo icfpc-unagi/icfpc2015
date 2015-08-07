@@ -11,8 +11,8 @@
 #ifndef BOOST_SIGNALS2_OPTIONAL_LAST_VALUE_HPP
 #define BOOST_SIGNALS2_OPTIONAL_LAST_VALUE_HPP
 
-#include <boost/optional.hpp>
-#include <boost/signals2/expired_slot.hpp>
+#include "boost/optional.hpp"
+#include "boost/signals2/expired_slot.hpp"
 
 namespace boost {
   namespace signals2 {

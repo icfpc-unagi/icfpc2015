@@ -17,8 +17,8 @@
 #ifndef BOOST_NUMERIC_ODEINT_ALGEBRA_DETAIL_EXTRACT_VALUE_TYPE_HPP_INCLUDED
 #define BOOST_NUMERIC_ODEINT_ALGEBRA_DETAIL_EXTRACT_VALUE_TYPE_HPP_INCLUDED
 
-#include <boost/utility.hpp>
-#include <boost/mpl/has_xxx.hpp>
+#include "boost/utility.hpp"
+#include "boost/mpl/has_xxx.hpp"
 
 BOOST_MPL_HAS_XXX_TRAIT_DEF(value_type)
 

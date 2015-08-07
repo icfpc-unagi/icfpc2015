@@ -16,9 +16,9 @@
 #define BOOST_RT_CONFIGURATION_HPP_062604GER
 
 // Boost.Runtime.Parameter
-#include <boost/test/utils/runtime/config.hpp>
-#include <boost/test/utils/runtime/parameter.hpp>
-#include <boost/test/utils/runtime/argument.hpp>
+#include "boost/test/utils/runtime/config.hpp"
+#include "boost/test/utils/runtime/parameter.hpp"
+#include "boost/test/utils/runtime/argument.hpp"
 
 namespace boost {
 

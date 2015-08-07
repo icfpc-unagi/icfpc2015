@@ -19,12 +19,12 @@
 #  pragma once
 #endif
 
-#include <boost/container/detail/config_begin.hpp>
-#include <boost/container/detail/workaround.hpp>
+#include "boost/container/detail/config_begin.hpp"
+#include "boost/container/detail/workaround.hpp"
 
 #if defined(BOOST_NO_CXX11_VARIADIC_TEMPLATES)
-#include <boost/container/detail/preprocessor.hpp>
-#include <boost/container/detail/type_traits.hpp>
+#include "boost/container/detail/preprocessor.hpp"
+#include "boost/container/detail/type_traits.hpp"
 #endif
 
 namespace boost { namespace container {
@@ -82,6 +82,6 @@ struct uses_allocator;
 
 }} // namespace boost { namespace container {
 
-#include <boost/container/detail/config_end.hpp>
+#include "boost/container/detail/config_end.hpp"
 
 #endif //  BOOST_CONTAINER_ALLOCATOR_SCOPED_ALLOCATOR_FWD_HPP

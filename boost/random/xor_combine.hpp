@@ -18,13 +18,13 @@
 #include <iosfwd>
 #include <cassert>
 #include <algorithm> // for std::min and std::max
-#include <boost/config.hpp>
-#include <boost/limits.hpp>
-#include <boost/cstdint.hpp>     // uint32_t
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/seed.hpp>
-#include <boost/random/detail/seed_impl.hpp>
-#include <boost/random/detail/operators.hpp>
+#include "boost/config.hpp"
+#include "boost/limits.hpp"
+#include "boost/cstdint.hpp"     // uint32_t
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/seed.hpp"
+#include "boost/random/detail/seed_impl.hpp"
+#include "boost/random/detail/operators.hpp"
 
 namespace boost {
 namespace random {

@@ -11,10 +11,10 @@
 #ifndef BOOST_STRING_REGEX_FIND_FORMAT_HPP
 #define BOOST_STRING_REGEX_FIND_FORMAT_HPP
 
-#include <boost/algorithm/string/config.hpp>
-#include <boost/regex.hpp>
-#include <boost/algorithm/string/detail/finder_regex.hpp>
-#include <boost/algorithm/string/detail/formatter_regex.hpp>
+#include "boost/algorithm/string/config.hpp"
+#include "boost/regex.hpp"
+#include "boost/algorithm/string/detail/finder_regex.hpp"
+#include "boost/algorithm/string/detail/formatter_regex.hpp"
 
 /*! \file
     Defines the \c regex_finder and \c regex_formatter generators. These two functors

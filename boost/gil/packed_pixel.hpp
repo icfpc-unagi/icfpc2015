@@ -23,9 +23,9 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 #include <functional>
-#include <boost/utility/enable_if.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/front.hpp>
+#include "boost/utility/enable_if.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/front.hpp"
 #include "gil_config.hpp"
 #include "pixel.hpp"
 

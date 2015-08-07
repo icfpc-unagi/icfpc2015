@@ -17,11 +17,11 @@
 //  See http://www.boost.org for updates, documentation, and revision history.
 
 // can't use this - much as I'd like to as borland doesn't support it
-// #include <boost/scoped_ptr.hpp>
+// #include "boost/scoped_ptr.hpp"
 
 #include <set>
 
-#include <boost/archive/detail/abi_prefix.hpp> // must be the last header
+#include "boost/archive/detail/abi_prefix.hpp" // must be the last header
 
 namespace boost {
 namespace serialization {
@@ -40,7 +40,7 @@ class BOOST_ARCHIVE_DECL(BOOST_PP_EMPTY()) basic_archive_impl
 } // namespace serialization
 } // namespace boost
 
-#include <boost/archive/detail/abi_suffix.hpp> // pops abi_suffix.hpp pragmas
+#include "boost/archive/detail/abi_suffix.hpp" // pops abi_suffix.hpp pragmas
 
 #endif //BOOST_ARCHIVE_DETAIL_BASIC_ARCHIVE_IMPL_HPP
 

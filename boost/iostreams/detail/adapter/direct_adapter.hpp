@@ -12,29 +12,29 @@
 # pragma once
 #endif              
 
-#include <boost/config.hpp>       // SFINAE, MSVC, put ptrdiff_t in std.
+#include "boost/config.hpp"       // SFINAE, MSVC, put ptrdiff_t in std.
 #include <algorithm>              // copy, min.
 #include <cstddef>                // ptrdiff_t.
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/detail/config/limits.hpp>        // forwarding.
-#include <boost/iostreams/detail/config/wide_streams.hpp>  // locale.
-#include <boost/iostreams/detail/double_object.hpp>
-#include <boost/iostreams/detail/error.hpp>
-#include <boost/iostreams/detail/ios.hpp>  // openmode, seekdir, int types.
-#include <boost/iostreams/traits.hpp>      // mode_of, is_direct.
-#include <boost/iostreams/operations.hpp>
-#include <boost/mpl/bool.hpp> 
-#include <boost/mpl/or.hpp> 
-#include <boost/preprocessor/iteration/local.hpp>
-#include <boost/preprocessor/repetition/enum_binary_params.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/type_traits/is_convertible.hpp>
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/detail/config/limits.hpp"        // forwarding.
+#include "boost/iostreams/detail/config/wide_streams.hpp"  // locale.
+#include "boost/iostreams/detail/double_object.hpp"
+#include "boost/iostreams/detail/error.hpp"
+#include "boost/iostreams/detail/ios.hpp"  // openmode, seekdir, int types.
+#include "boost/iostreams/traits.hpp"      // mode_of, is_direct.
+#include "boost/iostreams/operations.hpp"
+#include "boost/mpl/bool.hpp" 
+#include "boost/mpl/or.hpp" 
+#include "boost/preprocessor/iteration/local.hpp"
+#include "boost/preprocessor/repetition/enum_binary_params.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/type_traits/is_convertible.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp> // VC7.1
+#include "boost/iostreams/detail/config/disable_warnings.hpp" // VC7.1
 
 namespace boost { namespace iostreams { namespace detail {
                     
@@ -276,6 +276,6 @@ void direct_adapter<Direct>::close(BOOST_IOS::openmode which)
 
 } } } // End namespaces detail, iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>
+#include "boost/iostreams/detail/config/enable_warnings.hpp"
 
 #endif // #ifndef BOOST_IOSTREAMS_DETAIL_DIRECT_ADAPTER_HPP_INCLUDED

@@ -10,8 +10,8 @@
 #ifndef BOOST_PROPERTY_MAP_COMPOSE_PROPERTY_MAP_HPP
 #define BOOST_PROPERTY_MAP_COMPOSE_PROPERTY_MAP_HPP
 
-#include <boost/property_map/property_map.hpp>
-#include <boost/type_traits.hpp>
+#include "boost/property_map/property_map.hpp"
+#include "boost/type_traits.hpp"
 
 namespace boost {
 

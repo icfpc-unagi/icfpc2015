@@ -5,6 +5,6 @@
 # define BOOST_DETAIL_FUNCTION2_DWA200655_HPP
 
 # define args (2)
-# include <boost/accumulators/numeric/detail/function_n.hpp>
+# include "boost/accumulators/numeric/detail/function_n.hpp"
 
 #endif // BOOST_DETAIL_FUNCTION2_DWA200655_HPP

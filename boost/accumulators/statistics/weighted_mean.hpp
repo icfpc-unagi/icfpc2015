@@ -8,19 +8,19 @@
 #ifndef BOOST_ACCUMULATORS_STATISTICS_WEIGHTED_MEAN_HPP_EAN_03_11_2005
 #define BOOST_ACCUMULATORS_STATISTICS_WEIGHTED_MEAN_HPP_EAN_03_11_2005
 
-#include <boost/mpl/assert.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/placeholders.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/accumulators/framework/accumulator_base.hpp>
-#include <boost/accumulators/framework/extractor.hpp>
-#include <boost/accumulators/numeric/functional.hpp>
-#include <boost/accumulators/framework/parameters/weights.hpp>
-#include <boost/accumulators/framework/depends_on.hpp>
-#include <boost/accumulators/statistics_fwd.hpp>
-#include <boost/accumulators/statistics/sum.hpp>
-#include <boost/accumulators/statistics/mean.hpp>
-#include <boost/accumulators/statistics/weighted_sum.hpp>
+#include "boost/mpl/assert.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/placeholders.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/accumulators/framework/accumulator_base.hpp"
+#include "boost/accumulators/framework/extractor.hpp"
+#include "boost/accumulators/numeric/functional.hpp"
+#include "boost/accumulators/framework/parameters/weights.hpp"
+#include "boost/accumulators/framework/depends_on.hpp"
+#include "boost/accumulators/statistics_fwd.hpp"
+#include "boost/accumulators/statistics/sum.hpp"
+#include "boost/accumulators/statistics/mean.hpp"
+#include "boost/accumulators/statistics/weighted_sum.hpp"
 
 namespace boost { namespace accumulators
 {

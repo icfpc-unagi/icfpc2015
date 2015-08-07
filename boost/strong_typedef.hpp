@@ -22,8 +22,8 @@
 // a new type.  BOOST_STRONG_TYPEDEF(T, D) creates a new type named D
 // that operates as a type T.
 
-#include <boost/config.hpp>
-#include <boost/operators.hpp>
+#include "boost/config.hpp"
+#include "boost/operators.hpp"
 
 #if !defined(__BORLANDC__) || __BORLANDC__ >= 0x590
     #define BOOST_STRONG_TYPEDEF(T, D)                              \

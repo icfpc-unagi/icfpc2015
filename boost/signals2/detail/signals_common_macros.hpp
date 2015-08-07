@@ -11,7 +11,7 @@
 #ifndef BOOST_SIGNALS2_SIGNALS_COMMON_MACROS_HPP
 #define BOOST_SIGNALS2_SIGNALS_COMMON_MACROS_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #ifdef BOOST_NO_CXX11_VARIADIC_TEMPLATES
 

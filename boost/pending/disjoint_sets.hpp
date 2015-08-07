@@ -12,8 +12,8 @@
 #define BOOST_DISJOINT_SETS_HPP
 
 #include <vector>
-#include <boost/graph/properties.hpp>
-#include <boost/pending/detail/disjoint_sets.hpp>
+#include "boost/graph/properties.hpp"
+#include "boost/pending/detail/disjoint_sets.hpp"
 
 namespace boost {
 

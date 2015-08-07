@@ -14,7 +14,7 @@
 #ifndef BOOST_RANDOM_DETAIL_PTR_HELPER_HPP
 #define BOOST_RANDOM_DETAIL_PTR_HELPER_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 
 namespace boost {

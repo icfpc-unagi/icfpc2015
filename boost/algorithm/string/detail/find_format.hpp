@@ -11,12 +11,12 @@
 #ifndef BOOST_STRING_FIND_FORMAT_DETAIL_HPP
 #define BOOST_STRING_FIND_FORMAT_DETAIL_HPP
 
-#include <boost/algorithm/string/config.hpp>
-#include <boost/range/iterator_range_core.hpp>
-#include <boost/range/const_iterator.hpp>
-#include <boost/range/iterator.hpp>
-#include <boost/algorithm/string/detail/find_format_store.hpp>
-#include <boost/algorithm/string/detail/replace_storage.hpp>
+#include "boost/algorithm/string/config.hpp"
+#include "boost/range/iterator_range_core.hpp"
+#include "boost/range/const_iterator.hpp"
+#include "boost/range/iterator.hpp"
+#include "boost/algorithm/string/detail/find_format_store.hpp"
+#include "boost/algorithm/string/detail/replace_storage.hpp"
 
 namespace boost {
     namespace algorithm {

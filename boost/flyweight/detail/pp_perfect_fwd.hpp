@@ -13,7 +13,7 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if !defined(BOOST_NO_CXX11_RVALUE_REFERENCES)
 

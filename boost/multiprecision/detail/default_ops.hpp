@@ -6,14 +6,14 @@
 #ifndef BOOST_MATH_BIG_NUM_DEF_OPS
 #define BOOST_MATH_BIG_NUM_DEF_OPS
 
-#include <boost/math/policies/error_handling.hpp>
-#include <boost/multiprecision/detail/number_base.hpp>
-#include <boost/math/special_functions/fpclassify.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/mpl/front.hpp>
-#include <boost/mpl/fold.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/type_traits/make_unsigned.hpp>
+#include "boost/math/policies/error_handling.hpp"
+#include "boost/multiprecision/detail/number_base.hpp"
+#include "boost/math/special_functions/fpclassify.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/mpl/front.hpp"
+#include "boost/mpl/fold.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/type_traits/make_unsigned.hpp"
 
 #ifndef INSTRUMENT_BACKEND
 #ifndef BOOST_MP_INSTRUMENT
@@ -1232,9 +1232,9 @@ inline void eval_scalbn(B& result, const B& val, A e)
 // These functions are implemented in separate files, but expanded inline here,
 // DO NOT CHANGE THE ORDER OF THESE INCLUDES:
 //
-#include <boost/multiprecision/detail/functions/constants.hpp>
-#include <boost/multiprecision/detail/functions/pow.hpp>
-#include <boost/multiprecision/detail/functions/trig.hpp>
+#include "boost/multiprecision/detail/functions/constants.hpp"
+#include "boost/multiprecision/detail/functions/pow.hpp"
+#include "boost/multiprecision/detail/functions/trig.hpp"
 
 }
 
@@ -2124,8 +2124,8 @@ inline multiprecision::number<Backend, ExpressionTemplates> sinhc_pi(const multi
 //
 // This has to come last of all:
 //
-#include <boost/multiprecision/detail/no_et_ops.hpp>
-#include <boost/multiprecision/detail/et_ops.hpp>
+#include "boost/multiprecision/detail/no_et_ops.hpp"
+#include "boost/multiprecision/detail/et_ops.hpp"
 
 #endif
 

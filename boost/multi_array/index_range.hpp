@@ -13,9 +13,9 @@
 #ifndef BOOST_INDEX_RANGE_RG071801_HPP
 #define BOOST_INDEX_RANGE_RG071801_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #include <utility>
-#include <boost/limits.hpp>
+#include "boost/limits.hpp"
 
 // For representing intervals, also with stride.
 // A degenerate range is a range with one element.

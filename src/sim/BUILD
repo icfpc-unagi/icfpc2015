@@ -2,7 +2,10 @@ cc_library(
     name = "sim",
     srcs = ["sim.cc"],
     hdrs = ["sim.h"],
-    deps = ["//base"],
+    deps = [
+        "//base",
+        "//boost",
+    ],
     linkstatic = 1,
 )
 

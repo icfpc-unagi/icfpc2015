@@ -15,7 +15,7 @@
 
 # ifdef __CYGWIN__
 
-#include <boost/system/error_code.hpp>
+#include "boost/system/error_code.hpp"
 
 namespace boost
 {

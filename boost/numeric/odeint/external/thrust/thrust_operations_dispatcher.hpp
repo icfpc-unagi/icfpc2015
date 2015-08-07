@@ -21,8 +21,8 @@
 #include <thrust/host_vector.h>
 #include <thrust/device_vector.h>
 
-#include <boost/numeric/odeint/external/thrust/thrust_operations.hpp>
-#include <boost/numeric/odeint/algebra/operations_dispatcher.hpp>
+#include "boost/numeric/odeint/external/thrust/thrust_operations.hpp"
+#include "boost/numeric/odeint/algebra/operations_dispatcher.hpp"
 
 
 namespace boost {

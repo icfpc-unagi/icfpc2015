@@ -16,17 +16,17 @@
 #if !defined(BOOST_TTI_HAS_TEMPLATE_HPP)
 #define BOOST_TTI_HAS_TEMPLATE_HPP
 
-#include <boost/config.hpp>
-#include <boost/tti/gen/has_template_gen.hpp>
-#include <boost/preprocessor/config/config.hpp>
-#include <boost/preprocessor/control/iif.hpp>
+#include "boost/config.hpp"
+#include "boost/tti/gen/has_template_gen.hpp"
+#include "boost/preprocessor/config/config.hpp"
+#include "boost/preprocessor/control/iif.hpp"
 
 #if BOOST_PP_VARIADICS
 
-#include <boost/preprocessor/comparison/equal.hpp>
-#include <boost/preprocessor/variadic/elem.hpp>
-#include <boost/preprocessor/variadic/size.hpp>
-#include <boost/tti/detail/dvm_template_params.hpp>
+#include "boost/preprocessor/comparison/equal.hpp"
+#include "boost/preprocessor/variadic/elem.hpp"
+#include "boost/preprocessor/variadic/size.hpp"
+#include "boost/tti/detail/dvm_template_params.hpp"
 
 /// Expands to a metafunction which tests whether an inner class template with a particular name exists.
 /**
@@ -211,9 +211,9 @@
 
 #else // !BOOST_PP_VARIADICS
 
-#include <boost/preprocessor/detail/is_binary.hpp>
-#include <boost/tti/detail/dtemplate.hpp>
-#include <boost/tti/detail/dtemplate_params.hpp>
+#include "boost/preprocessor/detail/is_binary.hpp"
+#include "boost/tti/detail/dtemplate.hpp"
+#include "boost/tti/detail/dtemplate_params.hpp"
 
 /// Expands to a metafunction which tests whether an inner class template with a particular name exists.
 /**

@@ -11,7 +11,7 @@
 #ifndef BOOST_MSM_BACK_HISTORY_POLICIES_H
 #define BOOST_MSM_BACK_HISTORY_POLICIES_H
 
-#include <boost/mpl/contains.hpp>
+#include "boost/mpl/contains.hpp"
 
 namespace boost { namespace msm { namespace back
 {

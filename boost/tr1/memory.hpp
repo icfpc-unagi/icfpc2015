@@ -5,8 +5,8 @@
 
 #ifndef BOOST_TR1_MEMORY_HPP_INCLUDED
 #  define BOOST_TR1_MEMORY_HPP_INCLUDED
-#  include <boost/tr1/detail/config.hpp>
-#  include <boost/detail/workaround.hpp>
+#  include "boost/tr1/detail/config.hpp"
+#  include "boost/detail/workaround.hpp"
 #  include <memory>
 
 #ifndef BOOST_HAS_TR1_SHARED_PTR
@@ -53,16 +53,16 @@ namespace std{ namespace tr1{
    using ::boost::enable_shared_from_this;
 
 } }
-#include <boost/shared_ptr.hpp>
-#include <boost/weak_ptr.hpp>
-#include <boost/enable_shared_from_this.hpp>
+#include "boost/shared_ptr.hpp"
+#include "boost/weak_ptr.hpp"
+#include "boost/enable_shared_from_this.hpp"
 
 #else
 
 #  if defined(BOOST_HAS_INCLUDE_NEXT) && !defined(BOOST_TR1_DISABLE_INCLUDE_NEXT)
 #     include_next BOOST_TR1_HEADER(memory)
 #  else
-#     include <boost/tr1/detail/config_all.hpp>
+#     include "boost/tr1/detail/config_all.hpp"
 #     include BOOST_TR1_STD_HEADER(BOOST_TR1_PATH(memory))
 #  endif
 

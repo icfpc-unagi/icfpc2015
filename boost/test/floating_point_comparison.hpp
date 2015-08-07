@@ -16,16 +16,16 @@
 #define BOOST_TEST_FLOATING_POINT_COMPARISON_HPP_071894GER
 
 // Boost.Test
-#include <boost/test/detail/global_typedef.hpp>
-#include <boost/test/utils/class_properties.hpp>
-#include <boost/test/predicate_result.hpp>
+#include "boost/test/detail/global_typedef.hpp"
+#include "boost/test/utils/class_properties.hpp"
+#include "boost/test/predicate_result.hpp"
 
 // Boost
-#include <boost/limits.hpp>  // for std::numeric_limits
-#include <boost/numeric/conversion/conversion_traits.hpp> // for numeric::conversion_traits
-#include <boost/static_assert.hpp>
+#include "boost/limits.hpp"  // for std::numeric_limits
+#include "boost/numeric/conversion/conversion_traits.hpp" // for numeric::conversion_traits
+#include "boost/static_assert.hpp"
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -281,6 +281,6 @@ check_is_small_t const& check_is_small = unit_test::ut_detail::static_constant<c
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_FLOATING_POINT_COMAPARISON_HPP_071894GER

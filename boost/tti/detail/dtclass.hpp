@@ -7,9 +7,9 @@
 #if !defined(BOOST_TTI_DETAIL_TCLASS_HPP)
 #define BOOST_TTI_DETAIL_TCLASS_HPP
 
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/type_traits/is_class.hpp>
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/type_traits/is_class.hpp"
 
 namespace boost
   {

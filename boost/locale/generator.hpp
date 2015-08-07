@@ -7,8 +7,8 @@
 //
 #ifndef BOOST_LOCALE_GENERATOR_HPP
 #define BOOST_LOCALE_GENERATOR_HPP
-#include <boost/locale/config.hpp>
-#include <boost/cstdint.hpp>
+#include "boost/locale/config.hpp"
+#include "boost/cstdint.hpp"
 #ifdef BOOST_MSVC
 #  pragma warning(push)
 #  pragma warning(disable : 4275 4251 4231 4660)

@@ -12,16 +12,16 @@
 #define BOOST_STRING_FIND_FORMAT_HPP
 
 #include <deque>
-#include <boost/detail/iterator.hpp>
-#include <boost/range/iterator_range_core.hpp>
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
-#include <boost/range/const_iterator.hpp>
-#include <boost/range/as_literal.hpp>
+#include "boost/detail/iterator.hpp"
+#include "boost/range/iterator_range_core.hpp"
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
+#include "boost/range/const_iterator.hpp"
+#include "boost/range/as_literal.hpp"
 
-#include <boost/algorithm/string/concept.hpp>
-#include <boost/algorithm/string/detail/find_format.hpp>
-#include <boost/algorithm/string/detail/find_format_all.hpp>
+#include "boost/algorithm/string/concept.hpp"
+#include "boost/algorithm/string/detail/find_format.hpp"
+#include "boost/algorithm/string/detail/find_format_all.hpp"
 
 /*! \file
     Defines generic replace algorithms. Each algorithm replaces

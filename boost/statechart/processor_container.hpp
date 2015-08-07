@@ -8,20 +8,20 @@
 
 
 
-#include <boost/statechart/event_base.hpp>
-#include <boost/statechart/event_processor.hpp>
+#include "boost/statechart/event_base.hpp"
+#include "boost/statechart/event_processor.hpp"
 
-#include <boost/assert.hpp>
-#include <boost/ref.hpp>
-#include <boost/noncopyable.hpp>
-#include <boost/intrusive_ptr.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/weak_ptr.hpp>
-#include <boost/bind.hpp>
-#include <boost/config.hpp> // BOOST_INTEL
+#include "boost/assert.hpp"
+#include "boost/ref.hpp"
+#include "boost/noncopyable.hpp"
+#include "boost/intrusive_ptr.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/weak_ptr.hpp"
+#include "boost/bind.hpp"
+#include "boost/config.hpp" // BOOST_INTEL
 
-#include <boost/detail/workaround.hpp>
-#include <boost/detail/allocator_utilities.hpp>
+#include "boost/detail/workaround.hpp"
+#include "boost/detail/allocator_utilities.hpp"
 
 #include <set>
 #include <memory>   // std::allocator, std::auto_ptr

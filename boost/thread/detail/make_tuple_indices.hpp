@@ -21,8 +21,8 @@
 #ifndef BOOST_THREAD_DETAIL_MAKE_TUPLE_INDICES_HPP
 #define BOOST_THREAD_DETAIL_MAKE_TUPLE_INDICES_HPP
 
-#include <boost/config.hpp>
-#include <boost/static_assert.hpp>
+#include "boost/config.hpp"
+#include "boost/static_assert.hpp"
 
 namespace boost
 {

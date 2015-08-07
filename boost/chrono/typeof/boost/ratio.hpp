@@ -14,8 +14,8 @@
 #ifndef BOOST_CHRONO_TYPEOF_RATIO_HPP
 #define BOOST_CHRONO_TYPEOF_RATIO_HPP
 
-#include <boost/ratio/ratio.hpp>
-#include <boost/typeof/typeof.hpp>
+#include "boost/ratio/ratio.hpp"
+#include "boost/typeof/typeof.hpp"
 
 #include BOOST_TYPEOF_INCREMENT_REGISTRATION_GROUP()
 

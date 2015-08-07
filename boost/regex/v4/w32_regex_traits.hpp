@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         w32_regex_traits.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Declares regular expression traits class w32_regex_traits.
   */
 
@@ -20,19 +20,19 @@
 #define BOOST_W32_REGEX_TRAITS_HPP_INCLUDED
 
 #ifndef BOOST_RE_PAT_EXCEPT_HPP
-#include <boost/regex/pattern_except.hpp>
+#include "boost/regex/pattern_except.hpp"
 #endif
 #ifndef BOOST_REGEX_TRAITS_DEFAULTS_HPP_INCLUDED
-#include <boost/regex/v4/regex_traits_defaults.hpp>
+#include "boost/regex/v4/regex_traits_defaults.hpp"
 #endif
 #ifdef BOOST_HAS_THREADS
-#include <boost/regex/pending/static_mutex.hpp>
+#include "boost/regex/pending/static_mutex.hpp"
 #endif
 #ifndef BOOST_REGEX_PRIMARY_TRANSFORM
-#include <boost/regex/v4/primary_transform.hpp>
+#include "boost/regex/v4/primary_transform.hpp"
 #endif
 #ifndef BOOST_REGEX_OBJECT_CACHE_HPP
-#include <boost/regex/pending/object_cache.hpp>
+#include "boost/regex/pending/object_cache.hpp"
 #endif
 
 #ifdef BOOST_MSVC

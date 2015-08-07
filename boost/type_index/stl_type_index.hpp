@@ -19,7 +19,7 @@
 /// When typeid() is disabled or BOOST_TYPE_INDEX_FORCE_NO_RTTI_COMPATIBILITY macro
 /// is defined boost::typeindex::ctti is usually used instead of boost::typeindex::stl_type_index.
 
-#include <boost/type_index/type_index_facade.hpp>
+#include "boost/type_index/type_index_facade.hpp"
 
 // MSVC is capable of calling typeid(T) even when RTTI is off
 #if defined(BOOST_NO_RTTI) && !defined(BOOST_MSVC)
@@ -29,23 +29,23 @@
 #include <typeinfo>
 #include <cstring>                                  // std::strcmp, std::strlen, std::strstr
 #include <stdexcept>
-#include <boost/static_assert.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/core/demangle.hpp>
-#include <boost/type_traits/is_const.hpp>
-#include <boost/type_traits/is_reference.hpp>
-#include <boost/type_traits/is_volatile.hpp>
-#include <boost/type_traits/remove_cv.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/or.hpp>
-#include <boost/functional/hash_fwd.hpp>
+#include "boost/static_assert.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/core/demangle.hpp"
+#include "boost/type_traits/is_const.hpp"
+#include "boost/type_traits/is_reference.hpp"
+#include "boost/type_traits/is_volatile.hpp"
+#include "boost/type_traits/remove_cv.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/or.hpp"
+#include "boost/functional/hash_fwd.hpp"
 
 #if (defined(__EDG_VERSION__) && __EDG_VERSION__ < 245) \
         || (defined(__sgi) && defined(_COMPILER_VERSION) && _COMPILER_VERSION <= 744)
-#   include <boost/type_traits/is_signed.hpp>
-#   include <boost/type_traits/make_signed.hpp>
-#   include <boost/mpl/identity.hpp>
+#   include "boost/type_traits/is_signed.hpp"
+#   include "boost/type_traits/make_signed.hpp"
+#   include "boost/mpl/identity.hpp"
 #endif
 
 #ifdef BOOST_HAS_PRAGMA_ONCE

@@ -17,13 +17,13 @@
 #define BOOST_ATOMIC_DETAIL_ATOMIC_TEMPLATE_HPP_INCLUDED_
 
 #include <cstddef>
-#include <boost/cstdint.hpp>
-#include <boost/assert.hpp>
-#include <boost/type_traits/is_signed.hpp>
-#include <boost/type_traits/is_integral.hpp>
-#include <boost/atomic/detail/config.hpp>
-#include <boost/atomic/detail/casts.hpp>
-#include <boost/atomic/detail/operations_fwd.hpp>
+#include "boost/cstdint.hpp"
+#include "boost/assert.hpp"
+#include "boost/type_traits/is_signed.hpp"
+#include "boost/type_traits/is_integral.hpp"
+#include "boost/atomic/detail/config.hpp"
+#include "boost/atomic/detail/casts.hpp"
+#include "boost/atomic/detail/operations_fwd.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

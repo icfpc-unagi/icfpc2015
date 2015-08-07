@@ -7,20 +7,20 @@
 #ifndef BOOST_THREAD_EXTERNALLY_LOCKED_HPP
 #define BOOST_THREAD_EXTERNALLY_LOCKED_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 
-#include <boost/thread/exceptions.hpp>
-#include <boost/thread/lock_concepts.hpp>
-#include <boost/thread/lock_traits.hpp>
-#include <boost/thread/lockable_concepts.hpp>
-#include <boost/thread/strict_lock.hpp>
+#include "boost/thread/exceptions.hpp"
+#include "boost/thread/lock_concepts.hpp"
+#include "boost/thread/lock_traits.hpp"
+#include "boost/thread/lockable_concepts.hpp"
+#include "boost/thread/strict_lock.hpp"
 
-#include <boost/static_assert.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/core/swap.hpp>
+#include "boost/static_assert.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/core/swap.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -346,6 +346,6 @@ namespace boost
 
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif // header

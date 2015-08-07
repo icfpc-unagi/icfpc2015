@@ -32,7 +32,7 @@ time2_demo contained this comment:
 #ifndef BOOST_RATIO_RATIO_FWD_HPP
 #define BOOST_RATIO_RATIO_FWD_HPP
 
-#include <boost/ratio/config.hpp>
+#include "boost/ratio/config.hpp"
 
 namespace boost
 {

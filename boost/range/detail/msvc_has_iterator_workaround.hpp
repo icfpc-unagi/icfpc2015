@@ -16,7 +16,7 @@
 #endif
 
 #ifndef BOOST_RANGE_MUTABLE_ITERATOR_HPP
-# error This file should only be included from <boost/range/mutable_iterator.hpp>
+# error This file should only be included from "boost/range/mutable_iterator.hpp"
 #endif
 
 #if BOOST_WORKAROUND(BOOST_MSVC, <= 1600)

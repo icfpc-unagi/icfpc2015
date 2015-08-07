@@ -11,8 +11,8 @@
 #ifndef BOOST_TYPE_ERASURE_DETAIL_GET_SIGNATURE_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_DETAIL_GET_SIGNATURE_HPP_INCLUDED
 
-#include <boost/typeof/typeof.hpp>
-#include <boost/type_traits/remove_pointer.hpp>
+#include "boost/typeof/typeof.hpp"
+#include "boost/type_traits/remove_pointer.hpp"
 
 namespace boost {
 namespace type_erasure {

@@ -11,9 +11,9 @@
 #ifndef BOOST_TYPE_ERASURE_DETAIL_IS_PLACEHOLDER_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_DETAIL_IS_PLACEHOLDER_HPP_INCLUDED
 
-#include <boost/mpl/bool.hpp>
-#include <boost/type_traits/is_base_and_derived.hpp>
-#include <boost/type_erasure/placeholder.hpp>
+#include "boost/mpl/bool.hpp"
+#include "boost/type_traits/is_base_and_derived.hpp"
+#include "boost/type_erasure/placeholder.hpp"
 
 namespace boost {
 

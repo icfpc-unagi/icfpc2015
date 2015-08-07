@@ -9,7 +9,7 @@
 #ifndef BOOST_ALIGN_DETAIL_REMOVE_TRAITS_HPP
 #define BOOST_ALIGN_DETAIL_REMOVE_TRAITS_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if !defined(BOOST_NO_CXX11_HDR_TYPE_TRAITS)
 #include <type_traits>

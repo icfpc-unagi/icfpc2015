@@ -18,7 +18,7 @@
 
 #include <iterator>
 #include <cstddef>
-#include <boost/scoped_array.hpp>
+#include "boost/scoped_array.hpp"
 
 namespace boost
 {

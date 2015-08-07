@@ -15,8 +15,8 @@
 #include <iostream>
 #endif // defined(BOOST_SPIRIT_DEBUG)
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/grammars/cpp_value_error.hpp> // value_error
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/grammars/cpp_value_error.hpp" // value_error
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

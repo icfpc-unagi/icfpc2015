@@ -8,10 +8,10 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_SET_ERROR_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_SET_ERROR_HPP_
 
-#include <boost/local_function/aux_/preprocessor/traits/decl_returns.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_params.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_const_binds.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_binds.hpp>
+#include "boost/local_function/aux_/preprocessor/traits/decl_returns.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_params.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_const_binds.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_binds.hpp"
 
 // PUBLIC //
 

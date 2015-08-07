@@ -23,10 +23,10 @@
 #include <iterator>         //  For std::iterator_traits
 #include <cassert>
 
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
-#include <boost/mpl/identity.hpp>      // for identity
-#include <boost/utility/enable_if.hpp> // for boost::disable_if
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
+#include "boost/mpl/identity.hpp"      // for identity
+#include "boost/utility/enable_if.hpp" // for boost::disable_if
 
 namespace boost { namespace algorithm {
 

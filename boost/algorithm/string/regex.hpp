@@ -11,19 +11,19 @@
 #ifndef BOOST_STRING_REGEX_HPP
 #define BOOST_STRING_REGEX_HPP
 
-#include <boost/algorithm/string/config.hpp>
-#include <boost/regex.hpp>
+#include "boost/algorithm/string/config.hpp"
+#include "boost/regex.hpp"
 
-#include <boost/range/iterator_range_core.hpp>
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
-#include <boost/range/iterator.hpp>
-#include <boost/range/as_literal.hpp>
+#include "boost/range/iterator_range_core.hpp"
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
+#include "boost/range/iterator.hpp"
+#include "boost/range/as_literal.hpp"
 
-#include <boost/algorithm/string/find_format.hpp>
-#include <boost/algorithm/string/regex_find_format.hpp>
-#include <boost/algorithm/string/formatter.hpp>
-#include <boost/algorithm/string/iter_find.hpp>
+#include "boost/algorithm/string/find_format.hpp"
+#include "boost/algorithm/string/regex_find_format.hpp"
+#include "boost/algorithm/string/formatter.hpp"
+#include "boost/algorithm/string/iter_find.hpp"
 
 /*! \file
     Defines regex variants of the algorithms. 

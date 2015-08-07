@@ -13,14 +13,14 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
-#include <boost/flyweight/factory_tag.hpp>
-#include <boost/flyweight/hashed_factory_fwd.hpp>
-#include <boost/multi_index_container.hpp>
-#include <boost/multi_index/identity.hpp>
-#include <boost/multi_index/hashed_index.hpp>
-#include <boost/mpl/aux_/lambda_support.hpp>
-#include <boost/mpl/if.hpp>
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
+#include "boost/flyweight/factory_tag.hpp"
+#include "boost/flyweight/hashed_factory_fwd.hpp"
+#include "boost/multi_index_container.hpp"
+#include "boost/multi_index/identity.hpp"
+#include "boost/multi_index/hashed_index.hpp"
+#include "boost/mpl/aux_/lambda_support.hpp"
+#include "boost/mpl/if.hpp"
 
 #if !defined(BOOST_NO_CXX11_RVALUE_REFERENCES)
 #include <utility>

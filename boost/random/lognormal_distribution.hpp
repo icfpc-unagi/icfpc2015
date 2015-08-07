@@ -17,14 +17,14 @@
 #ifndef BOOST_RANDOM_LOGNORMAL_DISTRIBUTION_HPP
 #define BOOST_RANDOM_LOGNORMAL_DISTRIBUTION_HPP
 
-#include <boost/config/no_tr1/cmath.hpp>      // std::exp, std::sqrt
+#include "boost/config/no_tr1/cmath.hpp"      // std::exp, std::sqrt
 #include <cassert>
 #include <iosfwd>
 #include <istream>
-#include <boost/limits.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/operators.hpp>
-#include <boost/random/normal_distribution.hpp>
+#include "boost/limits.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/operators.hpp"
+#include "boost/random/normal_distribution.hpp"
 
 namespace boost {
 namespace random {

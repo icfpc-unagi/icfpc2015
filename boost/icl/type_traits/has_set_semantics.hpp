@@ -8,11 +8,11 @@ Copyright (c) 2008-2009: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_HAS_SET_SEMANTICS_HPP_JOFA_100829
 #define BOOST_ICL_TYPE_TRAITS_HAS_SET_SEMANTICS_HPP_JOFA_100829
 
-#include <boost/mpl/or.hpp>
-#include <boost/mpl/and.hpp>
-#include <boost/icl/type_traits/is_set.hpp>
-#include <boost/icl/type_traits/is_map.hpp>
-#include <boost/icl/type_traits/codomain_type_of.hpp>
+#include "boost/mpl/or.hpp"
+#include "boost/mpl/and.hpp"
+#include "boost/icl/type_traits/is_set.hpp"
+#include "boost/icl/type_traits/is_map.hpp"
+#include "boost/icl/type_traits/codomain_type_of.hpp"
 
 namespace boost{ namespace icl
 {

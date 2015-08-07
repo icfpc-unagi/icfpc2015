@@ -11,24 +11,24 @@
 #ifndef BOOST_ERROR_CODE_HPP
 #define BOOST_ERROR_CODE_HPP
 
-#include <boost/system/config.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/assert.hpp>
-#include <boost/noncopyable.hpp>
-#include <boost/utility/enable_if.hpp>
+#include "boost/system/config.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/assert.hpp"
+#include "boost/noncopyable.hpp"
+#include "boost/utility/enable_if.hpp"
 #include <ostream>
 #include <string>
 #include <stdexcept>
 #include <functional>
 
 // TODO: undef these macros if not already defined
-#include <boost/cerrno.hpp>
+#include "boost/cerrno.hpp"
 
 #if !defined(BOOST_POSIX_API) && !defined(BOOST_WINDOWS_API)
 #  error BOOST_POSIX_API or BOOST_WINDOWS_API must be defined
 #endif
 
-#include <boost/config/abi_prefix.hpp> // must be the last #include
+#include "boost/config/abi_prefix.hpp" // must be the last #include
 
 #ifndef BOOST_SYSTEM_NOEXCEPT
 #define BOOST_SYSTEM_NOEXCEPT BOOST_NOEXCEPT
@@ -171,9 +171,9 @@ namespace boost
     //  The system specific portions of the interface are located in headers
     //  with names reflecting the operating system. For example,
     //
-    //       <boost/system/cygwin_error.hpp>
-    //       <boost/system/linux_error.hpp>
-    //       <boost/system/windows_error.hpp>
+    //       "boost/system/cygwin_error.hpp"
+    //       "boost/system/linux_error.hpp"
+    //       "boost/system/windows_error.hpp"
     //
     //  These headers are effectively empty for compiles on operating systems
     //  where they are not applicable.
@@ -509,10 +509,10 @@ namespace boost
   } // namespace system
 } // namespace boost
 
-#include <boost/config/abi_suffix.hpp> // pops abi_prefix.hpp pragmas
+#include "boost/config/abi_suffix.hpp" // pops abi_prefix.hpp pragmas
 
 # ifdef BOOST_ERROR_CODE_HEADER_ONLY
-#   include <boost/system/detail/error_code.ipp>
+#   include "boost/system/detail/error_code.ipp"
 # endif
 
 #endif // BOOST_ERROR_CODE_HPP

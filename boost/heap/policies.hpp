@@ -9,11 +9,11 @@
 #ifndef BOOST_HEAP_POLICIES_HPP
 #define BOOST_HEAP_POLICIES_HPP
 
-#include <boost/parameter.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/int.hpp>
-#include <boost/mpl/void.hpp>
-#include <boost/concept_check.hpp>
+#include "boost/parameter.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/int.hpp"
+#include "boost/mpl/void.hpp"
+#include "boost/concept_check.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

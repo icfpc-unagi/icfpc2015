@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org/libs/regex for documentation.
   *   FILE         regex_fwd.cpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Forward declares boost::basic_regex<> and
   *                associated typedefs.
   */
@@ -21,10 +21,10 @@
 #define BOOST_REGEX_FWD_HPP
 
 #ifndef BOOST_REGEX_CONFIG_HPP
-#include <boost/regex/config.hpp>
+#include "boost/regex/config.hpp"
 #endif
 
-#include <boost/regex/v4/regex_fwd.hpp>
+#include "boost/regex/v4/regex_fwd.hpp"
 
 #endif
 

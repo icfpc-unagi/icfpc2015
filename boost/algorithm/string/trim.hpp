@@ -11,16 +11,16 @@
 #ifndef BOOST_STRING_TRIM_HPP
 #define BOOST_STRING_TRIM_HPP
 
-#include <boost/algorithm/string/config.hpp>
+#include "boost/algorithm/string/config.hpp"
 
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
-#include <boost/range/const_iterator.hpp>
-#include <boost/range/as_literal.hpp>
-#include <boost/range/iterator_range_core.hpp>
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
+#include "boost/range/const_iterator.hpp"
+#include "boost/range/as_literal.hpp"
+#include "boost/range/iterator_range_core.hpp"
 
-#include <boost/algorithm/string/detail/trim.hpp>
-#include <boost/algorithm/string/classification.hpp>
+#include "boost/algorithm/string/detail/trim.hpp"
+#include "boost/algorithm/string/classification.hpp"
 #include <locale>
 
 /*! \file

@@ -12,9 +12,9 @@ Copyright (c) 2007-2009: Joachim Faulhaber
 #include <string>
 #include <sstream>
 
-#include <boost/type_traits/is_integral.hpp>
-#include <boost/type_traits/is_float.hpp>
-#include <boost/mpl/if.hpp>
+#include "boost/type_traits/is_integral.hpp"
+#include "boost/type_traits/is_float.hpp"
+#include "boost/mpl/if.hpp"
 
 namespace boost{ namespace icl
 {

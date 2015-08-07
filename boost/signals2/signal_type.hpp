@@ -20,7 +20,7 @@
 // support for function types is currently broken in Boost.Parameter
 // #define BOOST_SIGNALS2_NAMED_SIGNATURE_PARAMETER
 
-#include <boost/signals2/signal.hpp>
+#include "boost/signals2/signal.hpp"
 
 #if !defined(BOOST_PARAMETER_MAX_ARITY)
 #define BOOST_PARAMETER_MAX_ARITY 7
@@ -29,9 +29,9 @@
 #error This header requires BOOST_PARAMETER_MAX_ARITY to be defined as 7 or greater prior to including Boost.Parameter headers
 #endif // BOOST_PARAMETER_MAX_ARITY < 7
 #endif // !defined(BOOST_PARAMETER_MAX_ARITY)
-#include <boost/parameter.hpp>
+#include "boost/parameter.hpp"
 
-#include <boost/type_traits/is_function.hpp>
+#include "boost/type_traits/is_function.hpp"
 
 namespace boost
 {

@@ -12,10 +12,10 @@
 #include <cassert>
 #include <limits>
 
-#include <boost/assert.hpp>
-#include <boost/heap/detail/tree_iterator.hpp>
-#include <boost/iterator/iterator_adaptor.hpp>
-#include <boost/concept_check.hpp>
+#include "boost/assert.hpp"
+#include "boost/heap/detail/tree_iterator.hpp"
+#include "boost/iterator/iterator_adaptor.hpp"
+#include "boost/concept_check.hpp"
 
 namespace boost  {
 namespace heap   {

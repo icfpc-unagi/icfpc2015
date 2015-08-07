@@ -12,15 +12,15 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         regex_token_iterator.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Provides regex_token_iterator implementation.
   */
 
 #ifndef BOOST_REGEX_V4_REGEX_TOKEN_ITERATOR_HPP
 #define BOOST_REGEX_V4_REGEX_TOKEN_ITERATOR_HPP
 
-#include <boost/shared_ptr.hpp>
-#include <boost/detail/workaround.hpp>
+#include "boost/shared_ptr.hpp"
+#include "boost/detail/workaround.hpp"
 #if (BOOST_WORKAROUND(__BORLANDC__, >= 0x560) && BOOST_WORKAROUND(__BORLANDC__, BOOST_TESTED_AT(0x570)))\
       || BOOST_WORKAROUND(__MWERKS__, BOOST_TESTED_AT(0x3003))
 //
@@ -29,8 +29,8 @@
 // so we have a template member that will accept any type as 
 // argument, and then assert that is really is an array:
 //
-#include <boost/static_assert.hpp>
-#include <boost/type_traits/is_array.hpp>
+#include "boost/static_assert.hpp"
+#include "boost/type_traits/is_array.hpp"
 #endif
 
 namespace boost{

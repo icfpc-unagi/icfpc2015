@@ -13,11 +13,11 @@
 #if !defined(WAVE_CONFIG_HPP_F143F90A_A63F_4B27_AC41_9CA4F14F538D_INCLUDED)
 #define WAVE_CONFIG_HPP_F143F90A_A63F_4B27_AC41_9CA4F14F538D_INCLUDED
 
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/version.hpp>
-#include <boost/spirit/include/classic_version.hpp>
-#include <boost/wave/wave_version.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/version.hpp"
+#include "boost/spirit/include/classic_version.hpp"
+#include "boost/wave/wave_version.hpp"
 
 ///////////////////////////////////////////////////////////////////////////////
 //  Define the maximal include nesting depth allowed. If this value isn't 
@@ -226,7 +226,7 @@
     
 //  This include is needed for the flex_string class used in the 
 //  BOOST_WAVE_STRINGTYPE above.
-#include <boost/wave/util/flex_string.hpp>
+#include "boost/wave/util/flex_string.hpp"
 
 #endif // BOOST_WORKAROUND(_MSC_VER, <= 1300) et.al.
 #endif // !defined(BOOST_WAVE_STRINGTYPE)
@@ -461,7 +461,7 @@ namespace boost { namespace wave
 #define BOOST_DYN_LINK
 #endif
 
-#include <boost/config/auto_link.hpp>
+#include "boost/config/auto_link.hpp"
 
 #endif  // auto-linking disabled
 #endif  // BOOST_VERSION

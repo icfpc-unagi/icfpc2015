@@ -14,11 +14,11 @@
 
 #include <list>
 
-#include <boost/assert.hpp>
-#include <boost/iterator_adaptors.hpp>
+#include "boost/assert.hpp"
+#include "boost/iterator_adaptors.hpp"
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/token_ids.hpp>     // token_id 
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/token_ids.hpp"     // token_id 
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

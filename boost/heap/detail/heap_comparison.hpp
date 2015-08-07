@@ -9,10 +9,10 @@
 #ifndef BOOST_HEAP_DETAIL_HEAP_COMPARISON_HPP
 #define BOOST_HEAP_DETAIL_HEAP_COMPARISON_HPP
 
-#include <boost/assert.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/concept/assert.hpp>
-#include <boost/heap/heap_concepts.hpp>
+#include "boost/assert.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/concept/assert.hpp"
+#include "boost/heap/heap_concepts.hpp"
 
 #ifdef BOOST_HEAP_SANITYCHECKS
 #define BOOST_HEAP_ASSERT BOOST_ASSERT

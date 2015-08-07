@@ -11,11 +11,11 @@
 #ifndef BOOST_STRING_REPLACE_STORAGE_DETAIL_HPP
 #define BOOST_STRING_REPLACE_STORAGE_DETAIL_HPP
 
-#include <boost/algorithm/string/config.hpp>
+#include "boost/algorithm/string/config.hpp"
 #include <algorithm>
-#include <boost/mpl/bool.hpp>
-#include <boost/algorithm/string/sequence_traits.hpp>
-#include <boost/algorithm/string/detail/sequence.hpp>
+#include "boost/mpl/bool.hpp"
+#include "boost/algorithm/string/sequence_traits.hpp"
+#include "boost/algorithm/string/detail/sequence.hpp"
 
 namespace boost {
     namespace algorithm {

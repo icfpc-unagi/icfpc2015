@@ -4,10 +4,10 @@
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if defined(BOOST_WINDOWS)
-# include <boost/coroutine/windows/protected_stack_allocator.hpp>
+# include "boost/coroutine/windows/protected_stack_allocator.hpp"
 #else
-# include <boost/coroutine/posix/protected_stack_allocator.hpp>
+# include "boost/coroutine/posix/protected_stack_allocator.hpp"
 #endif

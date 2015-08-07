@@ -7,18 +7,18 @@
 #ifndef BOOST_COROUTINES_DETAIL_SYMMETRIC_COROUTINE_CALL_H
 #define BOOST_COROUTINES_DETAIL_SYMMETRIC_COROUTINE_CALL_H
 
-#include <boost/assert.hpp>
-#include <boost/config.hpp>
-#include <boost/move/move.hpp>
-#include <boost/utility/explicit_operator_bool.hpp>
+#include "boost/assert.hpp"
+#include "boost/config.hpp"
+#include "boost/move/move.hpp"
+#include "boost/utility/explicit_operator_bool.hpp"
 
-#include <boost/coroutine/attributes.hpp>
-#include <boost/coroutine/detail/config.hpp>
-#include <boost/coroutine/detail/symmetric_coroutine_impl.hpp>
-#include <boost/coroutine/detail/symmetric_coroutine_object.hpp>
-#include <boost/coroutine/detail/symmetric_coroutine_yield.hpp>
-#include <boost/coroutine/stack_allocator.hpp>
-#include <boost/coroutine/stack_context.hpp>
+#include "boost/coroutine/attributes.hpp"
+#include "boost/coroutine/detail/config.hpp"
+#include "boost/coroutine/detail/symmetric_coroutine_impl.hpp"
+#include "boost/coroutine/detail/symmetric_coroutine_object.hpp"
+#include "boost/coroutine/detail/symmetric_coroutine_yield.hpp"
+#include "boost/coroutine/stack_allocator.hpp"
+#include "boost/coroutine/stack_context.hpp"
 
 #ifdef BOOST_HAS_ABI_HEADERS
 #  include BOOST_ABI_PREFIX

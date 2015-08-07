@@ -10,19 +10,19 @@
 #pragma once
 #endif
 
-#include <boost/array.hpp>
+#include "boost/array.hpp"
 #ifdef BOOST_MSVC
 #pragma warning(push) // Temporary until lexical cast fixed.
 #pragma warning(disable: 4127 4701)
 #endif
 #ifndef BOOST_MATH_NO_LEXICAL_CAST
-#include <boost/lexical_cast.hpp>
+#include "boost/lexical_cast.hpp"
 #endif
 #ifdef BOOST_MSVC
 #pragma warning(pop)
 #endif
-#include <boost/config/no_tr1/cmath.hpp>
-#include <boost/math/special_functions/math_fwd.hpp>
+#include "boost/config/no_tr1/cmath.hpp"
+#include "boost/math/special_functions/math_fwd.hpp"
 
 namespace boost { namespace math
 {

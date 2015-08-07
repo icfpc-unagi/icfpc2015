@@ -8,19 +8,19 @@
 #ifndef BOOST_ACCUMULATORS_STATISTICS_WEIGHTED_MEDIAN_HPP_EAN_28_10_2005
 #define BOOST_ACCUMULATORS_STATISTICS_WEIGHTED_MEDIAN_HPP_EAN_28_10_2005
 
-#include <boost/mpl/placeholders.hpp>
-#include <boost/range/iterator_range.hpp>
-#include <boost/accumulators/framework/accumulator_base.hpp>
-#include <boost/accumulators/framework/extractor.hpp>
-#include <boost/accumulators/numeric/functional.hpp>
-#include <boost/accumulators/framework/parameters/sample.hpp>
-#include <boost/accumulators/framework/depends_on.hpp>
-#include <boost/accumulators/statistics_fwd.hpp>
-#include <boost/accumulators/statistics/count.hpp>
-#include <boost/accumulators/statistics/median.hpp>
-#include <boost/accumulators/statistics/weighted_p_square_quantile.hpp>
-#include <boost/accumulators/statistics/weighted_density.hpp>
-#include <boost/accumulators/statistics/weighted_p_square_cumul_dist.hpp>
+#include "boost/mpl/placeholders.hpp"
+#include "boost/range/iterator_range.hpp"
+#include "boost/accumulators/framework/accumulator_base.hpp"
+#include "boost/accumulators/framework/extractor.hpp"
+#include "boost/accumulators/numeric/functional.hpp"
+#include "boost/accumulators/framework/parameters/sample.hpp"
+#include "boost/accumulators/framework/depends_on.hpp"
+#include "boost/accumulators/statistics_fwd.hpp"
+#include "boost/accumulators/statistics/count.hpp"
+#include "boost/accumulators/statistics/median.hpp"
+#include "boost/accumulators/statistics/weighted_p_square_quantile.hpp"
+#include "boost/accumulators/statistics/weighted_density.hpp"
+#include "boost/accumulators/statistics/weighted_p_square_cumul_dist.hpp"
 
 namespace boost { namespace accumulators
 {

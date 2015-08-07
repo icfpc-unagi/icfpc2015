@@ -16,12 +16,12 @@
 #include <string>
 #include <ostream>
 
-#include <boost/assert.hpp>
-#include <boost/spirit/include/classic_version.hpp>
-#include <boost/spirit/include/classic_position_iterator.hpp>
-#include <boost/wave/wave_config.hpp>
+#include "boost/assert.hpp"
+#include "boost/spirit/include/classic_version.hpp"
+#include "boost/spirit/include/classic_position_iterator.hpp"
+#include "boost/wave/wave_config.hpp"
 #if BOOST_WAVE_SERIALIZATION != 0
-#include <boost/serialization/serialization.hpp>
+#include "boost/serialization/serialization.hpp"
 #endif
 
 // this must occur after all of the includes and before any code appears

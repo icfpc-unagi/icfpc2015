@@ -13,7 +13,7 @@
 #pragma warning(disable:4127)
 #endif
 
-#include <boost/multiprecision/number.hpp>
+#include "boost/multiprecision/number.hpp"
 
 namespace boost{ namespace random{ namespace detail{
 //
@@ -28,8 +28,8 @@ boost::multiprecision::number<Backend, ExpressionTemplates>
 
 }}}
 
-#include <boost/random.hpp>
-#include <boost/mpl/eval_if.hpp>
+#include "boost/random.hpp"
+#include "boost/mpl/eval_if.hpp"
 
 namespace boost{
 namespace random{

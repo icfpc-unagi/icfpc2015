@@ -12,7 +12,7 @@
 #ifndef BOOST_REGEX_MATCHER_HPP
 #define BOOST_REGEX_MATCHER_HPP
 
-#include <boost/regex/v4/iterator_category.hpp>
+#include "boost/regex/v4/iterator_category.hpp"
 
 #ifdef BOOST_MSVC
 #pragma warning(push)
@@ -572,12 +572,12 @@ private:
 // include the implementation of perl_matcher:
 //
 #ifdef BOOST_REGEX_RECURSIVE
-#include <boost/regex/v4/perl_matcher_recursive.hpp>
+#include "boost/regex/v4/perl_matcher_recursive.hpp"
 #else
-#include <boost/regex/v4/perl_matcher_non_recursive.hpp>
+#include "boost/regex/v4/perl_matcher_non_recursive.hpp"
 #endif
 // this one has to be last:
-#include <boost/regex/v4/perl_matcher_common.hpp>
+#include "boost/regex/v4/perl_matcher_common.hpp"
 
 #endif
 

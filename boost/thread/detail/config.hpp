@@ -8,9 +8,9 @@
 #ifndef BOOST_THREAD_CONFIG_WEK01032003_HPP
 #define BOOST_THREAD_CONFIG_WEK01032003_HPP
 
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/thread/detail/platform.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/workaround.hpp"
+#include "boost/thread/detail/platform.hpp"
 
 //#define BOOST_THREAD_DONT_PROVIDE_INTERRUPTIONS
 // ATTRIBUTE_MAY_ALIAS
@@ -366,7 +366,7 @@
 #  pragma warn -8066 // Unreachable code
 #endif
 
-#include <boost/thread/detail/platform.hpp>
+#include "boost/thread/detail/platform.hpp"
 
 #if defined(BOOST_THREAD_PLATFORM_WIN32)
 #else
@@ -453,7 +453,7 @@
 //
 // And include the header that does the work:
 //
-#include <boost/config/auto_link.hpp>
+#include "boost/config/auto_link.hpp"
 #endif  // auto-linking disabled
 
 #endif // BOOST_THREAD_CONFIG_WEK1032003_HPP

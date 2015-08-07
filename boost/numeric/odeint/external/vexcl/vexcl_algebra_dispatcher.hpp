@@ -21,8 +21,8 @@
 #include <vexcl/vector.hpp>
 #include <vexcl/multivector.hpp>
 
-#include <boost/numeric/odeint/algebra/vector_space_algebra.hpp>
-#include <boost/numeric/odeint/algebra/algebra_dispatcher.hpp>
+#include "boost/numeric/odeint/algebra/vector_space_algebra.hpp"
+#include "boost/numeric/odeint/algebra/algebra_dispatcher.hpp"
 
 
 namespace boost {

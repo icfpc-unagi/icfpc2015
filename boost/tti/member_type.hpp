@@ -7,16 +7,16 @@
 #if !defined(BOOST_TTI_MEMBER_TYPE_HPP)
 #define BOOST_TTI_MEMBER_TYPE_HPP
   
-#include <boost/config.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/not.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/tti/gen/member_type_gen.hpp>
-#include <boost/tti/gen/namespace_gen.hpp>
-#include <boost/tti/detail/dmem_type.hpp>
-#include <boost/tti/detail/dnotype.hpp>
+#include "boost/config.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/not.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/tti/gen/member_type_gen.hpp"
+#include "boost/tti/gen/namespace_gen.hpp"
+#include "boost/tti/detail/dmem_type.hpp"
+#include "boost/tti/detail/dnotype.hpp"
 
 /*
 

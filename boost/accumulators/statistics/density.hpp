@@ -12,19 +12,19 @@
 #include <vector>
 #include <limits>
 #include <functional>
-#include <boost/range.hpp>
-#include <boost/parameter/keyword.hpp>
-#include <boost/mpl/placeholders.hpp>
-#include <boost/accumulators/accumulators_fwd.hpp>
-#include <boost/accumulators/framework/accumulator_base.hpp>
-#include <boost/accumulators/framework/extractor.hpp>
-#include <boost/accumulators/numeric/functional.hpp>
-#include <boost/accumulators/framework/parameters/sample.hpp>
-#include <boost/accumulators/framework/depends_on.hpp>
-#include <boost/accumulators/statistics_fwd.hpp>
-#include <boost/accumulators/statistics/count.hpp>
-#include <boost/accumulators/statistics/max.hpp>
-#include <boost/accumulators/statistics/min.hpp>
+#include "boost/range.hpp"
+#include "boost/parameter/keyword.hpp"
+#include "boost/mpl/placeholders.hpp"
+#include "boost/accumulators/accumulators_fwd.hpp"
+#include "boost/accumulators/framework/accumulator_base.hpp"
+#include "boost/accumulators/framework/extractor.hpp"
+#include "boost/accumulators/numeric/functional.hpp"
+#include "boost/accumulators/framework/parameters/sample.hpp"
+#include "boost/accumulators/framework/depends_on.hpp"
+#include "boost/accumulators/statistics_fwd.hpp"
+#include "boost/accumulators/statistics/count.hpp"
+#include "boost/accumulators/statistics/max.hpp"
+#include "boost/accumulators/statistics/min.hpp"
 
 namespace boost { namespace accumulators
 {

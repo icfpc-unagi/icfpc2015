@@ -8,10 +8,10 @@
 
 
 
-#include <boost/statechart/detail/state_base.hpp>
+#include "boost/statechart/detail/state_base.hpp"
 
-#include <boost/intrusive_ptr.hpp>
-#include <boost/assert.hpp>  // BOOST_ASSERT
+#include "boost/intrusive_ptr.hpp"
+#include "boost/assert.hpp"  // BOOST_ASSERT
 
 #include <algorithm> // std::find_if
 

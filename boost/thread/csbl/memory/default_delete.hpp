@@ -9,13 +9,13 @@
 #ifndef BOOST_CSBL_MEMORY_DEFAULT_DELETE_HPP
 #define BOOST_CSBL_MEMORY_DEFAULT_DELETE_HPP
 
-#include <boost/thread/csbl/memory/config.hpp>
+#include "boost/thread/csbl/memory/config.hpp"
 
 // 20.8.1 class template unique_ptr:
 // default_delete
 
 #if defined BOOST_NO_CXX11_SMART_PTR
-#include <boost/move/unique_ptr.hpp>
+#include "boost/move/unique_ptr.hpp"
 
 namespace boost
 {

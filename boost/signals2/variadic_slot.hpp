@@ -11,7 +11,7 @@
 #ifndef BOOST_SIGNALS2_VARIADIC_SLOT_HPP
 #define BOOST_SIGNALS2_VARIADIC_SLOT_HPP
 
-#include <boost/signals2/detail/variadic_arg_type.hpp>
+#include "boost/signals2/detail/variadic_arg_type.hpp"
 
 #define BOOST_SIGNALS2_SLOT_N_BINDING_CONSTRUCTORS \
   template<typename A1, typename A2, typename ... BindArgs> \
@@ -21,5 +21,5 @@
   }
 
 
-#include <boost/signals2/detail/slot_template.hpp>
+#include "boost/signals2/detail/slot_template.hpp"
 #endif // BOOST_SIGNALS2_VARIADIC_SLOT_HPP

@@ -17,14 +17,14 @@
 
 #include <iosfwd>
 #include <stdexcept>
-#include <boost/config.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/integer/integer_mask.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/seed.hpp>
-#include <boost/random/detail/operators.hpp>
-#include <boost/random/detail/seed_impl.hpp>
+#include "boost/config.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/integer/integer_mask.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/seed.hpp"
+#include "boost/random/detail/operators.hpp"
+#include "boost/random/detail/seed_impl.hpp"
 
 namespace boost {
 namespace random {

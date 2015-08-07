@@ -9,8 +9,8 @@
 #ifndef BOOST_TYPE_INDEX_TYPE_INDEX_FACADE_HPP
 #define BOOST_TYPE_INDEX_TYPE_INDEX_FACADE_HPP
 
-#include <boost/config.hpp>
-#include <boost/functional/hash_fwd.hpp>
+#include "boost/config.hpp"
+#include "boost/functional/hash_fwd.hpp"
 #include <string>
 #include <cstring>
 
@@ -99,7 +99,7 @@ public:
 
     /// \b Override: This function \b may be redefined in Derived class. Overrides \b must not throw.
     /// \return Hash code of a type. By default hashes types by raw_name().
-    /// \note <boost/functional/hash.hpp> has to be included if this function is used.
+    /// \note "boost/functional/hash.hpp" has to be included if this function is used.
     inline std::size_t hash_code() const BOOST_NOEXCEPT {
         const char* const name = derived().raw_name();
         return boost::hash_range(name, name + std::strlen(name));
@@ -284,7 +284,7 @@ inline std::basic_ostream<CharT, TriatT>& operator<<(
 #endif // BOOST_NO_IOSTREAM
 
 /// This free function is used by Boost's unordered containers.
-/// \note <boost/functional/hash.hpp> has to be included if this function is used.
+/// \note "boost/functional/hash.hpp" has to be included if this function is used.
 template <class Derived, class TypeInfo>
 inline std::size_t hash_value(const type_index_facade<Derived, TypeInfo>& lhs) BOOST_NOEXCEPT {
     return static_cast<Derived const&>(lhs).hash_code();

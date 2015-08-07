@@ -15,33 +15,33 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
 #include <algorithm>
-#include <boost/detail/workaround.hpp>
-#include <boost/flyweight/detail/default_value_policy.hpp>
-#include <boost/flyweight/detail/flyweight_core.hpp>
-#include <boost/flyweight/detail/perfect_fwd.hpp>
-#include <boost/flyweight/factory_tag.hpp>
-#include <boost/flyweight/flyweight_fwd.hpp>
-#include <boost/flyweight/locking_tag.hpp>
-#include <boost/flyweight/simple_locking_fwd.hpp>
-#include <boost/flyweight/static_holder_fwd.hpp>
-#include <boost/flyweight/hashed_factory_fwd.hpp>
-#include <boost/flyweight/holder_tag.hpp>
-#include <boost/flyweight/refcounted_fwd.hpp>
-#include <boost/flyweight/tag.hpp>
-#include <boost/flyweight/tracking_tag.hpp>
-#include <boost/mpl/assert.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/not.hpp>
-#include <boost/mpl/or.hpp>
-#include <boost/parameter/binding.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/utility/swap.hpp>
+#include "boost/detail/workaround.hpp"
+#include "boost/flyweight/detail/default_value_policy.hpp"
+#include "boost/flyweight/detail/flyweight_core.hpp"
+#include "boost/flyweight/detail/perfect_fwd.hpp"
+#include "boost/flyweight/factory_tag.hpp"
+#include "boost/flyweight/flyweight_fwd.hpp"
+#include "boost/flyweight/locking_tag.hpp"
+#include "boost/flyweight/simple_locking_fwd.hpp"
+#include "boost/flyweight/static_holder_fwd.hpp"
+#include "boost/flyweight/hashed_factory_fwd.hpp"
+#include "boost/flyweight/holder_tag.hpp"
+#include "boost/flyweight/refcounted_fwd.hpp"
+#include "boost/flyweight/tag.hpp"
+#include "boost/flyweight/tracking_tag.hpp"
+#include "boost/mpl/assert.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/not.hpp"
+#include "boost/mpl/or.hpp"
+#include "boost/parameter/binding.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/utility/swap.hpp"
 
 #if !defined(BOOST_NO_SFINAE)&&!defined(BOOST_NO_CXX11_HDR_INITIALIZER_LIST)
-#include <boost/utility/enable_if.hpp>
-#include <boost/type_traits/is_convertible.hpp>
+#include "boost/utility/enable_if.hpp"
+#include "boost/type_traits/is_convertible.hpp"
 #include <initializer_list>
 #endif
 

@@ -9,7 +9,7 @@
 #ifndef BOOST_DETAIL_WINAPI_GETTHREADTIMES_HPP
 #define BOOST_DETAIL_WINAPI_GETTHREADTIMES_HPP
 
-#include <boost/detail/winapi/time.hpp>
+#include "boost/detail/winapi/time.hpp"
 
 #ifdef BOOST_HAS_PRAGMA_ONCE
 #pragma once

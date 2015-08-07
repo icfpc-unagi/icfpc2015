@@ -9,8 +9,8 @@
 #ifndef BOOST_MPI_DETAIL_FORWARD_OPRIMITIVE_HPP
 #define BOOST_MPI_DETAIL_FORWARD_OPRIMITIVE_HPP
 
-#include <boost/config.hpp>
-#include <boost/serialization/array.hpp>
+#include "boost/config.hpp"
+#include "boost/serialization/array.hpp"
 
 namespace boost { namespace mpi { namespace detail {
 

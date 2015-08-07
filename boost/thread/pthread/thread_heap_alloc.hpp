@@ -5,7 +5,7 @@
 #ifndef THREAD_HEAP_ALLOC_PTHREAD_HPP
 #define THREAD_HEAP_ALLOC_PTHREAD_HPP
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -237,6 +237,6 @@ namespace boost
     }
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

@@ -6,9 +6,9 @@
 #if !defined(BOOST_TLS_HOOKS_HPP)
 #define BOOST_TLS_HOOKS_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 #if defined(BOOST_HAS_WINTHREADS)
 
@@ -60,6 +60,6 @@ namespace boost
 
 #endif //defined(BOOST_HAS_WINTHREADS)
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif //!defined(BOOST_TLS_HOOKS_HPP)

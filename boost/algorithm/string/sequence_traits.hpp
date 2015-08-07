@@ -11,9 +11,9 @@
 #ifndef BOOST_STRING_SEQUENCE_TRAITS_HPP
 #define BOOST_STRING_SEQUENCE_TRAITS_HPP
 
-#include <boost/config.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/algorithm/string/yes_no_type.hpp>
+#include "boost/config.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/algorithm/string/yes_no_type.hpp"
 
 /*! \file
     Traits defined in this header are used by various algorithms to achieve

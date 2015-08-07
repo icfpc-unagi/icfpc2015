@@ -11,13 +11,13 @@
 #ifndef BOOST_PROPERTY_TREE_STREAM_TRANSLATOR_HPP_INCLUDED
 #define BOOST_PROPERTY_TREE_STREAM_TRANSLATOR_HPP_INCLUDED
 
-#include <boost/property_tree/ptree_fwd.hpp>
+#include "boost/property_tree/ptree_fwd.hpp"
 
-#include <boost/optional.hpp>
-#include <boost/optional/optional_io.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/type_traits/decay.hpp>
-#include <boost/type_traits/integral_constant.hpp>
+#include "boost/optional.hpp"
+#include "boost/optional/optional_io.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/type_traits/decay.hpp"
+#include "boost/type_traits/integral_constant.hpp"
 #include <sstream>
 #include <string>
 #include <locale>

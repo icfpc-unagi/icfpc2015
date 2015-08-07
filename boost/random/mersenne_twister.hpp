@@ -21,14 +21,14 @@
 #include <iosfwd>
 #include <istream>
 #include <stdexcept>
-#include <boost/config.hpp>
-#include <boost/cstdint.hpp>
-#include <boost/integer/integer_mask.hpp>
-#include <boost/random/detail/config.hpp>
-#include <boost/random/detail/ptr_helper.hpp>
-#include <boost/random/detail/seed.hpp>
-#include <boost/random/detail/seed_impl.hpp>
-#include <boost/random/detail/generator_seed_seq.hpp>
+#include "boost/config.hpp"
+#include "boost/cstdint.hpp"
+#include "boost/integer/integer_mask.hpp"
+#include "boost/random/detail/config.hpp"
+#include "boost/random/detail/ptr_helper.hpp"
+#include "boost/random/detail/seed.hpp"
+#include "boost/random/detail/seed_impl.hpp"
+#include "boost/random/detail/generator_seed_seq.hpp"
 
 namespace boost {
 namespace random {

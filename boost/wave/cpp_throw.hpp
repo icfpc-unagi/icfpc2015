@@ -12,7 +12,7 @@
 #define BOOST_WAVE_CPP_THROW_HPP_INCLUDED
 
 #include <string>
-#include <boost/throw_exception.hpp>
+#include "boost/throw_exception.hpp"
 
 #ifdef BOOST_NO_STRINGSTREAM
 #include <strstream>

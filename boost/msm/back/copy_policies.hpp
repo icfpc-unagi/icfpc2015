@@ -11,7 +11,7 @@
 #ifndef BOOST_MSM_BACK_COPY_POLICIES_H
 #define BOOST_MSM_BACK_COPY_POLICIES_H
 
-#include <boost/noncopyable.hpp>
+#include "boost/noncopyable.hpp"
 
 namespace boost { namespace msm { namespace back
 {

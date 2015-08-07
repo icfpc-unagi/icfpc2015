@@ -10,15 +10,15 @@
 #ifndef BOOST_THREAD_EXECUTORS_BASIC_THREAD_POOL_HPP
 #define BOOST_THREAD_EXECUTORS_BASIC_THREAD_POOL_HPP
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/delete.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/scoped_thread.hpp>
-#include <boost/thread/sync_queue.hpp>
-#include <boost/thread/executors/work.hpp>
-#include <boost/thread/csbl/vector.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/delete.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/scoped_thread.hpp"
+#include "boost/thread/sync_queue.hpp"
+#include "boost/thread/executors/work.hpp"
+#include "boost/thread/csbl/vector.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -312,6 +312,6 @@ using executors::basic_thread_pool;
 
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif

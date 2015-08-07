@@ -16,9 +16,9 @@
 # pragma once
 #endif
 
-#include <boost/array.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/ptr_container/ptr_sequence_adapter.hpp>
+#include "boost/array.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/ptr_container/ptr_sequence_adapter.hpp"
 
 namespace boost
 {

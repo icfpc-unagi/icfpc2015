@@ -15,8 +15,8 @@
 #include <istream>
 #include <ostream>
 
-#include <boost/none.hpp>
-#include <boost/assert.hpp>
+#include "boost/none.hpp"
+#include "boost/assert.hpp"
 #include "boost/optional/optional.hpp"
 #include "boost/utility/value_init.hpp"
 

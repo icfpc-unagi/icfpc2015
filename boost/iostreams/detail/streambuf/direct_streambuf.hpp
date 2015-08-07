@@ -12,27 +12,27 @@
 # pragma once
 #endif              
 
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 #include <cstddef>
 #include <typeinfo>
 #include <utility>                                 // pair.
-#include <boost/config.hpp>                        // BOOST_DEDUCED_TYPENAME, 
-#include <boost/iostreams/detail/char_traits.hpp>  // member template friends.
-#include <boost/iostreams/detail/config/wide_streams.hpp>
-#include <boost/iostreams/detail/error.hpp>
-#include <boost/iostreams/detail/execute.hpp>
-#include <boost/iostreams/detail/functional.hpp>
-#include <boost/iostreams/detail/ios.hpp>
-#include <boost/iostreams/detail/optional.hpp>
-#include <boost/iostreams/detail/streambuf.hpp>
-#include <boost/iostreams/detail/streambuf/linked_streambuf.hpp>
-#include <boost/iostreams/operations.hpp>
-#include <boost/iostreams/positioning.hpp>
-#include <boost/iostreams/traits.hpp>
-#include <boost/throw_exception.hpp>
+#include "boost/config.hpp"                        // BOOST_DEDUCED_TYPENAME, 
+#include "boost/iostreams/detail/char_traits.hpp"  // member template friends.
+#include "boost/iostreams/detail/config/wide_streams.hpp"
+#include "boost/iostreams/detail/error.hpp"
+#include "boost/iostreams/detail/execute.hpp"
+#include "boost/iostreams/detail/functional.hpp"
+#include "boost/iostreams/detail/ios.hpp"
+#include "boost/iostreams/detail/optional.hpp"
+#include "boost/iostreams/detail/streambuf.hpp"
+#include "boost/iostreams/detail/streambuf/linked_streambuf.hpp"
+#include "boost/iostreams/operations.hpp"
+#include "boost/iostreams/positioning.hpp"
+#include "boost/iostreams/traits.hpp"
+#include "boost/throw_exception.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp> // MSVC.
+#include "boost/iostreams/detail/config/disable_warnings.hpp" // MSVC.
 
 namespace boost { namespace iostreams { 
     
@@ -308,6 +308,6 @@ inline bool direct_streambuf<T, Tr>::two_head() const
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp> // MSVC
+#include "boost/iostreams/detail/config/enable_warnings.hpp" // MSVC
 
 #endif // #ifndef BOOST_IOSTREAMS_DETAIL_DIRECT_STREAMBUF_HPP_INCLUDED

@@ -12,8 +12,8 @@
 #if !defined(CONVERT_TRIGRAPHS_HK050403_INCLUDED)
 #define CONVERT_TRIGRAPHS_HK050403_INCLUDED
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/wave/cpplexer/cpplexer_exceptions.hpp>
+#include "boost/wave/wave_config.hpp"
+#include "boost/wave/cpplexer/cpplexer_exceptions.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

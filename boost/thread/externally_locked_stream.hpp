@@ -7,16 +7,16 @@
 #ifndef BOOST_THREAD_EXTERNALLY_LOCKED_STREAM_HPP
 #define BOOST_THREAD_EXTERNALLY_LOCKED_STREAM_HPP
 
-#include <boost/thread/detail/config.hpp>
-#include <boost/thread/detail/move.hpp>
-#include <boost/thread/detail/delete.hpp>
+#include "boost/thread/detail/config.hpp"
+#include "boost/thread/detail/move.hpp"
+#include "boost/thread/detail/delete.hpp"
 
-#include <boost/thread/externally_locked.hpp>
-#include <boost/thread/lock_traits.hpp>
-#include <boost/thread/recursive_mutex.hpp>
-#include <boost/thread/strict_lock.hpp>
+#include "boost/thread/externally_locked.hpp"
+#include "boost/thread/lock_traits.hpp"
+#include "boost/thread/recursive_mutex.hpp"
+#include "boost/thread/strict_lock.hpp"
 
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost
 {
@@ -165,6 +165,6 @@ namespace boost
 
 }
 
-#include <boost/config/abi_suffix.hpp>
+#include "boost/config/abi_suffix.hpp"
 
 #endif // header

@@ -9,11 +9,11 @@
 #ifndef BOOST_RANGE_ALGORITHM_PARTITION__HPP_INCLUDED
 #define BOOST_RANGE_ALGORITHM_PARTITION__HPP_INCLUDED
 
-#include <boost/concept_check.hpp>
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
-#include <boost/range/concepts.hpp>
-#include <boost/range/detail/range_return.hpp>
+#include "boost/concept_check.hpp"
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
+#include "boost/range/concepts.hpp"
+#include "boost/range/detail/range_return.hpp"
 #include <algorithm>
 
 namespace boost

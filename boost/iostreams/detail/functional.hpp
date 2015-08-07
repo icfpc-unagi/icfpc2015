@@ -21,8 +21,8 @@
 # pragma once
 #endif
 
-#include <boost/iostreams/close.hpp>
-#include <boost/iostreams/detail/ios.hpp> // BOOST_IOS
+#include "boost/iostreams/close.hpp"
+#include "boost/iostreams/detail/ios.hpp" // BOOST_IOS
 
 namespace boost { namespace iostreams { namespace detail {
 

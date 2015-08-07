@@ -7,32 +7,32 @@
 #ifndef BOOST_INDIRECT_ITERATOR_23022003THW_HPP
 #define BOOST_INDIRECT_ITERATOR_23022003THW_HPP
 
-#include <boost/iterator.hpp>
-#include <boost/iterator/iterator_adaptor.hpp>
+#include "boost/iterator.hpp"
+#include "boost/iterator/iterator_adaptor.hpp"
 
-#include <boost/pointee.hpp>
-#include <boost/indirect_reference.hpp>
-#include <boost/detail/iterator.hpp>
+#include "boost/pointee.hpp"
+#include "boost/indirect_reference.hpp"
+#include "boost/detail/iterator.hpp"
 
-#include <boost/detail/indirect_traits.hpp>
+#include "boost/detail/indirect_traits.hpp"
 
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/add_reference.hpp>
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/add_reference.hpp"
 
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/not.hpp>
-#include <boost/mpl/has_xxx.hpp>
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/not.hpp"
+#include "boost/mpl/has_xxx.hpp"
 
 #ifdef BOOST_MPL_CFG_NO_HAS_XXX
-# include <boost/shared_ptr.hpp>
-# include <boost/scoped_ptr.hpp>
-# include <boost/mpl/bool.hpp>
+# include "boost/shared_ptr.hpp"
+# include "boost/scoped_ptr.hpp"
+# include "boost/mpl/bool.hpp"
 # include <memory>
 #endif
 
-#include <boost/iterator/detail/config_def.hpp> // must be last #include
+#include "boost/iterator/detail/config_def.hpp" // must be last #include
 
 namespace boost {
 namespace iterators {
@@ -140,6 +140,6 @@ using iterators::make_indirect_iterator;
 
 } // namespace boost
 
-#include <boost/iterator/detail/config_undef.hpp>
+#include "boost/iterator/detail/config_undef.hpp"
 
 #endif // BOOST_INDIRECT_ITERATOR_23022003THW_HPP

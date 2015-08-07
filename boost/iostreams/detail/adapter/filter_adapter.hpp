@@ -17,12 +17,12 @@
 #ifndef BOOST_IOSTREAMS_DETAIL_FILTER_ADAPTER_HPP_INCLUDED
 #define BOOST_IOSTREAMS_DETAIL_FILTER_ADAPTER_HPP_INCLUDED
 
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/detail/call_traits.hpp>
-#include <boost/iostreams/detail/ios.hpp>
-#include <boost/iostreams/operations.hpp>
-#include <boost/iostreams/traits.hpp>
-#include <boost/static_assert.hpp>
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/detail/call_traits.hpp"
+#include "boost/iostreams/detail/ios.hpp"
+#include "boost/iostreams/operations.hpp"
+#include "boost/iostreams/traits.hpp"
+#include "boost/static_assert.hpp"
 
 namespace boost { namespace iostreams { namespace detail {
 

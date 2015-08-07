@@ -6,14 +6,14 @@
 #ifndef BOOST_PROPERTY_SERIALIZE_HPP
 #define BOOST_PROPERTY_SERIALIZE_HPP
 
-#include <boost/pending/property.hpp>
+#include "boost/pending/property.hpp"
 #ifdef BOOST_GRAPH_USE_MPI
-#include <boost/mpi/datatype.hpp>
-#include <boost/serialization/is_bitwise_serializable.hpp>
+#include "boost/mpi/datatype.hpp"
+#include "boost/serialization/is_bitwise_serializable.hpp"
 #endif // BOOST_GRAPH_USE_MPI
 
-#include <boost/serialization/base_object.hpp>
-#include <boost/serialization/nvp.hpp>
+#include "boost/serialization/base_object.hpp"
+#include "boost/serialization/nvp.hpp"
 
 namespace boost {
   template<class Archive>

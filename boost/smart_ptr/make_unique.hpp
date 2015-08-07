@@ -9,7 +9,7 @@
 #ifndef BOOST_SMART_PTR_MAKE_UNIQUE_HPP
 #define BOOST_SMART_PTR_MAKE_UNIQUE_HPP
 
-#include <boost/smart_ptr/make_unique_array.hpp>
-#include <boost/smart_ptr/make_unique_object.hpp>
+#include "boost/smart_ptr/make_unique_array.hpp"
+#include "boost/smart_ptr/make_unique_object.hpp"
 
 #endif

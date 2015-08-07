@@ -23,10 +23,10 @@
 #include <limits>
 #include <locale>
 
-#include <boost/version.hpp>
+#include "boost/version.hpp"
 
-#include <boost/math/special_functions/fpclassify.hpp>
-#include <boost/math/special_functions/sign.hpp>
+#include "boost/math/special_functions/fpclassify.hpp"
+#include "boost/math/special_functions/sign.hpp"
 
 #ifdef _MSC_VER
 #  pragma warning(push)

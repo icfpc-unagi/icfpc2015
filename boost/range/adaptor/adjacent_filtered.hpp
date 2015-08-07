@@ -11,19 +11,19 @@
 #ifndef BOOST_RANGE_ADAPTOR_ADJACENT_FILTER_IMPL_HPP
 #define BOOST_RANGE_ADAPTOR_ADJACENT_FILTER_IMPL_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #ifdef BOOST_MSVC
 #pragma warning( push )
 #pragma warning( disable : 4355 )
 #endif
 
-#include <boost/range/adaptor/argument_fwd.hpp>
-#include <boost/range/iterator_range.hpp>
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
-#include <boost/range/concepts.hpp>
-#include <boost/iterator/iterator_adaptor.hpp>
-#include <boost/next_prior.hpp>
+#include "boost/range/adaptor/argument_fwd.hpp"
+#include "boost/range/iterator_range.hpp"
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
+#include "boost/range/concepts.hpp"
+#include "boost/iterator/iterator_adaptor.hpp"
+#include "boost/next_prior.hpp"
 
 
 namespace boost

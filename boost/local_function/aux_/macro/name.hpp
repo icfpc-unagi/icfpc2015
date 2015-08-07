@@ -8,17 +8,17 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_NAME_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_NAME_HPP_
 
-#include <boost/local_function/config.hpp>
-#include <boost/local_function/aux_/macro/decl.hpp>
-#include <boost/local_function/aux_/macro/code_/functor.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/recursive.hpp>
-#include <boost/local_function/detail/preprocessor/keyword/inline.hpp>
-#include <boost/local_function/aux_/function.hpp>
-#include <boost/local_function/aux_/symbol.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/control/expr_iif.hpp>
-#include <boost/preprocessor/logical/bitor.hpp>
-#include <boost/preprocessor/tuple/eat.hpp>
+#include "boost/local_function/config.hpp"
+#include "boost/local_function/aux_/macro/decl.hpp"
+#include "boost/local_function/aux_/macro/code_/functor.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/recursive.hpp"
+#include "boost/local_function/detail/preprocessor/keyword/inline.hpp"
+#include "boost/local_function/aux_/function.hpp"
+#include "boost/local_function/aux_/symbol.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/control/expr_iif.hpp"
+#include "boost/preprocessor/logical/bitor.hpp"
+#include "boost/preprocessor/tuple/eat.hpp"
 
 // PRIVATE //
 

@@ -12,16 +12,16 @@
 #ifndef _BOOST_CSTDFLOAT_CMATH_2014_02_15_HPP_
   #define _BOOST_CSTDFLOAT_CMATH_2014_02_15_HPP_
 
-  #include <boost/math/cstdfloat/cstdfloat_types.hpp>
-  #include <boost/math/cstdfloat/cstdfloat_limits.hpp>
+  #include "boost/math/cstdfloat/cstdfloat_types.hpp"
+  #include "boost/math/cstdfloat/cstdfloat_limits.hpp"
 
   #if defined(BOOST_CSTDFLOAT_HAS_INTERNAL_FLOAT128_T) && defined(BOOST_MATH_USE_FLOAT128) && !defined(BOOST_CSTDFLOAT_NO_LIBQUADMATH_SUPPORT)
 
   #include <cmath>
   #include <stdexcept>
-  #include <boost/cstdint.hpp>
-  #include <boost/static_assert.hpp>
-  #include <boost/throw_exception.hpp>
+  #include "boost/cstdint.hpp"
+  #include "boost/static_assert.hpp"
+  #include "boost/throw_exception.hpp"
 
   #if defined(_WIN32) && defined(__GNUC__)
     // Several versions of Mingw and probably cygwin too have broken
@@ -447,7 +447,7 @@
             float_type gamma_value         = ::BOOST_CSTDFLOAT_FLOAT128_TGAMMA(positive_x);
       const float_type floor_of_positive_x = ::BOOST_CSTDFLOAT_FLOAT128_FLOOR (positive_x);
 
-      // Take the reflection checks (slightly adapted) from <boost/math/gamma.hpp>.
+      // Take the reflection checks (slightly adapted) from "boost/math/gamma.hpp".
       const bool floor_of_z_is_equal_to_z = (positive_x == ::BOOST_CSTDFLOAT_FLOAT128_FLOOR(positive_x));
 
       BOOST_CONSTEXPR_OR_CONST float_type my_pi = BOOST_FLOAT128_C(3.14159265358979323846264338327950288419716939937511);

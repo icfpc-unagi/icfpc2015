@@ -19,7 +19,7 @@
 #define BOOST_NUMERIC_ODEINT_UTIL_IS_PAIR_HPP_INCLUDED
 
 
-#include <boost/mpl/bool.hpp>
+#include "boost/mpl/bool.hpp"
 #include <utility>
 
 

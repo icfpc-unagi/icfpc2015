@@ -11,12 +11,12 @@
 #ifndef BOOST_TYPE_ERASURE_DEDUCED_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_DEDUCED_HPP_INCLUDED
 
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/set.hpp>
-#include <boost/mpl/empty.hpp>
-#include <boost/type_erasure/detail/get_placeholders.hpp>
-#include <boost/type_erasure/placeholder.hpp>
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/set.hpp"
+#include "boost/mpl/empty.hpp"
+#include "boost/type_erasure/detail/get_placeholders.hpp"
+#include "boost/type_erasure/placeholder.hpp"
 
 namespace boost {
 namespace type_erasure {

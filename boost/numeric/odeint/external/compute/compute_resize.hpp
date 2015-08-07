@@ -18,9 +18,9 @@
 #ifndef BOOST_NUMERIC_ODEINT_EXTERNAL_COMPUTE_COMPUTE_RESIZE_HPP_DEFINED
 #define BOOST_NUMERIC_ODEINT_EXTERNAL_COMPUTE_COMPUTE_RESIZE_HPP_DEFINED
 
-#include <boost/compute/container/vector.hpp>
+#include "boost/compute/container/vector.hpp"
 
-#include <boost/numeric/odeint/util/copy.hpp>
+#include "boost/numeric/odeint/util/copy.hpp"
 
 namespace boost {
 namespace numeric {

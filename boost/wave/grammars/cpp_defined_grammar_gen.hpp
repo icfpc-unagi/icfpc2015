@@ -11,14 +11,14 @@
 #if !defined(CPP_DEFINED_GRAMMAR_GEN_HPP_825BE9F5_98A3_400D_A97C_AD76B3B08632_INCLUDED)
 #define CPP_DEFINED_GRAMMAR_GEN_HPP_825BE9F5_98A3_400D_A97C_AD76B3B08632_INCLUDED
 
-#include <boost/wave/wave_config.hpp>
+#include "boost/wave/wave_config.hpp"
 
 #include <list>
 
-#include <boost/spirit/include/classic_parser.hpp>
-#include <boost/pool/pool_alloc.hpp>
+#include "boost/spirit/include/classic_parser.hpp"
+#include "boost/pool/pool_alloc.hpp"
 
-#include <boost/wave/util/unput_queue_iterator.hpp>
+#include "boost/wave/util/unput_queue_iterator.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

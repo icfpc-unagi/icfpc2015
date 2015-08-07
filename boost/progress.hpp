@@ -19,9 +19,9 @@
 #ifndef BOOST_PROGRESS_HPP
 #define BOOST_PROGRESS_HPP
 
-#include <boost/timer.hpp>
-#include <boost/noncopyable.hpp>
-#include <boost/cstdint.hpp>  // for uintmax_t
+#include "boost/timer.hpp"
+#include "boost/noncopyable.hpp"
+#include "boost/cstdint.hpp"  // for uintmax_t
 #include <iostream>           // for ostream, cout, etc
 #include <string>             // for string
 

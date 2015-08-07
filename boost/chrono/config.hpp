@@ -12,8 +12,8 @@
 #ifndef BOOST_CHRONO_CONFIG_HPP
 #define BOOST_CHRONO_CONFIG_HPP
 
-#include <boost/config.hpp>
-#include <boost/predef.h>
+#include "boost/config.hpp"
+#include "boost/predef.h"
 
 #if !defined BOOST_CHRONO_VERSION
 #define BOOST_CHRONO_VERSION 1
@@ -209,7 +209,7 @@
 //
 // And include the header that does the work:
 //
-#include <boost/config/auto_link.hpp>
+#include "boost/config/auto_link.hpp"
 #endif  // auto-linking disabled
 #endif // BOOST_CHRONO_HEADER_ONLY
 #endif // BOOST_CHRONO_CONFIG_HPP

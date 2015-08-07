@@ -7,10 +7,10 @@
 #ifndef BOOST_MATH_BERNOULLI_DETAIL_HPP
 #define BOOST_MATH_BERNOULLI_DETAIL_HPP
 
-#include <boost/config.hpp>
-#include <boost/detail/lightweight_mutex.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/math/tools/toms748_solve.hpp>
+#include "boost/config.hpp"
+#include "boost/detail/lightweight_mutex.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/math/tools/toms748_solve.hpp"
 
 #ifdef BOOST_HAS_THREADS
 
@@ -39,7 +39,7 @@ typedef long long atomic_integer_type;
 // not need to link against a separate library:
 //
 #define BOOST_ATOMIC_NO_LIB
-#include <boost/atomic.hpp>
+#include "boost/atomic.hpp"
 #  define BOOST_MATH_ATOMIC_NS boost
 
 namespace boost{ namespace math{ namespace detail{

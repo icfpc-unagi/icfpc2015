@@ -9,13 +9,13 @@
 #ifndef BOOST_CRC_HPP
 #define BOOST_CRC_HPP
 
-#include <boost/config.hpp>   // for BOOST_STATIC_CONSTANT, etc.
-#include <boost/integer.hpp>  // for boost::uint_t
+#include "boost/config.hpp"   // for BOOST_STATIC_CONSTANT, etc.
+#include "boost/integer.hpp"  // for boost::uint_t
 
 #include <climits>  // for CHAR_BIT, etc.
 #include <cstddef>  // for std::size_t
 
-#include <boost/limits.hpp>  // for std::numeric_limits
+#include "boost/limits.hpp"  // for std::numeric_limits
 
 
 // The type of CRC parameters that can go in a template should be related

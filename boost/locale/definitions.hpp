@@ -8,7 +8,7 @@
 #ifndef BOOST_LOCALE_DEFINITIONS_HPP_INCLUDED
 #define BOOST_LOCALE_DEFINITIONS_HPP_INCLUDED
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 // Support older ICU versions
 #ifndef BOOST_SYMBOL_VISIBLE

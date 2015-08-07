@@ -8,20 +8,20 @@
 #ifndef BOOST_FUNCTIONAL_OVERLOADED_FUNCTION_DETAIL_FUNCTION_TYPE_HPP_
 #define BOOST_FUNCTIONAL_OVERLOADED_FUNCTION_DETAIL_FUNCTION_TYPE_HPP_
 
-#include <boost/function_types/is_function.hpp>
-#include <boost/function_types/is_function_pointer.hpp>
-#include <boost/function_types/is_function_reference.hpp>
-#include <boost/function_types/function_type.hpp>
-#include <boost/function_types/parameter_types.hpp>
-#include <boost/function_types/result_type.hpp>
-#include <boost/type_traits/remove_pointer.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/function.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/pop_front.hpp>
-#include <boost/mpl/push_front.hpp>
-#include <boost/typeof/typeof.hpp>
+#include "boost/function_types/is_function.hpp"
+#include "boost/function_types/is_function_pointer.hpp"
+#include "boost/function_types/is_function_reference.hpp"
+#include "boost/function_types/function_type.hpp"
+#include "boost/function_types/parameter_types.hpp"
+#include "boost/function_types/result_type.hpp"
+#include "boost/type_traits/remove_pointer.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/function.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/pop_front.hpp"
+#include "boost/mpl/push_front.hpp"
+#include "boost/typeof/typeof.hpp"
 
 // Do not use namespace ::detail because overloaded_function is already a class.
 namespace boost { namespace overloaded_function_detail {

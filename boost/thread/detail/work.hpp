@@ -8,7 +8,7 @@
 #define BOOST_THREAD_DETAIL_WORK_HPP
 
 
-#include <boost/thread/detail/nullary_function.hpp>
+#include "boost/thread/detail/nullary_function.hpp"
 
 namespace boost
 {

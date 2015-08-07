@@ -11,28 +11,28 @@
 # pragma once
 #endif
 
-#include <boost/config.hpp>                   // make sure size_t is in std.
+#include "boost/config.hpp"                   // make sure size_t is in std.
 #include <cstddef>                            // size_t.
 #include <string>                             // pathnames.
 #include <utility>                            // pair.
-#include <boost/config.hpp>                   // BOOST_MSVC.
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/close.hpp>
-#include <boost/iostreams/concepts.hpp>
-#include <boost/iostreams/detail/config/auto_link.hpp>
-#include <boost/iostreams/detail/config/dyn_link.hpp>
-#include <boost/iostreams/detail/config/wide_streams.hpp>
-#include <boost/iostreams/detail/ios.hpp>     // openmode, failure
-#include <boost/iostreams/detail/path.hpp>
-#include <boost/iostreams/operations_fwd.hpp>
-#include <boost/iostreams/positioning.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/type_traits/is_same.hpp>
+#include "boost/config.hpp"                   // BOOST_MSVC.
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/close.hpp"
+#include "boost/iostreams/concepts.hpp"
+#include "boost/iostreams/detail/config/auto_link.hpp"
+#include "boost/iostreams/detail/config/dyn_link.hpp"
+#include "boost/iostreams/detail/config/wide_streams.hpp"
+#include "boost/iostreams/detail/ios.hpp"     // openmode, failure
+#include "boost/iostreams/detail/path.hpp"
+#include "boost/iostreams/operations_fwd.hpp"
+#include "boost/iostreams/positioning.hpp"
+#include "boost/shared_ptr.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/throw_exception.hpp"
+#include "boost/type_traits/is_same.hpp"
 
 // Must come last.
-#include <boost/config/abi_prefix.hpp>
+#include "boost/config/abi_prefix.hpp"
 
 namespace boost { namespace iostreams {
 
@@ -594,6 +594,6 @@ operator^=(mapped_file::mapmode& a, mapped_file::mapmode b)
 
 } } // End namespaces iostreams, boost.
 
-#include <boost/config/abi_suffix.hpp> // pops abi_suffix.hpp pragmas
+#include "boost/config/abi_suffix.hpp" // pops abi_suffix.hpp pragmas
 
 #endif // #ifndef BOOST_IOSTREAMS_MAPPED_FILE_HPP_INCLUDED

@@ -16,12 +16,12 @@
 #define BOOST_TEST_LAZY_OSTREAM_HPP_070708GER
 
 // Boost.Test
-#include <boost/test/detail/config.hpp>
+#include "boost/test/detail/config.hpp"
 
 // STL
 #include <iosfwd>
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -109,6 +109,6 @@ operator<<( lazy_ostream const& prev, R& (BOOST_TEST_CALL_DECL *man)(S&) )
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_LAZY_OSTREAM_HPP_070708GER

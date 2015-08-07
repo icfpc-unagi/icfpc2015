@@ -18,15 +18,15 @@
 #include <algorithm>
 #include <limits>
 
-#include <boost/config.hpp>
-#include <boost/static_assert.hpp>
-#include <boost/noncopyable.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/mpl/and.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type_traits/is_const.hpp>
-#include <boost/type_traits/remove_reference.hpp>
+#include "boost/config.hpp"
+#include "boost/static_assert.hpp"
+#include "boost/noncopyable.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/mpl/and.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/type_traits/is_const.hpp"
+#include "boost/type_traits/remove_reference.hpp"
 
 // C++11
 #if defined(__cplusplus) && __cplusplus >= 201103L
@@ -296,8 +296,8 @@ bool disable_type_check<Dummy>::value = false;
 
 
 // Include type declerations and functions
-#include <boost/numeric/ublas/fwd.hpp>
-#include <boost/numeric/ublas/detail/definitions.hpp>
+#include "boost/numeric/ublas/fwd.hpp"
+#include "boost/numeric/ublas/detail/definitions.hpp"
 
 
 #endif

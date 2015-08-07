@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         icu.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Unicode regular expressions on top of the ICU Library.
   */
 
@@ -22,9 +22,9 @@
 #include <unicode/utypes.h>
 #include <unicode/uchar.h>
 #include <unicode/coll.h>
-#include <boost/regex.hpp>
-#include <boost/regex/pending/unicode_iterator.hpp>
-#include <boost/mpl/int_fwd.hpp>
+#include "boost/regex.hpp"
+#include "boost/regex/pending/unicode_iterator.hpp"
+#include "boost/mpl/int_fwd.hpp"
 #include <bitset>
 
 #ifdef BOOST_MSVC
@@ -223,7 +223,7 @@ private:
 #ifdef BOOST_REGEX_ICU_INSTANTIATE
 #  define BOOST_REGEX_INSTANTIATE
 #endif
-#include <boost/regex/v4/instances.hpp>
+#include "boost/regex/v4/instances.hpp"
 #undef BOOST_REGEX_CHAR_T
 #undef BOOST_REGEX_TRAITS_T
 #undef BOOST_REGEX_ICU_INSTANCES
@@ -1016,7 +1016,7 @@ inline U_NAMESPACE_QUALIFIER UnicodeString u32regex_replace(const U_NAMESPACE_QU
 #pragma warning (pop)
 #endif
 
-#include <boost/regex/v4/u32regex_iterator.hpp>
-#include <boost/regex/v4/u32regex_token_iterator.hpp>
+#include "boost/regex/v4/u32regex_iterator.hpp"
+#include "boost/regex/v4/u32regex_token_iterator.hpp"
 
 #endif

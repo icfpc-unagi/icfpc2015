@@ -7,10 +7,10 @@
 #if !defined(BOOST_TTI_DETAIL_DATA_HPP)
 #define BOOST_TTI_DETAIL_DATA_HPP
 
-#include <boost/mpl/or.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/tti/detail/dmem_data.hpp>
-#include <boost/tti/detail/dstatic_mem_data.hpp>
+#include "boost/mpl/or.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/tti/detail/dmem_data.hpp"
+#include "boost/tti/detail/dstatic_mem_data.hpp"
 
 #define BOOST_TTI_DETAIL_TRAIT_HAS_DATA(trait,name) \
   BOOST_TTI_DETAIL_TRAIT_HAS_MEMBER_DATA(trait,name) \

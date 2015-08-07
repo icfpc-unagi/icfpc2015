@@ -58,15 +58,15 @@
 #include <ios>                   // for std::noskipws
 #include <stdexcept>             // for std::domain_error
 #include <string>                // for std::string implicit constructor
-#include <boost/operators.hpp>   // for boost::addable etc
+#include "boost/operators.hpp"   // for boost::addable etc
 #include <cstdlib>               // for std::abs
-#include <boost/call_traits.hpp> // for boost::call_traits
-#include <boost/config.hpp>      // for BOOST_NO_STDC_NAMESPACE, BOOST_MSVC
-#include <boost/detail/workaround.hpp> // for BOOST_WORKAROUND
-#include <boost/assert.hpp>      // for BOOST_ASSERT
-#include <boost/math/common_factor_rt.hpp>  // for boost::math::gcd, lcm
+#include "boost/call_traits.hpp" // for boost::call_traits
+#include "boost/config.hpp"      // for BOOST_NO_STDC_NAMESPACE, BOOST_MSVC
+#include "boost/detail/workaround.hpp" // for BOOST_WORKAROUND
+#include "boost/assert.hpp"      // for BOOST_ASSERT
+#include "boost/math/common_factor_rt.hpp"  // for boost::math::gcd, lcm
 #include <limits>                // for std::numeric_limits
-#include <boost/static_assert.hpp>  // for BOOST_STATIC_ASSERT
+#include "boost/static_assert.hpp"  // for BOOST_STATIC_ASSERT
 
 // Control whether depreciated GCD and LCM functions are included (default: yes)
 #ifndef BOOST_CONTROL_RATIONAL_HAS_GCD

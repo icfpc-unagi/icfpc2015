@@ -7,21 +7,21 @@
 
 //  See http://www.boost.org/libs/system for documentation.
 
-#include <boost/chrono/config.hpp>
+#include "boost/chrono/config.hpp"
 
 #ifndef BOOST_CHRONO_THREAD_CLOCK_HPP
 #define BOOST_CHRONO_THREAD_CLOCK_HPP
 
 #if defined(BOOST_CHRONO_HAS_THREAD_CLOCK)
 
-#include <boost/chrono/config.hpp>
-#include <boost/chrono/duration.hpp>
-#include <boost/chrono/time_point.hpp>
-#include <boost/chrono/detail/system.hpp>
-#include <boost/chrono/clock_string.hpp>
+#include "boost/chrono/config.hpp"
+#include "boost/chrono/duration.hpp"
+#include "boost/chrono/time_point.hpp"
+#include "boost/chrono/detail/system.hpp"
+#include "boost/chrono/clock_string.hpp"
 
 #ifndef BOOST_CHRONO_HEADER_ONLY
-#include <boost/config/abi_prefix.hpp> // must be the last #include
+#include "boost/config/abi_prefix.hpp" // must be the last #include
 #endif
 
 namespace boost { namespace chrono {
@@ -65,9 +65,9 @@ struct clock_string<thread_clock, CharT>
 
 
 #ifndef BOOST_CHRONO_HEADER_ONLY
-#include <boost/config/abi_suffix.hpp> // pops abi_prefix.hpp pragmas
+#include "boost/config/abi_suffix.hpp" // pops abi_prefix.hpp pragmas
 #else
-#include <boost/chrono/detail/inlined/thread_clock.hpp>
+#include "boost/chrono/detail/inlined/thread_clock.hpp"
 #endif
 
 #endif

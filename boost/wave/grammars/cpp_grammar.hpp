@@ -11,25 +11,25 @@
 #if !defined(CPP_GRAMMAR_HPP_FEAEBC2E_2734_428B_A7CA_85E5A415E23E_INCLUDED)
 #define CPP_GRAMMAR_HPP_FEAEBC2E_2734_428B_A7CA_85E5A415E23E_INCLUDED
 
-#include <boost/spirit/include/classic_core.hpp>
-#include <boost/spirit/include/classic_parse_tree.hpp>
-#include <boost/spirit/include/classic_parse_tree_utils.hpp>
-#include <boost/spirit/include/classic_confix.hpp>
-#include <boost/spirit/include/classic_lists.hpp>
+#include "boost/spirit/include/classic_core.hpp"
+#include "boost/spirit/include/classic_parse_tree.hpp"
+#include "boost/spirit/include/classic_parse_tree_utils.hpp"
+#include "boost/spirit/include/classic_confix.hpp"
+#include "boost/spirit/include/classic_lists.hpp"
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/pool/pool_alloc.hpp>
+#include "boost/wave/wave_config.hpp"
+#include "boost/pool/pool_alloc.hpp"
 
 #if BOOST_WAVE_DUMP_PARSE_TREE != 0
 #include <map>
-#include <boost/spirit/include/classic_tree_to_xml.hpp>
+#include "boost/spirit/include/classic_tree_to_xml.hpp"
 #endif
 
-#include <boost/wave/token_ids.hpp>
-#include <boost/wave/grammars/cpp_grammar_gen.hpp>
-#include <boost/wave/util/pattern_parser.hpp>
+#include "boost/wave/token_ids.hpp"
+#include "boost/wave/grammars/cpp_grammar_gen.hpp"
+#include "boost/wave/util/pattern_parser.hpp"
 
-#include <boost/wave/cpp_exceptions.hpp>
+#include "boost/wave/cpp_exceptions.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

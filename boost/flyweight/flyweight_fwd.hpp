@@ -13,10 +13,10 @@
 #pragma once
 #endif
 
-#include <boost/config.hpp> /* keep it first to prevent nasty warns in MSVC */
-#include <boost/detail/templated_streams.hpp>
-#include <boost/parameter/parameters.hpp>
-#include <boost/preprocessor/punctuation/comma.hpp>
+#include "boost/config.hpp" /* keep it first to prevent nasty warns in MSVC */
+#include "boost/detail/templated_streams.hpp"
+#include "boost/parameter/parameters.hpp"
+#include "boost/preprocessor/punctuation/comma.hpp"
 #include <iosfwd>
 
 namespace boost{

@@ -11,7 +11,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         mem_block_cache.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: memory block cache used by the non-recursive matcher.
   */
 
@@ -20,7 +20,7 @@
 
 #include <new>
 #ifdef BOOST_HAS_THREADS
-#include <boost/regex/pending/static_mutex.hpp>
+#include "boost/regex/pending/static_mutex.hpp"
 #endif
 
 #ifdef BOOST_HAS_ABI_HEADERS

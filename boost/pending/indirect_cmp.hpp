@@ -13,8 +13,8 @@
 #define BOOST_INDIRECT_CMP_HPP
 
 #include <functional>
-#include <boost/config.hpp>
-#include <boost/property_map/property_map.hpp>
+#include "boost/config.hpp"
+#include "boost/property_map/property_map.hpp"
 
 namespace boost {
 

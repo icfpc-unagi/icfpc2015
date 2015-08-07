@@ -10,7 +10,7 @@
 #ifndef BOOST_FORCE_CAST_MJM012402_HPP
 #define BOOST_FORCE_CAST_MJM012402_HPP
 
-#include <boost/thread/detail/config.hpp>
+#include "boost/thread/detail/config.hpp"
 
 namespace boost {
 namespace detail {

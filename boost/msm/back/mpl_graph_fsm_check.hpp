@@ -11,9 +11,9 @@
 #ifndef BOOST_MSM_BACK_MPL_GRAPH_FSM_CHECK_H
 #define BOOST_MSM_BACK_MPL_GRAPH_FSM_CHECK_H
 
-#include <boost/mpl/assert.hpp>
+#include "boost/mpl/assert.hpp"
 
-#include <boost/msm/back/metafunctions.hpp>
+#include "boost/msm/back/metafunctions.hpp"
 
 namespace boost { namespace msm { namespace back
 {

@@ -7,12 +7,12 @@
 #if !defined(BOOST_TTI_HAS_TYPE_HPP)
 #define BOOST_TTI_HAS_TYPE_HPP
 
-#include <boost/config.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/tti/gen/has_type_gen.hpp>
-#include <boost/tti/gen/namespace_gen.hpp>
-#include <boost/tti/detail/dtype.hpp>
-#include <boost/tti/detail/ddeftype.hpp>
+#include "boost/config.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/tti/gen/has_type_gen.hpp"
+#include "boost/tti/gen/namespace_gen.hpp"
+#include "boost/tti/detail/dtype.hpp"
+#include "boost/tti/detail/ddeftype.hpp"
 
 /*
 

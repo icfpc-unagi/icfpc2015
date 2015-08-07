@@ -11,12 +11,12 @@
 #ifndef BOOST_MSM_FRONT_COMMON_STATES_H
 #define BOOST_MSM_FRONT_COMMON_STATES_H
 
-#include <boost/mpl/int.hpp>
-#include <boost/mpl/vector.hpp>
-#include <boost/fusion/container/map.hpp>
-#include <boost/fusion/include/at_c.hpp>
-#include <boost/type_traits/add_const.hpp>
-#include <boost/msm/front/detail/common_states.hpp>
+#include "boost/mpl/int.hpp"
+#include "boost/mpl/vector.hpp"
+#include "boost/fusion/container/map.hpp"
+#include "boost/fusion/include/at_c.hpp"
+#include "boost/type_traits/add_const.hpp"
+#include "boost/msm/front/detail/common_states.hpp"
 
 namespace boost { namespace msm { namespace front
 {

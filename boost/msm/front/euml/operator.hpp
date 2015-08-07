@@ -12,13 +12,13 @@
 #define BOOST_MSM_FRONT_EUML_OPERATOR_H
 
 #include <iterator>
-#include <boost/msm/front/euml/common.hpp>
-#include <boost/type_traits/remove_reference.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/mpl/has_key.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/set.hpp>
-#include <boost/type_traits.hpp>
+#include "boost/msm/front/euml/common.hpp"
+#include "boost/type_traits/remove_reference.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/mpl/has_key.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/set.hpp"
+#include "boost/type_traits.hpp"
 
 BOOST_MPL_HAS_XXX_TRAIT_DEF(reference)
 BOOST_MPL_HAS_XXX_TRAIT_DEF(key_type)

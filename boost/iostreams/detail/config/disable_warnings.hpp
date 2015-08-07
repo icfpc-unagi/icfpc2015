@@ -5,8 +5,8 @@
 
 // See http://www.boost.org/libs/iostreams for documentation.
 
-#include <boost/config.hpp>             // BOOST_MSVC.
-#include <boost/detail/workaround.hpp>  // BOOST_WORKAROUND.
+#include "boost/config.hpp"             // BOOST_MSVC.
+#include "boost/detail/workaround.hpp"  // BOOST_WORKAROUND.
 
 #if defined(BOOST_MSVC)
 # pragma warning(push)

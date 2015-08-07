@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         config.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: regex extended config setup.
   */
 
@@ -23,7 +23,7 @@
  * this has to go *before* we include any std lib headers:
  */
 #if defined(__BORLANDC__)
-#  include <boost/regex/config/borland.hpp>
+#  include "boost/regex/config/borland.hpp"
 #endif
 
 /*****************************************************************************
@@ -35,17 +35,17 @@
 #ifdef __cplusplus
 
 #  ifndef BOOST_REGEX_USER_CONFIG
-#     define BOOST_REGEX_USER_CONFIG <boost/regex/user.hpp>
+#     define BOOST_REGEX_USER_CONFIG "boost/regex/user.hpp"
 #  endif
 
 #  include BOOST_REGEX_USER_CONFIG
 
-#  include <boost/config.hpp>
+#  include "boost/config.hpp"
 
 #else
    /*
     * C build,
-    * don't include <boost/config.hpp> because that may
+    * don't include "boost/config.hpp" because that may
     * do C++ specific things in future...
     */
 #  include <stdlib.h>
@@ -118,7 +118,7 @@
 #  endif
 
 #ifdef __cplusplus
-#  include <boost/regex/config/cwchar.hpp>
+#  include "boost/regex/config/cwchar.hpp"
 #endif
 
 #endif
@@ -215,7 +215,7 @@
 #  ifdef BOOST_REGEX_DIAG
 #     define BOOST_LIB_DIAGNOSTIC
 #  endif
-#  include <boost/config/auto_link.hpp>
+#  include "boost/config/auto_link.hpp"
 #endif
 
 /*****************************************************************************
@@ -295,7 +295,7 @@
  */
 #include <stdexcept>
 #include <string>
-#include <boost/throw_exception.hpp>
+#include "boost/throw_exception.hpp"
 
 #  define BOOST_REGEX_NOEH_ASSERT(x)\
 if(0 == (x))\

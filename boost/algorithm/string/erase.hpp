@@ -11,17 +11,17 @@
 #ifndef BOOST_STRING_ERASE_HPP
 #define BOOST_STRING_ERASE_HPP
 
-#include <boost/algorithm/string/config.hpp>
+#include "boost/algorithm/string/config.hpp"
 
-#include <boost/range/iterator_range_core.hpp>
-#include <boost/range/begin.hpp>
-#include <boost/range/end.hpp>
-#include <boost/range/iterator.hpp>
-#include <boost/range/const_iterator.hpp>
+#include "boost/range/iterator_range_core.hpp"
+#include "boost/range/begin.hpp"
+#include "boost/range/end.hpp"
+#include "boost/range/iterator.hpp"
+#include "boost/range/const_iterator.hpp"
 
-#include <boost/algorithm/string/find_format.hpp>
-#include <boost/algorithm/string/finder.hpp>
-#include <boost/algorithm/string/formatter.hpp>
+#include "boost/algorithm/string/find_format.hpp"
+#include "boost/algorithm/string/finder.hpp"
+#include "boost/algorithm/string/formatter.hpp"
 
 /*! \file
     Defines various erase algorithms. Each algorithm removes

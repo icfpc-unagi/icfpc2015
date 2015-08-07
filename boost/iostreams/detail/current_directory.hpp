@@ -17,12 +17,12 @@
 #ifndef BOOST_IOSTREAMS_DETAIL_CURRENT_DIRECTORY_HPP_INCLUDED
 #define BOOST_IOSTREAMS_DETAIL_CURRENT_DIRECTORY_HPP_INCLUDED
 
-#include <boost/config.hpp>  // make sure size_t is in std.
+#include "boost/config.hpp"  // make sure size_t is in std.
 #include <cstddef>           // size_t
 #include <string>
-#include <boost/iostreams/detail/buffer.hpp>
-#include <boost/iostreams/detail/config/windows_posix.hpp>
-#include <boost/iostreams/detail/system_failure.hpp>
+#include "boost/iostreams/detail/buffer.hpp"
+#include "boost/iostreams/detail/config/windows_posix.hpp"
+#include "boost/iostreams/detail/system_failure.hpp"
 #ifdef BOOST_IOSTREAMS_WINDOWS
 # define WIN32_LEAN_AND_MEAN  // Exclude rarely-used stuff from Windows headers
 # include <windows.h>
@@ -31,7 +31,7 @@
 #endif
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>
+#include "boost/iostreams/detail/config/disable_warnings.hpp"
 
 namespace boost { namespace iostreams { namespace detail {
 
@@ -60,6 +60,6 @@ inline std::string current_directory()
 
 } } } // End namespaces detail, iostreams, boost.
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>
+#include "boost/iostreams/detail/config/enable_warnings.hpp"
 
 #endif // #ifndef BOOST_IOSTREAMS_DETAIL_CURRENT_DIRECTORY_HPP_INCLUDED

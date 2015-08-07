@@ -12,6 +12,6 @@
 # pragma once
 #endif
 
-#include <boost/iostreams/write.hpp>
+#include "boost/iostreams/write.hpp"
 
 #endif // #ifndef BOOST_IOSTREAMS_PUT_HPP_INCLUDED

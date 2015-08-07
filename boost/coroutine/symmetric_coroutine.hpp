@@ -7,10 +7,10 @@
 #ifndef BOOST_COROUTINES_SYMMETRIC_COROUTINE_H
 #define BOOST_COROUTINES_SYMMETRIC_COROUTINE_H
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
-#include <boost/coroutine/detail/symmetric_coroutine_call.hpp>
-#include <boost/coroutine/detail/symmetric_coroutine_yield.hpp>
+#include "boost/coroutine/detail/symmetric_coroutine_call.hpp"
+#include "boost/coroutine/detail/symmetric_coroutine_yield.hpp"
 
 #ifdef BOOST_HAS_ABI_HEADERS
 #  include BOOST_ABI_PREFIX

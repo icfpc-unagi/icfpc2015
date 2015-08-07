@@ -13,8 +13,8 @@
 #pragma once
 #endif
 
-#include <boost/flyweight/detail/is_placeholder_expr.hpp>
-#include <boost/mpl/if.hpp>
+#include "boost/flyweight/detail/is_placeholder_expr.hpp"
+#include "boost/mpl/if.hpp"
 
 /* nested_##name##_if_not_placeholder_expression<T>::type is T::name unless
  * T is an MPL placeholder expression, in which case it defaults to int.

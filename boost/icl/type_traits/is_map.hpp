@@ -8,7 +8,7 @@ Copyright (c) 2008-2009: Joachim Faulhaber
 #ifndef BOOST_ICL_TYPE_TRAITS_IS_MAP_HPP_JOFA_081107
 #define BOOST_ICL_TYPE_TRAITS_IS_MAP_HPP_JOFA_081107
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 namespace boost{ namespace icl
 {

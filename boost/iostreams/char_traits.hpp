@@ -12,12 +12,12 @@
 # pragma once
 #endif 
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 #include <cstddef>
 #include <cstdio>  // EOF.
 #include <string>  // std::char_traits.
-#include <boost/iostreams/detail/char_traits.hpp>
-#include <boost/iostreams/detail/config/wide_streams.hpp>
+#include "boost/iostreams/detail/char_traits.hpp"
+#include "boost/iostreams/detail/config/wide_streams.hpp"
 #ifndef BOOST_IOSTREAMS_NO_WIDE_STREAMS
 # include <cwchar>
 #endif

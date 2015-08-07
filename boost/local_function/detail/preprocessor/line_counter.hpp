@@ -8,7 +8,7 @@
 #ifndef BOOST_LOCAL_FUNCTION_DETAIL_PP_LINE_COUNTER_HPP_
 #define BOOST_LOCAL_FUNCTION_DETAIL_PP_LINE_COUNTER_HPP_
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 // PUBLIC //
 

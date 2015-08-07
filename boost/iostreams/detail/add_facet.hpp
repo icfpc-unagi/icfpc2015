@@ -5,7 +5,7 @@
 
 // See http://www.boost.org/libs/iostreams for documentation.
 
-// Borrowed from <boost/archive/add_facet.hpp>
+// Borrowed from "boost/archive/add_facet.hpp"
 
 #ifndef BOOST_IOSTREAMS_DETAIL_ADD_FACET_HPP_INCLUDED
 #define BOOST_IOSTREAMS_DETAIL_ADD_FACET_HPP_INCLUDED
@@ -14,8 +14,8 @@
 # pragma once
 #endif
 
-#include <boost/config.hpp>  // BOOST_DINKUMWARE_STDLIB.
-#include <boost/detail/workaround.hpp>
+#include "boost/config.hpp"  // BOOST_DINKUMWARE_STDLIB.
+#include "boost/detail/workaround.hpp"
 
 //------------------Definition of add_facet-----------------------------------//
 

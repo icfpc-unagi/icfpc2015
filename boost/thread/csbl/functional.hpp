@@ -9,7 +9,7 @@
 #ifndef BOOST_CSBL_FUNCTIONAL_HPP
 #define BOOST_CSBL_FUNCTIONAL_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #include <functional>
 
@@ -17,7 +17,7 @@
 #ifndef BOOST_THREAD_USES_BOOST_FUNCTIONAL
 #define BOOST_THREAD_USES_BOOST_FUNCTIONAL
 #endif
-#include <boost/function.hpp>
+#include "boost/function.hpp"
 #endif
 
 namespace boost

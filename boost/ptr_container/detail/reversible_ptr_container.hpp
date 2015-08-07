@@ -17,24 +17,24 @@
 # pragma once
 #endif
 
-#include <boost/ptr_container/detail/throw_exception.hpp>
-#include <boost/ptr_container/detail/scoped_deleter.hpp>
-#include <boost/ptr_container/detail/static_move_ptr.hpp>
-#include <boost/ptr_container/exception.hpp>
-#include <boost/ptr_container/clone_allocator.hpp>
-#include <boost/ptr_container/nullable.hpp>
+#include "boost/ptr_container/detail/throw_exception.hpp"
+#include "boost/ptr_container/detail/scoped_deleter.hpp"
+#include "boost/ptr_container/detail/static_move_ptr.hpp"
+#include "boost/ptr_container/exception.hpp"
+#include "boost/ptr_container/clone_allocator.hpp"
+#include "boost/ptr_container/nullable.hpp"
 
 #ifdef BOOST_NO_SFINAE
 #else
-#include <boost/range/functions.hpp>
+#include "boost/range/functions.hpp"
 #endif
 
-#include <boost/config.hpp>
-#include <boost/iterator/reverse_iterator.hpp>
-#include <boost/range/iterator.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/type_traits/is_pointer.hpp>
-#include <boost/type_traits/is_integral.hpp>
+#include "boost/config.hpp"
+#include "boost/iterator/reverse_iterator.hpp"
+#include "boost/range/iterator.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/type_traits/is_pointer.hpp"
+#include "boost/type_traits/is_integral.hpp"
 #include <typeinfo>
 #include <memory>
 

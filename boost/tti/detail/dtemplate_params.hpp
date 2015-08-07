@@ -7,20 +7,20 @@
 #if !defined(BOOST_TTI_DETAIL_TEMPLATE_PARAMS_HPP)
 #define BOOST_TTI_DETAIL_TEMPLATE_PARAMS_HPP
 
-#include <boost/config.hpp>
-#include <boost/mpl/bool.hpp>
-#include <boost/mpl/eval_if.hpp>
-#include <boost/mpl/has_xxx.hpp>
-#include <boost/preprocessor/arithmetic/add.hpp>
-#include <boost/preprocessor/arithmetic/sub.hpp>
-#include <boost/preprocessor/array/elem.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/punctuation/comma_if.hpp>
-#include <boost/preprocessor/repetition/repeat.hpp>
-#include <boost/preprocessor/repetition/enum.hpp>
-#include <boost/preprocessor/array/enum.hpp>
-#include <boost/preprocessor/array/size.hpp>
-#include <boost/type_traits/is_class.hpp>
+#include "boost/config.hpp"
+#include "boost/mpl/bool.hpp"
+#include "boost/mpl/eval_if.hpp"
+#include "boost/mpl/has_xxx.hpp"
+#include "boost/preprocessor/arithmetic/add.hpp"
+#include "boost/preprocessor/arithmetic/sub.hpp"
+#include "boost/preprocessor/array/elem.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/punctuation/comma_if.hpp"
+#include "boost/preprocessor/repetition/repeat.hpp"
+#include "boost/preprocessor/repetition/enum.hpp"
+#include "boost/preprocessor/array/enum.hpp"
+#include "boost/preprocessor/array/size.hpp"
+#include "boost/type_traits/is_class.hpp"
 
 #if !defined(BOOST_MPL_CFG_NO_HAS_XXX_TEMPLATE)
 

@@ -10,27 +10,27 @@
 #ifndef BOOST_FILESYSTEM_PATH_TRAITS_HPP
 #define BOOST_FILESYSTEM_PATH_TRAITS_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 # if defined( BOOST_NO_STD_WSTRING )
 #   error Configuration not supported: Boost.Filesystem V3 and later requires std::wstring support
 # endif
 
-#include <boost/filesystem/config.hpp>
-#include <boost/utility/enable_if.hpp>
-#include <boost/type_traits/is_array.hpp>
-#include <boost/type_traits/decay.hpp>
-#include <boost/system/error_code.hpp>
+#include "boost/filesystem/config.hpp"
+#include "boost/utility/enable_if.hpp"
+#include "boost/type_traits/is_array.hpp"
+#include "boost/type_traits/decay.hpp"
+#include "boost/system/error_code.hpp"
 #include <cwchar>  // for mbstate_t
 #include <string>
 #include <vector>
 #include <list>
 #include <iterator>
 #include <locale>
-#include <boost/assert.hpp>
+#include "boost/assert.hpp"
 // #include <iostream>   //**** comment me out ****
 
-#include <boost/config/abi_prefix.hpp> // must be the last #include
+#include "boost/config/abi_prefix.hpp" // must be the last #include
 
 namespace boost { namespace filesystem {
 
@@ -347,6 +347,6 @@ namespace path_traits {
 
 }}} // namespace boost::filesystem::path_traits
 
-#include <boost/config/abi_suffix.hpp> // pops abi_prefix.hpp pragmas
+#include "boost/config/abi_suffix.hpp" // pops abi_prefix.hpp pragmas
 
 #endif  // BOOST_FILESYSTEM_PATH_TRAITS_HPP

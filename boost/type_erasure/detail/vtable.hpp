@@ -13,18 +13,18 @@
 #ifndef BOOST_TYPE_ERASURE_DETAIL_VTABLE_HPP_INCLUDED
 #define BOOST_TYPE_ERASURE_DETAIL_VTABLE_HPP_INCLUDED
 
-#include <boost/config.hpp>
-#include <boost/mpl/at.hpp>
-#include <boost/mpl/size.hpp>
-#include <boost/preprocessor/cat.hpp>
-#include <boost/preprocessor/iteration/iterate.hpp>
-#include <boost/preprocessor/repetition/enum.hpp>
-#include <boost/preprocessor/repetition/enum_params.hpp>
-#include <boost/preprocessor/repetition/enum_trailing.hpp>
-#include <boost/preprocessor/repetition/enum_trailing_params.hpp>
-#include <boost/preprocessor/repetition/repeat.hpp>
-#include <boost/type_erasure/detail/rebind_placeholders.hpp>
-#include <boost/type_erasure/config.hpp>
+#include "boost/config.hpp"
+#include "boost/mpl/at.hpp"
+#include "boost/mpl/size.hpp"
+#include "boost/preprocessor/cat.hpp"
+#include "boost/preprocessor/iteration/iterate.hpp"
+#include "boost/preprocessor/repetition/enum.hpp"
+#include "boost/preprocessor/repetition/enum_params.hpp"
+#include "boost/preprocessor/repetition/enum_trailing.hpp"
+#include "boost/preprocessor/repetition/enum_trailing_params.hpp"
+#include "boost/preprocessor/repetition/repeat.hpp"
+#include "boost/type_erasure/detail/rebind_placeholders.hpp"
+#include "boost/type_erasure/config.hpp"
 
 namespace boost {
 namespace type_erasure {
@@ -200,7 +200,7 @@ struct make_vtable_init
         (::boost::mpl::size<Seq>::value)>::template apply<Seq, Table>::type type;
 };
 
-#define BOOST_PP_FILENAME_1 <boost/type_erasure/detail/vtable.hpp>
+#define BOOST_PP_FILENAME_1 "boost/type_erasure/detail/vtable.hpp"
 #define BOOST_PP_ITERATION_LIMITS (0, BOOST_TYPE_ERASURE_MAX_FUNCTIONS)
 #include BOOST_PP_ITERATE()
 

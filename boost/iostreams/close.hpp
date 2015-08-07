@@ -12,25 +12,25 @@
 # pragma once
 #endif
 
-#include <boost/config.hpp>  // DEDUCED_TYPENAME, MSVC.
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/categories.hpp>
-#include <boost/iostreams/flush.hpp>
-#include <boost/iostreams/detail/adapter/non_blocking_adapter.hpp>
-#include <boost/iostreams/detail/ios.hpp> // BOOST_IOS
-#include <boost/iostreams/detail/select.hpp>
-#include <boost/iostreams/detail/wrap_unwrap.hpp>
-#include <boost/iostreams/operations_fwd.hpp>
-#include <boost/iostreams/traits.hpp>
-#include <boost/mpl/identity.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type_traits/is_integral.hpp>
-#include <boost/type_traits/remove_cv.hpp>
-#include <boost/type_traits/remove_reference.hpp>
+#include "boost/config.hpp"  // DEDUCED_TYPENAME, MSVC.
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/categories.hpp"
+#include "boost/iostreams/flush.hpp"
+#include "boost/iostreams/detail/adapter/non_blocking_adapter.hpp"
+#include "boost/iostreams/detail/ios.hpp" // BOOST_IOS
+#include "boost/iostreams/detail/select.hpp"
+#include "boost/iostreams/detail/wrap_unwrap.hpp"
+#include "boost/iostreams/operations_fwd.hpp"
+#include "boost/iostreams/traits.hpp"
+#include "boost/mpl/identity.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/type_traits/is_convertible.hpp"
+#include "boost/type_traits/is_integral.hpp"
+#include "boost/type_traits/remove_cv.hpp"
+#include "boost/type_traits/remove_reference.hpp"
 
 // Must come last.
-#include <boost/iostreams/detail/config/disable_warnings.hpp>
+#include "boost/iostreams/detail/config/disable_warnings.hpp"
 
 namespace boost { namespace iostreams {
 
@@ -78,7 +78,7 @@ void close_all(T& t, Sink& snk)
 } } // End namespaces iostreams, boost.
 
 #if BOOST_WORKAROUND(BOOST_MSVC, < 1300) //-----------------------------------//
-# include <boost/iostreams/detail/vc6/close.hpp>
+# include "boost/iostreams/detail/vc6/close.hpp"
 #else // #if BOOST_WORKAROUND(BOOST_MSVC, < 1300) //--------------------------//
 
 namespace boost { namespace iostreams {
@@ -254,6 +254,6 @@ struct close_impl<two_sequence> {
 
 #endif // #if BOOST_WORKAROUND(BOOST_MSVC, < 1300) //-------------------------//
 
-#include <boost/iostreams/detail/config/enable_warnings.hpp>
+#include "boost/iostreams/detail/config/enable_warnings.hpp"
 
 #endif // #ifndef BOOST_IOSTREAMS_CLOSE_HPP_INCLUDED

@@ -8,10 +8,10 @@ Copyright (c) 2009-2009: Joachim Faulhaber
 #ifndef BOOST_ICL_DETAIL_MAPPED_REFERENCE_HPP_JOFA_091108
 #define BOOST_ICL_DETAIL_MAPPED_REFERENCE_HPP_JOFA_091108
 
-#include <boost/type_traits/is_const.hpp>
-#include <boost/type_traits/remove_const.hpp>
-#include <boost/mpl/if.hpp>
-#include <boost/icl/type_traits/is_concept_equivalent.hpp>
+#include "boost/type_traits/is_const.hpp"
+#include "boost/type_traits/remove_const.hpp"
+#include "boost/mpl/if.hpp"
+#include "boost/icl/type_traits/is_concept_equivalent.hpp"
 
 namespace boost{namespace icl
 {

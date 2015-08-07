@@ -5,7 +5,7 @@
 
 // See http://www.boost.org/libs/iostreams for documentation.
 
-// Adapted from <boost/config/auto_link.hpp> and from
+// Adapted from "boost/config/auto_link.hpp" and from
 // http://www.boost.org/more/separate_compilation.html, by John Maddock.
 
 #ifndef BOOST_IOSTREAMS_DETAIL_CONFIG_BROKEN_OVERLOAD_RESOLUTION_HPP_INCLUDED
@@ -15,9 +15,9 @@
 # pragma once
 #endif             
 
-#include <boost/config.hpp> // BOOST_MSVC.
-#include <boost/detail/workaround.hpp>
-#include <boost/iostreams/detail/config/gcc.hpp>
+#include "boost/config.hpp" // BOOST_MSVC.
+#include "boost/detail/workaround.hpp"
+#include "boost/iostreams/detail/config/gcc.hpp"
 
 #if !defined(BOOST_IOSTREAMS_BROKEN_OVERLOAD_RESOLUTION)
 # if BOOST_WORKAROUND(__MWERKS__, <= 0x3003) || \

@@ -12,7 +12,7 @@
  /*
   *   LOCATION:    see http://www.boost.org for most recent version.
   *   FILE         object_cache.hpp
-  *   VERSION      see <boost/version.hpp>
+  *   VERSION      see "boost/version.hpp"
   *   DESCRIPTION: Implements a generic object cache.
   */
 
@@ -23,10 +23,10 @@
 #include <list>
 #include <stdexcept>
 #include <string>
-#include <boost/config.hpp>
-#include <boost/shared_ptr.hpp>
+#include "boost/config.hpp"
+#include "boost/shared_ptr.hpp"
 #ifdef BOOST_HAS_THREADS
-#include <boost/regex/pending/static_mutex.hpp>
+#include "boost/regex/pending/static_mutex.hpp"
 #endif
 
 namespace boost{

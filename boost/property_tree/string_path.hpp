@@ -11,16 +11,16 @@
 #ifndef BOOST_PROPERTY_TREE_STRING_PATH_HPP_INCLUDED
 #define BOOST_PROPERTY_TREE_STRING_PATH_HPP_INCLUDED
 
-#include <boost/property_tree/ptree_fwd.hpp>
-#include <boost/property_tree/id_translator.hpp>
-#include <boost/property_tree/exceptions.hpp>
-#include <boost/property_tree/detail/ptree_utils.hpp>
+#include "boost/property_tree/ptree_fwd.hpp"
+#include "boost/property_tree/id_translator.hpp"
+#include "boost/property_tree/exceptions.hpp"
+#include "boost/property_tree/detail/ptree_utils.hpp"
 
-#include <boost/static_assert.hpp>
-#include <boost/assert.hpp>
-#include <boost/type_traits/is_same.hpp>
-#include <boost/optional.hpp>
-#include <boost/throw_exception.hpp>
+#include "boost/static_assert.hpp"
+#include "boost/assert.hpp"
+#include "boost/type_traits/is_same.hpp"
+#include "boost/optional.hpp"
+#include "boost/throw_exception.hpp"
 #include <algorithm>
 #include <string>
 #include <iterator>

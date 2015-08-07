@@ -16,15 +16,15 @@
 #define BOOST_TEST_EXCEPTION_SAFETY_HPP_111705GER
 
 // Boost.Test
-#include <boost/test/detail/config.hpp>
+#include "boost/test/detail/config.hpp"
 
-#include <boost/test/utils/callback.hpp>
-#include <boost/test/utils/basic_cstring/basic_cstring.hpp>
+#include "boost/test/utils/callback.hpp"
+#include "boost/test/utils/basic_cstring/basic_cstring.hpp"
 
 // STL
 #include <memory>
 
-#include <boost/test/detail/suppress_warnings.hpp>
+#include "boost/test/detail/suppress_warnings.hpp"
 
 //____________________________________________________________________________//
 
@@ -76,7 +76,7 @@ void    BOOST_TEST_DECL exception_safety( unit_test::callback0<> const& F,
 
 #ifndef BOOST_ITEST_NO_NEW_OVERLOADS
 
-#include <boost/test/interaction_based.hpp>
+#include "boost/test/interaction_based.hpp"
 
 # ifdef BOOST_NO_STDC_NAMESPACE
 namespace std { using ::isprint; using ::malloc; using ::free; }
@@ -182,6 +182,6 @@ operator delete[]( void* p, std::nothrow_t const& ) throw()
 
 //____________________________________________________________________________//
 
-#include <boost/test/detail/enable_warnings.hpp>
+#include "boost/test/detail/enable_warnings.hpp"
 
 #endif // BOOST_TEST_EXCEPTION_SAFETY_HPP_111705GER

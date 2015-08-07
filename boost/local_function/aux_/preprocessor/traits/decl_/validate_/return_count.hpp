@@ -8,13 +8,13 @@
 #ifndef BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_VALIDATE_RETURN_COUNT_HPP_
 #define BOOST_LOCAL_FUNCTION_AUX_PP_DECL_TRAITS_VALIDATE_RETURN_COUNT_HPP_
 
-#include <boost/local_function/aux_/preprocessor/traits/decl_/set_error.hpp>
-#include <boost/local_function/aux_/preprocessor/traits/decl_returns.hpp>
-#include <boost/preprocessor/control/iif.hpp>
-#include <boost/preprocessor/facilities/empty.hpp>
-#include <boost/preprocessor/tuple/eat.hpp>
-#include <boost/preprocessor/comparison/greater.hpp>
-#include <boost/preprocessor/list/size.hpp>
+#include "boost/local_function/aux_/preprocessor/traits/decl_/set_error.hpp"
+#include "boost/local_function/aux_/preprocessor/traits/decl_returns.hpp"
+#include "boost/preprocessor/control/iif.hpp"
+#include "boost/preprocessor/facilities/empty.hpp"
+#include "boost/preprocessor/tuple/eat.hpp"
+#include "boost/preprocessor/comparison/greater.hpp"
+#include "boost/preprocessor/list/size.hpp"
 
 // PRIVATE //
 

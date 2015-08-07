@@ -12,6 +12,6 @@
 //  See http://www.boost.org/libs/smart_ptr/make_shared.html
 //  for documentation.
 
-#include <boost/smart_ptr/make_shared.hpp>
+#include "boost/smart_ptr/make_shared.hpp"
 
 #endif // #ifndef BOOST_MAKE_SHARED_HPP_INCLUDED

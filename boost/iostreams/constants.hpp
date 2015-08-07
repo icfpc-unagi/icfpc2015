@@ -26,7 +26,7 @@
 # define BOOST_IOSTREAMS_DEFAULT_PBACK_BUFFER_SIZE 4
 #endif
 
-#include <boost/iostreams/detail/ios.hpp>  // streamsize.
+#include "boost/iostreams/detail/ios.hpp"  // streamsize.
 
 namespace boost { namespace iostreams {
 

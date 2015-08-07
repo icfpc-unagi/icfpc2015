@@ -6,15 +6,15 @@
 #ifndef BOOST_THREAD_LOCK_CONCEPTS_HPP
 #define BOOST_THREAD_LOCK_CONCEPTS_HPP
 
-#include <boost/thread/lock_traits.hpp>
-#include <boost/thread/lock_options.hpp>
-#include <boost/thread/lockable_concepts.hpp>
-#include <boost/thread/exceptions.hpp>
-#include <boost/thread/detail/move.hpp>
+#include "boost/thread/lock_traits.hpp"
+#include "boost/thread/lock_options.hpp"
+#include "boost/thread/lockable_concepts.hpp"
+#include "boost/thread/exceptions.hpp"
+#include "boost/thread/detail/move.hpp"
 
-#include <boost/chrono/chrono.hpp>
-#include <boost/concept_check.hpp>
-#include <boost/static_assert.hpp>
+#include "boost/chrono/chrono.hpp"
+#include "boost/concept_check.hpp"
+#include "boost/static_assert.hpp"
 
 namespace boost
 {

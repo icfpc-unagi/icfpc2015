@@ -15,17 +15,17 @@
 
 #include <string>
 
-#include <boost/assert.hpp>
-#include <boost/intrusive_ptr.hpp>
+#include "boost/assert.hpp"
+#include "boost/intrusive_ptr.hpp"
 
-#include <boost/wave/wave_config.hpp>
-#include <boost/spirit/include/support_multi_pass.hpp>
+#include "boost/wave/wave_config.hpp"
+#include "boost/spirit/include/support_multi_pass.hpp"
 
-#include <boost/wave/util/file_position.hpp>
-#include <boost/wave/util/functor_input.hpp>
-#include <boost/wave/cpplexer/cpp_lex_interface_generator.hpp>
+#include "boost/wave/util/file_position.hpp"
+#include "boost/wave/util/functor_input.hpp"
+#include "boost/wave/cpplexer/cpp_lex_interface_generator.hpp"
 
-#include <boost/wave/language_support.hpp>
+#include "boost/wave/language_support.hpp"
 
 // this must occur after all of the includes and before any code appears
 #ifdef BOOST_HAS_ABI_HEADERS

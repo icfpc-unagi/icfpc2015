@@ -9,12 +9,12 @@
 #ifndef BOOST_ALIGN_DETAIL_ADDRESSOF_HPP
 #define BOOST_ALIGN_DETAIL_ADDRESSOF_HPP
 
-#include <boost/config.hpp>
+#include "boost/config.hpp"
 
 #if !defined(BOOST_NO_CXX11_ADDRESSOF)
 #include <memory>
 #else
-#include <boost/core/addressof.hpp>
+#include "boost/core/addressof.hpp"
 #endif
 
 namespace boost {
