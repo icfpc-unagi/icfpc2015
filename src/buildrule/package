@@ -15,5 +15,6 @@ fi
 
 cd "$(dirname "${TARGET}")"
 "${IMOS_PACKAGE}" archive \
-    --command="./${TARGET##*/}" \
+    --pass_working_directory \
+    --command='$(dirname "${BASH_SOURCE}")/bin/'"${TARGET##*/}" \
     --output="${OUTPUT}"
