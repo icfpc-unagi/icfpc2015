@@ -1,0 +1,3 @@
+#!/bin/bash
+
+php "$(dirname "${BASH_SOURCE}")/library/play_icfp2015.php" "$@"

@@ -1,28 +1,3 @@
 #!/bin/bash
 
-source "$(dirname "${BASH_SOURCE}")/bin/imos-variables" || exit 1
-DEFINE_multistring f '' 'File containing JSON encoded input.'
-DEFINE_int t '-1' 'Time limit, in seconds, to produce output.'
-DEFINE_int m '-1' 'Memory limit, in megabytes, to produce output.'
-DEFINE_multistring p '' 'Phrase of power, as quoted string'
-eval "${IMOSH_INIT}"
-
-show_flags() {
-  local file=''
-  CHECK --message='Input files must be given.' [ "${#FLAGS_f[@]}" -ne 0 ]
-  for file in "${FLAGS_f[@]}"; do
-    LOG INFO "Input file: ${file}"
-  done
-  LOG INFO "Time limit: ${FLAGS_t}"
-  LOG INFO "Memory limit: ${FLAGS_m}"
-  if [ "${#FLAGS_p[@]}" -eq 0 ]; then
-    LOG INFO "Phrase of power: N/A"
-  else
-    for power in "${FLAGS_p[@]}"; do
-      LOG INFO "Phrase of power: ${power}"
-    done
-  fi
-}
-show_flags
-
-LOG FATAL 'Not implemented.'
+"$(dirname "${BASH_SOURCE}")/bin/play_icfp2015" "$@"

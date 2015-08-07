@@ -5,7 +5,9 @@ build:
 clean:
 	bazel clean
 
-run: run/problems/problem_0.json
+run:
+	./play_icfp2015 --alsologtostderr -f data/problems/*.json
+.PHONY: run
 
 run/%: data/%
 	./play_icfp2015 --alsologtostderr -f data/$*

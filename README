@@ -4,7 +4,7 @@ This is developed on Ubuntu 14.04.
 
 How to clone:
   sudo apt-get -qqy update
-  sudo apt-get -qqy git
+  sudo apt-get -qqy install git
   git clone https://github.com/imos/icfpc2015
 
 How to install:
