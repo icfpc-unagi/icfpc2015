@@ -22,6 +22,14 @@ b() {
   bazel build -c opt "$@"
 }
 
+r() {
+  unagi-autoremount
+  if [ "$#" -eq 0 ]; then
+    set -- //...
+  fi
+  bazel run -c opt "$@"
+}
+
 t() {
   unagi-autoremount
   if [ "$#" -eq 0 ]; then
