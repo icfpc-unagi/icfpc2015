@@ -8,6 +8,7 @@ cc_library(
         ":data",
         "//base",
         "//boost",
+        "//googleapis:library",
     ],
     linkstatic = 1,
 )
