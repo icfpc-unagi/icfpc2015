@@ -11,7 +11,6 @@ using boost::property_tree::json_parser::read_json;
 int main(int argc, char** argv) {
   base::Init(&argc, &argv);
 
-  for (int i = 0; i < argc; ++i) LOG(INFO) << i << ":::" << argv[i];
   if (argc < 2) {
     LOG(ERROR) << "Usage: " << argv[0] << " <problem.json>";
     return 1;

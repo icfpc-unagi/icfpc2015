@@ -8,10 +8,16 @@
 using namespace std;
 using boost::property_tree::ptree;
 
-typedef pair<int, int> Point; // x, y
+typedef pair<int, int> Point; // x * 2, y
 
 inline Point load_point(const ptree& p) {
-  return Point(p.get<int>("x"), p.get<int>("y"));
+  int x = p.get<int>("x");
+  int y = p.get<int>("y");
+  return Point(x * 2 + y % 2, y);
+}
+
+inline Point point_offset(const Point& p, const Point& offset) {
+  return Point(p.first - offset.first, p.second - offset.second);
 }
 
 struct Field {
@@ -19,34 +25,38 @@ struct Field {
   // x : full
   vector<vector<char>> data;
 
-  Field(int height, int width) { init(height, width); }
-
-  void init(int height, int width) {
+  // Assumes height is aligned to even, width is doubled
+  Field(int height, int width) {
     CHECK_GT(height, 0);
     CHECK_GT(width, 0);
-    data.assign(height, vector<char>(width, '_'));
+    data.assign(height, vector<char>((width + 1) / 2, '_'));
   }
 
   char get(const Point& p) const {
+    CHECK_EQ(p.first % 2, p.second % 2) << "Misaligned access";
     if (p.first < 0 || width() <= p.first || p.second < 0 || height() <= p.second) return '#';
-    return data[p.first][p.second];
+    return data[p.second][p.first / 2];
   }
   void set(const Point& p, char c) {
-    data[p.first][p.second] = c;
+    CHECK_EQ(p.first % 2, p.second % 2) << "Misaligned access";
+    data[p.second][p.first / 2] = c;
   }
   void fill(const vector<Point>& v, char c) {
     for (const auto& i : v) set(i, c);
   }
+  void fill(const vector<Point>& v, Point offset, char c) {
+    for (const auto& i : v) set(point_offset(i, offset), c);
+  }
 
   int height() const { return data.size(); }
-  int width() const { return data[0].size(); }
+  int width() const { return data[0].size() * 2; }
 
   void print(std::ostream& os) const {
     for (int i = 0; i < height(); ++i) {
       int odd = i % 2;
       if (odd) os << " ";
-      for (int j = odd; j < width() * 2; j += 2) {
-        os << data[i][j/2] << " ";
+      for (int j = 0; j < width() / 2; ++j) {
+        os << data[i][j] << " ";
       }
       os << "\n";
     }
@@ -62,6 +72,7 @@ struct Unit {
       members.push_back(load_point(i.second));
     }
     pivot = load_point(p.get_child("pivot"));
+    CHECK_GT(members.size(), 0);
     return true;
   }
 
@@ -86,10 +97,13 @@ struct Unit {
     return e;
   }
   Field make_field() const {
-    int h = bottom_most() - top_most() + 1;
-    int w = right_most() - left_most() + 1;
+    int top = top_most() & ~1;
+    int h = bottom_most() - top + 1;
+    int left = left_most() & ~1;
+    int w = right_most() - left + 1;
     Field f(h, w);
-    f.fill(members, 'o');
+    Point offset(left, top);
+    f.fill(members, offset, 'o');
     return f;
   }
 };
@@ -122,7 +136,7 @@ struct Problem {
     return true;
   }
   Field make_field() const {
-    Field f(height, width);
+    Field f(height, width * 2);
     f.fill(filled, 'x');
     return f;
   }
