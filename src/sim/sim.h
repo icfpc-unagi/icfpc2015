@@ -51,7 +51,7 @@ public:
 
     Field field = problem_->make_field();
     LCG random(solution_->seed);
-    const Unit* unit = &problem_->units[random.next() % problem_->units.size()];
+    Unit unit = problem_->units[random.next() % problem_->units.size()];
     Point control = problem_->spawn(*unit);
     int source = 1;
     int ls_old = 0;
@@ -84,7 +84,15 @@ public:
       } else {
         LOG(FATAL) << "Unrecognized command [ " << s[i] << " ] in solution";
       }
-      // TODO: clear rows when a unit gets locked
+      if (field.test(next_unit.members, next_control)) {
+        // Applies move
+        unit = next_unit;
+        control = next_control;
+      } else {
+        // Rejects move and locks unit
+        field.fill(unit.members, control, 'x');
+        // TODO: Clear rows
+      }
     }
     return score;
   }

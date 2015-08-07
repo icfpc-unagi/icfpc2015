@@ -17,7 +17,7 @@ inline Point load_point(const ptree& p) {
 }
 
 inline Point point_offset(const Point& p, const Point& offset) {
-  return Point(p.first - offset.first, p.second - offset.second);
+  return Point(p.first + offset.first, p.second + offset.second);
 }
 
 struct Field {
@@ -46,6 +46,11 @@ struct Field {
   }
   void fill(const vector<Point>& v, Point offset, char c) {
     for (const auto& i : v) set(point_offset(i, offset), c);
+  }
+  void test(const vector<Point>& v, Point offset) {
+    bool ok = true;
+    for (const auto& i : v) ok = ok && get(point_offset(i, offset)) == '_';
+    return ok;
   }
 
   int height() const { return data.size(); }
@@ -101,7 +106,7 @@ struct Unit {
     int left = left_most() & ~1;
     int w = right_most() - left + 1;
     Field f(h, w);
-    Point offset(left, top);
+    Point offset(-left, -top);
     f.fill(members, offset, 'o');
     return f;
   }
