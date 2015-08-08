@@ -92,7 +92,7 @@ public:
         return 0;
       }
 
-      if (FLAGS_verbose >= 5 || FLAGS_verbose >= 4 && visit.empty()) {
+      if (FLAGS_verbose >= 5 || (FLAGS_verbose >= 4 && visit.empty())) {
         cerr << "\n\n================================\n\n";
         Field overlay = field_;
         overlay.fill(unit.members, control, '?');
