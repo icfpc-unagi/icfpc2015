@@ -97,6 +97,20 @@ unagi-remount() {
   unagi-mount "${1}"
 }
 
+chokudai() {
+  if [ "$#" -ne 1 ]; then
+    echo 'Usage: chokudai json' >&2
+    return 1
+  fi
+  local target="$1"
+  if [ "${target:0:1}" != '/' ]; then
+    target="$(pwd):${target}"
+  fi
+  pushd ~/chokudai
+  r //ICFPC2015/ICFPC2015:chokudai.ar "${target}"
+  popd
+}
+
 for user in "${UNAGI_USERS[@]}"; do
   if [ ! -d "${user}" ]; then
     mkdir -p "${user}"
