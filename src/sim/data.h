@@ -192,8 +192,8 @@ struct Problem {
   Point spawn(const Unit& u) const {
     Point p1 = spawn1(u);
     Point p2 = spawn2(u);
-    CHECK_EQ(p1.first, p2.first);
-    return p1;
+    LOG_IF(ERROR, p1.first != p2.first) << "The spawn location methods 1 and 2 returned different points.";
+    return p2;
   }
   Point spawn2(const Unit& u) const {
     int y = -u.top_most();
