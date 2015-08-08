@@ -68,5 +68,8 @@ sh_test(
     data = [
         ":sim_main",
         "//bin",
+        "//data/chokudai105:chokudai105",
+        "//data/problems:problems",
+        "//data/wata62:wata62",
     ],
 )
