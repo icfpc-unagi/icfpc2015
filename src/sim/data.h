@@ -189,6 +189,12 @@ struct Problem {
     return f;
   }
   // Returns the point relative to the local cordinate system on which the unit spawns.
+  Point spawn(const Unit& u) const {
+    Point p1 = spawn1(u);
+    Point p2 = spawn2(u);
+    CHECK_EQ(p1.first, p2.first);
+    return p1;
+  }
   Point spawn2(const Unit& u) const {
     int y = -u.top_most();
     int x = (width * 2 - u.left_most());
@@ -204,7 +210,7 @@ struct Problem {
       x -= 2;
     }
   }
-  Point spawn(const Unit& u) const {
+  Point spawn1(const Unit& u) const {
     int y = -u.top_most();
     int odd = y & 1;
     int l = div2(u.left_most() + odd);
