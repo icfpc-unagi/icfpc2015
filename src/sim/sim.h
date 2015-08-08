@@ -60,26 +60,37 @@ public:
     string s = solution_->solution;
     googleapis::strrmm(&s, kIgnored);
     for (int i = 0; i < s.size() && source < problem_->length; ++i) {
+      cerr << "\n\n================================\n\n";
+      Field overlay = field;
+      overlay.fill(unit.members, control, '&');
+      overlay.print(cerr);
+
       char c = tolower(s[i]);
       Unit next_unit;
       Point next_control = control;
       if (strchr(kMoveW, c)) {
+        cerr << "Command: move W" << endl;
         next_unit = unit;
         next_control.first -= 2;
       } else if (strchr(kMoveE, c)) {
+        cerr << "Command: move E" << endl;
         next_unit = unit;
         next_control.first += 2;
       } else if (strchr(kMoveSW, c)) {
+        cerr << "Command: move SW" << endl;
         next_unit = unit;
         next_control.first--;
         next_control.second++;
       } else if (strchr(kMoveSE, c)) {
+        cerr << "Command: move SE" << endl;
         next_unit = unit;
         next_control.first++;
         next_control.second++;
       } else if (strchr(kRotateCW, c)) {
+        cerr << "Command: rotate CW" << endl;
         next_unit = unit.rotate_cw();
       } else if (strchr(kRotateCCW, c)) {
+        cerr << "Command: rotate CCW " << endl;
         next_unit = unit.rotate_ccw();
       } else {
         LOG(FATAL) << "Unrecognized command [ " << s[i] << " ] in solution";
@@ -89,6 +100,7 @@ public:
         unit = next_unit;
         control = next_control;
       } else {
+        cerr << "Invalid command; Unit locked" << endl;
         // Rejects move and locks unit
         field.fill(unit.members, control, 'x');
         int size = unit.members.size();
@@ -106,8 +118,6 @@ public:
         // Game ends if the spawn location is not valid
         if (!field.test(unit.members, control)) break;
       }
-      cerr << "\n\n================================\n\n";
-      field.print(cerr);
     }
     // TODO: Calculate power_scores
     return score;

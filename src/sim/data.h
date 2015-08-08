@@ -175,8 +175,10 @@ struct Problem {
   }
   // Returns the point relative to the local cordinate system on which the unit spawns.
   Point spawn(const Unit& u) const {
-    // TODO
-    return Point(width, 0);
+    // TODO: Test?
+    int top = u.top_most();
+    int m = width - u.left_most() / 2 - u.right_most() / 2 - 1;
+    return Point((m & ~1) | (top & 1), -top);
   }
 };
 
