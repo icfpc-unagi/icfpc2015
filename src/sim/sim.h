@@ -20,8 +20,8 @@ const char kRotateCW[] = "dqrvz1";
 const char kRotateCCW[] = "kstuwx";
 const char kIgnored[] = "\t\n\r";
 
-inline char week_hash(const Point& p) {
-  return p.first + (p.second << 4) + (p.second >> 4);
+inline string serialize(const Point& p) {
+  return string(1, p.first).append(1, p.second);
 }
 
 }  // namespace
@@ -73,8 +73,8 @@ public:
         return 0;
       }
 
-      string h(1, week_hash(control));
-      for (const auto& p : unit.members) h += week_hash(p);
+      string h = serialize(control);
+      for (const auto& p : unit.members) h += serialize(p);
       if (!visit.insert(h).second) {
         cerr << "Command error." << endl;
         return 0;
