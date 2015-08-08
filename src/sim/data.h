@@ -141,7 +141,7 @@ struct Unit {
     Unit u;
     u.members.resize(members.size());
     for (int i = 0; i < members.size(); ++i) {
-      u.members[i] = Point((members[i].first - 3 * members[i].second) / 2, (members[i].first + members[i].second) / 2);
+      u.members[i] = Point(div2(members[i].first - 3 * members[i].second), div2(members[i].first + members[i].second));
     }
     sort(u.members.begin(), u.members.end());
     return u;
@@ -150,7 +150,7 @@ struct Unit {
     Unit u;
     u.members.resize(members.size());
     for (int i = 0; i < members.size(); ++i) {
-      u.members[i] = Point((members[i].first + 3 * members[i].second) / 2, (members[i].second - members[i].first) / 2);
+      u.members[i] = Point(div2(members[i].first + 3 * members[i].second), div2(members[i].second - members[i].first));
     }
     sort(u.members.begin(), u.members.end());
     return u;
