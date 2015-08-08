@@ -82,7 +82,10 @@ public:
 
       cerr << "\n\n================================\n\n";
       Field overlay = field;
-      overlay.fill(unit.members, control, '&');
+      overlay.fill(unit.members, control, '?');
+      if (field.contain(control)) {
+        overlay.set(control, overlay.get(control) != '_' ? '&' : '@');
+      }
       overlay.print(cerr);
 
       char c = tolower(s[i]);
