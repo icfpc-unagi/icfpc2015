@@ -91,6 +91,7 @@ struct Unit {
     for (const auto& i : p.get_child("members")) {
       members.push_back(point_offset(load_point(i.second), pivot));
     }
+    sort(members.begin(), members.end());
     CHECK_GT(members.size(), 0);
   }
   int top_most() const {
@@ -130,6 +131,7 @@ struct Unit {
     for (int i = 0; i < members.size(); ++i) {
       u.members[i] = Point((members[i].first - 3* members[i].second) / 2, (members[i].first + 2 * members[i].second) / 2);
     }
+    sort(u.members.begin(), u.members.end());
     return u;
   }
   Unit rotate_ccw() const {
@@ -138,6 +140,7 @@ struct Unit {
     for (int i = 0; i < members.size(); ++i) {
       u.members[i] = Point((members[i].first + 3* members[i].second) / 2, (2 * members[i].second -members[i].first) / 2);
     }
+    sort(u.members.begin(), u.members.end());
     return u;
   }
 };

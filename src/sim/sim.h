@@ -3,6 +3,7 @@
 
 #include <cstring>
 #include <iostream>
+#include <unordered_set>
 #include "base/base.h"
 #include "googleapis/strings/strip.h"
 #include "src/sim/data.h"
@@ -10,6 +11,7 @@
 using namespace std;
 
 namespace {
+
 const char kMoveW[] = "p'!.03";
 const char kMoveE[] = "bcefy2";
 const char kMoveSW[] = "aghij4";
@@ -17,6 +19,11 @@ const char kMoveSE[] = "lmno 5";
 const char kRotateCW[] = "dqrvz1";
 const char kRotateCCW[] = "kstuwx";
 const char kIgnored[] = "\t\n\r";
+
+inline char week_hash(const Point& p) {
+  return p.first + (p.second << 4) + (p.second >> 4);
+}
+
 }  // namespace
 
 class LCG {
@@ -53,6 +60,7 @@ public:
     LCG random(solution_->seed);
     Unit unit = problem_->units[random.next() % problem_->units.size()];
     Point control = problem_->spawn(unit);
+    unordered_set<string> visit;
     int source = 0;
     int ls_old = 0;
     int score = 0;
@@ -60,6 +68,13 @@ public:
     string s = solution_->solution;
     googleapis::strrmm(&s, kIgnored);
     for (int i = 0; i < s.size() && source < problem_->length; ++i) {
+      string h(1, week_hash(control));
+      for (const auto& p : unit.members) h += week_hash(p);
+      if (!visit.insert(h).second) {
+        cerr << "Command error." << endl;
+        return 0;
+      }
+
       cerr << "\n\n================================\n\n";
       Field overlay = field;
       overlay.fill(unit.members, control, '&');
