@@ -22,10 +22,6 @@ const char kRotateCW[] = "dqrvz1";
 const char kRotateCCW[] = "kstuwx";
 const char kIgnored[] = "\t\n\r";
 
-inline string serialize(const Point& p) {
-  return string(1, p.first).append(1, p.second);
-}
-
 }  // namespace
 
 class LCG {
@@ -64,9 +60,8 @@ public:
 
     field_ = problem_->make_field();
     LCG random(solution_->seed);
-    Unit unit = problem_->units[random.next() % problem_->units.size()];
-    Point control = problem_->spawn(unit);
     unordered_set<string> visit;
+    UnitControl control = problem_->source_control(random.next());
     int source = 0;
     int ls_old = 0;
     int score = 0;
@@ -80,14 +75,12 @@ public:
       }
 
       // Game ends if the spawn location is not valid
-      if (!field_.test(unit.members, control)) {
+      if (!control.test(&field_)) {
         if (FLAGS_verbose >= 2) cerr << "Command remaining error. (Dead after placing " << source << "units.)" << endl;
         return -2;
       }
 
-      string h = serialize(control);
-      for (const auto& p : unit.members) h += serialize(point_offset(p, control));
-      if (!visit.insert(h).second) {
+      if (!visit.insert(control.serialize()).second) {
         if (FLAGS_verbose >= 2) cerr << "Command error. (Visited.)" << endl;
         return -3;
       }
@@ -95,53 +88,44 @@ public:
       if (FLAGS_verbose >= 5 || (FLAGS_verbose >= 4 && visit.empty())) {
         cerr << "\n\n================================\n\n";
         Field overlay = field_;
-        overlay.fill(unit.members, control, '?');
-        if (field_.contain(control)) {
-          overlay.set(control, overlay.get(control) != '_' ? '&' : '@');
+        control.fill(&overlay, '?');
+        if (field_.contain(control.loc)) {
+          overlay.set(control.loc, overlay.test(control.loc) ? '@' : '&');
         }
         overlay.print(cerr);
       }
 
       char c = tolower(s[i]);
-      Unit next_unit;
-      Point next_control = control;
+      UnitControl next_control;
       if (FLAGS_verbose >= 3) cerr << "Snippet: " << StringPiece(s, i, 50) << endl;
       if (strchr(kMoveW, c)) {
         if (FLAGS_verbose >= 3) cerr << "Command: move W" << endl;
-        next_unit = unit;
-        next_control.first -= 2;
+        next_control = control.move_w();
       } else if (strchr(kMoveE, c)) {
         if (FLAGS_verbose >= 3) cerr << "Command: move E" << endl;
-        next_unit = unit;
-        next_control.first += 2;
+        next_control = control.move_e();
       } else if (strchr(kMoveSW, c)) {
         if (FLAGS_verbose >= 3) cerr << "Command: move SW" << endl;
-        next_unit = unit;
-        next_control.first--;
-        next_control.second++;
+        next_control = control.move_sw();
       } else if (strchr(kMoveSE, c)) {
         if (FLAGS_verbose >= 3) cerr << "Command: move SE" << endl;
-        next_unit = unit;
-        next_control.first++;
-        next_control.second++;
+        next_control = control.move_se();
       } else if (strchr(kRotateCW, c)) {
         if (FLAGS_verbose >= 3) cerr << "Command: rotate CW" << endl;
-        next_unit = unit.rotate_cw();
+        next_control = control.rotate_cw();
       } else if (strchr(kRotateCCW, c)) {
         if (FLAGS_verbose >= 3) cerr << "Command: rotate CCW " << endl;
-        next_unit = unit.rotate_ccw();
+        next_control = control.rotate_ccw();
       } else {
         LOG(FATAL) << "Unrecognized command [ " << s[i] << " ] in solution";
       }
-      if (field_.test(next_unit.members, next_control)) {
+      if (next_control.test(&field_)) {
         // Applies move
-        unit = next_unit;
         control = next_control;
       } else {
         if (FLAGS_verbose >= 3) cerr << "Invalid command; Unit locked" << endl;
         // Rejects move and locks unit
-        field_.fill(unit.members, control, 'x');
-        int size = unit.members.size();
+        int size = control.fill(&field_, 'x');
         // Clears rows
         int ls = field_.clear_rows();
         // Scoring
@@ -150,8 +134,7 @@ public:
         ls_old = ls;
         score += points + line_bonus;
         // Next source
-        unit = problem_->units[random.next() % problem_->units.size()];
-        control = problem_->spawn(unit);
+        control = problem_->source_control(random.next());
         source++;
         visit.clear();
       }

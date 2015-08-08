@@ -23,6 +23,9 @@ inline Point point_offset(const Point& p, const Point& offset) {
 inline Point point_subtract(const Point& p, const Point& offset) {
   return Point(p.first - offset.first, p.second - offset.second);
 }
+inline string serialize(const Point& p) {
+  return string(1, p.first).append(1, p.second);
+}
 
 inline int div2(int x) {
   return (x % 2 != 0 ? x - 1 : x) / 2;
@@ -62,11 +65,11 @@ struct Field {
   void fill(const vector<Point>& v, Point offset, char c) {
     for (const auto& i : v) set(point_offset(i, offset), c);
   }
+  // Returns if target points are empty.
+  bool test(const Point& p) { return get(p) == '_'; }
   bool test(const vector<Point>& v, Point offset) {
-    for (const auto& i : v)
-      LOG(INFO) << "v: " << i.first << "," << i.second;
     bool ok = true;
-    for (const auto& i : v) ok = ok && get(point_offset(i, offset)) == '_';
+    for (const auto& i : v) ok = ok && test(point_offset(i, offset));
     return ok;
   }
 
@@ -157,6 +160,46 @@ struct Unit {
   }
 };
 
+struct UnitControl {
+  Unit unit;
+  Point loc;
+
+  // Commands
+  UnitControl move_w() const {
+    return UnitControl{unit, Point(loc.first - 2, loc.second)};
+  }
+  UnitControl move_e() const {
+    return UnitControl{unit, Point(loc.first + 2, loc.second)};
+  }
+  UnitControl move_sw() const {
+    return UnitControl{unit, Point(loc.first - 1, loc.second + 1)};
+  }
+  UnitControl move_se() const {
+    return UnitControl{unit, Point(loc.first + 1, loc.second + 1)};
+  }
+  UnitControl rotate_cw() const {
+    return UnitControl{unit.rotate_cw(), loc};
+  }
+  UnitControl rotate_ccw() const {
+    return UnitControl{unit.rotate_ccw(), loc};
+  }
+
+  // Test if all cells empty
+  bool test(Field* field) const {
+    return field->test(unit.members, loc);
+  }
+  // Just returns # of cells
+  int fill(Field* field, char c) const {
+     field->fill(unit.members, loc, c);
+     return unit.members.size();
+  }
+  string serialize() const {
+    string s = ::serialize(loc);
+    for (const auto& p : unit.members) s += ::serialize(p);
+    return s;
+  }
+};
+
 struct Problem {
   int width;
   int height;
@@ -187,6 +230,12 @@ struct Problem {
     Field f(height, width * 2);
     f.fill(filled, 'x');
     return f;
+  }
+  UnitControl source_control(uint32 s) const {
+    UnitControl control;
+    control.unit = units[s % units.size()];
+    control.loc = spawn(control.unit);
+    return control;
   }
   // Returns the point relative to the local cordinate system on which the unit spawns.
   Point spawn(const Unit& u) const {
