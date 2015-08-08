@@ -189,10 +189,25 @@ struct Problem {
     return f;
   }
   // Returns the point relative to the local cordinate system on which the unit spawns.
+  Point spawn2(const Unit& u) const {
+    int y = -u.top_most();
+    int x = (width * 2 - u.left_most());
+    x = (x & ~1) + (y & 1);
+    while (true) {
+      int l = width, r = width;
+      for (int i = 0; i < u.members.size(); ++i) {
+        int z = x + u.members[i].first;
+        l = min(l, div2(z));
+        r = min(r, div2(width * 2 - 1 - z));
+      }
+      if (l <= r) return Point(x, y);
+      x -= 2;
+    }
+  }
   Point spawn(const Unit& u) const {
     int y = -u.top_most();
     int odd = y & 1;
-    int l = div2(u.left_most());
+    int l = div2(u.left_most() + odd);
     int r = div2(width * 2 - 1 - odd - u.right_most());
     int x = odd + ((r - l) & ~1);
     return Point(x, y);

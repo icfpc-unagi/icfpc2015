@@ -241,7 +241,7 @@ TEST(DataTest, EvenSpawnTest) {
     f.print(ss);
 
     EXPECT_EQ(
-        "_ _ x _ x _ \n"
+        "_ x _ x _ _ \n"
         " _ _ _ _ _ _ \n"
         "_ _ _ _ _ _ \n"
         " _ _ _ _ _ _ \n"
@@ -293,4 +293,31 @@ TEST(DataTest, EvenSpawnTest) {
         "_ _ _ _ _ _ \n",
         ss.str());
   }
+}
+
+TEST(DataTest, SpawnTest2) {
+  Problem p;
+  p.width = 10;
+  Unit u;
+  u.members.push_back(Point(1, -1));
+  u.members.push_back(Point(1, 1));
+  EXPECT_EQ(Point(7, 1), p.spawn(u));
+  u.members.push_back(Point(-2, 0));
+  EXPECT_EQ(Point(9, 1), p.spawn(u));
+  u.members.push_back(Point(3, -1));
+  EXPECT_EQ(Point(9, 1), p.spawn(u));
+  u.members.push_back(Point(0, -2));
+  EXPECT_EQ(Point(8, 2), p.spawn(u));
+
+  p.width = 9;
+  u.members.clear();
+  u.members.push_back(Point(1, -1));
+  u.members.push_back(Point(1, 1));
+  EXPECT_EQ(Point(7, 1), p.spawn(u));
+  u.members.push_back(Point(-2, 0));
+  EXPECT_EQ(Point(9, 1), p.spawn(u));
+  u.members.push_back(Point(3, -1));
+  EXPECT_EQ(Point(7, 1), p.spawn(u));
+  u.members.push_back(Point(0, -2));
+  EXPECT_EQ(Point(8, 2), p.spawn(u));
 }
