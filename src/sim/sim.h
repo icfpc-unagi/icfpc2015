@@ -71,12 +71,15 @@ public:
     googleapis::strrmm(&s, kIgnored);
     for (int i = 0; i < s.size(); ++i) {
       if (source >= problem_->length) {
-        if (FLAGS_verbose >= 2) cerr << "Command remaining error." << endl;
+        if (FLAGS_verbose >= 2) cerr << "Command remaining error. (Game cleared.)" << endl;
         return 0;
       }
 
       // Game ends if the spawn location is not valid
-      if (!field.test(unit.members, control)) break;
+      if (!field.test(unit.members, control)) {
+        if (FLAGS_verbose >= 2) cerr << "Command remaining error. (Dead after placing " << source << "units.)" << endl;
+        return 0;
+      }
 
       string h;
       for (const auto& p : unit.members) h += serialize(point_offset(p, control));
