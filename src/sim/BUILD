@@ -34,6 +34,15 @@ cc_library(
 )
 
 cc_test(
+    name = "data_test",
+    srcs = ["data_test.cc"],
+    deps = [
+        ":data",
+        "//base:test_main",
+    ],
+)
+
+cc_test(
     name = "sim_test",
     srcs = ["sim_test.cc"],
     deps = [
@@ -43,11 +52,11 @@ cc_test(
     ],
 )
 
-# sh_test(
-#     name = "integration_test",
-#     srcs = ["integration_test.sh"],
-#     data = [
-#         ":sim_main",
-#         "//bin",
-#     ],
-# )
+sh_test(
+    name = "integration_test",
+    srcs = ["integration_test.sh"],
+    data = [
+        ":sim_main",
+        "//bin",
+    ],
+)

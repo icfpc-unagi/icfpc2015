@@ -44,7 +44,7 @@ struct Field {
     if (!contain(p)) return '#';
     return data[p.second][p.first / 2];
   }
-  bool set(const Point& p, char c) {
+  void set(const Point& p, char c) {
     CHECK_EQ(p.first & 1, p.second & 1) << "Misaligned access";
     CHECK_GE(p.first, 0);
     CHECK_GE(p.second, 0);
