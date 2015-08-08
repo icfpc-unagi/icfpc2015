@@ -290,7 +290,7 @@ TEST(DataTest, EvenSpawnTest) {
         " _ _ _ x _ _ \n"
         "_ _ x _ _ _ \n"
         " _ _ _ _ _ _ \n"
-        "_ _ _ _ _ _ \n"
+        "_ _ _ _ _ _ \n",
         ss.str());
   }
 }
