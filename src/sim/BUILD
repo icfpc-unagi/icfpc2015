@@ -52,11 +52,11 @@ cc_test(
     ],
 )
 
-sh_test(
-    name = "integration_test",
-    srcs = ["integration_test.sh"],
-    data = [
-        ":sim_main",
-        "//bin",
-    ],
-)
+# sh_test(
+#     name = "integration_test",
+#     srcs = ["integration_test.sh"],
+#     data = [
+#         ":sim_main",
+#         "//bin",
+#     ],
+# )
