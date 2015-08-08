@@ -7,7 +7,6 @@
 #include "src/sim/sim.h"
 
 DEFINE_bool(output_score, false, "berobero");
-DEFINE_int32(verbose, 5, "berobero");
 
 using namespace std;
 using boost::property_tree::ptree;

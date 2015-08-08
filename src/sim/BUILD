@@ -52,6 +52,16 @@ cc_test(
     ],
 )
 
+cc_test(
+    name = "hex_sample_test",
+    srcs = ["hex_sample_test.cc"],
+    deps = [
+        ":data",
+        ":sim",
+        "//base:test_main",
+    ],
+)
+
 # sh_test(
 #     name = "integration_test",
 #     srcs = ["integration_test.sh"],

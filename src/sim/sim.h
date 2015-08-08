@@ -49,16 +49,20 @@ private:
   const Problem* const problem_;
   const Solution* const solution_;
 
+ public:
+  Field field_;
+
 public:
   Sim(const Problem& problem, const Solution& solution)
-      : problem_(&problem), solution_(&solution) {
+      : problem_(&problem), solution_(&solution),
+        field_(problem_->make_field()) {
     CHECK_EQ(problem_->id, solution_->id);
   }
 
   int Play() {
     if (FLAGS_verbose >= 2) cerr << "Playing problem " << solution_->id << ", seed:" << solution_->seed << " (" << solution_->tag << ")" << endl;
 
-    Field field = problem_->make_field();
+    field_ = problem_->make_field();
     LCG random(solution_->seed);
     Unit unit = problem_->units[random.next() % problem_->units.size()];
     Point control = problem_->spawn(unit);
@@ -76,7 +80,7 @@ public:
       }
 
       // Game ends if the spawn location is not valid
-      if (!field.test(unit.members, control)) {
+      if (!field_.test(unit.members, control)) {
         if (FLAGS_verbose >= 2) cerr << "Command remaining error. (Dead after placing " << source << "units.)" << endl;
         return 0;
       }
@@ -90,9 +94,9 @@ public:
 
       if (FLAGS_verbose >= 5 || FLAGS_verbose >= 4 && visit.empty()) {
         cerr << "\n\n================================\n\n";
-        Field overlay = field;
+        Field overlay = field_;
         overlay.fill(unit.members, control, '?');
-        if (field.contain(control)) {
+        if (field_.contain(control)) {
           overlay.set(control, overlay.get(control) != '_' ? '&' : '@');
         }
         overlay.print(cerr);
@@ -129,17 +133,17 @@ public:
       } else {
         LOG(FATAL) << "Unrecognized command [ " << s[i] << " ] in solution";
       }
-      if (field.test(next_unit.members, next_control)) {
+      if (field_.test(next_unit.members, next_control)) {
         // Applies move
         unit = next_unit;
         control = next_control;
       } else {
         if (FLAGS_verbose >= 3) cerr << "Invalid command; Unit locked" << endl;
         // Rejects move and locks unit
-        field.fill(unit.members, control, 'x');
+        field_.fill(unit.members, control, 'x');
         int size = unit.members.size();
         // Clears rows
-        int ls = field.clear_rows();
+        int ls = field_.clear_rows();
         // Scoring
         int points = size + 100 * (1 + ls) * ls / 2;
         int line_bonus = max((ls_old - 1) * points / 10, 0);
