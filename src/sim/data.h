@@ -144,7 +144,8 @@ struct Unit {
     Unit u;
     u.members.resize(members.size());
     for (int i = 0; i < members.size(); ++i) {
-      u.members[i] = Point(div2(members[i].first - 3 * members[i].second), div2(members[i].first + members[i].second));
+      u.members[i] = Point((members[i].first - 3 * members[i].second) / 2, (members[i].first + members[i].second) / 2);
+      // (... / 2) is safe, because (...) is always even.
     }
     sort(u.members.begin(), u.members.end());
     return u;
@@ -153,7 +154,8 @@ struct Unit {
     Unit u;
     u.members.resize(members.size());
     for (int i = 0; i < members.size(); ++i) {
-      u.members[i] = Point(div2(members[i].first + 3 * members[i].second), div2(members[i].second - members[i].first));
+      u.members[i] = Point((members[i].first + 3 * members[i].second) / 2, (members[i].second - members[i].first) / 2);
+      // (... / 2) is safe, because (...) is always even.
     }
     sort(u.members.begin(), u.members.end());
     return u;
