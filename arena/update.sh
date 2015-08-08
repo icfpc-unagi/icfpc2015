@@ -27,7 +27,7 @@ run() {
     elif [ "${ai_name%.jar}" != "${ai_name}" ]; then
       if timeout 180s \
           java -cp "${ai}:/mirror/github/src/wata/gson-2.3.1.jar" \
-          Main "${data}" > "${path}.bak"; then
+          Main -f "${data}" > "${path}.bak"; then
         mv "${path}.bak" "${path}"
       else
         rm "${path}.bak"
