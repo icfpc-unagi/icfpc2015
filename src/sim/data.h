@@ -189,7 +189,7 @@ struct Problem {
     int y = -u.top_most();
     int odd = y & 1;
     int l = u.left_most() / 2;
-    int r = (width * 2 - 1 - u.right_most()) / 2;
+    int r = (width * 2 - 1 - odd - u.right_most()) / 2;
     int x = odd + ((r - l) & ~1);
     return Point(x, y);
   }
