@@ -76,20 +76,20 @@ public:
     for (int i = 0; i < s.size(); ++i) {
       if (source >= problem_->length) {
         if (FLAGS_verbose >= 2) cerr << "Command remaining error. (Game cleared.)" << endl;
-        return 0;
+        return -1;
       }
 
       // Game ends if the spawn location is not valid
       if (!field_.test(unit.members, control)) {
         if (FLAGS_verbose >= 2) cerr << "Command remaining error. (Dead after placing " << source << "units.)" << endl;
-        return 0;
+        return -2;
       }
 
       string h;
       for (const auto& p : unit.members) h += serialize(point_offset(p, control));
       if (!visit.insert(h).second) {
         if (FLAGS_verbose >= 2) cerr << "Command error." << endl;
-        return 0;
+        return -3;
       }
 
       if (FLAGS_verbose >= 5 || (FLAGS_verbose >= 4 && visit.empty())) {
