@@ -14,7 +14,8 @@ using System.Net.Http;
 
 class ICFPC2015
 {
-    string version = "chokudAIver0.1.3";
+    string version = "chokudAIver0.3.2";
+    bool debug = true;
 
 
     [DataContract]
@@ -174,15 +175,19 @@ class ICFPC2015
         public int score;
         public int[,] board;
         public string command;
+        public int old_ls;
 
         public int CompareTo(State s)
         {
             return -point.CompareTo(s.point);
         }
 
+        public long hash;
+
         public long gethash()
         {
-            long hash = score;
+            if (hash != 0) return hash;
+            hash = 1;
             for (int i = 0; i < board.GetLength(0); i++)
             {
                 for (int j = 0; j < board.GetLength(1); j++)
@@ -230,6 +235,7 @@ class ICFPC2015
 
     List<State> nowsl;
     List<State> nextsl;
+    Dictionary<long, int> predic;
     Dictionary<long, int> dic;
 
 
@@ -315,6 +321,10 @@ class ICFPC2015
             firststate.board = new int[WW, H];
             firststate.command = "";
             firststate.score = 0;
+            firststate.old_ls = 0;
+            
+            dic = new Dictionary<long, int>();
+            dic[0] = 0;
             foreach (var item in d.filled)
             {
                 firststate.board[item.x, item.y] = 1;
@@ -323,13 +333,14 @@ class ICFPC2015
             nowsl.Add(firststate);
             beamSearch();
             nowsl.Sort();
-            if (nowsl.Count != 0) beststate = nowsl[0];
-            string ret = basestring + beststate.command;
+            string ret = beststring;
             Output rr = new Output();
             rr.seed = seed;
             rr.problemId = d.id;
-            rr.tag = version;
+            rr.tag = version + '@' + bestscore;
             rr.solution = ret;
+
+            Console.Error.WriteLine(d.id + " " + seed + ": " + bestscore);
 
             MemoryStream ms = new MemoryStream();
             var serializer2 = new DataContractJsonSerializer(typeof(Output));
@@ -353,14 +364,20 @@ class ICFPC2015
     int presamestring;
     int samestring;
     StringBuilder basestring;
+    int bestscore;
+    string beststring;
 
     void beamSearch()
     {
         presamestring = samestring = 0;
         basestring = new StringBuilder();
 
+        beststring = "";
+        bestscore = 0;
+
         for (int t = 0; t < d.sourceLength; t++)
         {
+            predic = dic;
             dic = new Dictionary<long, int>();
             int nextunit = source[t];
             var U = d.units[nextunit];
@@ -370,10 +387,24 @@ class ICFPC2015
             nowsl.Sort();
 
             nextsl = new List<State>();
-            int firstwidth = 20;
+            int firstwidth = 10000000 / W / H / d.sourceLength / d.sourceSeeds.Length * 500 / W / H;
+            if (firstwidth < 3) firstwidth = 3;
             int beamwidth = firstwidth;
             foreach (var nowstate in nowsl)
             {
+                int minY = H - 1;
+                for (int i = 0; i < WW; i++)
+                {
+                    for (int j = 0; j < H; j++)
+                    {
+                        if (nowstate.board[i, j] == 1)
+                        {
+                            minY = Math.Min(minY, j);
+                        }
+                    }
+                }
+                if (predic[nowstate.hash] > nowstate.score) continue;
+
                 beamwidth--;
                 if (beamwidth < 0) break;
 
@@ -382,7 +413,6 @@ class ICFPC2015
                     samestring = nowstate.command.Length;
 
                     beststate = nowstate;
-                    bool debug = false;
                     if (debug)
                     {
                         Console.Error.WriteLine(t + " " + nowstate.score + " " + nowstate.point);
@@ -516,7 +546,10 @@ class ICFPC2015
                         q.Enqueue(next);
                     }
 
-                    if (stopmove != (1 << 4) - 1)
+                    int lowy = getLowY(U, nowstate, cx, cy, p);
+
+                    //Console.Error.WriteLine(lowy + " " + minY);
+                    if (stopmove != (1 << 4) - 1 && lowy >= minY - 1)
                     {
                         //終了処理
                         int nextmove = 0;
@@ -552,7 +585,7 @@ class ICFPC2015
                                 {
                                     nextstate.board[j, i] = 0;
                                 }
-                                for (int k = i - 1; k > 0; k--)
+                                for (int k = i - 1; k >= 0; k--)
                                 {
                                     for (int j = 0; j < WW; j++)
                                     {
@@ -566,37 +599,93 @@ class ICFPC2015
                             }
                         }
 
-                        nextstate.score = nowstate.score + 50 * ls * (ls + 1) + U.members.Length;
-                        long hash = nextstate.gethash();
-                        if (dic.ContainsKey(hash)) continue;
+                        int addscore = 50 * ls * (ls + 1);
+                        if (nowstate.old_ls >= 2)
+                        {
+                            addscore *= (9 + nowstate.old_ls);
+                            addscore /= 10;
+                        }
 
+                        nextstate.score = nowstate.score + addscore + U.members.Length;
+                        nextstate.old_ls = ls;
+                        long hash = nextstate.gethash();
+                        if (dic.ContainsKey(hash) && dic[hash] <= nextstate.score) continue;
+                        dic[hash] = nextstate.score;
+                             
                         //pointの評価関数をかく！！！！
                         nextstate.point = nextstate.score * 100;
                         for (int i = 0; i < H; i++)
                         {
                             for (int j = 0; j < WW; j++)
                             {
-                                if (nextstate.board[j, i] == 1)
+                                if (i % 2 != j % 2) continue;
+                                if (nextstate.board[j, i] == 0)
                                 {
+                                    if (i != 0)
+                                    {
+                                        int myon = 0;
+                                        for (int k = -1; k <= 1; k += 2)
+                                        {
+                                            int tx = j + k;
+                                            int ty = i - 1;
+                                            //if (!ok(tx, ty)) continue;
+                                            if (ok(tx, ty) && nextstate.board[tx, ty] == 1)
+                                            {
+                                                nextstate.point -= (H - i) * 1;
+                                            }
+                                            else myon++;
+
+                                        }
+                                        if (myon == 0)
+                                        {
+                                            nextstate.point -= (H - i) * 3;
+                                        }
+                                        //nextstate.point -= (H - i) * (H - i);
+                                    }
+                                }
+                                else
+                                {
+                                    //nextstate.point -= (H - i);
                                     nextstate.point -= (H - i) * (H - i);
                                 }
                             }
                         }
+                        nextstate.point += r.Next(30);
                         nextsl.Add(nextstate);
+
+                        if (nextstate.score > bestscore)
+                        {
+                            bestscore = nextstate.score;
+                            beststring = basestring + nextstate.command;
+
+                        }
                     }
                 }
 
             }
             nowsl = nextsl;
-            if (nowsl.Count != 0)
+            if (nowsl.Count != 0 && samestring != 0)
             {
                 basestring.Append(nowsl[0].command.Substring(0, samestring));
                 foreach (var item in nowsl)
                 {
                     item.command = item.command.Substring(samestring);
                 }
+                beststate.command = beststate.command.Substring(samestring);
             }
         }
+    }
+
+    int getLowY(Unit U, State nowstate, int ncx, int ncy, int np)
+    {
+        int ret = 0;
+        for (int i = 0; i < U.members.Length; i++)
+        {
+            int my = U.allmember[i, np].y;
+            my += ncy;
+            ret = Math.Max(my, ret);
+        }
+        return ret;
     }
 
     bool isSettable(Unit U, State nowstate, int ncx, int ncy, int np)
