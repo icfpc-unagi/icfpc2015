@@ -75,8 +75,8 @@ public:
         return 0;
       }
 
-      string h = serialize(control);
-      for (const auto& p : unit.members) h += serialize(p);
+      string h;
+      for (const auto& p : unit.members) h += serialize(point_offset(p, control));
       if (!visit.insert(h).second) {
         if (FLAGS_verbose >= 2) cerr << "Command error." << endl;
         return 0;
