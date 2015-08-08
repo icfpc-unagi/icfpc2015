@@ -98,17 +98,29 @@ unagi-remount() {
 }
 
 chokudai() {
-  if [ "$#" -ne 1 ]; then
-    echo 'Usage: chokudai json' >&2
+  if [ "$#" -lt 2 ]; then
+    echo 'Usage: chokudai output_dir input.json [...]' >&2
     return 1
   fi
-  local target="$1"
-  if [ "${target:0:1}" != '/' ]; then
-    target="$(pwd)/${target}"
+  local output_directory="$1"; shift
+  if [ ! -d "${output_directory}" ]; then
+    echo "No such directory: ${output_directory}" >&2
   fi
+  local cwd="$(pwd)"
   pushd ~/chokudai
-  r //ICFPC2015/ICFPC2015:chokudai.ar "${target}"
+  b //ICFPC2015/ICFPC2015:chokudai.ar
   popd
+
+  local input=''
+  killall mono || true
+  for input in "$@"; do
+    if [ "${input:0:1}" != '/' ]; then
+      input="${cwd}/${input}"
+    fi
+    ~/chokudai/bazel-genfiles/ICFPC2015/ICFPC2015/chokudai.ar "${input}" \
+        > "${output_directory}/${input##*/}" 2>/dev/null &
+  done
+  wait
 }
 
 for user in "${UNAGI_USERS[@]}"; do
