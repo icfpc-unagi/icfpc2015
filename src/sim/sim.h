@@ -71,7 +71,7 @@ public:
     googleapis::strrmm(&s, kIgnored);
     for (int i = 0; i < s.size(); ++i) {
       if (source >= problem_->length) {
-      if (FLAGS_verbose >= 2) cerr << "Command remaining error." << endl;
+        if (FLAGS_verbose >= 2) cerr << "Command remaining error." << endl;
         return 0;
       }
 
@@ -144,10 +144,7 @@ public:
         source++;
         visit.clear();
         // Game ends if the spawn location is not valid
-        if (!field.test(unit.members, control)) {
-          if (FLAGS_verbose >= 2) cerr << "Spawn location is not valid." << endl;
-          return 0;
-        }
+        if (!field.test(unit.members, control)) continue;
       }
     }
     // TODO: Calculate power_scores
