@@ -54,7 +54,7 @@ public:
   }
 
   int Play() {
-    cout << "Playing problem " << solution_->id << ", seed:" << solution_->seed << " (" << solution_->tag << ")" << endl;
+    cerr << "Playing problem " << solution_->id << ", seed:" << solution_->seed << " (" << solution_->tag << ")" << endl;
 
     Field field = problem_->make_field();
     LCG random(solution_->seed);

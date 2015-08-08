@@ -6,6 +6,8 @@
 #include "src/sim/data.h"
 #include "src/sim/sim.h"
 
+DEFINE_bool(output_score, true, "berobero");
+
 using namespace std;
 using boost::property_tree::ptree;
 using boost::property_tree::json_parser::read_json;
@@ -33,18 +35,18 @@ int main(int argc, char** argv) {
   problem.load(read_ptree(argv[1]));
 
   // Print out problem information
-  cout << "Problem: " << problem.id << " (" << problem.width << "x" << problem.height << ")\nSeeds: ";
+  cerr << "Problem: " << problem.id << " (" << problem.width << "x" << problem.height << ")\nSeeds: ";
   for (int i = 0; i < problem.seeds.size(); ++i) {
-    cout << problem.seeds[i] << " ";
+    cerr << problem.seeds[i] << " ";
   }
-  cout << "\nField:\n";
+  cerr << "\nField:\n";
   Field field = problem.make_field();
-  field.print(cout);
+  field.print(cerr);
 
   for (int i = 0; i < problem.units.size(); ++i) {
-    cout << "Unit " << i << ":\n";
+    cerr << "Unit " << i << ":\n";
     Field sample = problem.units[i].make_field();
-    sample.print(cout);
+    sample.print(cerr);
   }
 
   if (argc < 3) {
@@ -61,7 +63,8 @@ int main(int argc, char** argv) {
 
     Sim sim(problem, s);
     int score = sim.Play();
-    cout << "Score = " << score << endl;
+    cerr << "Score = " << score << endl;
+    if (FLAGS_output_score) cout << score << endl;
   }
 
   LOG_IF(ERROR, !found) << "Output contain no solution for problem " << problem.id;
