@@ -13,6 +13,15 @@ cc_library(
     linkstatic = 1,
 )
 
+cc_binary(
+    name = "sim_main",
+    srcs = ["sim_main.cc"],
+    deps = [
+        ":data",
+        ":sim",
+    ],
+)
+
 cc_library(
     name = "data",
     srcs = ["data.cc"],
