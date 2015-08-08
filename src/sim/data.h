@@ -24,6 +24,10 @@ inline Point point_subtract(const Point& p, const Point& offset) {
   return Point(p.first - offset.first, p.second - offset.second);
 }
 
+inline int div2(int x) {
+  return (x % 2 != 0 ? x - 1 : x) / 2;
+}
+
 struct Field {
   // _ : empty
   // x : full
@@ -188,8 +192,8 @@ struct Problem {
   Point spawn(const Unit& u) const {
     int y = -u.top_most();
     int odd = y & 1;
-    int l = u.left_most() / 2;
-    int r = (width * 2 - 1 - odd - u.right_most()) / 2;
+    int l = div2(u.left_most());
+    int r = div2(width * 2 - 1 - odd - u.right_most());
     int x = odd + ((r - l) & ~1);
     return Point(x, y);
   }

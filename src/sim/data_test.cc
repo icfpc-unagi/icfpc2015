@@ -124,8 +124,7 @@ TEST(DataTest, SpawnTest) {
   p.load(data);
 
   {
-    Field f(5, 5);
-    f = p.make_field();
+    Field f = p.make_field();
     f.fill(p.units[0].members, p.spawn(p.units[0]), 'x');
     std::ostrstream ss;
     f.print(ss);
@@ -140,8 +139,7 @@ TEST(DataTest, SpawnTest) {
   }
 
   {
-    Field f(5, 5);
-    f = p.make_field();
+    Field f = p.make_field();
     f.fill(p.units[1].members, p.spawn(p.units[1]), 'x');
     std::ostrstream ss;
     f.print(ss);
@@ -156,24 +154,22 @@ TEST(DataTest, SpawnTest) {
   }
 
   {
-    Field f(5, 5);
-    f = p.make_field();
+    Field f = p.make_field();
     f.fill(p.units[2].members, p.spawn(p.units[2]), 'x');
     std::ostrstream ss;
     f.print(ss);
 
     EXPECT_EQ(
-        "_ _ x _ _ \n"
-        " x _ _ _ _ \n"
-        "_ _ x _ _ \n"
+        "_ _ _ x _ \n"
+        " _ x _ _ _ \n"
+        "_ _ _ x _ \n"
         " _ _ _ _ _ \n"
         "_ _ _ _ _ \n",
         string(ss.str()));
   }
 
   {
-    Field f(5, 5);
-    f = p.make_field();
+    Field f = p.make_field();
     f.fill(p.units[3].members, p.spawn(p.units[3]), 'x');
     std::ostrstream ss;
     f.print(ss);
