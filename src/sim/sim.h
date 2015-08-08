@@ -6,9 +6,11 @@
 #include <unordered_set>
 #include "base/base.h"
 #include "googleapis/strings/strip.h"
+#include "googleapis/strings/util.h"
 #include "src/sim/data.h"
 
 DECLARE_int32(verbose);
+DECLARE_bool(include_power_score);
 
 using namespace std;
 
@@ -21,6 +23,14 @@ const char kMoveSE[] = "lmno 5";
 const char kRotateCW[] = "dqrvz1";
 const char kRotateCCW[] = "kstuwx";
 const char kIgnored[] = "\t\n\r";
+
+// TODO: Take from flag
+const char* kPhrases[] = {
+  "Ei!",
+  "Ia! Ia!",
+  "R'lyeh",
+  "bap",
+};
 
 }  // namespace
 
@@ -138,9 +148,21 @@ public:
         source++;
         visit.clear();
       }
+      if (FLAGS_verbose >= 2) cerr << "Move Score = " << score << endl;
     }
-    // TODO: Calculate power_scores
+    int power_score = PowerScore(s);
+    if (FLAGS_verbose >= 2) cerr << "Power Score = " << power_score << endl;
+    if (FLAGS_include_power_score) score += power_score;
     return score;
+  }
+
+  static int PowerScore(const StringPiece sp) {
+    int score = 0;
+    // TODO: make this faster
+    for (int i = 0; i < ARRAYSIZE(kPhrases); ++i) {
+      int reps = CountSubstring(sp, kPhrases[i]);
+      if (reps > 0) score += 2 * strlen(kPhrases[i]) * reps + 300;
+    }
   }
 };
 

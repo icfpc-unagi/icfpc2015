@@ -65,7 +65,6 @@ int main(int argc, char** argv) {
 
     Sim sim(problem, s);
     int score = sim.Play();
-    if (FLAGS_verbose >= 2) cerr << "Score = " << score << endl;
     if (FLAGS_output_score) cout << score << endl;
   }
 
