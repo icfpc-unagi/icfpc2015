@@ -144,7 +144,10 @@ public:
         source++;
         visit.clear();
         // Game ends if the spawn location is not valid
-        if (!field.test(unit.members, control)) break;
+        if (!field.test(unit.members, control)) {
+          if (FLAGS_verbose >= 2) cerr << "Spawn location is not valid." << endl;
+          return 0;
+        }
       }
     }
     // TODO: Calculate power_scores
