@@ -84,3 +84,106 @@ TEST(DataTest, ReadFieldTest) {
       u.members,
       testing::ElementsAre(Point(1, 1)));
 }
+
+TEST(DataTest, SpawnTest) {
+  std::istrstream is(R"(
+      {
+        "height": 5,
+        "width": 5,
+        "sourceSeeds": [0],
+        "units": [
+          {
+            "members": [
+              {"x":0,"y":0},
+              {"x":2,"y":0}],
+            "pivot":{"x":1,"y":5}
+          }, {
+            "members":[
+              {"x":0,"y":0},
+              {"x":0,"y":2}],
+            "pivot":{"x":0,"y":6}
+          }, {
+            "members":[
+              {"x":2,"y":0},
+              {"x":0,"y":1},
+              {"x":2,"y":2}],
+            "pivot":{"x":1,"y":6}
+          }, {
+            "members":[
+              {"x":0,"y":0},
+              {"x":1,"y":1},
+              {"x":0,"y":2}],
+            "pivot":{"x":0,"y":6}
+          }],
+          "id":20,
+          "filled":[],
+          "sourceLength":100})");
+  ptree data;
+  read_json(is, data);
+  Problem p;
+  p.load(data);
+
+  {
+    Field f(5, 5);
+    f = p.make_field();
+    f.fill(p.units[0].members, p.spawn(p.units[0]), 'x');
+    std::ostrstream ss;
+    f.print(ss);
+
+    EXPECT_EQ(
+        "_ x _ x _ \n"
+        " _ _ _ _ _ \n"
+        "_ _ _ _ _ \n"
+        " _ _ _ _ _ \n"
+        "_ _ _ _ _ \n",
+        string(ss.str()));
+  }
+
+  {
+    Field f(5, 5);
+    f = p.make_field();
+    f.fill(p.units[1].members, p.spawn(p.units[1]), 'x');
+    std::ostrstream ss;
+    f.print(ss);
+
+    EXPECT_EQ(
+        "_ _ x _ _ \n"
+        " _ _ _ _ _ \n"
+        "_ _ x _ _ \n"
+        " _ _ _ _ _ \n"
+        "_ _ _ _ _ \n",
+        string(ss.str()));
+  }
+
+  {
+    Field f(5, 5);
+    f = p.make_field();
+    f.fill(p.units[2].members, p.spawn(p.units[2]), 'x');
+    std::ostrstream ss;
+    f.print(ss);
+
+    EXPECT_EQ(
+        "_ _ x _ _ \n"
+        " x _ _ _ _ \n"
+        "_ _ x _ _ \n"
+        " _ _ _ _ _ \n"
+        "_ _ _ _ _ \n",
+        string(ss.str()));
+  }
+
+  {
+    Field f(5, 5);
+    f = p.make_field();
+    f.fill(p.units[3].members, p.spawn(p.units[3]), 'x');
+    std::ostrstream ss;
+    f.print(ss);
+
+    EXPECT_EQ(
+        "_ x _ _ _ \n"
+        " _ _ x _ _ \n"
+        "_ x _ _ _ \n"
+        " _ _ _ _ _ \n"
+        "_ _ _ _ _ \n",
+        string(ss.str()));
+  }
+}
