@@ -67,7 +67,12 @@ public:
 
     string s = solution_->solution;
     googleapis::strrmm(&s, kIgnored);
-    for (int i = 0; i < s.size() && source < problem_->length; ++i) {
+    for (int i = 0; i < s.size(); ++i) {
+      if (source >= problem_->length) {
+        cerr << "Command remaining error." << endl;
+        return 0;
+      }
+
       string h(1, week_hash(control));
       for (const auto& p : unit.members) h += week_hash(p);
       if (!visit.insert(h).second) {
