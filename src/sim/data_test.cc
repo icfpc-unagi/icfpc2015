@@ -1,4 +1,4 @@
-#include <strstream>
+#include <sstream>
 
 #include "base/test.h"
 #include "src/sim/data.h"
@@ -9,7 +9,7 @@ using boost::property_tree::json_parser::read_json;
 using boost::property_tree::ptree;
 
 TEST(DataTest, ReadFieldTest) {
-  std::istrstream is(R"(
+  std::istringstream is(R"(
       {
         "members":[{"x":2,"y":2}],
         "pivot":{"x":1,"y":1}
@@ -86,7 +86,7 @@ TEST(DataTest, ReadFieldTest) {
 }
 
 TEST(DataTest, SpawnTest) {
-  std::istrstream is(R"(
+  std::istringstream is(R"(
       {
         "height": 5,
         "width": 5,
@@ -126,7 +126,7 @@ TEST(DataTest, SpawnTest) {
   {
     Field f = p.make_field();
     f.fill(p.units[0].members, p.spawn(p.units[0]), 'x');
-    std::ostrstream ss;
+    std::ostringstream ss;
     f.print(ss);
 
     EXPECT_EQ(
@@ -135,13 +135,13 @@ TEST(DataTest, SpawnTest) {
         "_ _ _ _ _ \n"
         " _ _ _ _ _ \n"
         "_ _ _ _ _ \n",
-        string(ss.str()));
+        ss.str());
   }
 
   {
     Field f = p.make_field();
     f.fill(p.units[1].members, p.spawn(p.units[1]), 'x');
-    std::ostrstream ss;
+    std::ostringstream ss;
     f.print(ss);
 
     EXPECT_EQ(
@@ -150,13 +150,13 @@ TEST(DataTest, SpawnTest) {
         "_ _ x _ _ \n"
         " _ _ _ _ _ \n"
         "_ _ _ _ _ \n",
-        string(ss.str()));
+        ss.str());
   }
 
   {
     Field f = p.make_field();
     f.fill(p.units[2].members, p.spawn(p.units[2]), 'x');
-    std::ostrstream ss;
+    std::ostringstream ss;
     f.print(ss);
 
     EXPECT_EQ(
@@ -165,13 +165,13 @@ TEST(DataTest, SpawnTest) {
         "_ _ _ x _ \n"
         " _ _ _ _ _ \n"
         "_ _ _ _ _ \n",
-        string(ss.str()));
+        ss.str());
   }
 
   {
     Field f = p.make_field();
     f.fill(p.units[3].members, p.spawn(p.units[3]), 'x');
-    std::ostrstream ss;
+    std::ostringstream ss;
     f.print(ss);
 
     EXPECT_EQ(
@@ -180,6 +180,6 @@ TEST(DataTest, SpawnTest) {
         "_ x _ _ _ \n"
         " _ _ _ _ _ \n"
         "_ _ _ _ _ \n",
-        string(ss.str()));
+        ss.str());
   }
 }

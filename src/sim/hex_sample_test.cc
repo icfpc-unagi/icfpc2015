@@ -1,4 +1,4 @@
-#include <strstream>
+#include <sstream>
 
 #include "base/test.h"
 #include "src/sim/data.h"
@@ -10,7 +10,8 @@ using boost::property_tree::json_parser::read_json;
 using boost::property_tree::ptree;
 
 TEST(HexSampleTest, Simulate) {
-  std::istrstream is(R"(
+  std::stringstream ss1;
+  ss1 << (R"(
       {
         "height":10,
         "width":10,
@@ -36,27 +37,28 @@ TEST(HexSampleTest, Simulate) {
         "filled":[],
         "sourceLength":150})");
   ptree data;
-  read_json(is, data);
+  read_json(ss1, data);
 
   Problem p;
   p.load(data);
 
-  std::istrstream is2(R"(
+  std::stringstream ss2;
+  ss2 << R"(
       {
         "problemId": 6,
         "seed": 0,
         "tag": "sample play",
         "solution": "iiiiiiimimiiiiiimmimiiiimimimmimimimimmeemmimimiimmmmimmimiimimimmimmimeeemmmimimmimeeemiimiimimimiiiipimiimimmmmeemimeemimimimmmmemimmimmmiiimmmiiipiimiiippiimmmeemimiipimmimmipppimmimeemeemimiieemimmmm"
-      })");
-  read_json(is2, data);
+      })";
+  read_json(ss2, data);
   Solution s;
   s.load(data);
 
   Sim sim(p, s);
   EXPECT_EQ(61, sim.Play());
 
-  std::ostrstream ss;
-  sim.field_.print(ss);
+  std::stringstream ss3;
+  sim.field_.print(ss3);
 
   EXPECT_EQ(
       "_ _ _ _ x x _ _ _ _ \n"
@@ -69,5 +71,5 @@ TEST(HexSampleTest, Simulate) {
       " x _ x x x x x x x _ \n"
       "x _ x x x x x x x _ \n"
       " x x x _ x x x x x _ \n",
-      string(ss.str()));
+      ss3.str());
 }
