@@ -8,6 +8,8 @@
 #include "googleapis/strings/strip.h"
 #include "src/sim/data.h"
 
+DECLARE_int32(verbose);
+
 using namespace std;
 
 namespace {
@@ -54,7 +56,7 @@ public:
   }
 
   int Play() {
-    cerr << "Playing problem " << solution_->id << ", seed:" << solution_->seed << " (" << solution_->tag << ")" << endl;
+    if (FLAGS_verbose >= 2) cerr << "Playing problem " << solution_->id << ", seed:" << solution_->seed << " (" << solution_->tag << ")" << endl;
 
     Field field = problem_->make_field();
     LCG random(solution_->seed);
@@ -69,51 +71,53 @@ public:
     googleapis::strrmm(&s, kIgnored);
     for (int i = 0; i < s.size(); ++i) {
       if (source >= problem_->length) {
-        cerr << "Command remaining error." << endl;
+      if (FLAGS_verbose >= 2) cerr << "Command remaining error." << endl;
         return 0;
       }
 
       string h = serialize(control);
       for (const auto& p : unit.members) h += serialize(p);
       if (!visit.insert(h).second) {
-        cerr << "Command error." << endl;
+        if (FLAGS_verbose >= 2) cerr << "Command error." << endl;
         return 0;
       }
 
-      cerr << "\n\n================================\n\n";
-      Field overlay = field;
-      overlay.fill(unit.members, control, '?');
-      if (field.contain(control)) {
-        overlay.set(control, overlay.get(control) != '_' ? '&' : '@');
+      if (FLAGS_verbose >= 5) {
+        cerr << "\n\n================================\n\n";
+        Field overlay = field;
+        overlay.fill(unit.members, control, '?');
+        if (field.contain(control)) {
+          overlay.set(control, overlay.get(control) != '_' ? '&' : '@');
+        }
+        overlay.print(cerr);
       }
-      overlay.print(cerr);
 
       char c = tolower(s[i]);
       Unit next_unit;
       Point next_control = control;
       if (strchr(kMoveW, c)) {
-        cerr << "Command: move W" << endl;
+        if (FLAGS_verbose >= 3) cerr << "Command: move W" << endl;
         next_unit = unit;
         next_control.first -= 2;
       } else if (strchr(kMoveE, c)) {
-        cerr << "Command: move E" << endl;
+        if (FLAGS_verbose >= 3) cerr << "Command: move E" << endl;
         next_unit = unit;
         next_control.first += 2;
       } else if (strchr(kMoveSW, c)) {
-        cerr << "Command: move SW" << endl;
+        if (FLAGS_verbose >= 3) cerr << "Command: move SW" << endl;
         next_unit = unit;
         next_control.first--;
         next_control.second++;
       } else if (strchr(kMoveSE, c)) {
-        cerr << "Command: move SE" << endl;
+        if (FLAGS_verbose >= 3) cerr << "Command: move SE" << endl;
         next_unit = unit;
         next_control.first++;
         next_control.second++;
       } else if (strchr(kRotateCW, c)) {
-        cerr << "Command: rotate CW" << endl;
+        if (FLAGS_verbose >= 3) cerr << "Command: rotate CW" << endl;
         next_unit = unit.rotate_cw();
       } else if (strchr(kRotateCCW, c)) {
-        cerr << "Command: rotate CCW " << endl;
+        if (FLAGS_verbose >= 3) cerr << "Command: rotate CCW " << endl;
         next_unit = unit.rotate_ccw();
       } else {
         LOG(FATAL) << "Unrecognized command [ " << s[i] << " ] in solution";
@@ -123,7 +127,7 @@ public:
         unit = next_unit;
         control = next_control;
       } else {
-        cerr << "Invalid command; Unit locked" << endl;
+        if (FLAGS_verbose >= 3) cerr << "Invalid command; Unit locked" << endl;
         // Rejects move and locks unit
         field.fill(unit.members, control, 'x');
         int size = unit.members.size();

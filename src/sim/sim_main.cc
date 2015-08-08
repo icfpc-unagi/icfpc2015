@@ -6,7 +6,8 @@
 #include "src/sim/data.h"
 #include "src/sim/sim.h"
 
-DEFINE_bool(output_score, true, "berobero");
+DEFINE_bool(output_score, false, "berobero");
+DEFINE_int32(verbose, 5, "berobero");
 
 using namespace std;
 using boost::property_tree::ptree;
@@ -35,18 +36,20 @@ int main(int argc, char** argv) {
   problem.load(read_ptree(argv[1]));
 
   // Print out problem information
-  cerr << "Problem: " << problem.id << " (" << problem.width << "x" << problem.height << ")\nSeeds: ";
-  for (int i = 0; i < problem.seeds.size(); ++i) {
-    cerr << problem.seeds[i] << " ";
+  if (FLAGS_verbose >= 2) {
+    cerr << "Problem: " << problem.id << " (" << problem.width << "x" << problem.height << ")\nSeeds: ";
+    for (int i = 0; i < problem.seeds.size(); ++i) {
+      cerr << problem.seeds[i] << " ";
+    }
+    cerr << "\nField:\n";
+    problem.make_field().print(cerr);
   }
-  cerr << "\nField:\n";
-  Field field = problem.make_field();
-  field.print(cerr);
 
-  for (int i = 0; i < problem.units.size(); ++i) {
-    cerr << "Unit " << i << ":\n";
-    Field sample = problem.units[i].make_field();
-    sample.print(cerr);
+  if (FLAGS_verbose >= 3) {
+    for (int i = 0; i < problem.units.size(); ++i) {
+      cerr << "Unit " << i << ":\n";
+      problem.units[i].make_field().print(cerr);
+    }
   }
 
   if (argc < 3) {
@@ -63,7 +66,7 @@ int main(int argc, char** argv) {
 
     Sim sim(problem, s);
     int score = sim.Play();
-    cerr << "Score = " << score << endl;
+    if (FLAGS_verbose >= 2) cerr << "Score = " << score << endl;
     if (FLAGS_output_score) cout << score << endl;
   }
 
