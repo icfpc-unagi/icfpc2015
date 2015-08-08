@@ -24,15 +24,6 @@ cc_library(
     linkstatic = 1,
 )
 
-cc_binary(
-    name = "sim_main",
-    srcs = ["sim_main.cc"],
-    deps = [
-        ":data",
-        ":sim",
-    ],
-)
-
 cc_test(
     name = "sim_test",
     srcs = ["sim_test.cc"],
@@ -42,3 +33,12 @@ cc_test(
         "//base:test_main",
     ],
 )
+
+# sh_test(
+#     name = "integration_test",
+#     srcs = ["integration_test.sh"],
+#     data = [
+#         ":sim_main",
+#         "//bin",
+#     ],
+# )
