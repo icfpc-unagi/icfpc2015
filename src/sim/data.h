@@ -20,6 +20,9 @@ inline Point load_point(const ptree& p) {
 inline Point point_offset(const Point& p, const Point& offset) {
   return Point(p.first + offset.first, p.second + offset.second);
 }
+inline Point point_subtract(const Point& p, const Point& offset) {
+  return Point(p.first - offset.first, p.second - offset.second);
+}
 
 struct Field {
   // _ : empty
@@ -94,7 +97,7 @@ struct Unit {
   void load(const ptree &p) {
     Point pivot = load_point(p.get_child("pivot"));
     for (const auto& i : p.get_child("members")) {
-      members.push_back(point_offset(load_point(i.second), pivot));
+      members.push_back(point_subtract(load_point(i.second), pivot));
     }
     sort(members.begin(), members.end());
     CHECK_GT(members.size(), 0);
@@ -183,10 +186,12 @@ struct Problem {
   }
   // Returns the point relative to the local cordinate system on which the unit spawns.
   Point spawn(const Unit& u) const {
-    // TODO: Test?
-    int top = u.top_most();
-    int m = width - u.left_most() / 2 - u.right_most() / 2 - 1;
-    return Point((m & ~1) | (top & 1), -top);
+    int y = -u.top_most();
+    int odd = y & 1;
+    int l = u.left_most() / 2;
+    int r = (width * 2 - 1 - u.right_most()) / 2;
+    int x = odd + ((r - l) & ~1);
+    return Point(x, y);
   }
 };
 
