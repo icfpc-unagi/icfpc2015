@@ -104,7 +104,7 @@ chokudai() {
   fi
   local target="$1"
   if [ "${target:0:1}" != '/' ]; then
-    target="$(pwd):${target}"
+    target="$(pwd)/${target}"
   fi
   pushd ~/chokudai
   r //ICFPC2015/ICFPC2015:chokudai.ar "${target}"
