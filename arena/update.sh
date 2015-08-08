@@ -17,6 +17,7 @@ run() {
 
   if [ ! -f "${path}" ]; then
     echo "Generating ${path}..."
+    touch "${path}"
     if [ "${ai_name%.exe}" != "${ai_name}" ]; then
       if timeout 900s mono "${ai}" "${data}" > "${path}.bak"; then
         mv "${path}.bak" "${path}"
