@@ -14,7 +14,7 @@ for file in */*.json; do
       mv "../scores/${file%.json}.txt.bak" "../scores/${file%.json}.txt"
     else
       rm "../scores/${file%.json}.txt.bak"
-      printf -1 > "../scores/${file%.json}.txt"
+      sub::println -1 > "../scores/${file%.json}.txt"
     fi
   fi
 done
