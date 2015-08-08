@@ -194,7 +194,7 @@ struct Solution {
   void load(const ptree &p) {
     id = p.get<int>("problemId");
     seed = p.get<int>("seed");
-    tag = p.get<string>("tag");
+    tag = p.get<string>("tag", "(notag)");
     solution = p.get<string>("solution");
   }
 };
