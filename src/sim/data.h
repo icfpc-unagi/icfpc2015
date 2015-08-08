@@ -140,6 +140,18 @@ struct Unit {
     f.fill(members, offset, 'o');
     return f;
   }
+  Field make_field_with_pivot() const {
+    // Aligns offset even
+    int top = min(0, top_most()) & ~1;
+    int h = max(0, bottom_most()) - top + 1;
+    int left = min(0, left_most()) & ~1;
+    int w = max(0, right_most()) - left + 1;
+    Field f(h, w);
+    Point offset(-left, -top);
+    f.fill(members, offset, 'o');
+    f.set(offset, (f.get(offset) == 'o' ? '&' : '@'));
+    return f;
+  }
   Unit rotate_cw() const {
     Unit u;
     u.members.resize(members.size());
