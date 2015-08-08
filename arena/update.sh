@@ -15,9 +15,8 @@ run() {
   data_name="${data##*/}"
   path="${ai_path}/${data_name}"
 
-  if [ ! -f "${path}" ]; then
+  if [ ! -f "${path}" -a ! -f "${path}.bak" ]; then
     echo "Generating ${path}..."
-    touch "${path}"
     if [ "${ai_name%.exe}" != "${ai_name}" ]; then
       if timeout 900s mono "${ai}" "${data}" > "${path}.bak"; then
         mv "${path}.bak" "${path}"
