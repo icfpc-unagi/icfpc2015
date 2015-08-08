@@ -88,7 +88,7 @@ public:
         return 0;
       }
 
-      if (FLAGS_verbose >= 5) {
+      if (FLAGS_verbose >= 5 || FLAGS_verbose >= 4 && visit.empty()) {
         cerr << "\n\n================================\n\n";
         Field overlay = field;
         overlay.fill(unit.members, control, '?');
@@ -101,6 +101,7 @@ public:
       char c = tolower(s[i]);
       Unit next_unit;
       Point next_control = control;
+      if (FLAGS_verbose >= 3) cerr << "Snippet: " << StringPiece(s, i, 50) << endl;
       if (strchr(kMoveW, c)) {
         if (FLAGS_verbose >= 3) cerr << "Command: move W" << endl;
         next_unit = unit;
