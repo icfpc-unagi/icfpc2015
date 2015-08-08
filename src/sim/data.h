@@ -56,6 +56,8 @@ struct Field {
     for (const auto& i : v) set(point_offset(i, offset), c);
   }
   bool test(const vector<Point>& v, Point offset) {
+    for (const auto& i : v)
+      LOG(INFO) << "v: " << i.first << "," << i.second;
     bool ok = true;
     for (const auto& i : v) ok = ok && get(point_offset(i, offset)) == '_';
     return ok;
@@ -132,7 +134,7 @@ struct Unit {
     Unit u;
     u.members.resize(members.size());
     for (int i = 0; i < members.size(); ++i) {
-      u.members[i] = Point((members[i].first - 3* members[i].second) / 2, (members[i].first + 2 * members[i].second) / 2);
+      u.members[i] = Point((members[i].first - 3 * members[i].second) / 2, (members[i].first + members[i].second) / 2);
     }
     sort(u.members.begin(), u.members.end());
     return u;
@@ -141,7 +143,7 @@ struct Unit {
     Unit u;
     u.members.resize(members.size());
     for (int i = 0; i < members.size(); ++i) {
-      u.members[i] = Point((members[i].first + 3* members[i].second) / 2, (2 * members[i].second -members[i].first) / 2);
+      u.members[i] = Point((members[i].first + 3 * members[i].second) / 2, (members[i].second - members[i].first) / 2);
     }
     sort(u.members.begin(), u.members.end());
     return u;

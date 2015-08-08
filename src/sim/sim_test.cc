@@ -30,6 +30,22 @@ TEST_F(SimTest, RotateCW) {
   EXPECT_EQ(Point(-1, -1), u.members[0]);
   u = u.rotate_cw();
   EXPECT_EQ(Point(1, -1), u.members[0]);
+  u = u.rotate_cw();
+  EXPECT_EQ(Point(2, 0), u.members[0]);
+
+  u.members.assign(1, Point(3, 1));
+  u = u.rotate_cw();
+  EXPECT_EQ(Point(0, 2), u.members[0]);
+  u = u.rotate_cw();
+  EXPECT_EQ(Point(-3, 1), u.members[0]);
+  u = u.rotate_cw();
+  EXPECT_EQ(Point(-3, -1), u.members[0]);
+  u = u.rotate_cw();
+  EXPECT_EQ(Point(0, -2), u.members[0]);
+  u = u.rotate_cw();
+  EXPECT_EQ(Point(3, -1), u.members[0]);
+  u = u.rotate_cw();
+  EXPECT_EQ(Point(3, 1), u.members[0]);
 }
 
 TEST_F(SimTest, RotateCCW) {
@@ -45,4 +61,18 @@ TEST_F(SimTest, RotateCCW) {
   EXPECT_EQ(Point(-1, 1), u.members[0]);
   u = u.rotate_ccw();
   EXPECT_EQ(Point(1, 1), u.members[0]);
+
+  u.members.assign(1, Point(3, 1));
+  u = u.rotate_ccw();
+  EXPECT_EQ(Point(3, -1), u.members[0]);
+  u = u.rotate_ccw();
+  EXPECT_EQ(Point(0, -2), u.members[0]);
+  u = u.rotate_ccw();
+  EXPECT_EQ(Point(-3, -1), u.members[0]);
+  u = u.rotate_ccw();
+  EXPECT_EQ(Point(-3, 1), u.members[0]);
+  u = u.rotate_ccw();
+  EXPECT_EQ(Point(0, 2), u.members[0]);
+  u = u.rotate_ccw();
+  EXPECT_EQ(Point(3, 1), u.members[0]);
 }
