@@ -33,9 +33,12 @@ struct Field {
     data.assign(height, vector<char>((width + 1) / 2, '_'));
   }
 
+  bool contain(const Point& p) const {
+    return 0 <= p.first && p.first < width() && 0 <= p.second && p.second < height();
+  }
   char get(const Point& p) const {
     CHECK_EQ(p.first & 1, p.second & 1) << "Misaligned access";
-    if (p.first < 0 || width() <= p.first || p.second < 0 || height() <= p.second) return '#';
+    if (!contain(p)) return '#';
     return data[p.second][p.first / 2];
   }
   bool set(const Point& p, char c) {
