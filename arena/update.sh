@@ -18,14 +18,14 @@ run() {
   if [ ! -f "${path}" ]; then
     echo "Generating ${path}..."
     if [ "${ai_name%.exe}" != "${ai_name}" ]; then
-      if timeout 180s mono "${ai}" "${data}" > "${path}.bak"; then
+      if timeout 900s mono "${ai}" "${data}" > "${path}.bak"; then
         mv "${path}.bak" "${path}"
       else
         rm "${path}.bak"
         echo 'null' > "${path}"
       fi
     elif [ "${ai_name%.jar}" != "${ai_name}" ]; then
-      if timeout 180s \
+      if timeout 900s \
           java -cp "${ai}:/mirror/github/src/wata/gson-2.3.1.jar" \
           Main -f "${data}" > "${path}.bak"; then
         mv "${path}.bak" "${path}"
