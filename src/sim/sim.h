@@ -75,6 +75,9 @@ public:
         return 0;
       }
 
+      // Game ends if the spawn location is not valid
+      if (!field.test(unit.members, control)) break;
+
       string h;
       for (const auto& p : unit.members) h += serialize(point_offset(p, control));
       if (!visit.insert(h).second) {
@@ -143,8 +146,6 @@ public:
         control = problem_->spawn(unit);
         source++;
         visit.clear();
-        // Game ends if the spawn location is not valid
-        if (!field.test(unit.members, control)) continue;
       }
     }
     // TODO: Calculate power_scores
