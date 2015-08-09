@@ -31,6 +31,42 @@ inline int div2(int x) {
   return (x % 2 != 0 ? x - 1 : x) / 2;
 }
 
+static constexpr char kMoveW[] = "p'!.03";
+static constexpr char kMoveE[] = "bcefy2";
+static constexpr char kMoveSW[] = "aghij4";
+static constexpr char kMoveSE[] = "lmno 5";
+static constexpr char kRotateCW[] = "dqrvz1";
+static constexpr char kRotateCCW[] = "kstuwx";
+static constexpr char kIgnored[] = "\t\n\r";
+
+enum Command {
+  UNKNOWN = 0,
+  MOVE_W = 1,
+  MOVE_E = 2,
+  MOVE_SW = 3,
+  MOVE_SE = 4,
+  ROTATE_CW = 5,
+  ROTATE_CCW = 6,
+  IGNORED = 7,
+};
+
+inline Command translate_command(char c) {
+  static const uint8 kTable[128] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,5,2,1,3,4,0,0,0,0,0,0,0,0,0,0,0,3,2,2,5,2,2,3,3,3,3,6,4,4,4,4,1,5,5,6,6,6,5,6,6,2,5,0,0,0,0,0,0,3,2,2,5,2,2,3,3,3,3,6,4,4,4,4,1,5,5,6,6,6,5,6,6,2,5};
+  return static_cast<Command>(kTable[static_cast<int>(c)]);
+};
+inline const char* command_name(Command c) {
+  switch (c) {
+    case MOVE_W: return "move W";
+    case MOVE_E: return "move E";
+    case MOVE_SW: return "move SW";
+    case MOVE_SE: return "move SE";
+    case ROTATE_CW: return "rotate CW";
+    case ROTATE_CCW: return "rotate CCW";
+    case IGNORED: return "ignored";
+    default: return "invalid";
+  }
+}
+
 struct Field {
   // _ : empty
   // x : full
@@ -179,6 +215,18 @@ struct UnitControl {
   Point loc;
 
   // Commands
+  UnitControl command(Command c) const {
+    switch (c) {
+      case MOVE_W: return move_w();
+      case MOVE_E: return move_e();
+      case MOVE_SW: return move_sw();
+      case MOVE_SE: return move_se();
+      case ROTATE_CW: return rotate_cw();
+      case ROTATE_CCW: return rotate_ccw();
+      case IGNORED: return *this;
+      default: LOG(FATAL) << "Unrecognized command.";
+    }
+  }
   UnitControl move_w() const {
     return UnitControl{unit, Point(loc.first - 2, loc.second)};
   }

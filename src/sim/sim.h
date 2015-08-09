@@ -16,14 +16,6 @@ using namespace std;
 
 namespace {
 
-const char kMoveW[] = "p'!.03";
-const char kMoveE[] = "bcefy2";
-const char kMoveSW[] = "aghij4";
-const char kMoveSE[] = "lmno 5";
-const char kRotateCW[] = "dqrvz1";
-const char kRotateCCW[] = "kstuwx";
-const char kIgnored[] = "\t\n\r";
-
 // TODO: Take from flag
 const char* kPhrases[] = {
   "ei!",
@@ -105,30 +97,11 @@ public:
         overlay.print(cerr);
       }
 
-      char c = tolower(s[i]);
-      UnitControl next_control;
-      if (FLAGS_verbose >= 3) cerr << "Snippet: " << StringPiece(s, i, 50) << endl;
-      if (strchr(kMoveW, c)) {
-        if (FLAGS_verbose >= 3) cerr << "Command: move W" << endl;
-        next_control = control.move_w();
-      } else if (strchr(kMoveE, c)) {
-        if (FLAGS_verbose >= 3) cerr << "Command: move E" << endl;
-        next_control = control.move_e();
-      } else if (strchr(kMoveSW, c)) {
-        if (FLAGS_verbose >= 3) cerr << "Command: move SW" << endl;
-        next_control = control.move_sw();
-      } else if (strchr(kMoveSE, c)) {
-        if (FLAGS_verbose >= 3) cerr << "Command: move SE" << endl;
-        next_control = control.move_se();
-      } else if (strchr(kRotateCW, c)) {
-        if (FLAGS_verbose >= 3) cerr << "Command: rotate CW" << endl;
-        next_control = control.rotate_cw();
-      } else if (strchr(kRotateCCW, c)) {
-        if (FLAGS_verbose >= 3) cerr << "Command: rotate CCW " << endl;
-        next_control = control.rotate_ccw();
-      } else {
-        LOG(FATAL) << "Unrecognized command [ " << s[i] << " ] in solution";
-      }
+      if (FLAGS_verbose >= 3) cerr << "Snippet:" << i << ": " << StringPiece(s, i, 50) << endl;
+      Command c = translate_command(s[i]);
+      UnitControl next_control = control.command(c);
+      if (FLAGS_verbose >= 3) cerr << "Command: " << command_name(c) << endl;
+
       if (next_control.test(&field_)) {
         // Applies move
         control = next_control;
@@ -163,6 +136,7 @@ public:
       int reps = CountSubstring(sp, kPhrases[i]);
       if (reps > 0) score += 2 * strlen(kPhrases[i]) * reps + 300;
     }
+    return score;
   }
 };
 
