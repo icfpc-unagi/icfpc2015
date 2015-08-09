@@ -27,23 +27,24 @@ void Field::print_html(std::ostream& os) const {
       double y = 1 + kSqrt3 * i;
       switch (data[i][j]) {
         case 'x':
-          StringAppendF(&buf, R"(<use x="%.0f" y="%.2f" xlink:href="#h" fill="orange"/>)", x, y);
+          StringAppendF(&buf, R"(<use x="%.0f" y="%.2f" xlink:href="#h" fill="#f50"/>)", x, y);
           break;
         case 'o':
-          StringAppendF(&buf, R"(<use x="%.f" y="%.2f" xlink:href="#h" fill="lightskyblue"/>)", x, y);
+          StringAppendF(&buf, R"(<use x="%.f" y="%.2f" xlink:href="#h" fill="#8cf"/>)", x, y);
           break;
         case '?':
-          StringAppendF(&buf, R"(<use x="%.f" y="%.2f" xlink:href="#h" fill="greenyellow"/>)", x, y);
+          StringAppendF(&buf, R"(<use x="%.f" y="%.2f" xlink:href="#h" fill="#bf3"/>)", x, y);
           break;
         case '@':
+          StringAppendF(&buf, R"(<use x="%.f" y="%.2f" xlink:href="#h" fill="#eee"/>)", x, y);
           StringAppendF(&buf, R"(<circle cx="%.f" cy="%.2f" r=".2" fill="red"/>)", x, y);
           break;
         case '&':
-          StringAppendF(&buf, R"(<use x="%.f" y="%.2f" xlink:href="#h" fill="greenyellow"/>)", x, y);
+          StringAppendF(&buf, R"(<use x="%.f" y="%.2f" xlink:href="#h" fill="#bf3"/>)", x, y);
           StringAppendF(&buf, R"(<circle cx="%.f" cy="%.2f" r=".2" fill="red"/>)", x, y);
           break;
         case '$':
-          StringAppendF(&buf, R"(<use x="%.f" y="%.2f" xlink:href="#h" fill="orange"/>)", x, y);
+          StringAppendF(&buf, R"(<use x="%.f" y="%.2f" xlink:href="#h" fill="#f50"/>)", x, y);
           StringAppendF(&buf, R"(<circle cx="%.f" cy="%.2f" r=".2" fill="red"/>)", x, y);
           break;
         default:
