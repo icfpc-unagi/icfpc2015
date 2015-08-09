@@ -26,7 +26,8 @@ run() {
   if [ ! -f "${path}" -a ! -f "${path}.bak" ]; then
     echo "Generating ${path}..."
     if [ "${ai_name%.exe}" != "${ai_name}" ]; then
-      if timeout 1800s mono "${ai}" "${data}" > "${path}.bak"; then
+      if timeout 1800s mono "${ai}" -f "${data}" "${PHRASES[@]}" \
+          > "${path}.bak"; then
         mv "${path}.bak" "${path}"
       else
         rm "${path}.bak"
