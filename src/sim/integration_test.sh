@@ -12,7 +12,9 @@ evaluate() {
   local index=0
 
   scores=($(
-      "${TARGET}" --output_score --verbose=0 \
+      "${TARGET}" \
+          --phrases_of_power="${TEST_SRCDIR}/data/power_phrase.txt" \
+          --output_score --verbose=0 \
           "${TEST_SRCDIR}/data/problems/${input_name}.json" \
           "${TEST_SRCDIR}/data/${data_set}/${input_name}.json"))
   for score in "$@"; do
@@ -62,3 +64,6 @@ evaluate chokudai105 problem_21 620
 evaluate chokudai105 problem_22 3500
 evaluate chokudai105 problem_23 4300
 evaluate chokudai105 problem_3 1360 1268 1262 1560 1173
+
+evaluate watadp problem_2 \
+    12113 11762 11435 12348 11304 12906 11990 10160 11751 9889
