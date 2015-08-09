@@ -10,6 +10,7 @@ PHRASES=(
   -p "r'lyeh"
   -p "necronomicon"
   -p "yogsothoth"
+  -p "yuggoth"
 )
 
 run() {
