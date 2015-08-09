@@ -193,6 +193,7 @@ class Stream {
 }
 
 function GetScore($input_file, $phrases_file, $solution) {
+  static $printed = FALSE;
   $command =
       'echo \'[' .
       str_replace("'", "'\\''", json_encode($solution)) . ']\' | ' .
@@ -202,6 +203,10 @@ function GetScore($input_file, $phrases_file, $solution) {
       '--verbose=0 ' .
       $input_file . ' ' .
       '/dev/stdin';
+  if (!$printed) {
+    INFO("Scoring: $command");
+    $printed = TRUE;
+  }
   $output = exec($command);
   if (is_numeric($output)) {
     return intval($output);
@@ -283,7 +288,9 @@ function ReadStreams(
       $seed = $solution['seed'];
       $score = GetScore($input_file, $phrases_file, $solution);
       if ($score == NULL) {
-        INFO("STREAM$stream_id: invalid output: $seed => $solution");
+        INFO("STREAM$stream_id: invalid output: " .
+             "$seed => {$solution['solution']}");
+        continue;
       }
       INFO("STREAM$stream_id: evaluated score is $score.");
 
