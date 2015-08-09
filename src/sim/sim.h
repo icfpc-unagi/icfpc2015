@@ -111,7 +111,7 @@ class Sim {
         Field overlay = field_;
         control.fill(&overlay, '?');
         if (field_.contain(control.loc)) {
-          overlay.set(control.loc, overlay.test(control.loc) ? '@' : '&');
+          overlay.set(control.loc, overlay.test(control.loc) ? '@' : overlay.get(control.loc) == '?' ? '&' : '$');
         }
         overlay.print(cerr);
       }

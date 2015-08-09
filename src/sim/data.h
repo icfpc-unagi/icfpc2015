@@ -6,6 +6,8 @@
 #include "base/base.h"
 #include "boost/property_tree/ptree.hpp"
 
+DECLARE_bool(print_html);
+
 using namespace std;
 using boost::property_tree::ptree;
 
@@ -122,6 +124,10 @@ struct Field {
   }
 
   void print(std::ostream& os) const {
+    if (FLAGS_print_html) {
+      print_html(os);
+      return;
+    }
     for (int i = 0; i < height(); ++i) {
       int odd = i % 2;
       if (odd) os << " ";
@@ -131,6 +137,7 @@ struct Field {
       os << "\n";
     }
   }
+  void print_html(std::ostream& os) const;
 };
 
 struct Unit {
