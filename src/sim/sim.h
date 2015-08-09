@@ -77,7 +77,7 @@ class Sim {
   }
 
   int Play() {
-    if (FLAGS_verbose >= 2) cerr << "Playing problem " << solution_->id << ", seed:" << solution_->seed << " (" << solution_->tag << ")" << endl;
+    if (FLAGS_verbose >= 2) cerr << "\nPlaying problem " << solution_->id << ", seed:" << solution_->seed << " (" << solution_->tag << ")" << endl;
 
     field_ = problem_->make_field();
     LCG random(solution_->seed);
@@ -107,7 +107,7 @@ class Sim {
       }
 
       if (FLAGS_verbose >= 5 || (FLAGS_verbose >= 4 && visit.size() == 1)) {
-        cerr << "\n\n================================\n\n";
+        cerr << "\n\n================================\n";
         Field overlay = field_;
         control.fill(&overlay, 'o');
         if (field_.contain(control.loc)) {
@@ -116,7 +116,7 @@ class Sim {
         overlay.print(cerr);
       }
 
-      if (FLAGS_verbose >= 3) cerr << "Snippet:" << i << ": " << StringPiece(s, i, 50) << endl;
+      if (FLAGS_verbose >= 3) cerr << "Snippet:" << i << ": " << StringPiece(s, i, 40) << endl;
       Command c = translate_command(s[i]);
       UnitControl next_control = control.command(c);
       if (FLAGS_verbose >= 3) cerr << "Command: " << command_name(c) << endl;

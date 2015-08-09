@@ -62,6 +62,7 @@ int main(int argc, char** argv) {
       cerr << "Unit " << i << ":\n";
       problem.units[i].make_field().print(cerr);
     }
+    cerr << endl;
   }
 
   if (argc < 3) {
@@ -70,6 +71,13 @@ int main(int argc, char** argv) {
 
   Output output;
   output.load(read_ptree(argv[2]));
+
+  if (FLAGS_verbose >= 3) {
+    cerr << "Solutions:\n";
+    for (const auto& s : output.solutions) {
+      cerr << "Seed " << s.seed << " (" << s.tag << ")\n";
+    }
+  }
 
   if (FLAGS_run_first_seed) output.solutions.resize(1);
 
