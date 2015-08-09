@@ -48,8 +48,10 @@ for ($i = 1; $i < count($argv); $i++) {
         break;
       case '-@s':
         $SIMULATOR = $argv[$i];
+        break;
       case '-@r':
         $RECIPE = $argv[$i];
+        break;
       default:
         fwrite(STDERR, "Flag option $mode is not supported, so ignored.\n");
     }
