@@ -60,7 +60,7 @@ int main(int argc, char** argv) {
   if (FLAGS_verbose >= 3) {
     for (int i = 0; i < problem.units.size(); ++i) {
       cerr << "Unit " << i << ":\n";
-      problem.units[i].make_field_with_pivot().print(cerr);
+      problem.units[i].make_field().print(cerr);
     }
   }
 

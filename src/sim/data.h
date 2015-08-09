@@ -180,18 +180,8 @@ struct Unit {
     for (int i = 1; i < members.size(); ++i) e = max(e, members[i].first);
     return e;
   }
+  // Returns sub-field to show the entire unit information.
   Field make_field() const {
-    // Aligns offset even
-    int top = top_most() & ~1;
-    int h = bottom_most() - top + 1;
-    int left = left_most() & ~1;
-    int w = right_most() - left + 1;
-    Field f(h, w);
-    Point offset(-left, -top);
-    f.fill(members, offset, 'o');
-    return f;
-  }
-  Field make_field_with_pivot() const {
     // Aligns offset even
     int top = min(0, top_most()) & ~1;
     int h = max(0, bottom_most()) - top + 1;
@@ -200,7 +190,7 @@ struct Unit {
     Field f(h, w);
     Point offset(-left, -top);
     f.fill(members, offset, 'o');
-    f.set(offset, (f.get(offset) == 'o' ? '&' : '@'));
+    f.set(offset, (f.test(offset) ? '@' : '&'));
     return f;
   }
   Unit rotate_cw() const {
