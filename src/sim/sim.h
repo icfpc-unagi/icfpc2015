@@ -109,9 +109,9 @@ class Sim {
       if (FLAGS_verbose >= 5 || (FLAGS_verbose >= 4 && visit.empty())) {
         cerr << "\n\n================================\n\n";
         Field overlay = field_;
-        control.fill(&overlay, '?');
+        control.fill(&overlay, 'o');
         if (field_.contain(control.loc)) {
-          overlay.set(control.loc, overlay.test(control.loc) ? '@' : overlay.get(control.loc) == '?' ? '&' : '$');
+          overlay.set(control.loc, overlay.test(control.loc) ? '@' : overlay.get(control.loc) == 'o' ? '&' : '$');
         }
         overlay.print(cerr);
       }
