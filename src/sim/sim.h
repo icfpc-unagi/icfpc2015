@@ -39,6 +39,7 @@ public:
   Phrases(const string& filename) {
     if (!filename.empty()) {
       ifstream ifs(filename);
+      CHECK(ifs.good()) << "Failed to read phrases: " << filename;
       string s;
       while (getline(ifs, s)) {
         googleapis::StripTrailingNewline(&s);
@@ -142,9 +143,11 @@ class Sim {
       }
       if (FLAGS_verbose >= 2) cerr << "Move Score = " << score << endl;
     }
-    int power_score = phrases_.spell(s);
-    if (FLAGS_verbose >= 2) cerr << "Power Score = " << power_score << endl;
-    if (FLAGS_include_power_score) score += power_score;
+    if (FLAGS_include_power_score) {
+      int power_score = phrases_.spell(s);
+      if (FLAGS_verbose >= 2) cerr << "Power Score = " << power_score << endl;
+      if (FLAGS_include_power_score) score += power_score;
+    }
     return score;
   }
 };
