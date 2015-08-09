@@ -15,6 +15,8 @@ PHRASES=(
   -p "monkeyboy"
   -p "planet 10"
   -p "tsathoggua"
+  -p "yoyodyne"
+  -p "john bigboote"
 )
 
 run() {
