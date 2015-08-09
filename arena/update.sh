@@ -8,7 +8,6 @@ PHRASES=(
   -p "ei!"
   -p "ia! ia!"
   -p "r'lyeh"
-  -p "bap"
   -p "necronomicon"
   -p "yogsothoth"
 )
