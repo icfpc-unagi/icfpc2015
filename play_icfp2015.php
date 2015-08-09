@@ -422,7 +422,7 @@ class Game {
         unset($results[$key]);
         continue;
       }
-      if (!isset($seeds[$result['seed']])) {
+      if (!in_array($result['seed'], $seeds)) {
         WARNING("Not existing seed: {$result['seed']}");
         unset($results[$key]);
         continue;
