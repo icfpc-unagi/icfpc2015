@@ -36,7 +36,8 @@ run() {
     if [ "${ai_name%.exe}" != "${ai_name}" ]; then
       if timeout 1800s mono "${ai}" -f "${data}" "${PHRASES[@]}" \
           > "${path}.bak"; then
-        mv "${path}.bak" "${path}"
+        tail -n 1 "${path}.bak" > "${path}"
+        rm "${path}.bak"
       else
         rm "${path}.bak"
         echo 'null' > "${path}"
@@ -45,7 +46,8 @@ run() {
       if timeout 1800s \
           java -cp "${ai}:/mirror/github/src/gson/gson-2.3.1.jar" \
           Main -f "${data}" "${PHRASES[@]}" > "${path}.bak"; then
-        mv "${path}.bak" "${path}"
+        tail -n 1 "${path}.bak" > "${path}"
+        rm "${path}.bak"
       else
         rm "${path}.bak"
         echo 'null' > "${path}"
