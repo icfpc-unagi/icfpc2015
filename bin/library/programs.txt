@@ -1,1 +1,2 @@
-echo '{"problemId":0,"seed":0,"tag":"foo","solution":"bar"}'; cat >/dev/null <
+java -cp "solver/wataFast7.jar:src/gson/gson-2.3.1.jar" Main
+java -cp "solver/wata2e6.jar:src/gson/gson-2.3.1.jar" Main

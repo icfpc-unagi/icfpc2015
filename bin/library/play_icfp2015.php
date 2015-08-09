@@ -1,5 +1,6 @@
 <?php
 
+error_reporting(E_ALL);
 date_default_timezone_set('Asia/Tokyo');
 
 $START_TIME = array_sum(array_map('floatval', explode(' ', microtime())));
@@ -8,11 +9,21 @@ $MEMORY_LIMIT = 0;
 $FILES = [];
 $PHRASES = [];
 $PROGRAMS = [];
+$STDERR = FALSE;
+$VERBOSE = 0;
 
 $mode = '';
-for ($i = 0; $i < count($argv); $i++) {
-  if (preg_match('%^--?[a-zA-Z]$%', $argv[$i])) {
+for ($i = 1; $i < count($argv); $i++) {
+  if (preg_match('%^-@?[a-zA-Z]$%', $argv[$i])) {
     $mode = $argv[$i];
+    switch ($mode) {
+      case '-@e':
+        $STDERR = TRUE;
+        break;
+      case '-@v':
+        $VERBOSE = 1;
+        break;
+    }
   } else {
     switch ($mode) {
       case '-f':
@@ -29,6 +40,9 @@ for ($i = 0; $i < count($argv); $i++) {
         break;
       case '-@x':
         $PROGRAMS[] = $argv[$i];
+        break;
+      case '-@v':
+        $VERBOSE = intval($argv[$i]);
         break;
       default:
         fwrite(STDERR, "Flag option $mode is not supported, so ignored.\n");
@@ -49,6 +63,10 @@ fwrite(STDERR, 'Phrases of power: ' . json_encode($PHRASES) . "\n");
 fprintf(STDERR, "Time limit: %.3f\n", $TIME_LIMIT);
 fprintf(STDERR, "Memory limit: %.3f\n", $MEMORY_LIMIT);
 fwrite(STDERR, 'Programs: ' . json_encode($PROGRAMS) . "\n");
+fwrite(STDERR, 'Worker STDERR: ' . ($STDERR ? 'Yes' : 'No') . "\n");
+fwrite(STDERR, 'Verbosity: ' . $VERBOSE . "\n");
+
+$CONFIG['worker.stderr'] = $STDERR;
 
 require_once(dirname(__FILE__) . '/solve.php');
 
@@ -74,15 +92,14 @@ while (count($FILES) > 0) {
     fwrite(STDERR, "Seed: $seed\n");
     fwrite(STDERR, "End time: " . date('r', $seed_end_time) . "\n");
     $data['sourceSeeds'] = [$seed];
-    $output = Solve($data, $PHRASES, $seed_end_time);
-    if ($output != NULL) {
-      $outputs[] = [
-          'problemId' => $output['problemId'],
-          'seed' => $seed,
-          'tag' => $output['tag'],
-          'solution' => $output['solution']];
+    foreach (Solve($data, $PHRASES, $seed_end_time) as $result) {
+      $results["{$result['problemId']}:{$result['seed']}"] = [
+          'problemId' => $result['problemId'],
+          'seed' => $result['seed'],
+          'tag' => $result['tag'],
+          'solution' => $result['solution']];
     }
   }
 }
 
-echo json_encode($outputs) . "\n";
+echo json_encode($results) . "\n";
