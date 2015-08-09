@@ -81,7 +81,7 @@ class Sim {
 
     field_ = problem_->make_field();
     LCG random(solution_->seed);
-    unordered_set<string> visit;
+    unordered_set<uint32> visit;
     UnitControl control = problem_->source_control(random.next());
     int source = 0;
     int ls_old = 0;
