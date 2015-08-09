@@ -25,9 +25,6 @@ inline Point point_offset(const Point& p, const Point& offset) {
 inline Point point_subtract(const Point& p, const Point& offset) {
   return Point(p.first - offset.first, p.second - offset.second);
 }
-inline string serialize(const Point& p) {
-  return string(1, p.first).append(1, p.second);
-}
 
 inline int div2(int x) {
   return (x % 2 != 0 ? x - 1 : x) / 2;
@@ -143,6 +140,8 @@ struct Field {
 struct Unit {
   // The local origin is shifted to the pivot.
   vector<Point> members;
+  // How many times the unit is rotated to the identical occupation.
+  int mod;
 
   void load(const ptree &p) {
     Point pivot = load_point(p.get_child("pivot"));
@@ -150,7 +149,16 @@ struct Unit {
       members.push_back(point_subtract(load_point(i.second), pivot));
     }
     sort(members.begin(), members.end());
+    calc_mod();
     CHECK_GT(members.size(), 0);
+  }
+  void calc_mod() {
+    mod = 1;
+    for (Unit u = this->rotate_cw();; u = u.rotate_cw()) {
+      sort(u.members.begin(), u.members.end());
+      if (members == u.members) break;
+      mod++;
+    }
   }
   int top_most() const {
     int e = members[0].second;
@@ -187,22 +195,22 @@ struct Unit {
   }
   Unit rotate_cw() const {
     Unit u;
+    u.mod = mod;
     u.members.resize(members.size());
     for (int i = 0; i < members.size(); ++i) {
       u.members[i] = Point((members[i].first - 3 * members[i].second) / 2, (members[i].first + members[i].second) / 2);
       // (... / 2) is safe, because (...) is always even.
     }
-    sort(u.members.begin(), u.members.end());
     return u;
   }
   Unit rotate_ccw() const {
     Unit u;
+    u.mod = mod;
     u.members.resize(members.size());
     for (int i = 0; i < members.size(); ++i) {
       u.members[i] = Point((members[i].first + 3 * members[i].second) / 2, (members[i].second - members[i].first) / 2);
       // (... / 2) is safe, because (...) is always even.
     }
-    sort(u.members.begin(), u.members.end());
     return u;
   }
 };
@@ -210,6 +218,8 @@ struct Unit {
 struct UnitControl {
   Unit unit;
   Point loc;
+  // The current rotation to the original position.
+  int angle;
 
   // Commands
   UnitControl command(Command c) const {
@@ -225,22 +235,22 @@ struct UnitControl {
     }
   }
   UnitControl move_w() const {
-    return UnitControl{unit, Point(loc.first - 2, loc.second)};
+    return UnitControl{unit, Point(loc.first - 2, loc.second), angle};
   }
   UnitControl move_e() const {
-    return UnitControl{unit, Point(loc.first + 2, loc.second)};
+    return UnitControl{unit, Point(loc.first + 2, loc.second), angle};
   }
   UnitControl move_sw() const {
-    return UnitControl{unit, Point(loc.first - 1, loc.second + 1)};
+    return UnitControl{unit, Point(loc.first - 1, loc.second + 1), angle};
   }
   UnitControl move_se() const {
-    return UnitControl{unit, Point(loc.first + 1, loc.second + 1)};
+    return UnitControl{unit, Point(loc.first + 1, loc.second + 1), angle};
   }
   UnitControl rotate_cw() const {
-    return UnitControl{unit.rotate_cw(), loc};
+    return UnitControl{unit.rotate_cw(), loc, (angle + 1) % unit.mod};
   }
   UnitControl rotate_ccw() const {
-    return UnitControl{unit.rotate_ccw(), loc};
+    return UnitControl{unit.rotate_ccw(), loc, (angle + 5) % unit.mod};
   }
 
   // Test if all cells empty
@@ -252,10 +262,8 @@ struct UnitControl {
      field->fill(unit.members, loc, c);
      return unit.members.size();
   }
-  string serialize() const {
-    string s = ::serialize(loc);
-    for (const auto& p : unit.members) s += ::serialize(p);
-    return s;
+  uint32 serialize() const {
+    return (loc.first << 17) ^ (loc.second << 3) ^ angle;
   }
 };
 
@@ -291,10 +299,8 @@ struct Problem {
     return f;
   }
   UnitControl source_control(uint32 s) const {
-    UnitControl control;
-    control.unit = units[s % units.size()];
-    control.loc = spawn(control.unit);
-    return control;
+    int i = s % units.size();
+    return UnitControl{units[i], spawn(units[i]), 0};
   }
   // Returns the point relative to the local cordinate system on which the unit spawns.
   Point spawn(const Unit& u) const {
