@@ -4,6 +4,14 @@ source imosh
 
 AI=(/mirror/dropbox/arena/*)
 DATA=(/mirror/github/data/problems/*)
+PHRASES=(
+  -p "ei!"
+  -p "ia! ia!"
+  -p "r'lyeh"
+  -p "bap"
+  -p "necronomicon"
+  -p "yogsothoth"
+)
 
 run() {
   local ai="${1}"
@@ -27,7 +35,7 @@ run() {
     elif [ "${ai_name%.jar}" != "${ai_name}" ]; then
       if timeout 1800s \
           java -cp "${ai}:/mirror/github/src/gson/gson-2.3.1.jar" \
-          Main -f "${data}" > "${path}.bak"; then
+          Main -f "${data}" "$PHRASES[@]" > "${path}.bak"; then
         mv "${path}.bak" "${path}"
       else
         rm "${path}.bak"
@@ -44,7 +52,7 @@ run() {
 for ai in "${AI[@]}"; do
   for data in "${DATA[@]}"; do
     echo "${ai}: ${data}"
-    sub::throttle 16
+    sub::throttle 32
     run "${ai}" "${data}" &
   done
 done
