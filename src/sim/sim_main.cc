@@ -33,14 +33,13 @@ int main(int argc, char** argv) {
     return 1;
   }
 
-  {
+  if (argc > 2) {
     // Hack for result dashboard
-    ifstream ifs(argv[1]);
+    ifstream ifs(argv[2]);
     char buf[4];
-    ifs.read(buf, 4);
-    if (memcmp(buf, "null", 4) == 0) {
+    if (ifs.read(buf, 4) && memcmp(buf, "null", 4) == 0) {
       if (FLAGS_verbose >= 2) cerr << "null" << endl;
-      cout << -100 << endl;
+      cout << 0 << endl;
       return 0;
     }
   }
