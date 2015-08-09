@@ -8,6 +8,7 @@
 #include "src/sim/sim.h"
 
 DEFINE_bool(output_score, false, "berobero");
+DEFINE_bool(run_first_seed, false, "Run only the first seed in the output.");
 
 using namespace std;
 using boost::property_tree::ptree;
@@ -70,6 +71,8 @@ int main(int argc, char** argv) {
 
   Output output;
   output.load(read_ptree(argv[2]));
+
+  if (FLAGS_run_first_seed) output.solutions.resize(1);
 
   bool found = false;
   for (const auto& s : output.solutions) {
