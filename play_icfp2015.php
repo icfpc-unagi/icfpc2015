@@ -194,20 +194,19 @@ class Stream {
 
 function GetScore($input_file, $phrases_file, $solution) {
   static $printed = FALSE;
-  $command =
-      'echo \'[' .
-      str_replace("'", "'\\''", json_encode($solution)) . ']\' | ' .
-      $GLOBALS['SIMULATOR'] . ' ' .
-      '--output_score ' .
-      '--phrases_of_power=' . $phrases_file . ' ' .
-      '--verbose=0 ' .
-      $input_file . ' ' .
-      '/dev/stdin';
+  $tmpfile = GetTemporaryFile();
+  file_put_contents($tmpfile, json_encode($solution));
+  $command = $GLOBALS['SIMULATOR'] . ' ' .
+             '--output_score ' .
+             '--phrases_of_power=' . $phrases_file . ' ' .
+             '--verbose=0 ' .
+             $input_file . ' ' . $tmpfile;
   if (!$printed) {
     INFO("Scoring: $command");
     $printed = TRUE;
   }
-  $output = exec($command);
+  $output = trim(exec($command));
+  unlink($tmpfile);
   if (is_numeric($output)) {
     return intval($output);
   }
