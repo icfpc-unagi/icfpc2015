@@ -131,7 +131,7 @@ TEST(DataTest, OddSpawnTest) {
 
   {
     Field f = p.make_field();
-    f.fill(p.units[0].members, p.spawn(p.units[0]), 'x');
+    f.fill(p.units[0].members, p.units[0].spawn(f.width()), 'x');
     std::ostringstream ss;
     f.print(ss);
 
@@ -146,7 +146,7 @@ TEST(DataTest, OddSpawnTest) {
 
   {
     Field f = p.make_field();
-    f.fill(p.units[1].members, p.spawn(p.units[1]), 'x');
+    f.fill(p.units[1].members, p.units[1].spawn(f.width()), 'x');
     std::ostringstream ss;
     f.print(ss);
 
@@ -161,7 +161,7 @@ TEST(DataTest, OddSpawnTest) {
 
   {
     Field f = p.make_field();
-    f.fill(p.units[2].members, p.spawn(p.units[2]), 'x');
+    f.fill(p.units[2].members, p.units[2].spawn(f.width()), 'x');
     std::ostringstream ss;
     f.print(ss);
 
@@ -176,7 +176,7 @@ TEST(DataTest, OddSpawnTest) {
 
   {
     Field f = p.make_field();
-    f.fill(p.units[3].members, p.spawn(p.units[3]), 'x');
+    f.fill(p.units[3].members, p.units[3].spawn(f.width()), 'x');
     std::ostringstream ss;
     f.print(ss);
 
@@ -236,7 +236,7 @@ TEST(DataTest, EvenSpawnTest) {
 
   {
     Field f = p.make_field();
-    f.fill(p.units[0].members, p.spawn(p.units[0]), 'x');
+    f.fill(p.units[0].members, p.units[0].spawn(f.width()), 'x');
     std::ostringstream ss;
     f.print(ss);
 
@@ -251,7 +251,7 @@ TEST(DataTest, EvenSpawnTest) {
 
   {
     Field f = p.make_field();
-    f.fill(p.units[1].members, p.spawn(p.units[1]), 'x');
+    f.fill(p.units[1].members, p.units[1].spawn(f.width()), 'x');
     std::ostringstream ss;
     f.print(ss);
 
@@ -266,7 +266,7 @@ TEST(DataTest, EvenSpawnTest) {
 
   {
     Field f = p.make_field();
-    f.fill(p.units[2].members, p.spawn(p.units[2]), 'x');
+    f.fill(p.units[2].members, p.units[2].spawn(f.width()), 'x');
     std::ostringstream ss;
     f.print(ss);
 
@@ -281,7 +281,7 @@ TEST(DataTest, EvenSpawnTest) {
 
   {
     Field f = p.make_field();
-    f.fill(p.units[3].members, p.spawn(p.units[3]), 'x');
+    f.fill(p.units[3].members, p.units[3].spawn(f.width()), 'x');
     std::ostringstream ss;
     f.print(ss);
 
@@ -296,41 +296,39 @@ TEST(DataTest, EvenSpawnTest) {
 }
 
 TEST(DataTest, SpawnTest2) {
-  Problem p;
-  p.width = 10;
+  int width = 2 * 10;
   Unit u;
   u.members.push_back(Point(1, -1));
   u.members.push_back(Point(1, 1));
-  EXPECT_EQ(Point(7, 1), p.spawn(u));
+  EXPECT_EQ(Point(7, 1), u.spawn(width));
   u.members.push_back(Point(-2, 0));
-  EXPECT_EQ(Point(9, 1), p.spawn(u));
+  EXPECT_EQ(Point(9, 1), u.spawn(width));
   u.members.push_back(Point(3, -1));
-  EXPECT_EQ(Point(9, 1), p.spawn(u));
+  EXPECT_EQ(Point(9, 1), u.spawn(width));
   u.members.push_back(Point(0, -2));
-  EXPECT_EQ(Point(8, 2), p.spawn(u));
+  EXPECT_EQ(Point(8, 2), u.spawn(width));
 
-  p.width = 9;
+  width = 2 * 9;
   u.members.clear();
   u.members.push_back(Point(1, -1));
   u.members.push_back(Point(1, 1));
-  EXPECT_EQ(Point(7, 1), p.spawn(u));
+  EXPECT_EQ(Point(7, 1), u.spawn(width));
   u.members.push_back(Point(-2, 0));
-  EXPECT_EQ(Point(9, 1), p.spawn(u));
+  EXPECT_EQ(Point(9, 1), u.spawn(width));
   u.members.push_back(Point(3, -1));
-  EXPECT_EQ(Point(7, 1), p.spawn(u));
+  EXPECT_EQ(Point(7, 1), u.spawn(width));
   u.members.push_back(Point(0, -2));
-  EXPECT_EQ(Point(8, 2), p.spawn(u));
+  EXPECT_EQ(Point(8, 2), u.spawn(width));
 }
 
 TEST(DataTest, RandomSpawnTest) {
-  Problem p;
   srand(0);
   for (int i = 0; i < 10000; ++i) {
-    p.width = rand() % 100;
+    int width = rand() % 100 * 2;
     Unit u;
     for (int j = 0; j < 10; ++j) {
       u.members.push_back(Point(rand() % 40 - 20, rand() % 40 - 20));
-      EXPECT_EQ(p.spawn2(u), p.spawn1(u));
+      EXPECT_EQ(u.spawn2(width), u.spawn1(width));
     }
   }
 }

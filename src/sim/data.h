@@ -137,28 +137,17 @@ struct Field {
   void print_html(std::ostream& os) const;
 };
 
+// A pivot origin unit
 struct Unit {
   // The local origin is shifted to the pivot.
   vector<Point> members;
-  // How many times the unit is rotated to the identical occupation.
-  int mod;
 
   void load(const ptree &p) {
     Point pivot = load_point(p.get_child("pivot"));
     for (const auto& i : p.get_child("members")) {
       members.push_back(point_subtract(load_point(i.second), pivot));
     }
-    sort(members.begin(), members.end());
-    calc_mod();
     CHECK_GT(members.size(), 0);
-  }
-  void calc_mod() {
-    mod = 1;
-    for (Unit u = this->rotate_cw();; u = u.rotate_cw()) {
-      sort(u.members.begin(), u.members.end());
-      if (members == u.members) break;
-      mod++;
-    }
   }
   int top_most() const {
     int e = members[0].second;
@@ -195,7 +184,6 @@ struct Unit {
   }
   Unit rotate_cw() const {
     Unit u;
-    u.mod = mod;
     u.members.resize(members.size());
     for (int i = 0; i < members.size(); ++i) {
       u.members[i] = Point((members[i].first - 3 * members[i].second) / 2, (members[i].first + members[i].second) / 2);
@@ -205,7 +193,6 @@ struct Unit {
   }
   Unit rotate_ccw() const {
     Unit u;
-    u.mod = mod;
     u.members.resize(members.size());
     for (int i = 0; i < members.size(); ++i) {
       u.members[i] = Point((members[i].first + 3 * members[i].second) / 2, (members[i].second - members[i].first) / 2);
@@ -213,14 +200,64 @@ struct Unit {
     }
     return u;
   }
+  // Returns the point relative to the local cordinate system on which the unit spawns.
+  Point spawn(int width) const {
+    return spawn1(width);
+  }
+  Point spawn2(int width) const {
+    int y = -top_most();
+    int x = (width - left_most());
+    x = (x & ~1) + (y & 1);
+    while (true) {
+      int l = width / 2, r = width / 2;
+      for (int i = 0; i < members.size(); ++i) {
+        int z = x + members[i].first;
+        l = min(l, div2(z));
+        r = min(r, div2(width - 1 - z));
+      }
+      if (l <= r) return Point(x, y);
+      x -= 2;
+    }
+  }
+  Point spawn1(int width) const {
+    int y = -top_most();
+    int odd = y & 1;
+    int l = div2(left_most() + odd);
+    int r = div2(width - 1 - odd - right_most());
+    int x = odd + ((r - l) & ~1);
+    return Point(x, y);
+  }
 };
 
+// All unique occupied and normalized positions of rotation of a unit
+struct UnitCache {
+  vector<Unit> rotation;
+
+  void init(const Unit& unit) {
+    rotation.push_back(unit);
+    sort(rotation[0].members.begin(), rotation[0].members.end());
+    for (Unit u = unit.rotate_cw(); ; u = u.rotate_cw()) {
+      sort(u.members.begin(), u.members.end());
+      if (u.members == rotation[0].members) break;
+      rotation.push_back(u);
+    }
+  }
+};
+
+// A kind of unit placed on field
 struct UnitControl {
-  Unit unit;
+  const UnitCache* cache;
   Point loc;
   // The current rotation to the original position.
   int angle;
 
+  UnitControl(const UnitCache* c, Point p, int a)
+      : cache(c), loc(p), angle(a) {}
+  UnitControl(const UnitCache* c, int width)
+      : cache(c), loc(c->rotation[0].spawn(width)), angle(0) {}
+  const vector<Point>& members() const {
+    return cache->rotation[angle].members;
+  }
   // Commands
   UnitControl command(Command c) const {
     switch (c) {
@@ -235,32 +272,32 @@ struct UnitControl {
     }
   }
   UnitControl move_w() const {
-    return UnitControl{unit, Point(loc.first - 2, loc.second), angle};
+    return UnitControl(cache, Point(loc.first - 2, loc.second), angle);
   }
   UnitControl move_e() const {
-    return UnitControl{unit, Point(loc.first + 2, loc.second), angle};
+    return UnitControl(cache, Point(loc.first + 2, loc.second), angle);
   }
   UnitControl move_sw() const {
-    return UnitControl{unit, Point(loc.first - 1, loc.second + 1), angle};
+    return UnitControl(cache, Point(loc.first - 1, loc.second + 1), angle);
   }
   UnitControl move_se() const {
-    return UnitControl{unit, Point(loc.first + 1, loc.second + 1), angle};
+    return UnitControl(cache, Point(loc.first + 1, loc.second + 1), angle);
   }
   UnitControl rotate_cw() const {
-    return UnitControl{unit.rotate_cw(), loc, (angle + 1) % unit.mod};
+    return UnitControl(cache, loc, (angle + 1) % cache->rotation.size());
   }
   UnitControl rotate_ccw() const {
-    return UnitControl{unit.rotate_ccw(), loc, (angle + 5) % unit.mod};
+    return UnitControl(cache, loc, (angle + 5) % cache->rotation.size());
   }
 
   // Test if all cells empty
   bool test(Field* field) const {
-    return field->test(unit.members, loc);
+    return field->test(members(), loc);
   }
   // Just returns # of cells
   int fill(Field* field, char c) const {
-     field->fill(unit.members, loc, c);
-     return unit.members.size();
+     field->fill(members(), loc, c);
+     return members().size();
   }
   uint32 serialize() const {
     return (loc.first << 17) ^ (loc.second << 3) ^ angle;
@@ -297,37 +334,6 @@ struct Problem {
     Field f(height, width * 2);
     f.fill(filled, 'x');
     return f;
-  }
-  UnitControl source_control(uint32 s) const {
-    int i = s % units.size();
-    return UnitControl{units[i], spawn(units[i]), 0};
-  }
-  // Returns the point relative to the local cordinate system on which the unit spawns.
-  Point spawn(const Unit& u) const {
-    return spawn1(u);
-  }
-  Point spawn2(const Unit& u) const {
-    int y = -u.top_most();
-    int x = (width * 2 - u.left_most());
-    x = (x & ~1) + (y & 1);
-    while (true) {
-      int l = width, r = width;
-      for (int i = 0; i < u.members.size(); ++i) {
-        int z = x + u.members[i].first;
-        l = min(l, div2(z));
-        r = min(r, div2(width * 2 - 1 - z));
-      }
-      if (l <= r) return Point(x, y);
-      x -= 2;
-    }
-  }
-  Point spawn1(const Unit& u) const {
-    int y = -u.top_most();
-    int odd = y & 1;
-    int l = div2(u.left_most() + odd);
-    int r = div2(width * 2 - 1 - odd - u.right_most());
-    int x = odd + ((r - l) & ~1);
-    return Point(x, y);
   }
 };
 

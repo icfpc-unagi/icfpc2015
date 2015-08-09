@@ -65,6 +65,7 @@ class Sim {
   const Problem* const problem_;
   const Solution* const solution_;
 
+  vector<UnitCache> unit_cache;
   std::ostream* logs_ = nullptr;
   // If skip is true, specified number of first/last commands would be logged.
   bool skip_ = false;
@@ -93,10 +94,15 @@ class Sim {
   int Play() {
     if (logs_ && FLAGS_verbose >= 2) *logs_ << "\nPlaying problem " << solution_->id << ", seed:" << solution_->seed << " (" << solution_->tag << ")" << endl;
 
+    unit_cache.resize(problem_->units.size());
+    for (int i = 0; i < unit_cache.size(); ++i) {
+      unit_cache[i].init(problem_->units[i]);
+    }
+
     field_ = problem_->make_field();
     LCG random(solution_->seed);
     unordered_set<uint32> visit;
-    UnitControl control = problem_->source_control(random.next());
+    UnitControl control(&unit_cache[random.next() % unit_cache.size()], field_.width());
     int source = 0;
     int ls_old = 0;
     int score = 0;
@@ -150,7 +156,7 @@ class Sim {
         ls_old = ls;
         score += points + line_bonus;
         // Next source
-        control = problem_->source_control(random.next());
+        control = UnitControl(&unit_cache[random.next() % unit_cache.size()], field_.width());
         source++;
         visit.clear();
       }
