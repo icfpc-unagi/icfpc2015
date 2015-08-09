@@ -26,9 +26,9 @@ const char kIgnored[] = "\t\n\r";
 
 // TODO: Take from flag
 const char* kPhrases[] = {
-  "Ei!",
-  "Ia! Ia!",
-  "R'lyeh",
+  "ei!",
+  "ia! ia!",
+  "r'lyeh",
   "bap",
 };
 
