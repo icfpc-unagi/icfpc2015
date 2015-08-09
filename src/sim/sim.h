@@ -12,7 +12,7 @@
 
 DECLARE_int32(verbose);
 DECLARE_bool(include_power_score);
-DECLARE_string(p);
+DECLARE_string(phrases_of_power);
 
 using namespace std;
 
@@ -86,7 +86,7 @@ class Sim {
 
  public:
   Field field_;
-  Phrases phrases_ = Phrases(FLAGS_p);
+  Phrases phrases_ = Phrases(FLAGS_phrases_of_power);
 
  public:
   Sim(const Problem& problem, const Solution& solution)

@@ -4,4 +4,4 @@
 
 DEFINE_int32(verbose, 5, "berobero");
 DEFINE_bool(include_power_score, false, "berobero");
-DEFINE_string(p, "", "phrases of power");
+DEFINE_string(phrases_of_power, "", "phrases of power");
