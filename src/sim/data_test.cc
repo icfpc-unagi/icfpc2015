@@ -321,3 +321,16 @@ TEST(DataTest, SpawnTest2) {
   u.members.push_back(Point(0, -2));
   EXPECT_EQ(Point(8, 2), p.spawn(u));
 }
+
+TEST(DataTest, RandomSpawnTest) {
+  Problem p;
+  srand(0);
+  for (int i = 0; i < 10000; ++i) {
+    p.width = rand() % 100;
+    Unit u;
+    for (int j = 0; j < 10; ++j) {
+      u.members.push_back(Point(rand() % 40 - 20, rand() % 40 - 20));
+      EXPECT_EQ(p.spawn2(u), p.spawn1(u));
+    }
+  }
+}
