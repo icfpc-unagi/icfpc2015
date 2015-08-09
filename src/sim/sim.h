@@ -3,6 +3,7 @@
 
 #include <cstring>
 #include <iostream>
+#include <fstream>
 #include <unordered_set>
 #include "base/base.h"
 #include "googleapis/strings/strip.h"
@@ -11,6 +12,7 @@
 
 DECLARE_int32(verbose);
 DECLARE_bool(include_power_score);
+DECLARE_string(p);
 
 using namespace std;
 
@@ -44,15 +46,49 @@ public:
   }
 };
 
+class Phrases {
+  vector<string> d_;
+public:
+  Phrases() {
+    for (int i = 0; i < ARRAYSIZE(kPhrases); ++i) {
+      d_.push_back(kPhrases[i]);
+    }
+  }
+  Phrases(const string& filename) {
+    if (filename.empty()) {
+      ifstream ifs(filename);
+      string s;
+      while (getline(ifs, s)) {
+        googleapis::StripTrailingNewline(&s);
+        d_.push_back(s);
+      }
+    } else {
+      Phrases();
+    }
+  }
+
+  // Returns power score
+  int spell(StringPiece sp) {
+    int score = 0;
+    // TODO: make this faster
+    for (const string& phrase : d_) {
+      int reps = CountSubstring(sp, phrase);
+      if (reps > 0) score += 2 * phrase.size() * reps + 300;
+    }
+    return score;
+  }
+};
+
 class Sim {
-private:
+ private:
   const Problem* const problem_;
   const Solution* const solution_;
 
  public:
   Field field_;
+  Phrases phrases_ = Phrases(FLAGS_p);
 
-public:
+ public:
   Sim(const Problem& problem, const Solution& solution)
       : problem_(&problem), solution_(&solution),
         field_(problem_->make_field()) {
@@ -125,19 +161,9 @@ public:
       }
       if (FLAGS_verbose >= 2) cerr << "Move Score = " << score << endl;
     }
-    int power_score = PowerScore(s);
+    int power_score = phrases_.spell(s);
     if (FLAGS_verbose >= 2) cerr << "Power Score = " << power_score << endl;
     if (FLAGS_include_power_score) score += power_score;
-    return score;
-  }
-
-  static int PowerScore(const StringPiece sp) {
-    int score = 0;
-    // TODO: make this faster
-    for (int i = 0; i < ARRAYSIZE(kPhrases); ++i) {
-      int reps = CountSubstring(sp, kPhrases[i]);
-      if (reps > 0) score += 2 * strlen(kPhrases[i]) * reps + 300;
-    }
     return score;
   }
 };
