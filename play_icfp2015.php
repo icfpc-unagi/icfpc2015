@@ -195,7 +195,7 @@ class Stream {
 function GetScore($input_file, $phrases_file, $solution) {
   static $printed = FALSE;
   $tmpfile = GetTemporaryFile();
-  file_put_contents($tmpfile, json_encode($solution));
+  file_put_contents($tmpfile, json_encode([$solution]));
   $command = $GLOBALS['SIMULATOR'] . ' ' .
              '--output_score ' .
              '--phrases_of_power=' . $phrases_file . ' ' .
