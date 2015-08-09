@@ -2,10 +2,11 @@
 #define SRC_SIM_SIM_H_
 
 #include <cstring>
-#include <iostream>
 #include <fstream>
+#include <iostream>
 #include <unordered_set>
 #include "base/base.h"
+#include "googleapis/strings/case.h"
 #include "googleapis/strings/strip.h"
 #include "googleapis/strings/util.h"
 #include "src/sim/data.h"
@@ -15,20 +16,6 @@ DECLARE_bool(include_power_score);
 DECLARE_string(phrases_of_power);
 
 using namespace std;
-
-namespace {
-
-// TODO: Take from flag
-const char* kPhrases[] = {
-  "ei!",
-  "ia! ia!",
-  "r'lyeh",
-  "bap",
-  "necronomicon",
-  "yogsothoth",
-};
-
-}  // namespace
 
 class LCG {
 private:
@@ -49,21 +36,15 @@ public:
 class Phrases {
   vector<string> d_;
 public:
-  Phrases() {
-    for (int i = 0; i < ARRAYSIZE(kPhrases); ++i) {
-      d_.push_back(kPhrases[i]);
-    }
-  }
   Phrases(const string& filename) {
-    if (filename.empty()) {
+    if (!filename.empty()) {
       ifstream ifs(filename);
       string s;
       while (getline(ifs, s)) {
         googleapis::StripTrailingNewline(&s);
+        googleapis::LowerString(&s);
         d_.push_back(s);
       }
-    } else {
-      Phrases();
     }
   }
 
