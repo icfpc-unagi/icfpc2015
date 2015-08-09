@@ -12,6 +12,8 @@ PHRASES=(
   -p "yogsothoth"
   -p "yuggoth"
   -p "blue hades"
+  -p "monkeyboy"
+  -p "planet 10"
 )
 
 run() {
