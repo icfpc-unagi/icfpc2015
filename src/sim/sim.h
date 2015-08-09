@@ -106,7 +106,7 @@ class Sim {
         return -3;
       }
 
-      if (FLAGS_verbose >= 5 || (FLAGS_verbose >= 4 && visit.empty())) {
+      if (FLAGS_verbose >= 5 || (FLAGS_verbose >= 4 && visit.size() == 1)) {
         cerr << "\n\n================================\n\n";
         Field overlay = field_;
         control.fill(&overlay, 'o');
