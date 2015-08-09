@@ -18,6 +18,7 @@ PHRASES=(
   -p "tsathoggua"
   -p "yoyodyne"
   -p "john bigboote"
+  -p "the laundry"
 )
 
 run() {
