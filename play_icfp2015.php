@@ -12,6 +12,7 @@ $PROGRAMS = [];
 $STDERR = FALSE;
 $VERBOSE = 0;
 $SIMULATOR = 'bazel-bin/src/sim/sim_main';
+$RECIPE = 'play_icfp2015.txt';
 
 $mode = '';
 for ($i = 1; $i < count($argv); $i++) {
@@ -47,6 +48,8 @@ for ($i = 1; $i < count($argv); $i++) {
         break;
       case '-@s':
         $SIMULATOR = $argv[$i];
+      case '-@r':
+        $RECIPE = $argv[$i];
       default:
         fwrite(STDERR, "Flag option $mode is not supported, so ignored.\n");
     }
@@ -54,10 +57,8 @@ for ($i = 1; $i < count($argv); $i++) {
 }
 
 if (count($PROGRAMS) == 0) {
-  $PROGRAMS = array_map(
-      'trim',
-      explode("\n", trim(
-          file_get_contents(dirname(__FILE__) . '/play_icfp2015.txt'))));
+  $PROGRAMS =
+      array_map('trim', explode("\n", trim(file_get_contents($RECIPE))));
 }
 
 $PHRASES = array_map('strtolower', $PHRASES);
@@ -67,6 +68,7 @@ fwrite(STDERR, 'File: ' . json_encode($FILES) . "\n");
 fwrite(STDERR, 'Phrases of power: ' . json_encode($PHRASES) . "\n");
 fprintf(STDERR, "Time limit: %.3f\n", $TIME_LIMIT);
 fprintf(STDERR, "Memory limit: %.3f\n", $MEMORY_LIMIT);
+fwrite(STDERR, 'Recipe: ' . $RECIPE . "\n");
 fwrite(STDERR, 'Programs: ' . json_encode($PROGRAMS) . "\n");
 fwrite(STDERR, 'Worker STDERR: ' . ($STDERR ? 'Yes' : 'No') . "\n");
 fwrite(STDERR, 'Verbosity: ' . $VERBOSE . "\n");

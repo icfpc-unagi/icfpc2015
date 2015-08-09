@@ -52,6 +52,16 @@ run() {
         rm "${path}.bak"
         echo 'null' > "${path}"
       fi
+    elif [ "${ai_name%.txt}" != "${ai_name}" ]; then
+      if timeout 1800s php /mirror/github/play_icfp2015.php \
+             -@r "${ai}" -@s 'sim_main' -t 1700 \
+             -f "${data}" "${PHRASES[@]}" > "${path}.bak"; then
+        tail -n 1 "${path}.bak" > "${path}"
+        rm "${path}.bak"
+      else
+        rm "${path}.bak"
+        echo 'null' > "${path}"
+      fi
     else
       true
     fi
