@@ -9,6 +9,8 @@
 
 DEFINE_bool(output_score, false, "berobero");
 DEFINE_bool(run_first_seed, false, "Run only the first seed in the output.");
+DEFINE_int32(log_head, -1, "If set, log only first N commands.");
+DEFINE_int32(log_tail, 0, "If set with --log_head, log last N commands as well.");
 
 using namespace std;
 using boost::property_tree::ptree;
@@ -87,6 +89,8 @@ int main(int argc, char** argv) {
     found = true;
 
     Sim sim(problem, s);
+    sim.set_logstream(cerr);
+    if (FLAGS_log_head >= 0) sim.skip_log(FLAGS_log_head, FLAGS_log_tail);
     int score = sim.Play();
     if (FLAGS_output_score) cout << score << endl;
   }

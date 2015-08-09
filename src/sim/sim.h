@@ -65,19 +65,33 @@ class Sim {
   const Problem* const problem_;
   const Solution* const solution_;
 
+  std::ostream* logs_ = nullptr;
+  // If skip is true, specified number of first/last commands would be logged.
+  bool skip_ = false;
+  int head_;
+  int tail_;
+
  public:
   Field field_;
   Phrases phrases_ = Phrases(FLAGS_phrases_of_power);
 
- public:
   Sim(const Problem& problem, const Solution& solution)
       : problem_(&problem), solution_(&solution),
         field_(problem_->make_field()) {
     CHECK_EQ(problem_->id, solution_->id);
   }
 
+  void set_logstream(ostream& os) {
+    logs_ = &os;
+  }
+  void skip_log(int head, int tail) {
+    skip_ = true;
+    head_ = head;
+    tail_ = tail;
+  }
+
   int Play() {
-    if (FLAGS_verbose >= 2) cerr << "\nPlaying problem " << solution_->id << ", seed:" << solution_->seed << " (" << solution_->tag << ")" << endl;
+    if (logs_ && FLAGS_verbose >= 2) *logs_ << "\nPlaying problem " << solution_->id << ", seed:" << solution_->seed << " (" << solution_->tag << ")" << endl;
 
     field_ = problem_->make_field();
     LCG random(solution_->seed);
@@ -91,41 +105,41 @@ class Sim {
     googleapis::strrmm(&s, kIgnored);
     for (int i = 0; i < s.size(); ++i) {
       if (source >= problem_->length) {
-        if (FLAGS_verbose >= 2) cerr << "Command remaining error. (Game cleared.)" << endl;
+        if (logs_ && (!skip_ || i < head_ || s.size() - i <= tail_) && FLAGS_verbose >= 2) *logs_ << "Command remaining error. (Game cleared.)" << endl;
         return -1;
       }
 
       // Game ends if the spawn location is not valid
       if (!control.test(&field_)) {
-        if (FLAGS_verbose >= 2) cerr << "Command remaining error. (Dead after placing " << source << "units.)" << endl;
+        if (logs_ && (!skip_ || i < head_ || s.size() - i <= tail_) && FLAGS_verbose >= 2) *logs_ << "Command remaining error. (Dead after placing " << source << "units.)" << endl;
         return -2;
       }
 
       if (!visit.insert(control.serialize()).second) {
-        if (FLAGS_verbose >= 2) cerr << "Command error. (Visited.)" << endl;
+        if (logs_ && (!skip_ || i < head_ || s.size() - i <= tail_) && FLAGS_verbose >= 2) *logs_ << "Command error. (Visited.)" << endl;
         return -3;
       }
 
-      if (FLAGS_verbose >= 5 || (FLAGS_verbose >= 4 && visit.size() == 1)) {
-        cerr << "\n\n================================\n";
+      if (logs_ && (!skip_ || i < head_ || s.size() - i <= tail_) && (FLAGS_verbose >= 5 || (FLAGS_verbose >= 4 && visit.size() == 1))) {
+        *logs_ << "\n\n================================\n";
         Field overlay = field_;
         control.fill(&overlay, 'o');
         if (field_.contain(control.loc)) {
           overlay.set(control.loc, overlay.test(control.loc) ? '@' : overlay.get(control.loc) == 'o' ? '&' : '$');
         }
-        overlay.print(cerr);
+        overlay.print(*logs_);
       }
 
-      if (FLAGS_verbose >= 3) cerr << "Snippet:" << i << ": " << StringPiece(s, i, 40) << endl;
+      if (logs_ && (!skip_ || i < head_ || s.size() - i <= tail_) && FLAGS_verbose >= 3) *logs_ << "Snippet:" << i << ": " << StringPiece(s, i, 40) << endl;
       Command c = translate_command(s[i]);
       UnitControl next_control = control.command(c);
-      if (FLAGS_verbose >= 3) cerr << "Command: " << command_name(c) << endl;
+      if (logs_ && (!skip_ || i < head_ || s.size() - i <= tail_) && FLAGS_verbose >= 3) *logs_ << "Command: " << command_name(c) << endl;
 
       if (next_control.test(&field_)) {
         // Applies move
         control = next_control;
       } else {
-        if (FLAGS_verbose >= 3) cerr << "Invalid command; Unit locked" << endl;
+        if (logs_ && (!skip_ || i < head_ || s.size() - i <= tail_) && FLAGS_verbose >= 3) *logs_ << "Invalid command; Unit locked" << endl;
         // Rejects move and locks unit
         int size = control.fill(&field_, 'x');
         // Clears rows
@@ -140,11 +154,11 @@ class Sim {
         source++;
         visit.clear();
       }
-      if (FLAGS_verbose >= 2) cerr << "Move Score = " << score << endl;
+      if (logs_ && (!skip_ || i < head_ || s.size() - i <= tail_) && FLAGS_verbose >= 2) *logs_ << "Move Score = " << score << endl;
     }
     if (!FLAGS_phrases_of_power.empty()) {
       int power_score = phrases_.spell(s);
-      if (FLAGS_verbose >= 2) cerr << "Power Score = " << power_score << endl;
+      if (logs_ && FLAGS_verbose >= 2) *logs_ << "Power Score = " << power_score << endl;
       score += power_score;
     }
     return score;
