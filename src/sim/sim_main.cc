@@ -1,3 +1,4 @@
+#include <cstring>
 #include <fstream>
 #include "base/base.h"
 #include "base/strings.h"
@@ -29,6 +30,18 @@ int main(int argc, char** argv) {
   if (argc < 2) {
     LOG(ERROR) << "Usage: " << argv[0] << " <problem.json> [output.json]";
     return 1;
+  }
+
+  {
+    // Hack for result dashboard
+    ifstream ifs(argv[1]);
+    char buf[4];
+    ifs.read(buf, 4);
+    if (memcmp(buf, "null", 4) == 0) {
+      if (FLAGS_verbose >= 2) cerr << "null" << endl;
+      cout << -100 << endl;
+      return 0;
+    }
   }
 
   Problem problem;
