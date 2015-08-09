@@ -12,7 +12,6 @@
 #include "src/sim/data.h"
 
 DECLARE_int32(verbose);
-DECLARE_bool(include_power_score);
 DECLARE_string(phrases_of_power);
 
 using namespace std;
@@ -143,10 +142,10 @@ class Sim {
       }
       if (FLAGS_verbose >= 2) cerr << "Move Score = " << score << endl;
     }
-    if (FLAGS_include_power_score) {
+    if (!FLAGS_phrases_of_power.empty()) {
       int power_score = phrases_.spell(s);
       if (FLAGS_verbose >= 2) cerr << "Power Score = " << power_score << endl;
-      if (FLAGS_include_power_score) score += power_score;
+      score += power_score;
     }
     return score;
   }
