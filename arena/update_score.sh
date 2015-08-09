@@ -9,6 +9,7 @@ for file in */*.json; do
     mkdir -p "$(dirname "../scores/${file}")"
     if /alloc/global/bin/sim_main \
         --output_score \
+        --include_power_score \
         --verbose=0 \
         "/mirror/github/data/problems/${file##*/}" \
         "${file}" > "../scores/${file%.json}.txt.bak"; then
