@@ -22,6 +22,8 @@ const char* kPhrases[] = {
   "ia! ia!",
   "r'lyeh",
   "bap",
+  "necronomicon",
+  "yogsothoth",
 };
 
 }  // namespace
