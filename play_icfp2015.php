@@ -287,8 +287,7 @@ function ReadStreams(
       $seed = $solution['seed'];
       $score = GetScore($input_file, $phrases_file, $solution);
       if ($score == NULL) {
-        INFO("STREAM$stream_id: invalid output: " .
-             "$seed => {$solution['solution']}");
+        INFO("STREAM$stream_id: invalid output: " . json_encode($solution));
         continue;
       }
       INFO("STREAM$stream_id: evaluated score is $score.");
