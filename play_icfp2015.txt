@@ -1,2 +1,2 @@
-java -cp "solver/wataFast7.jar:src/gson/gson-2.3.1.jar" Main
-java -cp "solver/wata2e6.jar:src/gson/gson-2.3.1.jar" Main
+java -Xmx2g -cp "solver/wataEval1.jar:src/gson/gson-2.3.1.jar" Main
+mono "solver/chokudAI3.0.2.exe"
