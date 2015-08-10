@@ -389,7 +389,8 @@ class Game {
           INFO("PROGRAM{$program_id}: {$streams[$program_id]->command}");
         }
         $results += ReadStreams(
-            $streams, $problem['id'], $input_file, $phrase_file, $end_time);
+            $streams, $problem['id'], $input_file, $phrase_file,
+            $seed_end_time);
         foreach ($results as $result) {
           if (isset($result['stream'])) {
             $program_id = $result['stream'];
