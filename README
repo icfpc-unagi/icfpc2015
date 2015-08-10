@@ -8,12 +8,29 @@ Team UNAGI Final Submission @ ICFP Contest 2015
 
 As specified in the problem description, invoke `make` and `play_icfp2015` to build and run.
 
+Solutions are written to the standard output. We may also write some messages to the standard error for debugging purpose, which should be ignored.
 
 ### Dependency
 
 We checked that, on plain Ubuntu 14.04, all the dependency is automaticaly installed in `Makefile`. Just for in case, we list the main dependent packages.
 
-* Frontend script is written in *PHP*, and requires PHP.
-* Internal evaluator is written in *C++*, and thus requires *g++*.
-* We use *bazel* for building C++ programs (e.g., internal evaluator).
-* Solvers are written in *Java* and *C#*, so *Java* and *Mono* are required.
+* The front-end script is written in *PHP*, and requires *PHP*.
+* The internal evaluator is written in *C++11*, and thus requires *g++*.
+* We use *bazel* for building C++ programs (e.g., the internal evaluator).
+* The solvers are written in *Java* and *C#*, so *Java* and *Mono* are also required.
+
+
+
+## Description
+
+### Overall Strategy
+
+We developed two solvers named "wata" and "chokudai". Furthermore, solver "wata" has a few variations. None of them overwhelms the other. Therefore, script "play_icfp2015" executes these solveres in parallel, and then the best solution is selected.
+
+### Front-end script
+
+The PHP script `play_icfp2015.php`, which is called from shell script `play_icfp2015`, is our front-end script. It executes our solvers in parallel. It collects the solutions of the solvers, and then selects and outputs the best solution using our internal evaluator.
+
+### Solvers
+
+Both solvers use beam searches, but they use different board evaluation functions, as well as spelling strategies.
