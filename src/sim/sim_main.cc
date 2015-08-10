@@ -77,7 +77,7 @@ int main(int argc, char** argv) {
   if (FLAGS_verbose >= 3) {
     cerr << "Solutions:\n";
     for (const auto& s : output.solutions) {
-      cerr << "Seed " << s.seed << " (" << s.tag << ")\n";
+      cerr << "Seed " << s.seed << " (" << s.tag << ") " << s.solution.size() << " commands\n";
     }
   }
 
