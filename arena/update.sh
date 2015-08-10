@@ -48,7 +48,7 @@ run() {
       fi
     elif [ "${ai_name%.jar}" != "${ai_name}" ]; then
       if timeout 1800s \
-          java -cp "${ai}:/mirror/github/src/gson/gson-2.3.1.jar" \
+          java -cp "${ai}:/mirror/github/src/gson/gson-2.3.1.jar" -Xmx:4g \
           Main -f "${data}" "${PHRASES[@]}" > "${path}.bak"; then
         tail -n 1 "${path}.bak" > "${path}"
         rm "${path}.bak"
