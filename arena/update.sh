@@ -47,9 +47,14 @@ run() {
         echo 'null' > "${path}"
       fi
     elif [ "${ai_name%.jar}" != "${ai_name}" ]; then
-      if timeout 1800s \
-          java -Xmx4g -cp "${ai}:/mirror/github/src/gson/gson-2.3.1.jar" \
-          Main -f "${data}" "${PHRASES[@]}" > "${path}.bak"; then
+      if TMPDIR=/tmp timeout 120s php /mirror/github/play_icfp2015.php \
+             -c 1 -@x \
+             "java -Xmx4g -cp ${ai}:/mirror/github/src/gson/gson-2.3.1.jar Main" \
+             -@s /mirror/global/bin/sim_main -t 100 \
+             -f "${data}" "${PHRASES[@]}" > "${path}.bak"; then
+      # if timeout 1800s \
+      #     java -Xmx4g -cp "${ai}:/mirror/github/src/gson/gson-2.3.1.jar" \
+      #     Main -f "${data}" "${PHRASES[@]}" > "${path}.bak"; then
         tail -n 1 "${path}.bak" > "${path}"
         rm "${path}.bak"
       else
@@ -57,9 +62,9 @@ run() {
         echo 'null' > "${path}"
       fi
     elif [ "${ai_name%.txt}" != "${ai_name}" ]; then
-      if TMPDIR=/tmp timeout 1800s \
+      if TMPDIR=/tmp timeout 120s \
              php /mirror/github/play_icfp2015.php \
-             -@r "${ai}" -@s /mirror/global/bin/sim_main -t 1700 \
+             -@r "${ai}" -@s /mirror/global/bin/sim_main -t 100 \
              -f "${data}" "${PHRASES[@]}" > "${path}.bak"; then
         tail -n 1 "${path}.bak" > "${path}"
         rm "${path}.bak"
