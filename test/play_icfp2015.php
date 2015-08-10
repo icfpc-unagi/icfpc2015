@@ -368,37 +368,41 @@ class Game {
       $program_ids = array_keys($GLOBALS['PROGRAMS']);
       $program_id = $program_ids[0];
     } else {
-      $streams = [];
-      $seed = $seeds[$seed_index];
-      INFO("SEED{$seed}: #${seed_index}");
-      if (count($seeds) == 1) {
-        $seed_end_time = $end_time;
-      } else {
-        $current_time = GetMicrotime();
-        // TODO(imos): Calculate porition precisely.
-        $seed_end_time = ($end_time - $current_time) / 2 + $current_time;
-      }
-      $input_file = $seed_files[$seed];
-      foreach ($GLOBALS['PROGRAMS'] as $program_id => $program) {
-        $streams[$program_id] =
-            new Stream(CreateCommand(
-                $program, $input_file, $GLOBALS['PHRASES'], $end_time));
-        INFO("PROGRAM{$program_id}: {$streams[$program_id]->command}");
-      }
-      $results = ReadStreams(
-          $streams, $problem['id'], $input_file, $phrase_file, $end_time);
-      foreach ($results as $result) {
-        if (isset($result['stream'])) {
-          $program_id = $result['stream'];
-          INFO("PROGRAM{$program_id} is best.");
-          break;
+      for (; $seed_index < count($seeds); $seed_index++) {
+        $streams = [];
+        $seed = $seeds[$seed_index];
+        INFO("SEED{$seed}: #${seed_index}");
+        if (count($seeds) == 1) {
+          $seed_end_time = $end_time;
         } else {
-          WARNING("stream field must be specified.");
+          $current_time = GetMicrotime();
+          // TODO(imos): Calculate porition precisely.
+          $seed_end_time =
+              ($end_time - $current_time) / (count($seeds) - $seed_index) +
+              $current_time;
+        }
+        $input_file = $seed_files[$seed];
+        foreach ($GLOBALS['PROGRAMS'] as $program_id => $program) {
+          $streams[$program_id] =
+              new Stream(CreateCommand(
+                  $program, $input_file, $GLOBALS['PHRASES'], $end_time));
+          INFO("PROGRAM{$program_id}: {$streams[$program_id]->command}");
+        }
+        $results = ReadStreams(
+            $streams, $problem['id'], $input_file, $phrase_file, $end_time);
+        foreach ($results as $result) {
+          if (isset($result['stream'])) {
+            $program_id = $result['stream'];
+            INFO("PROGRAM{$program_id} is best.");
+            break;
+          } else {
+            WARNING("stream field must be specified.");
+          }
         }
       }
-      $seed_index++;
     }
 
+    /*
     for (; $seed_index < count($seeds);) {
       if (GetMicrotime() > $end_time) break;
 
@@ -429,6 +433,7 @@ class Game {
             $group_end_time);
       }
     }
+    */
 
     // Only for checking.
     foreach ($results as $key => $result) {
