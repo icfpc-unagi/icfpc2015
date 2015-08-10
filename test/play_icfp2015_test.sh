@@ -48,6 +48,7 @@ EOF
 EOM
 
 START_TIME="${SECONDS}"
+php -v
 php "${TEST_SRCDIR}/test/play_icfp2015.php" \
      -c 1 -@x "bash ${PROGRAM1}" -@x "bash ${PROGRAM2}" \
      -@s "${TEST_SRCDIR}/src/sim/sim_main" -t 10 \
