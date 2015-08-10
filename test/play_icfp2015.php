@@ -364,7 +364,7 @@ class Game {
     }
 
     $seed_index = 0;
-    if (count($GLOBALS['PROGRAMS']) == 1) {
+    if (FALSE && count($GLOBALS['PROGRAMS']) == 1) {
       $program_ids = array_keys($GLOBALS['PROGRAMS']);
       $program_id = $program_ids[0];
     } else {
