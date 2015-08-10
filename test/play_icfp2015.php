@@ -385,7 +385,7 @@ class Game {
         foreach ($GLOBALS['PROGRAMS'] as $program_id => $program) {
           $streams[$program_id] =
               new Stream(CreateCommand(
-                  $program, $input_file, $GLOBALS['PHRASES'], $end_time));
+                  $program, $input_file, $GLOBALS['PHRASES'], $seed_end_time));
           INFO("PROGRAM{$program_id}: {$streams[$program_id]->command}");
         }
         $results = ReadStreams(
