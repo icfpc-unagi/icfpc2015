@@ -67,6 +67,21 @@ run() {
         rm "${path}.bak"
         echo 'null' > "${path}"
       fi
+    else [ "${ai_name}" = 'final' ]; then
+      pushd /mirror/github
+      if TMPDIR=/tmp timeout 360s \
+             ./play_icfp2015 \
+             -@s /mirror/global/bin/sim_main \
+             -m 4096 \
+             -t 300 \
+             -f "${data}" "${PHRASES[@]}" > "${path}.bak"; then
+        tail -n 1 "${path}.bak" > "${path}"
+        rm "${path}.bak"
+      else
+        rm "${path}.bak"
+        echo 'null' > "${path}"
+      fi
+      popd
     else
       true
     fi
