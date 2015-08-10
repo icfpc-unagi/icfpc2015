@@ -47,10 +47,10 @@ run() {
         echo 'null' > "${path}"
       fi
     elif [ "${ai_name%.jar}" != "${ai_name}" ]; then
-      if TMPDIR=/tmp timeout 120s php /mirror/github/play_icfp2015.php \
+      if TMPDIR=/tmp timeout 1800s php /mirror/github/play_icfp2015.php \
              -c 1 -@x \
              "java -Xmx4g -cp ${ai}:/mirror/github/src/gson/gson-2.3.1.jar Main" \
-             -@s /mirror/global/bin/sim_main -t 100 \
+             -@s /mirror/global/bin/sim_main -t 1700 \
              -f "${data}" "${PHRASES[@]}" > "${path}.bak"; then
       # if timeout 1800s \
       #     java -Xmx4g -cp "${ai}:/mirror/github/src/gson/gson-2.3.1.jar" \
