@@ -486,13 +486,16 @@ class Game {
         continue;
       }
       foreach ($problem_results as $result) {
-        $results[$result['problemId']][$result['seed']] = $result;
+        INFO("Problem result: Problem: {$result['problemId']}, Seed: {result['seed']}");
+        $results[intval($result['problemId'])][intval($result['seed'])] = $result;
       }
     }
 
     $final_results = [];
     foreach ($problems as $problem) {
       foreach ($problem['sourceSeeds'] as $seed) {
+        $problem_id = intval($problem['id']);
+        $seed = intval($seed);
         if (isset($results[$problem['id']][$seed])) {
           $result = $results[$problem['id']][$seed];
           $final_results[] = [
