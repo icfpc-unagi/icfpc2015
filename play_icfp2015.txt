@@ -1,2 +1,2 @@
-java -Xmx2g -cp "solver/wataFinal12.jar:src/gson/gson-2.3.1.jar" Main
+java -Xmx2g -cp "solver/wataFinal.jar:src/gson/gson-2.3.1.jar" Main
 mono "solver/chokudAI4.0.4.exe"
