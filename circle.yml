@@ -1,6 +1,8 @@
 machine:
   java:
     version: oraclejdk8
+  php:
+    version: 5.5.9
 
 dependencies:
   cache_directories:
