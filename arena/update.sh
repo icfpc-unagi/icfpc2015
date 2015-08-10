@@ -67,7 +67,7 @@ run() {
         rm "${path}.bak"
         echo 'null' > "${path}"
       fi
-    else [ "${ai_name}" = 'final' ]; then
+    elif [ "${ai_name}" = 'final' ]; then
       pushd /mirror/github
       if TMPDIR=/tmp timeout 360s \
              ./play_icfp2015 \
