@@ -48,6 +48,8 @@ EOF
 EOM
 
 START_TIME="${SECONDS}"
+# Hack for CircleCI.
+export PATH="/home/ubuntu/.phpenv/shims:${PATH}"
 env
 which php
 php -v
