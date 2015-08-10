@@ -73,5 +73,6 @@ sh_test(
         "//data/problems:problems",
         "//data/wata62:wata62",
         "//data/watadp:watadp",
+        "//data/phrase_test:phrase_test",
     ],
 )

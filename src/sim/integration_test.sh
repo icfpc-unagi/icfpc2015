@@ -67,3 +67,4 @@ evaluate chokudai105 problem_3 1360 1268 1262 1560 1173
 
 evaluate watadp problem_2 \
     12113 11762 11435 12348 11304 12906 11990 10160 11751 9889
+evaluate phrase_test problem_14 109796
