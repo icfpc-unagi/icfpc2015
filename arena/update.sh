@@ -35,8 +35,8 @@ run() {
   if [ ! -f "${path}" -a ! -f "${path}.bak" ]; then
     echo "Generating ${path}..."
     if [ "${ai_name%.exe}" != "${ai_name}" ]; then
-      if TMPDIR=/tmp timeout 1800s php /mirror/github/play_icfp2015.php \
-             -c 1 -@x "mono ${ai}" -@s /mirror/global/bin/sim_main -t 1700 \
+      if TMPDIR=/tmp timeout 120s php /mirror/github/play_icfp2015.php \
+             -c 1 -@x "mono ${ai}" -@s /mirror/global/bin/sim_main -t 100 \
              -f "${data}" "${PHRASES[@]}" > "${path}.bak"; then
       # if timeout 1800s mono "${ai}" -f "${data}" "${PHRASES[@]}" \
       #     > "${path}.bak"; then
