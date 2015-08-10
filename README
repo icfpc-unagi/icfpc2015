@@ -1,10 +1,13 @@
 Team Unagi's Repository for ICFPC 2015.
 
-This is developed on Ubuntu 14.04.
+This is developed on Ubuntu 14.04 on Amazon EC2:
+Ubuntu Server 14.04 LTS (HVM), SSD Volume Type - ami-936d9d93 (Tokyo)
+
+This should work on another Ubuntu, but we do not guarantee it.
 
 How to clone:
   sudo apt-get -qqy update
-  sudo apt-get -qqy install git
+  sudo apt-get -qqy install git make
   git clone https://github.com/imos/icfpc2015
   cd icfpc2015
 
