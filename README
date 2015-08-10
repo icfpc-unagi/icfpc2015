@@ -1,18 +1,19 @@
-Team Unagi's Repository for ICFPC 2015.
+Team UNAGI Final Submission @ ICFP Contest 2015
+===============================================
 
-This is developed on Ubuntu 14.04 on Amazon EC2:
-Ubuntu Server 14.04 LTS (HVM), SSD Volume Type - ami-936d9d93 (Tokyo)
 
-This should work on another Ubuntu, but we do not guarantee it.
+## Instruction
 
-How to clone:
-  sudo apt-get -qqy update
-  sudo apt-get -qqy install git make
-  git clone https://github.com/imos/icfpc2015
-  cd icfpc2015
+### Build & Run
 
-How to install:
-  make
+As specified in the problem description, invoke `make` and `play_icfp2015` to build and run.
 
-How to run:
-  ./play_icfp2015 -f data/problems/problem_0.json -t 10
+
+### Dependency
+
+We checked that, on plain Ubuntu 14.04, all the dependency is automaticaly installed in `Makefile`. Just for in case, we list the main dependent packages.
+
+* Frontend script is written in *PHP*, and requires PHP.
+* Internal evaluator is written in *C++*, and thus requires *g++*.
+* We use *bazel* for building C++ programs (e.g., internal evaluator).
+* Solvers are written in *Java* and *C#*, so *Java* and *Mono* are required.
