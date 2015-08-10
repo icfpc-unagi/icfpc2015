@@ -341,6 +341,8 @@ class Game {
     if (GetMicrotime() > $end_time) return [];
 
     $unlink_files = [];
+    $results = [];
+
     $seeds = array_values(array_unique($problem['sourceSeeds']));
     if (count($seeds) < 1) {
       WARNING("Problem {$problem['id']} has no seeds.");
@@ -406,6 +408,7 @@ class Game {
              $seed_index < count($seeds); $seed_index++) {
         $seed = $seeds[$seed_index];
         $input_file = $seed_files[$seed];
+        $program = $GLOBALS['PROGRAMS'][$program_id];
         $streams[$seed] =
             new Stream(CreateCommand(
                 $program, $input_file, $GLOBALS['PHRASES'], $group_end_time));
