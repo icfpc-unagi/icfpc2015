@@ -358,8 +358,16 @@ class Game {
       file_put_contents($file, json_encode($simplified_problem));
     }
 
+    if (count($GLOBALS['PROGRAMS']) == 0) {
+      WARNING("No programs are specified.");
+      return [];
+    }
+
     $seed_index = 0;
-    if (count($GLOBALS['PROGRAMS']) > 1) {
+    if (count($GLOBALS['PROGRAMS']) == 1) {
+      $program_ids = array_keys($GLOBALS['PROGRAMS']);
+      $program_id = $program_ids[0];
+    } else {
       $streams = [];
       $seed = $seeds[$seed_index];
       INFO("SEED{$seed}: #${seed_index}");
