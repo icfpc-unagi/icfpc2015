@@ -13,6 +13,7 @@ $STDERR = FALSE;
 $VERBOSE = 0;
 $SIMULATOR = 'bazel-bin/src/sim/sim_main';
 $RECIPE = 'play_icfp2015.txt';
+$CORES = 8;
 
 $mode = '';
 for ($i = 1; $i < count($argv); $i++) {
@@ -39,6 +40,9 @@ for ($i = 1; $i < count($argv); $i++) {
         break;
       case '-p':
         $PHRASES[] = $argv[$i];
+        break;
+      case '-c':
+        $CORES = intval($argv[$i]);
         break;
       case '-@x':
         $PROGRAMS[] = $argv[$i];
@@ -70,6 +74,7 @@ fwrite(STDERR, 'File: ' . json_encode($FILES) . "\n");
 fwrite(STDERR, 'Phrases of power: ' . json_encode($PHRASES) . "\n");
 fprintf(STDERR, "Time limit: %.3f\n", $TIME_LIMIT);
 fprintf(STDERR, "Memory limit: %.3f\n", $MEMORY_LIMIT);
+fwrite(STDERR, "Cores: $CORES\n");
 fwrite(STDERR, 'Recipe: ' . $RECIPE . "\n");
 fwrite(STDERR, 'Programs: ' . json_encode($PROGRAMS) . "\n");
 fwrite(STDERR, 'Worker STDERR: ' . ($STDERR ? 'Yes' : 'No') . "\n");
@@ -388,7 +393,7 @@ class Game {
       if (GetMicrotime() > $end_time) break;
 
       $seed_count = count($seeds) - $seed_index;
-      $seed_block = $seed_count / ceil($seed_count / 6);
+      $seed_block = $seed_count / ceil($seed_count / $GLOBALS['CORES']);
       $seed_border = $seed_index + $seed_block;
 
       $streams = [];
