@@ -273,7 +273,7 @@ function ReadStreams(
     }
     foreach ($solutions as $solution) {
       if (!isset($solution['solution'])) {
-        WARNING("STREAM$stream_id: returns no solution.");
+        WARNING("STREAM$stream_id: returns no solution: " . trim($buffer));
         continue;
       }
       if ($solution['solution'] == '') {
