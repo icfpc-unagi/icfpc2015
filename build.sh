@@ -16,7 +16,7 @@ echo oracle-java8-installer shared/accepted-oracle-license-v1-1 \
 if which bazel >/dev/null 2>/dev/null; then
   BAZEL='bazel'
 else
-  BAZEL='../bazel/output/bazel'
+  BAZEL="$(echo ~/bazel/output/bazel)"
   if [ ! -e "${BAZEL}" ]; then
     pushd ~
     wget https://storage.googleapis.com/archive-imoz-jp/Repository/Bazel/bazel-ecd4ec4.tar.xz
