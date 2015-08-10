@@ -34,3 +34,7 @@ The PHP script `play_icfp2015.php`, which is called from shell script `play_icfp
 ### Solvers
 
 Both solvers use beam searches, but they use different board evaluation functions, as well as spelling strategies.
+
+* "chokudai" is faster one with wide beam width. It can flexibly adjust its running time by adaptively changing beam width.
+
+* "wata" is slower one with a clever spelling strategy using dynamic programming. "wata" requires ~2GB memory for conducting large dynamic programming.
