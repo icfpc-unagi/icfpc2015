@@ -299,6 +299,15 @@ function ReadStreams(
         INFO("STREAM$stream_id: invalid output: " . json_encode($solution));
         continue;
       }
+      if ($score < 0) {
+        INFO("STREAM$stream_id: start trimming.");
+        $solution['solution'] = substr($solution['solution'], 0, -$score);
+        $score = GetScore($input_file, $phrases_file, $solution);
+        if ($score == NULL) {
+          INFO("STREAM$stream_id: invalid output: " . json_encode($solution));
+          continue;
+        }
+      }
       INFO("STREAM$stream_id: evaluated score is $score.");
 
       if (!isset($best_score[$seed]) || $score > $best_score[$seed]) {
@@ -332,7 +341,12 @@ function CreateCommand($program, $input_file, $phrases, $end_time) {
   $args[] = $input_file;
   $args[] = '-t';
   $current_time = array_sum(array_map('floatval', explode(' ', microtime())));
-  $args[] = intval(ceil($end_time - $current_time));
+  $tle = intval(floor($end_time - $current_time));
+  if ($tle == 0) {
+    $args[] = '0.5';
+  } else {
+    $args[] = intval(floor($end_time - $current_time));
+  }
   return $program . ' ' . implode(' ', array_map('escapeshellarg', $args));
 }
 
