@@ -112,18 +112,21 @@ class Sim {
     for (int i = 0; i < s.size(); ++i) {
       if (source >= problem_->length) {
         if (logs_ && (!skip_ || i < head_ || s.size() - i <= tail_) && FLAGS_verbose >= 2) *logs_ << "Command remaining error. (Game cleared.)" << endl;
-        return -1;
+        // returns number of accepted commands in negative
+        return -i;
       }
 
       // Game ends if the spawn location is not valid
       if (!control.test(&field_)) {
         if (logs_ && (!skip_ || i < head_ || s.size() - i <= tail_) && FLAGS_verbose >= 2) *logs_ << "Command remaining error. (Dead after placing " << source << "units.)" << endl;
-        return -2;
+        // returns number of accepted commands in negative
+        return -i;
       }
 
       if (!visit.insert(control.serialize()).second) {
         if (logs_ && (!skip_ || i < head_ || s.size() - i <= tail_) && FLAGS_verbose >= 2) *logs_ << "Command error. (Visited.)" << endl;
-        return -3;
+        // returns number of accepted commands in negative
+        return -i;
       }
 
       if (logs_ && (!skip_ || i < head_ || s.size() - i <= tail_) && (FLAGS_verbose >= 5 || (FLAGS_verbose >= 4 && visit.size() == 1))) {
