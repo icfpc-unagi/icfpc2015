@@ -15,4 +15,5 @@ dependencies:
 
 test:
   override:
+    - php -v
     - ~/bazel/output/bazel test -c opt --test_output=all //...
