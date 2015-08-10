@@ -6,24 +6,10 @@ How to clone:
   sudo apt-get -qqy update
   sudo apt-get -qqy install git
   git clone https://github.com/imos/icfpc2015
+  cd icfpc2015
 
 How to install:
-  sudo apt-get -qqy update
-  sudo apt-get -qqy install \
-      build-essential devscripts ubuntu-standard software-properties-common \
-      screen lxc traceroute gdb \
-      vim git subversion mercurial cmake make \
-      dos2unix nkf curl xz-utils \
-      libarchive-dev pkg-config zip g++ zlib1g-dev \
-      php5-cli mono-devel
-  echo oracle-java8-installer shared/accepted-oracle-license-v1-1 \
-      select true | debconf-set-selections && \
-      add-apt-repository -y ppa:webupd8team/java && \
-      apt-get update -qq && apt-get install -qqy oracle-java8-installer
   make
 
 How to run:
-  make run
-
-Requirements:
-  bazel (optional)
+  ./play_icfp2015 -f data/problems/problem_0.json -t 10
